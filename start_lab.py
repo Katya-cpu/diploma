@@ -17,6 +17,17 @@ ROOT = Path(__file__).resolve().parent
 os.chdir(ROOT)
 
 class Handler(SimpleHTTPRequestHandler):
+    def end_headers(self):
+        # Always fetch current local application files after an update.
+        self.send_header('Cache-Control', 'no-store, no-cache, must-revalidate')
+        super().end_headers()
+
+    def send_head(self):
+        # Ignore cached timestamps: files in Git checkouts can share a timestamp.
+        if 'If-Modified-Since' in self.headers:
+            del self.headers['If-Modified-Since']
+        return super().send_head()
+
     def translate_path(self, path):
         # The browser lab can load the shared analyser but no parent directories.
         if path.split('?', 1)[0].startswith('/shared/'):

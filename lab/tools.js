@@ -4,6 +4,7 @@
     if(pending){$('payment-result').textContent='Идёт распознавание изображения. Дождитесь результата.';return}
     const raw=$('payment-payload').value.trim();
     if(!raw){$('payment-result').textContent='Сначала выберите изображение с QR или вставьте его содержимое. Пустая строка не проверена.';return}
+    if(typeof PaymentDetails.checkRecipient!=='function'){$('payment-result').textContent='QR распознан, но загружена старая версия анализатора. Перезапустите лабораторию и обновите страницу сочетанием Ctrl+F5.';return}
     const parsed=PaymentDetails.decodePaymentLink(raw), comparison=PaymentDetails.compare($('payment-context').value,parsed);
     const lines=[parsed.status==='unknown'?'Формат не распознан: '+parsed.reason:'Формат: '+parsed.format];
     if(parsed.recipient)lines.push('Имя получателя в QR: '+parsed.recipient+' — не подтверждено.');

@@ -23,7 +23,7 @@
   function script(doc,src){return new Promise((resolve,reject)=>{const node=doc.createElement('script');node.src=src;node.onload=resolve;node.onerror=reject;doc.head.append(node)})}
   frame.onload=async()=>{const n=Number(frame.dataset.version);try{
     const doc=frame.contentDocument;
-    for(const path of ['/shared/payment-details.js','/shared/analyzer.js','/shared/page-observer.js','/vendor/jsQR.js','/qr-reader.js'])await script(doc,path);
+    for(const path of ['/shared/payment-details.js?v=20261030-2','/shared/analyzer.js?v=20261030-2','/shared/page-observer.js?v=20261030-2','/vendor/jsQR.js?v=20261030-2','/qr-reader.js?v=20261030-2'])await script(doc,path);
     if(n!==version)return;observer=frame.contentWindow.PageObserver.create();run.disabled=false;document.getElementById('status').textContent='Страница готова. Нажмите «Проверить страницу».';
   }catch{document.getElementById('status').textContent='Не удалось загрузить анализатор. Перезапустите лабораторию.'}};
   select.onchange=load;
