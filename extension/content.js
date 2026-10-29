@@ -30,6 +30,9 @@
         if(!entry.raw)continue;
         obs.hasQr=true;const payment=PaymentDetails.decodePaymentLink(entry.raw);
         const comparison=PaymentDetails.compare(obs.text,payment);
+        const reputation=await browser.storage.local.get('reportedHosts');
+        obs.qrReported=PaymentDetails.checkRecipient(payment,reputation.reportedHosts).status==='reported';
+        obs.qrInsecure=payment.protocol==='http:';
         obs.qrMismatch=comparison.status==='mismatch';obs.qrChecked=comparison.status==='match';break;
       }
     }catch{}

@@ -17,6 +17,11 @@ assert.equal(analyzer.analyze({hasPaymentButton:true,insecurePaymentLink:true}).
 assert.equal(details.compare('Итого 100 ₽',details.decodePaymentLink('ST00012|Name=Учебный магазин|Sum=10000')).status,'match');
 assert.equal(details.compare('Итого 200 ₽',details.decodePaymentLink('ST00012|Name=Учебный магазин|Sum=10000')).status,'mismatch');
 assert.equal(details.decodePaymentLink('not a payment').status,'unknown');
+const qrLink=details.decodePaymentLink('https://example.invalid/pay');
+assert.equal(details.checkRecipient(qrLink,{'example.invalid':true}).status,'reported');
+assert.equal(details.checkRecipient(qrLink,{'other.invalid':true}).status,'unknown');
+assert.equal(details.checkRecipient(details.decodePaymentLink('ST00012|Name=Demo|Sum=10000'),{'example.invalid':true}).status,'unknown');
+assert.equal(analyzer.analyze({hasQr:true,qrReported:true}).status,'warning');
 const history=[{time:10,sender:'A',recipient:'R',amount:10},{time:30,sender:'B',recipient:'R',amount:20}];
 assert.equal(bank.evaluate(history,{time:20,recipient:'R',amount:10}).count,1);
 assert.equal(bank.evaluate(history,{time:9,recipient:'R',amount:10}).status,'unknown');

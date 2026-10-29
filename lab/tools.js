@@ -10,7 +10,15 @@
     if(parsed.host)lines.push('Адрес ссылки: '+parsed.host+' — принадлежность и репутация не установлены.');
     if(parsed.amount!=null)lines.push('Сумма в QR: '+parsed.amount+' '+(parsed.currency||'(валюта не установлена)'));
     lines.push('Сравнение сумм: '+comparison.reason);
-    lines.push('Проверка получателя: независимого источника нет, принадлежность и мошенничество не установлены.');
+    const hosts=Object.create(null);
+    for(const item of $('qr-reported-hosts').value.split(/[\s,;]+/).filter(Boolean)){
+      if(!/^(?=.{1,253}$)[a-z0-9.-]+$/i.test(item)||item.startsWith('.')||item.endsWith('.')){lines.push('Ошибка списка: вводите только доменные имена, без путей и протокола.');$('payment-result').textContent=lines.join('\n');return}
+      hosts[item.toLowerCase()]=true;
+    }
+    const check=PaymentDetails.checkRecipient(parsed,hosts);
+    lines.push('Проверка адреса из QR: '+check.reason);
+    if(parsed.protocol==='http:')lines.push('Внимание: ссылка использует HTTP без шифрования.');
+    lines.push('Источник списка: '+($('qr-reported-source').value.trim()||'не указан')+'. Реквизиты и личность получателя не подтверждены.');
     $('payment-result').textContent=lines.join('\n');
   }
   $('parse-payment').addEventListener('click',display);

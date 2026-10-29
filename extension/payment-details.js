@@ -38,9 +38,16 @@
       const value=rawAmount!==null && /^\d+(?:[.,]\d+)?$/.test(rawAmount)?Number(rawAmount.replace(',','.')):null;
       const currency=p.get('currency')||null;
       // A generic URL is not classified as SBP and units of sum are not assumed.
-      return {status:'partial',format:'Ссылка',host:url.hostname,amount:value,currency,
+      return {status:'partial',format:'Ссылка',host:url.hostname,protocol:url.protocol,amount:value,currency,
         reason:'Единицы суммы, назначение и получатель ссылки не подтверждены.'};
     } catch {return {status:'unknown',reason:'Формат содержимого не распознан.'}}
+  }
+  function checkRecipient(payment, reportedHosts) {
+    if(!payment || !payment.host)return {status:'unknown',reason:'В QR нет поддерживаемого адреса для проверки по локальному списку; личность получателя не установлена.'};
+    const host=payment.host.toLowerCase();
+    if(!reportedHosts || !Object.keys(reportedHosts).length)return {status:'unknown',reason:'Локальный список сообщений об угрозах пуст; репутация адреса и получатель не установлены.'};
+    if(Object.prototype.hasOwnProperty.call(reportedHosts,host) && reportedHosts[host])return {status:'reported',reason:'Точный домен ссылки присутствует в локальном списке сообщений об угрозах. Проверьте источник и дату; это не подтверждение мошенничества получателя.'};
+    return {status:'unknown',reason:'Точного совпадения в локальном списке нет. Это не подтверждает безопасность, владельца или получателя.'};
   }
   function compare(page, payment) {
     if(!payment || payment.status!=='parsed' || payment.amount==null || !payment.currency) return {status:'unknown',reason:'Недостаточно надёжных данных для сравнения.'};
@@ -49,6 +56,6 @@
     if(candidates.some(x=>Math.abs(x.value-payment.amount)<0.01))return {status:'match',reason:'Одна из сумм страницы совпадает с суммой платёжной строки.'};
     return {status:'mismatch',reason:'Сумма платёжной строки отличается от найденных сумм страницы; проверьте контекст.'};
   }
-  root.PaymentDetails={amounts,transfer,decodePaymentLink,compare};
+  root.PaymentDetails={amounts,transfer,decodePaymentLink,compare,checkRecipient};
   if(typeof module !== 'undefined')module.exports=root.PaymentDetails;
 })(typeof globalThis!=='undefined'?globalThis:this);
