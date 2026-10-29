@@ -1,0 +1,20 @@
+# Local environments, trained weights and potentially sensitive research materials
+.venv/
+node_modules/
+__pycache__/
+*.pyc
+.env
+.env.*
+research/models/
+research/results/
+research/text-model/
+research/ner-crf/
+research/demo_data/
+research/text_demo/
+research/ner_demo/
+research/aml-results/
+research/data/misata/
+research/reviewed_text_candidates.csv
+*.gguf
+*.joblib
+*.pt

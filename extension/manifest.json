@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "Платёжный помощник — учебный прототип",
+  "version": "0.1.0",
+  "permissions": ["storage", "activeTab", "webRequest", "cookies"],
+  "host_permissions": ["http://*/*", "https://*/*"],
+  "background": {"scripts": ["background.js"]},
+  "description": "Показывает признаки возможного платёжного действия и объясняет ограничения проверки.",
+  "browser_specific_settings": {"gecko": {"id": "payment-study@example.local", "strict_min_version": "109.0"}},
+  "content_scripts": [{"matches": ["http://*/*", "https://*/*"], "js": ["payment-details.js", "analyzer.js", "content.js"], "run_at": "document_idle", "all_frames": false}],
+  "action": {"default_title": "Платёжный помощник", "default_popup": "popup.html"}
+}

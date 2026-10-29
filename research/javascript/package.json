@@ -1,0 +1,7 @@
+{
+  "name": "payment-javascript-inspector",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Passive static inspection of JavaScript files for educational analysis",
+  "dependencies": {"acorn": "^8.14.0", "acorn-walk": "^8.3.4"}
+}
