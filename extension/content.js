@@ -6,10 +6,7 @@
   let lastKey = '', timer, previousFormOrigins = null, formChanged = false;
   const sessionEvents = [];
   async function saveEvent(kind,codes) {
-    try {const s=await browser.storage.local.get('briefEvents');const events=Array.isArray(s.briefEvents)?s.briefEvents:[];
-      events.push({time:new Date().toISOString(),kind,codes:codes.slice(0,12)});
-      await browser.storage.local.set({briefEvents:events.slice(-50)});
-    } catch {}
+    try {await browser.runtime.sendMessage({type:'record-event',kind,codes})} catch {}
   }
   function eventName(e) {
     const target=e.target;
