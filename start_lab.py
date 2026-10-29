@@ -21,7 +21,30 @@ class Handler(SimpleHTTPRequestHandler):
             return str(ROOT / 'shared' / Path(path.split('?', 1)[0]).name)
         return super().translate_path(path)
 
+    def do_GET(self):
+        if self.path!='/api/reviewed':return super().do_GET()
+        if self.headers.get('Host') not in ('127.0.0.1:8765','localhost:8765'):
+            self.send_error(403); return
+        try:
+            path=ROOT.parent/'datasets'/'web_pages'/'reviewed_samples.json'
+            rows=json.loads(path.read_text(encoding='utf-8'))
+            items=[]
+            for row in rows[:100]:
+                text=str(row.get('text_excerpt',''))[:5000]
+                text=re.sub(r'(?i)https?://\S+','[ссылка удалена]',text)
+                text=re.sub(r'\b[\w.+-]+@[\w.-]+\.[a-z]{2,}\b','[почта удалена]',text,flags=re.I)
+                text=re.sub(r'(?<!\d)(?:\d[\s-]*){10,19}(?!\d)','[реквизиты удалены]',text)
+                items.append({'id':str(row.get('id',''))[:120],'label':str(row.get('source_label',''))[:30],
+                              'source':str(row.get('source',''))[:60],'text':text,'card_fields':int(row.get('card_fields',0))})
+            result={'status':'ok','items':items,'note':'Метки источников; HTML не выполняется. Очистка может быть неполной.'}
+        except Exception:
+            result={'status':'unknown','reason':'Индекс проверенных выдержек не найден в datasets/web_pages. В архиве Git он не поставляется.'}
+        data=json.dumps(result,ensure_ascii=False).encode('utf-8')
+        self.send_response(200);self.send_header('Content-Type','application/json; charset=utf-8');self.send_header('Content-Length',str(len(data)));self.end_headers();self.wfile.write(data)
+
     def do_POST(self):
+        if self.headers.get('Host') not in ('127.0.0.1:8765','localhost:8765'):
+            self.send_error(403); return
         if self.path == '/api/research-demo':
             return self.research_demo()
         if self.path == '/api/inspect-js':
@@ -46,6 +69,7 @@ class Handler(SimpleHTTPRequestHandler):
             import pytesseract
             Image.MAX_IMAGE_PIXELS=20_000_000
             image=Image.open(io.BytesIO(raw))
+            if image.width*image.height>20_000_000:raise ValueError('Изображение превышает лимит пикселей')
             text=pytesseract.image_to_string(image,lang='rus+eng')[:12000]
             text=re.sub(r'(?<!\d)(?:\d[\s-]*){10,19}(?!\d)','[числовые реквизиты скрыты]',text)
             result={'status':'ok','text':text,'note':'Распознавание и скрытие реквизитов могут ошибаться; не используйте реальные секреты.'}
