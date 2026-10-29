@@ -31,6 +31,7 @@
     if (o.formDestinationUnknown) reasons.push({code:'unknown_destination', severity:'notice', message:'Адрес обработки формы не установлен: отправка может происходить через скрипт.'});
     if (o.hasQr) reasons.push({code:'qr', severity:'notice', message:o.qrChecked?'Одна из сумм страницы совпадает с суммой распознанного платёжного QR. Получатель и безопасность не подтверждены.':'Возможно присутствует QR-код. Его содержимое не удалось надёжно сопоставить; используйте локальную лабораторию для ручного анализа.'});
     if (o.qrMismatch) reasons.push({code:'qr_mismatch',severity:'warning',message:'Сумма распознанного платёжного QR не совпала с найденными суммами страницы. Проверьте назначение и контекст.'});
+    if (o.amountMismatch) reasons.push({code:'amount_mismatch',severity:'warning',message:'Единственная видимая сумма в рублях отличается от указанной в поддерживаемом скрытом поле формы. Проверьте назначение каждой суммы.'});
     if (o.changedForm) reasons.push({code:'changed_form',severity:'warning',message:'У доступной карточной формы изменился адрес обработки. Это может быть обычным перенаправлением; проверьте ситуацию.'});
     if (o.reputationReported) reasons.push({code:'reputation_report',severity:'warning',message:'Точный адрес сайта присутствует в локальном списке сообщений об угрозах. Проверьте источник и дату записи; список может ошибаться.'});
     if (o.hasPaymentButton) reasons.push({code:'payment_action', severity:'notice', message:'Найдено возможное платёжное действие: проверьте его назначение.'});

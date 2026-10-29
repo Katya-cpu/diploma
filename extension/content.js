@@ -46,10 +46,14 @@
       }
     }
     const hasQr=[...document.querySelectorAll('img,canvas')].some(e=>/\bqr\b|qr.?код|куар/i.test([e.alt,e.title,e.id,e.className].join(' ')));
+    const pageText=(document.body?.innerText || '').slice(0,12000);
+    const displayAmounts=PaymentDetails.amounts(pageText).filter(x=>x.currency==='RUB');
+    const declared=fields.filter(e=>e.type==='hidden' && /^(amount_rub|sum_rub)$/i.test(e.name) && /^\d+(?:[.,]\d{1,2})?$/.test(e.value)).map(e=>Number(e.value.replace(',','.')));
+    const amountMismatch=displayAmounts.length===1 && declared.length===1 && Math.abs(displayAmounts[0].value-declared[0])>=0.01;
     const fingerprint=[...new Set(formOrigins)].sort().join('|');
     if(previousFormOrigins!==null && fingerprint && fingerprint!==previousFormOrigins)formChanged=true;
     if(fingerprint)previousFormOrigins=fingerprint;
-    return {text:(document.body?.innerText || '').slice(0,12000), hasCard, hasCvv, hasPaymentButton,misleadingControl,insecureForm,externalForm,formDestinationUnknown,coveredControl,hasQr,changedForm:formChanged};
+    return {text:pageText, hasCard, hasCvv, hasPaymentButton,misleadingControl,insecureForm,externalForm,formDestinationUnknown,coveredControl,hasQr,amountMismatch,changedForm:formChanged};
   }
   async function inspectQr(obs) {
     if(!('BarcodeDetector' in window))return;
