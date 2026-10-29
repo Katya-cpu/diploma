@@ -26,6 +26,12 @@
     const buttons = [...document.querySelectorAll('button,input[type=submit],[role=button],a[href]')];
     const hasPaymentButton = buttons.some(e => paymentPattern.test([e.innerText,e.value,e.getAttribute('aria-label')].filter(Boolean).join(' ').slice(0,240)));
     const misleadingControl=buttons.some(e=>/войти|продолжить|принять|sign in|continue/i.test((e.innerText || e.value || '').slice(0,120)) && /оплат|платн|подписк|subscribe|purchase|payment/i.test((e.getAttribute('aria-label') || '').slice(0,160)));
+    const hiddenFinancialControl=buttons.some(e=>{
+      const label=[e.innerText,e.value,e.getAttribute('aria-label')].filter(Boolean).join(' ').slice(0,240);
+      if(!paymentPattern.test(label))return false;
+      const style=getComputedStyle(e),rect=e.getBoundingClientRect();
+      return Number(style.opacity)<0.1 && style.visibility!=='hidden' && style.pointerEvents!=='none' && rect.width>8 && rect.height>8;
+    });
     let insecureForm=false,externalForm=false,formDestinationUnknown=false,coveredControl=false;
     const formOrigins=[];
     for(const input of cardFields){
@@ -53,7 +59,7 @@
     const fingerprint=[...new Set(formOrigins)].sort().join('|');
     if(previousFormOrigins!==null && fingerprint && fingerprint!==previousFormOrigins)formChanged=true;
     if(fingerprint)previousFormOrigins=fingerprint;
-    return {text:pageText, hasCard, hasCvv, hasPaymentButton,misleadingControl,insecureForm,externalForm,formDestinationUnknown,coveredControl,hasQr,amountMismatch,changedForm:formChanged};
+    return {text:pageText, hasCard, hasCvv, hasPaymentButton,misleadingControl,hiddenFinancialControl,insecureForm,externalForm,formDestinationUnknown,coveredControl,hasQr,amountMismatch,changedForm:formChanged};
   }
   async function inspectQr(obs) {
     if(!('BarcodeDetector' in window))return;
