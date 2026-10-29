@@ -2,6 +2,7 @@
   'use strict';
   // No input values are inspected or saved. Exception is bound to the exact origin.
   const origin = location.origin;
+  const isTopFrame = window === window.top;
   let lastKey = '', timer, previousFormOrigins = null, formChanged = false;
   const sessionEvents = [];
   async function saveEvent(kind,codes) {
@@ -77,7 +78,8 @@
     const warnings = result.reasons.filter(r => r.severity === 'warning');
     const storage = await browser.storage.local.get('ordinaryExceptions');
     const exceptions = storage.ordinaryExceptions || {};
-    const shown = exceptions[origin] ? warnings : result.reasons;
+    const ordinaryDisabled = isTopFrame && !!exceptions[origin];
+    const shown = ordinaryDisabled ? warnings : result.reasons;
     const key = shown.map(r=>r.code).join(',');
     if ((!key && !force) || (!force && key === lastKey)) return;
     lastKey = key;
@@ -91,7 +93,7 @@
     const title=document.createElement('strong'); title.textContent=warnings.length?'Найдены признаки для проверки':'Платёжный помощник'; box.append(title);
     const list=document.createElement('ul');
     shown.forEach(r=>{const li=document.createElement('li');li.textContent=r.message;list.append(li)});
-    if (!shown.length) {const li=document.createElement('li');li.textContent=exceptions[origin] && result.reasons.length?'Обычные уведомления для этого сайта отключены. Новых признаков угроз правила не обнаружили.':'Доступные признаки не найдены. Безопасность не установлена.';list.append(li)}
+    if (!shown.length) {const li=document.createElement('li');li.textContent=ordinaryDisabled && result.reasons.length?'Обычные уведомления для этого сайта отключены. Новых признаков угроз правила не обнаружили.':'Доступные признаки не найдены. Безопасность не установлена.';list.append(li)}
     box.append(list);
     const note=document.createElement('p');note.textContent='Учебный прототип не блокирует ввод и не гарантирует безопасность. Встроенные формы и скрипты могут быть недоступны.';box.append(note);
     if(sessionEvents.length){const p=document.createElement('p');p.textContent=`Событий в текущей вкладке: ${sessionEvents.length}. Регистрируются только тип и время, без содержимого.`;box.append(p)}
@@ -100,7 +102,7 @@
         const p=document.createElement('p');p.textContent=data?.origins?.length?'Сетевые адреса после обнаружения оплаты: '+data.origins.join(', '):'Нет сведений о сетевых адресах после обнаружения оплаты.';box.append(p);
       }).catch(()=>{});
     }
-    if (obs.hasCard || obs.hasPaymentButton) {
+    if (isTopFrame && (obs.hasCard || obs.hasPaymentButton)) {
       const label=document.createElement('label'), check=document.createElement('input');
       check.type='checkbox';check.checked=!!exceptions[origin];label.append(check,document.createTextNode(' Не показывать обычное уведомление для этого сайта'));box.append(label);
       check.addEventListener('change',async()=>{const s=await browser.storage.local.get('ordinaryExceptions');const data=s.ordinaryExceptions||{};if(check.checked)data[origin]=true;else delete data[origin];await browser.storage.local.set({ordinaryExceptions:data});});

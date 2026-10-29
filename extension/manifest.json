@@ -7,6 +7,6 @@
   "background": {"scripts": ["background.js"]},
   "description": "Показывает признаки возможного платёжного действия и объясняет ограничения проверки.",
   "browser_specific_settings": {"gecko": {"id": "payment-study@example.local", "strict_min_version": "109.0"}},
-  "content_scripts": [{"matches": ["http://*/*", "https://*/*"], "js": ["payment-details.js", "analyzer.js", "content.js"], "run_at": "document_idle", "all_frames": false}],
+  "content_scripts": [{"matches": ["http://*/*", "https://*/*"], "js": ["payment-details.js", "analyzer.js", "content.js"], "run_at": "document_idle", "all_frames": true}],
   "action": {"default_title": "Платёжный помощник", "default_popup": "popup.html"}
 }
