@@ -11,6 +11,7 @@ import re
 import subprocess
 import sys
 import shutil
+import socket
 
 ROOT = Path(__file__).resolve().parent
 os.chdir(ROOT)
@@ -219,8 +220,19 @@ class Handler(SimpleHTTPRequestHandler):
         data=json.dumps(result,ensure_ascii=False).encode('utf-8')
         self.send_response(200);self.send_header('Content-Type','application/json; charset=utf-8');self.send_header('Content-Length',str(len(data)));self.end_headers();self.wfile.write(data)
 
+class ExclusiveLabServer(ThreadingHTTPServer):
+    allow_reuse_address = False
+    def server_bind(self):
+        if sys.platform == 'win32':
+            self.socket.setsockopt(socket.SOL_SOCKET, socket.SO_EXCLUSIVEADDRUSE, 1)
+        super().server_bind()
+
 if __name__ == '__main__':
-    server = ThreadingHTTPServer(('127.0.0.1', 8765), partial(Handler, directory=str(ROOT / 'lab')))
+    try:
+        server = ExclusiveLabServer(('127.0.0.1', 8765), partial(Handler, directory=str(ROOT / 'lab')))
+    except OSError:
+        print('Не удалось занять адрес лаборатории 127.0.0.1:8765. Закройте все старые окна лаборатории и запустите её снова.', flush=True)
+        sys.exit(1)
     print('Лаборатория: http://127.0.0.1:8765/   Остановка: Ctrl+C', flush=True)
     webbrowser.open('http://127.0.0.1:8765/')
     server.serve_forever()
