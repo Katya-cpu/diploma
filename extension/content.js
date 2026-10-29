@@ -17,14 +17,15 @@
     if(e.type==='focusin')inspect();
   }
   const cardPattern = /cc-number|card.?number|номер карты|номер банковской карты/i;
-  const paymentPattern = /оплатить|оплата|перевести|перевод|pay now|checkout|purchase/i;
+  const paymentPattern = /оплатить|оплата|перевести|перевод|платн.{0,30}подписк|оформить подписку|pay now|checkout|purchase/i;
   function collect() {
     const fields = [...document.querySelectorAll('input')];
     const cardFields = fields.filter(e => cardPattern.test([e.autocomplete,e.name,e.id,e.placeholder,e.getAttribute('aria-label')].join(' ')));
     const hasCard = cardFields.length>0;
     const hasCvv = fields.some(e=>/cc-csc|\bcvv\b|\bcvc\b|код безопасности|защитный код/i.test([e.autocomplete,e.name,e.id,e.placeholder,e.getAttribute('aria-label')].join(' ')));
     const buttons = [...document.querySelectorAll('button,input[type=submit],[role=button],a[href]')];
-    const hasPaymentButton = buttons.some(e => paymentPattern.test((e.innerText || e.value || e.getAttribute('aria-label') || '').slice(0,120)));
+    const hasPaymentButton = buttons.some(e => paymentPattern.test([e.innerText,e.value,e.getAttribute('aria-label')].filter(Boolean).join(' ').slice(0,240)));
+    const misleadingControl=buttons.some(e=>/войти|продолжить|принять|sign in|continue/i.test((e.innerText || e.value || '').slice(0,120)) && /оплат|платн|подписк|subscribe|purchase|payment/i.test((e.getAttribute('aria-label') || '').slice(0,160)));
     let insecureForm=false,externalForm=false,formDestinationUnknown=false,coveredControl=false;
     const formOrigins=[];
     for(const input of cardFields){
@@ -48,7 +49,7 @@
     const fingerprint=[...new Set(formOrigins)].sort().join('|');
     if(previousFormOrigins!==null && fingerprint && fingerprint!==previousFormOrigins)formChanged=true;
     if(fingerprint)previousFormOrigins=fingerprint;
-    return {text:(document.body?.innerText || '').slice(0,12000), hasCard, hasCvv, hasPaymentButton,insecureForm,externalForm,formDestinationUnknown,coveredControl,hasQr,changedForm:formChanged};
+    return {text:(document.body?.innerText || '').slice(0,12000), hasCard, hasCvv, hasPaymentButton,misleadingControl,insecureForm,externalForm,formDestinationUnknown,coveredControl,hasQr,changedForm:formChanged};
   }
   async function inspectQr(obs) {
     if(!('BarcodeDetector' in window))return;

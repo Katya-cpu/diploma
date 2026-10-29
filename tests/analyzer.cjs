@@ -10,6 +10,7 @@ assert.equal(analyzer.analyze({text:'Переведите деньги по но
 assert.equal(analyzer.analyze({text:'Чтобы получить деньги, оплатите комиссию'}).status,'warning');
 assert.equal(analyzer.analyze({text:'Чтобы получить деньги',hasCvv:true}).status,'warning');
 assert.equal(analyzer.analyze({text:'Переведите по номеру телефона получателя'}).status,'warning');
+assert.equal(analyzer.analyze({text:'Войти',misleadingControl:true}).status,'warning');
 assert.equal(details.compare('Итого 100 ₽',details.decodePaymentLink('ST00012|Name=Учебный магазин|Sum=10000')).status,'match');
 assert.equal(details.compare('Итого 200 ₽',details.decodePaymentLink('ST00012|Name=Учебный магазин|Sum=10000')).status,'mismatch');
 assert.equal(details.decodePaymentLink('not a payment').status,'unknown');
