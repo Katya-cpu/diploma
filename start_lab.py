@@ -10,6 +10,7 @@ import json
 import re
 import subprocess
 import sys
+import shutil
 
 ROOT = Path(__file__).resolve().parent
 os.chdir(ROOT)
@@ -114,9 +115,24 @@ class Handler(SimpleHTTPRequestHandler):
             if size<=0 or size>1_000_000:raise ValueError('Некорректный размер кода')
             source=json.loads(self.rfile.read(size)).get('source','')
             if not isinstance(source,str) or len(source)>500_000:raise ValueError('Некорректный код')
-            process=subprocess.run(['node','research/javascript/inspect.js','-'],input=source,cwd=ROOT,capture_output=True,text=True,encoding='utf-8',errors='replace',timeout=20)
-            if process.returncode:raise RuntimeError('AST-разбор недоступен. Установите Node.js и выполните npm install в research/javascript.')
+            node=shutil.which('node')
+            inspector=ROOT/'research'/'javascript'/'inspect.js'
+            modules=ROOT/'research'/'javascript'/'node_modules'
+            if not node or not inspector.is_file() or not (modules/'acorn').is_dir() or not (modules/'acorn-walk').is_dir():
+                patterns=[('network_call',r'\b(fetch|sendBeacon|open|send)\s*\('),('dom_selector_call',r'\b(querySelector|getElementById|getElementsByName)\s*\('),('dynamic_code_call',r'\b(eval|Function)\s*\('),('html_insertion',r'\b(innerHTML|outerHTML)\s*=')]
+                facts=[]
+                for kind,pattern in patterns:
+                    for match in re.finditer(pattern,source):
+                        facts.append({'kind':kind,'name':match.group(1),'line':source.count('\n',0,match.start())+1})
+                facts.sort(key=lambda fact:fact['line'])
+                result={'status':'ok','analysis':{'method':'простой поиск текста, не AST','facts':facts[:100],'limitations':['Поиск может находить слова в комментариях и строках и пропускать скрытые вызовы.','Код не выполнялся; признаки не доказывают вредоносность. Для AST установите Node.js и зависимости research/javascript.']},'model':{'status':'unknown','reason':'Модель для простого поиска не применяется.'}}
+                data=json.dumps(result,ensure_ascii=False).encode('utf-8')
+                self.send_response(200);self.send_header('Content-Type','application/json; charset=utf-8');self.send_header('Content-Length',str(len(data)));self.end_headers();self.wfile.write(data)
+                return
+            process=subprocess.run([node,str(inspector),'-'],input=source,cwd=ROOT,capture_output=True,text=True,encoding='utf-8',errors='replace',timeout=20)
+            if process.returncode:raise RuntimeError('Не удалось разобрать код как JavaScript. Проверьте его синтаксис; код не выполнялся.')
             analysis=json.loads(process.stdout)
+            analysis['method']='AST-разбор с Acorn'
             prediction=subprocess.run([sys.executable,'research/javascript/predict_model.py'],input=json.dumps(analysis),cwd=ROOT,capture_output=True,text=True,encoding='utf-8',errors='replace',timeout=20)
             model_output=json.loads(prediction.stdout) if prediction.returncode==0 else {'status':'unknown','reason':'Модель AST недоступна.'}
             result={'status':'ok','analysis':analysis,'model':model_output}
