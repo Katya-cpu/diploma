@@ -17,6 +17,7 @@
     }
     if (urgency && (hasCard || manual || o.hasPaymentButton)) reasons.push({code:'urgency', severity:'warning', message:'Есть призыв поторопиться рядом с платёжным действием.'});
     if (contradictory) reasons.push({code:'contradiction', severity:'warning', message:'Для получения денег страница одновременно просит оплату или перевод.'});
+    if (o.hasCvv && /(получить деньги|получите деньги|получение средств|получить выплату|получить оплату)/i.test(text)) reasons.push({code:'receive_cvv',severity:'warning',message:'Страница сообщает о получении денег и одновременно запрашивает защитный код карты. Уточните назначение на официальной площадке; никому не сообщайте код.'});
     if (o.insecureForm) reasons.push({code:'insecure_form', severity:'warning', message:'Обнаружена карточная форма с незашифрованным адресом отправки. Это наблюдение не раскрывает действий скриптов.'});
     if (o.coveredControl) reasons.push({code:'covered_control', severity:'warning', message:'Обнаруженное платёжное поле или кнопка перекрыто другим элементом. Причина перекрытия не установлена.'});
     if (o.externalForm) reasons.push({code:'external_form', severity:'notice', message:'Форма указывает адрес на другом сайте. Это может быть платёжный провайдер; назначение само по себе не доказывает угрозу.'});
