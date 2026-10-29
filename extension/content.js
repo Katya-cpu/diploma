@@ -25,6 +25,10 @@
     const hasCvv = fields.some(e=>/cc-csc|\bcvv\b|\bcvc\b|код безопасности|защитный код/i.test([e.autocomplete,e.name,e.id,e.placeholder,e.getAttribute('aria-label')].join(' ')));
     const buttons = [...document.querySelectorAll('button,input[type=submit],[role=button],a[href]')];
     const hasPaymentButton = buttons.some(e => paymentPattern.test([e.innerText,e.value,e.getAttribute('aria-label')].filter(Boolean).join(' ').slice(0,240)));
+    const insecurePaymentLink=buttons.some(e=>{
+      if(!(e instanceof HTMLAnchorElement) || !paymentPattern.test([e.innerText,e.getAttribute('aria-label')].filter(Boolean).join(' ').slice(0,240)))return false;
+      try{return new URL(e.getAttribute('href'),location.href).protocol==='http:'}catch{return false}
+    });
     const misleadingControl=buttons.some(e=>/войти|продолжить|принять|sign in|continue/i.test((e.innerText || e.value || '').slice(0,120)) && /оплат|платн|подписк|subscribe|purchase|payment/i.test((e.getAttribute('aria-label') || '').slice(0,160)));
     const hiddenFinancialControl=buttons.some(e=>{
       const label=[e.innerText,e.value,e.getAttribute('aria-label')].filter(Boolean).join(' ').slice(0,240);
@@ -59,7 +63,7 @@
     const fingerprint=[...new Set(formOrigins)].sort().join('|');
     if(previousFormOrigins!==null && fingerprint && fingerprint!==previousFormOrigins)formChanged=true;
     if(fingerprint)previousFormOrigins=fingerprint;
-    return {text:pageText, hasCard, hasCvv, hasPaymentButton,misleadingControl,hiddenFinancialControl,insecureForm,externalForm,formDestinationUnknown,coveredControl,hasQr,amountMismatch,changedForm:formChanged};
+    return {text:pageText, hasCard, hasCvv, hasPaymentButton,insecurePaymentLink,misleadingControl,hiddenFinancialControl,insecureForm,externalForm,formDestinationUnknown,coveredControl,hasQr,amountMismatch,changedForm:formChanged};
   }
   async function inspectQr(obs) {
     if(!('BarcodeDetector' in window))return;
