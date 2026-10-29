@@ -9,7 +9,7 @@
     } catch {result.textContent='Запрос не завершён. Проверьте окно локального сервера.'}
     button.disabled=false;
   }));
-  document.getElementById('score-text').addEventListener('click',async()=>{
+  document.getElementById('score-text')?.addEventListener('click',async()=>{
     const out=document.getElementById('ml-result');
     try {
       const text=document.getElementById('custom-text').value;
@@ -17,7 +17,7 @@
       const result=await response.json();out.textContent=result.status==='hypothesis'?`Учебная гипотеза: ${result.label}; выход модели: ${result.score.toFixed(3)}. ${result.note}`:result.reason;
     }catch{out.textContent='Локальная модель недоступна.'}
   });
-  document.getElementById('context-text').addEventListener('click',async()=>{
+  document.getElementById('context-text')?.addEventListener('click',async()=>{
     const out=document.getElementById('ml-result');out.textContent='Локальный анализ запущен; это может занять время.';
     try {
       const text=document.getElementById('custom-text').value;
