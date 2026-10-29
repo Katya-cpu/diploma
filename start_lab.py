@@ -50,6 +50,8 @@ class Handler(SimpleHTTPRequestHandler):
             return self.research_demo()
         if self.path == '/api/inspect-js':
             return self.inspect_js()
+        if self.path == '/api/decode-qr':
+            return self.decode_qr()
         if self.path == '/api/score-text':
             return self.score_text()
         if self.path == '/api/context':
@@ -76,6 +78,32 @@ class Handler(SimpleHTTPRequestHandler):
             result={'status':'ok','text':text,'note':'Распознавание и скрытие реквизитов могут ошибаться; не используйте реальные секреты.'}
         except Exception as e:
             result={'status':'unknown','reason':'OCR недоступен: установите Pillow, pytesseract и Tesseract с языками rus и eng; используйте учебное изображение.'}
+        data=json.dumps(result,ensure_ascii=False).encode('utf-8')
+        self.send_response(200);self.send_header('Content-Type','application/json; charset=utf-8');self.send_header('Content-Length',str(len(data)));self.end_headers();self.wfile.write(data)
+
+    def decode_qr(self):
+        if self.headers.get('Origin') not in ('http://127.0.0.1:8765','http://localhost:8765'):
+            self.send_error(403); return
+        try:
+            size=int(self.headers.get('Content-Length','0'))
+            if size<=0 or size>14_000_000:raise ValueError('Размер изображения превышает ограничение.')
+            payload=json.loads(self.rfile.read(size))
+            raw=base64.b64decode(payload.get('image',''),validate=True)
+            if len(raw)>10_000_000:raise ValueError('Размер изображения превышает 10 МБ.')
+            from PIL import Image, ImageOps
+            import zxingcpp
+            Image.MAX_IMAGE_PIXELS=20_000_000
+            image=Image.open(io.BytesIO(raw))
+            if image.width*image.height>20_000_000:raise ValueError('Изображение превышает лимит пикселей.')
+            image=ImageOps.exif_transpose(image).convert('RGB')
+            codes=zxingcpp.read_barcodes(image,formats=zxingcpp.BarcodeFormat.QRCode,try_rotate=True,try_downscale=True,try_invert=True)
+            if not codes:result={'status':'unknown','reason':'QR не распознан. Попробуйте другое изображение или улучшите снимок.'}
+            elif len(codes)>1:result={'status':'unknown','reason':'Найдено несколько QR-кодов. Выберите изображение с одним кодом.'}
+            else:result={'status':'ok','text':codes[0].text[:4096],'method':'локальный ZXing'}
+        except ImportError:
+            result={'status':'unknown','reason':'Дополнительный декодер не установлен. Запустите «Установить поддержку QR.cmd» и перезапустите лабораторию.'}
+        except Exception:
+            result={'status':'unknown','reason':'Не удалось обработать изображение. Проверьте формат, размер и качество.'}
         data=json.dumps(result,ensure_ascii=False).encode('utf-8')
         self.send_response(200);self.send_header('Content-Type','application/json; charset=utf-8');self.send_header('Content-Length',str(len(data)));self.end_headers();self.wfile.write(data)
 
