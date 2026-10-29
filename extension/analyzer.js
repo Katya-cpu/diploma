@@ -6,10 +6,16 @@
     const text = String(o.text || '').slice(0, 12000).toLowerCase();
     const hasCard = !!o.hasCard;
     const manual = /(переведите|перевести|перевод|зайдите в.*банк)/i.test(text) && /(номер карты|карту получателя|карты получателя|по номеру карты)/i.test(text);
+    const phoneTransfer = /(переведите|перевести|перевод|отправьте)/i.test(text) && /(по номеру телефона|на номер телефона|по телефону получателя)/i.test(text);
     const urgency = /(срочно|немедленно|только сегодня|иначе.*(отмен|заблок))/i.test(text);
     const contradictory = /(получить деньги|получите деньги|получение средств)/i.test(text) && /(оплатить|комисси|переведите)/i.test(text);
     if (hasCard) reasons.push({code:'card', severity:'notice', message:'Найдено поле для платёжной карты. Проверьте, кому и зачем вы передаёте данные.'});
     if (manual) reasons.push({code:'manual_transfer', severity:'warning', message:'Страница предлагает отдельный перевод по номеру карты. Уточните получателя и условия сделки.'});
+    if (phoneTransfer) {
+      reasons.push({code:'phone_transfer',severity:'warning',message:'Страница предлагает отдельный перевод по номеру телефона. Проверьте получателя и назначение до подтверждения.'});
+      const match=text.match(/номер(?:у)? телефона\s*[:—-]?\s*(\+?\d[\d\s()\-]{8,18}\d)/i);
+      if(match){const digits=match[1].replace(/\D/g,'');if(digits.length>=10)reasons.push({code:'masked_phone',severity:'notice',message:'Указан номер, окончание: •••• '+digits.slice(-4)+'. Принадлежность получателя не установлена.'});}
+    }
     if (manual) {
       const candidates=[...text.matchAll(/(?:\d[\s-]*){13,19}/g)].map(m=>m[0].replace(/\D/g,''));
       if(candidates.length) reasons.push({code:'masked_recipient',severity:'notice',message:'На странице найдены реквизиты, окончание: •••• '+candidates[0].slice(-4)+'. Принадлежность получателя не установлена.'});
