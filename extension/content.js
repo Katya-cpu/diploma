@@ -17,6 +17,7 @@
     // Never read e.data, key presses or target.value; do not persist the event log.
     sessionEvents.push({kind:e.type,time:new Date().toLocaleTimeString()});
     if(sessionEvents.length>15)sessionEvents.shift();
+    if(e.type==='focusin')inspect();
   }
   const cardPattern = /cc-number|card.?number|номер карты|номер банковской карты/i;
   const paymentPattern = /оплатить|оплата|перевести|перевод|pay now|checkout|purchase/i;
