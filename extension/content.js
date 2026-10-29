@@ -5,6 +5,7 @@
   const isTopFrame = window === window.top;
   let lastKey = '', timer, previousFormOrigins = null, formChanged = false;
   const dismissedCodes = new Set();
+  const qrCache = new WeakMap();
   const sessionEvents = [];
   async function saveEvent(kind,codes) {
     try {await browser.runtime.sendMessage({type:'record-event',kind,codes})} catch {}
@@ -67,15 +68,13 @@
     return {text:pageText, hasCard, hasCvv, hasPaymentButton,insecurePaymentLink,misleadingControl,hiddenFinancialControl,insecureForm,externalForm,formDestinationUnknown,coveredControl,hasQr,amountMismatch,changedForm:formChanged};
   }
   async function inspectQr(obs) {
-    if(!('BarcodeDetector' in window))return;
     try {
-      const detector=new BarcodeDetector({formats:['qr_code']});
       const images=[...document.images].filter(i=>i.complete && i.naturalWidth>=80 && i.naturalHeight>=80).slice(0,5);
       for(const img of images){
-        // Cross-origin pixels may not be readable; this does not fetch new resources.
-        const found=await detector.detect(img).catch(()=>[]);
-        if(!found.length)continue;
-        obs.hasQr=true;const payment=PaymentDetails.decodePaymentLink(found[0].rawValue);
+        // Cross-origin pixels may be unreadable; do not fetch images or transmit their content.
+        let entry=qrCache.get(img);if(!entry||entry.src!==img.currentSrc){const raw=await LocalQr.decode(img).catch(()=>null);entry={src:img.currentSrc,raw};qrCache.set(img,entry)}
+        if(!entry.raw)continue;
+        obs.hasQr=true;const payment=PaymentDetails.decodePaymentLink(entry.raw);
         const comparison=PaymentDetails.compare(obs.text,payment);
         obs.qrMismatch=comparison.status==='mismatch';obs.qrChecked=comparison.status==='match';break;
       }
@@ -87,7 +86,7 @@
     const rep = await browser.storage.local.get('reportedHosts');
     const paymentContext=obs.hasCard||obs.hasPaymentButton||/(переведите|перевод|оплатите|по номеру карты)/i.test(obs.text);
     obs.reputationReported = !!(paymentContext && rep.reportedHosts && Object.prototype.hasOwnProperty.call(rep.reportedHosts,location.hostname.toLowerCase()) && rep.reportedHosts[location.hostname.toLowerCase()]);
-    if(force)await inspectQr(obs);
+    if(force||obs.hasQr)await inspectQr(obs);
     const result = PaymentAnalyzer.analyze(obs);
     if(obs.hasCard || obs.hasPaymentButton)browser.runtime.sendMessage({type:'payment-context'}).catch(()=>{});
     const warnings = result.reasons.filter(r => r.severity === 'warning');
