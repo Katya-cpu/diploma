@@ -16,7 +16,12 @@ document.getElementById('benchmark-run').onclick=()=>{
  const count={suspect:0,ordinary:0,flaggedSuspect:0,flaggedOrdinary:0,unknown:0};
  const details=[];
  for(const c of examples){const result=PaymentAnalyzer.analyze({text:c.text,hasCard:!!c.card,hasPaymentButton:!!c.button});count[c.type]++;if(result.status==='warning')count[c.type==='suspect'?'flaggedSuspect':'flaggedOrdinary']++;if(result.status==='unknown')count.unknown++;details.push({scenario:c.type,status:result.status,codes:result.reasons.map(r=>r.code)})}
- lastBenchmark={format:'payment-lab-benchmark-v1',created_at:new Date().toISOString(),count,details,note:'Искусственные текстовые примеры под этот прототип; результаты не отражают частоту ошибок на реальных сайтах.'};
+ const tp=count.flaggedSuspect,fp=count.flaggedOrdinary;
+ const metrics={warning_precision:tp+fp?tp/(tp+fp):null,warning_recall:count.suspect?tp/count.suspect:null,
+   false_warning_rate:count.ordinary?fp/count.ordinary:null,unassessed:count.unknown};
+ lastBenchmark={format:'payment-lab-benchmark-v1',created_at:new Date().toISOString(),count,metrics,details,
+  interpretation:'Предупреждение считается положительным результатом; notice и unknown не считаются обнаружением, но не означают безопасность.',
+  note:'Искусственные текстовые примеры под этот прототип; результаты не отражают частоту ошибок на реальных сайтах.'};
  document.getElementById('benchmark-result').textContent=JSON.stringify(lastBenchmark,null,2);
 };
 document.getElementById('benchmark-download').onclick=()=>{
