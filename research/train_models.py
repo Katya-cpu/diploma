@@ -44,11 +44,26 @@ def snapshots(frame):
         result.append({'day':str(cut),'features':features,'edges':edges,'ids':ids,'labels':y.to_numpy(dtype=np.int64),'accounts':accounts})
     return result
 
-def metrics(y,prob):
+def select_threshold(y,prob):
+    if len(y)==0 or len(set(y))<2:return None
+    scores=np.asarray(prob);labels=np.asarray(y);best=None
+    for threshold in np.linspace(0,1,101):
+        pred=scores>=threshold;negative=labels==0;positive=labels==1
+        fpr=float(pred[negative].mean())
+        if fpr>0.05:continue
+        tp=int((pred&positive).sum());fp=int((pred&negative).sum());fn=int((~pred&positive).sum())
+        f1=(2*tp/(2*tp+fp+fn)) if (2*tp+fp+fn) else 0.0
+        if best is None or f1>best[0]:best=(f1,float(threshold))
+    return best[1] if best else None
+
+def metrics(y,prob,threshold):
     if len(set(y))<2:return {'error':'Метрики не вычислены: в выборке только один класс.'}
-    precision,recall,f1,_=precision_recall_fscore_support(y,np.asarray(prob)>=0.5,average='binary',zero_division=0)
-    return {'n':len(y),'positive':int(sum(y)),'precision':float(precision),'recall':float(recall),'f1':float(f1),
-            'pr_auc':float(average_precision_score(y,prob)),'roc_auc':float(roc_auc_score(y,prob))}
+    result={'n':len(y),'positive':int(sum(y)),'threshold':threshold,'pr_auc':float(average_precision_score(y,prob)),'roc_auc':float(roc_auc_score(y,prob))}
+    if threshold is None:result['threshold_status']='unknown: в validation недостаточно классов';return result
+    pred=np.asarray(prob)>=threshold
+    precision,recall,f1,_=precision_recall_fscore_support(y,pred,average='binary',zero_division=0)
+    result.update({'precision':float(precision),'recall':float(recall),'f1':float(f1),'fpr':float(pred[np.asarray(y)==0].mean())})
+    return result
 
 def train(input_csv, output_dir):
     import torch
@@ -76,11 +91,13 @@ def train(input_csv, output_dir):
     def matrix(days):
         return np.concatenate([d['features'][d['ids']] for d in days]),np.concatenate([d['labels'] for d in days])
     xtrain,ytrain=matrix(trainset);xtest,ytest=matrix(test)
+    xvalid,yvalid=matrix(valid) if valid else (None,np.asarray([]))
     if len(set(ytrain))<2:raise ValueError('Обучающая выборка содержит один класс; измените исходные данные.')
     results={'split':'chronological days and disjoint recipient hash groups 60/20/20','target_labels':sorted(df.scenario_label.astype(str).unique().tolist()),'counts':{'train':len(trainset),'validation':len(valid),'test':len(test)},'models':{}}
     for name,model in [('logistic',make_pipeline(StandardScaler(),LogisticRegression(class_weight='balanced',max_iter=300))),
                        ('forest',RandomForestClassifier(n_estimators=120,class_weight='balanced',random_state=42,n_jobs=-1))]:
-        model.fit(xtrain,ytrain);results['models'][name]=metrics(ytest,model.predict_proba(xtest)[:,1])
+        model.fit(xtrain,ytrain);threshold=select_threshold(yvalid,model.predict_proba(xvalid)[:,1]) if valid else None
+        results['models'][name]=metrics(ytest,model.predict_proba(xtest)[:,1],threshold)
 
     model=GraphSAGE();optim=torch.optim.Adam(model.parameters(),lr=.002)
     weight=torch.tensor([max(1.0, float((ytrain==0).sum()/max(1,(ytrain==1).sum())))])
@@ -90,15 +107,18 @@ def train(input_csv, output_dir):
         model.train()
         for day in trainset:
             x,e,idx,y=tensors(day);optim.zero_grad();loss=lossfn(model(x,e)[idx],y);loss.backward();optim.step()
-    probs=[];labels=[];model.eval()
+    probs=[];labels=[];validation_probs=[];validation_labels=[];model.eval()
     with torch.no_grad():
+        for day in valid:
+            x,e,idx,y=tensors(day);validation_probs.extend(torch.sigmoid(model(x,e)[idx]).tolist());validation_labels.extend(y.tolist())
         for day in test:
             x,e,idx,y=tensors(day);probs.extend(torch.sigmoid(model(x,e)[idx]).tolist());labels.extend(y.tolist())
-    results['models']['graphsage']=metrics(labels,probs)
+    threshold=select_threshold(validation_labels,validation_probs)
+    results['models']['graphsage']=metrics(labels,probs,threshold)
     results['limitations']=['Synthetic data only; no real-world deployment claim.','Labels are scenario labels, not evidence about real accounts.',
        'Graphs contain historical edges only; day-level prediction is not a per-transfer online evaluation.',
        'Recipients are disjoint, but related accounts or whole scam campaigns may still span splits; additional campaign holdout is required.',
-       'Validation slice is reserved but no calibration or hyperparameter selection is implemented.']
+       'Threshold is selected on validation under an empirical FPR cap; this is not probability calibration and can fail on small samples.']
     output_dir.mkdir(parents=True,exist_ok=True)
     (output_dir/'metrics.json').write_text(json.dumps(results,indent=2,ensure_ascii=False),encoding='utf-8')
     torch.save(model.state_dict(),output_dir/'graphsage.pt')
