@@ -31,5 +31,6 @@ def main():
     joblib.dump(model,a.out/'model.joblib')
     (a.out/'report.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8')
     print('Модель и отчёт сохранены в',a.out)
+    print(json.dumps(report,ensure_ascii=False,indent=2))
 
 if __name__=='__main__':main()

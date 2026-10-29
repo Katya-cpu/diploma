@@ -12,6 +12,8 @@ research/ner-crf/
 research/demo_data/
 research/text_demo/
 research/ner_demo/
+research/javascript/model/
+research/javascript/demo/
 research/aml-results/
 research/data/misata/
 research/reviewed_text_candidates.csv

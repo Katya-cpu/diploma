@@ -67,6 +67,8 @@ class Handler(SimpleHTTPRequestHandler):
                 commands=[['research/unpack_misata.py'],['research/adapt_misata.py','--input','research/data/misata/transactions.csv','--output','research/data/misata/adapted.csv'],['research/train_models.py','--input','research/data/misata/adapted.csv','--output','research/aml-results']]
             elif kind=='text':
                 commands=[['research/generate_text_demo.py'],['research/text_classifier.py','--train','research/text_demo/train.csv','--test','research/text_demo/test.csv','--out','research/text-model']]
+            elif kind=='js':
+                commands=[['research/javascript/generate_demo.py'],['research/javascript/train_model.py','--train','research/javascript/demo/train.json','--test','research/javascript/demo/test.json','--out','research/javascript/model']]
             else:raise ValueError('Неизвестный вид эксперимента')
             messages=[]
             for args in commands:
@@ -90,7 +92,10 @@ class Handler(SimpleHTTPRequestHandler):
             if not isinstance(source,str) or len(source)>500_000:raise ValueError('Некорректный код')
             process=subprocess.run(['node','research/javascript/inspect.js','-'],input=source,cwd=ROOT,capture_output=True,text=True,encoding='utf-8',errors='replace',timeout=20)
             if process.returncode:raise RuntimeError('AST-разбор недоступен. Установите Node.js и выполните npm install в research/javascript.')
-            result={'status':'ok','analysis':json.loads(process.stdout)}
+            analysis=json.loads(process.stdout)
+            prediction=subprocess.run([sys.executable,'research/javascript/predict_model.py'],input=json.dumps(analysis),cwd=ROOT,capture_output=True,text=True,encoding='utf-8',errors='replace',timeout=20)
+            model_output=json.loads(prediction.stdout) if prediction.returncode==0 else {'status':'unknown','reason':'Модель AST недоступна.'}
+            result={'status':'ok','analysis':analysis,'model':model_output}
         except Exception as exc:result={'status':'unknown','reason':str(exc)[:400]}
         data=json.dumps(result,ensure_ascii=False).encode('utf-8')
         self.send_response(200);self.send_header('Content-Type','application/json; charset=utf-8');self.send_header('Content-Length',str(len(data)));self.end_headers();self.wfile.write(data)

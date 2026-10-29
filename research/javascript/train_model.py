@@ -31,3 +31,4 @@ if __name__=='__main__':
     a.out.mkdir(parents=True,exist_ok=True);joblib.dump(model,a.out/'js-model.joblib')
     report=classification_report(ty,model.predict(tx),output_dict=True,zero_division=0)
     (a.out/'report.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8')
+    print(json.dumps(report,ensure_ascii=False,indent=2))
