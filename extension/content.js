@@ -4,6 +4,7 @@
   const origin = location.origin;
   const isTopFrame = window === window.top;
   let lastKey = '', timer, previousFormOrigins = null, formChanged = false;
+  const dismissedCodes = new Set();
   const sessionEvents = [];
   async function saveEvent(kind,codes) {
     try {await browser.runtime.sendMessage({type:'record-event',kind,codes})} catch {}
@@ -93,7 +94,8 @@
     const storage = await browser.storage.local.get('ordinaryExceptions');
     const exceptions = storage.ordinaryExceptions || {};
     const ordinaryDisabled = isTopFrame && !!exceptions[origin];
-    const shown = ordinaryDisabled ? warnings : result.reasons;
+    const eligible = ordinaryDisabled ? warnings : result.reasons;
+    const shown = force ? eligible : eligible.filter(r=>!dismissedCodes.has(r.code));
     const key = shown.map(r=>r.code).join(',');
     if ((!key && !force) || (!force && key === lastKey)) return;
     lastKey = key;
@@ -109,6 +111,11 @@
     shown.forEach(r=>{const li=document.createElement('li');li.textContent=r.message;list.append(li)});
     if (!shown.length) {const li=document.createElement('li');li.textContent=ordinaryDisabled && result.reasons.length?'Обычные уведомления для этого сайта отключены. Новых признаков угроз правила не обнаружили.':'Доступные признаки не найдены. Безопасность не установлена.';list.append(li)}
     box.append(list);
+    if(obs.hasCard){
+      const locate=document.createElement('button');locate.type='button';locate.textContent='Показать поле карты';
+      locate.onclick=()=>{const field=[...document.querySelectorAll('input')].find(e=>cardPattern.test([e.autocomplete,e.name,e.id,e.placeholder,e.getAttribute('aria-label')].join(' ')));if(!field)return;shown.forEach(r=>dismissedCodes.add(r.code));host.remove();field.scrollIntoView({behavior:'smooth',block:'center'});const old=field.style.outline;field.style.outline='3px solid #e06b00';setTimeout(()=>{field.style.outline=old},5000)};
+      box.append(locate);
+    }
     const note=document.createElement('p');note.textContent='Учебный прототип не блокирует ввод и не гарантирует безопасность. Встроенные формы и скрипты могут быть недоступны.';box.append(note);
     if(sessionEvents.length){const p=document.createElement('p');p.textContent=`Событий в текущей вкладке: ${sessionEvents.length}. Регистрируются только тип и время, без содержимого.`;box.append(p)}
     if(force){
@@ -122,7 +129,7 @@
       check.addEventListener('change',async()=>{const s=await browser.storage.local.get('ordinaryExceptions');const data=s.ordinaryExceptions||{};if(check.checked)data[origin]=true;else delete data[origin];await browser.storage.local.set({ordinaryExceptions:data});});
       const desc=document.createElement('p');desc.textContent='Предупреждения о найденных признаках угроз это не отключает.';box.append(desc);
     }
-    const close=document.createElement('button');close.type='button';close.textContent='Понятно';close.onclick=()=>{saveEvent('closed',[]);host.remove()};box.append(close);
+    const close=document.createElement('button');close.type='button';close.textContent='Закрыть';close.onclick=()=>{shown.forEach(r=>dismissedCodes.add(r.code));saveEvent('closed',[]);host.remove()};box.append(close);
     shadow.append(box);document.documentElement.append(host);
   }
   browser.runtime.onMessage.addListener(message=>{if(message && message.type==='show-analysis'){inspect(true);return Promise.resolve({received:true})}});
