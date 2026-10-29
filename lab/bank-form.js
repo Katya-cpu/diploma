@@ -1,6 +1,14 @@
 (() => {
   'use strict';
   const $=id=>document.getElementById(id);
+  function graph(history,recipient,cut){
+    const svg=$('bank-graph'),ns='http://www.w3.org/2000/svg';svg.replaceChildren();
+    const inputs=history.filter(x=>x.recipient===recipient&&x.time<cut).slice(-16);
+    function element(name,attrs){const e=document.createElementNS(ns,name);for(const [k,v] of Object.entries(attrs))e.setAttribute(k,String(v));return e}
+    const center={x:300,y:150};
+    inputs.forEach((t,i)=>{const angle=2*Math.PI*i/Math.max(inputs.length,1),x=center.x+200*Math.cos(angle),y=center.y+110*Math.sin(angle);svg.append(element('line',{x1:x,y1:y,x2:center.x,y2:center.y,stroke:'#a8bdb1','stroke-width':2}));svg.append(element('circle',{cx:x,cy:y,r:17,fill:'#dbeae0'}));const text=element('text',{x,y:y+4,'text-anchor':'middle','font-size':11});text.textContent=t.sender.slice(0,8);svg.append(text)});
+    svg.append(element('circle',{cx:center.x,cy:center.y,r:27,fill:'#17614e'}));const label=element('text',{x:center.x,y:center.y+4,'text-anchor':'middle','font-size':11,fill:'white'});label.textContent=recipient.slice(0,8);svg.append(label);
+  }
   $('bank-data').value=JSON.stringify([
     {time:1000,sender:'A',recipient:'TEST',amount:500},
     {time:2000,sender:'B',recipient:'TEST',amount:700},
@@ -15,6 +23,7 @@
       const request={time:Number($('bank-time').value),recipient:$('bank-recipient').value.slice(0,32),amount:Number($('bank-amount').value)};
       if(!Number.isFinite(request.time)||!request.recipient||!Number.isFinite(request.amount)||request.amount<0)throw Error('Укажите корректные данные заявки.');
       const r=BankDemo.evaluate(history,request);
+      graph(history,request.recipient,request.time);
       $('bank-form-result').textContent=JSON.stringify(r,null,2)+'\nУчебное решение: '+(r.status==='notice'?'исполнить':'приостановить');
     }catch(e){$('bank-form-result').textContent='Не удалось обработать учебную историю: '+e.message}
   };

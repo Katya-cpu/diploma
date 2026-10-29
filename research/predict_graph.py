@@ -23,6 +23,7 @@ def predict(payload):
         counts[target]+=1;senders[target].add(sender);amounts[target]+=amount;edges.append((ids[sender],target))
         if time>=cut-86400:recent[target]+=1;recent_senders[target].add(sender)
     features=[[math.log1p(v) for v in (counts[i],len(senders[i]),amounts[i],recent[i],len(recent_senders[i]))] for i in range(n)]
+    if not counts[ids[recipient]]:return {'status':'unknown','reason':'Нет истории этого получателя до заявки.'}
     weights=Path(__file__).resolve().parent/'results'/'graphsage.pt'
     if not weights.is_file():return {'status':'unknown','reason':'Веса не найдены. Сначала запустите учебное обучение графовой модели.'}
     model=GraphSAGE();model.load_state_dict(torch.load(weights,map_location='cpu',weights_only=True));model.eval()
