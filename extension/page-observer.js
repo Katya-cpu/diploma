@@ -9,6 +9,17 @@
     const fields = [...document.querySelectorAll('input')];
     const cardFields = fields.filter(e => cardPattern.test([e.autocomplete,e.name,e.id,e.placeholder,e.getAttribute('aria-label')].join(' ')));
     const hasCard = cardFields.length>0;
+    // Read script source only, never execute code or read field values. External scripts and generated code are not covered.
+    let inlineScriptSignal=false;
+    if(hasCard){
+      const scripts=[...document.querySelectorAll('script:not([src])')].slice(0,40);
+      inlineScriptSignal=scripts.some(script=>{
+        const type=(script.getAttribute('type')||'').toLowerCase();
+        if(type && !['text/javascript','application/javascript','module'].includes(type))return false;
+        const source=(script.textContent||'').slice(0,50000);
+        return /cc-number|card.?number|номер карты/i.test(source) && /\.value\b|\[\s*['"]value['"]\s*\]/i.test(source) && /\bfetch\s*\(|\bsendBeacon\s*\(|\bXMLHttpRequest\b/i.test(source);
+      });
+    }
     const hasCvv = fields.some(e=>/cc-csc|\bcvv\b|\bcvc\b|код безопасности|защитный код/i.test([e.autocomplete,e.name,e.id,e.placeholder,e.getAttribute('aria-label')].join(' ')));
     const personalTypes=new Set();
     for(const e of fields){
@@ -58,7 +69,7 @@
     const fingerprint=[...new Set(formOrigins)].sort().join('|');
     if(previousFormOrigins!==null && fingerprint && fingerprint!==previousFormOrigins)formChanged=true;
     if(fingerprint)previousFormOrigins=fingerprint;
-    return {text:pageText, hasCard, hasCvv, personalTypes:[...personalTypes], hasPaymentButton,insecurePaymentLink,misleadingControl,hiddenFinancialControl,insecureForm,externalForm,formDestinationUnknown,coveredControl,hasQr,amountMismatch,changedForm:formChanged};
+    return {text:pageText, hasCard, hasCvv, personalTypes:[...personalTypes], inlineScriptSignal, hasPaymentButton,insecurePaymentLink,misleadingControl,hiddenFinancialControl,insecureForm,externalForm,formDestinationUnknown,coveredControl,hasQr,amountMismatch,changedForm:formChanged};
   }
     return {collect};
   }

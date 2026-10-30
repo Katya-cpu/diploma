@@ -10,6 +10,7 @@
     const urgency = /(срочно|немедленно|только сегодня|иначе.*(отмен|заблок))/i.test(text);
     const contradictory = /(получить деньги|получите деньги|получение средств)/i.test(text) && /(оплатить|комисси|переведите)/i.test(text);
     if (hasCard) reasons.push({code:'card', severity:'notice', message:'Найдено поле для платёжной карты. Проверьте, кому и зачем вы передаёте данные.'});
+    if(o.inlineScriptSignal)reasons.push({code:'inline_script_signal',severity:'warning',message:'Во встроенном скрипте рядом с формой обнаружены признаки обращения к карточному полю и сетевой операции. Их связь и вредоносность не установлены.'});
     const supportedPersonal=['имя','телефон','электронная почта'];
     const personal=Array.isArray(o.personalTypes)?supportedPersonal.filter(x=>o.personalTypes.includes(x)):[];
     if(personal.length)reasons.push({code:'personal_fields',severity:'notice',message:'Найдены поля персональных данных: '+personal.join(', ')+'. Проверьте, кому и зачем вы собираетесь их передать.'});
