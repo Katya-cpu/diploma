@@ -80,7 +80,7 @@
         const p=document.createElement('p');p.textContent=data?.origins?.length?'Сетевые адреса после обнаружения оплаты: '+data.origins.join(', '):'Нет сведений о сетевых адресах после обнаружения оплаты.';box.append(p);
       }).catch(()=>{});
     }
-    if (isTopFrame && (obs.hasCard || obs.hasPaymentButton)) {
+    if (isTopFrame && (obs.hasCard || obs.hasPaymentButton || obs.personalTypes.length)) {
       const label=document.createElement('label'), check=document.createElement('input');
       check.type='checkbox';check.checked=!!exceptions[origin];label.append(check,document.createTextNode(' Не показывать обычное уведомление для этого сайта'));box.append(label);
       check.addEventListener('change',async()=>{const s=await browser.storage.local.get('ordinaryExceptions');const data=s.ordinaryExceptions||{};if(check.checked)data[origin]=true;else delete data[origin];await browser.storage.local.set({ordinaryExceptions:data});});

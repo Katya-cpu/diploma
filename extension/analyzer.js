@@ -10,6 +10,9 @@
     const urgency = /(срочно|немедленно|только сегодня|иначе.*(отмен|заблок))/i.test(text);
     const contradictory = /(получить деньги|получите деньги|получение средств)/i.test(text) && /(оплатить|комисси|переведите)/i.test(text);
     if (hasCard) reasons.push({code:'card', severity:'notice', message:'Найдено поле для платёжной карты. Проверьте, кому и зачем вы передаёте данные.'});
+    const supportedPersonal=['имя','телефон','электронная почта'];
+    const personal=Array.isArray(o.personalTypes)?supportedPersonal.filter(x=>o.personalTypes.includes(x)):[];
+    if(personal.length)reasons.push({code:'personal_fields',severity:'notice',message:'Найдены поля персональных данных: '+personal.join(', ')+'. Проверьте, кому и зачем вы собираетесь их передать.'});
     if (manual) reasons.push({code:'manual_transfer', severity:'warning', message:'Страница предлагает отдельный перевод по номеру карты. Уточните получателя и условия сделки.'});
     if (phoneTransfer) {
       reasons.push({code:'phone_transfer',severity:'warning',message:'Страница предлагает отдельный перевод по номеру телефона. Проверьте получателя и назначение до подтверждения.'});

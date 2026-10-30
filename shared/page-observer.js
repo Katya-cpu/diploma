@@ -10,6 +10,14 @@
     const cardFields = fields.filter(e => cardPattern.test([e.autocomplete,e.name,e.id,e.placeholder,e.getAttribute('aria-label')].join(' ')));
     const hasCard = cardFields.length>0;
     const hasCvv = fields.some(e=>/cc-csc|\bcvv\b|\bcvc\b|код безопасности|защитный код/i.test([e.autocomplete,e.name,e.id,e.placeholder,e.getAttribute('aria-label')].join(' ')));
+    const personalTypes=new Set();
+    for(const e of fields){
+      if(e.type==='hidden'||e.disabled||e.hidden)continue;
+      const meta=[e.autocomplete,e.name,e.id,e.placeholder,e.getAttribute('aria-label')].join(' ').toLowerCase();
+      if(e.type==='email'||/\bemail\b|электронн.{0,8}почт|адрес почты/.test(meta))personalTypes.add('электронная почта');
+      if(e.type==='tel'||/\btel\b|\bphone\b|номер телефона/.test(meta))personalTypes.add('телефон');
+      if(/(^|\s)(name|given-name|family-name)(\s|$)|фамилия|полное имя/.test(meta))personalTypes.add('имя');
+    }
     const buttons = [...document.querySelectorAll('button,input[type=submit],[role=button],a[href]')];
     const hasPaymentButton = buttons.some(e => paymentPattern.test([e.innerText,e.value,e.getAttribute('aria-label')].filter(Boolean).join(' ').slice(0,240)));
     const insecurePaymentLink=buttons.some(e=>{
@@ -50,7 +58,7 @@
     const fingerprint=[...new Set(formOrigins)].sort().join('|');
     if(previousFormOrigins!==null && fingerprint && fingerprint!==previousFormOrigins)formChanged=true;
     if(fingerprint)previousFormOrigins=fingerprint;
-    return {text:pageText, hasCard, hasCvv, hasPaymentButton,insecurePaymentLink,misleadingControl,hiddenFinancialControl,insecureForm,externalForm,formDestinationUnknown,coveredControl,hasQr,amountMismatch,changedForm:formChanged};
+    return {text:pageText, hasCard, hasCvv, personalTypes:[...personalTypes], hasPaymentButton,insecurePaymentLink,misleadingControl,hiddenFinancialControl,insecureForm,externalForm,formDestinationUnknown,coveredControl,hasQr,amountMismatch,changedForm:formChanged};
   }
     return {collect};
   }

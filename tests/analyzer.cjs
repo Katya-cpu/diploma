@@ -6,6 +6,8 @@ const bank=require('../shared/bank.js');
 
 assert.equal(analyzer.analyze({text:'Новая коллекция'}).status,'unknown');
 assert.equal(analyzer.analyze({text:'Оплата заказа',hasCard:true}).status,'notice');
+assert.equal(analyzer.analyze({personalTypes:['имя','телефон']}).status,'notice');
+assert.ok(analyzer.analyze({personalTypes:['имя','неизвестный тип']}).reasons[0].message.includes('имя'));
 assert.equal(analyzer.analyze({text:'Переведите деньги по номеру карты получателя'}).status,'warning');
 assert.equal(analyzer.analyze({text:'Чтобы получить деньги, оплатите комиссию'}).status,'warning');
 assert.equal(analyzer.analyze({text:'Чтобы получить деньги',hasCvv:true}).status,'warning');
