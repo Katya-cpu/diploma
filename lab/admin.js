@@ -1,25 +1,14 @@
 (() => {
   'use strict';
-  const scenarios=[
-    ['card.html','Карточная форма','Обычное поле карты: уведомление о платёжном действии.'],
-    ['phishing.html','Фишинг: комиссия и перевод','Пример: требование перевода и оплаты комиссии для получения денег.'],
-    ['transparent-button.html','Прозрачная кнопка','Почти прозрачный активный элемент с платёжной подписью.'],
-    ['overlay.html','Перекрытие карточного поля','Другой элемент закрывает центр поля.'],
-    ['button-mismatch.html','Несовпадение подписей','Видимая подпись и доступное описание кнопки могут указывать на разные действия.'],
-    ['amount-mismatch.html','Несовпадение сумм','Видимая сумма и поддерживаемое скрытое поле формы различаются.'],
-    ['phone-transfer.html','Перевод по телефону','Учебная инструкция о переводе по номеру телефона.'],
-    ['receive-cvv.html','Получение денег и CVV','Страница одновременно говорит о получении денег и содержит поле защитного кода.'],
-    ['insecure.html','HTTP-адрес формы','Карточная форма с незашифрованным адресом.'],
-    ['insecure-payment-link.html','HTTP-адрес оплаты','Платёжная ссылка ведёт на незашифрованный адрес.'],
-    ['dynamic.html','Изменение формы','После изменения страницы нажмите проверку снова: наблюдатель сравнит доступные адреса формы.'],
-    ['qr.html','Учебный QR','QR содержит сумму, отличающуюся от суммы страницы; проверка зависит от доступности изображения.'],
-    ['personal-data.html','Персональные данные — заготовка','Отдельной проверки персональных данных пока нет.']
-  ];
+  const scenarios=window.ScenarioCatalog;
   const select=document.getElementById('fixture'), frame=document.getElementById('preview'),run=document.getElementById('run');
-  scenarios.forEach(([file,title])=>{const o=document.createElement('option');o.value=file;o.textContent=title;select.append(o)});
+  scenarios.forEach(({file,title})=>{const o=document.createElement('option');o.value=file;o.textContent=title;select.append(o)});
   let observer,version=0;
-  function load(){const n=++version,record=scenarios.find(x=>x[0]===select.value);observer=null;run.disabled=true;
-    document.getElementById('description').textContent=record[2];document.getElementById('standalone').href='/fixtures/'+record[0];document.getElementById('status').textContent='Загрузка учебной страницы…';document.getElementById('reasons').replaceChildren();document.getElementById('limits').textContent='';frame.src='/fixtures/'+record[0];frame.dataset.version=String(n)}
+  function load(){const n=++version,record=scenarios.find(x=>x.file===select.value);observer=null;run.disabled=true;
+    document.getElementById('description').textContent=record.kind;
+    document.getElementById('check-data').textContent=record.data;document.getElementById('check-method').textContent=record.method;document.getElementById('check-limit').textContent=record.limit;
+    const evidence=document.getElementById('check-source');evidence.hidden=!record.source;if(record.source)evidence.href=record.source;
+    document.getElementById('standalone').href='/fixtures/'+record.file;document.getElementById('status').textContent='Загрузка учебной страницы…';document.getElementById('reasons').replaceChildren();document.getElementById('limits').textContent='';frame.src='/fixtures/'+record.file;frame.dataset.version=String(n)}
   function script(doc,src){return new Promise((resolve,reject)=>{const node=doc.createElement('script');node.src=src;node.onload=resolve;node.onerror=reject;doc.head.append(node)})}
   frame.onload=async()=>{const n=Number(frame.dataset.version);try{
     const doc=frame.contentDocument;
