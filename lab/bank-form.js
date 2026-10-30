@@ -37,7 +37,7 @@
       const result=await response.json();
       if(result.status!=='hypothesis'){$('bank-form-result').textContent=result.reason||'Учебная модель недоступна.';return}
       const decision={suspend:'приостановить',proceed:'продолжить',unknown:'не определено — порог не выбран'}[result.decision]||'не определено';
-      $('bank-form-result').textContent=`Решение учебной модели: ${decision}\nВыход модели: ${result.score.toFixed(3)}\nПорог: ${result.threshold===null?'нет':result.threshold}\nПереводов до заявки: ${result.count_before}\n${result.note}`;
+      $('bank-form-result').textContent=`Решение учебной модели: ${decision}\nВыход модели: ${result.score.toFixed(3)}\nПорог: ${result.threshold===null?'нет':result.threshold.toFixed(2)}\nПереводов до заявки: ${result.count_before}\n${result.note}`;
     }catch(e){$('bank-form-result').textContent='Не удалось выполнить учебный графовый анализ.'}
   };
 })();
