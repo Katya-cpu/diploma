@@ -12,9 +12,11 @@ import subprocess
 import sys
 import shutil
 import socket
+import threading
 
 ROOT = Path(__file__).resolve().parent
 os.chdir(ROOT)
+RESEARCH_LOCK=threading.Lock()
 
 class Handler(SimpleHTTPRequestHandler):
     def end_headers(self):
@@ -122,12 +124,15 @@ class Handler(SimpleHTTPRequestHandler):
     def research_demo(self):
         if self.headers.get('Origin') not in ('http://127.0.0.1:8765','http://localhost:8765'):
             self.send_error(403); return
+        if not RESEARCH_LOCK.acquire(blocking=False):
+            data=json.dumps({'status':'unknown','reason':'Другой эксперимент уже выполняется. Дождитесь его завершения.'},ensure_ascii=False).encode('utf-8')
+            self.send_response(200);self.send_header('Content-Type','application/json; charset=utf-8');self.send_header('Content-Length',str(len(data)));self.end_headers();self.wfile.write(data);return
         try:
             size=int(self.headers.get('Content-Length','0'))
             if size<=0 or size>1024:raise ValueError('Некорректный запрос')
             payload=json.loads(self.rfile.read(size));kind=payload.get('kind')
             options=[]
-            if kind in ('graph','aml','paysim'):
+            if kind in ('graph','aml','paysim','paysim-transaction'):
                 epochs=payload.get('epochs',15);lr=payload.get('learning_rate',0.002);fpr=payload.get('max_fpr',0.05)
                 if type(epochs) is not int or not 1<=epochs<=100 or type(lr) not in (int,float) or not 0.00001<=lr<=0.1 or type(fpr) not in (int,float) or not 0<=fpr<=0.5:raise ValueError('Некорректные параметры модели.')
                 options=['--epochs',str(epochs),'--learning-rate',str(lr),'--max-fpr',str(fpr)]
@@ -137,10 +142,12 @@ class Handler(SimpleHTTPRequestHandler):
                 commands=[['research/unpack_misata.py'],['research/adapt_misata.py','--input','research/data/misata/transactions.csv','--output','research/data/misata/adapted.csv'],['research/train_models.py','--input','research/data/misata/adapted.csv','--output','research/aml-results',*options]]
             elif kind=='paysim-download':
                 commands=[['research/download_paysim.py']]
-            elif kind=='paysim':
+            elif kind in ('paysim','paysim-transaction'):
                 rate=payload.get('sample_rate',0.01)
                 if type(rate) not in (int,float) or not 0.001<=rate<=0.2:raise ValueError('Доля PaySim должна быть от 0.001 до 0.2.')
-                commands=[['research/adapt_paysim.py','--input','research/data/paysim/paysim.zip','--output','research/data/paysim/sample.csv','--rate',str(rate)],['research/train_models.py','--input','research/data/paysim/sample.csv','--output','research/paysim-results',*options]]
+                model_script='research/train_paysim_transactions.py' if kind=='paysim-transaction' else 'research/train_models.py'
+                model_output='research/paysim-transactions-results' if kind=='paysim-transaction' else 'research/paysim-results'
+                commands=[['research/adapt_paysim.py','--input','research/data/paysim/paysim.zip','--output','research/data/paysim/sample.csv','--rate',str(rate)],[model_script,'--input','research/data/paysim/sample.csv','--output',model_output,*options]]
             elif kind=='text':
                 commands=[['research/generate_text_demo.py'],['research/text_classifier.py','--train','research/text_demo/train.csv','--test','research/text_demo/test.csv','--out','research/text-model']]
             elif kind=='js':
@@ -156,6 +163,8 @@ class Handler(SimpleHTTPRequestHandler):
             result={'status':'ok','output':'\n'.join(messages),'note':note}
         except Exception as exc:
             result={'status':'unknown','reason':str(exc)[:3500]}
+        finally:
+            RESEARCH_LOCK.release()
         data=json.dumps(result,ensure_ascii=False).encode('utf-8')
         self.send_response(200);self.send_header('Content-Type','application/json; charset=utf-8');self.send_header('Content-Length',str(len(data)));self.end_headers();self.wfile.write(data)
 

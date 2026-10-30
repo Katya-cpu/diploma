@@ -25,4 +25,18 @@ class TestResearchOutput(unittest.TestCase):
         finally:
             server.shutdown();server.server_close();worker.join()
 
+    def test_transaction_model_uses_expected_command(self):
+        server=ThreadingHTTPServer(('127.0.0.1',0),partial(start_lab.Handler,directory=str(start_lab.ROOT/'lab')))
+        worker=threading.Thread(target=server.serve_forever,daemon=True);worker.start()
+        try:
+            with patch.object(start_lab.subprocess,'run',return_value=SimpleNamespace(stdout='OK',stderr='',returncode=0)) as run:
+                c=http.client.HTTPConnection('127.0.0.1',server.server_port,timeout=10)
+                body=json.dumps({'kind':'paysim-transaction','sample_rate':0.01,'epochs':2,'learning_rate':0.002,'max_fpr':0.05})
+                c.request('POST','/api/research-demo',body,{'Host':'localhost:8765','Origin':'http://localhost:8765','Content-Type':'application/json'})
+                result=json.loads(c.getresponse().read());self.assertEqual(result['status'],'ok');self.assertEqual(run.call_count,2)
+                self.assertIn('research/train_paysim_transactions.py',run.call_args_list[1].args[0])
+                self.assertIn('--epochs',run.call_args_list[1].args[0])
+        finally:
+            server.shutdown();server.server_close();worker.join()
+
 if __name__=='__main__':unittest.main()
