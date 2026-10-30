@@ -24,7 +24,8 @@
       if(!Number.isFinite(request.time)||!request.recipient||!Number.isFinite(request.amount)||request.amount<0)throw Error('Укажите корректные данные заявки.');
       const r=BankDemo.evaluate(history,request);
       graph(history,request.recipient,request.time);
-      $('bank-form-result').textContent=JSON.stringify(r,null,2)+'\nУчебное решение: '+(r.status==='notice'?'исполнить':'приостановить');
+      const decision=r.status==='notice'?'продолжить':r.status==='warning'?'приостановить':'не определено — недостаточно истории';
+      $('bank-form-result').textContent=`Учебное решение: ${decision}\nПредыдущих переводов: ${r.count}\n${r.warnings.join('\n')}\n${r.note||''}`;
     }catch(e){$('bank-form-result').textContent='Не удалось обработать учебную историю: '+e.message}
   };
   $('graph-evaluate').onclick=async()=>{
@@ -33,7 +34,10 @@
       if(!Array.isArray(history)||history.length>500)throw Error('Нужен массив до 500 учебных переводов.');
       const request={time:Number($('bank-time').value),recipient:$('bank-recipient').value.slice(0,32),amount:Number($('bank-amount').value)};
       const response=await fetch('/api/graph-score',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({history,request})});
-      $('bank-form-result').textContent=JSON.stringify(await response.json(),null,2);
+      const result=await response.json();
+      if(result.status!=='hypothesis'){$('bank-form-result').textContent=result.reason||'Учебная модель недоступна.';return}
+      const decision={suspend:'приостановить',proceed:'продолжить',unknown:'не определено — порог не выбран'}[result.decision]||'не определено';
+      $('bank-form-result').textContent=`Решение учебной модели: ${decision}\nВыход модели: ${result.score.toFixed(3)}\nПорог: ${result.threshold===null?'нет':result.threshold}\nПереводов до заявки: ${result.count_before}\n${result.note}`;
     }catch(e){$('bank-form-result').textContent='Не удалось выполнить учебный графовый анализ.'}
   };
 })();

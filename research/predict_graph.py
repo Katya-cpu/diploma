@@ -9,6 +9,8 @@ import sys
 from pathlib import Path
 import torch
 from graph_model import GraphSAGE
+if hasattr(sys.stdout,'reconfigure'):
+    sys.stdout.reconfigure(encoding='utf-8')
 
 def predict(payload):
     request=payload['request'];cut=float(request['time']);recipient=str(request['recipient'])
@@ -30,8 +32,16 @@ def predict(payload):
     with torch.no_grad():
         scores=model(torch.tensor(features,dtype=torch.float32),torch.tensor(edges,dtype=torch.long).t())
         score=float(torch.sigmoid(scores[ids[recipient]]))
+    metrics_file=weights.parent/'metrics.json';threshold=None
+    if metrics_file.is_file():
+        try:
+            candidate=json.loads(metrics_file.read_text(encoding='utf-8')).get('models',{}).get('graphsage',{}).get('threshold')
+            if isinstance(candidate,(int,float)) and not isinstance(candidate,bool) and math.isfinite(candidate) and 0<=candidate<=1:threshold=float(candidate)
+        except (ValueError,OSError,TypeError):pass
+    decision='unknown' if threshold is None else ('suspend' if score>=threshold else 'proceed')
     return {'status':'hypothesis','score':score,'count_before':counts[ids[recipient]],
-            'note':'Учебная модель на искусственных данных; показатель не откалиброван, мошенничество не установлено.'}
+            'threshold':threshold,'decision':decision,
+            'note':'Учебная модель на искусственных данных; показатель не откалиброван, мошенничество не установлено. Порог получен на учебной валидации.'}
 
 if __name__=='__main__':
     try: print(json.dumps(predict(json.load(sys.stdin)),ensure_ascii=False))
