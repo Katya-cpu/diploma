@@ -125,11 +125,16 @@ class Handler(SimpleHTTPRequestHandler):
         try:
             size=int(self.headers.get('Content-Length','0'))
             if size<=0 or size>1024:raise ValueError('Некорректный запрос')
-            kind=json.loads(self.rfile.read(size)).get('kind')
+            payload=json.loads(self.rfile.read(size));kind=payload.get('kind')
+            options=[]
+            if kind in ('graph','aml'):
+                epochs=payload.get('epochs',15);lr=payload.get('learning_rate',0.002);fpr=payload.get('max_fpr',0.05)
+                if type(epochs) is not int or not 1<=epochs<=100 or type(lr) not in (int,float) or not 0.00001<=lr<=0.1 or type(fpr) not in (int,float) or not 0<=fpr<=0.5:raise ValueError('Некорректные параметры модели.')
+                options=['--epochs',str(epochs),'--learning-rate',str(lr),'--max-fpr',str(fpr)]
             if kind=='graph':
-                commands=[['research/generate_demo.py'],['research/train_models.py','--input','research/demo_data/transactions.csv','--output','research/results']]
+                commands=[['research/generate_demo.py'],['research/train_models.py','--input','research/demo_data/transactions.csv','--output','research/results',*options]]
             elif kind=='aml':
-                commands=[['research/unpack_misata.py'],['research/adapt_misata.py','--input','research/data/misata/transactions.csv','--output','research/data/misata/adapted.csv'],['research/train_models.py','--input','research/data/misata/adapted.csv','--output','research/aml-results']]
+                commands=[['research/unpack_misata.py'],['research/adapt_misata.py','--input','research/data/misata/transactions.csv','--output','research/data/misata/adapted.csv'],['research/train_models.py','--input','research/data/misata/adapted.csv','--output','research/aml-results',*options]]
             elif kind=='text':
                 commands=[['research/generate_text_demo.py'],['research/text_classifier.py','--train','research/text_demo/train.csv','--test','research/text_demo/test.csv','--out','research/text-model']]
             elif kind=='js':

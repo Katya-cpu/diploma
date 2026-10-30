@@ -44,13 +44,13 @@ def snapshots(frame):
         result.append({'day':str(cut),'features':features,'edges':edges,'ids':ids,'labels':y.to_numpy(dtype=np.int64),'accounts':accounts})
     return result
 
-def select_threshold(y,prob):
+def select_threshold(y,prob,max_fpr=0.05):
     if len(y)==0 or len(set(y))<2:return None
     scores=np.asarray(prob);labels=np.asarray(y);best=None
     for threshold in np.linspace(0,1,101):
         pred=scores>=threshold;negative=labels==0;positive=labels==1
         fpr=float(pred[negative].mean())
-        if fpr>0.05:continue
+        if fpr>max_fpr:continue
         tp=int((pred&positive).sum());fp=int((pred&negative).sum());fn=int((~pred&positive).sum())
         f1=(2*tp/(2*tp+fp+fn)) if (2*tp+fp+fn) else 0.0
         if best is None or f1>best[0]:best=(f1,float(threshold))
@@ -65,7 +65,7 @@ def metrics(y,prob,threshold):
     result.update({'precision':float(precision),'recall':float(recall),'f1':float(f1),'fpr':float(pred[np.asarray(y)==0].mean())})
     return result
 
-def train(input_csv, output_dir):
+def train(input_csv, output_dir, epochs=15, learning_rate=0.002, max_fpr=0.05):
     import torch
     from torch import nn
     torch.manual_seed(42);np.random.seed(42)
@@ -93,17 +93,17 @@ def train(input_csv, output_dir):
     xtrain,ytrain=matrix(trainset);xtest,ytest=matrix(test)
     xvalid,yvalid=matrix(valid) if valid else (None,np.asarray([]))
     if len(set(ytrain))<2:raise ValueError('Обучающая выборка содержит один класс; измените исходные данные.')
-    results={'split':'chronological days and disjoint recipient hash groups 60/20/20','target_labels':sorted(df.scenario_label.astype(str).unique().tolist()),'counts':{'train':len(trainset),'validation':len(valid),'test':len(test)},'models':{}}
+    results={'split':'chronological days and disjoint recipient hash groups 60/20/20','parameters':{'epochs':epochs,'learning_rate':learning_rate,'max_fpr':max_fpr},'target_labels':sorted(df.scenario_label.astype(str).unique().tolist()),'counts':{'train':len(trainset),'validation':len(valid),'test':len(test)},'models':{}}
     for name,model in [('logistic',make_pipeline(StandardScaler(),LogisticRegression(class_weight='balanced',max_iter=300))),
                        ('forest',RandomForestClassifier(n_estimators=120,class_weight='balanced',random_state=42,n_jobs=-1))]:
-        model.fit(xtrain,ytrain);threshold=select_threshold(yvalid,model.predict_proba(xvalid)[:,1]) if valid else None
+        model.fit(xtrain,ytrain);threshold=select_threshold(yvalid,model.predict_proba(xvalid)[:,1],max_fpr) if valid else None
         results['models'][name]=metrics(ytest,model.predict_proba(xtest)[:,1],threshold)
 
-    model=GraphSAGE();optim=torch.optim.Adam(model.parameters(),lr=.002)
+    model=GraphSAGE();optim=torch.optim.Adam(model.parameters(),lr=learning_rate)
     weight=torch.tensor([max(1.0, float((ytrain==0).sum()/max(1,(ytrain==1).sum())))])
     lossfn=nn.BCEWithLogitsLoss(pos_weight=weight)
     def tensors(d):return (torch.tensor(d['features']),torch.tensor(d['edges']),torch.tensor(d['ids']),torch.tensor(d['labels'],dtype=torch.float32))
-    for epoch in range(15):
+    for epoch in range(epochs):
         model.train()
         for day in trainset:
             x,e,idx,y=tensors(day);optim.zero_grad();loss=lossfn(model(x,e)[idx],y);loss.backward();optim.step()
@@ -113,7 +113,7 @@ def train(input_csv, output_dir):
             x,e,idx,y=tensors(day);validation_probs.extend(torch.sigmoid(model(x,e)[idx]).tolist());validation_labels.extend(y.tolist())
         for day in test:
             x,e,idx,y=tensors(day);probs.extend(torch.sigmoid(model(x,e)[idx]).tolist());labels.extend(y.tolist())
-    threshold=select_threshold(validation_labels,validation_probs)
+    threshold=select_threshold(validation_labels,validation_probs,max_fpr)
     results['models']['graphsage']=metrics(labels,probs,threshold)
     results['limitations']=['Synthetic data only; no real-world deployment claim.','Labels are scenario labels, not evidence about real accounts.',
        'Graphs contain historical edges only; day-level prediction is not a per-transfer online evaluation.',
@@ -125,5 +125,7 @@ def train(input_csv, output_dir):
     print(json.dumps(results,indent=2,ensure_ascii=False))
 
 if __name__=='__main__':
-    parser=argparse.ArgumentParser();parser.add_argument('--input',type=Path,required=True);parser.add_argument('--output',type=Path,default=Path('research/results'));args=parser.parse_args()
-    train(args.input,args.output)
+    parser=argparse.ArgumentParser();parser.add_argument('--input',type=Path,required=True);parser.add_argument('--output',type=Path,default=Path('research/results'))
+    parser.add_argument('--epochs',type=int,default=15);parser.add_argument('--learning-rate',type=float,default=0.002);parser.add_argument('--max-fpr',type=float,default=0.05);args=parser.parse_args()
+    if not 1<=args.epochs<=100 or not 0.00001<=args.learning_rate<=0.1 or not 0<=args.max_fpr<=0.5:parser.error('Некорректные параметры обучения')
+    train(args.input,args.output,args.epochs,args.learning_rate,args.max_fpr)
