@@ -22,7 +22,7 @@
       if(!image.complete||image.naturalWidth<80||image.naturalHeight<80)continue;
       const raw=await w.LocalQr.decode(image).catch(()=>null);if(!raw)continue;
       const payment=w.PaymentDetails.decodePaymentLink(raw),comparison=w.PaymentDetails.compare(obs.text,payment);
-      obs.qrMismatch=comparison.status==='mismatch';obs.qrChecked=comparison.status==='match';break;
+      obs.qrMismatch=comparison.status==='mismatch';obs.qrChecked=comparison.status==='match';obs.qrSbp=payment.format==='Ссылка, похожая на формат СБП';obs.qrSubscription=!!payment.subscriptionHost;obs.qrInsecure=payment.protocol==='http:';break;
     }}
     const result=w.PaymentAnalyzer.analyze(obs);document.getElementById('status').textContent={warning:'Есть признаки для проверки',notice:'Есть информационные признаки',unknown:'Признаки не обнаружены; безопасность неизвестна'}[result.status];
     const list=document.getElementById('reasons');list.replaceChildren(...result.reasons.map(reason=>{const li=document.createElement('li');li.textContent=reason.message;return li}));

@@ -34,6 +34,8 @@
     if (o.hasQr) reasons.push({code:'qr', severity:'notice', message:o.qrChecked?'Одна из сумм страницы совпадает с суммой распознанного платёжного QR. Получатель и безопасность не подтверждены.':'Возможно присутствует QR-код. Его содержимое не удалось надёжно сопоставить; используйте локальную лабораторию для ручного анализа.'});
     if (o.qrMismatch) reasons.push({code:'qr_mismatch',severity:'warning',message:'Сумма распознанного платёжного QR не совпала с найденными суммами страницы. Проверьте назначение и контекст.'});
     if (o.qrReported) reasons.push({code:'qr_reported',severity:'warning',message:'Домен ссылки в QR есть в вашем локальном списке сообщений об угрозах. Проверьте источник: получатель и мошенничество не подтверждены.'});
+    if (o.qrSbp) reasons.push({code:'qr_sbp',severity:'notice',message:'QR похож по формату на ссылку СБП. До подтверждения сверьте получателя и сумму в приложении банка: здесь они не установлены.'});
+    if (o.qrSubscription) reasons.push({code:'qr_subscription',severity:'warning',message:'Ссылка может относиться к привязке счёта или подписке. Проверьте её назначение и условия в платёжном приложении.'});
     if (o.qrInsecure) reasons.push({code:'qr_insecure',severity:'warning',message:'Ссылка из QR использует HTTP без шифрования. Адрес и получатель не подтверждены.'});
     if (o.amountMismatch) reasons.push({code:'amount_mismatch',severity:'warning',message:'Единственная видимая сумма в рублях отличается от указанной в поддерживаемом скрытом поле формы. Проверьте назначение каждой суммы.'});
     if (o.changedForm) reasons.push({code:'changed_form',severity:'warning',message:'У доступной карточной формы изменился адрес обработки. Это может быть обычным перенаправлением; проверьте ситуацию.'});

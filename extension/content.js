@@ -33,6 +33,7 @@
         const reputation=await browser.storage.local.get('reportedHosts');
         obs.qrReported=PaymentDetails.checkRecipient(payment,reputation.reportedHosts).status==='reported';
         obs.qrInsecure=payment.protocol==='http:';
+        obs.qrSbp=payment.format==='Ссылка, похожая на формат СБП';obs.qrSubscription=!!payment.subscriptionHost;
         obs.qrMismatch=comparison.status==='mismatch';obs.qrChecked=comparison.status==='match';break;
       }
     }catch{}

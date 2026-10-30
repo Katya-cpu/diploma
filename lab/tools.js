@@ -9,6 +9,8 @@
     const lines=[parsed.status==='unknown'?'Формат не распознан: '+parsed.reason:'Формат: '+parsed.format];
     if(parsed.recipient)lines.push('Имя получателя в QR: '+parsed.recipient+' — не подтверждено.');
     if(parsed.host)lines.push('Адрес ссылки: '+parsed.host+' — принадлежность и репутация не установлены.');
+    if(parsed.format==='Ссылка, похожая на формат СБП')lines.push('Платёжное приложение банка может показать реквизиты до подтверждения. Не подтверждайте перевод, пока не сверили получателя и сумму. Мы не запрашивали данные СБП.');
+    if(parsed.subscriptionHost)lines.push('Возможен сценарий привязки счёта или подписки: условия нужно проверить в платёжном приложении.');
     if(parsed.amount!=null)lines.push('Сумма в QR: '+parsed.amount+' '+(parsed.currency||'(валюта не установлена)'));
     lines.push('Сравнение сумм: '+comparison.reason);
     const hosts=Object.create(null);

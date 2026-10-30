@@ -34,6 +34,13 @@
     try {
       const url=new URL(input);
       if(!['https:','http:'].includes(url.protocol)) return {status:'unknown',reason:'Неизвестная схема ссылки; назначение не установлено.'};
+      const sbpHost=['qr.nspk.ru','sub.nspk.ru'].includes(url.hostname.toLowerCase());
+      const sbpId=/^\/[a-z0-9]{32}$/i.test(url.pathname);
+      if(url.protocol==='https:' && sbpHost && sbpId && !url.username && !url.password && !url.port){
+        return {status:'partial',format:'Ссылка, похожая на формат СБП',host:url.hostname,protocol:url.protocol,recipient:null,amount:null,currency:null,
+          subscriptionHost:url.hostname.toLowerCase()==='sub.nspk.ru',
+          reason:'Формат ссылки похож на СБП. Её существование, назначение и получатель не проверены; данные могут быть доступны только в платёжном приложении.'};
+      }
       const p=url.searchParams, rawAmount=p.get('sum')||p.get('amount');
       const value=rawAmount!==null && /^\d+(?:[.,]\d+)?$/.test(rawAmount)?Number(rawAmount.replace(',','.')):null;
       const currency=p.get('currency')||null;
