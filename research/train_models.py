@@ -31,7 +31,8 @@ def snapshots(frame):
         history=frame[frame.time<cut]
         if history.empty: continue
         incoming=history.groupby('recipient').agg(count=('sender','size'),senders=('sender','nunique'),total=('amount','sum'))
-        recent=history[history.time>=cut-pd.Timedelta(days=1)].groupby('recipient').agg(recent=('sender','size'),recent_senders=('sender','nunique'))
+        recent_cut=cut.to_pydatetime()-timedelta(days=1)
+        recent=history[history.time>=recent_cut].groupby('recipient').agg(recent=('sender','size'),recent_senders=('sender','nunique'))
         features=np.zeros((len(accounts),5),dtype=np.float32)
         for account,row in incoming.iterrows():
             idx=nodes[account];features[idx,:3]=[row['count'],row['senders'],row['total']]

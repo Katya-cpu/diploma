@@ -149,7 +149,8 @@ class Handler(SimpleHTTPRequestHandler):
             messages=[]
             for args in commands:
                 completed=subprocess.run([sys.executable,*args],cwd=ROOT,capture_output=True,text=True,encoding='utf-8',errors='replace',timeout=900,env={**os.environ,'PYTHONIOENCODING':'utf-8'})
-                messages.append((completed.stdout+'\n'+completed.stderr)[-12000:])
+                # Keep the model's result visible even when libraries produce lengthy warnings.
+                messages.append((completed.stderr[-1500:]+'\n'+completed.stdout[-10000:])[-12000:])
                 if completed.returncode:raise RuntimeError('Не удалось завершить шаг. Установите зависимости из research/requirements.txt.\n'+messages[-1][-3000:])
             note='Полученные показатели относятся к искусственным учебным данным. Метки PaySim и AML не являются метками мошеннической покупки.'
             result={'status':'ok','output':'\n'.join(messages),'note':note}
