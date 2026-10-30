@@ -127,7 +127,7 @@ class Handler(SimpleHTTPRequestHandler):
             if size<=0 or size>1024:raise ValueError('Некорректный запрос')
             payload=json.loads(self.rfile.read(size));kind=payload.get('kind')
             options=[]
-            if kind in ('graph','aml'):
+            if kind in ('graph','aml','paysim'):
                 epochs=payload.get('epochs',15);lr=payload.get('learning_rate',0.002);fpr=payload.get('max_fpr',0.05)
                 if type(epochs) is not int or not 1<=epochs<=100 or type(lr) not in (int,float) or not 0.00001<=lr<=0.1 or type(fpr) not in (int,float) or not 0<=fpr<=0.5:raise ValueError('Некорректные параметры модели.')
                 options=['--epochs',str(epochs),'--learning-rate',str(lr),'--max-fpr',str(fpr)]
@@ -135,6 +135,12 @@ class Handler(SimpleHTTPRequestHandler):
                 commands=[['research/generate_demo.py'],['research/train_models.py','--input','research/demo_data/transactions.csv','--output','research/results',*options]]
             elif kind=='aml':
                 commands=[['research/unpack_misata.py'],['research/adapt_misata.py','--input','research/data/misata/transactions.csv','--output','research/data/misata/adapted.csv'],['research/train_models.py','--input','research/data/misata/adapted.csv','--output','research/aml-results',*options]]
+            elif kind=='paysim-download':
+                commands=[['research/download_paysim.py']]
+            elif kind=='paysim':
+                rate=payload.get('sample_rate',0.01)
+                if type(rate) not in (int,float) or not 0.001<=rate<=0.2:raise ValueError('Доля PaySim должна быть от 0.001 до 0.2.')
+                commands=[['research/adapt_paysim.py','--input','research/data/paysim/paysim.zip','--output','research/data/paysim/sample.csv','--rate',str(rate)],['research/train_models.py','--input','research/data/paysim/sample.csv','--output','research/paysim-results',*options]]
             elif kind=='text':
                 commands=[['research/generate_text_demo.py'],['research/text_classifier.py','--train','research/text_demo/train.csv','--test','research/text_demo/test.csv','--out','research/text-model']]
             elif kind=='js':
@@ -142,10 +148,10 @@ class Handler(SimpleHTTPRequestHandler):
             else:raise ValueError('Неизвестный вид эксперимента')
             messages=[]
             for args in commands:
-                completed=subprocess.run([sys.executable,*args],cwd=ROOT,capture_output=True,text=True,encoding='utf-8',errors='replace',timeout=900)
+                completed=subprocess.run([sys.executable,*args],cwd=ROOT,capture_output=True,text=True,encoding='utf-8',errors='replace',timeout=900,env={**os.environ,'PYTHONIOENCODING':'utf-8'})
                 messages.append((completed.stdout+'\n'+completed.stderr)[-12000:])
                 if completed.returncode:raise RuntimeError('Не удалось завершить шаг. Установите зависимости из research/requirements.txt.\n'+messages[-1][-3000:])
-            note='Полученные показатели относятся к искусственным учебным данным. Метки AML не являются метками мошеннической покупки.'
+            note='Полученные показатели относятся к искусственным учебным данным. Метки PaySim и AML не являются метками мошеннической покупки.'
             result={'status':'ok','output':'\n'.join(messages),'note':note}
         except Exception as exc:
             result={'status':'unknown','reason':str(exc)[:3500]}

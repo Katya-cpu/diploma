@@ -26,22 +26,28 @@ def predict(payload):
         if time>=cut-86400:recent[target]+=1;recent_senders[target].add(sender)
     features=[[math.log1p(v) for v in (counts[i],len(senders[i]),amounts[i],recent[i],len(recent_senders[i]))] for i in range(n)]
     if not counts[ids[recipient]]:return {'status':'unknown','reason':'Нет истории этого получателя до заявки.'}
-    weights=Path(__file__).resolve().parent/'results'/'graphsage.pt'
-    if not weights.is_file():return {'status':'unknown','reason':'Веса не найдены. Сначала запустите учебное обучение графовой модели.'}
+    selection=payload.get('model','demo')
+    directories={'demo':'results','paysim':'paysim-results'}
+    if selection not in directories:return {'status':'unknown','reason':'Неизвестная модель.'}
+    weights=Path(__file__).resolve().parent/directories[selection]/'graphsage.pt'
+    if not weights.is_file():return {'status':'unknown','reason':'Веса выбранной модели не найдены. Сначала запустите соответствующее обучение.'}
     model=GraphSAGE();model.load_state_dict(torch.load(weights,map_location='cpu',weights_only=True));model.eval()
     with torch.no_grad():
         scores=model(torch.tensor(features,dtype=torch.float32),torch.tensor(edges,dtype=torch.long).t())
         score=float(torch.sigmoid(scores[ids[recipient]]))
-    metrics_file=weights.parent/'metrics.json';threshold=None
+    metrics_file=weights.parent/'metrics.json';threshold=None;test_positive=None;test_recall=None
     if metrics_file.is_file():
         try:
-            candidate=json.loads(metrics_file.read_text(encoding='utf-8')).get('models',{}).get('graphsage',{}).get('threshold')
+            metrics=json.loads(metrics_file.read_text(encoding='utf-8')).get('models',{}).get('graphsage',{})
+            candidate=metrics.get('threshold');test_positive=metrics.get('positive');test_recall=metrics.get('recall')
             if isinstance(candidate,(int,float)) and not isinstance(candidate,bool) and math.isfinite(candidate) and 0<=candidate<=1:threshold=float(candidate)
         except (ValueError,OSError,TypeError):pass
-    decision='unknown' if threshold is None else ('suspend' if score>=threshold else 'proceed')
+    failed_test=isinstance(test_positive,int) and test_positive>0 and isinstance(test_recall,(float,int)) and test_recall==0
+    decision='unknown' if threshold is None or failed_test else ('suspend' if score>=threshold else 'proceed')
+    warning='На учебном тесте модель не обнаружила ни одного положительного случая, поэтому решение не выдаётся.' if failed_test else ''
     return {'status':'hypothesis','score':score,'count_before':counts[ids[recipient]],
-            'threshold':threshold,'decision':decision,
-            'note':'Учебная модель на искусственных данных; показатель не откалиброван, мошенничество не установлено. Порог получен на учебной валидации.'}
+            'threshold':threshold,'decision':decision,'warning':warning,
+            'note':'Учебная модель на искусственных данных ('+selection+'); показатель не откалиброван, мошенничество не установлено. Порог получен на учебной валидации.'}
 
 if __name__=='__main__':
     try: print(json.dumps(predict(json.load(sys.stdin)),ensure_ascii=False))

@@ -39,7 +39,7 @@ def snapshots(frame):
         features=np.log1p(features)
         edges=np.asarray([(nodes[s],nodes[r]) for s,r in zip(history.sender,history.recipient)],dtype=np.int64).T
         today=frame[frame.day==cut]
-        y=today.groupby('recipient').scenario_label.apply(lambda s:int(s.isin(['simulated_scam','aml_suspicious']).any()))
+        y=today.groupby('recipient').scenario_label.apply(lambda s:int(s.isin(['simulated_scam','aml_suspicious','paysim_fraud']).any()))
         ids=np.asarray([nodes[a] for a in y.index],dtype=np.int64)
         result.append({'day':str(cut),'features':features,'edges':edges,'ids':ids,'labels':y.to_numpy(dtype=np.int64),'accounts':accounts})
     return result

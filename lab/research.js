@@ -5,7 +5,8 @@
     button.disabled=true;result.textContent='Идёт учебный эксперимент. Это может занять несколько минут. Закрытие страницы не обязательно отменит обучение.';
     try {
       const body={kind:button.dataset.research};
-      if(['graph','aml'].includes(body.kind)){body.epochs=Number(document.getElementById('model-epochs').value);body.learning_rate=Number(document.getElementById('model-lr').value);body.max_fpr=Number(document.getElementById('model-fpr').value)}
+      if(['graph','aml','paysim'].includes(body.kind)){body.epochs=Number(document.getElementById('model-epochs').value);body.learning_rate=Number(document.getElementById('model-lr').value);body.max_fpr=Number(document.getElementById('model-fpr').value)}
+      if(body.kind==='paysim')body.sample_rate=Number(document.getElementById('paysim-rate').value);
       const response=await fetch('/api/research-demo',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)});
       const data=await response.json();result.textContent=data.status==='ok'?data.note+'\n\n'+data.output:data.reason;
     } catch {result.textContent='Запрос не завершён. Проверьте окно локального сервера.'}

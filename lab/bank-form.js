@@ -33,11 +33,12 @@
       const history=JSON.parse($('bank-data').value);
       if(!Array.isArray(history)||history.length>500)throw Error('Нужен массив до 500 учебных переводов.');
       const request={time:Number($('bank-time').value),recipient:$('bank-recipient').value.slice(0,32),amount:Number($('bank-amount').value)};
-      const response=await fetch('/api/graph-score',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({history,request})});
+      const model=$('simulation-model').value;
+      const response=await fetch('/api/graph-score',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({history,request,model})});
       const result=await response.json();
       if(result.status!=='hypothesis'){$('bank-form-result').textContent=result.reason||'Учебная модель недоступна.';return}
-      const decision={suspend:'приостановить',proceed:'продолжить',unknown:'не определено — порог не выбран'}[result.decision]||'не определено';
-      $('bank-form-result').textContent=`Решение учебной модели: ${decision}\nВыход модели: ${result.score.toFixed(3)}\nПорог: ${result.threshold===null?'нет':result.threshold.toFixed(2)}\nПереводов до заявки: ${result.count_before}\n${result.note}`;
+      const decision={suspend:'приостановить',proceed:'продолжить',unknown:'не определено'}[result.decision]||'не определено';
+      $('bank-form-result').textContent=`Решение учебной модели: ${decision}\nВыход модели: ${result.score.toFixed(3)}\nПорог: ${result.threshold===null?'нет':result.threshold.toFixed(2)}\nПереводов до заявки: ${result.count_before}\n${result.warning||''}\n${result.note}`;
     }catch(e){$('bank-form-result').textContent='Не удалось выполнить учебный графовый анализ.'}
   };
 })();
