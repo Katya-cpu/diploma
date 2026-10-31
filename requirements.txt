@@ -1,0 +1,9 @@
+# Библиотеки для раздела 3 «Граф транзакций». Разделы 1 и 2 и расширение работают без них.
+numpy
+pandas
+scikit-learn
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch
+# Только для инструментов разработчика: QR-коды (tools/make_test_assets.py) и проверка в Firefox (tools/firefox_check.py)
+qrcode[pil]
+websockets

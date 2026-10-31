@@ -1,1 +1,39 @@
-<!doctype html><html lang="ru"><meta charset="utf-8"><style>body{width:320px;font:14px/1.5 system-ui;padding:12px;color:#172331}h1{font-size:18px}button{padding:8px}textarea{width:100%;box-sizing:border-box}</style><h1>Платёжный помощник</h1><p>Учебный прототип замечает доступные признаки возможной оплаты. Отсутствие предупреждения не означает безопасность.</p><button id="show">Показать анализ страницы</button><p id="status"></p><button id="history">История предупреждений</button> <button id="settings">Исключения сайтов</button><details><summary>Проверить содержимое QR</summary><p>Вставьте текст QR. Не вводите реальные реквизиты и секреты.</p><textarea id="qr-text" rows="3"></textarea><button id="qr-check">Разобрать</button><pre id="qr-output" style="white-space:pre-wrap;overflow-wrap:anywhere"></pre></details><details><summary>Учебный аудит сессии</summary><p>Анализируется число cookies и некоторые атрибуты текущего сайта; содержимое и названия не сохраняются. Для работы нужен доступ расширения к cookies.</p><button id="session-check">Проверить атрибуты</button><p id="session-output"></p></details><details><summary>Что делать после подозрительной оплаты</summary><p>Остановите взаимодействие со страницей. Свяжитесь со своим банком через официальное приложение или по номеру на карте, сообщите о ситуации и уточните, нужна ли блокировка и можно ли оспорить операцию. Не сообщайте PIN, CVV, пароли и одноразовые коды. Сохраните переписку без секретных данных.</p></details><details><summary>Разрешения сайта</summary><p>Камера и микрофон дают доступ к изображению и звуку; геолокация — к местоположению; уведомления позволяют присылать сообщения. Смотрите текущие разрешения в настройках браузера для сайта. Это приложение не видит все запросы и не выдаёт разрешения за вас.</p></details><script src="payment-details.js"></script><script src="popup.js"></script></html>
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Платёжный помощник</title>
+  <style>
+    body{width:400px;margin:0;font:14px/1.45 system-ui,-apple-system,Segoe UI,sans-serif;color:#101828;background:#fff}
+    header{padding:16px;color:#fff;background:#101828}
+    header h1{margin:0;font-size:17px}header p{margin:4px 0 0;opacity:.8;font-size:12px}
+    .verdict{margin:12px 16px;padding:12px 14px;border-radius:12px;font-weight:700}
+    .danger{background:#fef3f2;color:#b42318}.warning{background:#fffaeb;color:#b54708}.ok{background:#ecfdf3;color:#067647}.none{background:#f2f4f7;color:#475467}
+    h3{margin:14px 16px 6px;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:#667085}
+    details{margin:0 16px 8px;border:1px solid #eaecf0;border-radius:10px;padding:8px 12px}
+    summary{cursor:pointer;font-weight:600}
+    .tag{font-size:11px;font-weight:700;border-radius:99px;padding:1px 8px;color:#fff;margin-right:6px}
+    .why{color:#475467;font-size:13px}
+    ul{margin:4px 0;padding-left:18px}
+    .row{display:flex;gap:8px;margin:12px 16px}
+    button{border:0;border-radius:10px;padding:8px 12px;font:inherit;cursor:pointer;background:#f2f4f7}
+    button.main{background:#101828;color:#fff}
+    .muted{color:#667085;font-size:12px;margin:0 16px 12px}
+    .hist{margin:0 16px;font-size:12px}.hist div{padding:6px 0;border-bottom:1px solid #f2f4f7}
+  </style>
+</head>
+<body>
+  <header><h1>Платёжный помощник</h1><p>Проверка страницы перед оплатой. Учебный проект, решение остаётся за вами.</p></header>
+  <div id="verdict" class="verdict none">Загрузка…</div>
+  <div id="who"></div>
+  <h3>Найденные признаки</h3>
+  <div id="findings"></div>
+  <div id="limits"></div>
+  <div class="row"><button class="main" id="rescan">Проверить заново</button><button id="untrust" hidden>Убрать сайт из доверенных</button></div>
+  <h3>Журнал предупреждений</h3>
+  <div class="hist" id="history"></div>
+  <div class="row"><button id="clear">Очистить журнал</button></div>
+  <script src="core/catalog.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

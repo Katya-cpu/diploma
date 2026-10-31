@@ -1,1 +1,57 @@
-<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Учебные сценарии</title><link rel="stylesheet" href="style.css"></head><body><header><div><h1>Учебные сценарии</h1><p>Страницы для самостоятельной проверки расширения: на них нет встроенного результата анализатора и нет реальных платежей.</p><a href="/">← Три раздела</a></div></header><main><section><h2>Как пользоваться</h2><p>Загрузите расширение в Firefox через <code>about:debugging</code>. Откройте один из примеров ниже и изучите предупреждение расширения. Не вводите настоящие реквизиты.</p><p>Примеры созданы для учебного стенда. Ссылка на источник подтверждает класс явления, но не означает, что искусственная страница воспроизводит точную схему исследованной кампании.</p><div id="items"></div></section></main><script src="catalog.js"></script><script src="scenarios.js"></script></body></html>
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="pg-lab-ui" content="1">
+  <title>Учебные сценарии — Платёжный помощник</title>
+  <link rel="stylesheet" href="/assets/lab.css">
+  <style>
+    .sc{display:flex;flex-direction:column;gap:10px;padding:0;overflow:hidden}
+    .sc .shot{height:120px;display:flex;align-items:flex-end;padding:14px 18px;color:#fff;font-weight:800;font-size:19px;line-height:1.2}
+    .sc .body{padding:0 20px 20px;display:flex;flex-direction:column;gap:10px;flex:1}
+    .sc p{margin:0;color:var(--ink2);font-size:14px}
+    .sc .src a{font-size:13px;margin-right:10px}
+    .sc .exp{font-size:13px;background:var(--bg);border-radius:10px;padding:10px 12px}
+    .sc .btn{margin-top:auto;justify-content:center}
+    .install ol{margin:6px 0;padding-left:20px}.install li{margin:4px 0}
+  </style>
+</head>
+<body>
+  <div class="top" id="top"></div>
+  <main class="wrap">
+    <div class="hero" style="padding-top:12px">
+      <div class="eyebrow">Раздел 2 · испытания расширения</div>
+      <h1>Учебные сценарии</h1>
+      <p>Реалистичные страницы, воспроизводящие задокументированные схемы мошенничества. Здесь нет анализатора лаборатории: откройте страницу в Firefox с установленным расширением и посмотрите, что оно покажет. Последние два сценария — честные: на них расширение не должно тревожить.</p>
+    </div>
+    <div class="card install" style="margin-bottom:22px">
+      <h2 style="margin-top:0">Как установить расширение в Firefox (1 минута)</h2>
+      <ol>
+        <li>Откройте в Firefox адрес <code>about:debugging#/runtime/this-firefox</code>.</li>
+        <li>Нажмите «Загрузить временное дополнение…» и выберите файл <code>product/extension/manifest.json</code>.</li>
+        <li>Откройте эту страницу в Firefox (<code>http://127.0.0.1:8765/scenarios.html</code>) и запускайте сценарии кнопками ниже. Значок щита на панели браузера показывает подробности.</li>
+      </ol>
+      <p class="muted small">Временное дополнение удаляется при закрытии Firefox — после перезапуска повторите шаг 2.</p>
+    </div>
+    <div class="grid3" id="list"></div>
+  </main>
+  <script src="/assets/nav.js"></script>
+  <script src="/extension/core/catalog.js"></script>
+  <script src="/assets/scenarios-data.js"></script>
+  <script>
+    const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+    document.getElementById('list').innerHTML = SCENARIOS.map((s) => `
+      <article class="card sc">
+        <div class="shot" style="background:linear-gradient(135deg,${s.color},${s.color}cc)">${esc(s.title)}</div>
+        <div class="body">
+          <span><span class="pill ${s.expect === 'ok' ? 'ok' : 'danger'}">${esc(s.tag)}</span></span>
+          <p>${esc(s.scheme)}</p>
+          <div class="exp"><b>Ожидаемая реакция расширения:</b> ${s.expect === 'ok' ? 'предупреждений нет, сводка «Явных признаков обмана не найдено».'
+            : '«Высокий риск». Сработают проверки: ' + s.checks.map((c) => esc(PGCatalog.byId(c).title)).join('; ') + '.'}</div>
+          <div class="src">Источник: ${s.sources.map(([t, u]) => `<a target="_blank" href="${u}">${esc(t)}</a>`).join('')}</div>
+          <a class="btn" target="_blank" href="/scenarios/${s.file}">Открыть сценарий ↗</a>
+        </div>
+      </article>`).join('');
+  </script>
+</body>
+</html>

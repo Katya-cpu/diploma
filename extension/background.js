@@ -1,25 +1,64 @@
+/*
+ * Фоновая часть расширения:
+ *  1) после того как на вкладке начали вводить данные карты, записывает,
+ *     на какие сайты страница отправляет запросы (webRequest, только адрес — без содержимого);
+ *  2) хранит последний отчёт по каждой вкладке для всплывающего окна и рисует значок;
+ *  3) ведёт короткий журнал предупреждений (последние 30) в локальном хранилище.
+ */
 'use strict';
-// Only destination origins, never request bodies, paths, queries, cookies or tokens.
-const sessions=new Map();
-let eventQueue=Promise.resolve();
-browser.runtime.onMessage.addListener((message,sender)=>{
-  const id=sender.tab?.id;
-  if(id===undefined)return;
-  if(message?.type==='record-event'){
-    const kind=message.kind==='warning'?'warning':'closed';
-    const codes=Array.isArray(message.codes)?message.codes.filter(c=>typeof c==='string' && /^[a-z_]{1,40}$/.test(c)).slice(0,12):[];
-    eventQueue=eventQueue.catch(()=>{}).then(async()=>{const stored=await browser.storage.local.get('briefEvents');const events=Array.isArray(stored.briefEvents)?stored.briefEvents:[];events.push({time:new Date().toISOString(),kind,codes});await browser.storage.local.set({briefEvents:events.slice(-50)})});
-    return eventQueue.then(()=>({ok:true}));
-  }
-  if(message?.type==='payment-context'){
-    if(!sessions.has(id))sessions.set(id,{origins:new Set(),active:true});
-    return Promise.resolve({ok:true});
-  }
-  if(message?.type==='destinations')return Promise.resolve({origins:[...(sessions.get(id)?.origins||[])].slice(-20)});
+const api = typeof browser !== 'undefined' ? browser : chrome;
+const watching = new Map(); // tabId → { cardInputAt, requests: [] }
+const reports = new Map();  // tabId → последний отчёт
+
+// Запросы sendBeacon Firefox может не привязывать к вкладке (tabId = -1) — тогда ищем вкладку по адресу страницы-источника.
+function watchedTab(d) {
+  if (d.tabId >= 0) return watching.get(d.tabId);
+  let origin = '';
+  try { origin = new URL(d.originUrl || d.documentUrl || '').origin; } catch (e) { return null; }
+  for (const t of watching.values()) if (t.origin === origin) return t;
+  return null;
+}
+
+api.webRequest.onBeforeRequest.addListener((d) => {
+  const t = watchedTab(d);
+  if (!t || d.timeStamp < t.cardInputAt) return;
+  let host = '';
+  try { host = new URL(d.url).hostname; } catch (e) { return; }
+  if (t.requests.length < 50) t.requests.push({ host, how: d.type + ' ' + d.method, afterCardInput: true });
+}, { urls: ['<all_urls>'] });
+
+api.tabs.onUpdated.addListener((tabId, info) => {
+  if (info.status === 'loading' && info.url) { watching.delete(tabId); reports.delete(tabId); }
 });
-browser.webRequest.onBeforeRequest.addListener(details=>{
-  const session=sessions.get(details.tabId);if(!session)return;
-  try{const origin=new URL(details.url).origin;if(origin.startsWith('http'))session.origins.add(origin)}catch{}
-},{urls:['http://*/*','https://*/*']});
-browser.tabs.onRemoved.addListener(id=>sessions.delete(id));
-browser.tabs.onUpdated.addListener((id,change)=>{if(change.status==='loading')sessions.delete(id)});
+api.tabs.onRemoved.addListener((tabId) => { watching.delete(tabId); reports.delete(tabId); });
+
+const BADGE = { danger: ['!', '#d92d20'], warning: ['?', '#dc6803'], ok: ['✓', '#12b76a'] };
+
+api.runtime.onMessage.addListener((msg, sender) => {
+  const tabId = sender.tab ? sender.tab.id : msg.tabId;
+  if (msg.type === 'card-input') {
+    let origin = '';
+    try { origin = new URL(sender.url).origin; } catch (e) { /* нет адреса */ }
+    watching.set(tabId, { cardInputAt: Date.now() - 50, origin, requests: [] });
+  } else if (msg.type === 'network') {
+    return Promise.resolve((watching.get(tabId) || {}).requests || []);
+  } else if (msg.type === 'report') {
+    reports.set(tabId, msg.report);
+    const b = BADGE[msg.report.verdict];
+    api.browserAction.setBadgeText({ tabId, text: b ? b[0] : '' });
+    if (b) api.browserAction.setBadgeBackgroundColor({ tabId, color: b[1] });
+    if (msg.report.verdict === 'danger' || msg.report.verdict === 'warning') return remember(msg.report);
+  } else if (msg.type === 'get-report') {
+    return Promise.resolve(reports.get(tabId) || null);
+  }
+});
+
+// Журнал: только итог, сайт и названия признаков. Реквизиты и введённые данные не сохраняются.
+async function remember(report) {
+  const { history = [] } = await api.storage.local.get('history');
+  const titles = report.findings.filter((f) => f.severity === 'danger' || f.severity === 'warning').map((f) => f.title);
+  const last = history[0];
+  if (last && last.url === report.url && last.titles.join() === titles.join()) return;
+  history.unshift({ time: new Date().toISOString(), url: report.url, host: report.context.host, verdict: report.verdict, titles });
+  await api.storage.local.set({ history: history.slice(0, 30) });
+}

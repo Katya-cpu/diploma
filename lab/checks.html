@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="pg-lab-ui" content="1">
+  <title>Проверки страницы — Платёжный помощник</title>
+  <link rel="stylesheet" href="/assets/lab.css">
+  <style>
+    .layout{display:grid;grid-template-columns:290px 1fr;gap:24px;align-items:start}
+    .side{position:sticky;top:84px}
+    .side h4{margin:16px 6px 6px;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+    .side a{display:flex;gap:8px;align-items:center;padding:8px 10px;border-radius:10px;color:var(--ink2);font-size:14px;font-weight:600}
+    .side a:hover{background:#fff;text-decoration:none}
+    .side a.on{background:#fff;color:var(--accent);box-shadow:var(--shadow)}
+    .side a .n{font-size:11px;color:var(--muted);width:20px}
+    .head h1{margin:6px 0 10px;font-size:30px}
+    .tax{display:flex;gap:6px;flex-wrap:wrap}
+    .cols{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:20px;margin-top:20px}
+    @media(max-width:1150px){.cols,.layout{grid-template-columns:1fr}.side{position:static}}
+    .desc h3{font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:20px 0 6px}
+    .desc h3:first-child{margin-top:0}
+    .desc p,.desc li{color:var(--ink2);font-size:15px;line-height:1.55}
+    .desc ol,.desc ul{padding-left:20px;margin:4px 0}
+    .scheme{background:#fff7ed;border-radius:12px;padding:14px 16px;color:#7c2d12 !important}
+    .src a{display:block;font-size:14px;margin:4px 0}
+    .bench{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#fff}
+    .bench .bar{display:flex;gap:8px;align-items:center;flex-wrap:wrap;padding:10px;border-bottom:1px solid var(--line);background:#fafbff}
+    .bench iframe{width:100%;height:440px;border:0;display:block;background:#fff}
+    .seg button{border:1px solid var(--line);background:#fff;border-radius:10px;padding:6px 10px;font:inherit;font-size:13px;font-weight:600;cursor:pointer}
+    .seg button.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+    #result{margin-top:16px}
+    .ok-mark{color:var(--ok);font-weight:800}.bad-mark{color:var(--danger);font-weight:800}
+  </style>
+</head>
+<body>
+  <div class="top" id="top"></div>
+  <main class="wrap">
+    <div class="hero" style="padding-top:12px">
+      <div class="eyebrow">Раздел 1 · для администратора</div>
+      <h1>Проверки страницы</h1>
+      <p>Это все проверки, которые выполняет расширение. Слева выберите проверку: вы увидите, откуда взят сценарий, как именно работает анализ, тестовую страницу и решение анализатора. Анализатор здесь — <b>тот же код</b>, что в расширении (<code>extension/core/checks.js</code>).</p>
+      <p style="margin-top:14px"><button class="btn accent" id="runAll">▶ Прогнать все тестовые страницы</button> <span class="muted small">— сводная таблица: совпало ли решение анализатора с ожидаемым</span></p>
+    </div>
+    <div id="summary"></div>
+    <div class="layout">
+      <aside class="side" id="side"></aside>
+      <section id="detail"></section>
+    </div>
+  </main>
+  <script src="/assets/nav.js"></script>
+  <script src="/extension/vendor/jsQR.js"></script>
+  <script src="/extension/core/recipient.js"></script>
+  <script src="/extension/core/dom.js"></script>
+  <script src="/extension/core/qr.js"></script>
+  <script src="/extension/core/watch.js"></script>
+  <script src="/extension/core/checks.js"></script>
+  <script src="/extension/core/catalog.js"></script>
+  <script src="/assets/runner.js"></script>
+  <script src="/assets/checks-ui.js"></script>
+</body>
+</html>

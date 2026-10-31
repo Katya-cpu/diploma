@@ -1,99 +1,107 @@
+/*
+ * Контент-скрипт: запускает анализатор (core/checks.js) на открытой странице
+ * и показывает панель с результатом в правом нижнем углу.
+ * Значения полей, которые вводит пользователь, не читаются и не сохраняются.
+ */
 (() => {
   'use strict';
-  // No input values are inspected or saved. Exception is bound to the exact origin.
-  const origin = location.origin;
-  const isTopFrame = window === window.top;
-  let lastKey = '', timer;
-  const dismissedCodes = new Set();
-  const qrCache = new WeakMap();
-  const sessionEvents = [];
-  async function saveEvent(kind,codes) {
-    try {await browser.runtime.sendMessage({type:'record-event',kind,codes})} catch {}
+  if (window.top !== window) return;                          // только основная страница, не фреймы
+  if (document.querySelector('meta[name="pg-lab-ui"]')) return; // интерфейс самой лаборатории не проверяем
+  const api = typeof browser !== 'undefined' ? browser : chrome;
+
+  let report = null, timer = null, hiddenKey = '', signature = '';
+  const sensors = PGWatch.start(document, (state) => {
+    if (state.cardInputAt && !state.cardNotified) {
+      state.cardNotified = true;
+      api.runtime.sendMessage({ type: 'card-input' });
+      schedule(2500); // дать скрипту страницы время что-нибудь отправить
+    }
+    const sig = state.changes.length + ':' + state.addedCardFields;
+    if (sig !== signature) { signature = sig; schedule(600); }
+  });
+
+  function schedule(ms) { clearTimeout(timer); timer = setTimeout(run, ms); }
+
+  async function run() {
+    try { sensors.network = (await api.runtime.sendMessage({ type: 'network' })) || []; } catch (e) { sensors.network = []; }
+    report = await PGChecks.inspect(document, sensors);
+    report.url = location.href;
+    const slim = JSON.parse(JSON.stringify(report));
+    api.runtime.sendMessage({ type: 'report', report: slim }).catch(() => {});
+    const { trusted = {} } = await api.storage.local.get('trusted');
+    render(report, !!trusted[location.origin]);
   }
-  function eventName(e) {
-    const target=e.target;
-    if(!(target instanceof HTMLInputElement) || !cardPattern.test([target.autocomplete,target.name,target.id,target.placeholder,target.getAttribute('aria-label')].join(' ')))return;
-    // Never read e.data, key presses or target.value; do not persist the event log.
-    sessionEvents.push({kind:e.type,time:new Date().toLocaleTimeString()});
-    if(sessionEvents.length>15)sessionEvents.shift();
-    if(e.type==='focusin')inspect();
-  }
-  const cardPattern = /cc-number|card.?number|номер карты|номер банковской карты/i;
-  const paymentPattern = /оплатить|оплата|перевести|перевод|платн.{0,30}подписк|оформить подписку|pay now|checkout|purchase/i;
-  const pageObserver=PageObserver.create();
-  async function inspectQr(obs) {
-    try {
-      const images=[...document.images].filter(i=>i.complete && i.naturalWidth>=80 && i.naturalHeight>=80).slice(0,5);
-      for(const img of images){
-        // Cross-origin pixels may be unreadable; do not fetch images or transmit their content.
-        let entry=qrCache.get(img);if(!entry||entry.src!==img.currentSrc){const raw=await LocalQr.decode(img).catch(()=>null);entry={src:img.currentSrc,raw};qrCache.set(img,entry)}
-        if(!entry.raw)continue;
-        obs.hasQr=true;const payment=PaymentDetails.decodePaymentLink(entry.raw);
-        const comparison=PaymentDetails.compare(obs.text,payment);
-        const reputation=await browser.storage.local.get('reportedHosts');
-        obs.qrReported=PaymentDetails.checkRecipient(payment,reputation.reportedHosts).status==='reported';
-        obs.qrInsecure=payment.protocol==='http:';
-        obs.qrSbp=payment.format==='Ссылка, похожая на формат СБП';obs.qrSubscription=!!payment.subscriptionHost;
-        obs.qrMismatch=comparison.status==='mismatch';obs.qrChecked=comparison.status==='match';break;
+
+  api.runtime.onMessage.addListener((msg) => {
+    if (msg.type === 'rescan') { hiddenKey = ''; run(); }
+  });
+
+  // ---------------- Панель ----------------
+  const COLORS = { danger: '#d92d20', warning: '#dc6803', ok: '#12b76a', none: '#667085' };
+  let host = null;
+
+  function render(r, trusted) {
+    const serious = r.findings.filter((f) => f.severity === 'danger' || f.severity === 'warning');
+    // Доверенный сайт: обычные сведения не показываем, но предупреждения об угрозах — всегда.
+    const show = serious.length > 0 || (r.verdict === 'ok' && !trusted);
+    const key = r.verdict + r.findings.map((f) => f.title).join('|');
+    if (host) host.remove();
+    if (!show || key === hiddenKey) return;
+
+    host = document.createElement('div');
+    const shadow = host.attachShadow({ mode: 'closed' });
+    const color = COLORS[r.verdict];
+    const items = (serious.length ? serious : r.findings).slice(0, 5);
+    shadow.innerHTML = `
+      <style>
+        .box{position:fixed;z-index:2147483647;right:20px;bottom:20px;width:380px;max-height:80vh;overflow:auto;background:#fff;color:#101828;
+          border-radius:16px;box-shadow:0 20px 50px rgba(16,24,40,.25);font:14px/1.45 system-ui,-apple-system,Segoe UI,sans-serif;border-top:6px solid ${color}}
+        header{display:flex;gap:10px;align-items:center;padding:14px 16px 6px}
+        .dot{width:34px;height:34px;border-radius:50%;background:${color};color:#fff;display:grid;place-items:center;font-weight:700;font-size:18px;flex:none}
+        h2{margin:0;font-size:16px}.sub{color:#667085;font-size:12px}
+        ul{list-style:none;margin:0;padding:6px 16px}li{padding:8px 0;border-bottom:1px solid #f2f4f7}
+        li b{display:block}li span{color:#475467;font-size:13px}
+        .sev{display:inline-block;font-size:11px;font-weight:700;border-radius:99px;padding:1px 8px;margin-bottom:2px;color:#fff}
+        .who{margin:6px 16px;padding:10px 12px;background:#f9fafb;border-radius:10px;font-size:13px}
+        footer{display:flex;gap:8px;padding:10px 16px 14px;flex-wrap:wrap}
+        button{border:0;border-radius:10px;padding:8px 12px;font:inherit;cursor:pointer;background:#f2f4f7;color:#101828}
+        button.main{background:#101828;color:#fff}
+      </style>
+      <section class="box" role="alert">
+        <header><div class="dot">${r.verdict === 'ok' ? '✓' : '!'}</div>
+          <div><h2></h2><div class="sub">Платёжный помощник · ${location.hostname}</div></div></header>
+        <ul></ul>
+        <div class="who" hidden></div>
+        <footer><button class="main" data-a="close">Понятно</button>${r.verdict === 'ok' ? '<button data-a="trust">Доверять этому сайту</button>' : ''}</footer>
+      </section>`;
+    shadow.querySelector('h2').textContent = PGChecks.VERDICTS[r.verdict].title;
+    const ul = shadow.querySelector('ul');
+    const SEV = { danger: ['Опасно', '#d92d20'], warning: ['Подозрительно', '#dc6803'], info: ['К сведению', '#667085'], error: ['Ошибка', '#667085'] };
+    for (const f of items) {
+      const li = document.createElement('li');
+      const s = document.createElement('i'); s.className = 'sev'; s.textContent = SEV[f.severity][0]; s.style.background = SEV[f.severity][1];
+      const b = document.createElement('b'); b.textContent = f.title;
+      const d = document.createElement('span'); d.textContent = f.details.map((t) => /[.!?»)]$/.test(t) ? t : t + '.').join(' ');
+      li.append(s, b, d); ul.append(li);
+    }
+    if (r.recipient.items.length) {
+      const who = shadow.querySelector('.who');
+      who.hidden = false;
+      who.textContent = 'Кому уйдут деньги: ' + r.recipient.items.map((i) => i.text).join('; ');
+    }
+    shadow.querySelector('footer').addEventListener('click', async (e) => {
+      const a = e.target.dataset.a;
+      if (a === 'close') { hiddenKey = key; host.remove(); }
+      if (a === 'trust') {
+        const { trusted = {} } = await api.storage.local.get('trusted');
+        trusted[location.origin] = new Date().toISOString();
+        await api.storage.local.set({ trusted });
+        hiddenKey = key; host.remove();
       }
-    }catch{}
+    });
+    document.documentElement.append(host);
   }
-  async function inspect(force = false) {
-    if (!document.body) return;
-    const obs = pageObserver.collect();
-    const rep = await browser.storage.local.get('reportedHosts');
-    const paymentContext=obs.hasCard||obs.hasPaymentButton||/(переведите|перевод|оплатите|по номеру карты)/i.test(obs.text);
-    obs.reputationReported = !!(paymentContext && rep.reportedHosts && Object.prototype.hasOwnProperty.call(rep.reportedHosts,location.hostname.toLowerCase()) && rep.reportedHosts[location.hostname.toLowerCase()]);
-    if(force||obs.hasQr)await inspectQr(obs);
-    const result = PaymentAnalyzer.analyze(obs);
-    if(obs.hasCard || obs.hasPaymentButton)browser.runtime.sendMessage({type:'payment-context'}).catch(()=>{});
-    const warnings = result.reasons.filter(r => r.severity === 'warning');
-    const storage = await browser.storage.local.get('ordinaryExceptions');
-    const exceptions = storage.ordinaryExceptions || {};
-    const ordinaryDisabled = isTopFrame && !!exceptions[origin];
-    const eligible = ordinaryDisabled ? warnings : result.reasons;
-    const shown = force ? eligible : eligible.filter(r=>!dismissedCodes.has(r.code));
-    const key = shown.map(r=>r.code).join(',');
-    if ((!key && !force) || (!force && key === lastKey)) return;
-    lastKey = key;
-    document.querySelector('#payment-study-notice')?.remove();
-    if (!shown.length && !force) return;
-    if(warnings.length && !force)saveEvent('warning',warnings.map(r=>r.code));
-    const host = document.createElement('div'); host.id='payment-study-notice';
-    const shadow=host.attachShadow({mode:'closed'}), box=document.createElement('section');
-    box.setAttribute('role','status');
-    box.style.cssText='position:fixed;z-index:2147483647;right:16px;bottom:16px;max-width:380px;background:#fff;color:#18202a;padding:18px;border:2px solid #a96c08;border-radius:12px;box-shadow:0 4px 20px #0004;font:15px/1.45 system-ui';
-    const title=document.createElement('strong'); title.textContent=warnings.length?'Найдены признаки для проверки':'Платёжный помощник'; box.append(title);
-    const list=document.createElement('ul');
-    shown.forEach(r=>{const li=document.createElement('li');li.textContent=r.message;list.append(li)});
-    if (!shown.length) {const li=document.createElement('li');li.textContent=ordinaryDisabled && result.reasons.length?'Обычные уведомления для этого сайта отключены. Новых признаков угроз правила не обнаружили.':'Доступные признаки не найдены. Безопасность не установлена.';list.append(li)}
-    box.append(list);
-    if(obs.hasCard){
-      const locate=document.createElement('button');locate.type='button';locate.textContent='Показать поле карты';
-      locate.onclick=()=>{const field=[...document.querySelectorAll('input')].find(e=>cardPattern.test([e.autocomplete,e.name,e.id,e.placeholder,e.getAttribute('aria-label')].join(' ')));if(!field)return;shown.forEach(r=>dismissedCodes.add(r.code));host.remove();field.scrollIntoView({behavior:'smooth',block:'center'});const old=field.style.outline;field.style.outline='3px solid #e06b00';setTimeout(()=>{field.style.outline=old},5000)};
-      box.append(locate);
-    }
-    const note=document.createElement('p');note.textContent='Учебный прототип не блокирует ввод и не гарантирует безопасность. Встроенные формы и скрипты могут быть недоступны.';box.append(note);
-    if(sessionEvents.length){const p=document.createElement('p');p.textContent=`Событий в текущей вкладке: ${sessionEvents.length}. Регистрируются только тип и время, без содержимого.`;box.append(p)}
-    if(force){
-      browser.runtime.sendMessage({type:'destinations'}).then(data=>{
-        const p=document.createElement('p');p.textContent=data?.origins?.length?'Сетевые адреса после обнаружения оплаты: '+data.origins.join(', '):'Нет сведений о сетевых адресах после обнаружения оплаты.';box.append(p);
-      }).catch(()=>{});
-    }
-    if (isTopFrame && (obs.hasCard || obs.hasPaymentButton || obs.personalTypes.length)) {
-      const label=document.createElement('label'), check=document.createElement('input');
-      check.type='checkbox';check.checked=!!exceptions[origin];label.append(check,document.createTextNode(' Не показывать обычное уведомление для этого сайта'));box.append(label);
-      check.addEventListener('change',async()=>{const s=await browser.storage.local.get('ordinaryExceptions');const data=s.ordinaryExceptions||{};if(check.checked)data[origin]=true;else delete data[origin];await browser.storage.local.set({ordinaryExceptions:data});});
-      const desc=document.createElement('p');desc.textContent='Предупреждения о найденных признаках угроз это не отключает.';box.append(desc);
-    }
-    const close=document.createElement('button');close.type='button';close.textContent='Закрыть';close.onclick=()=>{shown.forEach(r=>dismissedCodes.add(r.code));saveEvent('closed',[]);host.remove()};box.append(close);
-    shadow.append(box);document.documentElement.append(host);
-  }
-  browser.runtime.onMessage.addListener(message=>{if(message && message.type==='show-analysis'){inspect(true);return Promise.resolve({received:true})}});
-  document.addEventListener('focusin',eventName,true);
-  document.addEventListener('input',eventName,true);
-  document.addEventListener('change',eventName,true);
-  inspect();
-  const observer=new MutationObserver(records=>{if(records.every(r=>r.target.closest?.('#payment-study-notice')))return;clearTimeout(timer);timer=setTimeout(()=>inspect(),500)});
-  observer.observe(document.documentElement,{subtree:true,childList:true,characterData:true,attributes:true,attributeFilter:['action','href','hidden','autocomplete','style','class']});
+
+  schedule(700);
+  setTimeout(run, 4000); // повторная проверка: часть страниц дорисовывается скриптами
 })();

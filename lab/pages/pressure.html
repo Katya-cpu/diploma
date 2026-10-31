@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="ru">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Бронирование</title><link rel="stylesheet" href="page.css">
+<style>:root{--c:#0369a1}</style></head>
+<body>
+<div class="site"><div class="logo">О</div><b>Отель «Морской бриз»</b><span>учебная страница · все данные вымышлены</span></div>
+<main>
+
+<div class="box"><span class="badge">Осталось 1 место</span><h1>Номер «Стандарт», 3 ночи</h1>
+  <p>Ваша бронь истекает через <b id="t">09:59</b>! Оплатите сейчас, иначе бронь будет отменена.</p>
+  <div class="total"><span>К оплате</span><span>14 700 ₽</span></div>
+  <a class="button" href="/pay">Оплатить бронь</a></div>
+<script>var s=599;setInterval(function(){s--;document.getElementById('t').textContent=String(Math.floor(s/60)).padStart(2,'0')+':'+String(s%60).padStart(2,'0')},1000);</script>
+</main>
+</body>
+</html>

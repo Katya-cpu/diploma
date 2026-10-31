@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ru">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Подтверждение доставки</title><link rel="stylesheet" href="scenario.css"><style>:root{--brand:#6d28d9}</style></head>
+<body>
+<div class="bar"><div class="in"><a class="logo" href="#"><i>К</i>КурьерПлюс</a><nav><span>Отследить посылку</span><span>Тарифы</span><span>Поддержка</span></nav></div></div>
+<div class="sub"><div class="in">Отслеживание › KP-77120-4431</div></div>
+<div class="page">
+
+<section>
+  <div class="panel"><span class="chip amber">Курьер выехал</span>
+    <h1>Посылка KP-77120-4431 будет доставлена сегодня</h1>
+    <p class="lead">Чтобы курьер передал посылку, подтвердите адрес и оплатите страховку отправления. Затем введите код из SMS — он подтверждает, что посылку получаете именно вы.</p>
+    <label for="addr">Адрес доставки</label><input id="addr" name="address" placeholder="Город, улица, дом, квартира">
+    <label for="ph">Телефон</label><input id="ph" name="phone" placeholder="+7 (___) ___-__-__"></div>
+  <form class="panel" action="/insurance" method="post"><h2>Страховка отправления — 149 ₽</h2><label for="cc">Номер карты</label><input id="cc" name="cardnumber" autocomplete="cc-number" inputmode="numeric" placeholder="0000 0000 0000 0000">
+      <div class="two"><div><label for="exp">Срок действия</label><input id="exp" name="exp-date" autocomplete="cc-exp" placeholder="ММ / ГГ"></div>
+      <div><label for="cvc">CVV / CVC</label><input id="cvc" name="cvc" autocomplete="cc-csc" placeholder="•••"></div></div>
+      <label for="holder">Имя владельца</label><input id="holder" name="holder" autocomplete="cc-name" placeholder="IVAN IVANOV">
+    <label for="sms">Код из SMS</label><input id="sms" name="sms_code" placeholder="Введите 6 цифр">
+    <button class="btn" type="submit">Оплатить и подтвердить</button></form>
+</section>
+<aside class="panel"><h2>Отправление</h2><div class="line"><span>Откуда</span><span>Казань</span></div><div class="line"><span>Вес</span><span>1,2 кг</span></div>
+  <div class="line"><span>Статус</span><span>Передано курьеру</span></div><div class="total"><span>К оплате</span><span>149 ₽</span></div></aside>
+</div>
+<footer>© 2026 КурьерПлюс. Все права защищены. Политика конфиденциальности · Пользовательское соглашение</footer>
+<div class="study">Учебный сценарий · вымышленный сайт</div>
+
+</body>
+</html>

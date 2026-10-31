@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="ru">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Безопасная сделка — оплата</title><link rel="stylesheet" href="scenario.css"><style>:root{--brand:#e2572b}</style></head>
+<body>
+<div class="bar"><div class="in"><a class="logo" href="#"><i>Б</i>Барахолка</a><div class="search">Поиск по объявлениям</div><nav><span>Мои объявления</span><span>Сообщения</span><span>Профиль</span></nav></div></div>
+<div class="sub"><div class="in">Объявления › Велосипеды › Оформление безопасной сделки</div></div>
+<div class="page">
+
+<section>
+  <div class="panel"><div class="steps"><span class="on"></span><span class="on"></span><span></span></div>
+    <span class="chip">✓ Безопасная сделка · ПочтаЭкспресс</span>
+    <h1>Оплата товара с доставкой</h1>
+    <p class="lead">Продавец подтвердил заказ. Деньги будут зарезервированы и переведены продавцу только после того, как вы получите товар.</p>
+    <p>Бронь товара истекает через <span class="timer" id="t">14:59</span> — иначе заказ будет отменён.</p></div>
+  <form class="panel" action="http://bezopasnaya-sdelka-pay.ru/process" method="post"><h2>Данные карты для оплаты</h2><label for="cc">Номер карты</label><input id="cc" name="cardnumber" autocomplete="cc-number" inputmode="numeric" placeholder="0000 0000 0000 0000">
+      <div class="two"><div><label for="exp">Срок действия</label><input id="exp" name="exp-date" autocomplete="cc-exp" placeholder="ММ / ГГ"></div>
+      <div><label for="cvc">CVV / CVC</label><input id="cvc" name="cvc" autocomplete="cc-csc" placeholder="•••"></div></div>
+      <label for="holder">Имя владельца</label><input id="holder" name="holder" autocomplete="cc-name" placeholder="IVAN IVANOV">
+    <button class="btn" type="submit">Оплатить 7 290 ₽</button>
+    <div class="secure">🔒 Платёж защищён · <div class="cards"><span>МИР</span><span>VISA</span><span>MC</span></div></div></form>
+</section>
+<aside class="panel"><h2>Ваш заказ</h2><div class="item"><div class="thumb" style="background:#f97316">🚲</div><div style="flex:1"><b>Велосипед Stels Navigator 500</b><div class="muted">б/у, отличное состояние</div></div><b>6 900 ₽</b></div><div class="line"><span>Доставка ПочтаЭкспресс</span><span>390 ₽</span></div><div class="total"><span>Итого</span><span>7 290 ₽</span></div></aside>
+</div>
+<footer>© 2026 Барахолка. Все права защищены. Политика конфиденциальности · Пользовательское соглашение</footer>
+<div class="study">Учебный сценарий · вымышленный сайт</div>
+<script>(function(){var s=899,e=document.getElementById("t");setInterval(function(){s=Math.max(0,s-1);e.textContent=String(Math.floor(s/60)).padStart(2,"0")+":"+String(s%60).padStart(2,"0")},1000)})();</script>
+</body>
+</html>

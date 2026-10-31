@@ -1,12 +1,16 @@
 {
-  "manifest_version": 3,
-  "name": "Платёжный помощник — учебный прототип",
-  "version": "0.1.0",
-  "permissions": ["storage", "activeTab", "webRequest", "cookies"],
-  "host_permissions": ["http://*/*", "https://*/*"],
-  "background": {"scripts": ["background.js"]},
-  "description": "Показывает признаки возможного платёжного действия и объясняет ограничения проверки.",
-  "browser_specific_settings": {"gecko": {"id": "payment-study@example.local", "strict_min_version": "109.0"}},
-  "content_scripts": [{"matches": ["http://*/*", "https://*/*"], "js": ["vendor/jsQR.js", "qr-reader.js", "payment-details.js", "analyzer.js", "page-observer.js", "content.js"], "run_at": "document_idle", "all_frames": true}],
-  "action": {"default_title": "Платёжный помощник", "default_popup": "popup.html"}
+  "manifest_version": 2,
+  "name": "Платёжный помощник",
+  "version": "1.0.0",
+  "description": "Перед оплатой проверяет страницу: кому уйдут деньги, не подменены ли реквизиты и QR-код, не крадёт ли страница данные карты.",
+  "browser_specific_settings": { "gecko": { "id": "payment-helper@diploma.local", "strict_min_version": "109.0" } },
+  "permissions": ["storage", "webRequest", "<all_urls>"],
+  "background": { "scripts": ["background.js"] },
+  "content_scripts": [{
+    "matches": ["http://*/*", "https://*/*"],
+    "js": ["vendor/jsQR.js", "core/recipient.js", "core/dom.js", "core/qr.js", "core/watch.js", "core/checks.js", "content.js"],
+    "run_at": "document_end"
+  }],
+  "browser_action": { "default_title": "Платёжный помощник", "default_popup": "popup.html", "default_icon": "icon.svg" },
+  "icons": { "48": "icon.svg", "96": "icon.svg" }
 }

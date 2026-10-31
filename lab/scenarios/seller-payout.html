@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ru">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Получение оплаты</title><link rel="stylesheet" href="scenario.css"><style>:root{--brand:#e2572b}</style></head>
+<body>
+<div class="bar"><div class="in"><a class="logo" href="#"><i>Б</i>Барахолка</a><div class="search">Поиск по объявлениям</div><nav><span>Мои объявления</span><span>Сообщения</span><span>Профиль</span></nav></div></div>
+<div class="sub"><div class="in">Сообщения › Покупатель Алексей › Получение средств</div></div>
+<div class="page">
+
+<section class="panel" style="grid-column:1/-1;max-width:640px;margin:auto;width:100%">
+  <span class="chip">✓ Покупатель оплатил товар</span>
+  <h1>Получите 12 500 ₽ за «Игровая приставка, 1 ТБ»</h1>
+  <p class="lead">Покупатель перечислил оплату через безопасную сделку. Чтобы получить средства на карту, укажите её данные. Для подтверждения зачисления потребуется текущий баланс.</p>
+  <form action="/payout" method="post"><label for="cc">Номер карты</label><input id="cc" name="cardnumber" autocomplete="cc-number" inputmode="numeric" placeholder="0000 0000 0000 0000">
+      <div class="two"><div><label for="exp">Срок действия</label><input id="exp" name="exp-date" autocomplete="cc-exp" placeholder="ММ / ГГ"></div>
+      <div><label for="cvc">CVV / CVC</label><input id="cvc" name="cvc" autocomplete="cc-csc" placeholder="•••"></div></div>
+      <label for="holder">Имя владельца</label><input id="holder" name="holder" autocomplete="cc-name" placeholder="IVAN IVANOV">
+    <label for="bal">Баланс карты</label><input id="bal" name="balance" placeholder="Например, 15 340 ₽">
+    <button class="btn" type="submit">Получить 12 500 ₽</button></form>
+  <p class="muted">Средства поступят в течение 5 минут. Комиссия не взимается.</p>
+</section>
+</div>
+<footer>© 2026 Барахолка. Все права защищены. Политика конфиденциальности · Пользовательское соглашение</footer>
+<div class="study">Учебный сценарий · вымышленный сайт</div>
+
+</body>
+</html>

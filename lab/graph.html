@@ -1,1 +1,145 @@
-<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Исследование транзакционного графа</title><link rel="stylesheet" href="style.css"></head><body><header><div><h1>Исследование транзакционного графа</h1><p>Отдельный учебный эксперимент: он не подключён к расширению и реальному банку.</p><a href="/">← Лаборатория страниц</a></div></header><main><section><h2>1. Описание работы и данные</h2><p>Открытый синтетический PaySim содержит переводы и метки мошеннических транзакций; он моделирует другие схемы, чем «Мамонт». Из 4097 получателей мошеннических переводов в полном наборе только у четырёх есть более ранняя история входящих переводов. Набор пригоден для отдельного эксперимента, но не подтверждает гипотезу об истории получателя. Синтетический набор Misata AML доступен в проекте. Его сценарные метки описывают отмывание денег, а не проверенное мошенничество при интернет-покупке. SynSEPA изучен, но для задачи связей мошеннических получателей подходит ограниченно. Модели и научные результаты заранее не обучены и не подтверждены.</p></section><section><h2>2. Работа с моделью и параметрами</h2><p>Эпоха — один проход обучения. Скорость обучения задаёт размер шага. FPR — верхняя граница доли ложных предупреждений на валидации, а не гарантия на новых данных. Кнопка сравнивает логистическую регрессию, случайный лес и графовую модель.</p><label>Эпохи (1–100)<input id="model-epochs" type="number" min="1" max="100" step="1" value="15"></label><label>Скорость обучения (0.00001–0.1)<input id="model-lr" type="number" min="0.00001" max="0.1" step="0.00001" value="0.002"></label><label>Ограничение FPR на валидации (0–0.5)<input id="model-fpr" type="number" min="0" max="0.5" step="0.01" value="0.05"></label><p>Кнопки создают искусственные данные и запускают обучение на этом компьютере. Установите зависимости из research/requirements.txt. Результаты не являются оценкой на реальном мошенничестве. Новый запуск перезаписывает результаты выбранного эксперимента. В симуляции выберите модель учебного генератора или PaySim. Веса AML-эксперимента к ней не подключены.</p><label>Доля PaySim для ограниченного эксперимента (0.001–0.2)<input id="paysim-rate" type="number" min="0.001" max="0.2" step="0.001" value="0.01"></label><p>PaySim загружается отдельно (архив около 185 МБ, лицензия CC BY-SA 4.0). Отбор не зависит от метки, но разрежает граф. Первый эксперимент прогнозирует метку получателя за день. Второй классифицирует отдельные переводы по истории до начала дня: он не использует однодневную историю и пока не подключён к симулятору. Оба эксперимента синтетические; при отборе история графа неполная.</p><button data-research="paysim-download">Скачать PaySim</button> <button data-research="paysim">Обучить по получателю за день</button> <button data-research="paysim-transaction">Обучить по отдельным переводам</button> <button data-research="graph">Учебный граф: сравнить модели</button> <button data-research="aml">Независимый набор AML: сравнить модели</button> <pre class="outcome" id="research-result">Эксперимент не запускался.</pre></section><section><h2>3. Симуляция проверки получателя</h2><p>Введите только вымышленные идентификаторы. Время задано условными секундами; учитываются только переводы раньше заявки.</p><label>История переводов JSON<textarea id="bank-data" rows="10"></textarea></label><label>Учебный получатель<input id="bank-recipient" value="TEST"></label><label>Время заявки<input id="bank-time" type="number" value="4000"></label><label>Сумма<input id="bank-amount" type="number" value="300"></label><button id="bank-evaluate">Оценить правилами</button> <label>Модель для симуляции<select id="simulation-model"><option value="demo">Модель учебного генератора</option><option value="paysim">Модель PaySim</option></select></label><button id="graph-evaluate">Учебная графовая гипотеза</button><pre class="outcome" id="bank-form-result">Результат появится здесь.</pre><p>Граф показывает до 16 последних учебных переводов выбранному получателю.</p><svg id="bank-graph" viewBox="0 0 600 300" width="100%" role="img" aria-label="Граф переводов к учебному получателю"></svg></section></main><script src="/shared/bank.js"></script><script src="bank-form.js"></script><script src="research.js"></script></body></html>
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="pg-lab-ui" content="1">
+  <title>Граф транзакций — Платёжный помощник</title>
+  <link rel="stylesheet" href="/assets/lab.css">
+  <style>
+    .prose p,.prose li{font-size:16px;line-height:1.6;color:var(--ink2)}
+    .prose h2{margin:28px 0 10px}
+    .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:16px 0}
+    .steps div{background:var(--bg);border-radius:12px;padding:14px}
+    .steps b{display:block;font-size:13px;color:var(--accent);margin-bottom:4px}
+    @media(max-width:900px){.steps{grid-template-columns:1fr 1fr}}
+    .stat{display:flex;flex-direction:column;gap:4px}
+    .stat .v{font-size:26px;font-weight:800}
+    .bars .row{display:grid;grid-template-columns:300px 1fr 70px;gap:12px;align-items:center;margin:10px 0}
+    .bars .track{height:14px;background:var(--bg);border-radius:99px;overflow:hidden;position:relative}
+    .bars .fill{height:100%;border-radius:99px;background:var(--accent)}
+    .log{font:12px/1.6 ui-monospace,Consolas,monospace;background:#0f172a;color:#cbd5e1;border-radius:12px;padding:12px;height:220px;overflow:auto;white-space:pre-wrap}
+    .params{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+    .decision{border-radius:16px;padding:20px;display:flex;gap:16px;align-items:center}
+    .decision .big{font-size:22px;font-weight:800}
+    .decision.high{background:var(--danger-soft);color:var(--danger)}.decision.elevated{background:var(--warning-soft);color:var(--warning)}
+    .decision.low{background:var(--ok-soft);color:var(--ok)}.decision.unknown{background:var(--info-soft);color:var(--info)}
+    .scale{position:relative;height:16px;border-radius:99px;background:linear-gradient(90deg,#12b76a,#fdb022 50%,#d92d20);margin:22px 0 30px}
+    .scale .mark{position:absolute;top:-6px;width:4px;height:28px;background:var(--ink);border-radius:2px}
+    .scale .thr{position:absolute;top:20px;font-size:11px;color:var(--muted);transform:translateX(-50%);white-space:nowrap}
+    .ex{display:flex;flex-wrap:wrap;gap:8px}
+    .ex button{border:1px solid var(--line);background:#fff;border-radius:10px;padding:8px 10px;font:inherit;font-size:13px;cursor:pointer;text-align:left}
+    .ex button:hover{border-color:var(--accent)}
+    .ex small{display:block;color:var(--muted)}
+  </style>
+</head>
+<body>
+  <div class="top" id="top"></div>
+  <main class="wrap">
+    <div class="hero" style="padding-top:12px">
+      <div class="eyebrow">Раздел 3 · исследование</div>
+      <h1>Граф транзакций: риск получателя</h1>
+      <p>Можно ли по сети банковских переводов заранее распознать счёт, на который мошенники собирают деньги жертв? Эксперимент на открытом синтетическом датасете IBM AMLworld с графовой нейросетью GraphSAGE.</p>
+    </div>
+    <div class="tabs" id="tabs">
+      <button data-t="about" class="on">Как это работает</button>
+      <button data-t="model">Модель и обучение</button>
+      <button data-t="sim">Имитация перевода</button>
+    </div>
+
+    <!-- ===================== ВКЛАДКА 1 ===================== -->
+    <section id="t-about" class="card prose">
+      <h2 style="margin-top:0">Зачем это нужно</h2>
+      <p>Расширение видит страницу, но не знает, кому принадлежит карта или счёт. Это знает только банк. При обманном переводе (схема «Мамонт», «безопасный счёт») деньги жертв приходят на <b>счета-«дропы»</b> — подставные счета, которые принимают переводы от множества людей и быстро пересылают деньги дальше. В НИР показано: в момент перевода у плательщика нет независимой проверки получателя. Банк России обязывает банки проверять получателя по базе ФинЦЕРТ (приказ ОД-2506), но в базу попадают уже засветившиеся счета. Граф переводов позволяет заметить «дропа» по поведению — раньше, чем на него пожалуются.</p>
+
+      <h2>Данные: почему IBM AMLworld</h2>
+      <p>Настоящие банковские переводы закрыты банковской тайной, поэтому исследования используют синтетические данные. Мы выбрали <a href="https://arxiv.org/abs/2306.16424" target="_blank">IBM AMLworld (Altman и др., NeurIPS 2023)</a> — набор HI-Small: <b>5 078 345 переводов</b> между <b>515 088 счетами</b> 30 тыс. банков за ~10 дней. Генератор моделирует честных людей и компании, а также 8 схем отмывания: «веер на вход» (fan-in), «веер на выход», «сбор-раздача», цикл, стопка и др. Каждый перевод помечен: отмывание или нет. На этом наборе публикуют результаты графовых нейросетей (напр., <a href="https://arxiv.org/abs/2306.11586" target="_blank">Egressy и др., AAAI 2024</a>). Именно он указан в НИР как набор «для исследования структуры переводов».</p>
+      <table>
+        <thead><tr><th>Набор</th><th>Что в нём</th><th>Решение</th></tr></thead>
+        <tbody>
+          <tr><td><b>IBM AMLworld HI-Small</b></td><td>Сеть переводов «счёт → счёт», метки у каждого перевода, 8 типологий отмывания</td><td><span class="pill ok">выбран</span> есть история получателя и связи между счетами</td></tr>
+          <tr><td>PaySim</td><td>6,3 млн мобильных платежей, метки мошенничества</td><td><span class="pill danger">не подходит</span> из 4 097 получателей мошеннических переводов только у 4 есть предыдущие входящие — истории получателя нет</td></tr>
+          <tr><td>SynSEPA</td><td>Синтетические SEPA-переводы</td><td><span class="pill danger">не подходит</span> мошеннические получатели почти не связаны с несколькими отправителями</td></tr>
+          <tr><td>Misata AML</td><td>42 тыс. операций, 487 счетов</td><td><span class="pill danger">не подходит</span> слишком мал: 15 «отмывателей»</td></tr>
+          <tr><td>FCA APP synthetic data</td><td>Синтетические APP-переводы (Великобритания)</td><td><span class="pill warning">недоступен</span> выдаётся только по заявке в Digital Sandbox FCA</td></tr>
+          <tr><td>IEEE-CIS, Transactions Data Bank</td><td>Карточные покупки</td><td><span class="pill danger">не подходит</span> нет сети «счёт → счёт»; это задача «мошенническая покупка», а не «получатель»</td></tr>
+        </tbody>
+      </table>
+      <p class="note warn" style="margin-top:14px">Честное ограничение: метки AMLworld — это <b>отмывание денег</b>, а не жертвы «Мамонта». Но счёт-получатель, через который проходят чужие деньги, — это и есть «дроп», на которого мошенники выводят средства жертв. Поэтому задача «оценить риск получателя» решается на этих данных корректно, а перенос на российские банки требует проверки на реальных данных банка. Ещё одна особенность генератора: отмываемые переводы чаще идут способом ACH, и модели этим пользуются — поэтому в объяснении по счёту доля ACH часто оказывается среди главных отличий.</p>
+
+      <h2>Как устроен эксперимент — 4 шага</h2>
+      <div class="steps">
+        <div><b>1. Граф</b>Вершина — счёт. Ребро A→B — «со счёта A переводили на счёт B». 515 тыс. вершин, 648 тыс. рёбер.</div>
+        <div><b>2. Признаки счёта</b>17 чисел: сколько переводов пришло и ушло, от скольких разных отправителей, какие суммы, какая доля переслана дальше за сутки, какими способами (ACH, наличные, …).</div>
+        <div><b>3. Метка</b>«Дроп» = на счёт приходил перевод с меткой отмывания. Таких 3 984 из 284 394 получателей (1,4 %). Метка не участвует в расчёте признаков.</div>
+        <div><b>4. Проверка</b>Получатели делятся случайно: 70 % — обучение, 15 % — подбор порога, 15 % — тест. Итоговые цифры — только на тесте.</div>
+      </div>
+      <div id="graphPic"></div>
+
+      <h2>Какие модели сравниваются</h2>
+      <ol>
+        <li><b>Правило</b> «чем больше разных отправителей, тем подозрительнее» — без обучения. Нужно, чтобы понять, лучше ли модели простого здравого смысла.</li>
+        <li><b>Логистическая регрессия</b> — смотрит только на сам счёт (его 17 признаков).</li>
+        <li><b>Градиентный бустинг</b> — признаки счёта + усреднённые признаки его отправителей и получателей. Это «графовые признаки», посчитанные вручную.</li>
+        <li><b>GraphSAGE</b> (Hamilton и др., 2017) — графовая нейросеть. На каждом слое счёт собирает информацию от соседей: <code>h' = ReLU(W₀·h + W₁·среднее(отправители) + W₂·среднее(получатели))</code>. Два слоя = видны соседи соседей. Сеть сама учится, что важно в окружении счёта.</li>
+      </ol>
+      <h2>Как читать метрики</h2>
+      <ul>
+        <li><b>PR-AUC</b> — главная метрика при редких «дропах» (1,4 %). Случайное угадывание даёт ≈ 0,014, идеал — 1.</li>
+        <li><b>Полнота при 1 % ложных тревог</b> — какую долю «дропов» поймаем, если готовы зря проверить 1 честный счёт из 100.</li>
+        <li><b>Точность топ-100</b> — сколько настоящих «дропов» среди 100 самых подозрительных счетов теста.</li>
+      </ul>
+      <h2>Решение по счёту</h2>
+      <p>Сырая оценка нейросети калибруется (изотоническая регрессия на проверочной выборке) и превращается в понятную <b>вероятность, что счёт — «дроп»</b>: «12 %» означает, что примерно 12 из 100 счетов с такой оценкой действительно «дропы». Пороги подобраны на проверочной выборке: <span class="pill danger">высокий риск</span> — порог максимального F1; <span class="pill warning">повышенный</span> — порог, при котором ложно тревожат 5 % честных счетов; ниже — <span class="pill ok">низкий риск</span>. Если счёт ни разу не встречался — <span class="pill">недостаточно данных</span>: это не «безопасно», а «модели не на что опереться».</p>
+    </section>
+
+    <!-- ===================== ВКЛАДКА 2 ===================== -->
+    <section id="t-model" hidden>
+      <div class="grid3" id="statusCards"></div>
+      <div class="grid2" style="margin-top:20px">
+        <div class="card">
+          <h2 style="margin-top:0">Параметры обучения</h2>
+          <div class="params">
+            <div><label class="field">Эпох GraphSAGE</label><input class="inp" id="p-epochs" type="number" min="10" max="1000"></div>
+            <div><label class="field">Размер скрытого слоя</label><input class="inp" id="p-hidden" type="number" min="8" max="256"></div>
+            <div><label class="field">Слоёв (глубина соседства)</label><input class="inp" id="p-layers" type="number" min="1" max="3"></div>
+            <div><label class="field">Скорость обучения</label><input class="inp" id="p-lr" type="number" step="0.001"></div>
+            <div><label class="field">Dropout</label><input class="inp" id="p-dropout" type="number" step="0.05" min="0" max="0.8"></div>
+            <div><label class="field">Seed (разбиение)</label><input class="inp" id="p-seed" type="number"></div>
+          </div>
+          <p class="muted small">Одна эпоха ≈ 1–2 с на обычном ноутбуке. Обучение всех четырёх моделей занимает несколько минут.</p>
+          <div style="display:flex;gap:8px;flex-wrap:wrap">
+            <button class="btn ghost" id="b-download">1. Скачать датасет</button>
+            <button class="btn ghost" id="b-prepare">2. Построить граф</button>
+            <button class="btn accent" id="b-train">3. Обучить модели</button>
+          </div>
+        </div>
+        <div class="card">
+          <h2 style="margin-top:0">Ход выполнения</h2>
+          <div class="log" id="log">Задач пока не запускали.</div>
+        </div>
+      </div>
+      <div class="card" style="margin-top:20px" id="results"></div>
+    </section>
+
+    <!-- ===================== ВКЛАДКА 3 ===================== -->
+    <section id="t-sim" hidden>
+      <div class="grid2">
+        <div class="card">
+          <h2 style="margin-top:0">Перевод</h2>
+          <p class="muted">Представьте, что вы банк: клиент отправляет перевод. Перед исполнением модель оценивает счёт получателя по его истории в графе.</p>
+          <label class="field">Счёт отправителя (необязательно)</label><input class="inp" id="s-sender" placeholder="банк:счёт, например 0011:800A1B2C3">
+          <label class="field">Счёт получателя</label><input class="inp" id="s-recipient" placeholder="банк:счёт">
+          <label class="field">Сумма, $</label><input class="inp" id="s-amount" type="number" value="500">
+          <p><button class="btn accent" id="s-go">Отправить перевод на проверку</button></p>
+          <h3>Примеры счетов из тестовой выборки</h3>
+          <p class="muted small">Модель их не видела при обучении. Подписи групп видны только администратору.</p>
+          <div class="ex" id="examples"></div>
+        </div>
+        <div class="card" id="simResult"><p class="muted">Выберите пример или введите счёт получателя.</p></div>
+      </div>
+    </section>
+  </main>
+  <script src="/assets/nav.js"></script>
+  <script src="/assets/graph-ui.js"></script>
+</body>
+</html>
