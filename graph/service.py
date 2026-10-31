@@ -53,11 +53,15 @@ def run_job(kind, fn):
     return {'started': kind}
 
 
-def download(say):
-    prep.CSV.parent.mkdir(parents=True, exist_ok=True)
-    part = prep.CSV.with_suffix('.part')
+# Файлы схем отмывания и справочник счетов (для вкладки «Исследование схем») — зеркало того же датасета.
+EXTRA_URL = 'https://huggingface.co/datasets/OsamaMIT/IBM-AML-HI/resolve/main/'
+
+
+def fetch(url, target, say, size_hint=None):
+    """Скачивание с докачкой: если связь оборвалась, следующий запуск продолжит с того же места."""
+    part = target.with_suffix('.part')
     have = part.stat().st_size if part.exists() else 0
-    req = urllib.request.Request(DATASET_URL, headers={'Range': f'bytes={have}-'} if have else {})
+    req = urllib.request.Request(url, headers={'Range': f'bytes={have}-'} if have else {})
     with urllib.request.urlopen(req, timeout=60) as r, open(part, 'ab') as f:
         last = 0
         while True:
@@ -65,10 +69,20 @@ def download(say):
             if not chunk:
                 break
             f.write(chunk); have += len(chunk)
-            if have - last > 25 << 20:
+            if size_hint and have - last > 25 << 20:
                 last = have
-                say(f'Скачано {have >> 20} МБ из ~{DATASET_SIZE >> 20} МБ')
-    part.replace(prep.CSV)
+                say(f'{target.name}: скачано {have >> 20} МБ из ~{size_hint >> 20} МБ')
+    part.replace(target)
+    say(f'{target.name}: готово.')
+
+
+def download(say):
+    prep.CSV.parent.mkdir(parents=True, exist_ok=True)
+    if not prep.CSV.exists():
+        fetch(DATASET_URL, prep.CSV, say, DATASET_SIZE)
+    for target in (rs.PATTERNS, rs.ACCOUNTS):
+        if not target.exists():
+            fetch(EXTRA_URL + target.name, target, say, 34 << 20)
     say('Датасет скачан.')
 
 
