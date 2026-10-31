@@ -73,5 +73,46 @@
 
   const isLocalHost = (h) => h === 'localhost' || h === '127.0.0.1' || h.endsWith('.localhost') || h.endsWith('.test');
 
-  root.PGDom = { fieldDescription, fieldKind, isCardField, isRendered, effectiveOpacity, CLICKABLE, label, hostOf, siteOf, isLocalHost };
+  // Punycode (RFC 3492): браузер хранит русские и «похожие» буквы в домене как xn--…; раскодируем обратно.
+  function punyDecode(label) {
+    const base = 36, tMin = 1, tMax = 26, skew = 38, damp = 700;
+    let n = 128, i = 0, bias = 72;
+    const d = label.lastIndexOf('-');
+    const out = d > 0 ? [...label.slice(0, d)].map((c) => c.charCodeAt(0)) : [];
+    const adapt = (delta, num, first) => {
+      delta = first ? Math.floor(delta / damp) : delta >> 1;
+      delta += Math.floor(delta / num);
+      let k = 0;
+      for (; delta > ((base - tMin) * tMax) >> 1; k += base) delta = Math.floor(delta / (base - tMin));
+      return k + Math.floor(((base - tMin + 1) * delta) / (delta + skew));
+    };
+    for (let pos = d > 0 ? d + 1 : 0; pos < label.length;) {
+      const oldi = i;
+      for (let w = 1, k = base; ; k += base) {
+        const c = label.charCodeAt(pos++);
+        const digit = c - 48 < 10 ? c - 22 : c - 65 < 26 ? c - 65 : c - 97 < 26 ? c - 97 : base;
+        i += digit * w;
+        const t = k <= bias ? tMin : k >= bias + tMax ? tMax : k - bias;
+        if (digit < t) break;
+        w *= base - t;
+      }
+      bias = adapt(i - oldi, out.length + 1, oldi === 0);
+      n += Math.floor(i / (out.length + 1));
+      i %= out.length + 1;
+      out.splice(i++, 0, n);
+    }
+    return String.fromCodePoint(...out);
+  }
+
+  // Домен в читаемом виде + признак смешения алфавитов в одной части имени (латиница + кириллица/греческий).
+  function readableHost(host) {
+    const labels = String(host || '').toLowerCase().split('.').map((l) => {
+      if (!l.startsWith('xn--')) return l;
+      try { return punyDecode(l.slice(4)); } catch (e) { return l; }
+    });
+    const mixed = labels.some((l) => /[a-z]/.test(l) && /[Ͱ-ϿЀ-ӿ]/.test(l));
+    return { unicode: labels.join('.'), mixed, idn: String(host).includes('xn--') };
+  }
+
+  root.PGDom = { fieldDescription, fieldKind, isCardField, isRendered, effectiveOpacity, CLICKABLE, label, hostOf, siteOf, isLocalHost, readableHost };
 })(typeof window !== 'undefined' ? window : globalThis);

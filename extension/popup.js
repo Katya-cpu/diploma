@@ -20,7 +20,7 @@ async function load() {
       report.recipient.items.forEach((i) => ul.append(el('li', i.text)));
       who.append(ul);
     }
-    if (!report.findings.length) list.append(el('p', 'Ни одна из 14 проверок не сработала. Это не гарантия безопасности.', 'muted'));
+    if (!report.findings.length) list.append(el('p', 'Ни одна из 18 проверок не сработала. Это не гарантия безопасности.', 'muted'));
     for (const f of report.findings) {
       const d = el('details'); const s = el('summary');
       const tag = el('span', SEV[f.severity][0], 'tag'); tag.style.background = SEV[f.severity][1];

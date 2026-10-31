@@ -22,6 +22,16 @@
 
   function schedule(ms) { clearTimeout(timer); timer = setTimeout(run, ms); }
 
+  // Картинки, которые появились позже (фото QR-кода в мессенджере, просмотрщик изображений):
+  // как только загрузилась крупная картинка — проверяем страницу ещё раз.
+  document.addEventListener('load', (e) => {
+    const img = e.target;
+    if (img && img.tagName === 'IMG' && Math.min(img.naturalWidth, img.naturalHeight) >= 150) schedule(800);
+  }, true);
+  // Одностраничные приложения меняют адрес без перезагрузки.
+  let lastUrl = location.href;
+  setInterval(() => { if (location.href !== lastUrl) { lastUrl = location.href; hiddenKey = ''; schedule(1000); } }, 1000);
+
   async function run() {
     try { sensors.network = (await api.runtime.sendMessage({ type: 'network' })) || []; } catch (e) { sensors.network = []; }
     report = await PGChecks.inspect(document, sensors);

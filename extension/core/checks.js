@@ -18,7 +18,7 @@
     'gazprombank.ru', 'stripe.com', 'paypal.com', 'pay-psp.test'];
   const isPsp = (host) => PSP.includes(D.siteOf(host));
 
-  const PAY_WORDS = /оплат|перевед|перевест|перевод|к оплате|купить|pay|checkout/i;
+  const PAY_WORDS = /оплат|перевед|перевод (?:денег|средств|на)|к оплате|купить|(?:^|[^a-z])(?:pay|checkout)(?![a-z])/i;
   const RECEIVE_WORDS = /(получ[а-яё\w]*|зачисл[а-яё\w]*|принять|вывести|вывод)\s+(?:\S+\s+){0,3}(деньг|оплат|выплат|средств|перевод|компенсац)/i;
 
   function amountsIn(text) {
@@ -365,6 +365,81 @@
       details: ['На странице: «' + [...sentences].slice(0, 3).join('» «') + '»', 'Спешка мешает проверить получателя — это стандартный приём социальной инженерии.'] }];
   };
 
+  // 15. ClickFix: поддельная «капча» просит вставить команду в окно «Выполнить»
+  CHECKS['clickfix'] = (ctx) => {
+    const instr = ctx.text.match(/(win(?:dows)?\s*\+\s*r|⊞\s*\+\s*r|окно «?выполнить»?)[^]{0,160}?(ctrl\s*\+\s*v|вставьте)/i);
+    const payload = ctx.scripts.some((s) => /clipboard\.writeText|execCommand\(\s*['"]copy/.test(s.code) &&
+      /powershell|mshta|cmd(?:\.exe)?\s*\/c|iwr\s|invoke-webrequest|curl\s|bitsadmin|rundll32/i.test(s.code + revealHidden(s.code)));
+    if (!instr && !payload) return [];
+    return [{ severity: 'danger', title: 'Поддельная проверка «я не робот»: вас просят запустить команду',
+      details: [instr ? 'Инструкция на странице: «' + instr[0].replace(/\s+/g, ' ').slice(0, 140) + '».' : 'Скрипт страницы кладёт в буфер обмена команду для Windows.',
+        payload ? 'Страница копирует в буфер обмена команду (PowerShell/mshta/cmd). После Win+R → Ctrl+V → Enter она скачает и запустит вредоносную программу.'
+          : 'Настоящая капча никогда не просит открывать окно «Выполнить» и что-то туда вставлять.'] }];
+  };
+
+  // 16. Фейковое «приложение банка» (.apk) и программы удалённого доступа (схема NFCGate / NGate)
+  CHECKS['fake-app'] = (ctx) => {
+    const out = [];
+    const apks = [...ctx.doc.querySelectorAll('a[href]')].filter((a) => /\.apk(?:$|[?#])/i.test(a.getAttribute('href')) || /\.apk$/i.test(a.getAttribute('download') || ''));
+    const risky = /(банк|служб[а-яё]* безопасности|защит|отмен[а-яё]* операц|госуслуг|возврат|бесконтактн|nfc|карт)/i.test(ctx.text);
+    if (apks.length) {
+      out.push({ severity: risky ? 'danger' : 'warning', title: 'Предлагают установить приложение из файла .apk, а не из магазина приложений',
+        details: ['Ссылка: «' + D.label(apks[0]) + '» → ' + apks[0].getAttribute('href').slice(0, 80) + '.',
+          'Так распространяют поддельные «банковские» приложения: они перехватывают SMS и данные карты (схемы NFCGate, NGate). Банки публикуют приложения только в официальных магазинах и на своём сайте.'] });
+    }
+    const rat = ctx.text.match(/(anydesk|rustdesk|teamviewer|rudesktop|airdroid|ammyy|quick ?support|демонстраци[а-яё]* экрана)/i);
+    if (rat && /(установите|скачайте|включите|запустите|продиктуйте|сообщите)/i.test(ctx.text) && risky) {
+      out.push({ severity: 'danger', title: 'Просят установить программу удалённого доступа',
+        details: ['На странице упоминается «' + rat[0] + '». Через неё мошенник видит экран и сам подтверждает переводы в вашем банковском приложении. Сотрудники банка никогда об этом не просят.'] });
+    }
+    return out;
+  };
+
+  // 17. Домен-двойник: буквы другого алфавита в адресе (IDN-омограф)
+  CHECKS['homograph'] = (ctx) => {
+    const out = [], seen = new Set();
+    const hosts = [[ctx.host, 'адрес этой страницы']];
+    for (const a of ctx.doc.querySelectorAll('a[href], form[action]')) {
+      const h = D.hostOf(a.getAttribute('href') || a.getAttribute('action'), ctx.url);
+      if (h) hosts.push([h, 'ссылка «' + D.label(a) + '»']);
+    }
+    for (const [h, where] of hosts) {
+      if (seen.has(h) || !h.includes('xn--')) continue;
+      seen.add(h);
+      const r = D.readableHost(h);
+      if (r.mixed) {
+        out.push({ severity: 'danger', title: 'Адрес-двойник: в домене смешаны латинские и русские буквы',
+          details: [where + ': выглядит как «' + r.unicode + '», а на самом деле это ' + h + '.',
+            'Буквы «а», «е», «о», «р», «с» в кириллице и латинице выглядят одинаково — так подделывают адреса банков и магазинов.'] });
+      } else if (ctx.paymentContext) {
+        out.push({ severity: 'info', title: 'Адрес на национальном алфавите', details: [where + ': ' + r.unicode + ' (' + h + '). Убедитесь, что это нужный сайт.'] });
+      }
+    }
+    return out;
+  };
+
+  // 18. Browser-in-the-Browser: окно входа с «адресной строкой», нарисованное внутри страницы
+  CHECKS['bitb'] = (ctx) => {
+    const out = [];
+    const boxes = [...ctx.doc.querySelectorAll('div, section, dialog, aside')].filter((el) => {
+      const st = ctx.win.getComputedStyle(el);
+      if (!['fixed', 'absolute'].includes(st.position) || !D.isRendered(el)) return false;
+      const r = el.getBoundingClientRect();
+      return r.width >= 250 && r.height >= 200 && el.querySelector('input[type=password], input');
+    });
+    for (const box of boxes) {
+      const sensitive = [...box.querySelectorAll('input')].some((i) => i.type === 'password' || D.fieldKind(i));
+      const fakeUrl = (box.innerText || '').match(/(?:https?:\/\/|🔒\s*)([a-z0-9-]+(?:\.[a-z0-9-]+)+)(?:\/\S*)?/i);
+      if (!sensitive || !fakeUrl) continue;
+      // настоящее всплывающее окно браузера не является частью страницы — значит, это рисунок
+      out.push({ severity: 'danger', title: 'Поддельное окно браузера внутри страницы',
+        details: ['Внутри страницы нарисовано «окно» с адресной строкой «' + fakeUrl[0].slice(0, 60) + '» и полями для входа.',
+          'Настоящее окно входа открывает сам браузер, его можно вытащить за пределы страницы. Это окно — часть страницы ' + ctx.host + ', и данные уйдут ей.'] });
+      break;
+    }
+    return out;
+  };
+
   // =====================================================================
   //  Сборка отчёта
   // =====================================================================
@@ -407,7 +482,11 @@
       role: R.pageRole(text),
     };
     ctx.recipient = describeRecipient(text, qr.found);
-    ctx.paymentContext = ctx.has('cardNumber') || ctx.recipient.items.length > 0 || qr.found.length > 0 || PAY_WORDS.test(text);
+    // Платёжный объект — то, что реально ведёт к деньгам: поле карты, реквизиты или платёжный QR.
+    // Одних слов («перевести», «pay») мало: на обычных страницах они встречаются постоянно.
+    const paymentQr = qr.found.some((q) => R.parseGostQr(q.raw) || R.parseSbpLink(q.raw));
+    ctx.paymentObject = ctx.has('cardNumber') || ctx.recipient.items.length > 0 || paymentQr;
+    ctx.paymentContext = ctx.paymentObject || (PAY_WORDS.test(text) && ctx.amounts.length > 0);
 
     const findings = [];
     for (const [id, check] of Object.entries(CHECKS)) {
@@ -428,7 +507,7 @@
 
     const verdict = findings.some((f) => f.severity === 'danger') ? 'danger'
       : findings.some((f) => f.severity === 'warning') ? 'warning'
-      : ctx.paymentContext ? 'ok' : 'none';
+      : ctx.paymentObject ? 'ok' : 'none';
     return {
       verdict, findings, limits,
       recipient: ctx.recipient,

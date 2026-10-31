@@ -10,7 +10,7 @@ product/
 │   │   ├── dom.js             разбор страницы: типы полей, видимость, прозрачность, домены
 │   │   ├── qr.js              чтение QR с картинок (jsQR)
 │   │   ├── watch.js           наблюдение во времени: подмена реквизитов, вставленные поля, момент ввода карты
-│   │   ├── checks.js          14 проверок и сборка отчёта → PGChecks.inspect(document, sensors)
+│   │   ├── checks.js          18 проверок и сборка отчёта → PGChecks.inspect(document, sensors)
 │   │   └── catalog.js         описания проверок для администратора и пользователя
 │   ├── content.js             запускает анализатор на странице и рисует панель
 │   ├── background.js          webRequest (куда страница отправляет запросы после ввода карты), значок, журнал
@@ -64,6 +64,7 @@ product/
 .venv\Scripts\python.exe -m graph.prepare        # ~30 с: граф и признаки → graph/data/graph.npz
 .venv\Scripts\python.exe -m graph.train          # несколько минут: 4 модели → graph/models/
 .venv\Scripts\python.exe -m graph.train "{\"epochs\": 300}"
+.venv\Scripts\python.exe -m graph.research       # ~20 с: исследование схем → graph/models/research.json
 ```
 То же самое делают кнопки во вкладке «Модель и обучение». Датасет: `datasets/ibm_aml/HI-Small_Trans.csv`
 (зеркало Hugging Face `bbfizp/AMLSim-HI-Small`, лицензия Apache-2.0; оригинал — Kaggle «IBM Transactions for Anti Money Laundering»).

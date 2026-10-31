@@ -7,6 +7,9 @@ POST /api/graph/download  — скачать датасет (~480 МБ)
 POST /api/graph/prepare   — построить граф и признаки
 POST /api/graph/train     — обучить модели с параметрами из админки
 POST /api/graph/check     — имитация перевода: оценка риска счёта-получателя
+GET  /api/graph/research  — результаты исследования схем (по типам, карта t-SNE, владельцы)
+GET  /api/graph/pattern?id=N — подграф одной схемы отмывания с соседями для визуализации
+POST /api/graph/research  — пересчитать исследование
 """
 import json
 import threading
@@ -17,6 +20,7 @@ import numpy as np
 
 from . import prepare as prep
 from . import train as tr
+from . import research as rs
 
 DATASET_URL = 'https://huggingface.co/datasets/bbfizp/AMLSim-HI-Small/resolve/main/HI-Small_Trans.csv'
 DATASET_SIZE = 475_643_652  # байт, для индикатора скачивания (приблизительно)
@@ -176,6 +180,34 @@ def examples():
             [{'account': '999999:NEW000001', 'group': 'Новый счёт без истории', 'score': None, 'label': None}]}
 
 
+def pattern(full_path):
+    """Подграф схемы: счета схемы, её переводы по времени и до 2 соседей каждого счёта вне схемы."""
+    from urllib.parse import urlparse, parse_qs
+    c = state()
+    pid = int(parse_qs(urlparse(full_path).query).get('id', ['0'])[0])
+    if 'patterns' not in CACHE:
+        CACHE['patterns'] = json.loads((tr.MODELS / 'patterns.json').read_text(encoding='utf-8'))
+    a = CACHE['patterns'][pid]
+    keys, prob, y = c['g']['keys'], c['scores'], c['g']['y']
+    core = set(a['accounts'])
+    nodes = {i: 'core' for i in core}
+    links = []
+    for i in core:
+        for side in (1, 0):
+            nb, _ = neighbors(c, i, side, limit=2)
+            for n in nb:
+                j = c['index'][n['account']]
+                if j not in nodes:
+                    nodes[j] = 'nb'
+                links.append({'s': int(j if side == 1 else i), 't': int(i if side == 1 else j)})
+    txns = [{'s': c['index'].get(t['from']), 't': c['index'].get(t['to']), 'time': t['t'], 'amount': t['amount'],
+             'currency': t['currency']} for t in a['txns']]
+    return {'id': pid, 'type': a['type'], 'name': rs.TYPES[a['type']][0], 'detail': a['detail'],
+            'nodes': [{'id': int(i), 'account': str(keys[i]), 'role': r, 'prob': float(prob[i]), 'label': int(y[i]),
+                       'split': int(c['split'][i])} for i, r in nodes.items()],
+            'links': links, 'txns': txns, 'threshold': c['metrics']['thresholds']['high']}
+
+
 def status():
     out = {'dataset': {'path': str(prep.CSV), 'exists': prep.CSV.exists(),
                        'size_mb': round(prep.CSV.stat().st_size / 2**20) if prep.CSV.exists() else 0},
@@ -198,7 +230,15 @@ def handle(method, route, payload, full_path):
     if method == 'POST' and route == '/api/graph/prepare':
         return run_job('Подготовка графа', lambda say: prep.prepare(say))
     if method == 'POST' and route == '/api/graph/train':
-        return run_job('Обучение моделей', lambda say: tr.train(payload, say))
+        return run_job('Обучение моделей', lambda say: (tr.train(payload, say), CACHE.clear(), rs.run(say)))
+    if method == 'GET' and route == '/api/graph/research':
+        if not rs.OUT.exists():
+            raise ApiError('Исследование ещё не выполнено: нажмите «4. Исследование схем» на вкладке «Модель и обучение».')
+        return json.loads(rs.OUT.read_text(encoding='utf-8'))
+    if method == 'GET' and route == '/api/graph/pattern':
+        return pattern(full_path)
+    if method == 'POST' and route == '/api/graph/research':
+        return run_job('Исследование схем', lambda say: rs.run(say))
     if method == 'POST' and route == '/api/graph/check':
         return check(payload)
     raise ApiError('Неизвестный запрос: ' + route)

@@ -16,7 +16,8 @@
   const tabs = $('tabs');
   function openTab(t) {
     tabs.querySelectorAll('button').forEach((b) => b.classList.toggle('on', b.dataset.t === t));
-    ['about', 'model', 'sim'].forEach((x) => { $('t-' + x).hidden = x !== t; });
+    ['about', 'model', 'sim', 'research'].forEach((x) => { $('t-' + x).hidden = x !== t; });
+    if (t === 'research' && window.ResearchUI) window.ResearchUI.open();
     if (t === 'model') refresh();
     if (t === 'sim') loadExamples();
     history.replaceState(null, '', '#' + t);
@@ -100,7 +101,7 @@
     const j = await api('job');
     if (j.kind) $('log').textContent = j.kind + (j.running ? ' — выполняется…' : ' — завершено') + '\n' + j.log.join('\n') + (j.error ? '\nОШИБКА: ' + j.error : '');
     $('log').scrollTop = 1e9;
-    ['b-download', 'b-prepare', 'b-train'].forEach((b) => { $(b).disabled = j.running; });
+    ['b-download', 'b-prepare', 'b-train', 'b-research'].forEach((b) => { $(b).disabled = j.running; });
     if (j.running) polling = setTimeout(pollJob, 1500);
     else if (j.kind && !j.error && pollJob.wasRunning) { pollJob.wasRunning = false; refresh(); }
     if (j.running) pollJob.wasRunning = true;
@@ -110,6 +111,7 @@
   }
   $('b-download').onclick = () => start('download');
   $('b-prepare').onclick = () => start('prepare');
+  $('b-research').onclick = () => start('research');
   $('b-train').onclick = () => {
     const params = {};
     ['epochs', 'hidden', 'layers', 'lr', 'dropout', 'seed'].forEach((k) => { params[k] = Number($('p-' + k).value); });

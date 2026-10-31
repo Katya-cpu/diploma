@@ -58,7 +58,7 @@ async def main():
         ctx = tree['contexts'][0]['context']
         SHOTS.mkdir(exist_ok=True)
         for page in PAGES:
-            await b.cmd('browsingContext.navigate', {'context': ctx, 'url': f'http://127.0.0.1:8765/scenarios/{page}', 'wait': 'complete'})
+            await b.cmd('browsingContext.navigate', {'context': ctx, 'url': page if page.startswith('http') else f'http://127.0.0.1:8765/scenarios/{page}', 'wait': 'complete'})
             await asyncio.sleep(3.5)
             if 'skimmer' in page:  # имитируем ввод карты: клавиатурой через BiDi input
                 await b.cmd('script.evaluate', {'expression': "document.getElementById('cc').focus(); 1", 'target': {'context': ctx}, 'awaitPromise': False})
@@ -71,7 +71,7 @@ async def main():
                 await b.cmd('script.evaluate', {'expression': "document.getElementById('cc').dispatchEvent(new Event('change', {bubbles: true})); 1", 'target': {'context': ctx}, 'awaitPromise': False})
                 await asyncio.sleep(4)
             shot = await b.cmd('browsingContext.captureScreenshot', {'context': ctx})
-            (SHOTS / page.replace('.html', '.png')).write_bytes(base64.b64decode(shot['data']))
+            (SHOTS / (page.split('/')[2].replace('.', '-') + '.png' if page.startswith('http') else page.replace('.html', '.png'))).write_bytes(base64.b64decode(shot['data']))
             print('Снимок:', page)
     finally:
         proc.terminate()

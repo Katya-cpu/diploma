@@ -30,6 +30,11 @@
     .ex button{border:1px solid var(--line);background:#fff;border-radius:10px;padding:8px 10px;font:inherit;font-size:13px;cursor:pointer;text-align:left}
     .ex button:hover{border-color:var(--accent)}
     .ex small{display:block;color:var(--muted)}
+    .ex button.on{border-color:var(--accent);background:var(--accent-soft)}
+    .viz-tip{position:absolute;pointer-events:none;background:#0f172a;color:#fff;font-size:12px;line-height:1.45;padding:8px 10px;border-radius:8px;max-width:260px;z-index:5}
+    .tbar{display:grid;grid-template-columns:52px 210px 1fr 70px;gap:12px;align-items:center;padding:10px 0;border-bottom:1px solid var(--line)}
+    .tbar .track{height:12px;background:var(--bg);border-radius:99px;overflow:hidden}.tbar .fill{height:100%;border-radius:0 4px 4px 0;background:#2a78d6}
+    .tbar small{display:block;color:var(--muted);font-size:12px}
   </style>
 </head>
 <body>
@@ -44,6 +49,7 @@
       <button data-t="about" class="on">Как это работает</button>
       <button data-t="model">Модель и обучение</button>
       <button data-t="sim">Имитация перевода</button>
+      <button data-t="research">Исследование схем</button>
     </div>
 
     <!-- ===================== ВКЛАДКА 1 ===================== -->
@@ -111,6 +117,7 @@
             <button class="btn ghost" id="b-download">1. Скачать датасет</button>
             <button class="btn ghost" id="b-prepare">2. Построить граф</button>
             <button class="btn accent" id="b-train">3. Обучить модели</button>
+            <button class="btn ghost" id="b-research" title="Выполняется и автоматически после обучения">4. Исследование схем</button>
           </div>
         </div>
         <div class="card">
@@ -138,8 +145,48 @@
         <div class="card" id="simResult"><p class="muted">Выберите пример или введите счёт получателя.</p></div>
       </div>
     </section>
+
+    <!-- ===================== ВКЛАДКА 4 ===================== -->
+    <section id="t-research" hidden>
+      <div class="card prose">
+        <h2 style="margin-top:0">Отдельное исследование: что нейросеть «понимает» о схемах отмывания</h2>
+        <p>Кроме общей метки «отмывание», в датасете есть файл с <b>370 размеченными операциями отмывания</b> восьми типов — это «правильные ответы» о том, <i>какая именно схема</i> использована. Это позволяет пойти глубже, чем «дроп или нет»: проверить, какие схемы модель распознаёт, а какие пропускает, посмотреть схемы вживую и заглянуть внутрь нейросети.</p>
+        <div class="grid3" id="r-stats" style="margin-top:12px"></div>
+      </div>
+      <div class="card" style="margin-top:20px">
+        <h2 style="margin-top:0">1. Какие схемы находит модель</h2>
+        <p class="muted">Доля счетов-получателей каждой схемы, которым GraphSAGE поставила «высокий риск». Только тестовые счета — модель их не видела.</p>
+        <div id="r-types"></div>
+      </div>
+      <div class="card" style="margin-top:20px">
+        <h2 style="margin-top:0">2. Схема отмывания вживую</h2>
+        <p class="muted">Выберите тип схемы и конкретный случай. Крупные круги — счета схемы (цвет — вероятность «дропа» по оценке модели, обводка — истинный «дроп»), мелкие серые — их другие контрагенты. Кнопка ▶ проигрывает переводы схемы в порядке времени.</p>
+        <div id="r-typechips" class="ex" style="margin:10px 0"></div>
+        <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap">
+          <select class="inp" id="r-attempt" style="max-width:420px"></select>
+          <button class="btn accent" id="r-play">▶ Проиграть переводы</button>
+          <span class="muted small" id="r-clock"></span>
+        </div>
+        <div class="grid2" style="grid-template-columns:2fr 1fr;margin-top:12px">
+          <div style="position:relative"><svg id="r-graph" viewBox="0 0 760 520" style="width:100%;background:#fafbff;border:1px solid var(--line);border-radius:12px"></svg><div id="r-tip" class="viz-tip" hidden></div></div>
+          <div><h3 style="margin-top:0">Журнал переводов схемы</h3><div id="r-log" class="small" style="max-height:470px;overflow:auto"></div></div>
+        </div>
+      </div>
+      <div class="card" style="margin-top:20px">
+        <h2 style="margin-top:0">3. Карта, которую выучила нейросеть</h2>
+        <p class="muted">Для каждого счёта GraphSAGE вычисляет 64 числа — своё «представление» о счёте. Метод t-SNE укладывает эти 64-мерные точки на плоскость так, чтобы похожие для сети счета оказались рядом. Показаны тестовые счета: все «дропы» и 3 500 случайных честных получателей.</p>
+        <div id="r-legend" style="display:flex;gap:16px;flex-wrap:wrap;margin:8px 0" class="small"></div>
+        <div style="position:relative"><canvas id="r-map" style="width:100%;height:560px;background:#fafbff;border:1px solid var(--line);border-radius:12px"></canvas><div id="r-maptip" class="viz-tip" hidden></div></div>
+        <p class="note" style="margin-top:12px" id="r-mapnote"></p>
+      </div>
+      <div class="card" style="margin-top:20px">
+        <h2 style="margin-top:0">4. Кто владеет счетами-получателями</h2>
+        <div id="r-entities"></div>
+      </div>
+    </section>
   </main>
   <script src="/assets/nav.js"></script>
   <script src="/assets/graph-ui.js"></script>
+  <script src="/assets/research-ui.js"></script>
 </body>
 </html>
