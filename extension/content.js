@@ -47,7 +47,6 @@
   });
 
   // ---------------- Панель ----------------
-  const COLORS = { danger: '#d92d20', warning: '#dc6803', ok: '#12b76a', none: '#667085' };
   let host = null;
 
   function render(r, trusted) {
@@ -60,22 +59,21 @@
 
     host = document.createElement('div');
     const shadow = host.attachShadow({ mode: 'closed' });
-    const color = COLORS[r.verdict];
     const items = (serious.length ? serious : r.findings).slice(0, 5);
     shadow.innerHTML = `
       <style>
-        .box{position:fixed;z-index:2147483647;right:20px;bottom:20px;width:380px;max-height:80vh;overflow:auto;background:#fff;color:#101828;
-          border-radius:16px;box-shadow:0 20px 50px rgba(16,24,40,.25);font:14px/1.45 system-ui,-apple-system,Segoe UI,sans-serif;border-top:6px solid ${color}}
-        header{display:flex;gap:10px;align-items:center;padding:14px 16px 6px}
-        .dot{width:34px;height:34px;border-radius:50%;background:${color};color:#fff;display:grid;place-items:center;font-weight:700;font-size:18px;flex:none}
-        h2{margin:0;font-size:16px}.sub{color:#667085;font-size:12px}
-        ul{list-style:none;margin:0;padding:6px 16px}li{padding:8px 0;border-bottom:1px solid #f2f4f7}
-        li b{display:block}li span{color:#475467;font-size:13px}
-        .sev{display:inline-block;font-size:11px;font-weight:700;border-radius:99px;padding:1px 8px;margin-bottom:2px;color:#fff}
-        .who{margin:6px 16px;padding:10px 12px;background:#f9fafb;border-radius:10px;font-size:13px}
-        footer{display:flex;gap:8px;padding:10px 16px 14px;flex-wrap:wrap}
-        button{border:0;border-radius:10px;padding:8px 12px;font:inherit;cursor:pointer;background:#f2f4f7;color:#101828}
-        button.main{background:#101828;color:#fff}
+        .box{position:fixed;z-index:2147483647;right:18px;bottom:18px;width:370px;max-width:calc(100vw - 36px);max-height:78vh;overflow:auto;
+          background:#fff;color:#292929;border:1px solid #bdbdbd;border-radius:3px;box-shadow:0 2px 9px rgba(0,0,0,.10);font:13px/1.45 Arial,Helvetica,sans-serif;text-align:left}
+        header{display:flex;gap:9px;align-items:flex-start;padding:13px 15px 11px;border-bottom:1px solid #e4e4e4}
+        .dot{display:none}
+        h2{margin:0;font:600 14px/1.35 Arial,Helvetica,sans-serif}.sub{margin-top:4px;color:#777;font-size:11px}
+        ul{list-style:none;margin:0;padding:3px 15px}li{padding:10px 0;border-bottom:1px solid #ededed}li:last-child{border-bottom:0}
+        li b{display:block;font-size:12px;font-weight:600}li span{display:block;margin-top:4px;color:#666;font-size:12px}
+        .sev{display:block;margin-bottom:4px;padding:0;border:0;border-radius:0;background:transparent!important;color:#777;font:normal 10px/1.4 Arial,Helvetica,sans-serif;text-transform:uppercase;letter-spacing:.35px}
+        .who{margin:0 15px;padding:11px 0;border-top:1px solid #e4e4e4;background:#fff;font-size:12px;color:#555}
+        footer{display:flex;gap:7px;padding:11px 15px 13px;flex-wrap:wrap}
+        button{border:1px solid #c5c5c5;border-radius:2px;padding:6px 11px;font:12px Arial,Helvetica,sans-serif;cursor:pointer;background:#f7f7f7;color:#333}
+        button:hover{background:#eee}button:focus-visible{outline:1px solid #666;outline-offset:2px}button.main{background:#fff;color:#222;border-color:#aaa}
       </style>
       <section class="box" role="alert">
         <header><div class="dot">${r.verdict === 'ok' ? '✓' : '!'}</div>

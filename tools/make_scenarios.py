@@ -252,9 +252,11 @@ document.getElementById('cap').addEventListener('click', function () {
 
 
 if __name__ == '__main__':
+    from scenario_design import style_page, make_artwork
+    make_artwork()
     (OUT / 'js').mkdir(parents=True, exist_ok=True)
     for name, html in PAGES.items():
-        (OUT / name).write_text(html, encoding='utf-8')
+        (OUT / name).write_text(style_page(name, html), encoding='utf-8')
     for name, code in JS.items():
         (OUT / 'js' / name).write_text(code, encoding='utf-8')
     print('Сценариев:', len(PAGES), 'скриптов:', len(JS))

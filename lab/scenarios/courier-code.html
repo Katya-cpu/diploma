@@ -1,14 +1,16 @@
 <!doctype html>
 <html lang="ru">
 <head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Подтверждение доставки</title><link rel="stylesheet" href="scenario.css"><style>:root{--brand:#6d28d9}</style></head>
-<body>
-<div class="bar"><div class="in"><a class="logo" href="#"><i>К</i>КурьерПлюс</a><nav><span>Отследить посылку</span><span>Тарифы</span><span>Поддержка</span></nav></div></div>
+<title>Подтверждение доставки</title><link rel="stylesheet" href="scenario.css"><style>:root{--brand:#6d28d9}</style><link rel="stylesheet" href="scenario-design.css"></head>
+<body class="courier" data-visual-version="2">
+<div class="utility"><div class="in"><span>Служба экспресс-доставки</span><span class="right"><span>Помощь</span><span>Личный кабинет</span></span></div></div>
+<div class="bar"><div class="in"><a class="logo" href="#"><svg class="brand-symbol" viewBox="0 0 32 32" aria-hidden="true"><path d="M2 5h20l9 9-9 12H2l10-12z" fill="#bd2836"/><path d="M5 12h12M3 17h10" stroke="white" stroke-width="2"/></svg>КурьерПлюс</a><nav><span>Отследить посылку</span><span>Тарифы</span><span>Поддержка</span></nav></div></div>
+<div class="catalog-strip"><div class="in"><span>Отслеживание</span><span>Получателям</span><span>Отправителям</span></div></div>
 <div class="sub"><div class="in">Отслеживание › KP-77120-4431</div></div>
 <div class="page">
 
 <section>
-  <div class="panel"><span class="chip amber">Курьер выехал</span>
+  <div class="panel"><div class="workflow"><span>Принято</span><span>В пути</span><b>У курьера</b></div><span class="chip amber">Курьер выехал</span>
     <h1>Посылка KP-77120-4431 будет доставлена сегодня</h1>
     <p class="lead">Чтобы курьер передал посылку, подтвердите адрес и оплатите страховку отправления. Затем введите код из SMS — он подтверждает, что посылку получаете именно вы.</p>
     <label for="addr">Адрес доставки</label><input id="addr" name="address" placeholder="Город, улица, дом, квартира">
