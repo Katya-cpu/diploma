@@ -126,6 +126,8 @@
       const ex = await api('examples');
       $('examples').innerHTML = ex.items.map((e) => `<button data-acc="${esc(e.account)}"><b>${esc(e.account)}</b><small>${esc(e.group)}</small></button>`).join('');
       examplesLoaded = true;
+      // ?demo — сразу показать проверку первого примера (используется для скриншотов документации)
+      if (new URLSearchParams(location.search).has('demo')) $('examples').querySelector('button').click();
     } catch (e) { $('examples').innerHTML = '<div class="note warn">' + esc(e.message) + '</div>'; }
   }
   $('examples').addEventListener('click', (e) => {

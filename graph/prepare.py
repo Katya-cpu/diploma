@@ -66,8 +66,10 @@ def prepare(callback=None):
     del src_key, dst_key, codes
 
     log(f'Счетов: {num(n)}. Считаю признаки…', callback)
-    minutes = (pd.to_datetime(df['Timestamp'], format='%Y/%m/%d %H:%M').astype('int64') // 60_000_000_000).to_numpy().copy()
-    minutes = minutes - minutes.min()
+    # Минуты от начала датасета. Считаем через разность дат, а не через внутреннее целое представление:
+    # оно зависит от версии pandas (нано- или микросекунды).
+    ts = pd.to_datetime(df['Timestamp'], format='%Y/%m/%d %H:%M')
+    minutes = ((ts - ts.min()).dt.total_seconds() // 60).astype(np.int64).to_numpy().copy()
     usd = df['Amount Received'].to_numpy() * df['Receiving Currency'].map(USD_RATE).astype(float).to_numpy()
     fmt = df['Payment Format'].map({f: i for i, f in enumerate(FORMATS)}).astype(int).to_numpy()
     cur = df['Receiving Currency'].cat.codes.to_numpy()
