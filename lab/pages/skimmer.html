@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="ru">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Оформление заказа</title><link rel="stylesheet" href="page.css">
+<style>:root{--c:#7a5c2e}</style></head>
+<body>
+<div class="site"><div class="logo">Ч</div><b>Чайная лавка «Белый лист»</b><span>учебная страница · все данные вымышлены</span></div>
+<main>
+
+<div class="box"><h1>Оплата заказа</h1><p>Пуэр «Старое дерево», 100 г × 2</p><div class="total"><span>Итого</span><span>1 240 ₽</span></div></div>
+<form class="box" action="/pay" method="post"><label for="cc">Номер карты</label><input id="cc" name="cardnumber" autocomplete="cc-number" inputmode="numeric" placeholder="0000 0000 0000 0000">
+  <div class="row"><div><label for="exp">Срок действия</label><input id="exp" name="exp" autocomplete="cc-exp" placeholder="ММ/ГГ"></div>
+  <div><label for="cvc">CVV/CVC</label><input id="cvc" name="cvc" autocomplete="cc-csc" placeholder="123"></div></div><button type="button">Оплатить 1 240 ₽</button></form>
+<script src="js/analytics.js"></script>
+</main>
+</body>
+</html>

@@ -1,0 +1,41 @@
+/* Общий стиль учебных сценариев (раздел 2). Бренды вымышлены; цвет задаётся переменной --brand. */
+:root{--brand:#2b59c3;--brand-ink:#fff;--ink:#121826;--muted:#6b7280;--line:#e5e7eb;--bg:#f3f4f6;--soft:#f9fafb}
+*{box-sizing:border-box}
+body{margin:0;font:15px/1.5 -apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:var(--ink);background:var(--bg)}
+a{color:var(--brand)}
+.bar{background:var(--brand);color:var(--brand-ink)}
+.bar .in{max-width:1080px;margin:auto;display:flex;align-items:center;gap:22px;padding:12px 20px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:20px;color:inherit;text-decoration:none}
+.logo i{width:36px;height:36px;border-radius:10px;background:rgba(255,255,255,.22);display:grid;place-items:center;font-style:normal}
+.search{flex:1;max-width:420px;background:#fff;border-radius:10px;padding:9px 14px;color:#9ca3af;font-size:14px}
+.bar nav{margin-left:auto;display:flex;gap:18px;font-size:14px;opacity:.95}
+.sub{background:#fff;border-bottom:1px solid var(--line)}
+.sub .in{max-width:1080px;margin:auto;padding:10px 20px;font-size:13px;color:var(--muted)}
+.page{max-width:1080px;margin:24px auto;padding:0 20px;display:grid;grid-template-columns:1.35fr 1fr;gap:22px;align-items:start}
+.page.one{grid-template-columns:1fr;max-width:720px}
+@media(max-width:860px){.page{grid-template-columns:1fr}}
+.panel{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px;box-shadow:0 1px 3px rgba(0,0,0,.04)}
+.panel+.panel{margin-top:18px}
+h1{font-size:26px;margin:0 0 8px;letter-spacing:-.01em}h2{font-size:18px;margin:0 0 12px}
+.lead{color:#374151;font-size:16px}
+.muted{color:var(--muted);font-size:13px}
+.chip{display:inline-flex;align-items:center;gap:6px;border-radius:99px;padding:4px 12px;font-size:12px;font-weight:700;background:#ecfdf3;color:#067647}
+.chip.red{background:#fef3f2;color:#b42318}.chip.amber{background:#fffaeb;color:#b54708}
+label{display:block;font-size:13px;font-weight:600;color:#374151;margin:14px 0 6px}
+input{width:100%;padding:12px 14px;border:1px solid #d1d5db;border-radius:10px;font:inherit;background:#fff}
+input:focus{outline:2px solid var(--brand);border-color:transparent}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.btn{display:block;width:100%;margin-top:20px;padding:15px;border:0;border-radius:12px;background:var(--brand);color:var(--brand-ink);font:inherit;font-weight:800;font-size:16px;cursor:pointer;text-align:center;text-decoration:none}
+.btn.alt{background:#111827;color:#fff}
+.item{display:flex;gap:14px;align-items:center;padding:12px 0;border-bottom:1px solid var(--line)}
+.thumb{width:72px;height:72px;border-radius:12px;flex:none;display:grid;place-items:center;font-size:30px;color:#fff;font-weight:800}
+.line{display:flex;justify-content:space-between;padding:6px 0;color:#374151}
+.total{display:flex;justify-content:space-between;font-size:20px;font-weight:800;padding-top:12px;margin-top:8px;border-top:1px solid var(--line)}
+.secure{display:flex;gap:8px;align-items:center;margin-top:14px;font-size:12px;color:var(--muted)}
+.cards{display:flex;gap:6px;margin-top:8px}.cards span{border:1px solid var(--line);border-radius:6px;padding:2px 8px;font-size:11px;font-weight:800;color:#374151}
+.req{background:var(--soft);border:1px dashed #d1d5db;border-radius:12px;padding:14px 16px;font-family:ui-monospace,Consolas,monospace;font-size:15px;line-height:1.8}
+.timer{display:inline-block;background:#111827;color:#fff;border-radius:8px;padding:2px 10px;font-weight:800;font-family:ui-monospace,Consolas,monospace}
+.steps{display:flex;gap:8px;margin:0 0 16px}.steps span{flex:1;height:5px;border-radius:9px;background:var(--line)}.steps span.on{background:var(--brand)}
+.qrbox{display:flex;gap:20px;align-items:center}.qrbox img{width:170px;height:170px;border:1px solid var(--line);border-radius:12px;padding:6px;background:#fff}
+footer{max-width:1080px;margin:30px auto;padding:20px;color:#9ca3af;font-size:12px;border-top:1px solid var(--line)}
+.study{position:fixed;left:12px;bottom:12px;background:#111827;color:#fff;font-size:11px;padding:6px 10px;border-radius:8px;opacity:.75;z-index:5}

@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="pg-lab-ui" content="1">
+  <title>Платёжный помощник — лаборатория</title>
+  <link rel="stylesheet" href="/assets/lab.css">
+  <style>
+    .about{display:grid;grid-template-columns:1fr 1fr;gap:36px;margin-top:8px}
+    @media(max-width:900px){.about{grid-template-columns:1fr}}
+    .about p{color:var(--ink2)}
+    h2{margin:40px 0 12px;padding-top:10px;border-top:1px solid var(--line)}
+  </style>
+</head>
+<body>
+  <div class="top" id="top"></div>
+  <main class="wrap">
+    <section class="hero">
+      <h1>Платёжный помощник</h1>
+      <p>Учебный стенд выпускной квалификационной работы. Браузерное расширение перед оплатой проверяет страницу и объясняет, кому на самом деле уйдут деньги. </p>
+    </section>
+
+    <h2>Разделы</h2>
+    <div class="grid2">
+      <a class="card section-card" href="/checks.html">
+        <span class="num">Расширение</span>
+        <h3>Проверки</h3>
+        <p>Все 18 проверок расширения: что это за обман простыми словами, где он был на самом деле, тестовые страницы, полный список признаков каждого правила и способ увидеть нарушение самому, без помощника.</p>
+        <span class="go">Открыть каталог проверок</span>
+      </a>
+      <a class="card section-card" href="/graph.html" data-needs="/graph.html">
+        <span class="num">Исследование</span>
+        <h3>Граф транзакций</h3>
+        <p>Синтетический банк IBM AMLworld: 5 млн переводов, 515 тыс. счетов. Сравнение четырёх моделей, графовая нейросеть GraphSAGE, имитация перевода.</p>
+        <span class="go">Открыть исследование</span>
+      </a>
+    </div>
+
+    <h2>Как устроен проект</h2>
+    <div class="about">
+      <div>
+        <p><b>Один анализатор — два способа запуска.</b> Все проверки написаны в файлах <code>extension/core/*.js</code>. Расширение запускает их на каждой открытой странице, а раздел «Проверки» подключает те же самые файлы и запускает их на тестовой странице. То, что видно в лаборатории, и есть устройство расширения.</p>
+        <p><b>Решение по совокупности признаков.</b> Проверка не срабатывает на одно слово. Она смотрит, есть ли на странице то, что ведёт к деньгам: поле карты, реквизиты, платёжный QR-код или ссылка СБП. Затем учитывает, кем представляется сайт и как ведёт себя код страницы.</p>
+      </div>
+      <div>
+        <p><b>Схемы взяты из реальных атак.</b> У каждой проверки названы случаи, где приём применялся: «Мамонт» (F6, ESET, Group-IB), British Airways, скиммер Kritec, троян BackSwap, дело FTC против Amazon, NFCGate, ClickFix. Номера CAPEC, ATT&amp;CK и MITRE Fight Fraud Framework (F3) сверены с первоисточниками.</p>
+        <p><b>Расширение предупреждает, но не блокирует.</b> Пользователь видит основания и решает сам. То, что проверить нельзя, показывается отдельно: отсутствие данных не равно безопасности.</p>
+      </div>
+    </div>
+    <p class="note" style="margin-top:24px">Все страницы стенда вымышленные: компании, люди и реквизиты придуманы, реальные платежи не выполняются. Вводите только тестовые данные, например карту 4111 1111 1111 1111.</p>
+    <p class="muted small" style="margin-top:20px">Служебные страницы: <a href="/checks.html?autorun=1">прогон всех тестовых страниц</a><span data-needs="/eval.html"> · <a href="/eval.html">оценка на настоящих страницах (было / стало)</a></span></p>
+  </main>
+  <script src="/assets/nav.js"></script>
+</body>
+</html>

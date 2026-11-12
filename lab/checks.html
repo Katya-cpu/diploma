@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="pg-lab-ui" content="1">
+  <title>Проверки — Платёжный помощник</title>
+  <link rel="stylesheet" href="/assets/lab.css">
+  <style>
+    .layout{display:grid;grid-template-columns:270px minmax(0,1fr);gap:36px;align-items:start}
+    .side{position:sticky;top:16px;max-height:calc(100vh - 32px);overflow:auto;border-right:1px solid var(--line);padding-right:16px}
+    .side h4{margin:16px 0 4px;font-size:14px;font-weight:700;color:var(--ink)}
+    .side a{display:flex;gap:6px;padding:4px 0;color:var(--ink2);font-size:15px;text-decoration:none;line-height:1.35}
+    .side a:hover{color:var(--accent);text-decoration:underline}
+    .side a.on{color:var(--ink);font-weight:700}
+    .side a .n{font-size:13px;color:var(--muted);min-width:20px}
+    @media(max-width:1000px){.layout{grid-template-columns:1fr}.side{position:static;max-height:none;border:0}}
+    #detail{max-width:860px}
+    #detail .head h1{margin:2px 0 10px;font-size:28px}
+    #detail .plain{font-size:18px;line-height:1.55;color:var(--ink);margin:0;border-left:3px solid var(--ink);padding-left:14px}
+    #detail h2{font-size:19px;margin:34px 0 10px;padding-top:12px;border-top:1px solid var(--line)}
+    .case{display:grid;grid-template-columns:190px 1fr;gap:16px;padding:10px 0;border-bottom:1px solid var(--line2);font-size:15px;line-height:1.55;color:var(--ink2)}
+    .case .when{color:var(--muted);font-size:14px}
+    .case b{color:var(--ink)}
+    @media(max-width:700px){.case{grid-template-columns:1fr;gap:2px}}
+    .bench{border:1px solid var(--line)}
+    .bench .bar{padding:8px 10px;border-bottom:1px solid var(--line);background:var(--panel)}
+    .bench iframe{width:100%;height:520px;border:0;display:block;background:#fff}
+    .seg{display:flex;gap:6px;flex-wrap:wrap}
+    .seg button{border:1px solid #9a9a96;background:#fff;border-radius:var(--radius);padding:4px 9px;font:inherit;font-size:14px;cursor:pointer;text-align:left}
+    .seg button.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+    .actions{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap;align-items:center}
+    #result{margin-top:16px}
+    table.signals td,table.tax td{font-size:15px;line-height:1.5;color:var(--ink2)}
+    table.signals td:first-child{width:130px}
+    table.tax td:first-child{width:150px;white-space:nowrap}
+    ol.steps,ul.limits{padding-left:22px;margin:6px 0}
+    ol.steps li,ul.limits li{margin:6px 0;font-size:15px;line-height:1.55;color:var(--ink2)}
+    figure.code{margin:12px 0;border:1px solid var(--line);background:#fbfbfa}
+    figure.code figcaption{padding:8px 12px;border-bottom:1px solid var(--line);font-size:14px;color:var(--ink2);background:var(--panel)}
+    .ln{display:grid;grid-template-columns:44px 1fr;font:13px/1.6 var(--mono)}
+    .ln span{color:var(--muted);text-align:right;padding-right:10px;border-right:1px solid var(--line);user-select:none}
+    .ln code{background:none;padding:0 10px;white-space:pre-wrap;overflow-wrap:anywhere;font-size:13px}
+    .ln.hit{background:#fff7d6}
+    .ln mark{background:#ffd84d;color:inherit}
+    .src a{display:block;font-size:14px;margin:5px 0}
+    .ok-mark{color:var(--ok);font-weight:700}.bad-mark{color:var(--danger);font-weight:700}
+    details.block{border:1px solid var(--line);padding:10px 16px;margin:10px 0}
+    details.block summary{cursor:pointer;font-weight:700}
+    details.block ol{margin:8px 0;padding-left:20px}
+  </style>
+</head>
+<body>
+  <div class="top" id="top"></div>
+  <main class="wrap">
+    <div class="hero" style="padding-top:12px">
+      <h1>Проверки</h1>
+      <p>Все 18 проверок расширения. Для каждой: что это за обман простыми словами, где он был на самом деле, тестовая страница, полный список признаков правила и способ увидеть нарушение самому — без помощника. Анализатор на этой странице — тот же код, что в расширении.</p>
+      <p style="margin-top:14px"><button class="btn" id="runAll">Прогнать все тестовые страницы</button> <span class="muted small">сводная таблица: совпало ли решение анализатора с ожидаемым</span></p>
+    </div>
+
+    <details class="block">
+      <summary>Как проверить страницу самим расширением в Firefox</summary>
+      <ol>
+        <li>Откройте в Firefox адрес <code>about:debugging#/runtime/this-firefox</code>.</li>
+        <li>Нажмите «Загрузить временное дополнение…» и выберите файл <code>extension/manifest.json</code>.</li>
+        <li>На этой странице выберите проверку и нажмите «Открыть отдельно (для расширения)». Панель помощника появится в правом нижнем углу, подробности — по значку щита на панели браузера.</li>
+      </ol>
+      <p class="muted small">Временное дополнение удаляется при закрытии Firefox — после перезапуска повторите шаг 2. На страницах со скиммером введите тестовую карту 4111 1111 1111 1111.</p>
+    </details>
+    <details class="block">
+      <summary>На чём ещё проверить: настоящие мошеннические страницы</summary>
+      <p class="small" style="color:var(--ink2)">Тестовые страницы стенда повторяют приёмы из разобранных случаев, но сами вымышлены. Настоящие страницы берут из открытых источников ниже. Правила работы с ними: отдельный профиль Firefox или виртуальная машина, ничего не вводить и не скачивать, не вставлять команды в окно «Выполнить».</p>
+      <table><thead><tr><th>Источник</th><th>Какие проверки покрывает</th><th>Как пользоваться</th></tr></thead><tbody id="real"></tbody></table>
+    </details>
+
+    <div id="summary" style="margin-top:20px"></div>
+    <div class="layout">
+      <aside class="side" id="side"></aside>
+      <section id="detail"></section>
+    </div>
+  </main>
+  <script src="/assets/nav.js"></script>
+  <script src="/extension/vendor/jsQR.js"></script>
+  <script src="/extension/core/recipient.js"></script>
+  <script src="/extension/core/dom.js"></script>
+  <script src="/extension/core/qr.js"></script>
+  <script src="/extension/core/watch.js"></script>
+  <script src="/extension/core/checks.js"></script>
+  <script src="/extension/core/catalog.js"></script>
+  <script src="/assets/runner.js"></script>
+  <script src="/assets/checks-ui.js"></script>
+</body>
+</html>

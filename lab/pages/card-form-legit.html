@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ru">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Оформление заказа</title><link rel="stylesheet" href="page.css">
+<style>:root{--c:#7a5c2e}</style></head>
+<body>
+<div class="site"><div class="logo">Ч</div><b>Чайная лавка «Белый лист»</b><span>учебная страница · все данные вымышлены</span></div>
+<main>
+
+<div class="box"><h1>Ваш заказ</h1>
+  <p>Пуэр «Старое дерево», 100 г × 2</p><p>Улун «Молочный», 50 г × 1</p>
+  <div class="total"><span>Итого</span><span>1 240 ₽</span></div></div>
+<!-- Как устроена оплата у честного магазина: поля карты без атрибута name (они не отправляются с формой),
+     их шифрует скрипт платёжного провайдера, а на сервер магазина уходит только одноразовый токен. -->
+<form class="box" action="/pay" method="post"><h2>Оплата картой</h2>
+  <label for="cc">Номер карты</label><input id="cc" autocomplete="cc-number" inputmode="numeric" placeholder="0000 0000 0000 0000">
+  <div class="row"><div><label for="exp">Срок действия</label><input id="exp" autocomplete="cc-exp" placeholder="ММ/ГГ"></div>
+  <div><label for="cvc">CVV/CVC</label><input id="cvc" autocomplete="cc-csc" placeholder="123"></div></div>
+  <input type="hidden" name="payment_token" value="">
+  <button type="submit">Оплатить 1 240 ₽</button>
+  <p class="muted">Данные карты шифрует платёжный провайдер (pay-psp.test), магазин получает только токен оплаты.</p>
+</form>
+<script src="https://pay-psp.test/widget.js"></script>
+</main>
+</body>
+</html>

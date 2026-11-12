@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="ru">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Подтверждение платёжных данных</title><link rel="stylesheet" href="page.css">
+<style>:root{--c:#6b2b2b} td{padding:4px 8px} td:first-child{text-align:right}</style></head>
+<body>
+<div class="site"><div class="logo">И</div><b>«Интернет-провайдер» · Расчётный центр</b><span>учебная страница · все данные вымышлены</span></div>
+<main>
+<div class="box"><h1>Подтвердите платёжные данные</h1>
+  <p>Ваш автоплатёж не прошёл. Чтобы не отключили интернет, обновите данные карты. Мы проверяем всю информацию, чтобы защитить вас от мошенников.</p>
+  <!-- Как в старых фишинговых наборах: форма-таблица, подписи в соседних ячейках, без атрибутов autocomplete -->
+  <form action="verify.php" method="post"><table>
+    <tr><td>Имя на карте</td><td><input name="f1"></td></tr>
+    <tr><td>Номер карты</td><td><input name="f2"></td></tr>
+    <tr><td>Срок действия (ММ/ГГ)</td><td><input name="f3"></td></tr>
+    <tr><td>CVV</td><td><input name="f4"></td></tr>
+    <tr><td>Девичья фамилия матери</td><td><input name="f5"></td></tr>
+    <tr><td>PIN-код карты</td><td><input name="f6" type="password"></td></tr>
+    <tr><td></td><td><button type="button">Подтвердить</button></td></tr>
+  </table></form>
+</div>
+</main>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="pg-lab-ui" content="1">
+  <title>Оценка на настоящих страницах</title>
+  <link rel="stylesheet" href="/assets/lab.css">
+</head>
+<body>
+  <div class="top" id="top"></div>
+  <main class="wrap">
+    <h1>Оценка анализатора на настоящих страницах: было / стало</h1>
+    <p>Служебная страница. Берёт сохранённые настоящие страницы (выборка Phish360 — <code>tools/eval_sample.py</code>,
+      русские страницы — <code>tools/eval_ru.py</code>) и прогоняет на них две версии анализатора: до переделки
+      (<code>lab/eval/old</code>, git 83cdc03) и текущую (<code>extension/core</code>).
+      Скрипты страниц не выполняются, внешние загрузки запрещены — анализируется разметка и текст.</p>
+    <p><b><a href="/eval/pages.html">Все проверенные страницы списком</a></b> — с решением каждой версии, настоящей ссылкой,
+      сохранённой копией и разбором: какие признаки нашла проверка и почему.</p>
+    <p><label><input type="checkbox" id="ru" checked> русские страницы</label>
+      <label><input type="checkbox" id="p360" checked> Phish360</label>
+      <button class="btn" id="go">Запустить</button> <span id="prog" class="muted"></span></p>
+    <div id="out"></div>
+  </main>
+  <iframe id="old" src="/eval/runner-old.html" hidden></iframe>
+  <iframe id="new" src="/eval/runner-new.html" hidden></iframe>
+  <iframe id="page" sandbox="allow-same-origin" style="position:absolute;left:-3000px;top:0;width:1280px;height:900px;border:0"></iframe>
+  <script src="/assets/nav.js"></script>
+  <script>
+  (function () {
+    'use strict';
+    const $ = (id) => document.getElementById(id);
+    const loadIndex = async (url) => { try { const r = await fetch(url); return r.ok ? r.json() : []; } catch (e) { return []; } };
+    function load(frame, url) {
+      return new Promise((resolve) => {
+        const done = () => { clearTimeout(t); frame.onload = null; resolve(); };
+        const t = setTimeout(done, 5000);
+        frame.onload = done;
+        frame.src = url;
+      });
+    }
+    const serious = (r) => r.findings.filter((f) => f.severity === 'danger' || f.severity === 'warning');
+    async function run() {
+      $('go').disabled = true;
+      let list = [];
+      if ($('p360').checked) list = list.concat(await loadIndex('/corpus/index.json'));
+      if ($('ru').checked) list = list.concat((await loadIndex('/corpus/ru/index.json')).map((x) => Object.assign(x, { file: 'ru/' + x.file })));
+      const OLD = $('old').contentWindow.PGChecks, NEW = $('new').contentWindow.PGChecks;
+      const rows = [];
+      for (let k = 0; k < list.length; k++) {
+        const item = list[k];
+        $('prog').textContent = (k + 1) + ' / ' + list.length + ' · ' + item.file;
+        await load($('page'), '/corpus/' + item.file);
+        const doc = $('page').contentDocument;
+        if (!doc || !doc.body) continue;
+        const res = {};
+        for (const [name, P] of [['old', OLD], ['new', NEW]]) {
+          try {
+            // одна «тяжёлая» страница не должна остановить весь прогон: больше 15 с — пропускаем
+            const r = await Promise.race([P.inspect(doc, {}, { fetchScripts: false, readQr: false, pageUrl: (item.url || '').trim() || null }),
+              new Promise((_, rej) => setTimeout(() => rej(new Error('timeout')), 15000))]);
+            res[name] = { verdict: r.verdict, checks: [...new Set(serious(r).map((f) => f.check + ':' + f.severity))] };
+          } catch (e) { res[name] = { verdict: 'error', checks: [String(e.message || e)] }; }
+        }
+        rows.push(Object.assign({}, item, res));
+      }
+      window.EVAL = rows;
+      render(rows);
+      try {
+        await fetch('/api/eval/save', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(rows) });
+        $('prog').textContent = 'Готово: ' + rows.length + ' страниц. Результаты сохранены в tools/eval-results.json; таблицы для диплома: tools/eval_run.py --summary';
+      } catch (e) { $('prog').textContent = 'Готово, но сохранить результаты не удалось: ' + e.message; }
+      $('go').disabled = false;
+    }
+    function render(rows) {
+      const groups = [['legit', 'Законные страницы Phish360 (тревога = ложная)'], ['phish', 'Фишинговые страницы Phish360 (тревога = обнаружение)'], ['ru', 'Русские страницы (см. разметку в index.json)']];
+      let html = '';
+      for (const [g, title] of groups) {
+        const part = rows.filter((r) => (g === 'ru' ? r.file.startsWith('ru/') : r.label === g && !r.file.startsWith('ru/')));
+        if (!part.length) continue;
+        const alarm = (v) => v === 'danger' || v === 'warning';
+        const cnt = (ver, pred) => part.filter((r) => pred(r[ver])).length;
+        const byCheck = {};
+        for (const r of part) for (const ver of ['old', 'new']) for (const c of r[ver].checks) {
+          const id = c.split(':')[0]; byCheck[id] = byCheck[id] || { old: 0, new: 0 }; byCheck[id][ver]++;
+        }
+        html += `<h2>${title} — ${part.length} стр.</h2>
+          <table><thead><tr><th></th><th>до переделки</th><th>сейчас</th></tr></thead><tbody>
+          <tr><td>Страниц с тревогой (подозрительно или опасно)</td><td>${cnt('old', (x) => alarm(x.verdict))}</td><td>${cnt('new', (x) => alarm(x.verdict))}</td></tr>
+          <tr><td>Из них «опасно»</td><td>${cnt('old', (x) => x.verdict === 'danger')}</td><td>${cnt('new', (x) => x.verdict === 'danger')}</td></tr>
+          </tbody></table>
+          <h3>По проверкам (сколько страниц)</h3><table><thead><tr><th>Проверка</th><th>до</th><th>сейчас</th></tr></thead><tbody>
+          ${Object.entries(byCheck).sort((a, b) => b[1].old - a[1].old).map(([id, v]) => `<tr><td><code>${id}</code></td><td>${v.old}</td><td>${v.new}</td></tr>`).join('')}
+          </tbody></table>`;
+      }
+      $('out').innerHTML = html;
+    }
+    $('go').onclick = run;
+    if (new URLSearchParams(location.search).has('autorun')) window.addEventListener('load', () => setTimeout(run, 500));
+  })();
+  </script>
+</body>
+</html>

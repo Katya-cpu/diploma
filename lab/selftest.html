@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8"><meta name="pg-lab-ui" content="1">
+  <title>Самопроверка сценариев</title>
+  <link rel="stylesheet" href="/assets/lab.css">
+</head>
+<body>
+  <div class="top" id="top"></div>
+  <main class="wrap">
+    <h1>Самопроверка: анализатор расширения на сценариях раздела 2</h1>
+    <p class="muted">Служебная страница для разработчика. Запускает тот же анализатор, что работает в расширении, на каждом учебном сценарии и сравнивает с ожидаемой реакцией (lab/assets/scenarios-data.js).</p>
+    <p id="prog" class="muted"></p>
+    <table><thead><tr><th>Сценарий</th><th>Ожидалось</th><th>Итог</th><th>Ожидаемые проверки сработали?</th><th>Все признаки</th><th></th></tr></thead><tbody id="rows"></tbody></table>
+  </main>
+  <iframe id="f" style="position:absolute;left:-2000px;top:0;width:1100px;height:800px;border:0"></iframe>
+  <script src="/assets/nav.js"></script>
+  <script src="/extension/vendor/jsQR.js"></script>
+  <script src="/extension/core/recipient.js"></script>
+  <script src="/extension/core/dom.js"></script>
+  <script src="/extension/core/qr.js"></script>
+  <script src="/extension/core/watch.js"></script>
+  <script src="/extension/core/checks.js"></script>
+  <script src="/extension/core/catalog.js"></script>
+  <script src="/assets/runner.js"></script>
+  <script src="/assets/scenarios-data.js"></script>
+  <script>
+    (async () => {
+      const rows = document.getElementById('rows');
+      let pass = 0;
+      for (const s of SCENARIOS) {
+        document.getElementById('prog').textContent = 'Проверяется ' + s.file;
+        const r = await LabRunner.runPage('/scenarios/' + s.file, document.getElementById('f'));
+        const fired = new Set(r.findings.filter((f) => f.severity !== 'info').map((f) => f.check));
+        const checksOk = s.checks.every((c) => fired.has(c));
+        const ok = (s.expect === 'ok' ? r.verdict === 'ok' || r.verdict === 'none' : r.verdict === s.expect) && checksOk;
+        if (ok) pass++;
+        rows.insertAdjacentHTML('beforeend', `<tr><td>${s.title}<div class="muted small">${s.file}</div></td><td>${s.expect}</td><td>${r.verdict}</td>
+          <td>${s.checks.map((c) => (fired.has(c) ? '✓ ' : '✗ ') + c).join('<br>') || '—'}</td>
+          <td class="small">${r.findings.map((f) => f.severity + ': ' + f.title).join('<br>')}</td><td>${ok ? '✓' : '✗'}</td></tr>`);
+      }
+      document.getElementById('prog').innerHTML = '<b id="done">Совпало ' + pass + ' из ' + SCENARIOS.length + '</b>';
+    })();
+  </script>
+</body>
+</html>

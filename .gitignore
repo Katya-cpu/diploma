@@ -1,0 +1,7 @@
+# Окружение, данные и обученные веса (воспроизводятся из кода)
+.venv/
+__pycache__/
+*.pyc
+graph/data/
+graph/models/*.pt
+graph/models/*.npz

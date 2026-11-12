@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Платёжный помощник</title>
+  <style>
+    body{width:390px;margin:0;border:1px solid #c7c7c7;font:13px/1.45 Arial,Helvetica,sans-serif;color:#333;background:#fff}
+    header{padding:14px 15px 12px;border-bottom:1px solid #ddd;color:#333;background:#fff}
+    header h1{margin:0;font:600 15px Arial,Helvetica,sans-serif}header p{margin:5px 0 0;color:#777;font-size:11px}
+    .verdict{margin:12px 15px;padding:10px 11px;border:1px solid #d3d3d3;border-radius:2px;font-size:13px;font-weight:600}
+    .danger,.warning,.ok,.none{background:#fafafa;color:#333}
+    h3{margin:16px 15px 8px;font-size:11px;font-weight:normal;letter-spacing:.3px;text-transform:uppercase;color:#777}
+    details{margin:0 15px 7px;border:1px solid #ddd;border-radius:2px;padding:9px 10px}
+    summary{cursor:pointer;font-size:12px;font-weight:normal}
+    .tag{font-size:10px;font-weight:normal;border-radius:0;padding:0;color:#777;margin-right:6px;background:transparent!important}
+    .why{color:#666;font-size:12px}
+    .todo{color:#222;font-size:12px;border-left:2px solid #999;padding-left:8px}
+    ul{margin:4px 0;padding-left:18px}
+    .row{display:flex;gap:7px;margin:12px 15px}
+    button{border:1px solid #c5c5c5;border-radius:2px;padding:6px 10px;font:12px Arial,Helvetica,sans-serif;cursor:pointer;background:#f7f7f7;color:#333}
+    button.main{background:#fff;color:#222;border-color:#aaa}button:hover{background:#eee}
+    .muted{color:#777;font-size:11px;margin:0 15px 12px}
+    .hist{margin:0 15px;font-size:11px}.hist div{padding:7px 0;border-bottom:1px solid #e9e9e9}
+  </style>
+</head>
+<body>
+  <header><h1>Платёжный помощник</h1><p>Проверка страницы перед оплатой</p></header>
+  <div id="verdict" class="verdict none">Загрузка…</div>
+  <div id="who"></div>
+  <h3>Найденные признаки</h3>
+  <div id="findings"></div>
+  <div id="limits"></div>
+  <div class="row"><button class="main" id="rescan">Проверить заново</button><button id="untrust" hidden>Убрать сайт из доверенных</button></div>
+  <h3>Журнал предупреждений</h3>
+  <div class="hist" id="history"></div>
+  <div class="row"><button id="clear">Очистить журнал</button></div>
+  <script src="core/catalog.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

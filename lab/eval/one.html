@@ -1,0 +1,24 @@
+<!doctype html><meta charset="utf-8"><meta name="pg-lab-ui" content="1"><title>one</title>
+<!-- Одна страница выборки → решения старой и новой версии анализатора в window.RESULT (tools/eval_run.py).
+     u — настоящий адрес, с которого страница сохранена: по нему работают проверки адреса (HTTP, чужой сайт формы). -->
+<iframe id="old" src="/eval/runner-old.html" hidden></iframe>
+<iframe id="new" src="/eval/runner-new.html" hidden></iframe>
+<iframe id="page" sandbox="allow-same-origin" style="position:absolute;left:-3000px;top:0;width:1280px;height:900px;border:0"></iframe>
+<script>
+(async function () {
+  const q = new URLSearchParams(location.search), file = q.get('f'), pageUrl = q.get('u') || null;
+  await new Promise((r) => (document.readyState === 'complete' ? r() : addEventListener('load', r)));
+  const fr = document.getElementById('page');
+  // внешние картинки и шрифты могут грузиться бесконечно — ждём не больше 5 с
+  await new Promise((r) => { const t = setTimeout(r, 5000); fr.onload = () => { clearTimeout(t); r(); }; fr.src = '/corpus/' + file; });
+  const doc = fr.contentDocument, res = {};
+  const serious = (r) => r.findings.filter((f) => f.severity === 'danger' || f.severity === 'warning');
+  for (const name of ['old', 'new']) {
+    try {
+      const r = await document.getElementById(name).contentWindow.PGChecks.inspect(doc, {}, { fetchScripts: false, readQr: false, pageUrl });
+      res[name] = { verdict: r.verdict, checks: [...new Set(serious(r).map((f) => f.check + ':' + f.severity))] };
+    } catch (e) { res[name] = { verdict: 'error', checks: [String(e.message || e)] }; }
+  }
+  window.RESULT = res;
+})();
+</script>
