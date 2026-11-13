@@ -7,6 +7,7 @@
   const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
   const EXPECT = { danger: ['опасно', 'danger'], warning: ['подозрительно', 'warning'], ok: ['признаков нет', 'ok'] };
   const LEVEL = { danger: 'Опасно', warning: 'Подозрительно', info: 'К сведению' };
+  const EVID = { strong: 'Подтверждено реальными случаями', partial: 'Подтверждено частично', weak: 'Слабо подтверждено' };
   const pageUrl = (p) => '/' + (p.dir || 'pages') + '/' + p.file;
 
   // ---------- Список проверок слева ----------
@@ -50,17 +51,20 @@
         <div class="eyebrow">Проверка ${n} из ${C.length} · ${esc(c.group)}</div>
         <h1>${esc(c.title)}</h1>
         <p class="plain">${esc(c.plain)}</p>
+        ${c.evidence ? `<p class="evid ${c.evidence.level}"><b>${EVID[c.evidence.level]}.</b> ${esc(c.evidence.note)}</p>` : ''}
       </div>
 
       <h2>Где это было на самом деле</h2>
       <div class="cases">${c.cases.map((k) => `<div class="case"><div class="when">${esc(k.when)}</div>
-        <div><b>${esc(k.name)}</b> — ${esc(k.what)} <a target="_blank" rel="noopener" href="${k.source.url}">Источник</a></div></div>`).join('')}</div>
+        <div><b>${esc(k.name)}</b> — ${esc(k.what)} <a target="_blank" rel="noopener" href="${k.source.url}">Источник</a>
+        ${k.shot ? `<a class="shot" target="_blank" href="/${k.shot}"><img src="/${k.shot}" alt="Снимок настоящей страницы: ${esc(k.name)}"><span>Снимок настоящей страницы. Источник: urlscan.io</span></a>` : ''}</div></div>`).join('')}</div>
 
       <h2>Попробовать на странице</h2>
       <div class="bench">
         <div class="bar">
-          <span class="seg">${c.pages.map((p, i) => `<button data-i="${i}">${esc(p.label)}</button>`).join(' ')}</span>
+          <span class="seg">${c.pages.map((p, i) => `<button data-i="${i}">${esc(p.label)}${p.dir === 'pages' ? ' <small>· проверка признака</small>' : ''}</button>`).join(' ')}</span>
         </div>
+        <p class="muted small bench-note" id="kind"></p>
         <iframe id="frame" title="Тестовая страница"></iframe>
       </div>
       <div class="actions">
@@ -102,6 +106,9 @@
       const page = c.pages[i];
       detail.querySelectorAll('.seg button').forEach((b) => b.classList.toggle('on', Number(b.dataset.i) === i));
       detail.querySelector('#open').href = pageUrl(page);
+      detail.querySelector('#kind').textContent = page.dir === 'pages'
+        ? 'Проверка одного признака: минимальная страница, на которой есть только то, что проверяет правило. Это не имитация сайта — как выглядят настоящие мошеннические страницы, см. снимки выше.'
+        : 'Учебный сайт: приём из реального случая на вымышленном бренде.';
       const e = EXPECT[page.expect];
       detail.querySelector('#expect').className = 'pill ' + e[1];
       detail.querySelector('#expect').textContent = 'Ожидаемый итог: ' + e[0];
@@ -131,6 +138,11 @@
   show(location.hash.slice(1) || C[0].id);
 
   // ---------- На чём ещё проверить: источники настоящих страниц ----------
+  const shots = document.getElementById('realShots');
+  if (shots) {
+    shots.innerHTML = PGCatalog.REAL_PAGES.map((r) => `<figure class="realshot"><a target="_blank" href="/${r.file}"><img src="/${r.file}" alt="${esc(r.title)}"></a>
+      <figcaption><b>${esc(r.title)}</b> · ${esc(r.date)}<br>${esc(r.what)}<br>Проверки: ${r.checks.map((id) => `<a href="#${id}">${esc(PGCatalog.byId(id).title)}</a>`).join(', ')} · <a target="_blank" rel="noopener" href="${r.source.url}">Источник</a></figcaption></figure>`).join('');
+  }
   const real = document.getElementById('real');
   if (real) {
     real.innerHTML = PGCatalog.REAL_SOURCES.map((r) => `<tr><td><a target="_blank" rel="noopener" href="${r.url}">${esc(r.name)}</a></td><td>${esc(r.covers)}</td><td>${esc(r.how)}</td></tr>`).join('');

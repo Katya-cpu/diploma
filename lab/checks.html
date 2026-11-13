@@ -47,6 +47,19 @@
     details.block{border:1px solid var(--line);padding:10px 16px;margin:10px 0}
     details.block summary{cursor:pointer;font-weight:700}
     details.block ol{margin:8px 0;padding-left:20px}
+    .evid{margin:12px 0 0;font-size:15px;padding:6px 0 6px 12px;border-left:3px solid var(--line)}
+    .evid.strong{border-left-color:var(--ok)}.evid.strong b{color:var(--ok)}
+    .evid.partial{border-left-color:var(--warning)}.evid.partial b{color:var(--warning)}
+    .evid.weak{border-left-color:var(--danger)}.evid.weak b{color:var(--danger)}
+    a.shot{display:block;margin:10px 0 4px;max-width:520px;border:1px solid var(--line);text-decoration:none}
+    a.shot img{display:block;width:100%}
+    a.shot span{display:block;padding:4px 8px;font-size:13px;color:var(--muted);background:var(--panel)}
+    .realshots{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px}
+    figure.realshot{margin:0;border:1px solid var(--line)}
+    figure.realshot img{display:block;width:100%;border-bottom:1px solid var(--line)}
+    figure.realshot figcaption{padding:8px 10px;font-size:14px;line-height:1.5;color:var(--ink2)}
+    .seg small{color:inherit;opacity:.7}
+    .bench-note{margin:0;padding:6px 10px;border-bottom:1px solid var(--line);background:#fff}
   </style>
 </head>
 <body>
@@ -69,6 +82,10 @@
     </details>
     <details class="block">
       <summary>На чём ещё проверить: настоящие мошеннические страницы</summary>
+      <h3 style="margin:14px 0 6px">Снимки настоящих страниц</h3>
+      <p class="small" style="color:var(--ink2)">Снимки сделаны сервисом urlscan.io, сами страницы при этом не открывались. Нажмите на снимок, чтобы открыть его целиком.</p>
+      <div class="realshots" id="realShots"></div>
+      <h3 style="margin:18px 0 6px">Где взять ещё</h3>
       <p class="small" style="color:var(--ink2)">Тестовые страницы стенда повторяют приёмы из разобранных случаев, но сами вымышлены. Настоящие страницы берут из открытых источников ниже. Правила работы с ними: отдельный профиль Firefox или виртуальная машина, ничего не вводить и не скачивать, не вставлять команды в окно «Выполнить».</p>
       <table><thead><tr><th>Источник</th><th>Какие проверки покрывает</th><th>Как пользоваться</th></tr></thead><tbody id="real"></tbody></table>
     </details>
