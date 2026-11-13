@@ -143,6 +143,22 @@
     shots.innerHTML = PGCatalog.REAL_PAGES.map((r) => `<figure class="realshot"><a target="_blank" href="/${r.file}"><img src="/${r.file}" alt="${esc(r.title)}"></a>
       <figcaption><b>${esc(r.title)}</b> · ${esc(r.date)}<br>${esc(r.what)}<br>Проверки: ${r.checks.map((id) => `<a href="#${id}">${esc(PGCatalog.byId(id).title)}</a>`).join(', ')} · <a target="_blank" rel="noopener" href="${r.source.url}">Источник</a></figcaption></figure>`).join('');
   }
+  const run = document.getElementById('realRun');
+  if (run && window.URLSCAN_RESULTS) {
+    const R = window.URLSCAN_RESULTS, s = R.summary;
+    const V = { danger: ['опасно', 'danger'], warning: ['подозрительно', 'warning'], ok: ['признаков нет', 'ok'], none: ['признаков нет', 'info'] };
+    const rows = R.rows.filter((r) => r.verdict !== 'none' || r.scheme === 'brand');
+    run.innerHTML = `<p class="small" style="color:var(--ink2)">${esc(R.date)}: с urlscan.io скачан код ${s.all} настоящих страниц, и на нём запущен тот же анализатор, что в расширении. Скрипты страниц не выполнялись, сетевые запросы были запрещены.</p>
+      <ul class="small" style="color:var(--ink2)">
+        <li><b>ClickFix, ${s.clickfix.n} страниц:</b> «опасно» — ${s.clickfix.danger}, «подозрительно» — ${s.clickfix.warning}. На всех ${s.clickfix.danger + s.clickfix.warning} страницах, где «капча» есть в сохранённом коде, она найдена. На остальных ${s.clickfix.n - s.clickfix.danger - s.clickfix.warning} в коде только загрузчик: подделку подгружает чужой скрипт по условию (например, только посетителям с Windows), а без выполнения чужого кода её не видно.</li>
+        <li><b>Подделки брендов, ${s.brand.n} страниц:</b> «опасно» — ${s.brand.danger}: обе страницы, где на сохранённом шаге есть форма карты. Остальные — первые шаги наборов (адрес доставки, вход по паролю, приманка «розыгрыш», проверка Cloudflare перед формой): платёжного объекта на них ещё нет, и помощник правильно молчит.</li>
+      </ul>
+      <details class="block" style="margin-top:6px"><summary>Все страницы, на которых помощник сработал, и все подделки брендов (${rows.length})</summary>
+      <table><thead><tr><th>Сайт</th><th>Что это</th><th>Итог</th><th>Что нашёл помощник</th></tr></thead><tbody>
+      ${rows.map((r) => `<tr><td><a target="_blank" rel="noopener" href="https://urlscan.io/result/${r.uuid}/">${esc(r.domain)}</a><div class="muted small">${esc(r.time)}</div></td><td class="small">${esc(r.why)}</td>
+        <td><span class="pill ${V[r.verdict][1]}">${V[r.verdict][0]}</span></td><td class="small">${r.titles.map(esc).join('<br>') || '—'}</td></tr>`).join('')}
+      </tbody></table></details>`;
+  }
   const real = document.getElementById('real');
   if (real) {
     real.innerHTML = PGCatalog.REAL_SOURCES.map((r) => `<tr><td><a target="_blank" rel="noopener" href="${r.url}">${esc(r.name)}</a></td><td>${esc(r.covers)}</td><td>${esc(r.how)}</td></tr>`).join('');

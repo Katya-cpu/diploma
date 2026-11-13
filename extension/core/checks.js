@@ -198,6 +198,25 @@
         details: ['В коде страницы (' + tgScript.name + ') записан адрес api.telegram.org/bot… — это программный интерфейс ботов Telegram.',
           'Магазины так не принимают оплату. Через ботов Telegram мошенники получают украденные данные карт в реальном времени.'] });
     }
+    // Страница выдаёт себя за окно платёжного сервиса. У настоящего Stripe Checkout, ЮKassa, CloudPayments поля карты
+    // стоят во фрейме с адреса самого сервиса или страница загружает его скрипт. Если на странице написано «Powered by
+    // stripe» / «Оплата через ЮKassa», а поля карты — обычные поля самой страницы и кода сервиса нет, это копия его окна.
+    // Так устроен набор «оплата подписки ChatGPT», найденный на взломанных сайтах (urlscan.io, 2026).
+    const CLAIMS = [['Stripe', /powered by\s*stripe|unterstützt von\s*stripe|propulsé par\s*stripe|con tecnología de\s*stripe|stripe checkout/i, /(^|\.)stripe\.(com|network)$/],
+      ['ЮKassa', /юkassa|юkassa|yookassa|юmoney|yoomoney/i, /(^|\.)(yookassa|yoomoney)\.ru$/],
+      ['CloudPayments', /cloudpayments/i, /(^|\.)cloudpayments\.ru$/],
+      ['Т-Касса', /т-касс|tinkoff ?kassa|т-банк.{0,20}эквайринг/i, /(^|\.)(tbank|tinkoff)\.ru$/],
+      ['PayPal', /powered by\s*paypal|paypal checkout/i, /(^|\.)paypal\.com$/]];
+    const providerLoaded = (re) => ctx.scripts.some((sc) => sc.host && re.test(sc.host)) ||
+      [...ctx.doc.querySelectorAll('iframe[src]')].some((fr) => re.test(D.hostOf(fr.getAttribute('src'), ctx.url)));
+    const ownCard = cards.some((f) => f.el.form && D.siteOf(D.hostOf(f.el.form.getAttribute('action') || '', ctx.url) || ctx.host) === ctx.site);
+    const claim = CLAIMS.find(([, said, host]) => said.test(ctx.text) && !host.test(ctx.host) && !providerLoaded(host));
+    if (claim && ownCard) {
+      out.push({ severity: 'danger', title: 'Страница выдаёт себя за окно оплаты ' + claim[0],
+        details: ['На странице написано, что оплату проводит ' + claim[0] + ', но поля карты — обычные поля этой страницы, и форма отправит их на ' + ctx.host + '. Кода ' + claim[0] + ' на странице нет.',
+          'Настоящее окно ' + claim[0] + ' открывается на его собственном адресе или во фрейме с этого адреса. Это копия окна оплаты.'] });
+      ownServer.clear(); // тот же факт уже назван точнее
+    }
     if (ownServer.size) {
       out.push({ severity: 'warning', title: 'Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру',
         details: ['Форма отправит номер карты на ' + [...ownServer].join(', ') + '. Окна банка или платёжного провайдера на странице нет.',
@@ -618,14 +637,61 @@
 
   // 15. ClickFix: поддельная «капча» просит вставить команду в окно «Выполнить»
   CHECKS['clickfix'] = (ctx) => {
-    const instr = ctx.text.match(/(win(?:dows)?\s*\+\s*r|⊞\s*\+\s*r|окно «?выполнить»?)[^]{0,160}?(ctrl\s*\+\s*v|вставьте)/i);
-    const payload = ctx.scripts.some((s) => /clipboard\.writeText|execCommand\(\s*['"]copy/.test(s.code) &&
-      /powershell|mshta|cmd(?:\.exe)?\s*\/c|iwr\s|invoke-webrequest|curl\s|bitsadmin|rundll32/i.test(s.code + revealHidden(s.code)));
-    if (!instr && !payload) return [];
-    return [{ severity: 'danger', title: 'Поддельная проверка «я не робот»: вас просят запустить команду',
-      details: [instr ? 'Инструкция на странице: «' + instr[0].replace(/\s+/g, ' ').slice(0, 140) + '».' : 'Скрипт страницы кладёт в буфер обмена команду для Windows.',
-        payload ? 'Страница копирует в буфер обмена команду (PowerShell/mshta/cmd). После Win+R → Ctrl+V → Enter она скачает и запустит вредоносную программу.'
-          : 'Настоящая капча никогда не просит открывать окно «Выполнить» и что-то туда вставлять.'] }];
+    // Текст и скрипты самой страницы и её встроенных окон того же сайта (iframe srcdoc): настоящие наборы
+    // прячут поддельную капчу во вложенный документ, и в тексте основной страницы инструкции нет.
+    const docs = [ctx.doc];
+    for (const fr of ctx.doc.querySelectorAll('iframe')) {
+      try { if (fr.contentDocument && fr.contentDocument.body) docs.push(fr.contentDocument); } catch (e) { /* чужое окно недоступно */ }
+    }
+    // Инструкцию ищем во всём тексте, в том числе скрытом: шаги «Win+R → Ctrl+V» показываются только после нажатия
+    // на «капчу», а предупредить нужно до него. Код скриптов и стилей в текст не попадает.
+    const allText = (d) => {
+      const out = [], walk = d.createTreeWalker(d.body, 4);
+      for (let n = walk.nextNode(); n; n = walk.nextNode()) {
+        if (!/^(SCRIPT|STYLE|NOSCRIPT|TEMPLATE)$/.test(n.parentNode.nodeName)) out.push(n.nodeValue);
+      }
+      return out.join(' ').replace(/\s+/g, ' ');
+    };
+    const text = docs.map(allText).join('\n');
+    const codes = ctx.scripts.map((s) => s.code).concat(docs.slice(1).flatMap((d) => [...d.querySelectorAll('script:not([src])')].map((s) => s.textContent)));
+    // Инструкция: открыть окно запуска команд и вставить туда текст. Встречается в двух вариантах:
+    //   Win+R (окно «Выполнить») → Ctrl+V → Enter;  Win+X → «Windows PowerShell»/«Терминал» → Ctrl+V → Enter.
+    // Клавишу Win часто рисуют картинкой — тогда в тексте остаётся только «+ R» / «+ X».
+    const OPEN = /(?:win(?:dows)?(?:\s*key)?\s*\+\s*[rx]\b|⊞\s*\+\s*[rx]\b|(?:^|\s)\+\s*[rx]\b|окно\s*«?выполнить»?|run dialog|windows powershell|терминал|terminal)/i;
+    const PASTE = /ctrl\s*\+\s*v|вставьте|paste/i;
+    let instr = null;
+    for (const m of text.matchAll(new RegExp(OPEN.source, 'gi'))) {
+      const tail = text.slice(m.index, m.index + 400);
+      if (PASTE.test(tail) && /enter|ввод/i.test(tail)) { instr = tail.slice(0, (tail.search(/enter|ввод/i) || 140) + 5); break; }
+    }
+    const clipWrite = codes.some((c) => /clipboard\.writeText|execCommand\(\s*['"]copy/.test(c + revealHidden(c)));
+    const command = codes.some((c) => /powershell|mshta|cmd(?:\.exe)?\s*\/c|iwr\s|invoke-webrequest|curl\s|bitsadmin|rundll32|msiexec/i.test(c + revealHidden(c)) &&
+      /clipboard\.writeText|execCommand\(\s*['"]copy/.test(c + revealHidden(c)));
+    // «Опасно»: инструкция (вставить в окно запуска команд) или скрипт, который кладёт в буфер команду Windows.
+    // Одна запись в буфер без инструкции и без команды — обычная кнопка «Скопировать», тревоги нет.
+    if (!instr && !command) {
+      // Первый шаг ClickFix: страница показывает флажок «я не робот», а инструкцию подгружает уже после нажатия.
+      // Настоящую проверку (Cloudflare Turnstile, reCAPTCHA, hCaptcha, Яндекс SmartCaptcha) всегда загружает сервер
+      // провайдера. Если фраза стоит в коротком элементе самой страницы, а кода провайдера нет — проверка нарисована.
+      const PHRASE = /i'?m not a robot|i am not a robot|verify (?:that )?you are (?:a )?human|я не робот|checking if you are human|je ne suis pas un robot/i;
+      const PROVIDER = /challenges\.cloudflare\.com|google\.com\/recaptcha|recaptcha\.net|gstatic\.com\/recaptcha|hcaptcha\.com|smartcaptcha|captcha-api\.yandex|arkoselabs|funcaptcha|geetest/i;
+      const drawn = docs.some((d) => [...d.querySelectorAll('label, span, div, p, button, h1, h2')].some((el) =>
+        el.children.length <= 2 && el.textContent.length < 80 && PHRASE.test(el.textContent)));
+      const provider = docs.some((d) => [...d.querySelectorAll('script[src], iframe[src]')].some((el) => PROVIDER.test(el.getAttribute('src'))));
+      if (!drawn || provider) return [];
+      return [{ severity: 'warning', title: 'Проверка «я не робот» нарисована самой страницей',
+        details: ['На странице флажок «я не робот», но кода настоящей службы проверки (Cloudflare, reCAPTCHA, hCaptcha, Яндекс) нет.',
+          'Так начинается ClickFix: после нажатия страница попросит нажать Win+R или открыть PowerShell и вставить команду. Не выполняйте никаких шагов с клавиатурой.'] }];
+    }
+    const details = [];
+    if (instr) details.push('Инструкция на странице: «' + instr.replace(/\s+/g, ' ').trim().slice(0, 160) + '».');
+    if (command) details.push('Скрипт страницы кладёт в буфер обмена команду для Windows (PowerShell, mshta или cmd). После вставки и Enter она скачает и запустит вредоносную программу.');
+    else if (clipWrite) details.push('Скрипт страницы при нажатии на «проверку» записывает что-то в буфер обмена — это и есть команда, которую просят вставить.');
+    if (instr && !ctx.text.replace(/\s+/g, ' ').includes(instr.replace(/\s+/g, ' ').trim().slice(0, 15))) {
+      details.push('Инструкция пока скрыта: она появится после нажатия на «проверку»' + (docs.length > 1 ? ' и лежит во встроенном окне страницы' : '') + '. Не нажимайте её.');
+    }
+    details.push('Настоящая капча никогда не просит открывать окно «Выполнить», PowerShell или терминал и что-то туда вставлять.');
+    return [{ severity: 'danger', title: 'Поддельная проверка «я не робот»: вас просят запустить команду', details }];
   };
 
   // 16. Фейковое «приложение банка» (.apk) и программы удалённого доступа (схема NFCGate / NGate)

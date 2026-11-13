@@ -16,7 +16,8 @@
   for (const name of ['old', 'new']) {
     try {
       const r = await document.getElementById(name).contentWindow.PGChecks.inspect(doc, {}, { fetchScripts: false, readQr: false, pageUrl });
-      res[name] = { verdict: r.verdict, checks: [...new Set(serious(r).map((f) => f.check + ':' + f.severity))] };
+      res[name] = { verdict: r.verdict, checks: [...new Set(serious(r).map((f) => f.check + ':' + f.severity))],
+        titles: serious(r).map((f) => f.title), info: r.findings.filter((f) => f.severity === 'info').map((f) => f.title) };
     } catch (e) { res[name] = { verdict: 'error', checks: [String(e.message || e)] }; }
   }
   window.RESULT = res;

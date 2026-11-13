@@ -85,6 +85,8 @@
       <h3 style="margin:14px 0 6px">Снимки настоящих страниц</h3>
       <p class="small" style="color:var(--ink2)">Снимки сделаны сервисом urlscan.io, сами страницы при этом не открывались. Нажмите на снимок, чтобы открыть его целиком.</p>
       <div class="realshots" id="realShots"></div>
+      <h3 style="margin:18px 0 6px">Прогон помощника на коде настоящих страниц</h3>
+      <div id="realRun"></div>
       <h3 style="margin:18px 0 6px">Где взять ещё</h3>
       <p class="small" style="color:var(--ink2)">Тестовые страницы стенда повторяют приёмы из разобранных случаев, но сами вымышлены. Настоящие страницы берут из открытых источников ниже. Правила работы с ними: отдельный профиль Firefox или виртуальная машина, ничего не вводить и не скачивать, не вставлять команды в окно «Выполнить».</p>
       <table><thead><tr><th>Источник</th><th>Какие проверки покрывает</th><th>Как пользоваться</th></tr></thead><tbody id="real"></tbody></table>
@@ -105,6 +107,7 @@
   <script src="/extension/core/checks.js"></script>
   <script src="/extension/core/catalog.js"></script>
   <script src="/assets/runner.js"></script>
+  <script src="/real/results.js"></script>
   <script src="/assets/checks-ui.js"></script>
 </body>
 </html>
