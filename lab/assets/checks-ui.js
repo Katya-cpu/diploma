@@ -9,13 +9,53 @@
   const LEVEL = { danger: 'Опасно', warning: 'Подозрительно', info: 'К сведению' };
   const EVID = { strong: 'Подтверждено реальными случаями', partial: 'Подтверждено частично', weak: 'Слабо подтверждено' };
   const pageUrl = (p) => '/' + (p.dir || 'pages') + '/' + p.file;
+  const SCH = PGSchemes.SCHEMES;
 
-  // ---------- Список проверок слева ----------
+  // Номера проверок: основные — 1, 2, 3…; часть другой проверки — номер основной с буквой («7а»).
+  const NUM = {};
+  { let n = 0; const sub = {}; for (const c of C) {
+    if (c.partOf) { sub[c.partOf] = (sub[c.partOf] || 0) + 1; NUM[c.id] = NUM[c.partOf] + 'абвг'[sub[c.partOf] - 1]; } else NUM[c.id] = String(++n);
+  } }
+  const MAIN = C.filter((c) => !c.partOf).length;
+  const checkLink = (id) => `<a href="#${id}">${NUM[id]}. ${esc(PGCatalog.byId(id).title)}</a>`;
+
+  // ---------- Список слева: сначала виды мошенничества, затем проверки ----------
+  side.insertAdjacentHTML('beforeend', '<h3>Виды мошенничества</h3>');
+  SCH.forEach((x) => side.insertAdjacentHTML('beforeend', '<a href="#s-' + x.id + '" data-id="s-' + x.id + '"><span class="dot ' + x.evidence[0] + '"></span>' + esc(x.title) + '</a>'));
+  side.insertAdjacentHTML('beforeend', '<h3>Проверки расширения</h3>');
   let group = '';
-  C.forEach((c, i) => {
-    if (c.group !== group) { group = c.group; side.insertAdjacentHTML('beforeend', '<h4>' + esc(group) + '</h4>'); }
-    side.insertAdjacentHTML('beforeend', '<a href="#' + c.id + '" data-id="' + c.id + '"><span class="n">' + (i + 1) + '</span>' + esc(c.title) + '</a>');
+  C.forEach((c) => {
+    if (c.group !== group && !c.partOf) { group = c.group; side.insertAdjacentHTML('beforeend', '<h4>' + esc(group) + '</h4>'); }
+    side.insertAdjacentHTML('beforeend', '<a href="#' + c.id + '" data-id="' + c.id + '"' + (c.partOf ? ' class="sub"' : '') + '><span class="n">' + NUM[c.id] + '</span>' + esc(c.title) + '</a>');
   });
+
+  const caseHtml = (k) => `<div class="case"><div class="when">${esc(k.when)}</div>
+        <div><b>${esc(k.name)}</b> — ${esc(k.what)} <a target="_blank" rel="noopener" href="${k.source.url}">Источник</a>
+        ${k.shot ? `<a class="shot" target="_blank" href="/${k.shot}"><img src="/${k.shot}" alt="Снимок настоящей страницы: ${esc(k.name)}"><span>Снимок настоящей страницы. Источник: urlscan.io</span></a>` : ''}</div></div>`;
+
+  // ---------- Вид мошенничества ----------
+  function showScheme(x) {
+    side.querySelectorAll('a').forEach((a) => a.classList.toggle('on', a.dataset.id === 's-' + x.id));
+    const srcs = [...new Map(x.cases.map((k) => [k.source.url, k.source])).values()];
+    detail.innerHTML = `
+      <div class="head">
+        <div class="eyebrow">Вид мошенничества ${SCH.indexOf(x) + 1} из ${SCH.length}</div>
+        <h1>${esc(x.title)}</h1>
+        <p class="plain">${esc(x.plain)}</p>
+        <p class="evid ${x.evidence[0]}"><b>${EVID[x.evidence[0]]}.</b> ${esc(x.evidence[1])}</p>
+      </div>
+      <h2>Как теряют деньги</h2>
+      <p class="money">${esc(x.money)}</p>
+      <h2>Реальные случаи</h2>
+      <div class="cases">${x.cases.map(caseHtml).join('')}</div>
+      <h2>Что ловит помощник</h2>
+      <table class="signals"><tbody>${x.checks.map((k) => `<tr><td>${checkLink(k.id)}</td><td>${esc(k.role)}</td></tr>`).join('')}</tbody></table>
+      <h2>Чего помощник в этой схеме не видит</h2>
+      <ul class="limits">${x.blind.map((d) => '<li>' + esc(d) + '</li>').join('')}</ul>
+      <h2>Источники</h2>
+      <div class="src">${srcs.map((q) => `<a target="_blank" rel="noopener" href="${q.url}">${esc(q.title)}</a>`).join('')}</div>`;
+    window.scrollTo(0, 0);
+  }
 
   // ---------- «Вот это место в коде страницы»: настоящая строка из файла тестовой страницы ----------
   // Файл читается с диска как текст, поэтому показано ровно то, что человек увидит в браузере по Ctrl+U
@@ -43,21 +83,24 @@
   }
 
   function show(id) {
+    if (!id || id.startsWith('s-')) return showScheme(PGSchemes.byId((id || '').slice(2)) || SCH[0]);
     const c = PGCatalog.byId(id) || C[0];
+    const parent = c.partOf && PGCatalog.byId(c.partOf);
+    const parts = C.filter((q) => q.partOf === c.id);
+    const used = PGSchemes.forCheck(c.id);
     side.querySelectorAll('a').forEach((a) => a.classList.toggle('on', a.dataset.id === c.id));
-    const n = C.indexOf(c) + 1;
     detail.innerHTML = `
       <div class="head">
-        <div class="eyebrow">Проверка ${n} из ${C.length} · ${esc(c.group)}</div>
+        <div class="eyebrow">Проверка ${NUM[c.id]}${parent ? ' — часть проверки ' + NUM[parent.id] : ' из ' + MAIN} · ${esc(c.group)}</div>
         <h1>${esc(c.title)}</h1>
         <p class="plain">${esc(c.plain)}</p>
-        ${c.evidence ? `<p class="evid ${c.evidence.level}"><b>${EVID[c.evidence.level]}.</b> ${esc(c.evidence.note)}</p>` : ''}
+        ${parent ? `<p class="rel">Это часть проверки ${checkLink(parent.id)}: признаки показываются вместе.</p>` : ''}
+        ${parts.length ? `<p class="rel">Включает: ${parts.map((q) => checkLink(q.id)).join(', ')}.</p>` : ''}
+        ${used.length ? `<p class="rel">Работает в схемах: ${used.map((x) => `<a href="#s-${x.id}">${esc(x.title)}</a>`).join('; ')}.</p>` : ''}
       </div>
 
-      <h2>Где это было на самом деле</h2>
-      <div class="cases">${c.cases.map((k) => `<div class="case"><div class="when">${esc(k.when)}</div>
-        <div><b>${esc(k.name)}</b> — ${esc(k.what)} <a target="_blank" rel="noopener" href="${k.source.url}">Источник</a>
-        ${k.shot ? `<a class="shot" target="_blank" href="/${k.shot}"><img src="/${k.shot}" alt="Снимок настоящей страницы: ${esc(k.name)}"><span>Снимок настоящей страницы. Источник: urlscan.io</span></a>` : ''}</div></div>`).join('')}</div>
+      <h2>Где этот признак встречался на самом деле</h2>
+      <div class="cases">${c.cases.map(caseHtml).join('')}</div>
 
       <h2>Попробовать на странице</h2>
       <div class="bench">
@@ -135,13 +178,13 @@
   }
 
   window.addEventListener('hashchange', () => show(location.hash.slice(1)));
-  show(location.hash.slice(1) || C[0].id);
+  show(location.hash.slice(1));
 
   // ---------- На чём ещё проверить: источники настоящих страниц ----------
   const shots = document.getElementById('realShots');
   if (shots) {
     shots.innerHTML = PGCatalog.REAL_PAGES.map((r) => `<figure class="realshot"><a target="_blank" href="/${r.file}"><img src="/${r.file}" alt="${esc(r.title)}"></a>
-      <figcaption><b>${esc(r.title)}</b> · ${esc(r.date)}<br>${esc(r.what)}<br>Проверки: ${r.checks.map((id) => `<a href="#${id}">${esc(PGCatalog.byId(id).title)}</a>`).join(', ')} · <a target="_blank" rel="noopener" href="${r.source.url}">Источник</a></figcaption></figure>`).join('');
+      <figcaption><b>${esc(r.title)}</b> · ${esc(r.date)}<br>${esc(r.what)}<br>Проверки: ${r.checks.map(checkLink).join(', ') || '—'} · <a target="_blank" rel="noopener" href="${r.source.url}">Источник</a></figcaption></figure>`).join('');
   }
   const run = document.getElementById('realRun');
   if (run && window.URLSCAN_RESULTS) {

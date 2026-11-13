@@ -8,6 +8,13 @@
   <style>
     .layout{display:grid;grid-template-columns:270px minmax(0,1fr);gap:36px;align-items:start}
     .side{position:sticky;top:16px;max-height:calc(100vh - 32px);overflow:auto;border-right:1px solid var(--line);padding-right:16px}
+    .side h3{margin:22px 0 2px;font-size:13px;letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}
+    .side h3:first-child{margin-top:0}
+    .side a.sub{padding-left:18px;font-size:14px}
+    .side .dot{flex:none;width:8px;height:8px;border-radius:50%;margin:6px 4px 0 2px;background:var(--line)}
+    .side .dot.strong{background:var(--ok)}.side .dot.partial{background:var(--warning)}
+    #detail .rel{margin:8px 0 0;font-size:15px;color:var(--ink2)}
+    #detail .money{font-size:16px;line-height:1.55;color:var(--ink2);margin:0}
     .side h4{margin:16px 0 4px;font-size:14px;font-weight:700;color:var(--ink)}
     .side a{display:flex;gap:6px;padding:4px 0;color:var(--ink2);font-size:15px;text-decoration:none;line-height:1.35}
     .side a:hover{color:var(--accent);text-decoration:underline}
@@ -66,8 +73,9 @@
   <div class="top" id="top"></div>
   <main class="wrap">
     <div class="hero" style="padding-top:12px">
-      <h1>Проверки</h1>
-      <p>Все 18 проверок расширения. Для каждой: что это за обман простыми словами, где он был на самом деле, тестовая страница, полный список признаков правила и способ увидеть нарушение самому — без помощника. Анализатор на этой странице — тот же код, что в расширении.</p>
+      <h1>Мошенничество и проверки</h1>
+      <p>Слева два списка. <b>Виды мошенничества</b> — что происходит с человеком и как он теряет деньги, с реальными случаями. <b>Проверки</b> — признаки на странице, которые видит расширение; одна проверка работает в нескольких схемах. У каждой проверки — тестовая страница, полный список признаков правила и способ увидеть нарушение самому, без помощника. Анализатор на этой странице — тот же код, что в расширении.</p>
+      <p class="small muted">Цвет точки у схемы: зелёный — подтверждена пострадавшими, приговорами или настоящими страницами; жёлтый — подтверждена частично.</p>
       <p style="margin-top:14px"><button class="btn" id="runAll">Прогнать все тестовые страницы</button> <span class="muted small">сводная таблица: совпало ли решение анализатора с ожидаемым</span></p>
     </div>
 
@@ -106,6 +114,7 @@
   <script src="/extension/core/watch.js"></script>
   <script src="/extension/core/checks.js"></script>
   <script src="/extension/core/catalog.js"></script>
+  <script src="/extension/core/schemes.js"></script>
   <script src="/assets/runner.js"></script>
   <script src="/real/results.js"></script>
   <script src="/assets/checks-ui.js"></script>
