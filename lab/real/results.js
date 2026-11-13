@@ -2,7 +2,7 @@
 window.URLSCAN_RESULTS = {
 "date": "13.11.2026",
 "summary": {
-"all": 76,
+"all": 89,
 "clickfix": {
 "n": 60,
 "danger": 16,
@@ -12,6 +12,11 @@ window.URLSCAN_RESULTS = {
 "n": 16,
 "danger": 2,
 "warning": 0
+},
+"other": {
+"n": 13,
+"danger": 1,
+"warning": 1
 }
 },
 "rows": [
@@ -740,6 +745,127 @@ window.URLSCAN_RESULTS = {
 "titles": [
 "Поддельная проверка «я не робот»: вас просят запустить команду"
 ]
+},
+{
+"uuid": "01a1b69d-f7b5-7128-8879-ff49ce2c89a2",
+"scheme": "subscription",
+"domain": "oplata.poslaniya.su",
+"why": "Подписка «Узнай, кто отправил послание» за 29 ₽ с автосписанием 1499 ₽ в неделю",
+"time": "2026-11-07",
+"verdict": "warning",
+"titles": [
+"Цена-приманка: сейчас 29 ₽, а дальше — регулярные списания по 1 499 ₽"
+]
+},
+{
+"uuid": "01a129a0-1d2f-7129-ab6a-cf6b30065571",
+"scheme": "pressure",
+"domain": "gibdd-proverka.com",
+"why": "«РосШтраф»: проверка штрафов ГИБДД с давлением «запрет на выезд»",
+"time": "2026-10-11",
+"verdict": "none",
+"titles": []
+},
+{
+"uuid": "01a163e2-b5e6-77dd-b326-91c9c1e6e0d7",
+"scheme": "safe-account",
+"domain": "fnsnalog-ru.online",
+"why": "Поддельные Госуслуги: «вас взломали — позвоните на номер»",
+"time": "2026-10-22",
+"verdict": "danger",
+"titles": [
+"Страница пугает взломом и просит позвонить по номеру"
+]
+},
+{
+"uuid": "01a162d8-c282-777f-85bb-f13660210c9d",
+"scheme": "gov",
+"domain": "socportalfns3.shop",
+"why": "Поддельный «личный кабинет налогоплательщика» со входом через Госуслуги",
+"time": "2026-10-22",
+"verdict": "none",
+"titles": []
+},
+{
+"uuid": "01a1979d-3cad-7524-84e5-450a446c73ca",
+"scheme": "gov",
+"domain": "gov-gibdd.ru",
+"why": "Копия сайта Госавтоинспекции на домене gov-gibdd.ru",
+"time": "2026-11-01",
+"verdict": "none",
+"titles": []
+},
+{
+"uuid": "019fad61-df4d-73f0-b815-45ff1b49309d",
+"scheme": "fake-app",
+"domain": "gosscomitetdfrs.online",
+"why": "«Департамент финансовых расследований» (Беларусь): раздаёт hoptodesk.apk и Telegram.apk",
+"time": "2026-07-29",
+"verdict": "none",
+"titles": []
+},
+{
+"uuid": "01a141d4-9405-7658-965b-8b80c85867d1",
+"scheme": "card",
+"domain": "gemola.shop",
+"why": "Фейковый магазин (метка fakeshop): страница /card-form",
+"time": "2026-10-15",
+"verdict": "none",
+"titles": []
+},
+{
+"uuid": "01a1a7e3-8bc9-7001-ada4-c9c90483ecd3",
+"scheme": "skimmer",
+"domain": "paradisecoffee.ky",
+"why": "Магазин со скиммером: поддельный «Google Tag Manager» берёт адрес из блокчейна",
+"time": "2026-11-04",
+"verdict": "none",
+"titles": []
+},
+{
+"uuid": "01a1a7e3-63f5-72ec-bdb0-707eb90d0b64",
+"scheme": "skimmer",
+"domain": "canadianscholars.ca",
+"why": "Магазин со скиммером: скрипт bleakhaven.com/1/canadianscholars/",
+"time": "2026-11-04",
+"verdict": "none",
+"titles": []
+},
+{
+"uuid": "01a1a7e3-7b39-71d8-be3c-75b2e2cfa58d",
+"scheme": "skimmer",
+"domain": "runningbelts.com.au",
+"why": "Магазин со скиммером: скрипт freshmorningdew.top/2/runningbelts/",
+"time": "2026-11-04",
+"verdict": "none",
+"titles": []
+},
+{
+"uuid": "01a1a7e3-ba19-70ce-b94b-a2f82cc89aab",
+"scheme": "skimmer",
+"domain": "www.bilsdale-worms.co.uk",
+"why": "Магазин со скиммером (метка magecart)",
+"time": "2026-11-04",
+"verdict": "none",
+"titles": []
+},
+{
+"uuid": "01a1a7e3-aa85-7140-8240-3bc263ef7308",
+"scheme": "skimmer",
+"domain": "www.sklepszostak.pl",
+"why": "Магазин со скиммером (метка magecart)",
+"time": "2026-11-04",
+"verdict": "none",
+"titles": []
+},
+{
+"uuid": "01a1a7e3-9b86-71ca-a9bb-5511c34248ae",
+"scheme": "skimmer",
+"domain": "teragu.com",
+"why": "Магазин со скиммером (метка magecart)",
+"time": "2026-11-04",
+"verdict": "none",
+"titles": []
 }
 ]
 };

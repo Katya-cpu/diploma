@@ -310,7 +310,22 @@
   CHECKS['recipient'] = (ctx) => {
     const out = [];
     const r = ctx.recipient;
-    if (!r.items.length) return [];
+    // Вход в схему «безопасный счёт»: страница от имени Госуслуг, банка или ведомства пугает взломом
+    // и даёт номер «контактного центра». Дальше по телефону «специалист» уводит к переводу денег.
+    // Настоящая страница: fnsnalog-ru.online (urlscan, 22.10.2026) — «Вас взломали! Обратитесь в контактный центр Госуслуг 8(800)…».
+    // Памятки банков («Что делать, если вас взломали») не считаются: заголовок должен быть утверждением, а не советом.
+    const SCARE = /вас взломали|ваш[а-я]* (?:аккаунт|кабинет|профиль|учётн[а-я]* запис[а-я]*) взлом|обнаружены подозрительные действия|зафиксирован[а-я]* попытк[а-я]* (?:взлома|входа|списани)/i;
+    const scareHead = [...ctx.doc.querySelectorAll('h1, h2, h3, strong, b, [class*=title], [class*=badge], [class*=alert]')]
+      .map((el) => (el.textContent || '').replace(/\s+/g, ' ').trim()).find((t) => t.length < 120 && SCARE.test(t) && !/что делать|если|как |памятк|\?/i.test(t));
+    // Номер часто стоит отдельной строкой под просьбой («позвоните на номер ниже»), а перед просьбой — «если это были не вы»:
+    // это не отрицание просьбы, поэтому здесь ищем без findAffirmed — контекст уже подтверждён заголовком.
+    const callTo = scareHead && ctx.text.match(/(?:позвоните|обратитесь|свяжитесь|звоните)[\s\S]{0,100}?((?:\+7|8)[\s(-]*\d{3}[\s)-]*\d{3}[\s-]*\d{2}[\s-]*\d{2})/i);
+    if (callTo) {
+      out.push({ severity: 'danger', title: 'Страница пугает взломом и просит позвонить по номеру',
+        details: ['Заголовок: «' + scareHead.slice(0, 90) + '». Номер для звонка: ' + callTo[1].replace(/\s+/g, ' ') + '.',
+          'Так начинается схема «безопасный счёт»: по этому номеру ответит «специалист», который убедит перевести деньги или назвать коды. Госуслуги и банки не просят звонить по номеру со страницы — звоните только по номеру с обратной стороны карты или с официального сайта, набранного вручную.'] });
+    }
+    if (!r.items.length) return out;
     const persons = r.items.filter((i) => i.kind === 'person' || i.kind === 'deposit');
     if (ctx.role && persons.length) {
       out.push({ severity: 'danger', title: 'Страница от имени организации просит перевести деньги частному лицу',
@@ -401,15 +416,19 @@
   CHECKS['amount-mismatch'] = (ctx) => {
     const totals = [];
     for (const m of ctx.text.matchAll(/(итого|к оплате|сумма заказа|всего|стоимость заказа)[^\d]{0,25}([\d  ]+(?:[.,]\d{1,2})?\s?(?:₽|руб))/gi)) totals.push(...amountsIn(m[2]));
-    if (!totals.length) return [];
     const out = [];
-    for (const b of ctx.doc.querySelectorAll('button,input[type=submit],a[href]')) {
+    // Цена-приманка без слова «итого»: «Премиум за 29 ₽», «доступ за 1 рубль». Тогда за нынешнюю сумму берём
+    // самую маленькую сумму на странице (до 99 ₽) — по ней дальше сравниваются будущие списания.
+    // Так устроена настоящая ловушка oplata.poslaniya.su (urlscan, 07.11.2026): 29 ₽, затем 1499 ₽ в неделю.
+    const teaser = !totals.length && ctx.amounts.length && Math.min(...ctx.amounts) <= 99 ? [Math.min(...ctx.amounts)] : [];
+    if (!totals.length && !teaser.length) return [];
+    for (const b of totals.length ? ctx.doc.querySelectorAll('button,input[type=submit],a[href]') : []) {
       const label = D.label(b);
       if (!PAY_WORDS.test(label)) continue;
       const onButton = amountsIn(label).filter((a) => !totals.includes(a));
       if (onButton.length) out.push({ severity: 'warning', title: 'Сумма на кнопке оплаты больше суммы заказа', details: ['Заказ: ' + totals.map(rub).join(', ') + ', кнопка «' + label + '».'] });
     }
-    for (const h of ctx.doc.querySelectorAll('form input[type=hidden]')) {
+    for (const h of totals.length ? ctx.doc.querySelectorAll('form input[type=hidden]') : []) {
       if (!/amount|sum|сумм|total|price/i.test(h.name)) continue;
       const v = Number(String(h.value).replace(',', '.'));
       if (v && !totals.includes(v) && !totals.includes(v / 100)) {
@@ -419,19 +438,25 @@
     // «Подписка за 1 рубль»: на экране символическая сумма, а согласие на регулярные списания спрятано —
     // в мелком шрифте, в заранее отмеченной галочке или в скрытом поле формы.
     const SUBSCR = /подписк|автоплат[её]ж|автопродлен|автосписан|регулярн[а-яё]* (?:списан|плат)|рекуррент/i;
-    const RECUR = /далее|затем|ежемесячн|в месяц|\/\s?мес|каждые\s+\d+|раз в\s+(?:\d+\s+)?(?:дн|недел|месяц)|после[^.!?\n]{0,40}(?:период|дн[яе]й)|продлева|автопродлен/i;
-    const maxTotal = Math.max(...totals);
+    const RECUR = /далее|затем|ежемесячн|в месяц|\/\s?мес|каждые\s+\d+|раз в\s+(?:\d+\s+)?(?:дн|недел|месяц)|после[^.!?\n]{0,40}(?:период|дн[яе]й)|по истечении[^.!?\n]{0,40}период|за неделю|в неделю|за \d+ дн[яе]й|автоматическ[а-яё]* списан|продлева|автопродлен/i;
+    const maxTotal = Math.max(...totals, ...teaser);
     // Самые «глубокие» видимые элементы с нужным текстом: по ним узнаём размер шрифта, которым он набран.
     const deepest = (test) => [...ctx.doc.querySelectorAll('body *')].filter((el) => !/^(SCRIPT|STYLE|NOSCRIPT)$/.test(el.tagName) &&
       el.textContent.length < 700 && test(el.textContent) && D.isRendered(el) && ![...el.children].some((c) => test(c.textContent)));
     const fontPx = (el) => parseFloat(ctx.win.getComputedStyle(el).fontSize) || 16;
     if (RECUR.test(ctx.text)) {
-      const later = deepest((t) => RECUR.test(t) && amountsIn(t).some((a) => a > maxTotal))[0];
+      // Для цены-приманки будущие списания должны быть хотя бы в 10 раз больше: иначе это просто прайс-лист.
+      const lim = teaser.length ? maxTotal * 10 : maxTotal;
+      const later = deepest((t) => RECUR.test(t) && amountsIn(t).some((a) => a > lim))[0];
       if (later) {
-        const sums = amountsIn(later.textContent).filter((a) => a > maxTotal);
-        const small = fontPx(later) <= 11 || D.effectiveOpacity(later) < 0.6;
+        const sums = amountsIn(later.textContent).filter((a) => a > lim);
+        // Мелкий шрифт — признак сокрытия. Для цены-приманки достаточно и самих условий: в 20+ раз больше и каждую неделю
+        // или каждые несколько дней. Честные пробные подписки («месяц за 1 ₽, далее 399 ₽ в месяц») списывают помесячно.
+        const shortPeriod = /за неделю|в неделю|еженедельн|за \d+ дн[яе]й|каждые \d+ дн/i.test(later.textContent);
+        const small = fontPx(later) <= 11 || D.effectiveOpacity(later) < 0.6 || (teaser.length > 0 && shortPeriod && Math.max(...sums) >= maxTotal * 20);
         out.push({ severity: small ? 'warning' : 'info',
-          title: small ? 'Будущие списания указаны мелким шрифтом' : 'После первой оплаты будут регулярные списания',
+          title: teaser.length && small ? 'Цена-приманка: сейчас ' + rub(maxTotal) + ', а дальше — регулярные списания по ' + rub(Math.max(...sums))
+            : small ? 'Будущие списания указаны мелким шрифтом' : 'После первой оплаты будут регулярные списания',
           details: ['Сейчас к оплате ' + rub(maxTotal) + ', а дальше с карты будут списывать ' + sums.map(rub).join(', ') + '.',
             'Условие на странице: «' + later.textContent.replace(/\s+/g, ' ').trim().slice(0, 160) + '»' + (small ? ' — набрано шрифтом ' + Math.round(fontPx(later)) + ' px.' : '.')] });
       }
