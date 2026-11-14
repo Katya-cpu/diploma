@@ -38,7 +38,7 @@
     if (loaded) return;
     try { data = await get('research'); } catch (e) { $('r-stats').innerHTML = '<div class="note warn">' + esc(e.message) + '</div>'; return; }
     loaded = true;
-    stats(); types(); chips(); map(); entities();
+    stats(); types(); chips(); map();
   }
 
   function stats() {

@@ -1,0 +1,3872 @@
+[
+ {
+  "uuid": "01a1a583-5919-702e-b4e1-d2330a5d977e",
+  "scheme": "fake-payment",
+  "query": "page.title:\"USPS\" AND task.tags:phishing",
+  "time": "2026-11-04T07:43:38.186Z",
+  "url": "https://uspsfund.online/",
+  "domain": "uspsfund.online",
+  "title": "Payment Verification — USPS",
+  "tags": [
+   "@ecarlesi",
+   "possiblethreat",
+   "phishing"
+  ],
+  "has_dom": true,
+  "file": "urlscan2/01a1a583-5919-702e-b4e1-d2330a5d977e.html",
+  "new": {
+   "verdict": "danger",
+   "checks": [
+    "card-form:danger",
+    "skimmer:warning"
+   ],
+   "titles": [
+    "Данные карты уходят в Telegram-бота",
+    "Скрипт читает поля карты и умеет отправлять данные"
+   ],
+   "info": [
+    "На странице есть форма для данных карты"
+   ]
+  }
+ },
+ {
+  "uuid": "01a18c86-a3ad-750d-b359-7bf80e3c3aeb",
+  "scheme": "fake-payment",
+  "query": "page.title:\"USPS\" AND task.tags:phishing",
+  "time": "2026-10-30T11:16:49.694Z",
+  "url": "https://pwlri.cn/verification/index",
+  "domain": "pwlri.cn",
+  "title": "Verification | USPS®",
+  "tags": [
+   "phishing"
+  ],
+  "has_dom": true,
+  "file": "urlscan2/01a18c86-a3ad-750d-b359-7bf80e3c3aeb.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1ceae-b810-7334-a467-6432f1165cd2",
+  "scheme": "fake-payment",
+  "query": "page.title:\"Secure Checkout\" AND task.tags:phishing",
+  "time": "2026-11-12T07:35:26.810Z",
+  "url": "https://checkout-dpd6n4cwuktv.edgeone.dev/",
+  "domain": "checkout-dpd6n4cwuktv.edgeone.dev",
+  "title": "Secure Checkout | Editing Store",
+  "tags": [
+   "phishing",
+   "malicious"
+  ],
+  "has_dom": true,
+  "file": "urlscan2/01a1ceae-b810-7334-a467-6432f1165cd2.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1da27-b0a2-755d-8c0a-93807863f90f",
+  "scheme": "investment",
+  "query": "page.title:\"Quantum AI\"",
+  "time": "2026-11-14T13:03:25.594Z",
+  "url": "https://quantumai-in.net/us/",
+  "domain": "quantumai-in.net",
+  "title": "Quantum AI | AI trading platform for financial markets",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/01a1da27-b0a2-755d-8c0a-93807863f90f.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1d539-62bb-720b-869f-820c27c86668",
+  "scheme": "investment",
+  "query": "page.title:\"Quantum AI\"",
+  "time": "2026-11-13T14:04:40.853Z",
+  "url": "https://smartspout.pro/",
+  "domain": "smartspout.pro",
+  "title": "Wstrząs w Polsce! Piotr Kuczyński popiera Quantum AI",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/01a1d539-62bb-720b-869f-820c27c86668.html",
+  "new": {
+   "verdict": "warning",
+   "checks": [
+    "income-promise:warning"
+   ],
+   "titles": [
+    "Обещают доход и просят оставить телефон"
+   ],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1a622-a5a5-718a-a05f-4ffb1bba75c2",
+  "scheme": "investment",
+  "query": "page.title:\"Immediate Edge\"",
+  "time": "2026-11-04T10:37:37.091Z",
+  "url": "https://immediateedgeaibot.com/",
+  "domain": "immediateedgeaibot.com",
+  "title": "Immediate Edge — KI-Analyse für Krypto-Staking und Renditen",
+  "tags": [
+   "@ecarlesi",
+   "threat",
+   "scam",
+   "investment-fraud",
+   "trading",
+   "crypto"
+  ],
+  "has_dom": true,
+  "file": "urlscan2/01a1a622-a5a5-718a-a05f-4ffb1bba75c2.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1dac9-5f0e-73d9-bc4b-aa71dbd9315e",
+  "scheme": "investment",
+  "query": "page.title:\"AI Trading Platform\"",
+  "time": "2026-11-14T16:00:00.364Z",
+  "url": "https://immediate-zaltrion365-official.com/",
+  "domain": "immediate-zaltrion365-official.com",
+  "title": "Immediate Zaltrion 365 | Smart AI Trading Platform for Digital Assets",
+  "tags": [
+   "hybridanalysis"
+  ],
+  "has_dom": true,
+  "file": "urlscan2/01a1dac9-5f0e-73d9-bc4b-aa71dbd9315e.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1dabc-5bca-773f-acec-faeffaa3c405",
+  "scheme": "investment",
+  "query": "page.title:\"AI Trading Platform\"",
+  "time": "2026-11-14T15:45:47.142Z",
+  "url": "https://apextraderwave.com/",
+  "domain": "apextraderwave.com",
+  "title": "Apex Trader - Advanced AI Trading Platform",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/01a1dabc-5bca-773f-acec-faeffaa3c405.html",
+  "new": {
+   "verdict": "warning",
+   "checks": [
+    "fake-app:warning"
+   ],
+   "titles": [
+    "Предлагают установить приложение из файла .apk, а не из магазина приложений"
+   ],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1daa7-e704-7538-af8e-17a9998d6e24",
+  "scheme": "investment",
+  "query": "page.title:\"AI Trading Platform\"",
+  "time": "2026-11-14T15:23:30.840Z",
+  "url": "https://kalyndraxaaitradingplatform.click/",
+  "domain": "kalyndraxaaitradingplatform.click",
+  "title": "Kalyndraxa AI Trading Platform | Επίσημη Ιστοσελίδα",
+  "tags": [
+   "hybridanalysis"
+  ],
+  "has_dom": true,
+  "file": "urlscan2/01a1daa7-e704-7538-af8e-17a9998d6e24.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1da86-a5a0-705e-a7a5-bdaf3bde5601",
+  "scheme": "investment",
+  "query": "page.title:\"AI Trading Platform\"",
+  "time": "2026-11-14T14:47:05.885Z",
+  "url": "https://kalyndraxaaitradingplatform-click.pages.dev/",
+  "domain": "kalyndraxaaitradingplatform-click.pages.dev",
+  "title": "Kalyndraxa AI Trading Platform | Επίσημη Ιστοσελίδα",
+  "tags": [
+   "hybridanalysis"
+  ],
+  "has_dom": true,
+  "file": "urlscan2/01a1da86-a5a0-705e-a7a5-bdaf3bde5601.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1da73-f63d-7466-9c56-29ed1a53fb37",
+  "scheme": "investment",
+  "query": "page.title:\"AI Trading Platform\"",
+  "time": "2026-11-14T14:26:42.672Z",
+  "url": "https://goldbuyingservice.tech/",
+  "domain": "goldbuyingservice.tech",
+  "title": "Gold Buying Service | AI trading platform for financial markets",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/01a1da73-f63d-7466-9c56-29ed1a53fb37.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1da68-e852-74d8-8f20-a36291a694bb",
+  "scheme": "investment",
+  "query": "page.title:\"AI Trading Platform\"",
+  "time": "2026-11-14T14:14:38.614Z",
+  "url": "https://petrolioitaliano.biz/",
+  "domain": "petrolioitaliano.biz",
+  "title": "Petrolio Italiano | AI trading platform for financial markets",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/01a1da68-e852-74d8-8f20-a36291a694bb.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1dad9-02a6-743f-9591-7686c46ab444",
+  "scheme": "investment",
+  "query": "page.title:\"Trading Platform\" AND task.tags:phishing",
+  "time": "2026-11-14T16:17:05.489Z",
+  "url": "https://2-sparkdex-allocations.pages.dev/",
+  "domain": "2-sparkdex-allocations.pages.dev",
+  "title": "SparkDEX - Best DEX on Flare Network | Flare Dex Trading Platform",
+  "tags": [
+   "phishing",
+   "drainer",
+   "crypto-scam"
+  ],
+  "has_dom": true,
+  "file": "urlscan2/01a1dad9-02a6-743f-9591-7686c46ab444.html",
+  "new": {
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1da4a-2bc3-732a-aeb6-36775a60fc3c",
+  "scheme": "investment",
+  "query": "page.title:\"Trading Platform\" AND task.tags:phishing",
+  "time": "2026-11-14T13:41:03.818Z",
+  "url": "https://1-sparkdex-allocations.pages.dev/",
+  "domain": "1-sparkdex-allocations.pages.dev",
+  "title": "SparkDEX - Best DEX on Flare Network | Flare Dex Trading Platform",
+  "tags": [
+   "phishing",
+   "drainer",
+   "crypto-scam"
+  ],
+  "has_dom": true,
+  "file": "urlscan2/01a1da4a-2bc3-732a-aeb6-36775a60fc3c.html",
+  "new": {
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1d6db-dd4d-7288-8945-fcd9dc4168ea",
+  "scheme": "investment",
+  "query": "page.title:\"Trading Platform\" AND task.tags:phishing",
+  "time": "2026-11-13T21:41:45.054Z",
+  "url": "https://sparkdex-allocations.pages.dev/",
+  "domain": "sparkdex-allocations.pages.dev",
+  "title": "SparkDEX - Best DEX on Flare Network | Flare Dex Trading Platform",
+  "tags": [
+   "phishing",
+   "drainer",
+   "crypto-scam"
+  ],
+  "has_dom": true,
+  "file": "urlscan2/01a1d6db-dd4d-7288-8945-fcd9dc4168ea.html",
+  "new": {
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1d64b-fcb0-7122-9747-f61a732b2ab6",
+  "scheme": "investment",
+  "query": "page.title:\"Trading Platform\" AND task.tags:phishing",
+  "time": "2026-11-13T19:04:45.317Z",
+  "url": "https://sparkdex-allocations.icu/",
+  "domain": "sparkdex-allocations.icu",
+  "title": "SparkDEX - Best DEX on Flare Network | Flare Dex Trading Platform",
+  "tags": [
+   "phishing",
+   "drainer",
+   "crypto-scam"
+  ],
+  "has_dom": true,
+  "file": "urlscan2/01a1d64b-fcb0-7122-9747-f61a732b2ab6.html",
+  "new": {
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1d5cc-cf81-72ef-881d-56c5e4956105",
+  "scheme": "investment",
+  "query": "page.title:\"Trading Platform\" AND task.tags:phishing",
+  "time": "2026-11-13T16:45:39.890Z",
+  "url": "https://sparkdex-allocation.pages.dev/",
+  "domain": "sparkdex-allocation.pages.dev",
+  "title": "SparkDEX - Best DEX on Flare Network | Flare Dex Trading Platform",
+  "tags": [
+   "phishing",
+   "drainer",
+   "crypto-scam"
+  ],
+  "has_dom": true,
+  "file": "urlscan2/01a1d5cc-cf81-72ef-881d-56c5e4956105.html",
+  "new": {
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1d21a-c89d-714c-951b-5e0dfe9e7517",
+  "scheme": "investment",
+  "query": "page.title:\"Trading Platform\" AND task.tags:phishing",
+  "time": "2026-11-12T23:32:25.813Z",
+  "url": "https://sparkdex-allocation.icu/",
+  "domain": "sparkdex-allocation.icu",
+  "title": "SparkDEX - Best DEX on Flare Network | Flare Dex Trading Platform",
+  "tags": [
+   "phishing",
+   "drainer",
+   "crypto-scam"
+  ],
+  "has_dom": true,
+  "file": "urlscan2/01a1d21a-c89d-714c-951b-5e0dfe9e7517.html",
+  "new": {
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1ab55-d846-76c9-835d-f54989103e41",
+  "scheme": "investment",
+  "query": "page.title:\"Immediate Connect\"",
+  "time": "2026-11-05T10:51:42.241Z",
+  "url": "https://immediateconnect-nl.online/",
+  "domain": "immediateconnect-nl.online",
+  "title": "Immediate Connect – innovatief handelsplatform met AI-gestuurde analyse 2026",
+  "tags": [
+   "@ecarlesi",
+   "threat",
+   "scam",
+   "investment-fraud",
+   "trading",
+   "crypto"
+  ],
+  "has_dom": true,
+  "file": "urlscan2/01a1ab55-d846-76c9-835d-f54989103e41.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a18553-1319-744b-9fed-9543532fa4c3",
+  "scheme": "investment",
+  "query": "page.title:\"Immediate Connect\"",
+  "time": "2026-10-29T01:43:09.124Z",
+  "url": "https://immediate-connect.nl/",
+  "domain": "immediate-connect.nl",
+  "title": "Immediate Connect ™ | De officiële en bijgewerkte website 2025 🥇",
+  "tags": [
+   "phishdestroy"
+  ],
+  "has_dom": true,
+  "file": "urlscan2/01a18553-1319-744b-9fed-9543532fa4c3.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a148ae-ccda-70c8-b9de-74c90f2aa2c2",
+  "scheme": "investment",
+  "query": "page.title:\"Immediate Connect\"",
+  "time": "2026-10-17T07:07:04.306Z",
+  "url": "https://immediateconnects.weebly.com/",
+  "domain": "immediateconnects.weebly.com",
+  "title": "Immediate connect - Home",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/01a148ae-ccda-70c8-b9de-74c90f2aa2c2.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a16740-1500-769d-af29-8e263eeea326",
+  "scheme": "investment",
+  "query": "page.title:\"Bitcoin Era\"",
+  "time": "2026-10-23T05:33:44.286Z",
+  "url": "https://bitcoineranew.net/",
+  "domain": "bitcoineranew.net",
+  "title": "Bitcoin Era New — AI Platform for Real-Time Market Intelligence",
+  "tags": [
+   "phishdestroy"
+  ],
+  "has_dom": true,
+  "file": "urlscan2/01a16740-1500-769d-af29-8e263eeea326.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1b6f6-ac25-7608-a658-13a7511ff26f",
+  "scheme": "tech-support",
+  "query": "page.title:\"Windows Security Center\"",
+  "time": "2026-11-07T17:03:08.316Z",
+  "url": "https://miniature-waffle-ad5i7buu.on-forge.com/Wncodehelpolnecodexxweb/index.html",
+  "domain": "miniature-waffle-ad5i7buu.on-forge.com",
+  "title": "Windows Security Center",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/01a1b6f6-ac25-7608-a658-13a7511ff26f.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1b6a0-aff6-754a-b531-165a3f786fbc",
+  "scheme": "tech-support",
+  "query": "page.title:\"Windows Security Center\"",
+  "time": "2026-11-07T15:29:13.557Z",
+  "url": "https://miniature-waffle-aigopgam.on-forge.com/Wncodehelpolnecodexxweb/index.html",
+  "domain": "miniature-waffle-aigopgam.on-forge.com",
+  "title": "Windows Security Center",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/01a1b6a0-aff6-754a-b531-165a3f786fbc.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1a1ea-f1be-77b9-ab8c-981d44b0d7af",
+  "scheme": "tech-support",
+  "query": "page.title:\"Windows Security Center\"",
+  "time": "2026-11-03T14:58:17.864Z",
+  "url": "https://ubiquitous-couscous-tplwmaep.on-forge.com/Wncodehelpolnecodexxweb/index.html",
+  "domain": "ubiquitous-couscous-tplwmaep.on-forge.com",
+  "title": "Windows Security Center",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/01a1a1ea-f1be-77b9-ab8c-981d44b0d7af.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1a1bd-f342-748b-a673-2d574ff4fe74",
+  "scheme": "tech-support",
+  "query": "page.title:\"Windows Security Center\"",
+  "time": "2026-11-03T14:09:09.159Z",
+  "url": "https://ubiquitous-couscous-wu0f010m.on-forge.com/Wncodehelpolnecodexxweb/index.html",
+  "domain": "ubiquitous-couscous-wu0f010m.on-forge.com",
+  "title": "Windows Security Center",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/01a1a1bd-f342-748b-a673-2d574ff4fe74.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a188b6-2599-74b8-ba26-03eae1a94325",
+  "scheme": "tech-support",
+  "query": "page.title:\"Windows Security Center\"",
+  "time": "2026-10-29T17:30:07.580Z",
+  "url": "https://glowing-doodle-olllddd-3ua6mlee.on-forge.com/Wncodehelpolnecodexxweb/index.html",
+  "domain": "glowing-doodle-olllddd-3ua6mlee.on-forge.com",
+  "title": "Windows Security Center",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/01a188b6-2599-74b8-ba26-03eae1a94325.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a144e6-eb73-71bd-8d8b-8d69eb068625",
+  "scheme": "tech-support",
+  "query": "page.title:\"Windows Security Center\"",
+  "time": "2026-10-16T13:29:14.423Z",
+  "url": "https://didactic-palm-fggf-dsbupv1q.on-forge.com/Wncodehelpolnecodexxweb/index.html",
+  "domain": "didactic-palm-fggf-dsbupv1q.on-forge.com",
+  "title": "Windows Security Center",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/01a144e6-eb73-71bd-8d8b-8d69eb068625.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1dabc-d9b6-71e8-95fe-5725e5adfeb4",
+  "scheme": "tech-support",
+  "query": "page.title:\"Microsoft Security\" AND page.domain:azurefd.net",
+  "time": "2026-11-14T15:46:21.163Z",
+  "url": "https://8003nyjvastdfffkxftmhtxjlcpmwasqpo-amfre8dwakf2a6c9.z03.azurefd.net/",
+  "domain": "8003nyjvastdfffkxftmhtxjlcpmwasqpo-amfre8dwakf2a6c9.z03.azurefd.net",
+  "title": "Microsoft Security",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/01a1dabc-d9b6-71e8-95fe-5725e5adfeb4.html",
+  "new": {
+   "verdict": "danger",
+   "checks": [
+    "pressure:danger"
+   ],
+   "titles": [
+    "Поддельное предупреждение о вирусе с номером «поддержки»"
+   ],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1d60e-2bb3-76dc-8fb0-73d5d91f1b83",
+  "scheme": "tech-support",
+  "query": "page.title:\"Microsoft Security\" AND page.domain:azurefd.net",
+  "time": "2026-11-13T17:57:03.520Z",
+  "url": "https://8001mnikxskgkjeygzilrfupextmiepmra-gffkfpfpcehka4an.z03.azurefd.net/",
+  "domain": "8001mnikxskgkjeygzilrfupextmiepmra-gffkfpfpcehka4an.z03.azurefd.net",
+  "title": "Microsoft Security",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/01a1d60e-2bb3-76dc-8fb0-73d5d91f1b83.html",
+  "new": {
+   "verdict": "danger",
+   "checks": [
+    "pressure:danger"
+   ],
+   "titles": [
+    "Поддельное предупреждение о вирусе с номером «поддержки»"
+   ],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1d02a-aba9-72fa-a4bd-ed689665639e",
+  "scheme": "tech-support",
+  "query": "page.title:\"Microsoft Security\" AND page.domain:azurefd.net",
+  "time": "2026-11-12T14:30:29.444Z",
+  "url": "https://truebubertaipanck-eagnhmbyf8bfbjd0.z03.azurefd.net/index.html",
+  "domain": "truebubertaipanck-eagnhmbyf8bfbjd0.z03.azurefd.net",
+  "title": "Microsoft Security",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/01a1d02a-aba9-72fa-a4bd-ed689665639e.html",
+  "new": {
+   "verdict": "danger",
+   "checks": [
+    "pressure:danger"
+   ],
+   "titles": [
+    "Поддельное предупреждение о вирусе с номером «поддержки»"
+   ],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1cc44-c89f-71bc-91b1-41ab95935dff",
+  "scheme": "tech-support",
+  "query": "page.title:\"Microsoft Security\" AND page.domain:azurefd.net",
+  "time": "2026-11-11T20:20:30.133Z",
+  "url": "https://trueavaliant7i-cjfph0d9d9f9d7fw.z03.azurefd.net/index.html?_event=811d3367999132f98b1335682c6e0a21&click_id=1f28108mwaxolem&tid=1043&subid=geogle.com&ref=geogle.com&18%3Fclick_id=1f28108mwaxolem&tid=1043&subid=geogle.com&ref=geogle.com&18=",
+  "domain": "trueavaliant7i-cjfph0d9d9f9d7fw.z03.azurefd.net",
+  "title": "Microsoft Security",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/01a1cc44-c89f-71bc-91b1-41ab95935dff.html",
+  "new": {
+   "verdict": "danger",
+   "checks": [
+    "pressure:danger"
+   ],
+   "titles": [
+    "Поддельное предупреждение о вирусе с номером «поддержки»"
+   ],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1a823-7135-727f-adc7-415ad4168a05",
+  "scheme": "tech-support",
+  "query": "page.title:\"Microsoft Security\" AND page.domain:azurefd.net",
+  "time": "2026-11-04T19:57:45.679Z",
+  "url": "https://5009vwtcoyrbivpgtdjkgcrxdywpdscogy-gzfwdbapd0fqc9d6.z03.azurefd.net/?msclkid=95d6722633ae1938290718cdb8630cbc",
+  "domain": "5009vwtcoyrbivpgtdjkgcrxdywpdscogy-gzfwdbapd0fqc9d6.z03.azurefd.net",
+  "title": "Microsoft Security",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/01a1a823-7135-727f-adc7-415ad4168a05.html",
+  "new": {
+   "verdict": "danger",
+   "checks": [
+    "pressure:danger"
+   ],
+   "titles": [
+    "Поддельное предупреждение о вирусе с номером «поддержки»"
+   ],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a18aed-283a-7296-a9ff-716a54f92c4e",
+  "scheme": "tech-support",
+  "query": "page.title:\"Security Alert\" AND task.tags:phishing",
+  "time": "2026-10-30T03:49:26.724Z",
+  "url": "https://better-moccasin-rwnnpr3f-dpn5e8j270g7.edgeone.dev/",
+  "domain": "better-moccasin-rwnnpr3f-dpn5e8j270g7.edgeone.dev",
+  "title": "⚠️ CRITICAL SECURITY ALERT - Microsoft Windows",
+  "tags": [
+   "phishing",
+   "malicious"
+  ],
+  "has_dom": true,
+  "file": "urlscan2/01a18aed-283a-7296-a9ff-716a54f92c4e.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1dad1-7292-7142-b612-4a5d0412a109",
+  "scheme": "crypto-drainer",
+  "query": "task.tags:drainer",
+  "time": "2026-11-14T16:08:48.165Z",
+  "url": "https://veranta-vote-app3.pages.dev/",
+  "domain": "veranta-vote-app3.pages.dev",
+  "title": "Token | Veranta",
+  "tags": [
+   "phishing",
+   "drainer",
+   "crypto-scam"
+  ],
+  "has_dom": true,
+  "file": "urlscan2/01a1dad1-7292-7142-b612-4a5d0412a109.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1dad1-489f-76db-8001-5d3173ee3c1d",
+  "scheme": "crypto-drainer",
+  "query": "task.tags:drainer",
+  "time": "2026-11-14T16:08:39.154Z",
+  "url": "https://5-governance-fraxfinance.pages.dev/",
+  "domain": "5-governance-fraxfinance.pages.dev",
+  "title": "Governance - Frax",
+  "tags": [
+   "phishing",
+   "drainer",
+   "crypto-scam"
+  ],
+  "has_dom": true,
+  "file": "urlscan2/01a1dad1-489f-76db-8001-5d3173ee3c1d.html",
+  "new": {
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1dad1-3d7c-71b9-a830-1a4444cc902b",
+  "scheme": "crypto-drainer",
+  "query": "task.tags:drainer",
+  "time": "2026-11-14T16:08:36.845Z",
+  "url": "https://4-governance-hyperpolicy.pages.dev/",
+  "domain": "4-governance-hyperpolicy.pages.dev",
+  "title": "HYPE Season 3 Vote · Hyperliquid",
+  "tags": [
+   "phishing",
+   "drainer",
+   "crypto-scam"
+  ],
+  "has_dom": true,
+  "file": "urlscan2/01a1dad1-3d7c-71b9-a830-1a4444cc902b.html",
+  "new": {
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1dad0-2f87-7314-8dc7-a7c0620e0b1b",
+  "scheme": "crypto-drainer",
+  "query": "task.tags:drainer",
+  "time": "2026-11-14T16:07:45.085Z",
+  "url": "https://1-ascendlaunchgov.pages.dev/",
+  "domain": "1-ascendlaunchgov.pages.dev",
+  "title": "Ascend Rewards Date Proposal | Elysium",
+  "tags": [
+   "phishing",
+   "drainer",
+   "crypto-scam"
+  ],
+  "has_dom": true,
+  "file": "urlscan2/01a1dad0-2f87-7314-8dc7-a7c0620e0b1b.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1dad0-3959-7076-8c05-8ce259bee4a1",
+  "scheme": "crypto-drainer",
+  "query": "task.tags:drainer",
+  "time": "2026-11-14T16:07:29.715Z",
+  "url": "https://7-allocation-umiafinance.pages.dev/",
+  "domain": "7-allocation-umiafinance.pages.dev",
+  "title": "UMIA Token Auction | Umia",
+  "tags": [
+   "phishing",
+   "drainer",
+   "crypto-scam"
+  ],
+  "has_dom": true,
+  "file": "urlscan2/01a1dad0-3959-7076-8c05-8ce259bee4a1.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1dad0-3aa8-760b-934a-30b909c75587",
+  "scheme": "crypto-drainer",
+  "query": "task.tags:drainer",
+  "time": "2026-11-14T16:07:29.254Z",
+  "url": "https://11-apyx.pages.dev/",
+  "domain": "11-apyx.pages.dev",
+  "title": "Apyx · Programmable dollars backed by credit and treasuries",
+  "tags": [
+   "phishing",
+   "drainer",
+   "crypto-scam"
+  ],
+  "has_dom": true,
+  "file": "urlscan2/01a1dad0-3aa8-760b-934a-30b909c75587.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a18885-1a9f-72fa-aa72-8f5d80d580e7",
+  "scheme": "fines",
+  "query": "page.title:\"E-ZPass Service\"",
+  "time": "2026-10-29T16:36:42.957Z",
+  "url": "https://ez-pazz-billing.129-121-100-114.cpanel.site/?kocak=pepek",
+  "domain": "ez-pazz-billing.129-121-100-114.cpanel.site",
+  "title": "E-ZPass Service",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/01a18885-1a9f-72fa-aa72-8f5d80d580e7.html",
+  "new": {
+   "verdict": "warning",
+   "checks": [
+    "pressure:warning"
+   ],
+   "titles": [
+    "Требуют срочно оплатить долг или штраф по ссылке"
+   ],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1bf4a-09c1-776c-8af0-6d7f57a03e8b",
+  "scheme": "fake-shop",
+  "query": "task.tags:fakeshop",
+  "time": "2026-11-09T07:51:10.366Z",
+  "url": "https://ripcurlsale.com/collections/surfboards",
+  "domain": "ripcurlsale.com",
+  "title": "Surfboards - Rip Curl",
+  "tags": [
+   "advance fee fraud",
+   "malicious",
+   "fakeshop"
+  ],
+  "has_dom": true,
+  "file": "urlscan2/01a1bf4a-09c1-776c-8af0-6d7f57a03e8b.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1ca75-38b7-7299-aec0-b74808604e13",
+  "scheme": "payout",
+  "query": "page.title:\"компенсация\"",
+  "time": "2026-11-11T11:54:09.957Z",
+  "url": "https://bg-plasthane.top/receive/714709825?a=150&d=31.12.2026&h=24",
+  "domain": "bg-plasthane.top",
+  "title": "Компенсация на разходи за електроенергия",
+  "tags": [
+   "hybridanalysis"
+  ],
+  "has_dom": true,
+  "file": "urlscan2/01a1ca75-38b7-7299-aec0-b74808604e13.html",
+  "new": {
+   "verdict": "danger",
+   "checks": [
+    "card-form:danger",
+    "skimmer:warning"
+   ],
+   "titles": [
+    "Вместе с картой просят данные, которые для оплаты не нужны",
+    "Скрипт читает поля карты и умеет отправлять данные",
+    "Скрипт читает поля карты и умеет отправлять данные"
+   ],
+   "info": [
+    "На странице есть форма для данных карты",
+    "На странице оплаты работает код сторонних сайтов"
+   ]
+  }
+ },
+ {
+  "uuid": "01a1b0ce-0d66-7038-a36b-6e1b7a6c5150",
+  "scheme": "payout",
+  "query": "page.title:\"refund\" AND task.tags:phishing",
+  "time": "2026-11-06T12:21:02.503Z",
+  "url": "https://ckvptc.com/",
+  "domain": "ckvptc.com",
+  "title": "Amazon Refund Check",
+  "tags": [
+   "phishing"
+  ],
+  "has_dom": true,
+  "file": "urlscan2/01a1b0ce-0d66-7038-a36b-6e1b7a6c5150.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a17d5f-1b59-70ce-9134-90858f3dabee",
+  "scheme": "payout",
+  "query": "page.title:\"refund\" AND task.tags:phishing",
+  "time": "2026-10-27T12:39:16.049Z",
+  "url": "https://underground-emerald-qxnszcll-dpckhtvzsu9f.edgeone.dev/",
+  "domain": "underground-emerald-qxnszcll-dpckhtvzsu9f.edgeone.dev",
+  "title": "Refund Portal",
+  "tags": [
+   "phishing",
+   "malicious"
+  ],
+  "has_dom": true,
+  "file": "urlscan2/01a17d5f-1b59-70ce-9134-90858f3dabee.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1446c-d672-75bd-9042-38b69ad66f8d",
+  "scheme": "fake-payment",
+  "query": "page.title:\"USPS\" AND task.tags:phishing",
+  "time": "2026-10-16T11:15:51.888Z",
+  "url": "https://usps-server.serv00.net/",
+  "domain": "usps-server.serv00.net",
+  "title": "USPS.com® - USPS Tracking®",
+  "tags": [
+   "phishing"
+  ],
+  "has_dom": true,
+  "file": "urlscan2/01a1446c-d672-75bd-9042-38b69ad66f8d.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1446c-0e6f-72da-ae2e-9de80c0d7e52",
+  "scheme": "fake-payment",
+  "query": "page.title:\"USPS\" AND task.tags:phishing",
+  "time": "2026-10-16T11:15:00.654Z",
+  "url": "https://www.usps-server.serv00.net/",
+  "domain": "www.usps-server.serv00.net",
+  "title": "USPS.com® - USPS Tracking®",
+  "tags": [
+   "phishing"
+  ],
+  "has_dom": true,
+  "file": "urlscan2/01a1446c-0e6f-72da-ae2e-9de80c0d7e52.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1dae3-269d-767f-b1e7-907cd052b061",
+  "scheme": "fake-payment",
+  "query": "page.title:\"Redelivery\"",
+  "time": "2026-11-14T16:28:07.410Z",
+  "url": "https://royalmail-delivers.com/",
+  "domain": "royalmail-delivers.com",
+  "title": "Book a redelivery | Royal Mail",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/01a1dae3-269d-767f-b1e7-907cd052b061.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a19ffe-5616-7152-9caf-d8307af97b81",
+  "scheme": "fake-payment",
+  "query": "page.title:\"Redelivery\"",
+  "time": "2026-11-03T06:00:23.601Z",
+  "url": "https://redelivery-tracking-au.com/",
+  "domain": "redelivery-tracking-au.com",
+  "title": "redelivery-tracking-au.com",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/01a19ffe-5616-7152-9caf-d8307af97b81.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1d438-ce93-745c-af79-39b4ad2c5f83",
+  "scheme": "investment",
+  "query": "page.title:\"Quantum AI\"",
+  "time": "2026-11-13T09:24:25.444Z",
+  "url": "https://countermovesss.buzz/",
+  "domain": "countermovesss.buzz",
+  "title": "Quantum AI",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/01a1d438-ce93-745c-af79-39b4ad2c5f83.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1da49-1654-737b-82f8-f28f45c0642b",
+  "scheme": "investment",
+  "query": "page.title:\"AI Trading Platform\"",
+  "time": "2026-11-14T13:39:54.720Z",
+  "url": "https://baykar-platform.pro/",
+  "domain": "baykar-platform.pro",
+  "title": "BAYKAR Platform | AI Trading Platform | Official Website",
+  "tags": [
+   "@phish_report"
+  ],
+  "has_dom": true,
+  "file": "urlscan2/01a1da49-1654-737b-82f8-f28f45c0642b.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1da25-9734-71d0-a5d0-ae29cdaa5812",
+  "scheme": "investment",
+  "query": "page.title:\"AI Trading Platform\"",
+  "time": "2026-11-14T13:01:12.402Z",
+  "url": "https://ravenfundmere.pro/",
+  "domain": "ravenfundmere.pro",
+  "title": "raven fundmere | AI Trading Platform | Official Website",
+  "tags": [
+   "phishdestroy"
+  ],
+  "has_dom": true,
+  "file": "urlscan2/01a1da25-9734-71d0-a5d0-ae29cdaa5812.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1da00-8dac-7771-916d-69be6da5ffca",
+  "scheme": "investment",
+  "query": "page.title:\"AI Trading Platform\"",
+  "time": "2026-11-14T12:20:37.802Z",
+  "url": "https://federalgovernment.biz/",
+  "domain": "federalgovernment.biz",
+  "title": "Federal Government | AI Trading Platform",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/01a1da00-8dac-7771-916d-69be6da5ffca.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1d9ff-ee8f-7485-b95e-3fb45a46df77",
+  "scheme": "investment",
+  "query": "page.title:\"AI Trading Platform\"",
+  "time": "2026-11-14T12:20:02.485Z",
+  "url": "https://ducatleigh-gardens.pro/",
+  "domain": "ducatleigh-gardens.pro",
+  "title": "Ducatleigh Gardens | AI Trading Platform",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/01a1d9ff-ee8f-7485-b95e-3fb45a46df77.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1d9fa-dce8-75c4-92cc-d77d81a6d4c1",
+  "scheme": "investment",
+  "query": "page.title:\"AI Trading Platform\"",
+  "time": "2026-11-14T12:14:28.640Z",
+  "url": "https://festgeld-system.com/",
+  "domain": "festgeld-system.com",
+  "title": "Festgeld | AI Trading Platform | Offizielle Webseite",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/01a1d9fa-dce8-75c4-92cc-d77d81a6d4c1.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1d9cf-6f23-77b1-8a66-353877ee684d",
+  "scheme": "investment",
+  "query": "page.title:\"AI Trading Platform\"",
+  "time": "2026-11-14T11:26:58.811Z",
+  "url": "https://virtexai-click.pages.dev/",
+  "domain": "virtexai-click.pages.dev",
+  "title": "virtex ai | AI Trading Platform | Official Homepage",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/01a1d9cf-6f23-77b1-8a66-353877ee684d.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1d128-5f64-70a0-aa5b-24f51d5c33ea",
+  "scheme": "investment",
+  "query": "page.title:\"Trading Platform\" AND task.tags:phishing",
+  "time": "2026-11-12T19:07:33.276Z",
+  "url": "https://gramexchanger-dp4q2ahdy7h9.edgeone.dev/",
+  "domain": "gramexchanger-dp4q2ahdy7h9.edgeone.dev",
+  "title": "GRAM EXCHANGE — Professional Crypto Trading Platform",
+  "tags": [
+   "phishing",
+   "malicious"
+  ],
+  "has_dom": true,
+  "file": "urlscan2/01a1d128-5f64-70a0-aa5b-24f51d5c33ea.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1cbd7-19a6-7479-a902-db2c7954d1cf",
+  "scheme": "investment",
+  "query": "page.title:\"Trading Platform\" AND task.tags:phishing",
+  "time": "2026-11-11T18:20:42.534Z",
+  "url": "https://northern-pink-h96yhmpn-dpjv7gtkh0mx.edgeone.dev/",
+  "domain": "northern-pink-h96yhmpn-dpjv7gtkh0mx.edgeone.dev",
+  "title": "CryptoPro · USDT Trading Platform",
+  "tags": [
+   "phishing",
+   "malicious"
+  ],
+  "has_dom": true,
+  "file": "urlscan2/01a1cbd7-19a6-7479-a902-db2c7954d1cf.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1cbd2-ecb3-74cd-914e-5da069f13eb9",
+  "scheme": "investment",
+  "query": "page.title:\"Trading Platform\" AND task.tags:phishing",
+  "time": "2026-11-11T18:16:07.216Z",
+  "url": "https://cryptopro-blockchain-dpyae1paz5hn.edgeone.dev/",
+  "domain": "cryptopro-blockchain-dpyae1paz5hn.edgeone.dev",
+  "title": "CryptoPro · USDT Trading Platform",
+  "tags": [
+   "phishing",
+   "malicious"
+  ],
+  "has_dom": true,
+  "file": "urlscan2/01a1cbd2-ecb3-74cd-914e-5da069f13eb9.html",
+  "new": {
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1cbd1-9b3e-7338-b327-88d0dff82fe4",
+  "scheme": "investment",
+  "query": "page.title:\"Trading Platform\" AND task.tags:phishing",
+  "time": "2026-11-11T18:14:40.908Z",
+  "url": "https://usdt-trading-platform-dpw7p0calbva.edgeone.dev/",
+  "domain": "usdt-trading-platform-dpw7p0calbva.edgeone.dev",
+  "title": "CryptoPro · USDT Trading Platform",
+  "tags": [
+   "phishing",
+   "malicious"
+  ],
+  "has_dom": true,
+  "file": "urlscan2/01a1cbd1-9b3e-7338-b327-88d0dff82fe4.html",
+  "new": {
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1cbcb-7870-74aa-b9dd-1f11ba4307d2",
+  "scheme": "investment",
+  "query": "page.title:\"Trading Platform\" AND task.tags:phishing",
+  "time": "2026-11-11T18:08:31.257Z",
+  "url": "https://ready-copper-94hyt1zv-dpv1q61zwwxc.edgeone.dev/",
+  "domain": "ready-copper-94hyt1zv-dpv1q61zwwxc.edgeone.dev",
+  "title": "CryptoPro · USDT Trading Platform",
+  "tags": [
+   "phishing",
+   "malicious"
+  ],
+  "has_dom": true,
+  "file": "urlscan2/01a1cbcb-7870-74aa-b9dd-1f11ba4307d2.html",
+  "new": {
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a18f55-d60a-73bf-be50-54a147a74486",
+  "scheme": "investment",
+  "query": "page.title:\"стабильный доход от ГазИнвест\"",
+  "time": "2026-10-31T00:22:15.654Z",
+  "url": "https://ulvenraq.icu/lander/do_64_v7_grisha_very_stupid_gaz_age_target_75_thanks_sardelkanewdate/index.php",
+  "domain": "ulvenraq.icu",
+  "title": "От 100 000 рублей в месяц - стабильный доход от ГазИнвест для граждан РФ. Регистрация открыта с 1 августа",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/01a18f55-d60a-73bf-be50-54a147a74486.html",
+  "new": {
+   "verdict": "warning",
+   "checks": [
+    "income-promise:warning"
+   ],
+   "titles": [
+    "Обещают доход и просят оставить телефон"
+   ],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a18bc2-0307-7472-9240-39eee8e19bdd",
+  "scheme": "investment",
+  "query": "page.title:\"стабильный доход от ГазИнвест\"",
+  "time": "2026-10-30T07:41:56.421Z",
+  "url": "https://oskavren.icu/lander/do_64_v7_grisha_very_stupid_gaz_age_target_75_thanks_sardelkanewdate/index.php",
+  "domain": "oskavren.icu",
+  "title": "От 100 000 рублей в месяц - стабильный доход от ГазИнвест для граждан РФ. Регистрация открыта с 1 августа",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/01a18bc2-0307-7472-9240-39eee8e19bdd.html",
+  "new": {
+   "verdict": "warning",
+   "checks": [
+    "income-promise:warning"
+   ],
+   "titles": [
+    "Обещают доход и просят оставить телефон"
+   ],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a18bc1-f780-7357-8188-4a8ffd247c59",
+  "scheme": "investment",
+  "query": "page.title:\"стабильный доход от ГазИнвест\"",
+  "time": "2026-10-30T07:41:54.105Z",
+  "url": "https://ravnethq.icu/lander/do_64_v7_grisha_very_stupid_gaz_age_target_75_thanks_sardelkanewdate/index.php",
+  "domain": "ravnethq.icu",
+  "title": "От 100 000 рублей в месяц - стабильный доход от ГазИнвест для граждан РФ. Регистрация открыта с 1 августа",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/01a18bc1-f780-7357-8188-4a8ffd247c59.html",
+  "new": {
+   "verdict": "warning",
+   "checks": [
+    "income-promise:warning"
+   ],
+   "titles": [
+    "Обещают доход и просят оставить телефон"
+   ],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a18bc1-e160-70fb-b52b-19315d15de71",
+  "scheme": "investment",
+  "query": "page.title:\"стабильный доход от ГазИнвест\"",
+  "time": "2026-10-30T07:41:53.378Z",
+  "url": "https://prymorel.icu/lander/do_64_v7_grisha_very_stupid_gaz_age_target_75_thanks_sardelkanewdate/index.php",
+  "domain": "prymorel.icu",
+  "title": "От 100 000 рублей в месяц - стабильный доход от ГазИнвест для граждан РФ. Регистрация открыта с 1 августа",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/01a18bc1-e160-70fb-b52b-19315d15de71.html",
+  "new": {
+   "verdict": "warning",
+   "checks": [
+    "income-promise:warning"
+   ],
+   "titles": [
+    "Обещают доход и просят оставить телефон"
+   ],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1519f-f2aa-72db-a8f2-fab870cb97a2",
+  "scheme": "investment",
+  "query": "page.title:\"стабильный доход от ГазИнвест\"",
+  "time": "2026-10-19T00:46:46.490Z",
+  "url": "https://difmuko.icu/lander/do_64_v3_very_stupid_gaz_age_target_75_thanks_sardelkanewdate/index.php",
+  "domain": "difmuko.icu",
+  "title": "От 100 000 рублей в месяц - стабильный доход от ГазИнвест для граждан РФ. Регистрация открыта с 1 августа",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/01a1519f-f2aa-72db-a8f2-fab870cb97a2.html",
+  "new": {
+   "verdict": "warning",
+   "checks": [
+    "income-promise:warning"
+   ],
+   "titles": [
+    "Обещают доход и просят оставить телефон"
+   ],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1519f-179c-7470-b3b8-c9877547be21",
+  "scheme": "investment",
+  "query": "page.title:\"стабильный доход от ГазИнвест\"",
+  "time": "2026-10-19T00:45:51.244Z",
+  "url": "https://cexmuri.icu/lander/do_64_v3_very_stupid_gaz_age_target_75_thanks_sardelkanewdate/index.php",
+  "domain": "cexmuri.icu",
+  "title": "От 100 000 рублей в месяц - стабильный доход от ГазИнвест для граждан РФ. Регистрация открыта с 1 августа",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/01a1519f-179c-7470-b3b8-c9877547be21.html",
+  "new": {
+   "verdict": "warning",
+   "checks": [
+    "income-promise:warning"
+   ],
+   "titles": [
+    "Обещают доход и просят оставить телефон"
+   ],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1a7e4-2f37-75db-a2c2-a62656cf68b3",
+  "scheme": "investment",
+  "query": "page.title:\"инвестиционная платформа\"",
+  "time": "2026-11-04T18:48:44.775Z",
+  "url": "https://nuverex.net/",
+  "domain": "nuverex.net",
+  "title": "Nuverex — AI-инвестиционная платформа",
+  "tags": [
+   "phishdestroy"
+  ],
+  "has_dom": true,
+  "file": "urlscan2/01a1a7e4-2f37-75db-a2c2-a62656cf68b3.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a18f64-73c0-76e9-acb4-6b6c7090f3b4",
+  "scheme": "investment",
+  "query": "page.title:\"инвестиционная платформа\"",
+  "time": "2026-10-31T00:38:13.446Z",
+  "url": "https://zentria.world/click?key=14adab6c31444fdd9377906be9d254b1&sub_id_3=partagetonsavoirlire.com&gclid=*&gtc=aw-18412003563/vptwck3k6ogceovbw8te&tname=tt",
+  "domain": "zentria.world",
+  "title": "Kaspi AI — инвестиционная платформа",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/01a18f64-73c0-76e9-acb4-6b6c7090f3b4.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a18f62-b714-77ea-a2c9-f0ea0d10bb9b",
+  "scheme": "investment",
+  "query": "page.title:\"инвестиционная платформа\"",
+  "time": "2026-10-31T00:36:23.695Z",
+  "url": "https://fynexo.world/click?key=14adab6c31444fdd9377906be9d254b1&sub_id_3=partagetonsavoirlire.com&gclid=*&gtc=aw-18412003563/vptwck3k6ogceovbw8te&tname=tt",
+  "domain": "fynexo.world",
+  "title": "Kaspi AI — инвестиционная платформа",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/01a18f62-b714-77ea-a2c9-f0ea0d10bb9b.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a18f61-45cb-719e-9820-532338a28f32",
+  "scheme": "investment",
+  "query": "page.title:\"инвестиционная платформа\"",
+  "time": "2026-10-31T00:34:48.624Z",
+  "url": "https://nektrix.world/click?key=14adab6c31444fdd9377906be9d254b1&sub_id_3=partagetonsavoirlire.com&gclid=*&gtc=aw-18412003563/vptwck3k6ogceovbw8te&tname=tt",
+  "domain": "nektrix.world",
+  "title": "Kaspi AI — инвестиционная платформа",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/01a18f61-45cb-719e-9820-532338a28f32.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a18f5f-dddf-7533-803c-1158fc186fcd",
+  "scheme": "investment",
+  "query": "page.title:\"инвестиционная платформа\"",
+  "time": "2026-10-31T00:33:19.854Z",
+  "url": "https://kalexo.world/click?key=14adab6c31444fdd9377906be9d254b1&sub_id_3=partagetonsavoirlire.com&gclid=*&gtc=aw-18412003563/vptwck3k6ogceovbw8te&tname=tt",
+  "domain": "kalexo.world",
+  "title": "Kaspi AI — инвестиционная платформа",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/01a18f5f-dddf-7533-803c-1158fc186fcd.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a18f5f-2497-756d-a781-e4cde13dd4bf",
+  "scheme": "investment",
+  "query": "page.title:\"инвестиционная платформа\"",
+  "time": "2026-10-31T00:32:25.927Z",
+  "url": "https://silnex.world/click?key=14adab6c31444fdd9377906be9d254b1&sub_id_3=partagetonsavoirlire.com&gclid=*&gtc=aw-18412003563/vptwck3k6ogceovbw8te&tname=tt",
+  "domain": "silnex.world",
+  "title": "Kaspi AI — инвестиционная платформа",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/01a18f5f-2497-756d-a781-e4cde13dd4bf.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1b768-f534-7627-8019-6b303c77b902",
+  "scheme": "investment",
+  "query": "page.title:\"пассивный доход\" AND page.title:USDT",
+  "time": "2026-11-07T19:07:58.550Z",
+  "url": "https://capinvest.work/",
+  "domain": "capinvest.work",
+  "title": "Пассивный доход в USDT",
+  "tags": [
+   "@ecarlesi",
+   "possiblethreat",
+   "analyst-approved",
+   "investment-scam-sweep",
+   "unverified"
+  ],
+  "has_dom": true,
+  "file": "urlscan2/01a1b768-f534-7627-8019-6b303c77b902.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1a7ca-76ea-75ba-9435-79713d888333",
+  "scheme": "tech-support",
+  "query": "page.title:\"Microsoft Security\" AND page.domain:azurefd.net",
+  "time": "2026-11-04T18:20:37.462Z",
+  "url": "https://5008oczxvfaertwufxxhrhnevseruwoslt-fvacesdbargwdbha.z03.azurefd.net/?msclkid=3a97a5671d0314fb860fcf8c7c0ad21e",
+  "domain": "5008oczxvfaertwufxxhrhnevseruwoslt-fvacesdbargwdbha.z03.azurefd.net",
+  "title": "Microsoft Security",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/01a1a7ca-76ea-75ba-9435-79713d888333.html",
+  "new": {
+   "verdict": "danger",
+   "checks": [
+    "pressure:danger"
+   ],
+   "titles": [
+    "Поддельное предупреждение о вирусе с номером «поддержки»"
+   ],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1a7a1-330e-723d-b021-5e8a281afc86",
+  "scheme": "tech-support",
+  "query": "page.title:\"Microsoft Security\" AND page.domain:azurefd.net",
+  "time": "2026-11-04T17:35:29.849Z",
+  "url": "https://5015oeerdmxngbcgnypaayjfvncgwckwml-dveqevh4hdazhzbk.z03.azurefd.net/",
+  "domain": "5015oeerdmxngbcgnypaayjfvncgwckwml-dveqevh4hdazhzbk.z03.azurefd.net",
+  "title": "Microsoft Security",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/01a1a7a1-330e-723d-b021-5e8a281afc86.html",
+  "new": {
+   "verdict": "danger",
+   "checks": [
+    "pressure:danger"
+   ],
+   "titles": [
+    "Поддельное предупреждение о вирусе с номером «поддержки»"
+   ],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1a262-6d6b-72c0-bd79-71126244d9c0",
+  "scheme": "tech-support",
+  "query": "page.title:\"Microsoft Security\" AND page.domain:azurefd.net",
+  "time": "2026-11-03T17:08:55.369Z",
+  "url": "https://5005yzmiradngbtxbpooplqfpgehwmvnzy-apcpg0a7htf0eqa6.z03.azurefd.net/",
+  "domain": "5005yzmiradngbtxbpooplqfpgehwmvnzy-apcpg0a7htf0eqa6.z03.azurefd.net",
+  "title": "Microsoft Security",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/01a1a262-6d6b-72c0-bd79-71126244d9c0.html",
+  "new": {
+   "verdict": "danger",
+   "checks": [
+    "pressure:danger"
+   ],
+   "titles": [
+    "Поддельное предупреждение о вирусе с номером «поддержки»"
+   ],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1a233-8836-71ae-8b2b-1ef5969de11e",
+  "scheme": "tech-support",
+  "query": "page.title:\"Microsoft Security\" AND page.domain:azurefd.net",
+  "time": "2026-11-03T16:17:37.589Z",
+  "url": "https://5001jmfqaihnbeyfsatewxwyatmbejcuwj-eggedsahc2apgebv.z03.azurefd.net/",
+  "domain": "5001jmfqaihnbeyfsatewxwyatmbejcuwj-eggedsahc2apgebv.z03.azurefd.net",
+  "title": "Microsoft Security",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/01a1a233-8836-71ae-8b2b-1ef5969de11e.html",
+  "new": {
+   "verdict": "danger",
+   "checks": [
+    "pressure:danger"
+   ],
+   "titles": [
+    "Поддельное предупреждение о вирусе с номером «поддержки»"
+   ],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a19348-444f-7784-963b-621e40033b49",
+  "scheme": "tech-support",
+  "query": "page.title:\"Microsoft Security\" AND page.domain:azurefd.net",
+  "time": "2026-10-31T18:45:57.834Z",
+  "url": "https://7001qoylcxgzlabxewsbychkjdowqviexz-e2gwaag7b0hhh9cg.z03.azurefd.net/",
+  "domain": "7001qoylcxgzlabxewsbychkjdowqviexz-e2gwaag7b0hhh9cg.z03.azurefd.net",
+  "title": "Microsoft Security",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/01a19348-444f-7784-963b-621e40033b49.html",
+  "new": {
+   "verdict": "danger",
+   "checks": [
+    "pressure:danger"
+   ],
+   "titles": [
+    "Поддельное предупреждение о вирусе с номером «поддержки»"
+   ],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a19326-33ea-70a8-bc3b-2eef420ef285",
+  "scheme": "tech-support",
+  "query": "page.title:\"Microsoft Security\" AND page.domain:azurefd.net",
+  "time": "2026-10-31T18:08:44.529Z",
+  "url": "https://7006pzjhxlguipeogcqecwgfonyaudbbqb-hfgvhhc2efafe3hx.z03.azurefd.net/",
+  "domain": "7006pzjhxlguipeogcqecwgfonyaudbbqb-hfgvhhc2efafe3hx.z03.azurefd.net",
+  "title": "Microsoft Security",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/01a19326-33ea-70a8-bc3b-2eef420ef285.html",
+  "new": {
+   "verdict": "danger",
+   "checks": [
+    "pressure:danger"
+   ],
+   "titles": [
+    "Поддельное предупреждение о вирусе с номером «поддержки»"
+   ],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1dad0-34d9-76dd-ae55-412a1097f498",
+  "scheme": "crypto-drainer",
+  "query": "task.tags:drainer",
+  "time": "2026-11-14T16:07:27.716Z",
+  "url": "https://6-etherfi-allocation.pages.dev/",
+  "domain": "6-etherfi-allocation.pages.dev",
+  "title": "Stake ETH | ether.fi",
+  "tags": [
+   "phishing",
+   "drainer",
+   "crypto-scam"
+  ],
+  "has_dom": true,
+  "file": "urlscan2/01a1dad0-34d9-76dd-ae55-412a1097f498.html",
+  "new": {
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1dad0-32cd-72cc-a601-bc3dcf539a36",
+  "scheme": "crypto-drainer",
+  "query": "task.tags:drainer",
+  "time": "2026-11-14T16:07:27.648Z",
+  "url": "https://2-hub-ramsesgovernance.pages.dev/",
+  "domain": "2-hub-ramsesgovernance.pages.dev",
+  "title": "Ramses | Governance",
+  "tags": [
+   "phishing",
+   "drainer",
+   "crypto-scam"
+  ],
+  "has_dom": true,
+  "file": "urlscan2/01a1dad0-32cd-72cc-a601-bc3dcf539a36.html",
+  "new": {
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1dad0-2b11-71fa-86ea-c628483cb52c",
+  "scheme": "crypto-drainer",
+  "query": "task.tags:drainer",
+  "time": "2026-11-14T16:07:24.921Z",
+  "url": "https://6-mantle-allocations.pages.dev/",
+  "domain": "6-mantle-allocations.pages.dev",
+  "title": "Mantle | Institutional Infrastructure for Real-World Assets",
+  "tags": [
+   "phishing",
+   "drainer",
+   "crypto-scam"
+  ],
+  "has_dom": true,
+  "file": "urlscan2/01a1dad0-2b11-71fa-86ea-c628483cb52c.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1dad0-2d18-74fc-a7a4-567f7843d89e",
+  "scheme": "crypto-drainer",
+  "query": "task.tags:drainer",
+  "time": "2026-11-14T16:07:24.900Z",
+  "url": "https://3-xstocks-allocation.pages.dev/",
+  "domain": "3-xstocks-allocation.pages.dev",
+  "title": "xStocks - Tokenized Equities",
+  "tags": [
+   "phishing",
+   "drainer",
+   "crypto-scam"
+  ],
+  "has_dom": true,
+  "file": "urlscan2/01a1dad0-2d18-74fc-a7a4-567f7843d89e.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1dad0-1bd8-70cf-9710-00a264117e33",
+  "scheme": "crypto-drainer",
+  "query": "task.tags:drainer",
+  "time": "2026-11-14T16:07:22.262Z",
+  "url": "https://15-katanagov.pages.dev/",
+  "domain": "15-katanagov.pages.dev",
+  "title": "katana | governance",
+  "tags": [
+   "phishing",
+   "drainer",
+   "crypto-scam"
+  ],
+  "has_dom": true,
+  "file": "urlscan2/01a1dad0-1bd8-70cf-9710-00a264117e33.html",
+  "new": {
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1dad0-1f47-7328-8048-e5cdd0077f33",
+  "scheme": "crypto-drainer",
+  "query": "task.tags:drainer",
+  "time": "2026-11-14T16:07:20.749Z",
+  "url": "https://33-fx-aladdin.pages.dev/",
+  "domain": "33-fx-aladdin.pages.dev",
+  "title": "f(x) Protocol",
+  "tags": [
+   "phishing",
+   "drainer",
+   "crypto-scam"
+  ],
+  "has_dom": true,
+  "file": "urlscan2/01a1dad0-1f47-7328-8048-e5cdd0077f33.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a09ec7-92c3-719e-a169-bd2833459a39",
+  "scheme": "fake-payment",
+  "query": "page.title:\"Оплата заказа\"",
+  "time": "2026-09-14T07:18:02.299Z",
+  "url": "https://oplatahub.com/pay/800e7cd76c961c4a5b17d99a2924cc8f672b1c897e4466b80f3a6c1cd963eba4",
+  "domain": "oplatahub.com",
+  "title": "Оплата заказа",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/01a09ec7-92c3-719e-a169-bd2833459a39.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a0667a-33c4-7032-95d7-60a231cf8cdc",
+  "scheme": "fake-payment",
+  "query": "page.title:\"Оплата заказа\"",
+  "time": "2026-09-03T08:54:47.129Z",
+  "url": "https://nalozka-payment.site/payment.html?adid=185&order=10313726864&route=%d0%9a%d0%b0%d0%bc%d1%8b%d1%88%d0%b8%d0%bd%20-%20%d0%92%d0%be%d1%80%d0%be%d0%bd%d0%b5%d0%b6&amount=64900%20%e2%82%bd",
+  "domain": "nalozka-payment.site",
+  "title": "Оплата заказа СДЭК",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/01a0667a-33c4-7032-95d7-60a231cf8cdc.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a0667a-2ce8-71d4-8432-8e0db0de0d39",
+  "scheme": "fake-payment",
+  "query": "page.title:\"Оплата заказа\"",
+  "time": "2026-09-03T08:54:44.303Z",
+  "url": "https://nalozka-payment.pro/payment.html?adid=185&order=10313726864&route=%d0%9a%d0%b0%d0%bc%d1%8b%d1%88%d0%b8%d0%bd%20-%20%d0%92%d0%be%d1%80%d0%be%d0%bd%d0%b5%d0%b6&amount=64900%20%e2%82%bd",
+  "domain": "nalozka-payment.pro",
+  "title": "Оплата заказа СДЭК",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/01a0667a-2ce8-71d4-8432-8e0db0de0d39.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a10004-1969-72a9-9292-82d4875c1327",
+  "scheme": "fake-payment",
+  "query": "page.title:\"USPS\" AND task.tags:phishing",
+  "time": "2026-10-03T04:27:19.419Z",
+  "url": "https://www.permanentmall.store/",
+  "domain": "www.permanentmall.store",
+  "title": "USPS",
+  "tags": [
+   "@ecarlesi",
+   "threat",
+   "phishing",
+   "usps"
+  ],
+  "has_dom": true,
+  "file": "urlscan2/01a10004-1969-72a9-9292-82d4875c1327.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a13d36-4fbf-7756-a9f4-8e7139537bb0",
+  "scheme": "fake-payment",
+  "query": "page.title:\"Secure Checkout\" AND task.tags:phishing",
+  "time": "2026-10-15T01:39:07.821Z",
+  "url": "https://fivetelgate-dpd4r4iey27k.edgeone.dev/",
+  "domain": "fivetelgate-dpd4r4iey27k.edgeone.dev",
+  "title": "Wi5 - Telecommunications - Secure Checkout",
+  "tags": [
+   "phishing",
+   "malicious"
+  ],
+  "has_dom": true,
+  "file": "urlscan2/01a13d36-4fbf-7756-a9f4-8e7139537bb0.html",
+  "new": {
+   "verdict": "warning",
+   "checks": [
+    "card-form:warning"
+   ],
+   "titles": [
+    "Данные карты уходят на другой сайт"
+   ],
+   "info": [
+    "На странице есть форма для данных карты",
+    "На странице оплаты работает код сторонних сайтов"
+   ]
+  }
+ },
+ {
+  "uuid": "01a13d28-2c99-753a-ad29-ee072ef322cf",
+  "scheme": "fake-payment",
+  "query": "page.title:\"Secure Checkout\" AND task.tags:phishing",
+  "time": "2026-10-15T01:23:32.643Z",
+  "url": "https://paygate-dpj931jj60r0.edgeone.dev/",
+  "domain": "paygate-dpj931jj60r0.edgeone.dev",
+  "title": "Wi5 - Telecommunications - Secure Checkout",
+  "tags": [
+   "phishing",
+   "malicious"
+  ],
+  "has_dom": true,
+  "file": "urlscan2/01a13d28-2c99-753a-ad29-ee072ef322cf.html",
+  "new": {
+   "verdict": "warning",
+   "checks": [
+    "card-form:warning"
+   ],
+   "titles": [
+    "Данные карты уходят на другой сайт"
+   ],
+   "info": [
+    "На странице есть форма для данных карты",
+    "На странице оплаты работает код сторонних сайтов"
+   ]
+  }
+ },
+ {
+  "uuid": "01a0f382-8adb-741e-a906-4162a345946e",
+  "scheme": "fake-payment",
+  "query": "page.title:\"Secure Checkout\" AND task.tags:phishing",
+  "time": "2026-09-30T18:10:37.776Z",
+  "url": "https://marketing-dphmhw38dnm0.edgeone.dev/checkout%20(1).html",
+  "domain": "marketing-dphmhw38dnm0.edgeone.dev",
+  "title": "Secure Checkout - NG Store",
+  "tags": [
+   "phishing",
+   "malicious"
+  ],
+  "has_dom": true,
+  "file": "urlscan2/01a0f382-8adb-741e-a906-4162a345946e.html",
+  "new": {
+   "verdict": "ok",
+   "checks": [],
+   "titles": [],
+   "info": [
+    "На странице есть форма для данных карты",
+    "На странице оплаты работает код сторонних сайтов"
+   ]
+  }
+ },
+ {
+  "uuid": "01a0cec5-f5ce-73fa-8522-76f7483b9f58",
+  "scheme": "fake-payment",
+  "query": "page.title:\"Secure Checkout\" AND task.tags:phishing",
+  "time": "2026-09-23T14:58:02.149Z",
+  "url": "https://viroxa-dp8xkodr9g34.edgeone.dev/",
+  "domain": "viroxa-dp8xkodr9g34.edgeone.dev",
+  "title": "ViroxaPay Secure Checkout",
+  "tags": [
+   "phishing",
+   "malicious"
+  ],
+  "has_dom": true,
+  "file": "urlscan2/01a0cec5-f5ce-73fa-8522-76f7483b9f58.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a08c13-aa47-7474-9eb9-024bf8c050cb",
+  "scheme": "fake-payment",
+  "query": "page.title:\"Secure Checkout\" AND task.tags:phishing",
+  "time": "2026-09-10T16:08:35.298Z",
+  "url": "https://faviconshopbtcpay-dpnhk2p9wx0h.edgeone.dev/",
+  "domain": "faviconshopbtcpay-dpnhk2p9wx0h.edgeone.dev",
+  "title": "Secure Checkout - Rolex Luxury Store",
+  "tags": [
+   "phishing",
+   "malicious"
+  ],
+  "has_dom": true,
+  "file": "urlscan2/01a08c13-aa47-7474-9eb9-024bf8c050cb.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "019c2254-8334-772a-ab39-5b9c7489cc19",
+  "scheme": "fake-payment",
+  "query": "page.domain:*avito* AND page.title:*оплат*",
+  "time": "2026-02-03T07:08:35.615Z",
+  "url": "http://avito2payment.ru/",
+  "domain": "avito2payment.ru",
+  "title": "Авито • Получение оплаты за товар",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/019c2254-8334-772a-ab39-5b9c7489cc19.html",
+  "new": {
+   "verdict": "danger",
+   "checks": [
+    "card-form:danger",
+    "receive-money:danger",
+    "skimmer:warning"
+   ],
+   "titles": [
+    "Страница с вводом карты открыта без HTTPS",
+    "Данные карты будут отправлены без шифрования",
+    "Данные карты уходят в Telegram-бота",
+    "Для получения денег просят секретные данные карты",
+    "Скрипт читает поля карты и умеет отправлять данные"
+   ],
+   "info": [
+    "На странице есть форма для данных карты"
+   ]
+  }
+ },
+ {
+  "uuid": "01a1d05c-515d-736e-886b-a5982e869546",
+  "scheme": "investment",
+  "query": "page.title:\"Quantum AI\"",
+  "time": "2026-11-12T15:24:40.812Z",
+  "url": "https://thermawaves.com/lander/lk---quantum-ai1/",
+  "domain": "thermawaves.com",
+  "title": "Registration for the Quantum AI platform closes on November 12 2026 - Government Information Centre (GIC)",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/01a1d05c-515d-736e-886b-a5982e869546.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1d035-48f5-729a-b8ba-732d70bb022b",
+  "scheme": "investment",
+  "query": "page.title:\"Quantum AI\"",
+  "time": "2026-11-12T14:42:02.464Z",
+  "url": "https://diario-financiero-latam.com/lander/lk---quantum-ai1/",
+  "domain": "diario-financiero-latam.com",
+  "title": "Registration for the Quantum AI platform closes on November 12 2026 - Government Information Centre (GIC)",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/01a1d035-48f5-729a-b8ba-732d70bb022b.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1d033-1ce9-71e5-8426-7309b6dd7799",
+  "scheme": "investment",
+  "query": "page.title:\"Quantum AI\"",
+  "time": "2026-11-12T14:40:11.812Z",
+  "url": "http://dailyobserverhubhk.com/lander/lk---quantum-ai1/",
+  "domain": "dailyobserverhubhk.com",
+  "title": "Registration for the Quantum AI platform closes on November 12 2026 - Government Information Centre (GIC)",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/01a1d033-1ce9-71e5-8426-7309b6dd7799.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1d02f-da08-726f-b9ba-aeb260ae9c5e",
+  "scheme": "investment",
+  "query": "page.title:\"Quantum AI\"",
+  "time": "2026-11-12T14:36:06.650Z",
+  "url": "https://melvoras.com/lander/lk---quantum-ai1/",
+  "domain": "melvoras.com",
+  "title": "Registration for the Quantum AI platform closes on November 12 2026 - Government Information Centre (GIC)",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/01a1d02f-da08-726f-b9ba-aeb260ae9c5e.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1d014-714c-731f-8749-bdc1ba4af4ff",
+  "scheme": "investment",
+  "query": "page.title:\"Quantum AI\"",
+  "time": "2026-11-12T14:06:10.712Z",
+  "url": "https://borvetra.com/lander/lk---quantum-ai1/",
+  "domain": "borvetra.com",
+  "title": "Registration for the Quantum AI platform closes on November 12 2026 - Government Information Centre (GIC)",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/01a1d014-714c-731f-8749-bdc1ba4af4ff.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1cb6e-4454-7429-9ba0-cbf1d83b8ee4",
+  "scheme": "investment",
+  "query": "page.title:\"Quantum AI\"",
+  "time": "2026-11-11T16:26:10.737Z",
+  "url": "https://characteringsnib.site/",
+  "domain": "characteringsnib.site",
+  "title": "Tagesschau | Quantum AI",
+  "tags": [
+   "@ecarlesi",
+   "possiblethreat",
+   "investment-scam-sweep",
+   "unverified"
+  ],
+  "has_dom": true,
+  "file": "urlscan2/01a1cb6e-4454-7429-9ba0-cbf1d83b8ee4.html",
+  "new": {
+   "verdict": "warning",
+   "checks": [
+    "income-promise:warning"
+   ],
+   "titles": [
+    "Обещают доход и просят оставить телефон"
+   ],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1db0a-7cfc-77f2-a42b-eb052736eec5",
+  "scheme": "investment",
+  "query": "page.title:\"AI Trading Platform\"",
+  "time": "2026-11-14T17:11:06.324Z",
+  "url": "https://whatsapp-aibot-pro.pages.dev/",
+  "domain": "whatsapp-aibot-pro.pages.dev",
+  "title": "WhatsApp AI Bot | AI Trading Platform | Official Website",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/01a1db0a-7cfc-77f2-a42b-eb052736eec5.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1dae7-b99c-7089-b13e-06cb9329d7c0",
+  "scheme": "investment",
+  "query": "page.title:\"AI Trading Platform\"",
+  "time": "2026-11-14T16:33:08.197Z",
+  "url": "https://indexeprexfin-click.pages.dev/",
+  "domain": "indexeprexfin-click.pages.dev",
+  "title": "Index eprex fin | AI Trading Platform | Official Website",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/01a1dae7-b99c-7089-b13e-06cb9329d7c0.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1d9ca-f808-753f-8fd8-9c0a505d3427",
+  "scheme": "investment",
+  "query": "page.title:\"AI Trading Platform\"",
+  "time": "2026-11-14T11:22:09.601Z",
+  "url": "https://aurentcore.pro/",
+  "domain": "aurentcore.pro",
+  "title": "aurentcore | AI Trading Platform | Official Website",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/01a1d9ca-f808-753f-8fd8-9c0a505d3427.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1d9c7-dfd0-7198-b492-60dc0f3773dc",
+  "scheme": "investment",
+  "query": "page.title:\"AI Trading Platform\"",
+  "time": "2026-11-14T11:18:46.583Z",
+  "url": "https://santanderinvestsystem.com/",
+  "domain": "santanderinvestsystem.com",
+  "title": "Santander Invest | AI Trading Platform | Official Website",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/01a1d9c7-dfd0-7198-b492-60dc0f3773dc.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1d9c5-8705-763f-bfe9-c5918d6a4a6a",
+  "scheme": "investment",
+  "query": "page.title:\"AI Trading Platform\"",
+  "time": "2026-11-14T11:16:09.711Z",
+  "url": "https://profitivafundres-click.pages.dev/",
+  "domain": "profitivafundres-click.pages.dev",
+  "title": "Profitivafundres | AI Trading Platform | Official Website",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/01a1d9c5-8705-763f-bfe9-c5918d6a4a6a.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1d9a3-2951-74e8-8fa5-9552e579c863",
+  "scheme": "investment",
+  "query": "page.title:\"AI Trading Platform\"",
+  "time": "2026-11-14T10:38:43.368Z",
+  "url": "https://clara-contalia.live/",
+  "domain": "clara-contalia.live",
+  "title": "Clara Contália | AI trading platform for financial markets",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/01a1d9a3-2951-74e8-8fa5-9552e579c863.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1cbc6-3113-75e4-bf9d-c59a2455a694",
+  "scheme": "investment",
+  "query": "page.title:\"Trading Platform\" AND task.tags:phishing",
+  "time": "2026-11-11T18:02:13.905Z",
+  "url": "https://platform-usdt-dp471locp87d.edgeone.dev/",
+  "domain": "platform-usdt-dp471locp87d.edgeone.dev",
+  "title": "CryptoPro · USDT Trading Platform",
+  "tags": [
+   "phishing",
+   "malicious"
+  ],
+  "has_dom": true,
+  "file": "urlscan2/01a1cbc6-3113-75e4-bf9d-c59a2455a694.html",
+  "new": {
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1cbc1-39ea-7508-95cd-776d902f607a",
+  "scheme": "investment",
+  "query": "page.title:\"Trading Platform\" AND task.tags:phishing",
+  "time": "2026-11-11T17:56:47.968Z",
+  "url": "https://usdt-platform-dpt82age8q3j.edgeone.dev/",
+  "domain": "usdt-platform-dpt82age8q3j.edgeone.dev",
+  "title": "CryptoPro · USDT Trading Platform",
+  "tags": [
+   "phishing",
+   "malicious"
+  ],
+  "has_dom": true,
+  "file": "urlscan2/01a1cbc1-39ea-7508-95cd-776d902f607a.html",
+  "new": {
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1cbb6-cf2c-739a-8087-f3a9000dfff7",
+  "scheme": "investment",
+  "query": "page.title:\"Trading Platform\" AND task.tags:phishing",
+  "time": "2026-11-11T17:45:25.122Z",
+  "url": "https://usdtplatform-dp2omeqybspv.edgeone.dev/",
+  "domain": "usdtplatform-dp2omeqybspv.edgeone.dev",
+  "title": "CryptoPro · USDT Trading Platform",
+  "tags": [
+   "phishing",
+   "malicious"
+  ],
+  "has_dom": true,
+  "file": "urlscan2/01a1cbb6-cf2c-739a-8087-f3a9000dfff7.html",
+  "new": {
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1cb90-68ab-7577-b14f-12312aa7e783",
+  "scheme": "investment",
+  "query": "page.title:\"Trading Platform\" AND task.tags:phishing",
+  "time": "2026-11-11T17:03:29.069Z",
+  "url": "https://structural-lime-vobjmtjc-dpxq60bucv6r.edgeone.dev/",
+  "domain": "structural-lime-vobjmtjc-dpxq60bucv6r.edgeone.dev",
+  "title": "CryptoPro · USDT Trading Platform",
+  "tags": [
+   "phishing",
+   "malicious"
+  ],
+  "has_dom": true,
+  "file": "urlscan2/01a1cb90-68ab-7577-b14f-12312aa7e783.html",
+  "new": {
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1cb86-89e0-7132-8538-a776ef3b67e4",
+  "scheme": "investment",
+  "query": "page.title:\"Trading Platform\" AND task.tags:phishing",
+  "time": "2026-11-11T16:52:47.163Z",
+  "url": "https://platform-dps4h7f2vu8m.edgeone.dev/",
+  "domain": "platform-dps4h7f2vu8m.edgeone.dev",
+  "title": "CryptoPro · USDT Trading Platform",
+  "tags": [
+   "phishing",
+   "malicious"
+  ],
+  "has_dom": true,
+  "file": "urlscan2/01a1cb86-89e0-7132-8538-a776ef3b67e4.html",
+  "new": {
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1cb70-5204-726b-b391-92c45785d1c7",
+  "scheme": "investment",
+  "query": "page.title:\"Trading Platform\" AND task.tags:phishing",
+  "time": "2026-11-11T16:28:27.972Z",
+  "url": "https://platform-usdt-dpcrl3pl3t1p.edgeone.dev/",
+  "domain": "platform-usdt-dpcrl3pl3t1p.edgeone.dev",
+  "title": "CryptoPro · USDT Trading Platform",
+  "tags": [
+   "phishing",
+   "malicious"
+  ],
+  "has_dom": true,
+  "file": "urlscan2/01a1cb70-5204-726b-b391-92c45785d1c7.html",
+  "new": {
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a0cd55-482e-744b-8369-d3a4980be9c0",
+  "scheme": "investment",
+  "query": "page.title:\"Bitcoin Era\"",
+  "time": "2026-09-23T08:15:21.713Z",
+  "url": "https://fizzy0-sapiente23.sbs/?d=QjNxVaDVWV0%2FutRMC9qoaahpRdvhwRrR6tojJyOseg34VeNo%2BTO6c5qvNfBK7ANnsobRHoxiRWqTJAFtvCTo2jUib3%2BewkD%2FLXDQ4uDmj6ayLOUxKXM6wGGHfBuLWnRdBtRFbUb4v7GC7gUxIvZdR2OLrapqjv1Uajt01wuvcJnHHx7h9pSp9V5nNoN9qrfwJd6hkBuP16lCo2Jdvd8NvYLeXEhTnBYqZe6Sbz%2Fq9nJzrIvG46C213ncMAuYijFX&on=Bitcoin+Era+New",
+  "domain": "fizzy0-sapiente23.sbs",
+  "title": "Bitcoin Era New",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/01a0cd55-482e-744b-8369-d3a4980be9c0.html",
+  "new": {
+   "verdict": "warning",
+   "checks": [
+    "income-promise:warning"
+   ],
+   "titles": [
+    "Обещают доход и просят оставить телефон"
+   ],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a0386d-37cb-759d-8410-0b3b2fd9238b",
+  "scheme": "investment",
+  "query": "page.title:\"Bitcoin Era\"",
+  "time": "2026-08-25T10:18:02.960Z",
+  "url": "https://bitcoinera.com/de/",
+  "domain": "bitcoinera.com",
+  "title": "Die offizielle Bitcoin Era App | Bitcoin Era",
+  "tags": [
+   "scam-ad-dataset",
+   "de"
+  ],
+  "has_dom": true,
+  "file": "urlscan2/01a0386d-37cb-759d-8410-0b3b2fd9238b.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "019d8aaf-a474-757b-845d-e28b014fa7a0",
+  "scheme": "investment",
+  "query": "page.title:\"Bitcoin Era\"",
+  "time": "2026-04-14T06:31:09.139Z",
+  "url": "https://bitcoineranew-com-td.trackfinanceworld.com/pl/",
+  "domain": "bitcoineranew-com-td.trackfinanceworld.com",
+  "title": "Bitcoin Era ™ - Oficjalna strona internetowa aplikacji 2026 [AKTUALIZACJA]",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/019d8aaf-a474-757b-845d-e28b014fa7a0.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "019d8a38-20a3-732b-b278-e99b0a99a5cc",
+  "scheme": "investment",
+  "query": "page.title:\"Bitcoin Era\"",
+  "time": "2026-04-14T04:20:35.437Z",
+  "url": "https://the-bitcoin-erapros.trackfinanceworld.com/se/",
+  "domain": "the-bitcoin-erapros.trackfinanceworld.com",
+  "title": "Bitcoin Era ™ - Den officiella appwebbplatsen 2026 [UPPDATERAD]",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/019d8a38-20a3-732b-b278-e99b0a99a5cc.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "019d84c8-0edf-7343-9f2a-2841a2c7b4ec",
+  "scheme": "investment",
+  "query": "page.title:\"Bitcoin Era\"",
+  "time": "2026-04-13T03:00:03.798Z",
+  "url": "https://the-bitcoin-era-pro-com.trackfinanceworld.com/de/",
+  "domain": "the-bitcoin-era-pro-com.trackfinanceworld.com",
+  "title": "Bitcoin Era Pro ™ - Die offizielle App-Website 2026 [AKTUALISIERT]",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/019d84c8-0edf-7343-9f2a-2841a2c7b4ec.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "019d14d7-b38e-770d-aa92-4930c1bc66a2",
+  "scheme": "investment",
+  "query": "page.title:\"Bitcoin Era\"",
+  "time": "2026-03-22T09:19:42.370Z",
+  "url": "https://bitcoinera-fr.com/",
+  "domain": "bitcoinera-fr.com",
+  "title": "Bitcoin Era™ | Le Site Officiel & Mis à Jour【2026】",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/019d14d7-b38e-770d-aa92-4930c1bc66a2.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1519d-ec56-743a-b905-a45a4d90f408",
+  "scheme": "investment",
+  "query": "page.title:\"стабильный доход от ГазИнвест\"",
+  "time": "2026-10-19T00:44:34.576Z",
+  "url": "https://pebblequoin.icu/lander/do_64_v3_very_stupid_gaz_age_target_75_thanks_sardelkanewdate/index.php",
+  "domain": "pebblequoin.icu",
+  "title": "От 100 000 рублей в месяц - стабильный доход от ГазИнвест для граждан РФ. Регистрация открыта с 1 августа",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/01a1519d-ec56-743a-b905-a45a4d90f408.html",
+  "new": {
+   "verdict": "warning",
+   "checks": [
+    "income-promise:warning"
+   ],
+   "titles": [
+    "Обещают доход и просят оставить телефон"
+   ],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1519c-bf85-722c-b636-a5ccdc803ab2",
+  "scheme": "investment",
+  "query": "page.title:\"стабильный доход от ГазИнвест\"",
+  "time": "2026-10-19T00:43:16.619Z",
+  "url": "https://aqzviro.icu/lander/do_64_v3_very_stupid_gaz_age_target_75_thanks_sardelkanewdate/index.php",
+  "domain": "aqzviro.icu",
+  "title": "От 100 000 рублей в месяц - стабильный доход от ГазИнвест для граждан РФ. Регистрация открыта с 1 августа",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/01a1519c-bf85-722c-b636-a5ccdc803ab2.html",
+  "new": {
+   "verdict": "warning",
+   "checks": [
+    "income-promise:warning"
+   ],
+   "titles": [
+    "Обещают доход и просят оставить телефон"
+   ],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1519b-9187-74ca-af0e-7b0c8c698a61",
+  "scheme": "investment",
+  "query": "page.title:\"стабильный доход от ГазИнвест\"",
+  "time": "2026-10-19T00:41:59.938Z",
+  "url": "https://fozpeli.icu/lander/do_64_v7_grisha_very_stupid_gaz_age_target_75_thanks_sardelkanewdate/index.php",
+  "domain": "fozpeli.icu",
+  "title": "От 100 000 рублей в месяц - стабильный доход от ГазИнвест для граждан РФ. Регистрация открыта с 1 августа",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/01a1519b-9187-74ca-af0e-7b0c8c698a61.html",
+  "new": {
+   "verdict": "warning",
+   "checks": [
+    "income-promise:warning"
+   ],
+   "titles": [
+    "Обещают доход и просят оставить телефон"
+   ],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1519a-b2a6-73b5-8480-3f3196a090f0",
+  "scheme": "investment",
+  "query": "page.title:\"стабильный доход от ГазИнвест\"",
+  "time": "2026-10-19T00:41:02.930Z",
+  "url": "https://needlehatch.icu/lander/do_64_v3_very_stupid_gaz_age_target_75_thanks_sardelkanewdate/index.php",
+  "domain": "needlehatch.icu",
+  "title": "От 100 000 рублей в месяц - стабильный доход от ГазИнвест для граждан РФ. Регистрация открыта с 1 августа",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/01a1519a-b2a6-73b5-8480-3f3196a090f0.html",
+  "new": {
+   "verdict": "warning",
+   "checks": [
+    "income-promise:warning"
+   ],
+   "titles": [
+    "Обещают доход и просят оставить телефон"
+   ],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a15199-ac80-757a-af16-72a4775f6c4b",
+  "scheme": "investment",
+  "query": "page.title:\"стабильный доход от ГазИнвест\"",
+  "time": "2026-10-19T00:39:56.071Z",
+  "url": "https://cezravi.icu/lander/do_64_v3_very_stupid_gaz_age_target_75_thanks_sardelkanewdate/index.php",
+  "domain": "cezravi.icu",
+  "title": "От 100 000 рублей в месяц - стабильный доход от ГазИнвест для граждан РФ. Регистрация открыта с 1 августа",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/01a15199-ac80-757a-af16-72a4775f6c4b.html",
+  "new": {
+   "verdict": "warning",
+   "checks": [
+    "income-promise:warning"
+   ],
+   "titles": [
+    "Обещают доход и просят оставить телефон"
+   ],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a15198-cf1d-716f-b8d5-d1f0386c1bbb",
+  "scheme": "investment",
+  "query": "page.title:\"стабильный доход от ГазИнвест\"",
+  "time": "2026-10-19T00:39:03.578Z",
+  "url": "https://hazpuno.icu/lander/do_64_v3_very_stupid_gaz_age_target_75_thanks_sardelkanewdate/index.php",
+  "domain": "hazpuno.icu",
+  "title": "От 100 000 рублей в месяц - стабильный доход от ГазИнвест для граждан РФ. Регистрация открыта с 1 августа",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/01a15198-cf1d-716f-b8d5-d1f0386c1bbb.html",
+  "new": {
+   "verdict": "warning",
+   "checks": [
+    "income-promise:warning"
+   ],
+   "titles": [
+    "Обещают доход и просят оставить телефон"
+   ],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a0fe05-a06a-7708-8a7b-dad15b76a862",
+  "scheme": "investment",
+  "query": "page.title:\"инвестиционная платформа\"",
+  "time": "2026-10-02T19:09:42.834Z",
+  "url": "https://aixbet.services/",
+  "domain": "aixbet.services",
+  "title": "AIXBET — инвестиционная платформа",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/01a0fe05-a06a-7708-8a7b-dad15b76a862.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a0d93a-9454-75f8-ba8c-79d68ae58ecd",
+  "scheme": "investment",
+  "query": "page.title:\"инвестиционная платформа\"",
+  "time": "2026-09-25T15:41:42.711Z",
+  "url": "https://apple.invierteseguro.lat/",
+  "domain": "apple.invierteseguro.lat",
+  "title": "Apple Finance - инвестиционная платформа",
+  "tags": [
+   "@ecarlesi",
+   "gv"
+  ],
+  "has_dom": true,
+  "file": "urlscan2/01a0d93a-9454-75f8-ba8c-79d68ae58ecd.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a04823-49da-7788-9139-85efa99c9911",
+  "scheme": "investment",
+  "query": "page.title:\"инвестиционная платформа\"",
+  "time": "2026-08-28T11:31:13.620Z",
+  "url": "https://www.nuverex.net/",
+  "domain": "www.nuverex.net",
+  "title": "Nuverex — AI-инвестиционная платформа",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/01a04823-49da-7788-9139-85efa99c9911.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a15197-efdb-740c-8326-313870fafe3d",
+  "scheme": "investment",
+  "query": "page.title:*инвест* AND page.title:*доход*",
+  "time": "2026-10-19T00:38:01.781Z",
+  "url": "https://ironstitch.icu/lander/do_64_v7_grisha_very_stupid_gaz_age_target_75_thanks_sardelkanewdate/index.php",
+  "domain": "ironstitch.icu",
+  "title": "От 100 000 рублей в месяц - стабильный доход от ГазИнвест для граждан РФ. Регистрация открыта с 1 августа",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/01a15197-efdb-740c-8326-313870fafe3d.html",
+  "new": {
+   "verdict": "warning",
+   "checks": [
+    "income-promise:warning"
+   ],
+   "titles": [
+    "Обещают доход и просят оставить телефон"
+   ],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a13b81-8a68-77ab-b5be-c4501094dd75",
+  "scheme": "tech-support",
+  "query": "page.title:\"Windows Security Center\"",
+  "time": "2026-10-14T17:41:54.097Z",
+  "url": "https://symmetrical-octo-succotashhh-oiykj24e.on-forge.com/Wncodehelpolnecodexxweb/index.html",
+  "domain": "symmetrical-octo-succotashhh-oiykj24e.on-forge.com",
+  "title": "Windows Security Center",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/01a13b81-8a68-77ab-b5be-c4501094dd75.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a13b6d-d90b-70c6-b286-3ba38b2e5bab",
+  "scheme": "tech-support",
+  "query": "page.title:\"Windows Security Center\"",
+  "time": "2026-10-14T17:20:27.896Z",
+  "url": "https://symmetrical-octo-succotashhh-uwqcinq7.on-forge.com/Wncodehelpolnecodexxweb/index.html",
+  "domain": "symmetrical-octo-succotashhh-uwqcinq7.on-forge.com",
+  "title": "Windows Security Center",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/01a13b6d-d90b-70c6-b286-3ba38b2e5bab.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a13b61-07d4-74f1-84a8-6475553294ab",
+  "scheme": "tech-support",
+  "query": "page.title:\"Windows Security Center\"",
+  "time": "2026-10-14T17:06:27.829Z",
+  "url": "https://symmetrical-octo-succotashhh-yzqjnyov.on-forge.com/Wncodehelpolnecodexxweb/index.html",
+  "domain": "symmetrical-octo-succotashhh-yzqjnyov.on-forge.com",
+  "title": "Windows Security Center",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/01a13b61-07d4-74f1-84a8-6475553294ab.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a136da-e891-727c-b75c-f34e3282662d",
+  "scheme": "tech-support",
+  "query": "page.title:\"Windows Security Center\"",
+  "time": "2026-10-13T20:01:31.739Z",
+  "url": "https://cuddly-winneriu-xufbmbzb.on-forge.com/Wncodehelpolnecodexxweb/index.html",
+  "domain": "cuddly-winneriu-xufbmbzb.on-forge.com",
+  "title": "Windows Security Center",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/01a136da-e891-727c-b75c-f34e3282662d.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a136b8-0061-7769-ae1a-4fc77f09033d",
+  "scheme": "tech-support",
+  "query": "page.title:\"Windows Security Center\"",
+  "time": "2026-10-13T19:23:18.872Z",
+  "url": "https://cuddly-winneriu-ehkyx37u.on-forge.com/Wncodehelpolnecodexxweb/index.html",
+  "domain": "cuddly-winneriu-ehkyx37u.on-forge.com",
+  "title": "Windows Security Center",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/01a136b8-0061-7769-ae1a-4fc77f09033d.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a121cb-2b64-764d-a961-c08fb9c8212e",
+  "scheme": "tech-support",
+  "query": "page.title:\"Windows Security Center\"",
+  "time": "2026-10-09T17:52:13.693Z",
+  "url": "https://curly-journey879ojjj-2xhyby9b.on-forge.com/Wncodehelpolnecodexxweb/index.html",
+  "domain": "curly-journey879ojjj-2xhyby9b.on-forge.com",
+  "title": "Windows Security Center",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/01a121cb-2b64-764d-a961-c08fb9c8212e.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a0ea7c-ce7f-74eb-82c9-775d9d722bb6",
+  "scheme": "tech-support",
+  "query": "page.title:\"Windows Security Alert\"",
+  "time": "2026-09-29T00:07:28.985Z",
+  "url": "https://microsoft-support-alrt-altr877.pages.dev/",
+  "domain": "microsoft-support-alrt-altr877.pages.dev",
+  "title": "Windows Security Alert",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/01a0ea7c-ce7f-74eb-82c9-775d9d722bb6.html",
+  "new": {
+   "verdict": "danger",
+   "checks": [
+    "pressure:danger"
+   ],
+   "titles": [
+    "Поддельное предупреждение о вирусе с номером «поддержки»"
+   ],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a0be61-4ae1-742f-96e8-7e775f937592",
+  "scheme": "tech-support",
+  "query": "page.title:\"Windows Security Alert\"",
+  "time": "2026-09-20T10:34:08.039Z",
+  "url": "https://microsoft-support-alrt-altr98.pages.dev/",
+  "domain": "microsoft-support-alrt-altr98.pages.dev",
+  "title": "Windows Security Alert",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/01a0be61-4ae1-742f-96e8-7e775f937592.html",
+  "new": {
+   "verdict": "danger",
+   "checks": [
+    "pressure:danger"
+   ],
+   "titles": [
+    "Поддельное предупреждение о вирусе с номером «поддержки»"
+   ],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a098ef-31a1-702e-8cb4-816fc7aa251f",
+  "scheme": "tech-support",
+  "query": "page.title:\"Windows Security Alert\"",
+  "time": "2026-09-13T04:03:33.189Z",
+  "url": "https://verify-88l9wm.clickmetriclab.com/",
+  "domain": "verify-88l9wm.clickmetriclab.com",
+  "title": "Windows Security Alert — Threats Detected",
+  "tags": [
+   "@ecarlesi",
+   "gv"
+  ],
+  "has_dom": true,
+  "file": "urlscan2/01a098ef-31a1-702e-8cb4-816fc7aa251f.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a037df-db94-772e-81e9-5aa6889c2e2e",
+  "scheme": "tech-support",
+  "query": "page.title:\"Windows Security Alert\"",
+  "time": "2026-08-25T07:43:42.294Z",
+  "url": "https://store001-dpk23eng7v19.edgeone.dev/",
+  "domain": "store001-dpk23eng7v19.edgeone.dev",
+  "title": "Windows Security Alert",
+  "tags": [
+   "phishing",
+   "malicious"
+  ],
+  "has_dom": true,
+  "file": "urlscan2/01a037df-db94-772e-81e9-5aa6889c2e2e.html",
+  "new": {
+   "verdict": "danger",
+   "checks": [
+    "pressure:danger"
+   ],
+   "titles": [
+    "Поддельное предупреждение о вирусе с номером «поддержки»"
+   ],
+   "info": []
+  }
+ },
+ {
+  "uuid": "019fadf1-9fd9-70a0-b960-b3bedae91851",
+  "scheme": "tech-support",
+  "query": "page.title:\"Windows Security Alert\"",
+  "time": "2026-07-29T12:55:27.077Z",
+  "url": "https://virus-alert-windows.netlify.app/",
+  "domain": "virus-alert-windows.netlify.app",
+  "title": "Windows Security Alert — Threats Detected",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/019fadf1-9fd9-70a0-b960-b3bedae91851.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1892f-16dc-70de-bf87-103ebb402cdf",
+  "scheme": "tech-support",
+  "query": "page.title:\"Microsoft Security\" AND page.domain:azurefd.net",
+  "time": "2026-10-29T19:42:17.653Z",
+  "url": "https://9005uiigpnubxhnvgkmdcoaezayzrvezsa-d4abc0ayeubfc4gq.z03.azurefd.net/",
+  "domain": "9005uiigpnubxhnvgkmdcoaezayzrvezsa-d4abc0ayeubfc4gq.z03.azurefd.net",
+  "title": "Microsoft Security",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/01a1892f-16dc-70de-bf87-103ebb402cdf.html",
+  "new": {
+   "verdict": "danger",
+   "checks": [
+    "pressure:danger"
+   ],
+   "titles": [
+    "Поддельное предупреждение о вирусе с номером «поддержки»"
+   ],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a17f03-59db-7326-a8e9-60ca3d3c4796",
+  "scheme": "tech-support",
+  "query": "page.title:\"Microsoft Security\" AND page.domain:azurefd.net",
+  "time": "2026-10-27T20:18:17.330Z",
+  "url": "https://5011nuhnnzgkgkpjdafwsglkcytoirjtoa-fabmf4gyd0cchbak.z03.azurefd.net/?msclkid=810b964b4fc818861dabfcaa4da03ab3",
+  "domain": "5011nuhnnzgkgkpjdafwsglkcytoirjtoa-fabmf4gyd0cchbak.z03.azurefd.net",
+  "title": "Microsoft Security",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/01a17f03-59db-7326-a8e9-60ca3d3c4796.html",
+  "new": {
+   "verdict": "danger",
+   "checks": [
+    "pressure:danger"
+   ],
+   "titles": [
+    "Поддельное предупреждение о вирусе с номером «поддержки»"
+   ],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a17e89-cfe3-753f-a4e9-b71d85e3050e",
+  "scheme": "tech-support",
+  "query": "page.title:\"Microsoft Security\" AND page.domain:azurefd.net",
+  "time": "2026-10-27T18:05:34.556Z",
+  "url": "https://5002aixrsmsmhegwswwojdxklroutfzbby-cag4bde6h3bgdyhk.z03.azurefd.net/?msclkid=2ce770779094132fa3561a97590b6ae4",
+  "domain": "5002aixrsmsmhegwswwojdxklroutfzbby-cag4bde6h3bgdyhk.z03.azurefd.net",
+  "title": "Microsoft Security",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/01a17e89-cfe3-753f-a4e9-b71d85e3050e.html",
+  "new": {
+   "verdict": "danger",
+   "checks": [
+    "pressure:danger"
+   ],
+   "titles": [
+    "Поддельное предупреждение о вирусе с номером «поддержки»"
+   ],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a17990-c986-77cb-9ad1-2d26695b6f3e",
+  "scheme": "tech-support",
+  "query": "page.title:\"Microsoft Security\" AND page.domain:azurefd.net",
+  "time": "2026-10-26T18:55:05.894Z",
+  "url": "https://9006tmuviwlelkgpkitfamjuqwtfljrjem-encwafaph4a3f4cr.z03.azurefd.net/",
+  "domain": "9006tmuviwlelkgpkitfamjuqwtfljrjem-encwafaph4a3f4cr.z03.azurefd.net",
+  "title": "Microsoft Security",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/01a17990-c986-77cb-9ad1-2d26695b6f3e.html",
+  "new": {
+   "verdict": "danger",
+   "checks": [
+    "pressure:danger"
+   ],
+   "titles": [
+    "Поддельное предупреждение о вирусе с номером «поддержки»"
+   ],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1553e-7e7c-7127-a953-e2c279200b18",
+  "scheme": "tech-support",
+  "query": "page.title:\"Microsoft Security\" AND page.domain:azurefd.net",
+  "time": "2026-10-19T17:38:57.503Z",
+  "url": "https://3001jstekyazkfrdzfjgjkqkkzfdypfjwr-epdtepe5ffhsb0hd.z03.azurefd.net/",
+  "domain": "3001jstekyazkfrdzfjgjkqkkzfdypfjwr-epdtepe5ffhsb0hd.z03.azurefd.net",
+  "title": "Microsoft Security",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/01a1553e-7e7c-7127-a953-e2c279200b18.html",
+  "new": {
+   "verdict": "danger",
+   "checks": [
+    "pressure:danger"
+   ],
+   "titles": [
+    "Поддельное предупреждение о вирусе с номером «поддержки»"
+   ],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a14b7b-0426-70ec-9e8b-c1282707f736",
+  "scheme": "tech-support",
+  "query": "page.title:\"Microsoft Security\" AND page.domain:azurefd.net",
+  "time": "2026-10-17T20:08:43.320Z",
+  "url": "https://8001yspiiyyrwcecqkvbjgjdvfbexjzfao-edh5beetcwfffjf3.z03.azurefd.net/",
+  "domain": "8001yspiiyyrwcecqkvbjgjdvfbexjzfao-edh5beetcwfffjf3.z03.azurefd.net",
+  "title": "Microsoft Security",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/01a14b7b-0426-70ec-9e8b-c1282707f736.html",
+  "new": {
+   "verdict": "danger",
+   "checks": [
+    "pressure:danger"
+   ],
+   "titles": [
+    "Поддельное предупреждение о вирусе с номером «поддержки»"
+   ],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a0db08-d133-741f-8ba7-417dc8df93d7",
+  "scheme": "tech-support",
+  "query": "page.title:*virus* AND page.title:*detected*",
+  "time": "2026-09-26T00:06:28.377Z",
+  "url": "https://av-67n.pages.dev/",
+  "domain": "av-67n.pages.dev",
+  "title": "(5) Suspicious virus are detected.",
+  "tags": [
+   "@ecarlesi",
+   "possiblethreat",
+   "phishing"
+  ],
+  "has_dom": true,
+  "file": "urlscan2/01a0db08-d133-741f-8ba7-417dc8df93d7.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1dace-c739-71c3-b09b-2a8919f4a684",
+  "scheme": "crypto-drainer",
+  "query": "task.tags:drainer",
+  "time": "2026-11-14T16:05:58.475Z",
+  "url": "https://1-governance-fwafun.pages.dev/",
+  "domain": "1-governance-fwafun.pages.dev",
+  "title": "Fake World Assets | Governance",
+  "tags": [
+   "phishing",
+   "drainer",
+   "crypto-scam"
+  ],
+  "has_dom": true,
+  "file": "urlscan2/01a1dace-c739-71c3-b09b-2a8919f4a684.html",
+  "new": {
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1dace-cd28-74a3-9ba0-42ca3b0d72ec",
+  "scheme": "crypto-drainer",
+  "query": "task.tags:drainer",
+  "time": "2026-11-14T16:05:54.114Z",
+  "url": "https://5-up33-allocations.pages.dev/",
+  "domain": "5-up33-allocations.pages.dev",
+  "title": "up. | Airdrop",
+  "tags": [
+   "phishing",
+   "drainer",
+   "crypto-scam"
+  ],
+  "has_dom": true,
+  "file": "urlscan2/01a1dace-cd28-74a3-9ba0-42ca3b0d72ec.html",
+  "new": {
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1dace-9207-71a4-a3de-827121b4bad9",
+  "scheme": "crypto-drainer",
+  "query": "task.tags:drainer",
+  "time": "2026-11-14T16:05:39.027Z",
+  "url": "https://7-allocations-ponsfamily.pages.dev/",
+  "domain": "7-allocations-ponsfamily.pages.dev",
+  "title": "pons",
+  "tags": [
+   "phishing",
+   "drainer",
+   "crypto-scam"
+  ],
+  "has_dom": true,
+  "file": "urlscan2/01a1dace-9207-71a4-a3de-827121b4bad9.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1dace-7983-7088-9f71-36cf944b0157",
+  "scheme": "crypto-drainer",
+  "query": "task.tags:drainer",
+  "time": "2026-11-14T16:05:35.210Z",
+  "url": "https://3-governance-zamahub.pages.dev/",
+  "domain": "3-governance-zamahub.pages.dev",
+  "title": "Zama: The Confidential Blockchain Protocol",
+  "tags": [
+   "phishing",
+   "drainer",
+   "crypto-scam"
+  ],
+  "has_dom": true,
+  "file": "urlscan2/01a1dace-7983-7088-9f71-36cf944b0157.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1dace-5461-70ee-b864-9cdc0a873878",
+  "scheme": "crypto-drainer",
+  "query": "task.tags:drainer",
+  "time": "2026-11-14T16:05:25.009Z",
+  "url": "https://2-app-centrifugegov.pages.dev/",
+  "domain": "2-app-centrifugegov.pages.dev",
+  "title": "Centrifuge | Governance",
+  "tags": [
+   "phishing",
+   "drainer",
+   "crypto-scam"
+  ],
+  "has_dom": true,
+  "file": "urlscan2/01a1dace-5461-70ee-b864-9cdc0a873878.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1dacc-41ae-74bc-9f22-f37d34093ac8",
+  "scheme": "crypto-drainer",
+  "query": "task.tags:drainer",
+  "time": "2026-11-14T16:03:11.918Z",
+  "url": "https://9-governance-hyperlendfinance.pages.dev/",
+  "domain": "9-governance-hyperlendfinance.pages.dev",
+  "title": "HyperLend",
+  "tags": [
+   "phishing",
+   "drainer",
+   "crypto-scam"
+  ],
+  "has_dom": true,
+  "file": "urlscan2/01a1dacc-41ae-74bc-9f22-f37d34093ac8.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "019ec6ac-5863-725d-a520-06b85349dc57",
+  "scheme": "fines",
+  "query": "page.title:\"E-ZPass Service\"",
+  "time": "2026-06-14T15:07:33.767Z",
+  "url": "https://ez-passupdatebiling.20-228-132-238.cpanel.site/?kocak=pepek",
+  "domain": "ez-passupdatebiling.20-228-132-238.cpanel.site",
+  "title": "E-ZPass Service",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/019ec6ac-5863-725d-a520-06b85349dc57.html",
+  "new": {
+   "verdict": "warning",
+   "checks": [
+    "pressure:warning"
+   ],
+   "titles": [
+    "Требуют срочно оплатить долг или штраф по ссылке"
+   ],
+   "info": []
+  }
+ },
+ {
+  "uuid": "019ea76c-15ea-72af-b781-dc5fa1604a88",
+  "scheme": "fines",
+  "query": "page.title:\"E-ZPass Service\"",
+  "time": "2026-06-08T13:29:09.475Z",
+  "url": "https://e-zpasscenter.20-244-12-151.cpanel.site/?kocak=pepek",
+  "domain": "e-zpasscenter.20-244-12-151.cpanel.site",
+  "title": "E-ZPass Service",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/019ea76c-15ea-72af-b781-dc5fa1604a88.html",
+  "new": {
+   "verdict": "warning",
+   "checks": [
+    "pressure:warning"
+   ],
+   "titles": [
+    "Требуют срочно оплатить долг или штраф по ссылке"
+   ],
+   "info": []
+  }
+ },
+ {
+  "uuid": "019ea4b7-469d-761d-bad4-567a215147f2",
+  "scheme": "fines",
+  "query": "page.title:\"E-ZPass Service\"",
+  "time": "2026-06-08T00:52:23.425Z",
+  "url": "https://e-zpassgroupstatement.20-244-12-151.cpanel.site/?kocak=pepek",
+  "domain": "e-zpassgroupstatement.20-244-12-151.cpanel.site",
+  "title": "E-ZPass Service",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/019ea4b7-469d-761d-bad4-567a215147f2.html",
+  "new": {
+   "verdict": "warning",
+   "checks": [
+    "pressure:warning"
+   ],
+   "titles": [
+    "Требуют срочно оплатить долг или штраф по ссылке"
+   ],
+   "info": []
+  }
+ },
+ {
+  "uuid": "019ea43c-b8ea-743b-bb0e-c9a58eac056d",
+  "scheme": "fines",
+  "query": "page.title:\"E-ZPass Service\"",
+  "time": "2026-06-07T22:38:34.133Z",
+  "url": "https://e-zpassgroup-update.20-244-12-151.cpanel.site/?kocak=pepek",
+  "domain": "e-zpassgroup-update.20-244-12-151.cpanel.site",
+  "title": "E-ZPass Service",
+  "tags": [
+   "phishing"
+  ],
+  "has_dom": true,
+  "file": "urlscan2/019ea43c-b8ea-743b-bb0e-c9a58eac056d.html",
+  "new": {
+   "verdict": "warning",
+   "checks": [
+    "pressure:warning"
+   ],
+   "titles": [
+    "Требуют срочно оплатить долг или штраф по ссылке"
+   ],
+   "info": []
+  }
+ },
+ {
+  "uuid": "019e6fc7-ce60-725d-b0a2-70fe8160070e",
+  "scheme": "fines",
+  "query": "page.title:\"E-ZPass Service\"",
+  "time": "2026-05-28T18:10:39.336Z",
+  "url": "https://energetic-gold-squirrel.213-165-245-113.cpanel.site/public/?kocak=pepek",
+  "domain": "energetic-gold-squirrel.213-165-245-113.cpanel.site",
+  "title": "E-ZPass Service",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/019e6fc7-ce60-725d-b0a2-70fe8160070e.html",
+  "new": {
+   "verdict": "warning",
+   "checks": [
+    "pressure:warning"
+   ],
+   "titles": [
+    "Требуют срочно оплатить долг или штраф по ссылке"
+   ],
+   "info": []
+  }
+ },
+ {
+  "uuid": "019dbef0-a7cf-7554-9b46-5b5c88778460",
+  "scheme": "fines",
+  "query": "page.title:\"E-ZPass Service\"",
+  "time": "2026-04-24T10:02:24.706Z",
+  "url": "https://iagservicecorp.org/user/login",
+  "domain": "iagservicecorp.org",
+  "title": "Log in | E-ZPass Service Corp",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/019dbef0-a7cf-7554-9b46-5b5c88778460.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a01f63-e042-7378-af6f-2333ef82fcd7",
+  "scheme": "fines",
+  "query": "page.title:\"Pay Toll\"",
+  "time": "2026-08-20T13:37:22.937Z",
+  "url": "https://eflow-toll.co.com/",
+  "domain": "eflow-toll.co.com",
+  "title": "eFlow Pay Toll - M50",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/01a01f63-e042-7378-af6f-2333ef82fcd7.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "019b111e-f926-72ff-a91d-e6ce6ff26ac6",
+  "scheme": "fines",
+  "query": "page.title:\"Pay Toll\"",
+  "time": "2025-12-12T05:53:30.599Z",
+  "url": "https://tolleflow.click/",
+  "domain": "tolleflow.click",
+  "title": "Pay Toll | eflow",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/019b111e-f926-72ff-a91d-e6ce6ff26ac6.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a18190-8806-72fb-bbfb-cc6b827341b0",
+  "scheme": "fines",
+  "query": "page.domain:*gibdd* AND NOT page.apexDomain:(gibdd.ru OR xn--90adear.xn--p1ai)",
+  "time": "2026-10-28T08:11:43.327Z",
+  "url": "https://gibdd-auto.ru/?ysclid=mvrs4rp0z9944756738",
+  "domain": "gibdd-auto.ru",
+  "title": "Официальный сайт Госавтоинспекции",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/01a18190-8806-72fb-bbfb-cc6b827341b0.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a0b8cd-f8cd-7725-8769-cee08000dfe4",
+  "scheme": "fines",
+  "query": "page.title:*штраф* AND page.title:*оплат*",
+  "time": "2026-09-19T08:35:09.178Z",
+  "url": "https://ros-gibdd-shtraf.ru/",
+  "domain": "ros-gibdd-shtraf.ru",
+  "title": "АвтоШтраф EXPRESS — Проверка и оплата штрафов ГИБДД (Защищено TLS 1.3 / ГИС ГМП)",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/01a0b8cd-f8cd-7725-8769-cee08000dfe4.html",
+  "new": {
+   "verdict": "warning",
+   "checks": [
+    "skimmer:warning",
+    "pressure:warning"
+   ],
+   "titles": [
+    "Скрипт читает поля карты и умеет отправлять данные",
+    "Требуют срочно оплатить долг или штраф по ссылке"
+   ],
+   "info": [
+    "На странице есть форма для данных карты",
+    "На странице оплаты работает код сторонних сайтов",
+    "Адрес на национальном алфавите"
+   ]
+  }
+ },
+ {
+  "uuid": "01a10eac-7607-768c-81cc-1faa96c84aa3",
+  "scheme": "fake-shop",
+  "query": "task.tags:fakeshop",
+  "time": "2026-10-06T00:45:55.701Z",
+  "url": "https://guesschrono.com/women-s-watches/",
+  "domain": "guesschrono.com",
+  "title": "Women's Watches - GUESS Watches",
+  "tags": [
+   "advance fee fraud",
+   "malicious",
+   "fakeshop"
+  ],
+  "has_dom": true,
+  "file": "urlscan2/01a10eac-7607-768c-81cc-1faa96c84aa3.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a10bc8-26e3-70df-8a38-348d2df3ccb2",
+  "scheme": "payout",
+  "query": "page.title:\"компенсация\"",
+  "time": "2026-10-05T11:17:16.589Z",
+  "url": "https://bulgaria-isplashanie.me/receive/4920130?a=150&d=31.12.2026&h=24",
+  "domain": "bulgaria-isplashanie.me",
+  "title": "Компенсация на разходи за електроенергия",
+  "tags": [
+   "hybridanalysis"
+  ],
+  "has_dom": true,
+  "file": "urlscan2/01a10bc8-26e3-70df-8a38-348d2df3ccb2.html",
+  "new": {
+   "verdict": "danger",
+   "checks": [
+    "card-form:danger",
+    "skimmer:warning"
+   ],
+   "titles": [
+    "Вместе с картой просят данные, которые для оплаты не нужны",
+    "Скрипт читает поля карты и умеет отправлять данные",
+    "Скрипт читает поля карты и умеет отправлять данные"
+   ],
+   "info": [
+    "На странице есть форма для данных карты",
+    "На странице оплаты работает код сторонних сайтов"
+   ]
+  }
+ },
+ {
+  "uuid": "01a02f32-0252-72e8-bea3-e0917cc1f7d7",
+  "scheme": "payout",
+  "query": "page.title:\"компенсация\"",
+  "time": "2026-08-23T15:16:49.137Z",
+  "url": "https://parite-bulgaria.click/receive/70778810?a=600&d=31.12.2026&h=24",
+  "domain": "parite-bulgaria.click",
+  "title": "Компенсация на разходи за електроенергия",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/01a02f32-0252-72e8-bea3-e0917cc1f7d7.html",
+  "new": {
+   "verdict": "danger",
+   "checks": [
+    "card-form:danger",
+    "skimmer:warning"
+   ],
+   "titles": [
+    "Вместе с картой просят данные, которые для оплаты не нужны",
+    "Скрипт читает поля карты и умеет отправлять данные",
+    "Скрипт читает поля карты и умеет отправлять данные"
+   ],
+   "info": [
+    "На странице есть форма для данных карты",
+    "На странице оплаты работает код сторонних сайтов"
+   ]
+  }
+ },
+ {
+  "uuid": "019f81d7-72cb-74c1-bb54-a3db1b460dcb",
+  "scheme": "payout",
+  "query": "page.title:\"компенсация\"",
+  "time": "2026-07-20T23:23:34.735Z",
+  "url": "https://www.moneyrefunded.xyz/",
+  "domain": "www.moneyrefunded.xyz",
+  "title": "Государственная компенсация убытков | Возврат средств",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/019f81d7-72cb-74c1-bb54-a3db1b460dcb.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "019f0df2-84fd-745f-a2dc-84b91e57f7aa",
+  "scheme": "payout",
+  "query": "page.title:\"Получить выплату\"",
+  "time": "2026-06-28T11:17:19.986Z",
+  "url": "https://fintrud.ru/",
+  "domain": "fintrud.ru",
+  "title": "Получить выплату",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/019f0df2-84fd-745f-a2dc-84b91e57f7aa.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "019eacd5-1780-759e-8922-d7af75be5eb4",
+  "scheme": "payout",
+  "query": "page.title:\"Получить выплату\"",
+  "time": "2026-06-09T14:41:59.596Z",
+  "url": "https://trudprof.ru/",
+  "domain": "trudprof.ru",
+  "title": "Получить выплату",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/019eacd5-1780-759e-8922-d7af75be5eb4.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "019c0e27-1488-73de-9247-3a2824c1342e",
+  "scheme": "payout",
+  "query": "page.title:\"Получить выплату\"",
+  "time": "2026-01-30T09:06:14.478Z",
+  "url": "https://sfrgos.ru/",
+  "domain": "sfrgos.ru",
+  "title": "Получить выплату",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/019c0e27-1488-73de-9247-3a2824c1342e.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "019ab968-84f8-7372-8d0a-4871d6000f98",
+  "scheme": "payout",
+  "query": "page.title:\"Получить выплату\"",
+  "time": "2025-11-25T05:07:24.075Z",
+  "url": "https://trudvsemreg.ru/",
+  "domain": "trudvsemreg.ru",
+  "title": "Получить выплату",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/019ab968-84f8-7372-8d0a-4871d6000f98.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "019aad20-333a-75ef-92df-f9e2bc0cadae",
+  "scheme": "payout",
+  "query": "page.title:\"Получить выплату\"",
+  "time": "2025-11-22T19:52:45.750Z",
+  "url": "https://www.sfrportal.online/",
+  "domain": "www.sfrportal.online",
+  "title": "Получить выплату",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/019aad20-333a-75ef-92df-f9e2bc0cadae.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "019e39b2-02c5-77fe-8791-df94186d20fd",
+  "scheme": "payout",
+  "query": "page.title:\"Claim your reward\" AND task.tags:phishing",
+  "time": "2026-05-18T06:07:14.649Z",
+  "url": "https://claim-evr.org/?fake_crap_for_dvmb_nalve_ldlots",
+  "domain": "claim-evr.org",
+  "title": "$EVR Airdrop — Claim Your Reward Allocation | Evernode",
+  "tags": [
+   "phishing",
+   "malicious",
+   "spamreports"
+  ],
+  "has_dom": true,
+  "file": "urlscan2/019e39b2-02c5-77fe-8791-df94186d20fd.html",
+  "new": {
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
+   "info": []
+  }
+ },
+ {
+  "uuid": "019cc6d0-f5e8-722c-a658-43627e3e93b8",
+  "scheme": "payout",
+  "query": "page.title:\"Claim your reward\" AND task.tags:phishing",
+  "time": "2026-03-07T05:41:54.715Z",
+  "url": "https://freegiftcard-qh1jyujds1.edgeone.app/",
+  "domain": "freegiftcard-qh1jyujds1.edgeone.app",
+  "title": "Claim Your Reward — Walmart & Costco Gift Cards",
+  "tags": [
+   "phishing",
+   "malicious"
+  ],
+  "has_dom": true,
+  "file": "urlscan2/019cc6d0-f5e8-722c-a658-43627e3e93b8.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1441a-b54b-77fe-a132-5ed02a52cd25",
+  "scheme": "payout",
+  "query": "page.title:\"refund\" AND task.tags:phishing",
+  "time": "2026-10-16T09:46:17.464Z",
+  "url": "https://rotten-azure-8xe9yecs-dpyg17xcaqou.edgeone.dev/",
+  "domain": "rotten-azure-8xe9yecs-dpyg17xcaqou.edgeone.dev",
+  "title": "Panelmart | Secure Refund Portal",
+  "tags": [
+   "phishing",
+   "malicious"
+  ],
+  "has_dom": true,
+  "file": "urlscan2/01a1441a-b54b-77fe-a132-5ed02a52cd25.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a0867f-de36-763c-9e65-3a8b6f672c84",
+  "scheme": "safe-account",
+  "query": "page.title:\"Служба безопасности\"",
+  "time": "2026-09-09T14:08:47.362Z",
+  "url": "https://yandex-maps-ruclient.online/",
+  "domain": "yandex-maps-ruclient.online",
+  "title": "Служба безопасности Госуслуг",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/01a0867f-de36-763c-9e65-3a8b6f672c84.html",
+  "new": {
+   "verdict": "danger",
+   "checks": [
+    "pressure:danger"
+   ],
+   "titles": [
+    "Страница пугает взломом и отправляет в Telegram"
+   ],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a0867e-d24a-7639-861f-41b9c524762f",
+  "scheme": "safe-account",
+  "query": "page.title:\"Служба безопасности\"",
+  "time": "2026-09-09T14:07:38.912Z",
+  "url": "https://www.yandex-maps-ruclient.online/",
+  "domain": "www.yandex-maps-ruclient.online",
+  "title": "Служба безопасности Госуслуг",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/01a0867e-d24a-7639-861f-41b9c524762f.html",
+  "new": {
+   "verdict": "danger",
+   "checks": [
+    "pressure:danger"
+   ],
+   "titles": [
+    "Страница пугает взломом и отправляет в Telegram"
+   ],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a08532-a148-722e-9705-94aca998c6aa",
+  "scheme": "safe-account",
+  "query": "page.title:\"Служба безопасности\"",
+  "time": "2026-09-09T08:04:54.344Z",
+  "url": "https://yandex-maps-def-r-u.online/",
+  "domain": "yandex-maps-def-r-u.online",
+  "title": "Служба безопасности Госуслуг",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/01a08532-a148-722e-9705-94aca998c6aa.html",
+  "new": {
+   "verdict": "danger",
+   "checks": [
+    "pressure:danger"
+   ],
+   "titles": [
+    "Страница пугает взломом и отправляет в Telegram"
+   ],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a08532-3182-73dd-baef-4a4be2e625a4",
+  "scheme": "safe-account",
+  "query": "page.title:\"Служба безопасности\"",
+  "time": "2026-09-09T08:04:25.493Z",
+  "url": "https://www.yandex-maps-def-r-u.online/",
+  "domain": "www.yandex-maps-def-r-u.online",
+  "title": "Служба безопасности Госуслуг",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/01a08532-3182-73dd-baef-4a4be2e625a4.html",
+  "new": {
+   "verdict": "danger",
+   "checks": [
+    "pressure:danger"
+   ],
+   "titles": [
+    "Страница пугает взломом и отправляет в Telegram"
+   ],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a0850f-0728-72bb-b271-70f065364320",
+  "scheme": "safe-account",
+  "query": "page.title:\"Служба безопасности\"",
+  "time": "2026-09-09T07:25:55.644Z",
+  "url": "https://login-tiktok-secure.online/",
+  "domain": "login-tiktok-secure.online",
+  "title": "Служба безопасности Госуслуг",
+  "tags": [],
+  "has_dom": true,
+  "file": "urlscan2/01a0850f-0728-72bb-b271-70f065364320.html",
+  "new": {
+   "verdict": "danger",
+   "checks": [
+    "pressure:danger"
+   ],
+   "titles": [
+    "Страница пугает взломом и отправляет в Telegram"
+   ],
+   "info": []
+  }
+ }
+]

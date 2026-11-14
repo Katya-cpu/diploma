@@ -2,7 +2,9 @@
  * Наблюдение за страницей во времени (MutationObserver):
  *  - подменились ли реквизиты после загрузки;
  *  - добавил ли скрипт новые поля для карты;
- *  - когда пользователь начал вводить данные карты (только момент, без значения).
+ *  - когда пользователь начал вводить данные карты и какие цифры введены в поле номера карты.
+ *    Цифры хранятся только в памяти этой вкладки, чтобы проверить, не ушёл ли номер в чужой запрос;
+ *    они никуда не отправляются и не сохраняются.
  * В лаборатории дополнительно перехватываются сетевые вызовы учебной страницы
  * (в расширении эту роль выполняет webRequest в background.js).
  */
@@ -25,6 +27,7 @@
       changes: [],          // подмены реквизитов
       addedCardFields: 0,   // поля карты, вставленные скриптом после начала наблюдения
       cardInputAt: null,    // момент первого ввода в поле карты
+      cardDigits: null,     // цифры из поля номера карты (только в памяти, для сравнения с запросами)
       network: [],          // сетевые вызовы (заполняется лабораторией или background.js)
     };
     const initial = requisiteMap(doc.body ? doc.body.innerText : '');
@@ -58,6 +61,10 @@
     observer.observe(doc.documentElement, { childList: true, subtree: true, characterData: true });
 
     doc.addEventListener('input', (e) => {
+      if (D.fieldKind(e.target) === 'cardNumber') {
+        const digits = String(e.target.value || '').replace(/\D/g, '');
+        if (digits.length >= 12) state.cardDigits = digits;
+      }
       if (!state.cardInputAt && D.isCardField(e.target)) {
         state.cardInputAt = Date.now();
         if (onChange) onChange(state);
@@ -72,15 +79,24 @@
   // поэтому можно подменить её сетевые функции и записывать, куда она пытается отправить данные.
   // Запросы при этом никуда не уходят.
   function hookNetwork(win, state) {
-    const record = (url, how) => {
-      const host = D.hostOf(url, win.location.href);
-      state.network.push({ host, how, at: Date.now(), afterCardInput: !!state.cardInputAt });
+    // Тело запроса превращаем в текст, чтобы потом поискать в нём номер карты.
+    const asText = (body) => {
+      if (body == null) return '';
+      if (typeof body === 'string') return body;
+      try { if (body instanceof win.FormData || body instanceof win.URLSearchParams) return [...body.entries()].map((e) => e.join('=')).join('&'); } catch (e) { /* не форма */ }
+      return String(body);
     };
-    win.fetch = (url) => { record(typeof url === 'string' ? url : url.url, 'fetch'); return Promise.resolve(new win.Response('')); };
-    win.navigator.sendBeacon = (url) => { record(url, 'sendBeacon'); return true; };
+    const record = (url, how, body) => {
+      const host = D.hostOf(url, win.location.href);
+      state.network.push({ host, how, url: String(url || '').slice(0, 3000), body: asText(body).slice(0, 4000),
+        at: Date.now(), afterCardInput: !!state.cardInputAt });
+    };
+    win.fetch = (url, opts) => { record(typeof url === 'string' ? url : url.url, 'fetch', opts && opts.body); return Promise.resolve(new win.Response('')); };
+    win.navigator.sendBeacon = (url, data) => { record(url, 'sendBeacon', data); return true; };
     const xhr = win.XMLHttpRequest.prototype;
-    xhr.open = function (m, url) { record(url, 'XMLHttpRequest'); };
-    xhr.send = xhr.setRequestHeader = function () { /* не отправляем */ };
+    xhr.open = function (m, url) { this.pgUrl = url; };
+    xhr.send = function (body) { record(this.pgUrl, 'XMLHttpRequest', body); };
+    xhr.setRequestHeader = function () { /* не отправляем */ };
     const desc = Object.getOwnPropertyDescriptor(win.HTMLImageElement.prototype, 'src');
     Object.defineProperty(win.HTMLImageElement.prototype, 'src', {
       configurable: true,
@@ -91,7 +107,7 @@
         desc.set.call(this, v);
       },
     });
-    win.WebSocket = function (url) { record(url, 'WebSocket'); return { send() {}, close() {} }; };
+    win.WebSocket = function (url) { record(url, 'WebSocket'); return { send(data) { record(url, 'WebSocket', data); }, close() {} }; };
   }
 
   root.PGWatch = { start, hookNetwork };

@@ -11,18 +11,29 @@
     try { for (const l of el.labels || []) parts.push(l.textContent); } catch (e) { /* нет меток */ }
     const prev = el.previousElementSibling;
     if (prev && /^(LABEL|SPAN|DIV|P)$/.test(prev.tagName)) parts.push(prev.textContent);
+    // Форма-таблица (так свёрстаны многие фишинговые наборы): подпись стоит в соседней ячейке слева.
+    const cell = el.closest && el.closest('td');
+    const left = cell && cell.previousElementSibling;
+    if (left && left.tagName === 'TD' && !left.querySelector('input,select,textarea')) parts.push(left.textContent);
     return parts.filter(Boolean).join(' ').toLowerCase().slice(0, 300);
   }
 
   // Тип поля по атрибутам autocomplete (стандарт HTML) и подписям на русском и английском.
   const FIELD_KINDS = [
-    ['cardNumber', /cc-number|card.?num|cardnumber|номер карты|номер банковской карты|pan\b/],
-    ['cvv', /cc-csc|\bcvv|\bcvc|\bcsc|cvv2|cvc2|код безопасности|трёхзначный код|3 цифры на обороте/],
-    ['expiry', /cc-exp|expir|срок действия|мм\s*\/\s*гг|mm\s*\/\s*yy/],
+    // Кроме стандартных имён — то, что встречается в настоящих фишинговых наборах (набор Zenodo 14880589):
+    // имена ccnum/ccnumber, подписи на других языках и подсказка-образец номера «0000 0000 0000 0000».
+    ['cardNumber', /cc-number|card.?num|cardnumber|\bcc.?num|номер карты|номер банковской карты|pan\b|nomor kartu|kartu debit|numéro de (?:la )?carte|kartennummer|número de (?:la )?tarjeta|numero (?:di |della )?carta|kart numaras|(?:\d{4}|0000|x{4})[ -](?:\d{4}|0000|x{4})[ -](?:\d{4}|0000|x{4})[ -](?:\d{4}|0000|x{4})/],
+    ['cvv', /cc-csc|cvv|\bcvc|\bcsc|cvc2|код безопасности|трёхзначный код|3 цифры на обороте/],
+    ['expiry', /cc-exp|\bccexp|expir|срок действия|мм\s*\/\s*гг|mm\s*\/\s*yy/],
     ['holder', /cc-name|cardholder|имя владельца|держател/],
     ['smsCode', /код из (?:смс|sms)|sms.?code|одноразов|код подтвержден|otp/],
     ['bankPassword', /пароль от (?:интернет|онлайн|мобильн).{0,10}банк|кодовое слово|pin-?код|пин-?код/],
     ['balance', /баланс|остаток на карте|остаток средств/],
+    // Данные, которые для оплаты картой не нужны никогда (проверка «форма карты», признак «лишние данные»).
+    ['ssn', /ssn|social.?security|снилс/],
+    ['maiden', /maiden|девичь[а-яё]* фамили/],
+    ['pin', /atm.?pin|card.?pin|pin(?![-_ ]?code)/],
+    ['mailPassword', /e-?mail.?pass|password.{0,12}e-?mail|пароль от (?:почты|e-?mail|электронной почты)/],
   ];
 
   function fieldKind(el) {

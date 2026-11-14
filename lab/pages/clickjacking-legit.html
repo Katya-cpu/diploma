@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="ru">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Каталог</title><link rel="stylesheet" href="page.css">
+<style>:root{--c:#7a5c2e}
+.card{position:relative}.card a.stretch{position:absolute;inset:0;opacity:0}
+.upload{position:relative;display:inline-block}.upload input{position:absolute;inset:0;opacity:0;cursor:pointer}</style></head>
+<body>
+<div class="site"><div class="logo">Ч</div><b>Чайная лавка «Белый лист»</b><span>учебная страница · все данные вымышлены</span></div>
+<main>
+<!-- Обычные приёмы вёрстки с прозрачными элементами. Это НЕ кликджекинг:
+     1) прозрачная ссылка растянута на всю карточку, чтобы карточка была кликабельной (ведёт туда же, куда название);
+     2) настоящее поле выбора файла спрятано под красивой кнопкой «Загрузить фото». -->
+<div class="box card"><h1>Пуэр «Старое дерево»</h1><p>100 г · 440 ₽</p>
+  <button>Подробнее</button>
+  <a class="stretch" href="/catalog/puer-staroe-derevo">Пуэр «Старое дерево»</a></div>
+<div class="box"><h2>Отзыв о чае</h2><p>Приложите фото заварки.</p>
+  <span class="upload"><button type="button">Загрузить фото</button><input type="file" name="photo" accept="image/*"></span></div>
+</main>
+</body>
+</html>

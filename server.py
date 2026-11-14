@@ -41,6 +41,11 @@ class Handler(SimpleHTTPRequestHandler):
             target = (ROOT / clean.lstrip('/')).resolve()
             if (ROOT / 'extension') in target.parents:
                 return str(target)
+        if clean.startswith('/corpus/'):  # выборка настоящих страниц для оценки (tools/eval_sample.py)
+            base = (ROOT.parent / 'datasets' / 'web_pages' / 'eval_sample').resolve()
+            target = (base / clean[len('/corpus/'):]).resolve()
+            if base in target.parents:
+                return str(target)
         return super().translate_path(path)
 
     def send_json(self, data, status=200):
@@ -71,6 +76,10 @@ class Handler(SimpleHTTPRequestHandler):
     def do_POST(self):
         if self.headers.get('Host') not in (f'127.0.0.1:{PORT}', f'localhost:{PORT}'):
             return self.send_error(403)
+        if self.path == '/api/eval/save':  # результаты страницы lab/eval.html (оценка «было / стало»)
+            length = int(self.headers.get('Content-Length') or 0)
+            (ROOT / 'tools' / 'eval-results.json').write_bytes(self.rfile.read(length))
+            return self.send_json({'saved': 'tools/eval-results.json'})
         if self.path.startswith('/api/'):
             return self.api('POST')
         self.send_error(404)

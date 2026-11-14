@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="ru">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Claim your tokens</title><link rel="stylesheet" href="page.css">
+<style>:root{--c:#7c3aed}</style></head>
+<body>
+<div class="site"><div class="logo">T</div><b>Example Protocol</b><span>учебная страница · все данные вымышлены</span></div>
+<main>
+<div class="box"><h1>Claim your airdrop allocation</h1>
+  <p>Eligible wallets can claim 1 250 EXT tokens before the snapshot closes.</p>
+  <button id="connect">Connect Wallet</button></div>
+<script>
+// Учебный код: показывает, что запрашивает дрейнер. Ничего не отправляет и не подписывает.
+var request = { method: 'eth_signTypedData_v4', primaryType: 'Permit', note: 'setApprovalForAll' };
+document.getElementById('connect').onclick = function () { alert('Учебная страница: здесь кошелёк попросил бы подписать ' + request.primaryType); };
+</script>
+</main>
+</body>
+</html>

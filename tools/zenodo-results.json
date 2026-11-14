@@ -1,0 +1,4722 @@
+[
+ {
+  "cat": "fines",
+  "site": "2024-01/2024-01-11/atgoebell.wixsite.com",
+  "dir": "fines/2024-01_2024-01-11_atgoebell.wixsite.com",
+  "domain": "atgoebell.wixsite.com",
+  "url": "https://atgoebell.wixsite.com/",
+  "file": "zenodo/fines__2024-01_2024-01-11_atgoebell.wixsite.com.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fines",
+  "site": "2024-01/2024-01-11/www.sapatkosaudisar-ksa-sa.in",
+  "dir": "fines/2024-01_2024-01-11_www.sapatkosaudisar-ksa-sa.in",
+  "domain": "www.sapatkosaudisar-ksa-sa.in",
+  "url": "https://www.sapatkosaudisar-ksa-sa.in/",
+  "file": "zenodo/fines__2024-01_2024-01-11_www.sapatkosaudisar-ksa-sa.in.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fines",
+  "site": "2024-01/2024-01-11/uusps.lqtu.cn",
+  "dir": "fines/2024-01_2024-01-11_uusps.lqtu.cn",
+  "domain": "uusps.lqtu.cn",
+  "url": "https://uusps.lqtu.cn/",
+  "file": "zenodo/fines__2024-01_2024-01-11_uusps.lqtu.cn.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fines",
+  "site": "2024-01/2024-01-11/zonuzake.wixsite.com",
+  "dir": "fines/2024-01_2024-01-11_zonuzake.wixsite.com",
+  "domain": "zonuzake.wixsite.com",
+  "url": "https://zonuzake.wixsite.com/",
+  "file": "zenodo/fines__2024-01_2024-01-11_zonuzake.wixsite.com.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fines",
+  "site": "2024-01/2024-01-11/uspouerfgonline.com",
+  "dir": "fines/2024-01_2024-01-11_uspouerfgonline.com",
+  "domain": "uspouerfgonline.com",
+  "url": "https://uspouerfgonline.com/",
+  "file": "zenodo/fines__2024-01_2024-01-11_uspouerfgonline.com.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fake-payment",
+  "site": "2024-01/2024-01-11/ylylkrtzl.net",
+  "dir": "fake-payment/2024-01_2024-01-11_ylylkrtzl.net",
+  "domain": "ylylkrtzl.net",
+  "url": "https://ylylkrtzl.net/",
+  "file": "zenodo/fake-payment__2024-01_2024-01-11_ylylkrtzl.net.html",
+  "new": {
+   "verdict": "warning",
+   "checks": [
+    "card-form:warning"
+   ],
+   "titles": [
+    "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+   ],
+   "info": [
+    "На странице есть форма для данных карты",
+    "На странице оплаты работает код сторонних сайтов"
+   ]
+  }
+ },
+ {
+  "cat": "fines",
+  "site": "2024-01/2024-01-11/ghghlmwsndhf.weebly.com",
+  "dir": "fines/2024-01_2024-01-11_ghghlmwsndhf.weebly.com",
+  "domain": "ghghlmwsndhf.weebly.com",
+  "url": "https://ghghlmwsndhf.weebly.com/",
+  "file": "zenodo/fines__2024-01_2024-01-11_ghghlmwsndhf.weebly.com.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fines",
+  "site": "2024-01/2024-01-11/copcosas.com",
+  "dir": "fines/2024-01_2024-01-11_copcosas.com",
+  "domain": "copcosas.com",
+  "url": "https://copcosas.com/",
+  "file": "zenodo/fines__2024-01_2024-01-11_copcosas.com.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fines",
+  "site": "2024-01/2024-01-11/turkekonom.com",
+  "dir": "fines/2024-01_2024-01-11_turkekonom.com",
+  "domain": "turkekonom.com",
+  "url": "https://turkekonom.com/",
+  "file": "zenodo/fines__2024-01_2024-01-11_turkekonom.com.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fake-payment",
+  "site": "2024-01/2024-01-11/webihlalsorgutr.com",
+  "dir": "fake-payment/2024-01_2024-01-11_webihlalsorgutr.com",
+  "domain": "webihlalsorgutr.com",
+  "url": "https://webihlalsorgutr.com/",
+  "file": "zenodo/fake-payment__2024-01_2024-01-11_webihlalsorgutr.com.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fines",
+  "site": "2024-01/2024-01-11/robinhooh-lo9in-accunt.gitbook.io",
+  "dir": "fines/2024-01_2024-01-11_robinhooh-lo9in-accunt.gitbook.io",
+  "domain": "robinhooh-lo9in-accunt.gitbook.io",
+  "url": "https://robinhooh-lo9in-accunt.gitbook.io/",
+  "file": "zenodo/fines__2024-01_2024-01-11_robinhooh-lo9in-accunt.gitbook.io.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fines",
+  "site": "2024-01/2024-01-11/frfrkinsshdf.weebly.com",
+  "dir": "fines/2024-01_2024-01-11_frfrkinsshdf.weebly.com",
+  "domain": "frfrkinsshdf.weebly.com",
+  "url": "https://frfrkinsshdf.weebly.com/",
+  "file": "zenodo/fines__2024-01_2024-01-11_frfrkinsshdf.weebly.com.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fines",
+  "site": "2024-01/2024-01-11/robinhood-america.gitbook.io",
+  "dir": "fines/2024-01_2024-01-11_robinhood-america.gitbook.io",
+  "domain": "robinhood-america.gitbook.io",
+  "url": "https://robinhood-america.gitbook.io/",
+  "file": "zenodo/fines__2024-01_2024-01-11_robinhood-america.gitbook.io.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fake-payment",
+  "site": "2024-01/2024-01-11/aceteryxstore.top",
+  "dir": "fake-payment/2024-01_2024-01-11_aceteryxstore.top",
+  "domain": "aceteryxstore.top",
+  "url": "https://aceteryxstore.top/",
+  "file": "zenodo/fake-payment__2024-01_2024-01-11_aceteryxstore.top.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fines",
+  "site": "2024-01/2024-01-11/www.stampslover.com",
+  "dir": "fines/2024-01_2024-01-11_www.stampslover.com",
+  "domain": "www.stampslover.com",
+  "url": "https://www.stampslover.com/",
+  "file": "zenodo/fines__2024-01_2024-01-11_www.stampslover.com.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fines",
+  "site": "2024-01/2024-01-11/ejercito-mil-ec.weebly.com",
+  "dir": "fines/2024-01_2024-01-11_ejercito-mil-ec.weebly.com",
+  "domain": "ejercito-mil-ec.weebly.com",
+  "url": "https://ejercito-mil-ec.weebly.com/",
+  "file": "zenodo/fines__2024-01_2024-01-11_ejercito-mil-ec.weebly.com.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fines",
+  "site": "2024-01/2024-01-11/ruobinhoodllogogin.gitbook.io",
+  "dir": "fines/2024-01_2024-01-11_ruobinhoodllogogin.gitbook.io",
+  "domain": "ruobinhoodllogogin.gitbook.io",
+  "url": "https://ruobinhoodllogogin.gitbook.io/",
+  "file": "zenodo/fines__2024-01_2024-01-11_ruobinhoodllogogin.gitbook.io.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fines",
+  "site": "2024-01/2024-01-11/robinhodx-loign.gitbook.io",
+  "dir": "fines/2024-01_2024-01-11_robinhodx-loign.gitbook.io",
+  "domain": "robinhodx-loign.gitbook.io",
+  "url": "https://robinhodx-loign.gitbook.io/",
+  "file": "zenodo/fines__2024-01_2024-01-11_robinhodx-loign.gitbook.io.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fake-payment",
+  "site": "2024-01/2024-01-11/r0-binhoodloginw.gitbook.io",
+  "dir": "fake-payment/2024-01_2024-01-11_r0-binhoodloginw.gitbook.io",
+  "domain": "r0-binhoodloginw.gitbook.io",
+  "url": "https://r0-binhoodloginw.gitbook.io/",
+  "file": "zenodo/fake-payment__2024-01_2024-01-11_r0-binhoodloginw.gitbook.io.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fake-payment",
+  "site": "2024-01/2024-01-11/www.arcteryxonline.xyz",
+  "dir": "fake-payment/2024-01_2024-01-11_www.arcteryxonline.xyz",
+  "domain": "www.arcteryxonline.xyz",
+  "url": "https://www.arcteryxonline.xyz/",
+  "file": "zenodo/fake-payment__2024-01_2024-01-11_www.arcteryxonline.xyz.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fines",
+  "site": "2024-01/2024-01-11/5454666.weebly.com",
+  "dir": "fines/2024-01_2024-01-11_5454666.weebly.com",
+  "domain": "5454666.weebly.com",
+  "url": "https://5454666.weebly.com/",
+  "file": "zenodo/fines__2024-01_2024-01-11_5454666.weebly.com.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fines",
+  "site": "2024-01/2024-01-11/www.sabtskosa.online",
+  "dir": "fines/2024-01_2024-01-11_www.sabtskosa.online",
+  "domain": "www.sabtskosa.online",
+  "url": "https://www.sabtskosa.online/",
+  "file": "zenodo/fines__2024-01_2024-01-11_www.sabtskosa.online.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fake-payment",
+  "site": "2024-01/2024-01-11/pub-375cf12e9c164ac5946c77d111a194c3.r2.dev",
+  "dir": "fake-payment/2024-01_2024-01-11_pub-375cf12e9c164ac5946c77d111a194c3.r2.dev",
+  "domain": "pub-375cf12e9c164ac5946c77d111a194c3.r2.dev",
+  "url": "https://pub-375cf12e9c164ac5946c77d111a194c3.r2.dev/",
+  "file": "zenodo/fake-payment__2024-01_2024-01-11_pub-375cf12e9c164ac5946c77d111a194c3.r2.dev.html",
+  "new": {
+   "verdict": "danger",
+   "checks": [
+    "card-form:danger",
+    "card-form:warning"
+   ],
+   "titles": [
+    "Вместе с картой просят данные, которые для оплаты не нужны",
+    "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+   ],
+   "info": [
+    "На странице есть форма для данных карты",
+    "На странице оплаты работает код сторонних сайтов"
+   ]
+  }
+ },
+ {
+  "cat": "fines",
+  "site": "2024-01/2024-01-11/app-robenhood.gitbook.io",
+  "dir": "fines/2024-01_2024-01-11_app-robenhood.gitbook.io",
+  "domain": "app-robenhood.gitbook.io",
+  "url": "https://app-robenhood.gitbook.io/",
+  "file": "zenodo/fines__2024-01_2024-01-11_app-robenhood.gitbook.io.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fines",
+  "site": "2024-01/2024-01-11/riotplatforms.vip",
+  "dir": "fines/2024-01_2024-01-11_riotplatforms.vip",
+  "domain": "riotplatforms.vip",
+  "url": "https://riotplatforms.vip/",
+  "file": "zenodo/fines__2024-01_2024-01-11_riotplatforms.vip.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fines",
+  "site": "2024-01/2024-01-11/usps.pcpostsale.top",
+  "dir": "fines/2024-01_2024-01-11_usps.pcpostsale.top",
+  "domain": "usps.pcpostsale.top",
+  "url": "https://usps.pcpostsale.top/",
+  "file": "zenodo/fines__2024-01_2024-01-11_usps.pcpostsale.top.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fines",
+  "site": "2024-01/2024-01-11/rebinholdlogisn.gitbook.io",
+  "dir": "fines/2024-01_2024-01-11_rebinholdlogisn.gitbook.io",
+  "domain": "rebinholdlogisn.gitbook.io",
+  "url": "https://rebinholdlogisn.gitbook.io/",
+  "file": "zenodo/fines__2024-01_2024-01-11_rebinholdlogisn.gitbook.io.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fines",
+  "site": "2024-01/2024-01-11/arcteryxjacket.xyz",
+  "dir": "fines/2024-01_2024-01-11_arcteryxjacket.xyz",
+  "domain": "arcteryxjacket.xyz",
+  "url": "https://arcteryxjacket.xyz/",
+  "file": "zenodo/fines__2024-01_2024-01-11_arcteryxjacket.xyz.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fines",
+  "site": "2024-01/2024-01-11/www.tanomitanua.online",
+  "dir": "fines/2024-01_2024-01-11_www.tanomitanua.online",
+  "domain": "www.tanomitanua.online",
+  "url": "https://www.tanomitanua.online/",
+  "file": "zenodo/fines__2024-01_2024-01-11_www.tanomitanua.online.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fake-payment",
+  "site": "2024-01/2024-01-11/biomassociazione.it",
+  "dir": "fake-payment/2024-01_2024-01-11_biomassociazione.it",
+  "domain": "biomassociazione.it",
+  "url": "https://biomassociazione.it/",
+  "file": "zenodo/fake-payment__2024-01_2024-01-11_biomassociazione.it.html",
+  "new": {
+   "verdict": "ok",
+   "checks": [],
+   "titles": [],
+   "info": [
+    "На странице есть форма для данных карты",
+    "На странице оплаты работает код сторонних сайтов"
+   ]
+  }
+ },
+ {
+  "cat": "fines",
+  "site": "2024-01/2024-01-11/www.soitron.com",
+  "dir": "fines/2024-01_2024-01-11_www.soitron.com",
+  "domain": "www.soitron.com",
+  "url": "https://www.soitron.com/",
+  "file": "zenodo/fines__2024-01_2024-01-11_www.soitron.com.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fines",
+  "site": "2024-01/2024-01-11/flash-usps.top",
+  "dir": "fines/2024-01_2024-01-11_flash-usps.top",
+  "domain": "flash-usps.top",
+  "url": "https://flash-usps.top/",
+  "file": "zenodo/fines__2024-01_2024-01-11_flash-usps.top.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fines",
+  "site": "2024-01/2024-01-11/currentlyserver.wixsite.com",
+  "dir": "fines/2024-01_2024-01-11_currentlyserver.wixsite.com",
+  "domain": "currentlyserver.wixsite.com",
+  "url": "https://currentlyserver.wixsite.com/",
+  "file": "zenodo/fines__2024-01_2024-01-11_currentlyserver.wixsite.com.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fines",
+  "site": "2024-01/2024-01-11/www.dalladraiviengisod.com",
+  "dir": "fines/2024-01_2024-01-11_www.dalladraiviengisod.com",
+  "domain": "www.dalladraiviengisod.com",
+  "url": "https://www.dalladraiviengisod.com/",
+  "file": "zenodo/fines__2024-01_2024-01-11_www.dalladraiviengisod.com.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fines",
+  "site": "2024-01/2024-01-11/www.rayyanwate.com",
+  "dir": "fines/2024-01_2024-01-11_www.rayyanwate.com",
+  "domain": "www.rayyanwate.com",
+  "url": "https://www.rayyanwate.com/",
+  "file": "zenodo/fines__2024-01_2024-01-11_www.rayyanwate.com.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fines",
+  "site": "2024-01/2024-01-11/derta13.wixsite.com",
+  "dir": "fines/2024-01_2024-01-11_derta13.wixsite.com",
+  "domain": "derta13.wixsite.com",
+  "url": "https://derta13.wixsite.com/",
+  "file": "zenodo/fines__2024-01_2024-01-11_derta13.wixsite.com.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fake-payment",
+  "site": "2024-01/2024-01-11/php-gray-alligator-arubanet81245887.codeanyapp.com",
+  "dir": "fake-payment/2024-01_2024-01-11_php-gray-alligator-arubanet81245887.codeanyapp.com",
+  "domain": "php-gray-alligator-arubanet81245887.codeanyapp.com",
+  "url": "https://php-gray-alligator-arubanet81245887.codeanyapp.com/",
+  "file": "zenodo/fake-payment__2024-01_2024-01-11_php-gray-alligator-arubanet81245887.codeanyapp.com.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fines",
+  "site": "2024-01/2024-01-11/michaelscarlett379.wixsite.com",
+  "dir": "fines/2024-01_2024-01-11_michaelscarlett379.wixsite.com",
+  "domain": "michaelscarlett379.wixsite.com",
+  "url": "https://michaelscarlett379.wixsite.com/",
+  "file": "zenodo/fines__2024-01_2024-01-11_michaelscarlett379.wixsite.com.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fines",
+  "site": "2024-01/2024-01-11/annsummersuk.com",
+  "dir": "fines/2024-01_2024-01-11_annsummersuk.com",
+  "domain": "annsummersuk.com",
+  "url": "https://annsummersuk.com/",
+  "file": "zenodo/fines__2024-01_2024-01-11_annsummersuk.com.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fines",
+  "site": "2024-01/2024-01-11/uspsmnk.com",
+  "dir": "fines/2024-01_2024-01-11_uspsmnk.com",
+  "domain": "uspsmnk.com",
+  "url": "https://uspsmnk.com/",
+  "file": "zenodo/fines__2024-01_2024-01-11_uspsmnk.com.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fines",
+  "site": "2024-01/2024-01-11/www.taenmuinehf.com",
+  "dir": "fines/2024-01_2024-01-11_www.taenmuinehf.com",
+  "domain": "www.taenmuinehf.com",
+  "url": "https://www.taenmuinehf.com/",
+  "file": "zenodo/fines__2024-01_2024-01-11_www.taenmuinehf.com.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fines",
+  "site": "2024-01/2024-01-11/socialsolution.us",
+  "dir": "fines/2024-01_2024-01-11_socialsolution.us",
+  "domain": "socialsolution.us",
+  "url": "https://socialsolution.us/",
+  "file": "zenodo/fines__2024-01_2024-01-11_socialsolution.us.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fines",
+  "site": "2024-01/2024-01-11/bxvwa0.wixsite.com",
+  "dir": "fines/2024-01_2024-01-11_bxvwa0.wixsite.com",
+  "domain": "bxvwa0.wixsite.com",
+  "url": "https://bxvwa0.wixsite.com/",
+  "file": "zenodo/fines__2024-01_2024-01-11_bxvwa0.wixsite.com.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fines",
+  "site": "2024-01/2024-01-11/robinhood-inwwesting.gitbook.io",
+  "dir": "fines/2024-01_2024-01-11_robinhood-inwwesting.gitbook.io",
+  "domain": "robinhood-inwwesting.gitbook.io",
+  "url": "https://robinhood-inwwesting.gitbook.io/",
+  "file": "zenodo/fines__2024-01_2024-01-11_robinhood-inwwesting.gitbook.io.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fines",
+  "site": "2024-01/2024-01-11/ja2a5kvr.dreamwp.com",
+  "dir": "fines/2024-01_2024-01-11_ja2a5kvr.dreamwp.com",
+  "domain": "ja2a5kvr.dreamwp.com",
+  "url": "https://ja2a5kvr.dreamwp.com/",
+  "file": "zenodo/fines__2024-01_2024-01-11_ja2a5kvr.dreamwp.com.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fines",
+  "site": "2024-01/2024-01-11/www.isabelmordhorst.com",
+  "dir": "fines/2024-01_2024-01-11_www.isabelmordhorst.com",
+  "domain": "www.isabelmordhorst.com",
+  "url": "https://www.isabelmordhorst.com/",
+  "file": "zenodo/fines__2024-01_2024-01-11_www.isabelmordhorst.com.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fake-payment",
+  "site": "2024-01/2024-01-11/courselamps.shop",
+  "dir": "fake-payment/2024-01_2024-01-11_courselamps.shop",
+  "domain": "courselamps.shop",
+  "url": "https://courselamps.shop/",
+  "file": "zenodo/fake-payment__2024-01_2024-01-11_courselamps.shop.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fines",
+  "site": "2024-01/2024-01-11/www.naqiwatersaudi.com",
+  "dir": "fines/2024-01_2024-01-11_www.naqiwatersaudi.com",
+  "domain": "www.naqiwatersaudi.com",
+  "url": "https://www.naqiwatersaudi.com/",
+  "file": "zenodo/fines__2024-01_2024-01-11_www.naqiwatersaudi.com.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fake-payment",
+  "site": "2024-01/2024-01-11/www.aceteryxstore.top",
+  "dir": "fake-payment/2024-01_2024-01-11_www.aceteryxstore.top",
+  "domain": "www.aceteryxstore.top",
+  "url": "https://www.aceteryxstore.top/",
+  "file": "zenodo/fake-payment__2024-01_2024-01-11_www.aceteryxstore.top.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fines",
+  "site": "2024-01/2024-01-11/rooibunhoodloggoin.webador.com",
+  "dir": "fines/2024-01_2024-01-11_rooibunhoodloggoin.webador.com",
+  "domain": "rooibunhoodloggoin.webador.com",
+  "url": "https://rooibunhoodloggoin.webador.com/",
+  "file": "zenodo/fines__2024-01_2024-01-11_rooibunhoodloggoin.webador.com.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fines",
+  "site": "2024-01/2024-01-11/stationnboss.com",
+  "dir": "fines/2024-01_2024-01-11_stationnboss.com",
+  "domain": "stationnboss.com",
+  "url": "https://stationnboss.com/",
+  "file": "zenodo/fines__2024-01_2024-01-11_stationnboss.com.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fines",
+  "site": "2024-01/2024-01-11/yiolomuobell.weebly.com",
+  "dir": "fines/2024-01_2024-01-11_yiolomuobell.weebly.com",
+  "domain": "yiolomuobell.weebly.com",
+  "url": "https://yiolomuobell.weebly.com/",
+  "file": "zenodo/fines__2024-01_2024-01-11_yiolomuobell.weebly.com.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fines",
+  "site": "2024-01/2024-01-11/pass-usps.top",
+  "dir": "fines/2024-01_2024-01-11_pass-usps.top",
+  "domain": "pass-usps.top",
+  "url": "https://pass-usps.top/",
+  "file": "zenodo/fines__2024-01_2024-01-11_pass-usps.top.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fines",
+  "site": "2024-01/2024-01-11/nts.embluemail.com",
+  "dir": "fines/2024-01_2024-01-11_nts.embluemail.com",
+  "domain": "nts.embluemail.com",
+  "url": "https://nts.embluemail.com/",
+  "file": "zenodo/fines__2024-01_2024-01-11_nts.embluemail.com.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fines",
+  "site": "2024-01/2024-01-11/i-hemenbasvurbireyselkredisimdibasvuronlinedeniz.com",
+  "dir": "fines/2024-01_2024-01-11_i-hemenbasvurbireyselkredisimdibasvuronlinedeniz.com",
+  "domain": "i-hemenbasvurbireyselkredisimdibasvuronlinedeniz.com",
+  "url": "https://i-hemenbasvurbireyselkredisimdibasvuronlinedeniz.com/",
+  "file": "zenodo/fines__2024-01_2024-01-11_i-hemenbasvurbireyselkredisimdibasvuronlinedeniz.com.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fake-payment",
+  "site": "2024-01/2024-01-11/rubinhoodlogin.weebly.com",
+  "dir": "fake-payment/2024-01_2024-01-11_rubinhoodlogin.weebly.com",
+  "domain": "rubinhoodlogin.weebly.com",
+  "url": "https://rubinhoodlogin.weebly.com/",
+  "file": "zenodo/fake-payment__2024-01_2024-01-11_rubinhoodlogin.weebly.com.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fines",
+  "site": "2024-01/2024-01-11/www.greenstuffworld.cn",
+  "dir": "fines/2024-01_2024-01-11_www.greenstuffworld.cn",
+  "domain": "www.greenstuffworld.cn",
+  "url": "https://www.greenstuffworld.cn/",
+  "file": "zenodo/fines__2024-01_2024-01-11_www.greenstuffworld.cn.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fines",
+  "site": "2024-01/2024-01-11/ynhgbfvdggh.weebly.com",
+  "dir": "fines/2024-01_2024-01-11_ynhgbfvdggh.weebly.com",
+  "domain": "ynhgbfvdggh.weebly.com",
+  "url": "https://ynhgbfvdggh.weebly.com/",
+  "file": "zenodo/fines__2024-01_2024-01-11_ynhgbfvdggh.weebly.com.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fake-payment",
+  "site": "2024-01/2024-01-11/arcteryxonline.xyz",
+  "dir": "fake-payment/2024-01_2024-01-11_arcteryxonline.xyz",
+  "domain": "arcteryxonline.xyz",
+  "url": "https://arcteryxonline.xyz/",
+  "file": "zenodo/fake-payment__2024-01_2024-01-11_arcteryxonline.xyz.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fines",
+  "site": "2024-01/2024-01-11/geode-puzzle-velociraptor.glitch.me",
+  "dir": "fines/2024-01_2024-01-11_geode-puzzle-velociraptor.glitch.me",
+  "domain": "geode-puzzle-velociraptor.glitch.me",
+  "url": "https://geode-puzzle-velociraptor.glitch.me/",
+  "file": "zenodo/fines__2024-01_2024-01-11_geode-puzzle-velociraptor.glitch.me.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fines",
+  "site": "2024-01/2024-01-11/idealhn.co.za",
+  "dir": "fines/2024-01_2024-01-11_idealhn.co.za",
+  "domain": "idealhn.co.za",
+  "url": "https://idealhn.co.za/",
+  "file": "zenodo/fines__2024-01_2024-01-11_idealhn.co.za.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fines",
+  "site": "2024-01/2024-01-11/magnati.io",
+  "dir": "fines/2024-01_2024-01-11_magnati.io",
+  "domain": "magnati.io",
+  "url": "https://magnati.io/",
+  "file": "zenodo/fines__2024-01_2024-01-11_magnati.io.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fines",
+  "site": "2024-01/2024-01-11/lusty12112.wixsite.com",
+  "dir": "fines/2024-01_2024-01-11_lusty12112.wixsite.com",
+  "domain": "lusty12112.wixsite.com",
+  "url": "https://lusty12112.wixsite.com/",
+  "file": "zenodo/fines__2024-01_2024-01-11_lusty12112.wixsite.com.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fines",
+  "site": "2024-01/2024-01-11/attgvgddz.weebly.com",
+  "dir": "fines/2024-01_2024-01-11_attgvgddz.weebly.com",
+  "domain": "attgvgddz.weebly.com",
+  "url": "https://attgvgddz.weebly.com/",
+  "file": "zenodo/fines__2024-01_2024-01-11_attgvgddz.weebly.com.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fake-payment",
+  "site": "2024-01/2024-01-11/hodgebkonline.com",
+  "dir": "fake-payment/2024-01_2024-01-11_hodgebkonline.com",
+  "domain": "hodgebkonline.com",
+  "url": "https://hodgebkonline.com/",
+  "file": "zenodo/fake-payment__2024-01_2024-01-11_hodgebkonline.com.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fines",
+  "site": "2024-01/2024-01-11/www.arcteryxjacket.xyz",
+  "dir": "fines/2024-01_2024-01-11_www.arcteryxjacket.xyz",
+  "domain": "www.arcteryxjacket.xyz",
+  "url": "https://www.arcteryxjacket.xyz/",
+  "file": "zenodo/fines__2024-01_2024-01-11_www.arcteryxjacket.xyz.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fines",
+  "site": "2024-01/2024-01-11/robinhhod-loggn-aoount.gitbook.io",
+  "dir": "fines/2024-01_2024-01-11_robinhhod-loggn-aoount.gitbook.io",
+  "domain": "robinhhod-loggn-aoount.gitbook.io",
+  "url": "https://robinhhod-loggn-aoount.gitbook.io/",
+  "file": "zenodo/fines__2024-01_2024-01-11_robinhhod-loggn-aoount.gitbook.io.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fines",
+  "site": "2024-01/2024-01-11/robienhudus.gitbook.io",
+  "dir": "fines/2024-01_2024-01-11_robienhudus.gitbook.io",
+  "domain": "robienhudus.gitbook.io",
+  "url": "https://robienhudus.gitbook.io/",
+  "file": "zenodo/fines__2024-01_2024-01-11_robienhudus.gitbook.io.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fines",
+  "site": "2024-01/2024-01-11/login.shippingupdate.net",
+  "dir": "fines/2024-01_2024-01-11_login.shippingupdate.net",
+  "domain": "login.shippingupdate.net",
+  "url": "https://login.shippingupdate.net/",
+  "file": "zenodo/fines__2024-01_2024-01-11_login.shippingupdate.net.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fines",
+  "site": "2024-01/2024-01-11/lanastas1.wixsite.com",
+  "dir": "fines/2024-01_2024-01-11_lanastas1.wixsite.com",
+  "domain": "lanastas1.wixsite.com",
+  "url": "https://lanastas1.wixsite.com/",
+  "file": "zenodo/fines__2024-01_2024-01-11_lanastas1.wixsite.com.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fines",
+  "site": "2024-01/2024-01-11/adress-usps.xyz",
+  "dir": "fines/2024-01_2024-01-11_adress-usps.xyz",
+  "domain": "adress-usps.xyz",
+  "url": "https://adress-usps.xyz/",
+  "file": "zenodo/fines__2024-01_2024-01-11_adress-usps.xyz.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fines",
+  "site": "2024-01/2024-01-11/ec19651111.wixsite.com",
+  "dir": "fines/2024-01_2024-01-11_ec19651111.wixsite.com",
+  "domain": "ec19651111.wixsite.com",
+  "url": "https://ec19651111.wixsite.com/",
+  "file": "zenodo/fines__2024-01_2024-01-11_ec19651111.wixsite.com.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fines",
+  "site": "2024-01/2024-01-11/pub-ea69d787fac64d57b836c6e99b9cc9cb.r2.dev",
+  "dir": "fines/2024-01_2024-01-11_pub-ea69d787fac64d57b836c6e99b9cc9cb.r2.dev",
+  "domain": "pub-ea69d787fac64d57b836c6e99b9cc9cb.r2.dev",
+  "url": "https://pub-ea69d787fac64d57b836c6e99b9cc9cb.r2.dev/",
+  "file": "zenodo/fines__2024-01_2024-01-11_pub-ea69d787fac64d57b836c6e99b9cc9cb.r2.dev.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fines",
+  "site": "2024-01/2024-01-10/fidelitydexum.com",
+  "dir": "fines/2024-01_2024-01-10_fidelitydexum.com",
+  "domain": "fidelitydexum.com",
+  "url": "https://fidelitydexum.com/",
+  "file": "zenodo/fines__2024-01_2024-01-10_fidelitydexum.com.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fines",
+  "site": "2024-01/2024-01-10/serviceproautomati.wixsite.com",
+  "dir": "fines/2024-01_2024-01-10_serviceproautomati.wixsite.com",
+  "domain": "serviceproautomati.wixsite.com",
+  "url": "https://serviceproautomati.wixsite.com/",
+  "file": "zenodo/fines__2024-01_2024-01-10_serviceproautomati.wixsite.com.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fines",
+  "site": "2024-01/2024-01-10/mnkyse.com",
+  "dir": "fines/2024-01_2024-01-10_mnkyse.com",
+  "domain": "mnkyse.com",
+  "url": "https://mnkyse.com/",
+  "file": "zenodo/fines__2024-01_2024-01-10_mnkyse.com.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fake-payment",
+  "site": "2024-01/2024-01-10/swisspost-ch-ch-post.codeanyapp.com",
+  "dir": "fake-payment/2024-01_2024-01-10_swisspost-ch-ch-post.codeanyapp.com",
+  "domain": "swisspost-ch-ch-post.codeanyapp.com",
+  "url": "https://swisspost-ch-ch-post.codeanyapp.com/",
+  "file": "zenodo/fake-payment__2024-01_2024-01-10_swisspost-ch-ch-post.codeanyapp.com.html",
+  "new": {
+   "verdict": "warning",
+   "checks": [
+    "card-form:warning"
+   ],
+   "titles": [
+    "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+   ],
+   "info": [
+    "На странице есть форма для данных карты"
+   ]
+  }
+ },
+ {
+  "cat": "fake-payment",
+  "site": "2024-01/2024-01-10/www.cosvalves.com",
+  "dir": "fake-payment/2024-01_2024-01-10_www.cosvalves.com",
+  "domain": "www.cosvalves.com",
+  "url": "https://www.cosvalves.com/",
+  "file": "zenodo/fake-payment__2024-01_2024-01-10_www.cosvalves.com.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fake-payment",
+  "site": "2024-01/2024-01-10/wbat.net",
+  "dir": "fake-payment/2024-01_2024-01-10_wbat.net",
+  "domain": "wbat.net",
+  "url": "https://wbat.net/",
+  "file": "zenodo/fake-payment__2024-01_2024-01-10_wbat.net.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fake-payment",
+  "site": "2024-01/2024-01-10/maxloans.rf.gd",
+  "dir": "fake-payment/2024-01_2024-01-10_maxloans.rf.gd",
+  "domain": "maxloans.rf.gd",
+  "url": "https://maxloans.rf.gd/",
+  "file": "zenodo/fake-payment__2024-01_2024-01-10_maxloans.rf.gd.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fake-payment",
+  "site": "2024-01/2024-01-10/xdu.lzh.mybluehost.me",
+  "dir": "fake-payment/2024-01_2024-01-10_xdu.lzh.mybluehost.me",
+  "domain": "xdu.lzh.mybluehost.me",
+  "url": "https://xdu.lzh.mybluehost.me/",
+  "file": "zenodo/fake-payment__2024-01_2024-01-10_xdu.lzh.mybluehost.me.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "crypto-drainer",
+  "site": "2024-01/2024-01-10/claim-zksync-io.com",
+  "dir": "crypto-drainer/2024-01_2024-01-10_claim-zksync-io.com",
+  "domain": "claim-zksync-io.com",
+  "url": "https://claim-zksync-io.com/",
+  "file": "zenodo/crypto-drainer__2024-01_2024-01-10_claim-zksync-io.com.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fake-payment",
+  "site": "2024-01/2024-01-10/omegaautomazioni.com",
+  "dir": "fake-payment/2024-01_2024-01-10_omegaautomazioni.com",
+  "domain": "omegaautomazioni.com",
+  "url": "https://omegaautomazioni.com/",
+  "file": "zenodo/fake-payment__2024-01_2024-01-10_omegaautomazioni.com.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fake-payment",
+  "site": "2024-01/2024-01-10/service-polst.com",
+  "dir": "fake-payment/2024-01_2024-01-10_service-polst.com",
+  "domain": "service-polst.com",
+  "url": "https://service-polst.com/",
+  "file": "zenodo/fake-payment__2024-01_2024-01-10_service-polst.com.html",
+  "new": {
+   "verdict": "warning",
+   "checks": [
+    "card-form:warning"
+   ],
+   "titles": [
+    "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+   ],
+   "info": [
+    "На странице есть форма для данных карты",
+    "На странице оплаты работает код сторонних сайтов"
+   ]
+  }
+ },
+ {
+  "cat": "fake-payment",
+  "site": "2024-01/2024-01-10/www.brooksusaclearance.com",
+  "dir": "fake-payment/2024-01_2024-01-10_www.brooksusaclearance.com",
+  "domain": "www.brooksusaclearance.com",
+  "url": "https://www.brooksusaclearance.com/",
+  "file": "zenodo/fake-payment__2024-01_2024-01-10_www.brooksusaclearance.com.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fake-payment",
+  "site": "2024-01/2024-01-10/drmarten.xyz",
+  "dir": "fake-payment/2024-01_2024-01-10_drmarten.xyz",
+  "domain": "drmarten.xyz",
+  "url": "https://drmarten.xyz/",
+  "file": "zenodo/fake-payment__2024-01_2024-01-10_drmarten.xyz.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fake-payment",
+  "site": "2024-01/2024-01-10/suciaropa.com",
+  "dir": "fake-payment/2024-01_2024-01-10_suciaropa.com",
+  "domain": "suciaropa.com",
+  "url": "https://suciaropa.com/",
+  "file": "zenodo/fake-payment__2024-01_2024-01-10_suciaropa.com.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fake-payment",
+  "site": "2024-01/2024-01-10/swisspostwp.blogspot.com",
+  "dir": "fake-payment/2024-01_2024-01-10_swisspostwp.blogspot.com",
+  "domain": "swisspostwp.blogspot.com",
+  "url": "https://swisspostwp.blogspot.com/",
+  "file": "zenodo/fake-payment__2024-01_2024-01-10_swisspostwp.blogspot.com.html",
+  "new": {
+   "verdict": "warning",
+   "checks": [
+    "card-form:warning"
+   ],
+   "titles": [
+    "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+   ],
+   "info": [
+    "На странице есть форма для данных карты"
+   ]
+  }
+ },
+ {
+  "cat": "fake-payment",
+  "site": "2024-01/2024-01-31/stylishwear.club",
+  "dir": "fake-payment/2024-01_2024-01-31_stylishwear.club",
+  "domain": "stylishwear.club",
+  "url": "https://stylishwear.club/",
+  "file": "zenodo/fake-payment__2024-01_2024-01-31_stylishwear.club.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fake-payment",
+  "site": "2024-01/2024-01-31/vvbrfoot.com",
+  "dir": "fake-payment/2024-01_2024-01-31_vvbrfoot.com",
+  "domain": "vvbrfoot.com",
+  "url": "https://vvbrfoot.com/",
+  "file": "zenodo/fake-payment__2024-01_2024-01-31_vvbrfoot.com.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "investment",
+  "site": "2024-01/2024-01-31/www.fidefx.cc",
+  "dir": "investment/2024-01_2024-01-31_www.fidefx.cc",
+  "domain": "www.fidefx.cc",
+  "url": "https://www.fidefx.cc/",
+  "file": "zenodo/investment__2024-01_2024-01-31_www.fidefx.cc.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fake-payment",
+  "site": "2024-01/2024-01-31/unsubiph.subset.com.co",
+  "dir": "fake-payment/2024-01_2024-01-31_unsubiph.subset.com.co",
+  "domain": "unsubiph.subset.com.co",
+  "url": "https://unsubiph.subset.com.co/",
+  "file": "zenodo/fake-payment__2024-01_2024-01-31_unsubiph.subset.com.co.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "investment",
+  "site": "2024-01/2024-01-31/alfa-by24.online",
+  "dir": "investment/2024-01_2024-01-31_alfa-by24.online",
+  "domain": "alfa-by24.online",
+  "url": "https://alfa-by24.online/",
+  "file": "zenodo/investment__2024-01_2024-01-31_alfa-by24.online.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "investment",
+  "site": "2024-01/2024-01-31/linksfidelity.com",
+  "dir": "investment/2024-01_2024-01-31_linksfidelity.com",
+  "domain": "linksfidelity.com",
+  "url": "https://linksfidelity.com/",
+  "file": "zenodo/investment__2024-01_2024-01-31_linksfidelity.com.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fake-payment",
+  "site": "2024-01/2024-01-31/trmrtysgsdgpzr.net",
+  "dir": "fake-payment/2024-01_2024-01-31_trmrtysgsdgpzr.net",
+  "domain": "trmrtysgsdgpzr.net",
+  "url": "https://trmrtysgsdgpzr.net/",
+  "file": "zenodo/fake-payment__2024-01_2024-01-31_trmrtysgsdgpzr.net.html",
+  "new": {
+   "verdict": "warning",
+   "checks": [
+    "card-form:warning"
+   ],
+   "titles": [
+    "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+   ],
+   "info": [
+    "На странице есть форма для данных карты"
+   ]
+  }
+ },
+ {
+  "cat": "fake-payment",
+  "site": "2024-01/2024-01-31/7-24destekller.com.tr",
+  "dir": "fake-payment/2024-01_2024-01-31_7-24destekller.com.tr",
+  "domain": "7-24destekller.com.tr",
+  "url": "https://7-24destekller.com.tr/",
+  "file": "zenodo/fake-payment__2024-01_2024-01-31_7-24destekller.com.tr.html",
+  "new": {
+   "verdict": "warning",
+   "checks": [
+    "card-form:warning"
+   ],
+   "titles": [
+    "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+   ],
+   "info": [
+    "На странице есть форма для данных карты",
+    "На странице оплаты работает код сторонних сайтов"
+   ]
+  }
+ },
+ {
+  "cat": "fake-payment",
+  "site": "2024-01/2024-01-31/claims-control.es",
+  "dir": "fake-payment/2024-01_2024-01-31_claims-control.es",
+  "domain": "claims-control.es",
+  "url": "https://claims-control.es/",
+  "file": "zenodo/fake-payment__2024-01_2024-01-31_claims-control.es.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "investment",
+  "site": "2024-01/2024-01-31/www.linksfidelity.com",
+  "dir": "investment/2024-01_2024-01-31_www.linksfidelity.com",
+  "domain": "www.linksfidelity.com",
+  "url": "https://www.linksfidelity.com/",
+  "file": "zenodo/investment__2024-01_2024-01-31_www.linksfidelity.com.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "crypto-drainer",
+  "site": "2024-01/2024-01-31/fidoptbit.com",
+  "dir": "crypto-drainer/2024-01_2024-01-31_fidoptbit.com",
+  "domain": "fidoptbit.com",
+  "url": "https://fidoptbit.com/",
+  "file": "zenodo/crypto-drainer__2024-01_2024-01-31_fidoptbit.com.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fake-payment",
+  "site": "2024-01/2024-01-31/causeridi.com",
+  "dir": "fake-payment/2024-01_2024-01-31_causeridi.com",
+  "domain": "causeridi.com",
+  "url": "https://causeridi.com/",
+  "file": "zenodo/fake-payment__2024-01_2024-01-31_causeridi.com.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fake-payment",
+  "site": "2024-01/2024-01-31/drmartens24.top",
+  "dir": "fake-payment/2024-01_2024-01-31_drmartens24.top",
+  "domain": "drmartens24.top",
+  "url": "https://drmartens24.top/",
+  "file": "zenodo/fake-payment__2024-01_2024-01-31_drmartens24.top.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fake-payment",
+  "site": "2024-01/2024-01-31/speechforu.life",
+  "dir": "fake-payment/2024-01_2024-01-31_speechforu.life",
+  "domain": "speechforu.life",
+  "url": "https://speechforu.life/",
+  "file": "zenodo/fake-payment__2024-01_2024-01-31_speechforu.life.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fake-payment",
+  "site": "2024-01/2024-01-31/drmart.life",
+  "dir": "fake-payment/2024-01_2024-01-31_drmart.life",
+  "domain": "drmart.life",
+  "url": "https://drmart.life/",
+  "file": "zenodo/fake-payment__2024-01_2024-01-31_drmart.life.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fake-payment",
+  "site": "2024-01/2024-01-31/trendyolmalls.com",
+  "dir": "fake-payment/2024-01_2024-01-31_trendyolmalls.com",
+  "domain": "trendyolmalls.com",
+  "url": "https://trendyolmalls.com/",
+  "file": "zenodo/fake-payment__2024-01_2024-01-31_trendyolmalls.com.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fake-payment",
+  "site": "2024-01/2024-01-31/www.brilliantvarksale.com",
+  "dir": "fake-payment/2024-01_2024-01-31_www.brilliantvarksale.com",
+  "domain": "www.brilliantvarksale.com",
+  "url": "https://www.brilliantvarksale.com/",
+  "file": "zenodo/fake-payment__2024-01_2024-01-31_www.brilliantvarksale.com.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fake-payment",
+  "site": "2024-01/2024-01-27/fork-www-bankofamerica-com-50880559d04b27d7.sitemod.io",
+  "dir": "fake-payment/2024-01_2024-01-27_fork-www-bankofamerica-com-50880559d04b27d7.sitemod.io",
+  "domain": "fork-www-bankofamerica-com-50880559d04b27d7.sitemod.io",
+  "url": "https://fork-www-bankofamerica-com-50880559d04b27d7.sitemod.io/",
+  "file": "zenodo/fake-payment__2024-01_2024-01-27_fork-www-bankofamerica-com-50880559d04b27d7.sitemod.io.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fake-payment",
+  "site": "2024-01/2024-01-27/tvnetflxonline.com",
+  "dir": "fake-payment/2024-01_2024-01-27_tvnetflxonline.com",
+  "domain": "tvnetflxonline.com",
+  "url": "https://tvnetflxonline.com/",
+  "file": "zenodo/fake-payment__2024-01_2024-01-27_tvnetflxonline.com.html",
+  "new": {
+   "verdict": "warning",
+   "checks": [
+    "card-form:warning"
+   ],
+   "titles": [
+    "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+   ],
+   "info": [
+    "На странице есть форма для данных карты"
+   ]
+  }
+ },
+ {
+  "cat": "fake-payment",
+  "site": "2024-01/2024-01-27/amarracaoamorosa.site.vencendosempre.com.br",
+  "dir": "fake-payment/2024-01_2024-01-27_amarracaoamorosa.site.vencendosempre.com.br",
+  "domain": "amarracaoamorosa.site.vencendosempre.com.br",
+  "url": "https://amarracaoamorosa.site.vencendosempre.com.br/",
+  "file": "zenodo/fake-payment__2024-01_2024-01-27_amarracaoamorosa.site.vencendosempre.com.br.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fake-payment",
+  "site": "2024-01/2024-01-27/mobilesys.bdoupdate.workers.dev",
+  "dir": "fake-payment/2024-01_2024-01-27_mobilesys.bdoupdate.workers.dev",
+  "domain": "mobilesys.bdoupdate.workers.dev",
+  "url": "https://mobilesys.bdoupdate.workers.dev/",
+  "file": "zenodo/fake-payment__2024-01_2024-01-27_mobilesys.bdoupdate.workers.dev.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fake-payment",
+  "site": "2024-01/2024-01-27/ubrirs.online",
+  "dir": "fake-payment/2024-01_2024-01-27_ubrirs.online",
+  "domain": "ubrirs.online",
+  "url": "https://ubrirs.online/",
+  "file": "zenodo/fake-payment__2024-01_2024-01-27_ubrirs.online.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fake-payment",
+  "site": "2024-01/2024-01-27/arvestlogin.duckdns.org",
+  "dir": "fake-payment/2024-01_2024-01-27_arvestlogin.duckdns.org",
+  "domain": "arvestlogin.duckdns.org",
+  "url": "https://arvestlogin.duckdns.org/",
+  "file": "zenodo/fake-payment__2024-01_2024-01-27_arvestlogin.duckdns.org.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "crypto-drainer",
+  "site": "2024-01/2024-01-27/swap.xingtu.network",
+  "dir": "crypto-drainer/2024-01_2024-01-27_swap.xingtu.network",
+  "domain": "swap.xingtu.network",
+  "url": "https://swap.xingtu.network/",
+  "file": "zenodo/crypto-drainer__2024-01_2024-01-27_swap.xingtu.network.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fake-payment",
+  "site": "2024-01/2024-01-08/ndadltt.net",
+  "dir": "fake-payment/2024-01_2024-01-08_ndadltt.net",
+  "domain": "ndadltt.net",
+  "url": "https://ndadltt.net/",
+  "file": "zenodo/fake-payment__2024-01_2024-01-08_ndadltt.net.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fake-payment",
+  "site": "2024-01/2024-01-08/vmi1586423.contaboserver.net",
+  "dir": "fake-payment/2024-01_2024-01-08_vmi1586423.contaboserver.net",
+  "domain": "vmi1586423.contaboserver.net",
+  "url": "https://vmi1586423.contaboserver.net/",
+  "file": "zenodo/fake-payment__2024-01_2024-01-08_vmi1586423.contaboserver.net.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fake-payment",
+  "site": "2024-01/2024-01-08/bnl-awalltahun.danaidjkt.com",
+  "dir": "fake-payment/2024-01_2024-01-08_bnl-awalltahun.danaidjkt.com",
+  "domain": "bnl-awalltahun.danaidjkt.com",
+  "url": "https://bnl-awalltahun.danaidjkt.com/",
+  "file": "zenodo/fake-payment__2024-01_2024-01-08_bnl-awalltahun.danaidjkt.com.html",
+  "new": {
+   "verdict": "danger",
+   "checks": [
+    "card-form:danger"
+   ],
+   "titles": [
+    "Данные карты уходят в Telegram-бота"
+   ],
+   "info": [
+    "На странице есть форма для данных карты",
+    "На странице оплаты работает код сторонних сайтов"
+   ]
+  }
+ },
+ {
+  "cat": "fake-payment",
+  "site": "2024-01/2024-01-08/501c3center.com",
+  "dir": "fake-payment/2024-01_2024-01-08_501c3center.com",
+  "domain": "501c3center.com",
+  "url": "https://501c3center.com/",
+  "file": "zenodo/fake-payment__2024-01_2024-01-08_501c3center.com.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fake-payment",
+  "site": "2024-01/2024-01-08/passportglove.site",
+  "dir": "fake-payment/2024-01_2024-01-08_passportglove.site",
+  "domain": "passportglove.site",
+  "url": "https://passportglove.site/",
+  "file": "zenodo/fake-payment__2024-01_2024-01-08_passportglove.site.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fake-payment",
+  "site": "2024-01/2024-01-08/inforavast.otzo.com",
+  "dir": "fake-payment/2024-01_2024-01-08_inforavast.otzo.com",
+  "domain": "inforavast.otzo.com",
+  "url": "https://inforavast.otzo.com/",
+  "file": "zenodo/fake-payment__2024-01_2024-01-08_inforavast.otzo.com.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "investment",
+  "site": "2024-01/2024-01-08/caalamoscapital.com",
+  "dir": "investment/2024-01_2024-01-08_caalamoscapital.com",
+  "domain": "caalamoscapital.com",
+  "url": "https://caalamoscapital.com/",
+  "file": "zenodo/investment__2024-01_2024-01-08_caalamoscapital.com.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "crypto-drainer",
+  "site": "2024-01/2024-01-08/zksync-reward.net",
+  "dir": "crypto-drainer/2024-01_2024-01-08_zksync-reward.net",
+  "domain": "zksync-reward.net",
+  "url": "https://zksync-reward.net/",
+  "file": "zenodo/crypto-drainer__2024-01_2024-01-08_zksync-reward.net.html",
+  "new": {
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
+   "info": []
+  }
+ },
+ {
+  "cat": "fake-payment",
+  "site": "2024-01/2024-01-08/noisy-lacy-bait.glitch.me",
+  "dir": "fake-payment/2024-01_2024-01-08_noisy-lacy-bait.glitch.me",
+  "domain": "noisy-lacy-bait.glitch.me",
+  "url": "https://noisy-lacy-bait.glitch.me/",
+  "file": "zenodo/fake-payment__2024-01_2024-01-08_noisy-lacy-bait.glitch.me.html",
+  "new": {
+   "verdict": "danger",
+   "checks": [
+    "card-form:danger",
+    "skimmer:warning"
+   ],
+   "titles": [
+    "Данные карты уходят в Telegram-бота",
+    "Скрипт читает поля карты и умеет отправлять данные",
+    "Скрипт читает поля карты и умеет отправлять данные"
+   ],
+   "info": [
+    "На странице есть форма для данных карты",
+    "На странице оплаты работает код сторонних сайтов"
+   ]
+  }
+ },
+ {
+  "cat": "fake-payment",
+  "site": "2024-01/2024-01-08/xeb.lcb.mybluehost.me",
+  "dir": "fake-payment/2024-01_2024-01-08_xeb.lcb.mybluehost.me",
+  "domain": "xeb.lcb.mybluehost.me",
+  "url": "https://xeb.lcb.mybluehost.me/",
+  "file": "zenodo/fake-payment__2024-01_2024-01-08_xeb.lcb.mybluehost.me.html",
+  "new": {
+   "verdict": "warning",
+   "checks": [
+    "card-form:warning"
+   ],
+   "titles": [
+    "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+   ],
+   "info": [
+    "На странице есть форма для данных карты",
+    "На странице оплаты работает код сторонних сайтов"
+   ]
+  }
+ },
+ {
+  "cat": "fake-payment",
+  "site": "2024-01/2024-01-08/kmvehasar.online",
+  "dir": "fake-payment/2024-01_2024-01-08_kmvehasar.online",
+  "domain": "kmvehasar.online",
+  "url": "https://kmvehasar.online/",
+  "file": "zenodo/fake-payment__2024-01_2024-01-08_kmvehasar.online.html",
+  "new": {
+   "verdict": "warning",
+   "checks": [
+    "card-form:warning"
+   ],
+   "titles": [
+    "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+   ],
+   "info": [
+    "На странице есть форма для данных карты",
+    "На странице оплаты работает код сторонних сайтов"
+   ]
+  }
+ },
+ {
+  "cat": "fake-payment",
+  "site": "2024-01/2024-01-08/arcteryxonlines.com",
+  "dir": "fake-payment/2024-01_2024-01-08_arcteryxonlines.com",
+  "domain": "arcteryxonlines.com",
+  "url": "https://arcteryxonlines.com/",
+  "file": "zenodo/fake-payment__2024-01_2024-01-08_arcteryxonlines.com.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fake-payment",
+  "site": "2024-01/2024-01-08/www.arcteryxonlines.com",
+  "dir": "fake-payment/2024-01_2024-01-08_www.arcteryxonlines.com",
+  "domain": "www.arcteryxonlines.com",
+  "url": "https://www.arcteryxonlines.com/",
+  "file": "zenodo/fake-payment__2024-01_2024-01-08_www.arcteryxonlines.com.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fake-payment",
+  "site": "2024-01/2024-01-08/bnl-tarif-transaksi.ssd-i.com",
+  "dir": "fake-payment/2024-01_2024-01-08_bnl-tarif-transaksi.ssd-i.com",
+  "domain": "bnl-tarif-transaksi.ssd-i.com",
+  "url": "https://bnl-tarif-transaksi.ssd-i.com/",
+  "file": "zenodo/fake-payment__2024-01_2024-01-08_bnl-tarif-transaksi.ssd-i.com.html",
+  "new": {
+   "verdict": "ok",
+   "checks": [],
+   "titles": [],
+   "info": [
+    "На странице есть форма для данных карты",
+    "На странице оплаты работает код сторонних сайтов"
+   ]
+  }
+ },
+ {
+  "cat": "fake-payment",
+  "site": "2024-01/2024-01-13/fidelitychartered.com",
+  "dir": "fake-payment/2024-01_2024-01-13_fidelitychartered.com",
+  "domain": "fidelitychartered.com",
+  "url": "https://fidelitychartered.com/",
+  "file": "zenodo/fake-payment__2024-01_2024-01-13_fidelitychartered.com.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fake-payment",
+  "site": "2024-01/2024-01-13/www.loveformanandandall.com",
+  "dir": "fake-payment/2024-01_2024-01-13_www.loveformanandandall.com",
+  "domain": "www.loveformanandandall.com",
+  "url": "https://www.loveformanandandall.com/",
+  "file": "zenodo/fake-payment__2024-01_2024-01-13_www.loveformanandandall.com.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fake-payment",
+  "site": "2024-01/2024-01-13/zzstgg.com",
+  "dir": "fake-payment/2024-01_2024-01-13_zzstgg.com",
+  "domain": "zzstgg.com",
+  "url": "https://zzstgg.com/",
+  "file": "zenodo/fake-payment__2024-01_2024-01-13_zzstgg.com.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fake-payment",
+  "site": "2024-01/2024-01-13/dasisoutlet.top",
+  "dir": "fake-payment/2024-01_2024-01-13_dasisoutlet.top",
+  "domain": "dasisoutlet.top",
+  "url": "https://dasisoutlet.top/",
+  "file": "zenodo/fake-payment__2024-01_2024-01-13_dasisoutlet.top.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fake-payment",
+  "site": "2024-01/2024-01-13/usps.com.zv209.vip",
+  "dir": "fake-payment/2024-01_2024-01-13_usps.com.zv209.vip",
+  "domain": "usps.com.zv209.vip",
+  "url": "https://usps.com.zv209.vip/",
+  "file": "zenodo/fake-payment__2024-01_2024-01-13_usps.com.zv209.vip.html",
+  "new": {
+   "verdict": "warning",
+   "checks": [
+    "card-form:warning"
+   ],
+   "titles": [
+    "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+   ],
+   "info": [
+    "На странице есть форма для данных карты"
+   ]
+  }
+ },
+ {
+  "cat": "fake-payment",
+  "site": "2024-01/2024-01-13/loveformanandandall.com",
+  "dir": "fake-payment/2024-01_2024-01-13_loveformanandandall.com",
+  "domain": "loveformanandandall.com",
+  "url": "https://loveformanandandall.com/",
+  "file": "zenodo/fake-payment__2024-01_2024-01-13_loveformanandandall.com.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "crypto-drainer",
+  "site": "2024-01/2024-01-13/zk-skalling.net",
+  "dir": "crypto-drainer/2024-01_2024-01-13_zk-skalling.net",
+  "domain": "zk-skalling.net",
+  "url": "https://zk-skalling.net/",
+  "file": "zenodo/crypto-drainer__2024-01_2024-01-13_zk-skalling.net.html",
+  "new": {
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
+   "info": []
+  }
+ },
+ {
+  "cat": "fake-payment",
+  "site": "2024-01/2024-01-06/chnet-dhlservice.is-a-green.com",
+  "dir": "fake-payment/2024-01_2024-01-06_chnet-dhlservice.is-a-green.com",
+  "domain": "chnet-dhlservice.is-a-green.com",
+  "url": "https://chnet-dhlservice.is-a-green.com/",
+  "file": "zenodo/fake-payment__2024-01_2024-01-06_chnet-dhlservice.is-a-green.com.html",
+  "new": {
+   "verdict": "warning",
+   "checks": [
+    "card-form:warning"
+   ],
+   "titles": [
+    "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+   ],
+   "info": [
+    "На странице есть форма для данных карты",
+    "На странице оплаты работает код сторонних сайтов"
+   ]
+  }
+ },
+ {
+  "cat": "fake-payment",
+  "site": "2024-01/2024-01-06/dtprojects.eu.org",
+  "dir": "fake-payment/2024-01_2024-01-06_dtprojects.eu.org",
+  "domain": "dtprojects.eu.org",
+  "url": "https://dtprojects.eu.org/",
+  "file": "zenodo/fake-payment__2024-01_2024-01-06_dtprojects.eu.org.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "crypto-drainer",
+  "site": "2024-01/2024-01-14/clestia2024.com",
+  "dir": "crypto-drainer/2024-01_2024-01-14_clestia2024.com",
+  "domain": "clestia2024.com",
+  "url": "https://clestia2024.com/",
+  "file": "zenodo/crypto-drainer__2024-01_2024-01-14_clestia2024.com.html",
+  "new": {
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
+   "info": []
+  }
+ },
+ {
+  "cat": "crypto-drainer",
+  "site": "2024-01/2024-01-14/get-imxtokens.org",
+  "dir": "crypto-drainer/2024-01_2024-01-14_get-imxtokens.org",
+  "domain": "get-imxtokens.org",
+  "url": "https://get-imxtokens.org/",
+  "file": "zenodo/crypto-drainer__2024-01_2024-01-14_get-imxtokens.org.html",
+  "new": {
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
+   "info": []
+  }
+ },
+ {
+  "cat": "crypto-drainer",
+  "site": "2024-01/2024-01-14/getimmutable-token.com",
+  "dir": "crypto-drainer/2024-01_2024-01-14_getimmutable-token.com",
+  "domain": "getimmutable-token.com",
+  "url": "https://getimmutable-token.com/",
+  "file": "zenodo/crypto-drainer__2024-01_2024-01-14_getimmutable-token.com.html",
+  "new": {
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
+   "info": []
+  }
+ },
+ {
+  "cat": "crypto-drainer",
+  "site": "2024-01/2024-01-14/getimx-token.org",
+  "dir": "crypto-drainer/2024-01_2024-01-14_getimx-token.org",
+  "domain": "getimx-token.org",
+  "url": "https://getimx-token.org/",
+  "file": "zenodo/crypto-drainer__2024-01_2024-01-14_getimx-token.org.html",
+  "new": {
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
+   "info": []
+  }
+ },
+ {
+  "cat": "crypto-drainer",
+  "site": "2024-01/2024-01-14/paperhand-network.web.app",
+  "dir": "crypto-drainer/2024-01_2024-01-14_paperhand-network.web.app",
+  "domain": "paperhand-network.web.app",
+  "url": "https://paperhand-network.web.app/",
+  "file": "zenodo/crypto-drainer__2024-01_2024-01-14_paperhand-network.web.app.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "crypto-drainer",
+  "site": "2024-01/2024-01-14/immutable2024.com",
+  "dir": "crypto-drainer/2024-01_2024-01-14_immutable2024.com",
+  "domain": "immutable2024.com",
+  "url": "https://immutable2024.com/",
+  "file": "zenodo/crypto-drainer__2024-01_2024-01-14_immutable2024.com.html",
+  "new": {
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
+   "info": []
+  }
+ },
+ {
+  "cat": "crypto-drainer",
+  "site": "2024-01/2024-01-14/ilvclaim.com",
+  "dir": "crypto-drainer/2024-01_2024-01-14_ilvclaim.com",
+  "domain": "ilvclaim.com",
+  "url": "https://ilvclaim.com/",
+  "file": "zenodo/crypto-drainer__2024-01_2024-01-14_ilvclaim.com.html",
+  "new": {
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
+   "info": []
+  }
+ },
+ {
+  "cat": "crypto-drainer",
+  "site": "2024-01/2024-01-14/get-immutablex.org",
+  "dir": "crypto-drainer/2024-01_2024-01-14_get-immutablex.org",
+  "domain": "get-immutablex.org",
+  "url": "https://get-immutablex.org/",
+  "file": "zenodo/crypto-drainer__2024-01_2024-01-14_get-immutablex.org.html",
+  "new": {
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
+   "info": []
+  }
+ },
+ {
+  "cat": "crypto-drainer",
+  "site": "2024-01/2024-01-14/paperhand-ethereum.web.app",
+  "dir": "crypto-drainer/2024-01_2024-01-14_paperhand-ethereum.web.app",
+  "domain": "paperhand-ethereum.web.app",
+  "url": "https://paperhand-ethereum.web.app/",
+  "file": "zenodo/crypto-drainer__2024-01_2024-01-14_paperhand-ethereum.web.app.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fake-payment",
+  "site": "2024-01/2024-01-14/www.arcteryx.xyz",
+  "dir": "fake-payment/2024-01_2024-01-14_www.arcteryx.xyz",
+  "domain": "www.arcteryx.xyz",
+  "url": "https://www.arcteryx.xyz/",
+  "file": "zenodo/fake-payment__2024-01_2024-01-14_www.arcteryx.xyz.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fake-payment",
+  "site": "2024-01/2024-01-14/mature-spicy-eoraptor.glitch.me",
+  "dir": "fake-payment/2024-01_2024-01-14_mature-spicy-eoraptor.glitch.me",
+  "domain": "mature-spicy-eoraptor.glitch.me",
+  "url": "https://mature-spicy-eoraptor.glitch.me/",
+  "file": "zenodo/fake-payment__2024-01_2024-01-14_mature-spicy-eoraptor.glitch.me.html",
+  "new": {
+   "verdict": "danger",
+   "checks": [
+    "card-form:danger",
+    "skimmer:warning"
+   ],
+   "titles": [
+    "Данные карты уходят в Telegram-бота",
+    "Скрипт читает поля карты и умеет отправлять данные",
+    "Скрипт читает поля карты и умеет отправлять данные"
+   ],
+   "info": [
+    "На странице есть форма для данных карты",
+    "На странице оплаты работает код сторонних сайтов"
+   ]
+  }
+ },
+ {
+  "cat": "crypto-drainer",
+  "site": "2024-01/2024-01-14/get-imxtokens.net",
+  "dir": "crypto-drainer/2024-01_2024-01-14_get-imxtokens.net",
+  "domain": "get-imxtokens.net",
+  "url": "https://get-imxtokens.net/",
+  "file": "zenodo/crypto-drainer__2024-01_2024-01-14_get-imxtokens.net.html",
+  "new": {
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
+   "info": []
+  }
+ },
+ {
+  "cat": "fake-payment",
+  "site": "2024-01/2024-01-14/www.schleichoutlet.com",
+  "dir": "fake-payment/2024-01_2024-01-14_www.schleichoutlet.com",
+  "domain": "www.schleichoutlet.com",
+  "url": "https://www.schleichoutlet.com/",
+  "file": "zenodo/fake-payment__2024-01_2024-01-14_www.schleichoutlet.com.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fake-payment",
+  "site": "2024-01/2024-01-14/arcteryx.xyz",
+  "dir": "fake-payment/2024-01_2024-01-14_arcteryx.xyz",
+  "domain": "arcteryx.xyz",
+  "url": "https://arcteryx.xyz/",
+  "file": "zenodo/fake-payment__2024-01_2024-01-14_arcteryx.xyz.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "crypto-drainer",
+  "site": "2024-01/2024-01-14/get-imxtokens.com",
+  "dir": "crypto-drainer/2024-01_2024-01-14_get-imxtokens.com",
+  "domain": "get-imxtokens.com",
+  "url": "https://get-imxtokens.com/",
+  "file": "zenodo/crypto-drainer__2024-01_2024-01-14_get-imxtokens.com.html",
+  "new": {
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
+   "info": []
+  }
+ },
+ {
+  "cat": "crypto-drainer",
+  "site": "2024-01/2024-01-14/get-immutablex.com",
+  "dir": "crypto-drainer/2024-01_2024-01-14_get-immutablex.com",
+  "domain": "get-immutablex.com",
+  "url": "https://get-immutablex.com/",
+  "file": "zenodo/crypto-drainer__2024-01_2024-01-14_get-immutablex.com.html",
+  "new": {
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
+   "info": []
+  }
+ },
+ {
+  "cat": "fake-payment",
+  "site": "2024-01/2024-01-14/schleichoutlet.com",
+  "dir": "fake-payment/2024-01_2024-01-14_schleichoutlet.com",
+  "domain": "schleichoutlet.com",
+  "url": "https://schleichoutlet.com/",
+  "file": "zenodo/fake-payment__2024-01_2024-01-14_schleichoutlet.com.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fake-payment",
+  "site": "2024-01/2024-01-14/boutiquemall.club",
+  "dir": "fake-payment/2024-01_2024-01-14_boutiquemall.club",
+  "domain": "boutiquemall.club",
+  "url": "https://boutiquemall.club/",
+  "file": "zenodo/fake-payment__2024-01_2024-01-14_boutiquemall.club.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "fake-payment",
+  "site": "2024-01/2024-01-14/vemax.eu",
+  "dir": "fake-payment/2024-01_2024-01-14_vemax.eu",
+  "domain": "vemax.eu",
+  "url": "https://vemax.eu/",
+  "file": "zenodo/fake-payment__2024-01_2024-01-14_vemax.eu.html",
+  "new": {
+   "verdict": "ok",
+   "checks": [],
+   "titles": [],
+   "info": [
+    "На странице есть форма для данных карты",
+    "На странице оплаты работает код сторонних сайтов"
+   ]
+  }
+ },
+ {
+  "cat": "fake-payment",
+  "site": "2024-01/2024-01-14/immutablex-token.org",
+  "dir": "fake-payment/2024-01_2024-01-14_immutablex-token.org",
+  "domain": "immutablex-token.org",
+  "url": "https://immutablex-token.org/",
+  "file": "zenodo/fake-payment__2024-01_2024-01-14_immutablex-token.org.html",
+  "new": {
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
+   "info": []
+  }
+ },
+ {
+  "cat": "crypto-drainer",
+  "site": "2024-01/2024-01-14/getimmutable-token.org",
+  "dir": "crypto-drainer/2024-01_2024-01-14_getimmutable-token.org",
+  "domain": "getimmutable-token.org",
+  "url": "https://getimmutable-token.org/",
+  "file": "zenodo/crypto-drainer__2024-01_2024-01-14_getimmutable-token.org.html",
+  "new": {
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
+   "info": []
+  }
+ },
+ {
+  "cat": "crypto-drainer",
+  "site": "2024-01/2024-01-14/join-immutablex.org",
+  "dir": "crypto-drainer/2024-01_2024-01-14_join-immutablex.org",
+  "domain": "join-immutablex.org",
+  "url": "https://join-immutablex.org/",
+  "file": "zenodo/crypto-drainer__2024-01_2024-01-14_join-immutablex.org.html",
+  "new": {
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
+   "info": []
+  }
+ },
+ {
+  "cat": "payout",
+  "site": "2024-01/2024-01-14/www.boutiquemall.club",
+  "dir": "payout/2024-01_2024-01-14_www.boutiquemall.club",
+  "domain": "www.boutiquemall.club",
+  "url": "https://www.boutiquemall.club/",
+  "file": "zenodo/payout__2024-01_2024-01-14_www.boutiquemall.club.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "crypto-drainer",
+  "site": "2024-01/2024-01-14/join-immutablex.com",
+  "dir": "crypto-drainer/2024-01_2024-01-14_join-immutablex.com",
+  "domain": "join-immutablex.com",
+  "url": "https://join-immutablex.com/",
+  "file": "zenodo/crypto-drainer__2024-01_2024-01-14_join-immutablex.com.html",
+  "new": {
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
+   "info": []
+  }
+ },
+ {
+  "cat": "crypto-drainer",
+  "site": "2024-01/2024-01-14/6155562990.pages.dev",
+  "dir": "crypto-drainer/2024-01_2024-01-14_6155562990.pages.dev",
+  "domain": "6155562990.pages.dev",
+  "url": "https://6155562990.pages.dev/",
+  "file": "zenodo/crypto-drainer__2024-01_2024-01-14_6155562990.pages.dev.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "crypto-drainer",
+  "site": "2024-01/2024-01-14/immutablex-token.net",
+  "dir": "crypto-drainer/2024-01_2024-01-14_immutablex-token.net",
+  "domain": "immutablex-token.net",
+  "url": "https://immutablex-token.net/",
+  "file": "zenodo/crypto-drainer__2024-01_2024-01-14_immutablex-token.net.html",
+  "new": {
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
+   "info": []
+  }
+ },
+ {
+  "cat": "crypto-drainer",
+  "site": "2024-01/2024-01-14/get-immutablex.net",
+  "dir": "crypto-drainer/2024-01_2024-01-14_get-immutablex.net",
+  "domain": "get-immutablex.net",
+  "url": "https://get-immutablex.net/",
+  "file": "zenodo/crypto-drainer__2024-01_2024-01-14_get-immutablex.net.html",
+  "new": {
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
+   "info": []
+  }
+ },
+ {
+  "cat": "crypto-drainer",
+  "site": "2024-01/2024-01-14/immutablex-token.com",
+  "dir": "crypto-drainer/2024-01_2024-01-14_immutablex-token.com",
+  "domain": "immutablex-token.com",
+  "url": "https://immutablex-token.com/",
+  "file": "zenodo/crypto-drainer__2024-01_2024-01-14_immutablex-token.com.html",
+  "new": {
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
+   "info": []
+  }
+ },
+ {
+  "cat": "crypto-drainer",
+  "site": "2024-01/2024-01-14/getimmutable-token.net",
+  "dir": "crypto-drainer/2024-01_2024-01-14_getimmutable-token.net",
+  "domain": "getimmutable-token.net",
+  "url": "https://getimmutable-token.net/",
+  "file": "zenodo/crypto-drainer__2024-01_2024-01-14_getimmutable-token.net.html",
+  "new": {
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
+   "info": []
+  }
+ },
+ {
+  "cat": "payout",
+  "site": "2024-01/2024-01-28/www.fridafunko.es",
+  "dir": "payout/2024-01_2024-01-28_www.fridafunko.es",
+  "domain": "www.fridafunko.es",
+  "url": "https://www.fridafunko.es/",
+  "file": "zenodo/payout__2024-01_2024-01-28_www.fridafunko.es.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "payout",
+  "site": "2024-01/2024-01-28/login-scl-swiss-servicenow.codeanyapp.com",
+  "dir": "payout/2024-01_2024-01-28_login-scl-swiss-servicenow.codeanyapp.com",
+  "domain": "login-scl-swiss-servicenow.codeanyapp.com",
+  "url": "https://login-scl-swiss-servicenow.codeanyapp.com/",
+  "file": "zenodo/payout__2024-01_2024-01-28_login-scl-swiss-servicenow.codeanyapp.com.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "payout",
+  "site": "2024-01/2024-01-28/onsalepatagonia.com",
+  "dir": "payout/2024-01_2024-01-28_onsalepatagonia.com",
+  "domain": "onsalepatagonia.com",
+  "url": "https://onsalepatagonia.com/",
+  "file": "zenodo/payout__2024-01_2024-01-28_onsalepatagonia.com.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "payout",
+  "site": "2024-01/2024-01-28/gosfun.com",
+  "dir": "payout/2024-01_2024-01-28_gosfun.com",
+  "domain": "gosfun.com",
+  "url": "https://gosfun.com/",
+  "file": "zenodo/payout__2024-01_2024-01-28_gosfun.com.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "payout",
+  "site": "2024-01/2024-01-28/www.arcteryxvipsale.com",
+  "dir": "payout/2024-01_2024-01-28_www.arcteryxvipsale.com",
+  "domain": "www.arcteryxvipsale.com",
+  "url": "https://www.arcteryxvipsale.com/",
+  "file": "zenodo/payout__2024-01_2024-01-28_www.arcteryxvipsale.com.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "payout",
+  "site": "2024-01/2024-01-28/funko-ph.top",
+  "dir": "payout/2024-01_2024-01-28_funko-ph.top",
+  "domain": "funko-ph.top",
+  "url": "https://funko-ph.top/",
+  "file": "zenodo/payout__2024-01_2024-01-28_funko-ph.top.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "crypto-drainer",
+  "site": "2024-01/2024-01-28/etherhasdf34fasd.pages.dev",
+  "dir": "crypto-drainer/2024-01_2024-01-28_etherhasdf34fasd.pages.dev",
+  "domain": "etherhasdf34fasd.pages.dev",
+  "url": "https://etherhasdf34fasd.pages.dev/",
+  "file": "zenodo/crypto-drainer__2024-01_2024-01-28_etherhasdf34fasd.pages.dev.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "payout",
+  "site": "2024-01/2024-01-28/www.gosfun.com",
+  "dir": "payout/2024-01_2024-01-28_www.gosfun.com",
+  "domain": "www.gosfun.com",
+  "url": "https://www.gosfun.com/",
+  "file": "zenodo/payout__2024-01_2024-01-28_www.gosfun.com.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "crypto-drainer",
+  "site": "2024-01/2024-01-28/swap.testnet.tabichain.com",
+  "dir": "crypto-drainer/2024-01_2024-01-28_swap.testnet.tabichain.com",
+  "domain": "swap.testnet.tabichain.com",
+  "url": "https://swap.testnet.tabichain.com/",
+  "file": "zenodo/crypto-drainer__2024-01_2024-01-28_swap.testnet.tabichain.com.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "payout",
+  "site": "2024-01/2024-01-28/arcteryxvipsale.com",
+  "dir": "payout/2024-01_2024-01-28_arcteryxvipsale.com",
+  "domain": "arcteryxvipsale.com",
+  "url": "https://arcteryxvipsale.com/",
+  "file": "zenodo/payout__2024-01_2024-01-28_arcteryxvipsale.com.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "payout",
+  "site": "2024-01/2024-01-28/www.vnonecall.com",
+  "dir": "payout/2024-01_2024-01-28_www.vnonecall.com",
+  "domain": "www.vnonecall.com",
+  "url": "https://www.vnonecall.com/",
+  "file": "zenodo/payout__2024-01_2024-01-28_www.vnonecall.com.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "payout",
+  "site": "2024-01/2024-01-28/www.funko-ph.top",
+  "dir": "payout/2024-01_2024-01-28_www.funko-ph.top",
+  "domain": "www.funko-ph.top",
+  "url": "https://www.funko-ph.top/",
+  "file": "zenodo/payout__2024-01_2024-01-28_www.funko-ph.top.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "crypto-drainer",
+  "site": "2024-01/2024-01-28/172.166.251.197",
+  "dir": "crypto-drainer/2024-01_2024-01-28_172.166.251.197",
+  "domain": "172.166.251.197",
+  "url": "https://172.166.251.197/",
+  "file": "zenodo/crypto-drainer__2024-01_2024-01-28_172.166.251.197.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "payout",
+  "site": "2024-01/2024-01-28/fridafunko.es",
+  "dir": "payout/2024-01_2024-01-28_fridafunko.es",
+  "domain": "fridafunko.es",
+  "url": "https://fridafunko.es/",
+  "file": "zenodo/payout__2024-01_2024-01-28_fridafunko.es.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "crypto-drainer",
+  "site": "2024-01/2024-01-28/52.52.110.75",
+  "dir": "crypto-drainer/2024-01_2024-01-28_52.52.110.75",
+  "domain": "52.52.110.75",
+  "url": "https://52.52.110.75/",
+  "file": "zenodo/crypto-drainer__2024-01_2024-01-28_52.52.110.75.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "payout",
+  "site": "2024-01/2024-01-21/m4ufree.us",
+  "dir": "payout/2024-01_2024-01-21_m4ufree.us",
+  "domain": "m4ufree.us",
+  "url": "https://m4ufree.us/",
+  "file": "zenodo/payout__2024-01_2024-01-21_m4ufree.us.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "payout",
+  "site": "2024-01/2024-01-17/dickssportinggood.shop",
+  "dir": "payout/2024-01_2024-01-17_dickssportinggood.shop",
+  "domain": "dickssportinggood.shop",
+  "url": "https://dickssportinggood.shop/",
+  "file": "zenodo/payout__2024-01_2024-01-17_dickssportinggood.shop.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "payout",
+  "site": "2024-01/2024-01-17/booking.guest-reserve5523.com",
+  "dir": "payout/2024-01_2024-01-17_booking.guest-reserve5523.com",
+  "domain": "booking.guest-reserve5523.com",
+  "url": "https://booking.guest-reserve5523.com/",
+  "file": "zenodo/payout__2024-01_2024-01-17_booking.guest-reserve5523.com.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "payout",
+  "site": "2024-01/2024-01-17/www.blundstoneshop.top",
+  "dir": "payout/2024-01_2024-01-17_www.blundstoneshop.top",
+  "domain": "www.blundstoneshop.top",
+  "url": "https://www.blundstoneshop.top/",
+  "file": "zenodo/payout__2024-01_2024-01-17_www.blundstoneshop.top.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "payout",
+  "site": "2024-01/2024-01-17/booking.hotel-guests-orders45633.com",
+  "dir": "payout/2024-01_2024-01-17_booking.hotel-guests-orders45633.com",
+  "domain": "booking.hotel-guests-orders45633.com",
+  "url": "https://booking.hotel-guests-orders45633.com/",
+  "file": "zenodo/payout__2024-01_2024-01-17_booking.hotel-guests-orders45633.com.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "investment",
+  "site": "2024-01/2024-01-17/d5-arvest.dyndns.org",
+  "dir": "investment/2024-01_2024-01-17_d5-arvest.dyndns.org",
+  "domain": "d5-arvest.dyndns.org",
+  "url": "https://d5-arvest.dyndns.org/",
+  "file": "zenodo/investment__2024-01_2024-01-17_d5-arvest.dyndns.org.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "payout",
+  "site": "2024-01/2024-01-17/booking.hotels637216.com",
+  "dir": "payout/2024-01_2024-01-17_booking.hotels637216.com",
+  "domain": "booking.hotels637216.com",
+  "url": "https://booking.hotels637216.com/",
+  "file": "zenodo/payout__2024-01_2024-01-17_booking.hotels637216.com.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "payout",
+  "site": "2024-01/2024-01-17/booking.hotels6326842.com",
+  "dir": "payout/2024-01_2024-01-17_booking.hotels6326842.com",
+  "domain": "booking.hotels6326842.com",
+  "url": "https://booking.hotels6326842.com/",
+  "file": "zenodo/payout__2024-01_2024-01-17_booking.hotels6326842.com.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "payout",
+  "site": "2024-01/2024-01-17/blundstone.top",
+  "dir": "payout/2024-01_2024-01-17_blundstone.top",
+  "domain": "blundstone.top",
+  "url": "https://blundstone.top/",
+  "file": "zenodo/payout__2024-01_2024-01-17_blundstone.top.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "payout",
+  "site": "2024-01/2024-01-17/booking.hotel-guests-orders76337.com",
+  "dir": "payout/2024-01_2024-01-17_booking.hotel-guests-orders76337.com",
+  "domain": "booking.hotel-guests-orders76337.com",
+  "url": "https://booking.hotel-guests-orders76337.com/",
+  "file": "zenodo/payout__2024-01_2024-01-17_booking.hotel-guests-orders76337.com.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "payout",
+  "site": "2024-01/2024-01-17/booking.info-93843.bid",
+  "dir": "payout/2024-01_2024-01-17_booking.info-93843.bid",
+  "domain": "booking.info-93843.bid",
+  "url": "https://booking.info-93843.bid/",
+  "file": "zenodo/payout__2024-01_2024-01-17_booking.info-93843.bid.html",
+  "new": {
+   "verdict": "warning",
+   "checks": [
+    "card-form:warning"
+   ],
+   "titles": [
+    "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+   ],
+   "info": [
+    "На странице есть форма для данных карты",
+    "На странице оплаты работает код сторонних сайтов"
+   ]
+  }
+ },
+ {
+  "cat": "payout",
+  "site": "2024-01/2024-01-17/booking.hotel-id-confirm.com",
+  "dir": "payout/2024-01_2024-01-17_booking.hotel-id-confirm.com",
+  "domain": "booking.hotel-id-confirm.com",
+  "url": "https://booking.hotel-id-confirm.com/",
+  "file": "zenodo/payout__2024-01_2024-01-17_booking.hotel-id-confirm.com.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "payout",
+  "site": "2024-01/2024-01-17/newbalance-fr.com",
+  "dir": "payout/2024-01_2024-01-17_newbalance-fr.com",
+  "domain": "newbalance-fr.com",
+  "url": "https://newbalance-fr.com/",
+  "file": "zenodo/payout__2024-01_2024-01-17_newbalance-fr.com.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "payout",
+  "site": "2024-01/2024-01-17/bni-secure.redi4pp.com",
+  "dir": "payout/2024-01_2024-01-17_bni-secure.redi4pp.com",
+  "domain": "bni-secure.redi4pp.com",
+  "url": "https://bni-secure.redi4pp.com/",
+  "file": "zenodo/payout__2024-01_2024-01-17_bni-secure.redi4pp.com.html",
+  "new": {
+   "verdict": "ok",
+   "checks": [],
+   "titles": [],
+   "info": [
+    "На странице есть форма для данных карты",
+    "На странице оплаты работает код сторонних сайтов"
+   ]
+  }
+ },
+ {
+  "cat": "payout",
+  "site": "2024-01/2024-01-17/booking-com.hotel-2839.mom",
+  "dir": "payout/2024-01_2024-01-17_booking-com.hotel-2839.mom",
+  "domain": "booking-com.hotel-2839.mom",
+  "url": "https://booking-com.hotel-2839.mom/",
+  "file": "zenodo/payout__2024-01_2024-01-17_booking-com.hotel-2839.mom.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "crypto-drainer",
+  "site": "2024-01/2024-01-01/planet-zksync.nfts2.me",
+  "dir": "crypto-drainer/2024-01_2024-01-01_planet-zksync.nfts2.me",
+  "domain": "planet-zksync.nfts2.me",
+  "url": "https://planet-zksync.nfts2.me/",
+  "file": "zenodo/crypto-drainer__2024-01_2024-01-01_planet-zksync.nfts2.me.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "crypto-drainer",
+  "site": "2024-01/2024-01-01/manzara-zksync.nfts2.me",
+  "dir": "crypto-drainer/2024-01_2024-01-01_manzara-zksync.nfts2.me",
+  "domain": "manzara-zksync.nfts2.me",
+  "url": "https://manzara-zksync.nfts2.me/",
+  "file": "zenodo/crypto-drainer__2024-01_2024-01-01_manzara-zksync.nfts2.me.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "crypto-drainer",
+  "site": "2024-01/2024-01-01/zksync-era-atom.nfts2.me",
+  "dir": "crypto-drainer/2024-01_2024-01-01_zksync-era-atom.nfts2.me",
+  "domain": "zksync-era-atom.nfts2.me",
+  "url": "https://zksync-era-atom.nfts2.me/",
+  "file": "zenodo/crypto-drainer__2024-01_2024-01-01_zksync-era-atom.nfts2.me.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "crypto-drainer",
+  "site": "2024-01/2024-01-01/zksync-era-maya.nfts2.me",
+  "dir": "crypto-drainer/2024-01_2024-01-01_zksync-era-maya.nfts2.me",
+  "domain": "zksync-era-maya.nfts2.me",
+  "url": "https://zksync-era-maya.nfts2.me/",
+  "file": "zenodo/crypto-drainer__2024-01_2024-01-01_zksync-era-maya.nfts2.me.html",
+  "new": {
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
+   "info": []
+  }
+ },
+ {
+  "cat": "crypto-drainer",
+  "site": "2024-01/2024-01-01/zksync-infinity-blockchain.nfts2.me",
+  "dir": "crypto-drainer/2024-01_2024-01-01_zksync-infinity-blockchain.nfts2.me",
+  "domain": "zksync-infinity-blockchain.nfts2.me",
+  "url": "https://zksync-infinity-blockchain.nfts2.me/",
+  "file": "zenodo/crypto-drainer__2024-01_2024-01-01_zksync-infinity-blockchain.nfts2.me.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "payout",
+  "site": "2024-01/2024-01-01/euoutdoorstore.shop",
+  "dir": "payout/2024-01_2024-01-01_euoutdoorstore.shop",
+  "domain": "euoutdoorstore.shop",
+  "url": "https://euoutdoorstore.shop/",
+  "file": "zenodo/payout__2024-01_2024-01-01_euoutdoorstore.shop.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "crypto-drainer",
+  "site": "2024-01/2024-01-01/dizzying.nfts2.me",
+  "dir": "crypto-drainer/2024-01_2024-01-01_dizzying.nfts2.me",
+  "domain": "dizzying.nfts2.me",
+  "url": "https://dizzying.nfts2.me/",
+  "file": "zenodo/crypto-drainer__2024-01_2024-01-01_dizzying.nfts2.me.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "crypto-drainer",
+  "site": "2024-01/2024-01-01/wkripto-zksync.nfts2.me",
+  "dir": "crypto-drainer/2024-01_2024-01-01_wkripto-zksync.nfts2.me",
+  "domain": "wkripto-zksync.nfts2.me",
+  "url": "https://wkripto-zksync.nfts2.me/",
+  "file": "zenodo/crypto-drainer__2024-01_2024-01-01_wkripto-zksync.nfts2.me.html",
+  "new": {
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
+   "info": []
+  }
+ },
+ {
+  "cat": "crypto-drainer",
+  "site": "2024-01/2024-01-01/the-moon-zksync.nfts2.me",
+  "dir": "crypto-drainer/2024-01_2024-01-01_the-moon-zksync.nfts2.me",
+  "domain": "the-moon-zksync.nfts2.me",
+  "url": "https://the-moon-zksync.nfts2.me/",
+  "file": "zenodo/crypto-drainer__2024-01_2024-01-01_the-moon-zksync.nfts2.me.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "investment",
+  "site": "2024-01/2024-01-01/107.165.195.68",
+  "dir": "investment/2024-01_2024-01-01_107.165.195.68",
+  "domain": "107.165.195.68",
+  "url": "https://107.165.195.68/",
+  "file": "zenodo/investment__2024-01_2024-01-01_107.165.195.68.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "investment",
+  "site": "2024-01/2024-01-01/ap.efficaccyfxint.com",
+  "dir": "investment/2024-01_2024-01-01_ap.efficaccyfxint.com",
+  "domain": "ap.efficaccyfxint.com",
+  "url": "https://ap.efficaccyfxint.com/",
+  "file": "zenodo/investment__2024-01_2024-01-01_ap.efficaccyfxint.com.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "crypto-drainer",
+  "site": "2024-01/2024-01-01/zksync-era-worm.nfts2.me",
+  "dir": "crypto-drainer/2024-01_2024-01-01_zksync-era-worm.nfts2.me",
+  "domain": "zksync-era-worm.nfts2.me",
+  "url": "https://zksync-era-worm.nfts2.me/",
+  "file": "zenodo/crypto-drainer__2024-01_2024-01-01_zksync-era-worm.nfts2.me.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "crypto-drainer",
+  "site": "2024-01/2024-01-01/lively-zksync-era-atam.nfts2.me",
+  "dir": "crypto-drainer/2024-01_2024-01-01_lively-zksync-era-atam.nfts2.me",
+  "domain": "lively-zksync-era-atam.nfts2.me",
+  "url": "https://lively-zksync-era-atam.nfts2.me/",
+  "file": "zenodo/crypto-drainer__2024-01_2024-01-01_lively-zksync-era-atam.nfts2.me.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "crypto-drainer",
+  "site": "2024-01/2024-01-01/quilling-zksync.nfts2.me",
+  "dir": "crypto-drainer/2024-01_2024-01-01_quilling-zksync.nfts2.me",
+  "domain": "quilling-zksync.nfts2.me",
+  "url": "https://quilling-zksync.nfts2.me/",
+  "file": "zenodo/crypto-drainer__2024-01_2024-01-01_quilling-zksync.nfts2.me.html",
+  "new": {
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
+   "info": []
+  }
+ },
+ {
+  "cat": "investment",
+  "site": "2024-01/2024-01-01/polygononline.live",
+  "dir": "investment/2024-01_2024-01-01_polygononline.live",
+  "domain": "polygononline.live",
+  "url": "https://polygononline.live/",
+  "file": "zenodo/investment__2024-01_2024-01-01_polygononline.live.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "crypto-drainer",
+  "site": "2024-01/2024-01-01/lawliet-zksync.nfts2.me",
+  "dir": "crypto-drainer/2024-01_2024-01-01_lawliet-zksync.nfts2.me",
+  "domain": "lawliet-zksync.nfts2.me",
+  "url": "https://lawliet-zksync.nfts2.me/",
+  "file": "zenodo/crypto-drainer__2024-01_2024-01-01_lawliet-zksync.nfts2.me.html",
+  "new": {
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
+   "info": []
+  }
+ },
+ {
+  "cat": "payout",
+  "site": "2024-01/2024-01-01/www.euoutdoorstore.shop",
+  "dir": "payout/2024-01_2024-01-01_www.euoutdoorstore.shop",
+  "domain": "www.euoutdoorstore.shop",
+  "url": "https://www.euoutdoorstore.shop/",
+  "file": "zenodo/payout__2024-01_2024-01-01_www.euoutdoorstore.shop.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "crypto-drainer",
+  "site": "2024-01/2024-01-01/zksync-anime-queen.nfts2.me",
+  "dir": "crypto-drainer/2024-01_2024-01-01_zksync-anime-queen.nfts2.me",
+  "domain": "zksync-anime-queen.nfts2.me",
+  "url": "https://zksync-anime-queen.nfts2.me/",
+  "file": "zenodo/crypto-drainer__2024-01_2024-01-01_zksync-anime-queen.nfts2.me.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "payout",
+  "site": "2024-01/2024-01-01/drawerfac.top",
+  "dir": "payout/2024-01_2024-01-01_drawerfac.top",
+  "domain": "drawerfac.top",
+  "url": "https://drawerfac.top/",
+  "file": "zenodo/payout__2024-01_2024-01-01_drawerfac.top.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "crypto-drainer",
+  "site": "2024-01/2024-01-01/zksync-to-the-moon-future.nfts2.me",
+  "dir": "crypto-drainer/2024-01_2024-01-01_zksync-to-the-moon-future.nfts2.me",
+  "domain": "zksync-to-the-moon-future.nfts2.me",
+  "url": "https://zksync-to-the-moon-future.nfts2.me/",
+  "file": "zenodo/crypto-drainer__2024-01_2024-01-01_zksync-to-the-moon-future.nfts2.me.html",
+  "new": {
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
+   "info": []
+  }
+ },
+ {
+  "cat": "crypto-drainer",
+  "site": "2024-01/2024-01-01/fire-ball.nfts2.me",
+  "dir": "crypto-drainer/2024-01_2024-01-01_fire-ball.nfts2.me",
+  "domain": "fire-ball.nfts2.me",
+  "url": "https://fire-ball.nfts2.me/",
+  "file": "zenodo/crypto-drainer__2024-01_2024-01-01_fire-ball.nfts2.me.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "crypto-drainer",
+  "site": "2024-01/2024-01-01/zksync-nft-2023.nfts2.me",
+  "dir": "crypto-drainer/2024-01_2024-01-01_zksync-nft-2023.nfts2.me",
+  "domain": "zksync-nft-2023.nfts2.me",
+  "url": "https://zksync-nft-2023.nfts2.me/",
+  "file": "zenodo/crypto-drainer__2024-01_2024-01-01_zksync-nft-2023.nfts2.me.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "crypto-drainer",
+  "site": "2024-01/2024-01-01/in-btc.nfts2.me",
+  "dir": "crypto-drainer/2024-01_2024-01-01_in-btc.nfts2.me",
+  "domain": "in-btc.nfts2.me",
+  "url": "https://in-btc.nfts2.me/",
+  "file": "zenodo/crypto-drainer__2024-01_2024-01-01_in-btc.nfts2.me.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "crypto-drainer",
+  "site": "2024-01/2024-01-01/magical-zksync-era-zeus.nfts2.me",
+  "dir": "crypto-drainer/2024-01_2024-01-01_magical-zksync-era-zeus.nfts2.me",
+  "domain": "magical-zksync-era-zeus.nfts2.me",
+  "url": "https://magical-zksync-era-zeus.nfts2.me/",
+  "file": "zenodo/crypto-drainer__2024-01_2024-01-01_magical-zksync-era-zeus.nfts2.me.html",
+  "new": {
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
+   "info": []
+  }
+ },
+ {
+  "cat": "crypto-drainer",
+  "site": "2024-01/2024-01-01/inf1n1ty.nfts2.me",
+  "dir": "crypto-drainer/2024-01_2024-01-01_inf1n1ty.nfts2.me",
+  "domain": "inf1n1ty.nfts2.me",
+  "url": "https://inf1n1ty.nfts2.me/",
+  "file": "zenodo/crypto-drainer__2024-01_2024-01-01_inf1n1ty.nfts2.me.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "crypto-drainer",
+  "site": "2024-01/2024-01-01/zksync-era-zktv.nfts2.me",
+  "dir": "crypto-drainer/2024-01_2024-01-01_zksync-era-zktv.nfts2.me",
+  "domain": "zksync-era-zktv.nfts2.me",
+  "url": "https://zksync-era-zktv.nfts2.me/",
+  "file": "zenodo/crypto-drainer__2024-01_2024-01-01_zksync-era-zktv.nfts2.me.html",
+  "new": {
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
+   "info": []
+  }
+ },
+ {
+  "cat": "payout",
+  "site": "2024-01/2024-01-01/prime-renewalsecure-billing.com.work.gd",
+  "dir": "payout/2024-01_2024-01-01_prime-renewalsecure-billing.com.work.gd",
+  "domain": "prime-renewalsecure-billing.com.work.gd",
+  "url": "https://prime-renewalsecure-billing.com.work.gd/",
+  "file": "zenodo/payout__2024-01_2024-01-01_prime-renewalsecure-billing.com.work.gd.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "crypto-drainer",
+  "site": "2024-01/2024-01-01/zksyncfire.nfts2.me",
+  "dir": "crypto-drainer/2024-01_2024-01-01_zksyncfire.nfts2.me",
+  "domain": "zksyncfire.nfts2.me",
+  "url": "https://zksyncfire.nfts2.me/",
+  "file": "zenodo/crypto-drainer__2024-01_2024-01-01_zksyncfire.nfts2.me.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "crypto-drainer",
+  "site": "2024-01/2024-01-01/porshe-taycan.nfts2.me",
+  "dir": "crypto-drainer/2024-01_2024-01-01_porshe-taycan.nfts2.me",
+  "domain": "porshe-taycan.nfts2.me",
+  "url": "https://porshe-taycan.nfts2.me/",
+  "file": "zenodo/crypto-drainer__2024-01_2024-01-01_porshe-taycan.nfts2.me.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "crypto-drainer",
+  "site": "2024-01/2024-01-01/zksync-era-rlc.nfts2.me",
+  "dir": "crypto-drainer/2024-01_2024-01-01_zksync-era-rlc.nfts2.me",
+  "domain": "zksync-era-rlc.nfts2.me",
+  "url": "https://zksync-era-rlc.nfts2.me/",
+  "file": "zenodo/crypto-drainer__2024-01_2024-01-01_zksync-era-rlc.nfts2.me.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "crypto-drainer",
+  "site": "2024-01/2024-01-01/zk-zorb.nfts2.me",
+  "dir": "crypto-drainer/2024-01_2024-01-01_zk-zorb.nfts2.me",
+  "domain": "zk-zorb.nfts2.me",
+  "url": "https://zk-zorb.nfts2.me/",
+  "file": "zenodo/crypto-drainer__2024-01_2024-01-01_zk-zorb.nfts2.me.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "crypto-drainer",
+  "site": "2024-01/2024-01-01/benzksync.nfts2.me",
+  "dir": "crypto-drainer/2024-01_2024-01-01_benzksync.nfts2.me",
+  "domain": "benzksync.nfts2.me",
+  "url": "https://benzksync.nfts2.me/",
+  "file": "zenodo/crypto-drainer__2024-01_2024-01-01_benzksync.nfts2.me.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "crypto-drainer",
+  "site": "2024-01/2024-01-01/zksync-era-boy-zkcodex.nfts2.me",
+  "dir": "crypto-drainer/2024-01_2024-01-01_zksync-era-boy-zkcodex.nfts2.me",
+  "domain": "zksync-era-boy-zkcodex.nfts2.me",
+  "url": "https://zksync-era-boy-zkcodex.nfts2.me/",
+  "file": "zenodo/crypto-drainer__2024-01_2024-01-01_zksync-era-boy-zkcodex.nfts2.me.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "crypto-drainer",
+  "site": "2024-01/2024-01-01/air-drop-zksync-1.nfts2.me",
+  "dir": "crypto-drainer/2024-01_2024-01-01_air-drop-zksync-1.nfts2.me",
+  "domain": "air-drop-zksync-1.nfts2.me",
+  "url": "https://air-drop-zksync-1.nfts2.me/",
+  "file": "zenodo/crypto-drainer__2024-01_2024-01-01_air-drop-zksync-1.nfts2.me.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "payout",
+  "site": "2024-01/2024-01-01/dhlinternationale.page.link",
+  "dir": "payout/2024-01_2024-01-01_dhlinternationale.page.link",
+  "domain": "dhlinternationale.page.link",
+  "url": "https://dhlinternationale.page.link/",
+  "file": "zenodo/payout__2024-01_2024-01-01_dhlinternationale.page.link.html",
+  "new": {
+   "verdict": "warning",
+   "checks": [
+    "card-form:warning"
+   ],
+   "titles": [
+    "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+   ],
+   "info": [
+    "На странице есть форма для данных карты",
+    "На странице оплаты работает код сторонних сайтов"
+   ]
+  }
+ },
+ {
+  "cat": "investment",
+  "site": "2024-01/2024-01-01/hdfcipo.com",
+  "dir": "investment/2024-01_2024-01-01_hdfcipo.com",
+  "domain": "hdfcipo.com",
+  "url": "https://hdfcipo.com/",
+  "file": "zenodo/investment__2024-01_2024-01-01_hdfcipo.com.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "crypto-drainer",
+  "site": "2024-01/2024-01-01/zksync-monkey-hero.nfts2.me",
+  "dir": "crypto-drainer/2024-01_2024-01-01_zksync-monkey-hero.nfts2.me",
+  "domain": "zksync-monkey-hero.nfts2.me",
+  "url": "https://zksync-monkey-hero.nfts2.me/",
+  "file": "zenodo/crypto-drainer__2024-01_2024-01-01_zksync-monkey-hero.nfts2.me.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "crypto-drainer",
+  "site": "2024-01/2024-01-01/zksync-era-isa.nfts2.me",
+  "dir": "crypto-drainer/2024-01_2024-01-01_zksync-era-isa.nfts2.me",
+  "domain": "zksync-era-isa.nfts2.me",
+  "url": "https://zksync-era-isa.nfts2.me/",
+  "file": "zenodo/crypto-drainer__2024-01_2024-01-01_zksync-era-isa.nfts2.me.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "crypto-drainer",
+  "site": "2024-01/2024-01-12/zk-skalling.app",
+  "dir": "crypto-drainer/2024-01_2024-01-12_zk-skalling.app",
+  "domain": "zk-skalling.app",
+  "url": "https://zk-skalling.app/",
+  "file": "zenodo/crypto-drainer__2024-01_2024-01-12_zk-skalling.app.html",
+  "new": {
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
+   "info": []
+  }
+ },
+ {
+  "cat": "payout",
+  "site": "2024-01/2024-01-12/lovnodntcostmoney.me",
+  "dir": "payout/2024-01_2024-01-12_lovnodntcostmoney.me",
+  "domain": "lovnodntcostmoney.me",
+  "url": "https://lovnodntcostmoney.me/",
+  "file": "zenodo/payout__2024-01_2024-01-12_lovnodntcostmoney.me.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "payout",
+  "site": "2024-01/2024-01-12/drmartensfr.shop",
+  "dir": "payout/2024-01_2024-01-12_drmartensfr.shop",
+  "domain": "drmartensfr.shop",
+  "url": "https://drmartensfr.shop/",
+  "file": "zenodo/payout__2024-01_2024-01-12_drmartensfr.shop.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "payout",
+  "site": "2024-01/2024-01-12/clearbatsale.com",
+  "dir": "payout/2024-01_2024-01-12_clearbatsale.com",
+  "domain": "clearbatsale.com",
+  "url": "https://clearbatsale.com/",
+  "file": "zenodo/payout__2024-01_2024-01-12_clearbatsale.com.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "investment",
+  "site": "2024-01/2024-01-12/feline-autumn-oriole.glitch.me",
+  "dir": "investment/2024-01_2024-01-12_feline-autumn-oriole.glitch.me",
+  "domain": "feline-autumn-oriole.glitch.me",
+  "url": "https://feline-autumn-oriole.glitch.me/",
+  "file": "zenodo/investment__2024-01_2024-01-12_feline-autumn-oriole.glitch.me.html",
+  "new": {
+   "verdict": "danger",
+   "checks": [
+    "card-form:danger",
+    "skimmer:warning"
+   ],
+   "titles": [
+    "Данные карты уходят в Telegram-бота",
+    "Скрипт читает поля карты и умеет отправлять данные",
+    "Скрипт читает поля карты и умеет отправлять данные"
+   ],
+   "info": [
+    "На странице есть форма для данных карты",
+    "На странице оплаты работает код сторонних сайтов"
+   ]
+  }
+ },
+ {
+  "cat": "payout",
+  "site": "2024-01/2024-01-12/martens-shop.top",
+  "dir": "payout/2024-01_2024-01-12_martens-shop.top",
+  "domain": "martens-shop.top",
+  "url": "https://martens-shop.top/",
+  "file": "zenodo/payout__2024-01_2024-01-12_martens-shop.top.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "crypto-drainer",
+  "site": "2024-01/2024-01-12/paperhands-eth.web.app",
+  "dir": "crypto-drainer/2024-01_2024-01-12_paperhands-eth.web.app",
+  "domain": "paperhands-eth.web.app",
+  "url": "https://paperhands-eth.web.app/",
+  "file": "zenodo/crypto-drainer__2024-01_2024-01-12_paperhands-eth.web.app.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "investment",
+  "site": "2024-01/2024-01-12/wildkard.tn",
+  "dir": "investment/2024-01_2024-01-12_wildkard.tn",
+  "domain": "wildkard.tn",
+  "url": "https://wildkard.tn/",
+  "file": "zenodo/investment__2024-01_2024-01-12_wildkard.tn.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "payout",
+  "site": "2024-01/2024-01-12/go.investerix.com",
+  "dir": "payout/2024-01_2024-01-12_go.investerix.com",
+  "domain": "go.investerix.com",
+  "url": "https://go.investerix.com/",
+  "file": "zenodo/payout__2024-01_2024-01-12_go.investerix.com.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "payout",
+  "site": "2024-01/2024-01-12/drmartenlaw.xyz",
+  "dir": "payout/2024-01_2024-01-12_drmartenlaw.xyz",
+  "domain": "drmartenlaw.xyz",
+  "url": "https://drmartenlaw.xyz/",
+  "file": "zenodo/payout__2024-01_2024-01-12_drmartenlaw.xyz.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "payout",
+  "site": "2024-01/2024-01-12/swiss-post-ch-online.com",
+  "dir": "payout/2024-01_2024-01-12_swiss-post-ch-online.com",
+  "domain": "swiss-post-ch-online.com",
+  "url": "https://swiss-post-ch-online.com/",
+  "file": "zenodo/payout__2024-01_2024-01-12_swiss-post-ch-online.com.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "payout",
+  "site": "2024-01/2024-01-12/www.brooksrunninginc.com",
+  "dir": "payout/2024-01_2024-01-12_www.brooksrunninginc.com",
+  "domain": "www.brooksrunninginc.com",
+  "url": "https://www.brooksrunninginc.com/",
+  "file": "zenodo/payout__2024-01_2024-01-12_www.brooksrunninginc.com.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "payout",
+  "site": "2024-01/2024-01-12/eudrmartens.shop",
+  "dir": "payout/2024-01_2024-01-12_eudrmartens.shop",
+  "domain": "eudrmartens.shop",
+  "url": "https://eudrmartens.shop/",
+  "file": "zenodo/payout__2024-01_2024-01-12_eudrmartens.shop.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "payout",
+  "site": "2024-01/2024-01-12/bnl-awaltahun.updetterbaru.com",
+  "dir": "payout/2024-01_2024-01-12_bnl-awaltahun.updetterbaru.com",
+  "domain": "bnl-awaltahun.updetterbaru.com",
+  "url": "https://bnl-awaltahun.updetterbaru.com/",
+  "file": "zenodo/payout__2024-01_2024-01-12_bnl-awaltahun.updetterbaru.com.html",
+  "new": {
+   "verdict": "danger",
+   "checks": [
+    "card-form:danger"
+   ],
+   "titles": [
+    "Данные карты уходят в Telegram-бота"
+   ],
+   "info": [
+    "На странице есть форма для данных карты",
+    "На странице оплаты работает код сторонних сайтов"
+   ]
+  }
+ },
+ {
+  "cat": "payout",
+  "site": "2024-01/2024-01-15/bni-pestapoint-awaltahun.bshsjsksks1.com",
+  "dir": "payout/2024-01_2024-01-15_bni-pestapoint-awaltahun.bshsjsksks1.com",
+  "domain": "bni-pestapoint-awaltahun.bshsjsksks1.com",
+  "url": "https://bni-pestapoint-awaltahun.bshsjsksks1.com/",
+  "file": "zenodo/payout__2024-01_2024-01-15_bni-pestapoint-awaltahun.bshsjsksks1.com.html",
+  "new": {
+   "verdict": "danger",
+   "checks": [
+    "card-form:danger"
+   ],
+   "titles": [
+    "Данные карты уходят в Telegram-бота"
+   ],
+   "info": [
+    "На странице есть форма для данных карты",
+    "На странице оплаты работает код сторонних сайтов"
+   ]
+  }
+ },
+ {
+  "cat": "crypto-drainer",
+  "site": "2024-01/2024-01-15/app.uniswap.sale",
+  "dir": "crypto-drainer/2024-01_2024-01-15_app.uniswap.sale",
+  "domain": "app.uniswap.sale",
+  "url": "https://app.uniswap.sale/",
+  "file": "zenodo/crypto-drainer__2024-01_2024-01-15_app.uniswap.sale.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "payout",
+  "site": "2024-01/2024-01-15/euwearsforu.com",
+  "dir": "payout/2024-01_2024-01-15_euwearsforu.com",
+  "domain": "euwearsforu.com",
+  "url": "https://euwearsforu.com/",
+  "file": "zenodo/payout__2024-01_2024-01-15_euwearsforu.com.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "crypto-drainer",
+  "site": "2024-01/2024-01-15/imxtoken.net",
+  "dir": "crypto-drainer/2024-01_2024-01-15_imxtoken.net",
+  "domain": "imxtoken.net",
+  "url": "https://imxtoken.net/",
+  "file": "zenodo/crypto-drainer__2024-01_2024-01-15_imxtoken.net.html",
+  "new": {
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
+   "info": []
+  }
+ },
+ {
+  "cat": "payout",
+  "site": "2024-01/2024-01-15/www.abc-jp.shop",
+  "dir": "payout/2024-01_2024-01-15_www.abc-jp.shop",
+  "domain": "www.abc-jp.shop",
+  "url": "https://www.abc-jp.shop/",
+  "file": "zenodo/payout__2024-01_2024-01-15_www.abc-jp.shop.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "payout",
+  "site": "2024-01/2024-01-15/www.euwearsforu.com",
+  "dir": "payout/2024-01_2024-01-15_www.euwearsforu.com",
+  "domain": "www.euwearsforu.com",
+  "url": "https://www.euwearsforu.com/",
+  "file": "zenodo/payout__2024-01_2024-01-15_www.euwearsforu.com.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "investment",
+  "site": "2024-01/2024-01-15/scratch-sassy-writer.glitch.me",
+  "dir": "investment/2024-01_2024-01-15_scratch-sassy-writer.glitch.me",
+  "domain": "scratch-sassy-writer.glitch.me",
+  "url": "https://scratch-sassy-writer.glitch.me/",
+  "file": "zenodo/investment__2024-01_2024-01-15_scratch-sassy-writer.glitch.me.html",
+  "new": {
+   "verdict": "danger",
+   "checks": [
+    "card-form:danger",
+    "skimmer:warning"
+   ],
+   "titles": [
+    "Данные карты уходят в Telegram-бота",
+    "Скрипт читает поля карты и умеет отправлять данные",
+    "Скрипт читает поля карты и умеет отправлять данные"
+   ],
+   "info": [
+    "На странице есть форма для данных карты",
+    "На странице оплаты работает код сторонних сайтов"
+   ]
+  }
+ },
+ {
+  "cat": "payout",
+  "site": "2024-01/2024-01-15/isetan-mitsukoshi.co",
+  "dir": "payout/2024-01_2024-01-15_isetan-mitsukoshi.co",
+  "domain": "isetan-mitsukoshi.co",
+  "url": "https://isetan-mitsukoshi.co/",
+  "file": "zenodo/payout__2024-01_2024-01-15_isetan-mitsukoshi.co.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "payout",
+  "site": "2024-01/2024-01-15/gebyar-undian-berhadiah.bshsjsksks1.com",
+  "dir": "payout/2024-01_2024-01-15_gebyar-undian-berhadiah.bshsjsksks1.com",
+  "domain": "gebyar-undian-berhadiah.bshsjsksks1.com",
+  "url": "https://gebyar-undian-berhadiah.bshsjsksks1.com/",
+  "file": "zenodo/payout__2024-01_2024-01-15_gebyar-undian-berhadiah.bshsjsksks1.com.html",
+  "new": {
+   "verdict": "danger",
+   "checks": [
+    "card-form:danger"
+   ],
+   "titles": [
+    "Данные карты уходят в Telegram-бота"
+   ],
+   "info": [
+    "На странице есть форма для данных карты",
+    "На странице оплаты работает код сторонних сайтов"
+   ]
+  }
+ },
+ {
+  "cat": "payout",
+  "site": "2024-01/2024-01-15/designhousejp.com",
+  "dir": "payout/2024-01_2024-01-15_designhousejp.com",
+  "domain": "designhousejp.com",
+  "url": "https://designhousejp.com/",
+  "file": "zenodo/payout__2024-01_2024-01-15_designhousejp.com.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "payout",
+  "site": "2024-01/2024-01-15/skema-tarifbnl.vercel.app",
+  "dir": "payout/2024-01_2024-01-15_skema-tarifbnl.vercel.app",
+  "domain": "skema-tarifbnl.vercel.app",
+  "url": "https://skema-tarifbnl.vercel.app/",
+  "file": "zenodo/payout__2024-01_2024-01-15_skema-tarifbnl.vercel.app.html",
+  "new": {
+   "verdict": "danger",
+   "checks": [
+    "card-form:danger"
+   ],
+   "titles": [
+    "Данные карты уходят в Telegram-бота"
+   ],
+   "info": [
+    "На странице есть форма для данных карты",
+    "На странице оплаты работает код сторонних сайтов"
+   ]
+  }
+ },
+ {
+  "cat": "payout",
+  "site": "2024-01/2024-01-15/gebyar-undian-bni-awal-tahun.resmi2024.art",
+  "dir": "payout/2024-01_2024-01-15_gebyar-undian-bni-awal-tahun.resmi2024.art",
+  "domain": "gebyar-undian-bni-awal-tahun.resmi2024.art",
+  "url": "https://gebyar-undian-bni-awal-tahun.resmi2024.art/",
+  "file": "zenodo/payout__2024-01_2024-01-15_gebyar-undian-bni-awal-tahun.resmi2024.art.html",
+  "new": {
+   "verdict": "danger",
+   "checks": [
+    "card-form:danger"
+   ],
+   "titles": [
+    "Данные карты уходят в Telegram-бота"
+   ],
+   "info": [
+    "На странице есть форма для данных карты",
+    "На странице оплаты работает код сторонних сайтов"
+   ]
+  }
+ },
+ {
+  "cat": "payout",
+  "site": "2024-01/2024-01-15/gebyarbni.github.io",
+  "dir": "payout/2024-01_2024-01-15_gebyarbni.github.io",
+  "domain": "gebyarbni.github.io",
+  "url": "https://gebyarbni.github.io/",
+  "file": "zenodo/payout__2024-01_2024-01-15_gebyarbni.github.io.html",
+  "new": {
+   "verdict": "ok",
+   "checks": [],
+   "titles": [],
+   "info": [
+    "На странице есть форма для данных карты",
+    "На странице оплаты работает код сторонних сайтов"
+   ]
+  }
+ },
+ {
+  "cat": "payout",
+  "site": "2024-01/2024-01-15/hadiahbnl2024.danaidjkt.com",
+  "dir": "payout/2024-01_2024-01-15_hadiahbnl2024.danaidjkt.com",
+  "domain": "hadiahbnl2024.danaidjkt.com",
+  "url": "https://hadiahbnl2024.danaidjkt.com/",
+  "file": "zenodo/payout__2024-01_2024-01-15_hadiahbnl2024.danaidjkt.com.html",
+  "new": {
+   "verdict": "danger",
+   "checks": [
+    "card-form:danger"
+   ],
+   "titles": [
+    "Данные карты уходят в Telegram-бота"
+   ],
+   "info": [
+    "На странице есть форма для данных карты",
+    "На странице оплаты работает код сторонних сайтов"
+   ]
+  }
+ },
+ {
+  "cat": "investment",
+  "site": "2024-01/2024-01-02/r0avest.from-ia.com",
+  "dir": "investment/2024-01_2024-01-02_r0avest.from-ia.com",
+  "domain": "r0avest.from-ia.com",
+  "url": "https://r0avest.from-ia.com/",
+  "file": "zenodo/investment__2024-01_2024-01-02_r0avest.from-ia.com.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "payout",
+  "site": "2024-01/2024-01-02/striotary.top",
+  "dir": "payout/2024-01_2024-01-02_striotary.top",
+  "domain": "striotary.top",
+  "url": "https://striotary.top/",
+  "file": "zenodo/payout__2024-01_2024-01-02_striotary.top.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "payout",
+  "site": "2024-01/2024-01-02/furniushop.top",
+  "dir": "payout/2024-01_2024-01-02_furniushop.top",
+  "domain": "furniushop.top",
+  "url": "https://furniushop.top/",
+  "file": "zenodo/payout__2024-01_2024-01-02_furniushop.top.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "payout",
+  "site": "2024-01/2024-01-02/funkoone.com",
+  "dir": "payout/2024-01_2024-01-02_funkoone.com",
+  "domain": "funkoone.com",
+  "url": "https://funkoone.com/",
+  "file": "zenodo/payout__2024-01_2024-01-02_funkoone.com.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "payout",
+  "site": "2024-01/2024-01-02/robinhoudaccountlogin.gitbook.io",
+  "dir": "payout/2024-01_2024-01-02_robinhoudaccountlogin.gitbook.io",
+  "domain": "robinhoudaccountlogin.gitbook.io",
+  "url": "https://robinhoudaccountlogin.gitbook.io/",
+  "file": "zenodo/payout__2024-01_2024-01-02_robinhoudaccountlogin.gitbook.io.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "crypto-drainer",
+  "site": "2024-01/2024-01-02/uniswap-interface-git-gas-uniswap.vercel.app",
+  "dir": "crypto-drainer/2024-01_2024-01-02_uniswap-interface-git-gas-uniswap.vercel.app",
+  "domain": "uniswap-interface-git-gas-uniswap.vercel.app",
+  "url": "https://uniswap-interface-git-gas-uniswap.vercel.app/",
+  "file": "zenodo/crypto-drainer__2024-01_2024-01-02_uniswap-interface-git-gas-uniswap.vercel.app.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "payout",
+  "site": "2024-01/2024-01-02/www.funkoone.com",
+  "dir": "payout/2024-01_2024-01-02_www.funkoone.com",
+  "domain": "www.funkoone.com",
+  "url": "https://www.funkoone.com/",
+  "file": "zenodo/payout__2024-01_2024-01-02_www.funkoone.com.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "investment",
+  "site": "2024-01/2024-01-02/robincoodloginue.gitbook.io",
+  "dir": "investment/2024-01_2024-01-02_robincoodloginue.gitbook.io",
+  "domain": "robincoodloginue.gitbook.io",
+  "url": "https://robincoodloginue.gitbook.io/",
+  "file": "zenodo/investment__2024-01_2024-01-02_robincoodloginue.gitbook.io.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "payout",
+  "site": "2024-01/2024-01-02/globalduimoveis.cfd",
+  "dir": "payout/2024-01_2024-01-02_globalduimoveis.cfd",
+  "domain": "globalduimoveis.cfd",
+  "url": "https://globalduimoveis.cfd/",
+  "file": "zenodo/payout__2024-01_2024-01-02_globalduimoveis.cfd.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "investment",
+  "site": "2024-01/2024-01-02/robinhoodliloginn.webflow.io",
+  "dir": "investment/2024-01_2024-01-02_robinhoodliloginn.webflow.io",
+  "domain": "robinhoodliloginn.webflow.io",
+  "url": "https://robinhoodliloginn.webflow.io/",
+  "file": "zenodo/investment__2024-01_2024-01-02_robinhoodliloginn.webflow.io.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "investment",
+  "site": "2024-01/2024-01-02/questradelive.online",
+  "dir": "investment/2024-01_2024-01-02_questradelive.online",
+  "domain": "questradelive.online",
+  "url": "https://questradelive.online/",
+  "file": "zenodo/investment__2024-01_2024-01-02_questradelive.online.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "payout",
+  "site": "2024-01/2024-01-02/gebyarbnipromo.bshsjsksks.com",
+  "dir": "payout/2024-01_2024-01-02_gebyarbnipromo.bshsjsksks.com",
+  "domain": "gebyarbnipromo.bshsjsksks.com",
+  "url": "https://gebyarbnipromo.bshsjsksks.com/",
+  "file": "zenodo/payout__2024-01_2024-01-02_gebyarbnipromo.bshsjsksks.com.html",
+  "new": {
+   "verdict": "danger",
+   "checks": [
+    "card-form:danger"
+   ],
+   "titles": [
+    "Данные карты уходят в Telegram-бота"
+   ],
+   "info": [
+    "На странице есть форма для данных карты",
+    "На странице оплаты работает код сторонних сайтов"
+   ]
+  }
+ },
+ {
+  "cat": "crypto-drainer",
+  "site": "2024-01/2024-01-02/ipfsfvm.xyz",
+  "dir": "crypto-drainer/2024-01_2024-01-02_ipfsfvm.xyz",
+  "domain": "ipfsfvm.xyz",
+  "url": "https://ipfsfvm.xyz/",
+  "file": "zenodo/crypto-drainer__2024-01_2024-01-02_ipfsfvm.xyz.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "investment",
+  "site": "2024-01/2024-01-02/robinhood-logino-accounttss.gitbook.io",
+  "dir": "investment/2024-01_2024-01-02_robinhood-logino-accounttss.gitbook.io",
+  "domain": "robinhood-logino-accounttss.gitbook.io",
+  "url": "https://robinhood-logino-accounttss.gitbook.io/",
+  "file": "zenodo/investment__2024-01_2024-01-02_robinhood-logino-accounttss.gitbook.io.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "payout",
+  "site": "2024-01/2024-01-29/www.colegiosuizo.net",
+  "dir": "payout/2024-01_2024-01-29_www.colegiosuizo.net",
+  "domain": "www.colegiosuizo.net",
+  "url": "https://www.colegiosuizo.net/",
+  "file": "zenodo/payout__2024-01_2024-01-29_www.colegiosuizo.net.html",
+  "new": {
+   "verdict": "warning",
+   "checks": [
+    "card-form:warning"
+   ],
+   "titles": [
+    "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+   ],
+   "info": [
+    "На странице есть форма для данных карты",
+    "На странице оплаты работает код сторонних сайтов"
+   ]
+  }
+ },
+ {
+  "cat": "payout",
+  "site": "2024-01/2024-01-29/ccs.ugytfbrbbdr9u.cloudns.biz",
+  "dir": "payout/2024-01_2024-01-29_ccs.ugytfbrbbdr9u.cloudns.biz",
+  "domain": "ccs.ugytfbrbbdr9u.cloudns.biz",
+  "url": "https://ccs.ugytfbrbbdr9u.cloudns.biz/",
+  "file": "zenodo/payout__2024-01_2024-01-29_ccs.ugytfbrbbdr9u.cloudns.biz.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "payout",
+  "site": "2024-01/2024-01-29/zzx.fw3534f54.cloudns.biz",
+  "dir": "payout/2024-01_2024-01-29_zzx.fw3534f54.cloudns.biz",
+  "domain": "zzx.fw3534f54.cloudns.biz",
+  "url": "https://zzx.fw3534f54.cloudns.biz/",
+  "file": "zenodo/payout__2024-01_2024-01-29_zzx.fw3534f54.cloudns.biz.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "payout",
+  "site": "2024-01/2024-01-29/booking.reservation560167.net",
+  "dir": "payout/2024-01_2024-01-29_booking.reservation560167.net",
+  "domain": "booking.reservation560167.net",
+  "url": "https://booking.reservation560167.net/",
+  "file": "zenodo/payout__2024-01_2024-01-29_booking.reservation560167.net.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "crypto-drainer",
+  "site": "2024-01/2024-01-29/mfctc.xyz",
+  "dir": "crypto-drainer/2024-01_2024-01-29_mfctc.xyz",
+  "domain": "mfctc.xyz",
+  "url": "https://mfctc.xyz/",
+  "file": "zenodo/crypto-drainer__2024-01_2024-01-29_mfctc.xyz.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "payout",
+  "site": "2024-01/2024-01-29/colegiosuizo.net",
+  "dir": "payout/2024-01_2024-01-29_colegiosuizo.net",
+  "domain": "colegiosuizo.net",
+  "url": "https://colegiosuizo.net/",
+  "file": "zenodo/payout__2024-01_2024-01-29_colegiosuizo.net.html",
+  "new": {
+   "verdict": "warning",
+   "checks": [
+    "card-form:warning"
+   ],
+   "titles": [
+    "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+   ],
+   "info": [
+    "На странице есть форма для данных карты",
+    "На странице оплаты работает код сторонних сайтов"
+   ]
+  }
+ },
+ {
+  "cat": "payout",
+  "site": "2024-01/2024-01-29/aety1.pages.dev",
+  "dir": "payout/2024-01_2024-01-29_aety1.pages.dev",
+  "domain": "aety1.pages.dev",
+  "url": "https://aety1.pages.dev/",
+  "file": "zenodo/payout__2024-01_2024-01-29_aety1.pages.dev.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "crypto-drainer",
+  "site": "2024-01/2024-01-04/passportimmutable.com",
+  "dir": "crypto-drainer/2024-01_2024-01-04_passportimmutable.com",
+  "domain": "passportimmutable.com",
+  "url": "https://passportimmutable.com/",
+  "file": "zenodo/crypto-drainer__2024-01_2024-01-04_passportimmutable.com.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "investment",
+  "site": "2024-01/2024-01-04/digitalcurrencyltd.com",
+  "dir": "investment/2024-01_2024-01-04_digitalcurrencyltd.com",
+  "domain": "digitalcurrencyltd.com",
+  "url": "https://digitalcurrencyltd.com/",
+  "file": "zenodo/investment__2024-01_2024-01-04_digitalcurrencyltd.com.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "investment",
+  "site": "2024-01/2024-01-04/funko-pop1.shop",
+  "dir": "investment/2024-01_2024-01-04_funko-pop1.shop",
+  "domain": "funko-pop1.shop",
+  "url": "https://funko-pop1.shop/",
+  "file": "zenodo/investment__2024-01_2024-01-04_funko-pop1.shop.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "payout",
+  "site": "2024-01/2024-01-04/funkos.net",
+  "dir": "payout/2024-01_2024-01-04_funkos.net",
+  "domain": "funkos.net",
+  "url": "https://funkos.net/",
+  "file": "zenodo/payout__2024-01_2024-01-04_funkos.net.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "payout",
+  "site": "2024-01/2024-01-04/www.funkovinylshop.com",
+  "dir": "payout/2024-01_2024-01-04_www.funkovinylshop.com",
+  "domain": "www.funkovinylshop.com",
+  "url": "https://www.funkovinylshop.com/",
+  "file": "zenodo/payout__2024-01_2024-01-04_www.funkovinylshop.com.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "investment",
+  "site": "2024-01/2024-01-04/thefidelityinvest.com",
+  "dir": "investment/2024-01_2024-01-04_thefidelityinvest.com",
+  "domain": "thefidelityinvest.com",
+  "url": "https://thefidelityinvest.com/",
+  "file": "zenodo/investment__2024-01_2024-01-04_thefidelityinvest.com.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "payout",
+  "site": "2024-01/2024-01-04/storesarcteryx.top",
+  "dir": "payout/2024-01_2024-01-04_storesarcteryx.top",
+  "domain": "storesarcteryx.top",
+  "url": "https://storesarcteryx.top/",
+  "file": "zenodo/payout__2024-01_2024-01-04_storesarcteryx.top.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "investment",
+  "site": "2024-01/2024-01-04/www.fidelitygrowth.org",
+  "dir": "investment/2024-01_2024-01-04_www.fidelitygrowth.org",
+  "domain": "www.fidelitygrowth.org",
+  "url": "https://www.fidelitygrowth.org/",
+  "file": "zenodo/investment__2024-01_2024-01-04_www.fidelitygrowth.org.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "investment",
+  "site": "2024-01/2024-01-04/www.thefidelityinvest.com",
+  "dir": "investment/2024-01_2024-01-04_www.thefidelityinvest.com",
+  "domain": "www.thefidelityinvest.com",
+  "url": "https://www.thefidelityinvest.com/",
+  "file": "zenodo/investment__2024-01_2024-01-04_www.thefidelityinvest.com.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "payout",
+  "site": "2024-01/2024-01-04/www.pinkobags.com",
+  "dir": "payout/2024-01_2024-01-04_www.pinkobags.com",
+  "domain": "www.pinkobags.com",
+  "url": "https://www.pinkobags.com/",
+  "file": "zenodo/payout__2024-01_2024-01-04_www.pinkobags.com.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "payout",
+  "site": "2024-01/2024-01-04/termsapps29-unusualyverify.line.pm",
+  "dir": "payout/2024-01_2024-01-04_termsapps29-unusualyverify.line.pm",
+  "domain": "termsapps29-unusualyverify.line.pm",
+  "url": "https://termsapps29-unusualyverify.line.pm/",
+  "file": "zenodo/payout__2024-01_2024-01-04_termsapps29-unusualyverify.line.pm.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "investment",
+  "site": "2024-01/2024-01-04/regular-helix-august.glitch.me",
+  "dir": "investment/2024-01_2024-01-04_regular-helix-august.glitch.me",
+  "domain": "regular-helix-august.glitch.me",
+  "url": "https://regular-helix-august.glitch.me/",
+  "file": "zenodo/investment__2024-01_2024-01-04_regular-helix-august.glitch.me.html",
+  "new": {
+   "verdict": "danger",
+   "checks": [
+    "card-form:danger",
+    "skimmer:warning"
+   ],
+   "titles": [
+    "Данные карты уходят в Telegram-бота",
+    "Скрипт читает поля карты и умеет отправлять данные",
+    "Скрипт читает поля карты и умеет отправлять данные"
+   ],
+   "info": [
+    "На странице есть форма для данных карты",
+    "На странице оплаты работает код сторонних сайтов"
+   ]
+  }
+ },
+ {
+  "cat": "crypto-drainer",
+  "site": "2024-01/2024-01-04/uniswap-v3.org-community-referral.in.net",
+  "dir": "crypto-drainer/2024-01_2024-01-04_uniswap-v3.org-community-referral.in.net",
+  "domain": "uniswap-v3.org-community-referral.in.net",
+  "url": "https://uniswap-v3.org-community-referral.in.net/",
+  "file": "zenodo/crypto-drainer__2024-01_2024-01-04_uniswap-v3.org-community-referral.in.net.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "investment",
+  "site": "2024-01/2024-01-04/fidelitygrowth.org",
+  "dir": "investment/2024-01_2024-01-04_fidelitygrowth.org",
+  "domain": "fidelitygrowth.org",
+  "url": "https://fidelitygrowth.org/",
+  "file": "zenodo/investment__2024-01_2024-01-04_fidelitygrowth.org.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "investment",
+  "site": "2024-01/2024-01-16/www.slotsup.com",
+  "dir": "investment/2024-01_2024-01-16_www.slotsup.com",
+  "domain": "www.slotsup.com",
+  "url": "https://www.slotsup.com/",
+  "file": "zenodo/investment__2024-01_2024-01-16_www.slotsup.com.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "crypto-drainer",
+  "site": "2024-01/2024-01-16/multi-fix.onrender.com",
+  "dir": "crypto-drainer/2024-01_2024-01-16_multi-fix.onrender.com",
+  "domain": "multi-fix.onrender.com",
+  "url": "https://multi-fix.onrender.com/",
+  "file": "zenodo/crypto-drainer__2024-01_2024-01-16_multi-fix.onrender.com.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "crypto-drainer",
+  "site": "2024-01/2024-01-16/zksync.claiming-token.run",
+  "dir": "crypto-drainer/2024-01_2024-01-16_zksync.claiming-token.run",
+  "domain": "zksync.claiming-token.run",
+  "url": "https://zksync.claiming-token.run/",
+  "file": "zenodo/crypto-drainer__2024-01_2024-01-16_zksync.claiming-token.run.html",
+  "new": {
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
+   "info": []
+  }
+ },
+ {
+  "cat": "crypto-drainer",
+  "site": "2024-01/2024-01-16/w.multi-opimalpad.buzz",
+  "dir": "crypto-drainer/2024-01_2024-01-16_w.multi-opimalpad.buzz",
+  "domain": "w.multi-opimalpad.buzz",
+  "url": "https://w.multi-opimalpad.buzz/",
+  "file": "zenodo/crypto-drainer__2024-01_2024-01-16_w.multi-opimalpad.buzz.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "tech-support",
+  "site": "2024-01/2024-01-25/jalalahmadkhan1323.github.io",
+  "dir": "tech-support/2024-01_2024-01-25_jalalahmadkhan1323.github.io",
+  "domain": "jalalahmadkhan1323.github.io",
+  "url": "https://jalalahmadkhan1323.github.io/",
+  "file": "zenodo/tech-support__2024-01_2024-01-25_jalalahmadkhan1323.github.io.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "investment",
+  "site": "2024-01/2024-01-25/glen-early-pantydraco.glitch.me",
+  "dir": "investment/2024-01_2024-01-25_glen-early-pantydraco.glitch.me",
+  "domain": "glen-early-pantydraco.glitch.me",
+  "url": "https://glen-early-pantydraco.glitch.me/",
+  "file": "zenodo/investment__2024-01_2024-01-25_glen-early-pantydraco.glitch.me.html",
+  "new": {
+   "verdict": "danger",
+   "checks": [
+    "card-form:danger",
+    "skimmer:warning"
+   ],
+   "titles": [
+    "Данные карты уходят в Telegram-бота",
+    "Скрипт читает поля карты и умеет отправлять данные",
+    "Скрипт читает поля карты и умеет отправлять данные"
+   ],
+   "info": [
+    "На странице есть форма для данных карты",
+    "На странице оплаты работает код сторонних сайтов"
+   ]
+  }
+ },
+ {
+  "cat": "investment",
+  "site": "2024-01/2024-01-25/relic-thankful-flavor.glitch.me",
+  "dir": "investment/2024-01_2024-01-25_relic-thankful-flavor.glitch.me",
+  "domain": "relic-thankful-flavor.glitch.me",
+  "url": "https://relic-thankful-flavor.glitch.me/",
+  "file": "zenodo/investment__2024-01_2024-01-25_relic-thankful-flavor.glitch.me.html",
+  "new": {
+   "verdict": "danger",
+   "checks": [
+    "card-form:danger",
+    "skimmer:warning"
+   ],
+   "titles": [
+    "Данные карты уходят в Telegram-бота",
+    "Скрипт читает поля карты и умеет отправлять данные",
+    "Скрипт читает поля карты и умеет отправлять данные"
+   ],
+   "info": [
+    "На странице есть форма для данных карты",
+    "На странице оплаты работает код сторонних сайтов"
+   ]
+  }
+ },
+ {
+  "cat": "investment",
+  "site": "2024-01/2024-01-03/cooked-quirky-gambler.glitch.me",
+  "dir": "investment/2024-01_2024-01-03_cooked-quirky-gambler.glitch.me",
+  "domain": "cooked-quirky-gambler.glitch.me",
+  "url": "https://cooked-quirky-gambler.glitch.me/",
+  "file": "zenodo/investment__2024-01_2024-01-03_cooked-quirky-gambler.glitch.me.html",
+  "new": {
+   "verdict": "danger",
+   "checks": [
+    "card-form:danger",
+    "skimmer:warning"
+   ],
+   "titles": [
+    "Данные карты уходят в Telegram-бота",
+    "Скрипт читает поля карты и умеет отправлять данные",
+    "Скрипт читает поля карты и умеет отправлять данные"
+   ],
+   "info": [
+    "На странице есть форма для данных карты",
+    "На странице оплаты работает код сторонних сайтов"
+   ]
+  }
+ },
+ {
+  "cat": "investment",
+  "site": "2024-01/2024-01-30/loguirobinhod.gitbook.io",
+  "dir": "investment/2024-01_2024-01-30_loguirobinhod.gitbook.io",
+  "domain": "loguirobinhod.gitbook.io",
+  "url": "https://loguirobinhod.gitbook.io/",
+  "file": "zenodo/investment__2024-01_2024-01-30_loguirobinhod.gitbook.io.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "tech-support",
+  "site": "2024-01/2024-01-30/www.pickahome.com",
+  "dir": "tech-support/2024-01_2024-01-30_www.pickahome.com",
+  "domain": "www.pickahome.com",
+  "url": "https://www.pickahome.com/",
+  "file": "zenodo/tech-support__2024-01_2024-01-30_www.pickahome.com.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "tech-support",
+  "site": "2024-01/2024-01-19/muddalatejavanichayasumaja.github.io",
+  "dir": "tech-support/2024-01_2024-01-19_muddalatejavanichayasumaja.github.io",
+  "domain": "muddalatejavanichayasumaja.github.io",
+  "url": "https://muddalatejavanichayasumaja.github.io/",
+  "file": "zenodo/tech-support__2024-01_2024-01-19_muddalatejavanichayasumaja.github.io.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "investment",
+  "site": "2024-01/2024-01-19/twintportalch-v3eservicescom458109.codeanyapp.com",
+  "dir": "investment/2024-01_2024-01-19_twintportalch-v3eservicescom458109.codeanyapp.com",
+  "domain": "twintportalch-v3eservicescom458109.codeanyapp.com",
+  "url": "https://twintportalch-v3eservicescom458109.codeanyapp.com/",
+  "file": "zenodo/investment__2024-01_2024-01-19_twintportalch-v3eservicescom458109.codeanyapp.com.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "tech-support",
+  "site": "2024-01/2024-01-23/padigpati.github.io",
+  "dir": "tech-support/2024-01_2024-01-23_padigpati.github.io",
+  "domain": "padigpati.github.io",
+  "url": "https://padigpati.github.io/",
+  "file": "zenodo/tech-support__2024-01_2024-01-23_padigpati.github.io.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "tech-support",
+  "site": "2024-01/2024-01-23/ombharti999.github.io",
+  "dir": "tech-support/2024-01_2024-01-23_ombharti999.github.io",
+  "domain": "ombharti999.github.io",
+  "url": "https://ombharti999.github.io/",
+  "file": "zenodo/tech-support__2024-01_2024-01-23_ombharti999.github.io.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ },
+ {
+  "cat": "tech-support",
+  "site": "2024-01/2024-01-23/bhaskarkumar1.github.io",
+  "dir": "tech-support/2024-01_2024-01-23_bhaskarkumar1.github.io",
+  "domain": "bhaskarkumar1.github.io",
+  "url": "https://bhaskarkumar1.github.io/",
+  "file": "zenodo/tech-support__2024-01_2024-01-23_bhaskarkumar1.github.io.html",
+  "new": {
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
+  }
+ }
+]

@@ -10,13 +10,17 @@
 <div class="box"><h1>Ваш заказ</h1>
   <p>Пуэр «Старое дерево», 100 г × 2</p><p>Улун «Молочный», 50 г × 1</p>
   <div class="total"><span>Итого</span><span>1 240 ₽</span></div></div>
+<!-- Как устроена оплата у честного магазина: поля карты без атрибута name (они не отправляются с формой),
+     их шифрует скрипт платёжного провайдера, а на сервер магазина уходит только одноразовый токен. -->
 <form class="box" action="/pay" method="post"><h2>Оплата картой</h2>
-  <label for="cc">Номер карты</label><input id="cc" name="cardnumber" autocomplete="cc-number" inputmode="numeric" placeholder="0000 0000 0000 0000">
-  <div class="row"><div><label for="exp">Срок действия</label><input id="exp" name="exp" autocomplete="cc-exp" placeholder="ММ/ГГ"></div>
-  <div><label for="cvc">CVV/CVC</label><input id="cvc" name="cvc" autocomplete="cc-csc" placeholder="123"></div></div>
+  <label for="cc">Номер карты</label><input id="cc" autocomplete="cc-number" inputmode="numeric" placeholder="0000 0000 0000 0000">
+  <div class="row"><div><label for="exp">Срок действия</label><input id="exp" autocomplete="cc-exp" placeholder="ММ/ГГ"></div>
+  <div><label for="cvc">CVV/CVC</label><input id="cvc" autocomplete="cc-csc" placeholder="123"></div></div>
+  <input type="hidden" name="payment_token" value="">
   <button type="submit">Оплатить 1 240 ₽</button>
-  <p class="muted">Форма отправляется на тот же сайт по защищённому соединению.</p>
+  <p class="muted">Данные карты шифрует платёжный провайдер (pay-psp.test), магазин получает только токен оплаты.</p>
 </form>
+<script src="https://pay-psp.test/widget.js"></script>
 </main>
 </body>
 </html>

@@ -20,14 +20,15 @@ async function load() {
       report.recipient.items.forEach((i) => ul.append(el('li', i.text)));
       who.append(ul);
     }
-    if (!report.findings.length) list.append(el('p', 'Ни одна из 18 проверок не сработала. Это не гарантия безопасности.', 'muted'));
+    if (!report.findings.length) list.append(el('p', 'Ни одна проверка не сработала. Это не гарантия безопасности.', 'muted'));
     for (const f of report.findings) {
       const d = el('details'); const s = el('summary');
       const tag = el('span', SEV[f.severity][0], 'tag'); tag.style.background = SEV[f.severity][1];
       s.append(tag, document.createTextNode(f.title)); d.append(s);
       f.details.forEach((t) => d.append(el('p', t, 'why')));
       const c = PGCatalog.byId(f.check);
-      if (c) { d.append(el('p', 'Откуда эта проверка: ' + c.scheme, 'why')); }
+      if (f.advice) d.append(el('p', 'Что делать: ' + f.advice, 'todo'));
+      if (c && c.cases && c.cases[0]) d.append(el('p', 'Где такое уже было: ' + c.cases[0].name + ' — ' + c.cases[0].what, 'why'));
       list.append(d);
     }
     const lim = document.getElementById('limits'); lim.textContent = '';

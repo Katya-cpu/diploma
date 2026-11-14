@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ru">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Способы и правила оплаты</title><link rel="stylesheet" href="page.css">
+<style>:root{--c:#2b4f8a} .modal{display:none}</style></head>
+<body>
+<div class="site"><div class="logo">Д</div><b>Платная дорога «Северный обход»</b><span>учебная страница · все данные вымышлены</span></div>
+<main>
+<div class="box"><h1>Способы и правила оплаты</h1>
+  <p>Оплатить проезд можно транспондером, на сайте по госномеру через СБП или картой, а также через банк по реквизитам.</p>
+  <h3>Реквизиты счёта</h3>
+  <p>Получатель: ООО «Северный обход»<br>ИНН 7701234560<br>Счёт: 40702810300000012345<br>БИК: 044599123</p>
+  <h3>Правила зачисления оплаты</h3>
+  <p>Сумма платежа должна быть не меньше стоимости проезда. Остаток средств в конце месяца переносится на следующий месяц.
+    Возврат оплаты — по заявлению в личном кабинете.</p>
+</div>
+<!-- Окно входа в личный кабинет: появляется только по нажатию «Войти». Пока оно скрыто, ничего не просит. -->
+<div class="modal" id="login"><form>
+  <label for="ph">Номер телефона</label><input id="ph" type="tel" name="FIELDS[PHONE]" placeholder="Номер телефона без +7 или 8">
+  <label for="code">Код</label><input id="code" type="tel" name="FIELDS[CODE]" placeholder="Введите код из смс">
+</form></div>
+</main>
+<script>
+/* сжатый код библиотеки (как ядро CMS): eval и new Function, поля карты не трогает */
+!function(w){var p=function(s){return w.JSON&&w.JSON.parse?w.JSON.parse(s):eval("("+s+")")};w.BX={parse:p,tpl:new Function("o","return o.a+o.b")}}(window);
+</script>
+</body>
+</html>

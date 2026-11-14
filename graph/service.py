@@ -21,6 +21,7 @@ import numpy as np
 from . import prepare as prep
 from . import train as tr
 from . import research as rs
+from . import explain as ex
 
 DATASET_URL = 'https://huggingface.co/datasets/bbfizp/AMLSim-HI-Small/resolve/main/HI-Small_Trans.csv'
 DATASET_SIZE = 475_643_652  # байт, для индикатора скачивания (приблизительно)
@@ -106,6 +107,29 @@ def state():
     return CACHE
 
 
+def what_if(c):
+    """Оценки всех счетов, если «закрыть глаза» сети на отправителей, получателей или всех соседей.
+    Модель та же; считается один раз (несколько секунд) при первой проверке перевода."""
+    if 'what_if' not in c:
+        import torch
+        from sklearn.isotonic import IsotonicRegression
+        g, m = c['g'], c['metrics']
+        p = m['params']
+        model = tr.GraphSAGE(g['x'].shape[1], p['hidden'], p['layers'], p['dropout'])
+        model.load_state_dict(torch.load(tr.MODELS / 'graphsage.pt'))
+        model.eval()
+        n = len(g['y'])
+        a_in, a_out = tr.mean_adjacency(c['edges'], n, False), tr.mean_adjacency(c['edges'], n, True)
+        iso = IsotonicRegression(out_of_bounds='clip', y_min=0, y_max=1).fit(c['raw_scores'][c['split'] == 2], g['y'][c['split'] == 2])
+        xt = torch.tensor(g['x'])
+        out = {}
+        with torch.no_grad():
+            for key, ui, uo in (('no_senders', False, True), ('no_receivers', True, False), ('no_neighbors', False, False)):
+                out[key] = iso.predict(ex.forward(model, xt, a_in, a_out, ui, uo).numpy()).astype(np.float32)
+        c['what_if'] = out
+    return c['what_if']
+
+
 def neighbors(c, i, side, limit=6):
     """Отправители (side=1: рёбра X→i) или получатели (side=0: рёбра i→X) счёта i."""
     e, order = c['edges'], c['by_dst'] if side == 1 else c['by_src']
@@ -159,6 +183,7 @@ def check(payload):
         'true_label': int(c['g']['y'][i]), 'explain': explain(c, i),
         'senders': senders, 'receivers': receivers, 'n_senders': n_in, 'n_receivers': n_out,
         'avg_incoming': float(raw[2] / max(raw[0], 1)),
+        'what_if': {k: float(v[i]) for k, v in what_if(c).items()},
     }
     if sender:
         if sender in c['index']:
@@ -225,7 +250,7 @@ def pattern(full_path):
 def status():
     out = {'dataset': {'path': str(prep.CSV), 'exists': prep.CSV.exists(),
                        'size_mb': round(prep.CSV.stat().st_size / 2**20) if prep.CSV.exists() else 0},
-           'prepared': prep.OUT.exists(), 'model': None, 'defaults': tr.DEFAULTS}
+           'prepared': prep.OUT.exists(), 'model': None, 'explained': ex.OUT.exists(), 'defaults': tr.DEFAULTS}
     m = tr.MODELS / 'metrics.json'
     if m.exists():
         out['model'] = json.loads(m.read_text(encoding='utf-8'))
@@ -244,7 +269,13 @@ def handle(method, route, payload, full_path):
     if method == 'POST' and route == '/api/graph/prepare':
         return run_job('Подготовка графа', lambda say: prep.prepare(say))
     if method == 'POST' and route == '/api/graph/train':
-        return run_job('Обучение моделей', lambda say: (tr.train(payload, say), CACHE.clear(), rs.run(say)))
+        return run_job('Обучение моделей', lambda say: (tr.train(payload, say), CACHE.clear(), ex.run(say), rs.run(say)))
+    if method == 'GET' and route == '/api/graph/explain':
+        if not ex.OUT.exists():
+            raise ApiError('Объяснение ещё не построено: обучите модель или нажмите «4. Разбор модели» на вкладке «Модель и обучение».')
+        return json.loads(ex.OUT.read_text(encoding='utf-8'))
+    if method == 'POST' and route == '/api/graph/explain':
+        return run_job('Разбор модели', lambda say: ex.run(say))
     if method == 'GET' and route == '/api/graph/research':
         if not rs.OUT.exists():
             raise ApiError('Исследование ещё не выполнено: нажмите «4. Исследование схем» на вкладке «Модель и обучение».')

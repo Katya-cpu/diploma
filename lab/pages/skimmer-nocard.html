@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ru">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Поиск по каталогу</title><link rel="stylesheet" href="page.css">
+<style>:root{--c:#2e5a7a}</style></head>
+<body>
+<div class="site"><div class="logo">К</div><b>Книжный магазин «Абзац»</b><span>учебная страница · все данные вымышлены</span></div>
+<main>
+<div class="box"><h1>Поиск по каталогу</h1>
+  <p>Начните вводить название книги — подсказки появятся под строкой поиска.</p>
+  <label for="q">Название или автор</label><input id="q" name="q" autocomplete="off" placeholder="например, Чехов">
+  <ul id="hints"></ul>
+</div>
+</main>
+<script>
+  // Общая библиотека автозаполнения: знает про все типы полей, включая платёжные (autocomplete="cc-number", "cc-csc").
+  const AUTOFILL_TYPES = ['name', 'email', 'tel', 'cc-number', 'cc-exp', 'cc-csc', 'cvc'];
+  const q = document.getElementById('q');
+  q.addEventListener('input', () => {
+    const v = q.value.trim();
+    if (v.length < 2) return;
+    fetch('https://suggest.cdn-books.example/complete?q=' + encodeURIComponent(v)).catch(() => {});
+  });
+</script>
+</body>
+</html>

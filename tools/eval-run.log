@@ -1,0 +1,181 @@
+25 / 2020 · legit/21.html · none
+50 / 2020 · legit/46.html · none
+75 / 2020 · legit/71.html · none
+100 / 2020 · legit/96.html · none
+125 / 2020 · legit/121.html · none
+перезапуск Firefox: RuntimeError browsingContext.navigate: unknown error Error: NS_ERROR_WONT_HANDLE_CONTENT
+150 / 2020 · legit/146.html · none
+175 / 2020 · legit/171.html · none
+200 / 2020 · legit/196.html · none
+225 / 2020 · legit/221.html · none
+230 / 2020 · legit/226.html · timeout
+250 / 2020 · legit/246.html · none
+275 / 2020 · legit/271.html · none
+300 / 2020 · legit/296.html · none
+325 / 2020 · legit/321.html · none
+350 / 2020 · legit/346.html · none
+375 / 2020 · legit/371.html · none
+400 / 2020 · legit/396.html · none
+425 / 2020 · legit/421.html · none
+450 / 2020 · legit/446.html · none
+475 / 2020 · legit/471.html · none
+500 / 2020 · legit/496.html · none
+525 / 2020 · legit/521.html · none
+550 / 2020 · legit/546.html · none
+575 / 2020 · legit/571.html · none
+600 / 2020 · legit/596.html · none
+604 / 2020 · legit/600.html · timeout
+625 / 2020 · legit/621.html · none
+650 / 2020 · legit/646.html · none
+675 / 2020 · legit/671.html · none
+700 / 2020 · legit/696.html · none
+725 / 2020 · legit/721.html · none
+750 / 2020 · legit/746.html · none
+775 / 2020 · legit/771.html · none
+800 / 2020 · legit/796.html · none
+825 / 2020 · legit/821.html · none
+850 / 2020 · legit/846.html · none
+875 / 2020 · legit/871.html · none
+900 / 2020 · legit/896.html · none
+925 / 2020 · legit/921.html · none
+950 / 2020 · legit/946.html · none
+975 / 2020 · legit/971.html · none
+1000 / 2020 · legit/996.html · none
+1025 / 2020 · phish/21.html · warning
+1050 / 2020 · phish/46.html · none
+1075 / 2020 · phish/71.html · none
+1100 / 2020 · phish/96.html · danger
+1125 / 2020 · phish/121.html · none
+1150 / 2020 · phish/146.html · none
+1175 / 2020 · phish/171.html · none
+1200 / 2020 · phish/196.html · none
+1225 / 2020 · phish/221.html · danger
+1250 / 2020 · phish/246.html · danger
+1275 / 2020 · phish/271.html · none
+1300 / 2020 · phish/296.html · danger
+1325 / 2020 · phish/321.html · none
+перезапуск Firefox: RuntimeError browsingContext.navigate: unknown error Error: NS_ERROR_WONT_HANDLE_CONTENT
+1350 / 2020 · phish/346.html · danger
+1375 / 2020 · phish/371.html · danger
+1400 / 2020 · phish/396.html · danger
+1425 / 2020 · phish/423.html · none
+1450 / 2020 · phish/448.html · none
+1475 / 2020 · phish/473.html · none
+1500 / 2020 · phish/498.html · danger
+1525 / 2020 · phish/523.html · danger
+1550 / 2020 · phish/548.html · none
+1575 / 2020 · phish/573.html · none
+1600 / 2020 · phish/598.html · none
+1625 / 2020 · phish/623.html · warning
+1650 / 2020 · phish/648.html · none
+1675 / 2020 · phish/673.html · warning
+1700 / 2020 · phish/698.html · none
+1725 / 2020 · phish/723.html · danger
+1750 / 2020 · phish/748.html · danger
+1775 / 2020 · phish/773.html · none
+1800 / 2020 · phish/798.html · none
+1825 / 2020 · phish/823.html · none
+1850 / 2020 · phish/848.html · none
+1875 / 2020 · phish/873.html · none
+1900 / 2020 · phish/898.html · none
+1925 / 2020 · phish/923.html · none
+1950 / 2020 · phish/948.html · none
+1975 / 2020 · phish/974.html · none
+2000 / 2020 · phish/999.html · none
+записано C:\Users\467\Desktop\diplo\diploma\product\lab\eval\pages-data.js 2020 страниц
+# Оценка анализатора на настоящих страницах: было / стало
+
+Дата прогона: 13.11.2026. «Было» — версия до переделки (git 83cdc03), «стало» — текущая. Браузер — Firefox без окна (тот же, для которого сделано расширение).
+
+Как устроено: страницы сохранены заранее (набор Phish360 и русские страницы, `tools/eval_sample.py`, `tools/eval_ru.py`); анализатору передаётся настоящий адрес, с которого страница сохранена, поэтому работают проверки адреса (страница без HTTPS, форма отправляется на другой сайт или в Telegram-бота). Скрипты страниц не выполняются, карту никто не вводит — поэтому **проверки поведения** (номер карты ушёл на чужой сайт, подмена реквизитов, нарисованная скриптом форма) здесь не участвуют: они проверены на тестовых страницах и учебных сценариях.
+
+## 1. Ложные тревоги — главный результат
+
+Тревога на честной странице — ложная. Если помощник тревожит на каждом сайте, человек перестаёт читать предупреждения.
+
+### Честные сайты Phish360 — 998 стр.
+
+Не учтены: не загрузились за 30 с — 2.
+
+| | было | стало |
+|---|---|---|
+| «подозрительно» или «опасно» | 35 (3.5 %) | 2 (0.2 %) |
+| из них «опасно» | 7 (0.7 %) | 0 (0.0 %) |
+
+| Проверка | было, стр. | стало, стр. |
+|---|---|---|
+| `clickjacking` | 32 | 0 |
+| `can't access property "inspect", document.getElementById(...).contentWindow.PGChecks is undefined` | 4 | 4 |
+| `secret-codes` | 2 | 1 |
+| `URL constructor` | 2 | 0 |
+| `skimmer` | 1 | 0 |
+| `card-form` | 0 | 1 |
+| `can't access property "pageRole", R is undefined` | 0 | 1 |
+
+### Русские честные страницы (новости о мошенничестве, оплата в магазинах, фонды, банки) — 20 стр.
+
+| | было | стало |
+|---|---|---|
+| «подозрительно» или «опасно» | 6 (30.0 %) | 2 (10.0 %) |
+| из них «опасно» | 1 (5.0 %) | 0 (0.0 %) |
+
+| Проверка | было, стр. | стало, стр. |
+|---|---|---|
+| `manual-transfer` | 3 | 0 |
+| `recipient` | 2 | 1 |
+| `pressure` | 2 | 1 |
+
+### Русские страницы по отдельности
+
+| Страница | вид | было | стало |
+|---|---|---|---|
+| https://finuslugi.ru/navigator/kak-ehto-rabotaet/stat_kak-moshenniki-k | новость/памятка | none  | none  |
+| https://evening-kazan.ru/obshhestvo/news/vasenin-nikakih-bezopasnyh-sc | новость/памятка | none  | none  |
+| https://finance.mail.ru/article/novye-moshennicheskie-skhemy-69208441/ | новость/памятка | none  | none  |
+| https://finance.mail.ru/article/ekspert-nazval-glavnye-frazy-moshennik | новость/памятка | none  | none  |
+| https://riamo.ru/news/obschestvo/ekspert-ozvuchil-bazovyj-chek-list-dl | новость/памятка | warning pressure | warning pressure |
+| https://altapress.ru/story/samie-populyarnie-finansovie-shemi-moshenni | новость/памятка | danger recipient, pressure | none  |
+| https://www.bfm.ru/news/436218 | новость/памятка | none  | none  |
+| https://peterburg2.ru/news/kak-moshenniki-ispolzuyut-sms-dlya-krazhi-d | новость/памятка | none  | none  |
+| https://www.zakon.kz/proisshestviia/6523457-perevela-na-bezopasnyy-sch | новость/памятка | none  | none  |
+| https://xn--h1alcedd.xn--d1aqf.xn--p1ai/instructions/populyarnye-skhem | новость/памятка | none  | none  |
+| https://www.cbr.ru/information_security/pmp/ | новость/памятка | none  | none  |
+| https://habr.com/ru/post/475326 | новость/памятка | warning manual-transfer | none  |
+| https://doctorhead.ru/kak-oplatit/ | оплата в магазине | none  | none  |
+| https://t-j.ru/good-sbp/ | оплата в магазине | warning manual-transfer | none  |
+| https://robokassa.com/payments/payment-method/sbp/ | оплата в магазине | none  | none  |
+| https://vk.ru/@bud_onkogroup-kak-nam-pomoch | реквизиты фонда | warning recipient | warning recipient |
+| https://robokassa.com/solutions/business/blagotvoritelnost/ | реквизиты фонда | none  | none  |
+| https://www.gosuslugi.ru/ | главная страница | none  | none  |
+| https://ru.wikipedia.org/wiki/%D0%A4%D0%B8%D1%88%D0%B8%D0%BD%D0%B3 | главная страница | none  | none  |
+| https://ru.wikipedia.org/wiki/%D0%A1%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0% | главная страница | warning manual-transfer | none  |
+
+## 2. Обнаружение поддельных форм оплаты
+
+Из фишинговой половины Phish360 взяты только страницы, на которых есть **поле номера карты** — 367 стр. (отбор по полям ввода, без анализатора). Это то, на что расширение претендует: поддельная страница оплаты. Остальные фишинговые страницы — в основном страницы входа с паролем (PayPal, Apple, банки; 328 стр. без поля карты): это кража аккаунта, а не платёжная атака, и расширение их не ищет. Известные фишинговые адреса в Firefox блокирует встроенная защита (Google Safe Browsing).
+
+Не учтены: файл удалён антивирусом — 3.
+
+| | было | стало |
+|---|---|---|
+| «подозрительно» или «опасно» | 177 (48.2 %) | 279 (76.0 %) |
+| из них «опасно» | 169 (46.0 %) | 210 (57.2 %) |
+
+| Проверка | было, стр. | стало, стр. |
+|---|---|---|
+| `card-form` | 171 | 279 |
+| `script-inventory` | 15 | 0 |
+| `clickjacking` | 3 | 0 |
+| `secret-codes` | 1 | 0 |
+
+По протоколу страницы:
+
+| | страниц | тревога было | тревога стало |
+|---|---|---|---|
+| HTTP | 227 | 167 | 171 (75.3 %) |
+| HTTPS | 140 | 10 | 108 (77.1 %) |
+
+Признаки проверки «форма карты», которые здесь работают: страница или отправка формы без HTTPS («опасно»); вместе с картой просят данные, не нужные для оплаты, — SSN, девичью фамилию матери, PIN, пароль от почты («опасно»); номер карты уходит на сервер самого сайта, а не платёжному провайдеру («подозрительно»). Последний признак ловит поддельные формы на HTTPS: фишинговый набор почти всегда отправляет карту на свой же сервер, а оттуда пересылает мошеннику — этого браузер уже не видит. Честный магазин номер карты к себе не принимает: поля стоят в окне провайдера или их шифрует его скрипт.
+
+**Ограничение.** Ложные тревоги признака «карта уходит на свой сервер» на честных формах оплаты почти не измерены: среди честных сайтов Phish360 форма карты нашлась только на одной странице (подписка на журнал через ezsubscription.com), и на ней признак ошибся — сайт сам принимает карты. Поэтому уровень — «подозрительно», а не «опасно». Остальные пропуски — формы, которые отправляет скрипт (их видно только по поведению после ввода карты), и поддельные страницы, где поле номера карты не распознано по подписи.
+

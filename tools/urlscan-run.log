@@ -1,0 +1,109 @@
+﻿
+brand    none     avito-payment.com                          
+brand    none     cdek.fast-zoodelivery.ru                   
+brand    none     gosuslugicdek-app.com                      
+brand    none     gosuslugicdek-app.online                   
+brand    none     vzj4noiy-ozon.easycops.com                 
+brand    none     s902ix4f-wildberries.easycops.com          
+brand    none     boxberry-trackcode1lsrety324ewkft.pages.de 
+brand    none     vivid-teal-rq7lwf1o-dpj1mxieiw1c.edgeone.d 
+brand    none     pochta-express-delivery.ru                 
+brand    danger   checkout.desbau.com                        Страница выдаёт себя за окно оплаты Stripe
+brand    danger   lilian-maria.de                            Страница выдаёт себя за окно оплаты Stripe
+brand    none     www.sidermarsrl.it                         
+brand    none     www.flatsrl.com                            
+brand    none     www.progettienergetici.com                 
+brand    none     www.musikfactory.it                        
+brand    none     www.skydivecostadargento.com               
+clickfix danger   colimaenmovimiento.com                     Поддельная проверка «я не робот»: вас просят запустить ком
+анду
+clickfix danger   browser-architecture-sync.com              Поддельная проверка «я не робот»: вас просят запустить ком
+анду
+clickfix warning  hotscriptz.com                             Проверка «я не робот» нарисована самой страницей
+clickfix danger   www.colegiojeanpiaget.com.br               Поддельная проверка «я не робот»: вас просят запустить ком
+анду
+clickfix none     lrd.adv.br                                 
+clickfix danger   chomleaestates.co.uk                       Поддельная проверка «я не робот»: вас просят запустить ком
+анду
+clickfix danger   viventuresgroup.com                        Поддельная проверка «я не робот»: вас просят запустить ком
+анду
+clickfix none     gurudaspurbarta.com                        
+clickfix none     arsproanima.pl                             
+clickfix none     floorblock.co                              
+clickfix none     apr-hamburg.de                             
+clickfix none     ironlionservices.com                       
+clickfix none     heallivingsolutions.com                    
+clickfix none     doxologylabs.com                           
+clickfix none     elitepuppypets.com                         
+clickfix none     federicolosito.com                         
+clickfix none     davidthompsoncoaching.com                  
+clickfix none     dkjglobal.com                              
+clickfix danger   brookheavyhaulingllc.com                   Поддельная проверка «я не робот»: вас просят запустить ком
+анду
+clickfix none     cleavesecurity.com                         
+clickfix none     cirrus-living.de                           
+clickfix none     singpa.com                                 
+clickfix none     tajdarmedicalservices.com                  
+clickfix danger   sandyheatingandair.com                     Поддельная проверка «я не робот»: вас просят запустить ком
+анду
+clickfix none     sgm-holdings.com                           
+clickfix danger   piramida.club                              Поддельная проверка «я не робот»: вас просят запустить ком
+анду
+clickfix danger   serenehomeliving.net                       Поддельная проверка «я не робот»: вас просят запустить ком
+анду
+clickfix danger   princetonmtg.com                           Поддельная проверка «я не робот»: вас просят запустить ком
+анду
+clickfix none     primverlag.at                              
+clickfix none     micolomero.it                              
+clickfix none     patrickhufschmidt.com                      
+clickfix none     nexusflownetwork.com                       
+clickfix danger   mendrake.com                               Поддельная проверка «я не робот»: вас просят запустить ком
+анду
+clickfix none     lovelivingholdings.com                     
+clickfix none     marcalexanderprosthodontics.com            
+clickfix none     jerryelectricllc.com                       
+clickfix none     whithaven.com                              
+clickfix none     listverkfabrikken.no                       
+clickfix none     truselfcounselingservices.com              
+clickfix none     ystglobalmanagement.com                    
+clickfix none     whiskerwalkz.com                           
+clickfix none     tarmaweb.com                               
+clickfix danger   virexontech.com                            Поддельная проверка «я не робот»: вас просят запустить ком
+анду
+clickfix warning  hillorganicproducts.com                    Проверка «я не робот» нарисована самой страницей
+clickfix none     decoupageguild.co.uk                       
+clickfix none     bakirkoytasimacilik.cyou                   
+clickfix none     beajumper.com.br                           
+clickfix none     oasisflproperties.com                      
+clickfix none     aylwinimobililiaria.com                    
+clickfix none     subhashini.in                              
+clickfix none     www.altaibadates.com                       
+clickfix none     save-meglobaltech.com                      
+clickfix none     valley-res.com                             
+clickfix warning  rebelsupply.co.uk                          Проверка «я не робот» нарисована самой страницей
+clickfix danger   buyantivirus.us                            Поддельная проверка «я не робот»: вас просят запустить ком
+анду
+clickfix danger   maswo.ca                                   Поддельная проверка «я не робот»: вас просят запустить ком
+анду
+clickfix none     clinicadentalgarciaselva.com               
+clickfix danger   www.brunofoglia.it                         Поддельная проверка «я не робот»: вас просят запустить ком
+анду
+clickfix none     coopercapitalholdings.com                  
+clickfix danger   oroojloo.com                               Поддельная проверка «я не робот»: вас просят запустить ком
+анду
+subscription warning  oplata.poslaniya.su                        Цена-приманка: сейчас 29 ₽, а дальше — регулярные спис
+ания по 1 499 ₽
+pressure none     gibdd-proverka.com                         
+safe-account danger   fnsnalog-ru.online                         Страница пугает взломом и просит позвонить по номеру
+gov      none     socportalfns3.shop                         
+gov      none     gov-gibdd.ru                               
+fake-app none     gosscomitetdfrs.online                     
+card     none     gemola.shop                                
+skimmer  none     paradisecoffee.ky                          
+skimmer  none     canadianscholars.ca                        
+skimmer  none     runningbelts.com.au                        
+skimmer  none     www.bilsdale-worms.co.uk                   
+skimmer  none     www.sklepszostak.pl                        
+skimmer  none     teragu.com                                 
+
+

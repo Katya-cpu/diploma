@@ -21,7 +21,7 @@ FIREFOX = r'C:\Program Files\Mozilla Firefox\firefox.exe'
 PORT = 9333
 SHOTS = ROOT / 'tools' / 'firefox-shots'
 PAGES = sys.argv[1:] or ['delivery.html', 'marketplace-transfer.html', 'fine-qr.html', 'tea-shop-skimmer.html',
-                         'invoice-swap.html', 'prize-clickjacking.html', 'honest-receipt.html']
+                         'invoice-swap.html', 'prize-clickjacking.html', 'trial-subscription.html', 'honest-receipt.html']
 
 
 class Bidi:
@@ -44,14 +44,18 @@ async def main():
     proc = subprocess.Popen([FIREFOX, '--remote-debugging-port', str(PORT), '--profile', profile, '--no-remote', '--headless',
                              '--width', '1280', '--height', '950'])
     try:
-        for _ in range(60):
+        # Firefox открывает порт раньше, чем готов принимать команды: первые соединения он может оборвать.
+        # Поэтому повторяем и подключение, и создание сеанса, пока не получится.
+        for _ in range(90):
             try:
                 ws = await websockets.connect(f'ws://127.0.0.1:{PORT}/session', max_size=50_000_000)
+                b = Bidi(ws)
+                await asyncio.wait_for(b.cmd('session.new', {'capabilities': {}}), 15)
                 break
-            except OSError:
-                await asyncio.sleep(0.5)
-        b = Bidi(ws)
-        await b.cmd('session.new', {'capabilities': {}})
+            except (OSError, asyncio.TimeoutError, websockets.exceptions.WebSocketException):
+                await asyncio.sleep(0.7)
+        else:
+            raise RuntimeError('Firefox не ответил по протоколу WebDriver BiDi')
         ext = await b.cmd('webExtension.install', {'extensionData': {'type': 'path', 'path': str(ROOT / 'extension')}})
         print('Расширение установлено:', ext)
         tree = await b.cmd('browsingContext.getTree', {})
