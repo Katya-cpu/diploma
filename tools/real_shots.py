@@ -2,8 +2,9 @@
 
 Открывает сохранённый код страниц в отдельном Firefox с установленным расширением (extension/) и снимает экран
 вместе с панелью помощника. Копии страниц — те же, что для анализатора (datasets/web_pages/eval_sample/…):
-в каждую вставлен запрет скриптов и сетевых запросов (Content-Security-Policy), поэтому код мошенников не выполняется,
-а внешние картинки и стили не загружаются — страница выглядит проще, чем в жизни. Поэтому рядом кладётся
+в каждую вставлен запрет скриптов и сетевых запросов страницы (Content-Security-Policy), поэтому код мошенников
+не выполняется, а внешние картинки и стили не загружаются (само расширение, как у пользователя, скачивает текст внешних
+скриптов для проверки) — страница выглядит проще, чем в жизни. Поэтому рядом кладётся
 оригинальный снимок той же страницы (urlscan.io или набор Zenodo), если он есть.
 
 Вход: tools/real-pages.json — список {id, file (путь внутри /corpus/), orig (снимок оригинала или null)}.
@@ -41,11 +42,14 @@ def font(size):
     return ImageFont.load_default()
 
 
-def compose(ext_png, orig_path, out):
+def compose(ext_png, orig_path, out, blur=False):
+    from PIL import ImageFilter
     ext = Image.open(io.BytesIO(ext_png)).convert('RGB')
     cap = 34
     if orig_path and Path(orig_path).exists():
         orig = Image.open(orig_path).convert('RGB')
+        if blur:  # страница-приманка с откровенными картинками: оригинал размыт
+            orig = orig.filter(ImageFilter.GaussianBlur(28))
         orig = orig.crop((0, 0, orig.width, min(orig.height, int(orig.width * H / W))))
         orig = orig.resize((W, int(orig.height * W / orig.width)))
         canvas = Image.new('RGB', (W * 2 + 16, max(orig.height, H) + cap), 'white')
@@ -85,7 +89,7 @@ async def run(items):
                 await asyncio.wait_for(b.cmd('browsingContext.navigate', {'context': ctx, 'url': 'http://127.0.0.1:8765/corpus/' + it['file'], 'wait': 'complete'}), 25)
             except asyncio.TimeoutError:
                 pass
-            await asyncio.sleep(3)
+            await asyncio.sleep(it.get('wait', 8))  # расширение ждёт внешние скрипты до 4 с
             if it.get('type'):  # учебные копии скиммеров: вводим тестовую карту с клавиатуры, как человек
                 sel = json.dumps(it['type'])
                 await b.cmd('script.evaluate', {'expression': f'document.querySelector({sel}).focus(); 1', 'target': {'context': ctx}, 'awaitPromise': False})
@@ -101,7 +105,7 @@ async def run(items):
             except Exception as e:
                 print('нет снимка', it['id'], e, flush=True)
                 continue
-            compose(base64.b64decode(shot['data']), it.get('orig'), OUT / (it['id'] + '.jpg'))
+            compose(base64.b64decode(shot['data']), it.get('orig'), OUT / (it['id'] + '.jpg'), blur=bool(it.get('blur')))
             print(f'{k + 1}/{len(items)}', it['id'], flush=True)
     finally:
         proc.terminate()

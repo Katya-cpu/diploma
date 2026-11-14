@@ -41,6 +41,18 @@ QUERIES = {
     'subscription': ['page.title:"Премиум"', 'page.title:"Пробный период"'],
     'fake-app': ['page.url:*.apk AND task.tags:phishing'],
 }
+# Запросы со звёздочкой urlscan.io выполняет только с ключом.
+KEY_QUERIES = {
+    'fines': ['page.domain:*ezpass* AND NOT page.apexDomain:(e-zpassny.com OR ezpassnj.com OR ezpassma.com OR ezpassva.com OR ezpassmd.com OR e-zpassiag.com)',
+              'page.domain:*toll* AND task.tags:phishing', 'page.domain:*shtraf*', 'page.domain:*gibdd* AND NOT page.apexDomain:(gibdd.ru OR xn--90adear.xn--p1ai)',
+              'page.title:*штраф* AND page.title:*оплат*'],
+    'safe-account': ['page.title:*взлом*', 'page.title:*безопасный счет*', 'page.title:*резервный счет*'],
+    'fake-app': ['page.url:*.apk AND task.tags:phishing', 'page.url:*.apk AND page.title:*банк*'],
+    'tech-support': ['page.title:*Windows Defender* AND NOT page.domain:*microsoft.com', 'page.title:*virus* AND page.title:*detected*'],
+    'investment': ['page.title:*инвест* AND page.title:*доход*', 'page.title:*брокер* AND task.tags:phishing'],
+    'subscription': ['page.title:*подписк* AND page.title:*1 ₽*', 'page.title:*за 1 рубль*'],
+    'fake-payment': ['page.title:*Безопасная сделка*', 'page.domain:*avito* AND page.title:*оплат*', 'page.domain:*cdek* AND page.title:*оплат*'],
+}
 FILTER = ' AND page.status:200 AND date:>now-365d'
 
 
@@ -63,7 +75,11 @@ def main():
     index = json.loads(idx_path.read_text(encoding='utf-8')) if idx_path.exists() else []
     seen = {r['uuid'] for r in index}
     domains = {r['domain'] for r in index}
-    for scheme, qs in QUERIES.items():
+    allq = {k: list(v) for k, v in QUERIES.items()}
+    if key:
+        for k, v in KEY_QUERIES.items():
+            allq.setdefault(k, []).extend(v)
+    for scheme, qs in allq.items():
         for q in qs:
             url = 'https://urlscan.io/api/v1/search/?' + urllib.parse.urlencode({'q': q + FILTER, 'size': 60})
             try:

@@ -89,13 +89,16 @@ def collect():
                      'title': what, 'note': v.get('note', ''), 'file': file, 'type': sel, 'orig': None,
                      'link': 'https://github.com/pci-tamper-protect/e-skimming-labs', 'verdict': v.get('verdict'), 'titles': v.get('titles', [])})
     rev = load(ROOT / 'tools' / 'urlscan2-review.json') or {}
+    res2 = {r['uuid']: r for r in load(ROOT / 'tools' / 'urlscan2-results.json')}
     for r in load(WP / 'urlscan2' / 'index.json'):
         if r['domain'] in rev.get('skip', []) or any(r['domain'].startswith(x) for x in rev.get('skip_prefix', [])):
             continue
         sch = next((v for k, v in rev.get('scheme', {}).items() if k in r['domain']), r['scheme'])
         rows.append({'id': 'v-' + r['uuid'][:13], 'scheme': sch, 'source': 'urlscan.io', 'date': r['time'][:10], 'domain': r['domain'],
-                     'title': r['title'], 'file': None, 'orig': str(WP / 'urlscan2' / r['uuid'] / 'screenshot.png'),
-                     'link': f"https://urlscan.io/result/{r['uuid']}/", 'verdict': None, 'titles': [],
+                     'title': r['title'], 'file': res2[r['uuid']]['file'] if r['uuid'] in res2 else None,
+                     'orig': str(WP / 'urlscan2' / r['uuid'] / 'screenshot.png'), 'link': f"https://urlscan.io/result/{r['uuid']}/",
+                     'verdict': res2[r['uuid']]['new']['verdict'] if r['uuid'] in res2 else None,
+                     'titles': res2[r['uuid']]['new'].get('titles', []) if r['uuid'] in res2 else [],
                      'note': next((v for k, v in rev.get('notes', {}).items() if re.search(k, r['domain'])), '')})
     return rows
 
@@ -104,6 +107,7 @@ def plan():
     rows = collect()
     pick, per = [], {}
     for r in rows:
+        r['blur'] = 'azurefd.net' in r['domain']  # приманка с откровенными картинками
         if not r['file']:
             continue
         if r['source'].startswith('E-Skimming'):
@@ -118,6 +122,10 @@ def plan():
                 per[('p360', b)] = 1
                 pick.append(r)
             continue
+        if r['id'].startswith('v-') and not alarm and per.get(key + ('v',), 0) >= 8:
+            continue
+        if r['id'].startswith('v-') and not alarm:
+            per[key + ('v',)] = per.get(key + ('v',), 0) + 1
         if r['source'] == 'urlscan.io' and r['scheme'] == 'clickfix' and not alarm:
             if per.get(key, 0) >= 3:
                 continue
@@ -145,13 +153,16 @@ def gallery():
             t = LAB / 'real' / 'orig' / (r['id'] + '.jpg')
             if not t.exists():
                 im = Image.open(r['orig']).convert('RGB')
+                if 'azurefd.net' in r['domain']:
+                    from PIL import ImageFilter
+                    im = im.filter(ImageFilter.GaussianBlur(28))
                 im = im.crop((0, 0, im.width, min(im.height, int(im.width * 0.8))))
                 im.thumbnail((640, 640))
                 im.save(t, quality=62, optimize=True)
             r['orig'] = f"real/orig/{r['id']}.jpg"
         else:
             r['orig'] = None
-        for k in ('file', 'cardinput', 'brand', 'type'):
+        for k in ('file', 'cardinput', 'brand', 'type', 'blur'):
             r.pop(k, None)
         out.setdefault(r['scheme'], []).append(r)
     order = {'danger': 0, 'warning': 1}

@@ -10,7 +10,8 @@
   "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan\\01a1b763-90f9-74d9-b862-cccffe7e5988\\screenshot.png",
   "link": "https://urlscan.io/result/01a1b763-90f9-74d9-b862-cccffe7e5988/",
   "verdict": "none",
-  "titles": []
+  "titles": [],
+  "blur": false
  },
  {
   "id": "u-01a1d19a-aa48",
@@ -23,7 +24,8 @@
   "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan\\01a1d19a-aa48-77ae-851c-0c7999e3540a\\screenshot.png",
   "link": "https://urlscan.io/result/01a1d19a-aa48-77ae-851c-0c7999e3540a/",
   "verdict": "none",
-  "titles": []
+  "titles": [],
+  "blur": false
  },
  {
   "id": "u-01a1cec7-96b7",
@@ -36,7 +38,8 @@
   "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan\\01a1cec7-96b7-70bf-9a79-a9aa24349261\\screenshot.png",
   "link": "https://urlscan.io/result/01a1cec7-96b7-70bf-9a79-a9aa24349261/",
   "verdict": "none",
-  "titles": []
+  "titles": [],
+  "blur": false
  },
  {
   "id": "u-01a1c5f5-e0cb",
@@ -49,7 +52,8 @@
   "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan\\01a1c5f5-e0cb-705d-a49e-34e8b0616a58\\screenshot.png",
   "link": "https://urlscan.io/result/01a1c5f5-e0cb-705d-a49e-34e8b0616a58/",
   "verdict": "none",
-  "titles": []
+  "titles": [],
+  "blur": false
  },
  {
   "id": "u-01a1d06d-7000",
@@ -62,7 +66,8 @@
   "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan\\01a1d06d-7000-75ee-bda4-5d711f5a6b46\\screenshot.png",
   "link": "https://urlscan.io/result/01a1d06d-7000-75ee-bda4-5d711f5a6b46/",
   "verdict": "none",
-  "titles": []
+  "titles": [],
+  "blur": false
  },
  {
   "id": "u-01a1d3b0-3c3b",
@@ -75,7 +80,8 @@
   "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan\\01a1d3b0-3c3b-7709-83ef-581a8f673849\\screenshot.png",
   "link": "https://urlscan.io/result/01a1d3b0-3c3b-7709-83ef-581a8f673849/",
   "verdict": "none",
-  "titles": []
+  "titles": [],
+  "blur": false
  },
  {
   "id": "u-01a0668b-d4ab",
@@ -88,7 +94,8 @@
   "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan\\01a0668b-d4ab-75f4-9203-c29a8806c660\\screenshot.png",
   "link": "https://urlscan.io/result/01a0668b-d4ab-75f4-9203-c29a8806c660/",
   "verdict": "none",
-  "titles": []
+  "titles": [],
+  "blur": false
  },
  {
   "id": "u-01a107b8-2e43",
@@ -101,7 +108,8 @@
   "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan\\01a107b8-2e43-73a8-8f53-ce31ad63e2b1\\screenshot.png",
   "link": "https://urlscan.io/result/01a107b8-2e43-73a8-8f53-ce31ad63e2b1/",
   "verdict": "none",
-  "titles": []
+  "titles": [],
+  "blur": false
  },
  {
   "id": "u-01a1cf99-b77c",
@@ -114,7 +122,8 @@
   "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan\\01a1cf99-b77c-70e9-af82-ebd7b883b8a9\\screenshot.png",
   "link": "https://urlscan.io/result/01a1cf99-b77c-70e9-af82-ebd7b883b8a9/",
   "verdict": "none",
-  "titles": []
+  "titles": [],
+  "blur": false
  },
  {
   "id": "u-01a1cb75-901e",
@@ -129,7 +138,8 @@
   "verdict": "danger",
   "titles": [
    "Страница выдаёт себя за окно оплаты Stripe"
-  ]
+  ],
+  "blur": false
  },
  {
   "id": "u-01a13b3a-9f05",
@@ -144,7 +154,8 @@
   "verdict": "danger",
   "titles": [
    "Страница выдаёт себя за окно оплаты Stripe"
-  ]
+  ],
+  "blur": false
  },
  {
   "id": "u-01a1c4a3-e9eb",
@@ -157,7 +168,8 @@
   "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan\\01a1c4a3-e9eb-75f7-a086-307234c4fab2\\screenshot.png",
   "link": "https://urlscan.io/result/01a1c4a3-e9eb-75f7-a086-307234c4fab2/",
   "verdict": "none",
-  "titles": []
+  "titles": [],
+  "blur": false
  },
  {
   "id": "u-01a1bf39-a74b",
@@ -170,7 +182,8 @@
   "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan\\01a1bf39-a74b-7729-94ce-45578d0c4a03\\screenshot.png",
   "link": "https://urlscan.io/result/01a1bf39-a74b-7729-94ce-45578d0c4a03/",
   "verdict": "none",
-  "titles": []
+  "titles": [],
+  "blur": false
  },
  {
   "id": "u-01a13924-6651",
@@ -183,7 +196,8 @@
   "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan\\01a13924-6651-706c-8916-c6a606325f62\\screenshot.png",
   "link": "https://urlscan.io/result/01a13924-6651-706c-8916-c6a606325f62/",
   "verdict": "none",
-  "titles": []
+  "titles": [],
+  "blur": false
  },
  {
   "id": "u-01a12fb1-3624",
@@ -196,7 +210,8 @@
   "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan\\01a12fb1-3624-769a-9f94-4020b5ce1cd0\\screenshot.png",
   "link": "https://urlscan.io/result/01a12fb1-3624-769a-9f94-4020b5ce1cd0/",
   "verdict": "none",
-  "titles": []
+  "titles": [],
+  "blur": false
  },
  {
   "id": "u-01a0a390-ce6e",
@@ -209,7 +224,8 @@
   "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan\\01a0a390-ce6e-76aa-b27a-92d28e23f00e\\screenshot.png",
   "link": "https://urlscan.io/result/01a0a390-ce6e-76aa-b27a-92d28e23f00e/",
   "verdict": "none",
-  "titles": []
+  "titles": [],
+  "blur": false
  },
  {
   "id": "u-01a1d3b2-b663",
@@ -224,7 +240,8 @@
   "verdict": "danger",
   "titles": [
    "Поддельная проверка «я не робот»: вас просят запустить команду"
-  ]
+  ],
+  "blur": false
  },
  {
   "id": "u-01a1d3b2-c2e1",
@@ -239,7 +256,8 @@
   "verdict": "danger",
   "titles": [
    "Поддельная проверка «я не робот»: вас просят запустить команду"
-  ]
+  ],
+  "blur": false
  },
  {
   "id": "u-01a1d3b2-bca3",
@@ -254,7 +272,8 @@
   "verdict": "warning",
   "titles": [
    "Проверка «я не робот» нарисована самой страницей"
-  ]
+  ],
+  "blur": false
  },
  {
   "id": "u-01a1d3b2-9080",
@@ -269,7 +288,8 @@
   "verdict": "danger",
   "titles": [
    "Поддельная проверка «я не робот»: вас просят запустить команду"
-  ]
+  ],
+  "blur": false
  },
  {
   "id": "u-01a1d3b2-8b66",
@@ -284,7 +304,8 @@
   "verdict": "danger",
   "titles": [
    "Поддельная проверка «я не робот»: вас просят запустить команду"
-  ]
+  ],
+  "blur": false
  },
  {
   "id": "u-01a1d3b2-9db1",
@@ -299,7 +320,8 @@
   "verdict": "danger",
   "titles": [
    "Поддельная проверка «я не робот»: вас просят запустить команду"
-  ]
+  ],
+  "blur": false
  },
  {
   "id": "u-01a1d3b2-20a2",
@@ -314,7 +336,8 @@
   "verdict": "danger",
   "titles": [
    "Поддельная проверка «я не робот»: вас просят запустить команду"
-  ]
+  ],
+  "blur": false
  },
  {
   "id": "u-01a1d3b1-fb5d",
@@ -329,7 +352,8 @@
   "verdict": "danger",
   "titles": [
    "Поддельная проверка «я не робот»: вас просят запустить команду"
-  ]
+  ],
+  "blur": false
  },
  {
   "id": "u-01a1d3b1-ea22",
@@ -344,7 +368,8 @@
   "verdict": "danger",
   "titles": [
    "Поддельная проверка «я не робот»: вас просят запустить команду"
-  ]
+  ],
+  "blur": false
  },
  {
   "id": "u-01a1d3b2-02e7",
@@ -359,7 +384,8 @@
   "verdict": "danger",
   "titles": [
    "Поддельная проверка «я не робот»: вас просят запустить команду"
-  ]
+  ],
+  "blur": false
  },
  {
   "id": "u-01a1d3b1-f521",
@@ -374,7 +400,8 @@
   "verdict": "danger",
   "titles": [
    "Поддельная проверка «я не робот»: вас просят запустить команду"
-  ]
+  ],
+  "blur": false
  },
  {
   "id": "u-01a1d3b1-c909",
@@ -389,7 +416,8 @@
   "verdict": "danger",
   "titles": [
    "Поддельная проверка «я не робот»: вас просят запустить команду"
-  ]
+  ],
+  "blur": false
  },
  {
   "id": "u-01a1d3b1-97b7",
@@ -404,7 +432,8 @@
   "verdict": "danger",
   "titles": [
    "Поддельная проверка «я не робот»: вас просят запустить команду"
-  ]
+  ],
+  "blur": false
  },
  {
   "id": "u-01a1d3b1-1836",
@@ -419,7 +448,8 @@
   "verdict": "warning",
   "titles": [
    "Проверка «я не робот» нарисована самой страницей"
-  ]
+  ],
+  "blur": false
  },
  {
   "id": "u-01a1d3b0-ea6d",
@@ -434,7 +464,8 @@
   "verdict": "warning",
   "titles": [
    "Проверка «я не робот» нарисована самой страницей"
-  ]
+  ],
+  "blur": false
  },
  {
   "id": "u-01a1d345-40b6",
@@ -449,7 +480,8 @@
   "verdict": "danger",
   "titles": [
    "Поддельная проверка «я не робот»: вас просят запустить команду"
-  ]
+  ],
+  "blur": false
  },
  {
   "id": "u-01a1d345-2d58",
@@ -464,7 +496,8 @@
   "verdict": "danger",
   "titles": [
    "Поддельная проверка «я не робот»: вас просят запустить команду"
-  ]
+  ],
+  "blur": false
  },
  {
   "id": "u-01a1d344-c095",
@@ -479,7 +512,8 @@
   "verdict": "danger",
   "titles": [
    "Поддельная проверка «я не робот»: вас просят запустить команду"
-  ]
+  ],
+  "blur": false
  },
  {
   "id": "u-01a1d343-ff42",
@@ -494,7 +528,8 @@
   "verdict": "danger",
   "titles": [
    "Поддельная проверка «я не робот»: вас просят запустить команду"
-  ]
+  ],
+  "blur": false
  },
  {
   "id": "u-01a1b69d-f7b5",
@@ -509,7 +544,8 @@
   "verdict": "warning",
   "titles": [
    "Цена-приманка: сейчас 29 ₽, а дальше — регулярные списания по 1 499 ₽"
-  ]
+  ],
+  "blur": false
  },
  {
   "id": "u-01a129a0-1d2f",
@@ -522,7 +558,8 @@
   "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan\\01a129a0-1d2f-7129-ab6a-cf6b30065571\\screenshot.png",
   "link": "https://urlscan.io/result/01a129a0-1d2f-7129-ab6a-cf6b30065571/",
   "verdict": "none",
-  "titles": []
+  "titles": [],
+  "blur": false
  },
  {
   "id": "u-01a163e2-b5e6",
@@ -537,7 +574,8 @@
   "verdict": "danger",
   "titles": [
    "Страница пугает взломом и просит позвонить по номеру"
-  ]
+  ],
+  "blur": false
  },
  {
   "id": "u-01a162d8-c282",
@@ -550,7 +588,8 @@
   "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan\\01a162d8-c282-777f-85bb-f13660210c9d\\screenshot.png",
   "link": "https://urlscan.io/result/01a162d8-c282-777f-85bb-f13660210c9d/",
   "verdict": "none",
-  "titles": []
+  "titles": [],
+  "blur": false
  },
  {
   "id": "u-01a1979d-3cad",
@@ -563,7 +602,8 @@
   "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan\\01a1979d-3cad-7524-84e5-450a446c73ca\\screenshot.png",
   "link": "https://urlscan.io/result/01a1979d-3cad-7524-84e5-450a446c73ca/",
   "verdict": "none",
-  "titles": []
+  "titles": [],
+  "blur": false
  },
  {
   "id": "u-019fad61-df4d",
@@ -576,7 +616,8 @@
   "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan\\019fad61-df4d-73f0-b815-45ff1b49309d\\screenshot.png",
   "link": "https://urlscan.io/result/019fad61-df4d-73f0-b815-45ff1b49309d/",
   "verdict": "none",
-  "titles": []
+  "titles": [],
+  "blur": false
  },
  {
   "id": "u-01a141d4-9405",
@@ -589,7 +630,8 @@
   "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan\\01a141d4-9405-7658-965b-8b80c85867d1\\screenshot.png",
   "link": "https://urlscan.io/result/01a141d4-9405-7658-965b-8b80c85867d1/",
   "verdict": "ok",
-  "titles": []
+  "titles": [],
+  "blur": false
  },
  {
   "id": "u-01a1a7e3-8bc9",
@@ -602,7 +644,8 @@
   "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan\\01a1a7e3-8bc9-7001-ada4-c9c90483ecd3\\screenshot.png",
   "link": "https://urlscan.io/result/01a1a7e3-8bc9-7001-ada4-c9c90483ecd3/",
   "verdict": "none",
-  "titles": []
+  "titles": [],
+  "blur": false
  },
  {
   "id": "u-01a1a7e3-63f5",
@@ -615,7 +658,8 @@
   "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan\\01a1a7e3-63f5-72ec-bdb0-707eb90d0b64\\screenshot.png",
   "link": "https://urlscan.io/result/01a1a7e3-63f5-72ec-bdb0-707eb90d0b64/",
   "verdict": "none",
-  "titles": []
+  "titles": [],
+  "blur": false
  },
  {
   "id": "u-01a1a7e3-7b39",
@@ -628,7 +672,8 @@
   "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan\\01a1a7e3-7b39-71d8-be3c-75b2e2cfa58d\\screenshot.png",
   "link": "https://urlscan.io/result/01a1a7e3-7b39-71d8-be3c-75b2e2cfa58d/",
   "verdict": "none",
-  "titles": []
+  "titles": [],
+  "blur": false
  },
  {
   "id": "u-01a1a7e3-ba19",
@@ -641,7 +686,8 @@
   "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan\\01a1a7e3-ba19-70ce-b94b-a2f82cc89aab\\screenshot.png",
   "link": "https://urlscan.io/result/01a1a7e3-ba19-70ce-b94b-a2f82cc89aab/",
   "verdict": "none",
-  "titles": []
+  "titles": [],
+  "blur": false
  },
  {
   "id": "u-01a1a7e3-aa85",
@@ -654,7 +700,8 @@
   "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan\\01a1a7e3-aa85-7140-8240-3bc263ef7308\\screenshot.png",
   "link": "https://urlscan.io/result/01a1a7e3-aa85-7140-8240-3bc263ef7308/",
   "verdict": "none",
-  "titles": []
+  "titles": [],
+  "blur": false
  },
  {
   "id": "u-01a1a7e3-9b86",
@@ -667,7 +714,8 @@
   "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan\\01a1a7e3-9b86-71ca-a9bb-5511c34248ae\\screenshot.png",
   "link": "https://urlscan.io/result/01a1a7e3-9b86-71ca-a9bb-5511c34248ae/",
   "verdict": "none",
-  "titles": []
+  "titles": [],
+  "blur": false
  },
  {
   "id": "z-atgoebell-wixsite-com",
@@ -682,7 +730,8 @@
   "link": null,
   "verdict": "none",
   "titles": [],
-  "cardinput": false
+  "cardinput": false,
+  "blur": false
  },
  {
   "id": "z-www-sapatkosaudisar-ksa-sa-in",
@@ -697,7 +746,8 @@
   "link": null,
   "verdict": "none",
   "titles": [],
-  "cardinput": false
+  "cardinput": false,
+  "blur": false
  },
  {
   "id": "z-uusps-lqtu-cn",
@@ -712,7 +762,8 @@
   "link": null,
   "verdict": "none",
   "titles": [],
-  "cardinput": false
+  "cardinput": false,
+  "blur": false
  },
  {
   "id": "z-zonuzake-wixsite-com",
@@ -727,7 +778,8 @@
   "link": null,
   "verdict": "none",
   "titles": [],
-  "cardinput": false
+  "cardinput": false,
+  "blur": false
  },
  {
   "id": "z-ylylkrtzl-net",
@@ -744,7 +796,8 @@
   "titles": [
    "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
   ],
-  "cardinput": true
+  "cardinput": true,
+  "blur": false
  },
  {
   "id": "z-ghghlmwsndhf-weebly-com",
@@ -759,7 +812,8 @@
   "link": null,
   "verdict": "none",
   "titles": [],
-  "cardinput": false
+  "cardinput": false,
+  "blur": false
  },
  {
   "id": "z-turkekonom-com",
@@ -774,7 +828,8 @@
   "link": null,
   "verdict": "none",
   "titles": [],
-  "cardinput": false
+  "cardinput": false,
+  "blur": false
  },
  {
   "id": "z-webihlalsorgutr-com",
@@ -789,7 +844,8 @@
   "link": null,
   "verdict": "none",
   "titles": [],
-  "cardinput": false
+  "cardinput": false,
+  "blur": false
  },
  {
   "id": "z-frfrkinsshdf-weebly-com",
@@ -804,7 +860,8 @@
   "link": null,
   "verdict": "none",
   "titles": [],
-  "cardinput": false
+  "cardinput": false,
+  "blur": false
  },
  {
   "id": "z-aceteryxstore-top",
@@ -819,7 +876,8 @@
   "link": null,
   "verdict": "none",
   "titles": [],
-  "cardinput": false
+  "cardinput": false,
+  "blur": false
  },
  {
   "id": "z-www-stampslover-com",
@@ -834,7 +892,8 @@
   "link": null,
   "verdict": "none",
   "titles": [],
-  "cardinput": false
+  "cardinput": false,
+  "blur": false
  },
  {
   "id": "z-www-arcteryxonline-xyz",
@@ -849,7 +908,8 @@
   "link": null,
   "verdict": "none",
   "titles": [],
-  "cardinput": false
+  "cardinput": false,
+  "blur": false
  },
  {
   "id": "z-pub-375cf12e9c164ac5946c77d111a194c3-r2-",
@@ -867,7 +927,8 @@
    "Вместе с картой просят данные, которые для оплаты не нужны",
    "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
   ],
-  "cardinput": false
+  "cardinput": false,
+  "blur": false
  },
  {
   "id": "z-usps-pcpostsale-top",
@@ -882,7 +943,8 @@
   "link": null,
   "verdict": "none",
   "titles": [],
-  "cardinput": false
+  "cardinput": false,
+  "blur": false
  },
  {
   "id": "z-arcteryxjacket-xyz",
@@ -897,7 +959,8 @@
   "link": null,
   "verdict": "none",
   "titles": [],
-  "cardinput": false
+  "cardinput": false,
+  "blur": false
  },
  {
   "id": "z-biomassociazione-it",
@@ -912,7 +975,8 @@
   "link": null,
   "verdict": "ok",
   "titles": [],
-  "cardinput": true
+  "cardinput": true,
+  "blur": false
  },
  {
   "id": "z-flash-usps-top",
@@ -927,7 +991,8 @@
   "link": null,
   "verdict": "none",
   "titles": [],
-  "cardinput": false
+  "cardinput": false,
+  "blur": false
  },
  {
   "id": "z-www-dalladraiviengisod-com",
@@ -942,7 +1007,8 @@
   "link": null,
   "verdict": "none",
   "titles": [],
-  "cardinput": false
+  "cardinput": false,
+  "blur": false
  },
  {
   "id": "z-php-gray-alligator-arubanet81245887-code",
@@ -957,7 +1023,8 @@
   "link": null,
   "verdict": "none",
   "titles": [],
-  "cardinput": true
+  "cardinput": true,
+  "blur": false
  },
  {
   "id": "z-annsummersuk-com",
@@ -972,7 +1039,8 @@
   "link": null,
   "verdict": "none",
   "titles": [],
-  "cardinput": false
+  "cardinput": false,
+  "blur": false
  },
  {
   "id": "z-uspsmnk-com",
@@ -987,7 +1055,8 @@
   "link": null,
   "verdict": "none",
   "titles": [],
-  "cardinput": false
+  "cardinput": false,
+  "blur": false
  },
  {
   "id": "z-www-isabelmordhorst-com",
@@ -1002,7 +1071,8 @@
   "link": null,
   "verdict": "none",
   "titles": [],
-  "cardinput": false
+  "cardinput": false,
+  "blur": false
  },
  {
   "id": "z-swisspost-ch-ch-post-codeanyapp-com",
@@ -1019,7 +1089,8 @@
   "titles": [
    "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
   ],
-  "cardinput": false
+  "cardinput": false,
+  "blur": false
  },
  {
   "id": "z-xdu-lzh-mybluehost-me",
@@ -1034,7 +1105,8 @@
   "link": null,
   "verdict": "none",
   "titles": [],
-  "cardinput": true
+  "cardinput": true,
+  "blur": false
  },
  {
   "id": "z-claim-zksync-io-com",
@@ -1049,7 +1121,8 @@
   "link": null,
   "verdict": "none",
   "titles": [],
-  "cardinput": false
+  "cardinput": false,
+  "blur": false
  },
  {
   "id": "z-service-polst-com",
@@ -1066,7 +1139,8 @@
   "titles": [
    "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
   ],
-  "cardinput": true
+  "cardinput": true,
+  "blur": false
  },
  {
   "id": "z-swisspostwp-blogspot-com",
@@ -1083,7 +1157,8 @@
   "titles": [
    "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
   ],
-  "cardinput": false
+  "cardinput": false,
+  "blur": false
  },
  {
   "id": "z-www-fidefx-cc",
@@ -1098,7 +1173,8 @@
   "link": null,
   "verdict": "none",
   "titles": [],
-  "cardinput": false
+  "cardinput": false,
+  "blur": false
  },
  {
   "id": "z-alfa-by24-online",
@@ -1113,7 +1189,8 @@
   "link": null,
   "verdict": "none",
   "titles": [],
-  "cardinput": false
+  "cardinput": false,
+  "blur": false
  },
  {
   "id": "z-linksfidelity-com",
@@ -1128,7 +1205,8 @@
   "link": null,
   "verdict": "none",
   "titles": [],
-  "cardinput": false
+  "cardinput": false,
+  "blur": false
  },
  {
   "id": "z-trmrtysgsdgpzr-net",
@@ -1145,7 +1223,8 @@
   "titles": [
    "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
   ],
-  "cardinput": true
+  "cardinput": true,
+  "blur": false
  },
  {
   "id": "z-7-24destekller-com-tr",
@@ -1162,7 +1241,8 @@
   "titles": [
    "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
   ],
-  "cardinput": true
+  "cardinput": true,
+  "blur": false
  },
  {
   "id": "z-www-linksfidelity-com",
@@ -1177,7 +1257,8 @@
   "link": null,
   "verdict": "none",
   "titles": [],
-  "cardinput": false
+  "cardinput": false,
+  "blur": false
  },
  {
   "id": "z-fidoptbit-com",
@@ -1192,7 +1273,8 @@
   "link": null,
   "verdict": "none",
   "titles": [],
-  "cardinput": false
+  "cardinput": false,
+  "blur": false
  },
  {
   "id": "z-tvnetflxonline-com",
@@ -1209,7 +1291,8 @@
   "titles": [
    "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
   ],
-  "cardinput": true
+  "cardinput": true,
+  "blur": false
  },
  {
   "id": "z-ubrirs-online",
@@ -1224,7 +1307,8 @@
   "link": null,
   "verdict": "none",
   "titles": [],
-  "cardinput": false
+  "cardinput": false,
+  "blur": false
  },
  {
   "id": "z-swap-xingtu-network",
@@ -1239,7 +1323,8 @@
   "link": null,
   "verdict": "none",
   "titles": [],
-  "cardinput": false
+  "cardinput": false,
+  "blur": false
  },
  {
   "id": "z-ndadltt-net",
@@ -1254,7 +1339,8 @@
   "link": null,
   "verdict": "none",
   "titles": [],
-  "cardinput": false
+  "cardinput": false,
+  "blur": false
  },
  {
   "id": "z-bnl-awalltahun-danaidjkt-com",
@@ -1271,7 +1357,8 @@
   "titles": [
    "Данные карты уходят в Telegram-бота"
   ],
-  "cardinput": true
+  "cardinput": true,
+  "blur": false
  },
  {
   "id": "z-caalamoscapital-com",
@@ -1286,7 +1373,8 @@
   "link": null,
   "verdict": "none",
   "titles": [],
-  "cardinput": false
+  "cardinput": false,
+  "blur": false
  },
  {
   "id": "z-zksync-reward-net",
@@ -1301,7 +1389,8 @@
   "link": null,
   "verdict": "none",
   "titles": [],
-  "cardinput": false
+  "cardinput": false,
+  "blur": false
  },
  {
   "id": "z-noisy-lacy-bait-glitch-me",
@@ -1320,7 +1409,8 @@
    "Скрипт читает поля карты и умеет отправлять данные",
    "Скрипт читает поля карты и умеет отправлять данные"
   ],
-  "cardinput": true
+  "cardinput": true,
+  "blur": false
  },
  {
   "id": "z-xeb-lcb-mybluehost-me",
@@ -1337,7 +1427,8 @@
   "titles": [
    "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
   ],
-  "cardinput": true
+  "cardinput": true,
+  "blur": false
  },
  {
   "id": "z-kmvehasar-online",
@@ -1354,7 +1445,8 @@
   "titles": [
    "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
   ],
-  "cardinput": true
+  "cardinput": true,
+  "blur": false
  },
  {
   "id": "z-bnl-tarif-transaksi-ssd-i-com",
@@ -1369,7 +1461,8 @@
   "link": null,
   "verdict": "ok",
   "titles": [],
-  "cardinput": true
+  "cardinput": true,
+  "blur": false
  },
  {
   "id": "z-usps-com-zv209-vip",
@@ -1386,7 +1479,8 @@
   "titles": [
    "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
   ],
-  "cardinput": false
+  "cardinput": false,
+  "blur": false
  },
  {
   "id": "z-zk-skalling-net",
@@ -1401,7 +1495,8 @@
   "link": null,
   "verdict": "none",
   "titles": [],
-  "cardinput": false
+  "cardinput": false,
+  "blur": false
  },
  {
   "id": "z-chnet-dhlservice-is-a-green-com",
@@ -1418,7 +1513,8 @@
   "titles": [
    "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
   ],
-  "cardinput": true
+  "cardinput": true,
+  "blur": false
  },
  {
   "id": "z-dtprojects-eu-org",
@@ -1435,7 +1531,8 @@
   "titles": [
    "Вместе с картой просят данные, которые для оплаты не нужны"
   ],
-  "cardinput": true
+  "cardinput": true,
+  "blur": false
  },
  {
   "id": "z-clestia2024-com",
@@ -1450,7 +1547,8 @@
   "link": null,
   "verdict": "none",
   "titles": [],
-  "cardinput": false
+  "cardinput": false,
+  "blur": false
  },
  {
   "id": "z-get-imxtokens-org",
@@ -1465,7 +1563,8 @@
   "link": null,
   "verdict": "none",
   "titles": [],
-  "cardinput": false
+  "cardinput": false,
+  "blur": false
  },
  {
   "id": "z-mature-spicy-eoraptor-glitch-me",
@@ -1484,7 +1583,8 @@
    "Скрипт читает поля карты и умеет отправлять данные",
    "Скрипт читает поля карты и умеет отправлять данные"
   ],
-  "cardinput": true
+  "cardinput": true,
+  "blur": false
  },
  {
   "id": "z-vemax-eu",
@@ -1499,7 +1599,8 @@
   "link": null,
   "verdict": "ok",
   "titles": [],
-  "cardinput": true
+  "cardinput": true,
+  "blur": false
  },
  {
   "id": "z-booking-info-93843-bid",
@@ -1516,7 +1617,8 @@
   "titles": [
    "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
   ],
-  "cardinput": true
+  "cardinput": true,
+  "blur": false
  },
  {
   "id": "z-bni-secure-redi4pp-com",
@@ -1531,7 +1633,8 @@
   "link": null,
   "verdict": "ok",
   "titles": [],
-  "cardinput": true
+  "cardinput": true,
+  "blur": false
  },
  {
   "id": "z-107-165-195-68",
@@ -1546,7 +1649,8 @@
   "link": null,
   "verdict": "none",
   "titles": [],
-  "cardinput": false
+  "cardinput": false,
+  "blur": false
  },
  {
   "id": "z-dhlinternationale-page-link",
@@ -1563,7 +1667,8 @@
   "titles": [
    "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
   ],
-  "cardinput": true
+  "cardinput": true,
+  "blur": false
  },
  {
   "id": "z-feline-autumn-oriole-glitch-me",
@@ -1582,7 +1687,8 @@
    "Скрипт читает поля карты и умеет отправлять данные",
    "Скрипт читает поля карты и умеет отправлять данные"
   ],
-  "cardinput": true
+  "cardinput": true,
+  "blur": false
  },
  {
   "id": "z-bnl-awaltahun-updetterbaru-com",
@@ -1599,7 +1705,8 @@
   "titles": [
    "Данные карты уходят в Telegram-бота"
   ],
-  "cardinput": true
+  "cardinput": true,
+  "blur": false
  },
  {
   "id": "z-bni-pestapoint-awaltahun-bshsjsksks1-com",
@@ -1616,7 +1723,8 @@
   "titles": [
    "Данные карты уходят в Telegram-бота"
   ],
-  "cardinput": true
+  "cardinput": true,
+  "blur": false
  },
  {
   "id": "z-scratch-sassy-writer-glitch-me",
@@ -1635,7 +1743,8 @@
    "Скрипт читает поля карты и умеет отправлять данные",
    "Скрипт читает поля карты и умеет отправлять данные"
   ],
-  "cardinput": true
+  "cardinput": true,
+  "blur": false
  },
  {
   "id": "z-gebyar-undian-berhadiah-bshsjsksks1-com",
@@ -1652,7 +1761,8 @@
   "titles": [
    "Данные карты уходят в Telegram-бота"
   ],
-  "cardinput": true
+  "cardinput": true,
+  "blur": false
  },
  {
   "id": "z-skema-tarifbnl-vercel-app",
@@ -1669,7 +1779,8 @@
   "titles": [
    "Данные карты уходят в Telegram-бота"
   ],
-  "cardinput": true
+  "cardinput": true,
+  "blur": false
  },
  {
   "id": "z-gebyar-undian-bni-awal-tahun-resmi2024-a",
@@ -1686,7 +1797,8 @@
   "titles": [
    "Данные карты уходят в Telegram-бота"
   ],
-  "cardinput": true
+  "cardinput": true,
+  "blur": false
  },
  {
   "id": "z-hadiahbnl2024-danaidjkt-com",
@@ -1703,7 +1815,8 @@
   "titles": [
    "Данные карты уходят в Telegram-бота"
   ],
-  "cardinput": true
+  "cardinput": true,
+  "blur": false
  },
  {
   "id": "z-gebyarbnipromo-bshsjsksks-com",
@@ -1720,7 +1833,8 @@
   "titles": [
    "Данные карты уходят в Telegram-бота"
   ],
-  "cardinput": true
+  "cardinput": true,
+  "blur": false
  },
  {
   "id": "z-www-colegiosuizo-net",
@@ -1737,7 +1851,8 @@
   "titles": [
    "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
   ],
-  "cardinput": true
+  "cardinput": true,
+  "blur": false
  },
  {
   "id": "z-colegiosuizo-net",
@@ -1754,7 +1869,8 @@
   "titles": [
    "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
   ],
-  "cardinput": true
+  "cardinput": true,
+  "blur": false
  },
  {
   "id": "z-regular-helix-august-glitch-me",
@@ -1773,7 +1889,8 @@
    "Скрипт читает поля карты и умеет отправлять данные",
    "Скрипт читает поля карты и умеет отправлять данные"
   ],
-  "cardinput": true
+  "cardinput": true,
+  "blur": false
  },
  {
   "id": "z-glen-early-pantydraco-glitch-me",
@@ -1792,7 +1909,8 @@
    "Скрипт читает поля карты и умеет отправлять данные",
    "Скрипт читает поля карты и умеет отправлять данные"
   ],
-  "cardinput": true
+  "cardinput": true,
+  "blur": false
  },
  {
   "id": "z-relic-thankful-flavor-glitch-me",
@@ -1811,7 +1929,8 @@
    "Скрипт читает поля карты и умеет отправлять данные",
    "Скрипт читает поля карты и умеет отправлять данные"
   ],
-  "cardinput": true
+  "cardinput": true,
+  "blur": false
  },
  {
   "id": "z-cooked-quirky-gambler-glitch-me",
@@ -1830,7 +1949,8 @@
    "Скрипт читает поля карты и умеет отправлять данные",
    "Скрипт читает поля карты и умеет отправлять данные"
   ],
-  "cardinput": true
+  "cardinput": true,
+  "blur": false
  },
  {
   "id": "z-www-pickahome-com",
@@ -1845,7 +1965,8 @@
   "link": null,
   "verdict": "none",
   "titles": [],
-  "cardinput": false
+  "cardinput": false,
+  "blur": false
  },
  {
   "id": "p-0",
@@ -1862,7 +1983,8 @@
    "Страница с вводом карты открыта без HTTPS",
    "Данные карты будут отправлены без шифрования"
   ],
-  "brand": "impots"
+  "brand": "impots",
+  "blur": false
  },
  {
   "id": "p-1",
@@ -1880,7 +2002,8 @@
    "Вместе с картой просят данные, которые для оплаты не нужны",
    "Данные карты будут отправлены без шифрования"
   ],
-  "brand": "irs"
+  "brand": "irs",
+  "blur": false
  },
  {
   "id": "p-2",
@@ -1898,7 +2021,8 @@
    "Вместе с картой просят данные, которые для оплаты не нужны",
    "Данные карты будут отправлены без шифрования"
   ],
-  "brand": "chase"
+  "brand": "chase",
+  "blur": false
  },
  {
   "id": "p-7",
@@ -1915,7 +2039,8 @@
    "Страница с вводом карты открыта без HTTPS",
    "Данные карты будут отправлены без шифрования"
   ],
-  "brand": "amex"
+  "brand": "amex",
+  "blur": false
  },
  {
   "id": "p-9",
@@ -1933,7 +2058,8 @@
    "Вместе с картой просят данные, которые для оплаты не нужны",
    "Данные карты будут отправлены без шифрования"
   ],
-  "brand": "apple"
+  "brand": "apple",
+  "blur": false
  },
  {
   "id": "p-21",
@@ -1949,7 +2075,8 @@
   "titles": [
    "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
   ],
-  "brand": "orange"
+  "brand": "orange",
+  "blur": false
  },
  {
   "id": "p-23",
@@ -1965,7 +2092,8 @@
   "titles": [
    "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
   ],
-  "brand": "cibc"
+  "brand": "cibc",
+  "blur": false
  },
  {
   "id": "p-36",
@@ -1981,7 +2109,8 @@
   "titles": [
    "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
   ],
-  "brand": "amazon"
+  "brand": "amazon",
+  "blur": false
  },
  {
   "id": "p-38",
@@ -1997,7 +2126,8 @@
   "titles": [
    "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
   ],
-  "brand": "sfr"
+  "brand": "sfr",
+  "blur": false
  },
  {
   "id": "p-48",
@@ -2014,7 +2144,8 @@
    "Страница с вводом карты открыта без HTTPS",
    "Данные карты будут отправлены без шифрования"
   ],
-  "brand": "boa"
+  "brand": "boa",
+  "blur": false
  },
  {
   "id": "p-62",
@@ -2030,7 +2161,8 @@
   "titles": [
    "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
   ],
-  "brand": "netflix"
+  "brand": "netflix",
+  "blur": false
  },
  {
   "id": "p-74",
@@ -2048,7 +2180,8 @@
    "Данные карты будут отправлены без шифрования",
    "Данные карты будут отправлены без шифрования"
   ],
-  "brand": "paypal"
+  "brand": "paypal",
+  "blur": false
  },
  {
   "id": "p-97",
@@ -2064,7 +2197,8 @@
   "titles": [
    "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
   ],
-  "brand": "navy"
+  "brand": "navy",
+  "blur": false
  },
  {
   "id": "p-111",
@@ -2081,7 +2215,8 @@
    "Страница с вводом карты открыта без HTTPS",
    "Данные карты будут отправлены без шифрования"
   ],
-  "brand": "bmo"
+  "brand": "bmo",
+  "blur": false
  },
  {
   "id": "p-123",
@@ -2099,7 +2234,8 @@
    "Вместе с картой просят данные, которые для оплаты не нужны",
    "Данные карты будут отправлены без шифрования"
   ],
-  "brand": "wellsfargo"
+  "brand": "wellsfargo",
+  "blur": false
  },
  {
   "id": "p-145",
@@ -2115,7 +2251,8 @@
   "titles": [
    "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
   ],
-  "brand": "facebook"
+  "brand": "facebook",
+  "blur": false
  },
  {
   "id": "p-147",
@@ -2133,7 +2270,8 @@
    "Данные карты уходят на другой сайт",
    "Данные карты уходят на другой сайт"
   ],
-  "brand": "usaa"
+  "brand": "usaa",
+  "blur": false
  },
  {
   "id": "p-149",
@@ -2149,7 +2287,8 @@
   "titles": [
    "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
   ],
-  "brand": "itau"
+  "brand": "itau",
+  "blur": false
  },
  {
   "id": "p-151",
@@ -2165,7 +2304,8 @@
   "titles": [
    "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
   ],
-  "brand": "dhl"
+  "brand": "dhl",
+  "blur": false
  },
  {
   "id": "p-154",
@@ -2182,7 +2322,8 @@
    "Страница с вводом карты открыта без HTTPS",
    "Данные карты будут отправлены без шифрования"
   ],
-  "brand": "xfinity"
+  "brand": "xfinity",
+  "blur": false
  },
  {
   "id": "p-205",
@@ -2199,7 +2340,8 @@
    "Вместе с картой просят данные, которые для оплаты не нужны",
    "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
   ],
-  "brand": "nab"
+  "brand": "nab",
+  "blur": false
  },
  {
   "id": "p-206",
@@ -2216,7 +2358,8 @@
    "Вместе с картой просят данные, которые для оплаты не нужны",
    "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
   ],
-  "brand": "att"
+  "brand": "att",
+  "blur": false
  },
  {
   "id": "p-248",
@@ -2232,7 +2375,8 @@
   "titles": [
    "Вместе с картой просят данные, которые для оплаты не нужны"
   ],
-  "brand": "cox"
+  "brand": "cox",
+  "blur": false
  },
  {
   "id": "p-287",
@@ -2248,7 +2392,8 @@
   "titles": [
    "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
   ],
-  "brand": "google"
+  "brand": "google",
+  "blur": false
  },
  {
   "id": "p-337",
@@ -2265,7 +2410,8 @@
    "Страница с вводом карты открыта без HTTPS",
    "Данные карты будут отправлены без шифрования"
   ],
-  "brand": "sparkasse"
+  "brand": "sparkasse",
+  "blur": false
  },
  {
   "id": "p-346",
@@ -2282,7 +2428,8 @@
    "Страница с вводом карты открыта без HTTPS",
    "Данные карты будут отправлены без шифрования"
   ],
-  "brand": "natwest"
+  "brand": "natwest",
+  "blur": false
  },
  {
   "id": "p-440",
@@ -2300,7 +2447,8 @@
    "Вместе с картой просят данные, которые для оплаты не нужны",
    "Данные карты будут отправлены без шифрования"
   ],
-  "brand": "aol"
+  "brand": "aol",
+  "blur": false
  },
  {
   "id": "p-503",
@@ -2316,7 +2464,8 @@
   "titles": [
    "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
   ],
-  "brand": "capitalone"
+  "brand": "capitalone",
+  "blur": false
  },
  {
   "id": "p-563",
@@ -2333,7 +2482,8 @@
    "Страница с вводом карты открыта без HTTPS",
    "Данные карты будут отправлены без шифрования"
   ],
-  "brand": "match"
+  "brand": "match",
+  "blur": false
  },
  {
   "id": "p-584",
@@ -2349,7 +2499,8 @@
   "titles": [
    "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
   ],
-  "brand": "phish"
+  "brand": "phish",
+  "blur": false
  },
  {
   "id": "es-lab1",
@@ -2367,7 +2518,8 @@
   "titles": [
    "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру",
    "Скрипт читает поля карты и умеет отправлять данные"
-  ]
+  ],
+  "blur": false
  },
  {
   "id": "es-lab2-overlay",
@@ -2385,7 +2537,8 @@
   "titles": [
    "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру",
    "Скрипт читает поля карты и умеет отправлять данные"
-  ]
+  ],
+  "blur": false
  },
  {
   "id": "es-lab2-shadow",
@@ -2403,7 +2556,8 @@
   "titles": [
    "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру",
    "Скрипт читает поля карты и умеет отправлять данные"
-  ]
+  ],
+  "blur": false
  },
  {
   "id": "es-lab2-monitor",
@@ -2421,7 +2575,8 @@
   "titles": [
    "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру",
    "Скрипт читает поля карты и умеет отправлять данные"
-  ]
+  ],
+  "blur": false
  },
  {
   "id": "es-lab4",
@@ -2438,6 +2593,1376 @@
   "verdict": "warning",
   "titles": [
    "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
-  ]
+  ],
+  "blur": false
+ },
+ {
+  "id": "v-01a1a583-5919",
+  "scheme": "fake-payment",
+  "source": "urlscan.io",
+  "date": "2026-11-04",
+  "domain": "uspsfund.online",
+  "title": "Payment Verification — USPS",
+  "file": "urlscan2/01a1a583-5919-702e-b4e1-d2330a5d977e.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a1a583-5919-702e-b4e1-d2330a5d977e\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1a583-5919-702e-b4e1-d2330a5d977e/",
+  "verdict": "danger",
+  "titles": [
+   "Данные карты уходят в Telegram-бота",
+   "Скрипт читает поля карты и умеет отправлять данные"
+  ],
+  "note": "копия почтовой службы: «доставка не удалась — оплатите повторную доставку»",
+  "blur": false
+ },
+ {
+  "id": "v-01a18c86-a3ad",
+  "scheme": "fake-payment",
+  "source": "urlscan.io",
+  "date": "2026-10-30",
+  "domain": "pwlri.cn",
+  "title": "Verification | USPS®",
+  "file": "urlscan2/01a18c86-a3ad-750d-b359-7bf80e3c3aeb.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a18c86-a3ad-750d-b359-7bf80e3c3aeb\\screenshot.png",
+  "link": "https://urlscan.io/result/01a18c86-a3ad-750d-b359-7bf80e3c3aeb/",
+  "verdict": "none",
+  "titles": [],
+  "note": "копия почтовой службы: «доставка не удалась — оплатите повторную доставку»",
+  "blur": false
+ },
+ {
+  "id": "v-01a1ceae-b810",
+  "scheme": "fake-payment",
+  "source": "urlscan.io",
+  "date": "2026-11-12",
+  "domain": "checkout-dpd6n4cwuktv.edgeone.dev",
+  "title": "Secure Checkout | Editing Store",
+  "file": "urlscan2/01a1ceae-b810-7334-a467-6432f1165cd2.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a1ceae-b810-7334-a467-6432f1165cd2\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1ceae-b810-7334-a467-6432f1165cd2/",
+  "verdict": "none",
+  "titles": [],
+  "note": "«Complete Your Order» — страница оплаты на бесплатном хостинге",
+  "blur": false
+ },
+ {
+  "id": "v-01a1da27-b0a2",
+  "scheme": "investment",
+  "source": "urlscan.io",
+  "date": "2026-11-14",
+  "domain": "quantumai-in.net",
+  "title": "Quantum AI | AI trading platform for financial markets",
+  "file": "urlscan2/01a1da27-b0a2-755d-8c0a-93807863f90f.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a1da27-b0a2-755d-8c0a-93807863f90f\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1da27-b0a2-755d-8c0a-93807863f90f/",
+  "verdict": "none",
+  "titles": [],
+  "note": "«Quantum AI»: «торговая платформа с ИИ», реклама с поддельными видео знаменитостей",
+  "blur": false
+ },
+ {
+  "id": "v-01a1d539-62bb",
+  "scheme": "investment",
+  "source": "urlscan.io",
+  "date": "2026-11-13",
+  "domain": "smartspout.pro",
+  "title": "Wstrząs w Polsce! Piotr Kuczyński popiera Quantum AI",
+  "file": "urlscan2/01a1d539-62bb-720b-869f-820c27c86668.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a1d539-62bb-720b-869f-820c27c86668\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1d539-62bb-720b-869f-820c27c86668/",
+  "verdict": "none",
+  "titles": [],
+  "note": "поддельная новость (стилизована под Gazeta.pl): «Пётр Кучиньский поддерживает Quantum AI»",
+  "blur": false
+ },
+ {
+  "id": "v-01a1a622-a5a5",
+  "scheme": "investment",
+  "source": "urlscan.io",
+  "date": "2026-11-04",
+  "domain": "immediateedgeaibot.com",
+  "title": "Immediate Edge — KI-Analyse für Krypto-Staking und Renditen",
+  "file": "urlscan2/01a1a622-a5a5-718a-a05f-4ffb1bba75c2.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a1a622-a5a5-718a-a05f-4ffb1bba75c2\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1a622-a5a5-718a-a05f-4ffb1bba75c2/",
+  "verdict": "none",
+  "titles": [],
+  "note": "«Immediate Connect / Edge»: «торговая платформа с ИИ» — регуляторы предупреждают о ней как о мошеннической",
+  "blur": false
+ },
+ {
+  "id": "v-01a1dac9-5f0e",
+  "scheme": "investment",
+  "source": "urlscan.io",
+  "date": "2026-11-14",
+  "domain": "immediate-zaltrion365-official.com",
+  "title": "Immediate Zaltrion 365 | Smart AI Trading Platform for Digital Assets",
+  "file": "urlscan2/01a1dac9-5f0e-73d9-bc4b-aa71dbd9315e.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a1dac9-5f0e-73d9-bc4b-aa71dbd9315e\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1dac9-5f0e-73d9-bc4b-aa71dbd9315e/",
+  "verdict": "none",
+  "titles": [],
+  "note": "«AI Trading Platform»: один и тот же шаблон под разными названиями, форма регистрации с телефоном",
+  "blur": false
+ },
+ {
+  "id": "v-01a1dabc-5bca",
+  "scheme": "investment",
+  "source": "urlscan.io",
+  "date": "2026-11-14",
+  "domain": "apextraderwave.com",
+  "title": "Apex Trader - Advanced AI Trading Platform",
+  "file": "urlscan2/01a1dabc-5bca-773f-acec-faeffaa3c405.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a1dabc-5bca-773f-acec-faeffaa3c405\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1dabc-5bca-773f-acec-faeffaa3c405/",
+  "verdict": "warning",
+  "titles": [
+   "Предлагают установить приложение из файла .apk, а не из магазина приложений"
+  ],
+  "note": "«AI Trading Platform»: один и тот же шаблон под разными названиями, форма регистрации с телефоном",
+  "blur": false
+ },
+ {
+  "id": "v-01a1daa7-e704",
+  "scheme": "investment",
+  "source": "urlscan.io",
+  "date": "2026-11-14",
+  "domain": "kalyndraxaaitradingplatform.click",
+  "title": "Kalyndraxa AI Trading Platform | Επίσημη Ιστοσελίδα",
+  "file": "urlscan2/01a1daa7-e704-7538-af8e-17a9998d6e24.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a1daa7-e704-7538-af8e-17a9998d6e24\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1daa7-e704-7538-af8e-17a9998d6e24/",
+  "verdict": "none",
+  "titles": [],
+  "note": "«AI Trading Platform»: один и тот же шаблон под разными названиями, форма регистрации с телефоном",
+  "blur": false
+ },
+ {
+  "id": "v-01a1da86-a5a0",
+  "scheme": "investment",
+  "source": "urlscan.io",
+  "date": "2026-11-14",
+  "domain": "kalyndraxaaitradingplatform-click.pages.dev",
+  "title": "Kalyndraxa AI Trading Platform | Επίσημη Ιστοσελίδα",
+  "file": "urlscan2/01a1da86-a5a0-705e-a7a5-bdaf3bde5601.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a1da86-a5a0-705e-a7a5-bdaf3bde5601\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1da86-a5a0-705e-a7a5-bdaf3bde5601/",
+  "verdict": "none",
+  "titles": [],
+  "note": "«AI Trading Platform»: один и тот же шаблон под разными названиями, форма регистрации с телефоном",
+  "blur": false
+ },
+ {
+  "id": "v-01a1da73-f63d",
+  "scheme": "investment",
+  "source": "urlscan.io",
+  "date": "2026-11-14",
+  "domain": "goldbuyingservice.tech",
+  "title": "Gold Buying Service | AI trading platform for financial markets",
+  "file": "urlscan2/01a1da73-f63d-7466-9c56-29ed1a53fb37.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a1da73-f63d-7466-9c56-29ed1a53fb37\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1da73-f63d-7466-9c56-29ed1a53fb37/",
+  "verdict": "none",
+  "titles": [],
+  "note": "«AI Trading Platform»: один и тот же шаблон под разными названиями, форма регистрации с телефоном",
+  "blur": false
+ },
+ {
+  "id": "v-01a1da68-e852",
+  "scheme": "investment",
+  "source": "urlscan.io",
+  "date": "2026-11-14",
+  "domain": "petrolioitaliano.biz",
+  "title": "Petrolio Italiano | AI trading platform for financial markets",
+  "file": "urlscan2/01a1da68-e852-74d8-8f20-a36291a694bb.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a1da68-e852-74d8-8f20-a36291a694bb\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1da68-e852-74d8-8f20-a36291a694bb/",
+  "verdict": "none",
+  "titles": [],
+  "note": "«AI Trading Platform»: один и тот же шаблон под разными названиями, форма регистрации с телефоном",
+  "blur": false
+ },
+ {
+  "id": "v-01a1dad9-02a6",
+  "scheme": "crypto-drainer",
+  "source": "urlscan.io",
+  "date": "2026-11-14",
+  "domain": "2-sparkdex-allocations.pages.dev",
+  "title": "SparkDEX - Best DEX on Flare Network | Flare Dex Trading Platform",
+  "file": "urlscan2/01a1dad9-02a6-743f-9591-7686c46ab444.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a1dad9-02a6-743f-9591-7686c46ab444\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1dad9-02a6-743f-9591-7686c46ab444/",
+  "verdict": "none",
+  "titles": [],
+  "note": "«SparkDEX Rewards Proposal» — копия криптопроекта с кнопкой подключения кошелька",
+  "blur": false
+ },
+ {
+  "id": "v-01a1da4a-2bc3",
+  "scheme": "crypto-drainer",
+  "source": "urlscan.io",
+  "date": "2026-11-14",
+  "domain": "1-sparkdex-allocations.pages.dev",
+  "title": "SparkDEX - Best DEX on Flare Network | Flare Dex Trading Platform",
+  "file": "urlscan2/01a1da4a-2bc3-732a-aeb6-36775a60fc3c.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a1da4a-2bc3-732a-aeb6-36775a60fc3c\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1da4a-2bc3-732a-aeb6-36775a60fc3c/",
+  "verdict": "none",
+  "titles": [],
+  "note": "«SparkDEX Rewards Proposal» — копия криптопроекта с кнопкой подключения кошелька",
+  "blur": false
+ },
+ {
+  "id": "v-01a1d6db-dd4d",
+  "scheme": "crypto-drainer",
+  "source": "urlscan.io",
+  "date": "2026-11-13",
+  "domain": "sparkdex-allocations.pages.dev",
+  "title": "SparkDEX - Best DEX on Flare Network | Flare Dex Trading Platform",
+  "file": "urlscan2/01a1d6db-dd4d-7288-8945-fcd9dc4168ea.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a1d6db-dd4d-7288-8945-fcd9dc4168ea\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1d6db-dd4d-7288-8945-fcd9dc4168ea/",
+  "verdict": "none",
+  "titles": [],
+  "note": "«SparkDEX Rewards Proposal» — копия криптопроекта с кнопкой подключения кошелька",
+  "blur": false
+ },
+ {
+  "id": "v-01a1d64b-fcb0",
+  "scheme": "crypto-drainer",
+  "source": "urlscan.io",
+  "date": "2026-11-13",
+  "domain": "sparkdex-allocations.icu",
+  "title": "SparkDEX - Best DEX on Flare Network | Flare Dex Trading Platform",
+  "file": "urlscan2/01a1d64b-fcb0-7122-9747-f61a732b2ab6.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a1d64b-fcb0-7122-9747-f61a732b2ab6\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1d64b-fcb0-7122-9747-f61a732b2ab6/",
+  "verdict": "none",
+  "titles": [],
+  "note": "«SparkDEX Rewards Proposal» — копия криптопроекта с кнопкой подключения кошелька",
+  "blur": false
+ },
+ {
+  "id": "v-01a1d5cc-cf81",
+  "scheme": "crypto-drainer",
+  "source": "urlscan.io",
+  "date": "2026-11-13",
+  "domain": "sparkdex-allocation.pages.dev",
+  "title": "SparkDEX - Best DEX on Flare Network | Flare Dex Trading Platform",
+  "file": "urlscan2/01a1d5cc-cf81-72ef-881d-56c5e4956105.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a1d5cc-cf81-72ef-881d-56c5e4956105\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1d5cc-cf81-72ef-881d-56c5e4956105/",
+  "verdict": "none",
+  "titles": [],
+  "note": "«SparkDEX Rewards Proposal» — копия криптопроекта с кнопкой подключения кошелька",
+  "blur": false
+ },
+ {
+  "id": "v-01a1d21a-c89d",
+  "scheme": "crypto-drainer",
+  "source": "urlscan.io",
+  "date": "2026-11-12",
+  "domain": "sparkdex-allocation.icu",
+  "title": "SparkDEX - Best DEX on Flare Network | Flare Dex Trading Platform",
+  "file": "urlscan2/01a1d21a-c89d-714c-951b-5e0dfe9e7517.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a1d21a-c89d-714c-951b-5e0dfe9e7517\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1d21a-c89d-714c-951b-5e0dfe9e7517/",
+  "verdict": "none",
+  "titles": [],
+  "note": "«SparkDEX Rewards Proposal» — копия криптопроекта с кнопкой подключения кошелька",
+  "blur": false
+ },
+ {
+  "id": "v-01a1b6f6-ac25",
+  "scheme": "tech-support",
+  "source": "urlscan.io",
+  "date": "2026-11-07",
+  "domain": "miniature-waffle-ad5i7buu.on-forge.com",
+  "title": "Windows Security Center",
+  "file": "urlscan2/01a1b6f6-ac25-7608-a658-13a7511ff26f.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a1b6f6-ac25-7608-a658-13a7511ff26f\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1b6f6-ac25-7608-a658-13a7511ff26f/",
+  "verdict": "none",
+  "titles": [],
+  "note": "поддельное окно «Windows Security» поверх копии Microsoft 365 с номером «поддержки»",
+  "blur": false
+ },
+ {
+  "id": "v-01a1b6a0-aff6",
+  "scheme": "tech-support",
+  "source": "urlscan.io",
+  "date": "2026-11-07",
+  "domain": "miniature-waffle-aigopgam.on-forge.com",
+  "title": "Windows Security Center",
+  "file": "urlscan2/01a1b6a0-aff6-754a-b531-165a3f786fbc.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a1b6a0-aff6-754a-b531-165a3f786fbc\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1b6a0-aff6-754a-b531-165a3f786fbc/",
+  "verdict": "none",
+  "titles": [],
+  "note": "поддельное окно «Windows Security» поверх копии Microsoft 365 с номером «поддержки»",
+  "blur": false
+ },
+ {
+  "id": "v-01a1a1ea-f1be",
+  "scheme": "tech-support",
+  "source": "urlscan.io",
+  "date": "2026-11-03",
+  "domain": "ubiquitous-couscous-tplwmaep.on-forge.com",
+  "title": "Windows Security Center",
+  "file": "urlscan2/01a1a1ea-f1be-77b9-ab8c-981d44b0d7af.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a1a1ea-f1be-77b9-ab8c-981d44b0d7af\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1a1ea-f1be-77b9-ab8c-981d44b0d7af/",
+  "verdict": "none",
+  "titles": [],
+  "note": "поддельное окно «Windows Security» поверх копии Microsoft 365 с номером «поддержки»",
+  "blur": false
+ },
+ {
+  "id": "v-01a1a1bd-f342",
+  "scheme": "tech-support",
+  "source": "urlscan.io",
+  "date": "2026-11-03",
+  "domain": "ubiquitous-couscous-wu0f010m.on-forge.com",
+  "title": "Windows Security Center",
+  "file": "urlscan2/01a1a1bd-f342-748b-a673-2d574ff4fe74.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a1a1bd-f342-748b-a673-2d574ff4fe74\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1a1bd-f342-748b-a673-2d574ff4fe74/",
+  "verdict": "none",
+  "titles": [],
+  "note": "поддельное окно «Windows Security» поверх копии Microsoft 365 с номером «поддержки»",
+  "blur": false
+ },
+ {
+  "id": "v-01a188b6-2599",
+  "scheme": "tech-support",
+  "source": "urlscan.io",
+  "date": "2026-10-29",
+  "domain": "glowing-doodle-olllddd-3ua6mlee.on-forge.com",
+  "title": "Windows Security Center",
+  "file": "urlscan2/01a188b6-2599-74b8-ba26-03eae1a94325.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a188b6-2599-74b8-ba26-03eae1a94325\\screenshot.png",
+  "link": "https://urlscan.io/result/01a188b6-2599-74b8-ba26-03eae1a94325/",
+  "verdict": "none",
+  "titles": [],
+  "note": "поддельное окно «Windows Security» поверх копии Microsoft 365 с номером «поддержки»",
+  "blur": false
+ },
+ {
+  "id": "v-01a144e6-eb73",
+  "scheme": "tech-support",
+  "source": "urlscan.io",
+  "date": "2026-10-16",
+  "domain": "didactic-palm-fggf-dsbupv1q.on-forge.com",
+  "title": "Windows Security Center",
+  "file": "urlscan2/01a144e6-eb73-71bd-8d8b-8d69eb068625.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a144e6-eb73-71bd-8d8b-8d69eb068625\\screenshot.png",
+  "link": "https://urlscan.io/result/01a144e6-eb73-71bd-8d8b-8d69eb068625/",
+  "verdict": "none",
+  "titles": [],
+  "note": "поддельное окно «Windows Security» поверх копии Microsoft 365 с номером «поддержки»",
+  "blur": false
+ },
+ {
+  "id": "v-01a1dabc-d9b6",
+  "scheme": "tech-support",
+  "source": "urlscan.io",
+  "date": "2026-11-14",
+  "domain": "8003nyjvastdfffkxftmhtxjlcpmwasqpo-amfre8dwakf2a6c9.z03.azurefd.net",
+  "title": "Microsoft Security",
+  "file": "urlscan2/01a1dabc-d9b6-71e8-95fe-5725e5adfeb4.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a1dabc-d9b6-71e8-95fe-5725e5adfeb4\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1dabc-d9b6-71e8-95fe-5725e5adfeb4/",
+  "verdict": "danger",
+  "titles": [
+   "Поддельное предупреждение о вирусе с номером «поддержки»"
+  ],
+  "note": "первый экран ложной техподдержки: страница-приманка с окном «закрыть сайт?»; после нажатия открывается «блокировка» с номером телефона",
+  "blur": true
+ },
+ {
+  "id": "v-01a1d60e-2bb3",
+  "scheme": "tech-support",
+  "source": "urlscan.io",
+  "date": "2026-11-13",
+  "domain": "8001mnikxskgkjeygzilrfupextmiepmra-gffkfpfpcehka4an.z03.azurefd.net",
+  "title": "Microsoft Security",
+  "file": "urlscan2/01a1d60e-2bb3-76dc-8fb0-73d5d91f1b83.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a1d60e-2bb3-76dc-8fb0-73d5d91f1b83\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1d60e-2bb3-76dc-8fb0-73d5d91f1b83/",
+  "verdict": "danger",
+  "titles": [
+   "Поддельное предупреждение о вирусе с номером «поддержки»"
+  ],
+  "note": "первый экран ложной техподдержки: страница-приманка с окном «закрыть сайт?»; после нажатия открывается «блокировка» с номером телефона",
+  "blur": true
+ },
+ {
+  "id": "v-01a1d02a-aba9",
+  "scheme": "tech-support",
+  "source": "urlscan.io",
+  "date": "2026-11-12",
+  "domain": "truebubertaipanck-eagnhmbyf8bfbjd0.z03.azurefd.net",
+  "title": "Microsoft Security",
+  "file": "urlscan2/01a1d02a-aba9-72fa-a4bd-ed689665639e.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a1d02a-aba9-72fa-a4bd-ed689665639e\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1d02a-aba9-72fa-a4bd-ed689665639e/",
+  "verdict": "danger",
+  "titles": [
+   "Поддельное предупреждение о вирусе с номером «поддержки»"
+  ],
+  "note": "первый экран ложной техподдержки: страница-приманка с окном «закрыть сайт?»; после нажатия открывается «блокировка» с номером телефона",
+  "blur": true
+ },
+ {
+  "id": "v-01a1cc44-c89f",
+  "scheme": "tech-support",
+  "source": "urlscan.io",
+  "date": "2026-11-11",
+  "domain": "trueavaliant7i-cjfph0d9d9f9d7fw.z03.azurefd.net",
+  "title": "Microsoft Security",
+  "file": "urlscan2/01a1cc44-c89f-71bc-91b1-41ab95935dff.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a1cc44-c89f-71bc-91b1-41ab95935dff\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1cc44-c89f-71bc-91b1-41ab95935dff/",
+  "verdict": "danger",
+  "titles": [
+   "Поддельное предупреждение о вирусе с номером «поддержки»"
+  ],
+  "note": "первый экран ложной техподдержки: страница-приманка с окном «закрыть сайт?»; после нажатия открывается «блокировка» с номером телефона",
+  "blur": true
+ },
+ {
+  "id": "v-01a1a823-7135",
+  "scheme": "tech-support",
+  "source": "urlscan.io",
+  "date": "2026-11-04",
+  "domain": "5009vwtcoyrbivpgtdjkgcrxdywpdscogy-gzfwdbapd0fqc9d6.z03.azurefd.net",
+  "title": "Microsoft Security",
+  "file": "urlscan2/01a1a823-7135-727f-adc7-415ad4168a05.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a1a823-7135-727f-adc7-415ad4168a05\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1a823-7135-727f-adc7-415ad4168a05/",
+  "verdict": "danger",
+  "titles": [
+   "Поддельное предупреждение о вирусе с номером «поддержки»"
+  ],
+  "note": "первый экран ложной техподдержки: страница-приманка с окном «закрыть сайт?»; после нажатия открывается «блокировка» с номером телефона",
+  "blur": true
+ },
+ {
+  "id": "v-01a18aed-283a",
+  "scheme": "tech-support",
+  "source": "urlscan.io",
+  "date": "2026-10-30",
+  "domain": "better-moccasin-rwnnpr3f-dpn5e8j270g7.edgeone.dev",
+  "title": "⚠️ CRITICAL SECURITY ALERT - Microsoft Windows",
+  "file": "urlscan2/01a18aed-283a-7296-a9ff-716a54f92c4e.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a18aed-283a-7296-a9ff-716a54f92c4e\\screenshot.png",
+  "link": "https://urlscan.io/result/01a18aed-283a-7296-a9ff-716a54f92c4e/",
+  "verdict": "none",
+  "titles": [],
+  "note": "поддельное предупреждение безопасности на бесплатном хостинге",
+  "blur": false
+ },
+ {
+  "id": "v-01a1dad1-7292",
+  "scheme": "crypto-drainer",
+  "source": "urlscan.io",
+  "date": "2026-11-14",
+  "domain": "veranta-vote-app3.pages.dev",
+  "title": "Token | Veranta",
+  "file": "urlscan2/01a1dad1-7292-7142-b612-4a5d0412a109.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a1dad1-7292-7142-b612-4a5d0412a109\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1dad1-7292-7142-b612-4a5d0412a109/",
+  "verdict": "none",
+  "titles": [],
+  "note": "копия криптопроекта: «голосование о дате выдачи наград» с кнопкой подключения кошелька",
+  "blur": false
+ },
+ {
+  "id": "v-01a1dad1-489f",
+  "scheme": "crypto-drainer",
+  "source": "urlscan.io",
+  "date": "2026-11-14",
+  "domain": "5-governance-fraxfinance.pages.dev",
+  "title": "Governance - Frax",
+  "file": "urlscan2/01a1dad1-489f-76db-8001-5d3173ee3c1d.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a1dad1-489f-76db-8001-5d3173ee3c1d\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1dad1-489f-76db-8001-5d3173ee3c1d/",
+  "verdict": "none",
+  "titles": [],
+  "note": "копия криптопроекта: «голосование о дате выдачи наград» с кнопкой подключения кошелька",
+  "blur": false
+ },
+ {
+  "id": "v-01a18885-1a9f",
+  "scheme": "fines",
+  "source": "urlscan.io",
+  "date": "2026-10-29",
+  "domain": "ez-pazz-billing.129-121-100-114.cpanel.site",
+  "title": "E-ZPass Service",
+  "file": "urlscan2/01a18885-1a9f-72fa-aa72-8f5d80d580e7.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a18885-1a9f-72fa-aa72-8f5d80d580e7\\screenshot.png",
+  "link": "https://urlscan.io/result/01a18885-1a9f-72fa-aa72-8f5d80d580e7/",
+  "verdict": "none",
+  "titles": [],
+  "note": "«E-ZPass: Outstanding Balance» — неоплаченный проезд",
+  "blur": false
+ },
+ {
+  "id": "v-01a1bf4a-09c1",
+  "scheme": "fake-shop",
+  "source": "urlscan.io",
+  "date": "2026-11-09",
+  "domain": "ripcurlsale.com",
+  "title": "Surfboards - Rip Curl",
+  "file": "urlscan2/01a1bf4a-09c1-776c-8af0-6d7f57a03e8b.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a1bf4a-09c1-776c-8af0-6d7f57a03e8b\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1bf4a-09c1-776c-8af0-6d7f57a03e8b/",
+  "verdict": "none",
+  "titles": [],
+  "note": "«распродажа Rip Curl» — магазин с меткой fakeshop на urlscan.io",
+  "blur": false
+ },
+ {
+  "id": "v-01a1ca75-38b7",
+  "scheme": "payout",
+  "source": "urlscan.io",
+  "date": "2026-11-11",
+  "domain": "bg-plasthane.top",
+  "title": "Компенсация на разходи за електроенергия",
+  "file": "urlscan2/01a1ca75-38b7-7299-aec0-b74808604e13.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a1ca75-38b7-7299-aec0-b74808604e13\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1ca75-38b7-7299-aec0-b74808604e13/",
+  "verdict": "danger",
+  "titles": [
+   "Вместе с картой просят данные, которые для оплаты не нужны",
+   "Скрипт читает поля карты и умеет отправлять данные",
+   "Скрипт читает поля карты и умеет отправлять данные"
+  ],
+  "note": "«компенсация расходов на электроэнергию» (Болгария)",
+  "blur": false
+ },
+ {
+  "id": "v-01a1b0ce-0d66",
+  "scheme": "payout",
+  "source": "urlscan.io",
+  "date": "2026-11-06",
+  "domain": "ckvptc.com",
+  "title": "Amazon Refund Check",
+  "file": "urlscan2/01a1b0ce-0d66-7038-a36b-6e1b7a6c5150.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a1b0ce-0d66-7038-a36b-6e1b7a6c5150\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1b0ce-0d66-7038-a36b-6e1b7a6c5150/",
+  "verdict": "none",
+  "titles": [],
+  "note": "«Amazon Refund Check: $100–$260» — возврат денег за заказы",
+  "blur": false
+ },
+ {
+  "id": "v-01a17d5f-1b59",
+  "scheme": "payout",
+  "source": "urlscan.io",
+  "date": "2026-10-27",
+  "domain": "underground-emerald-qxnszcll-dpckhtvzsu9f.edgeone.dev",
+  "title": "Refund Portal",
+  "file": "urlscan2/01a17d5f-1b59-70ce-9134-90858f3dabee.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a17d5f-1b59-70ce-9134-90858f3dabee\\screenshot.png",
+  "link": "https://urlscan.io/result/01a17d5f-1b59-70ce-9134-90858f3dabee/",
+  "verdict": "none",
+  "titles": [],
+  "note": "поддельное предупреждение безопасности на бесплатном хостинге",
+  "blur": false
+ },
+ {
+  "id": "v-01a1446c-d672",
+  "scheme": "fake-payment",
+  "source": "urlscan.io",
+  "date": "2026-10-16",
+  "domain": "usps-server.serv00.net",
+  "title": "USPS.com® - USPS Tracking®",
+  "file": "urlscan2/01a1446c-d672-75bd-9042-38b69ad66f8d.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a1446c-d672-75bd-9042-38b69ad66f8d\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1446c-d672-75bd-9042-38b69ad66f8d/",
+  "verdict": "none",
+  "titles": [],
+  "note": "копия почтовой службы: «доставка не удалась — оплатите повторную доставку»",
+  "blur": false
+ },
+ {
+  "id": "v-01a1446c-0e6f",
+  "scheme": "fake-payment",
+  "source": "urlscan.io",
+  "date": "2026-10-16",
+  "domain": "www.usps-server.serv00.net",
+  "title": "USPS.com® - USPS Tracking®",
+  "file": "urlscan2/01a1446c-0e6f-72da-ae2e-9de80c0d7e52.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a1446c-0e6f-72da-ae2e-9de80c0d7e52\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1446c-0e6f-72da-ae2e-9de80c0d7e52/",
+  "verdict": "none",
+  "titles": [],
+  "note": "копия почтовой службы: «доставка не удалась — оплатите повторную доставку»",
+  "blur": false
+ },
+ {
+  "id": "v-01a1dae3-269d",
+  "scheme": "fake-payment",
+  "source": "urlscan.io",
+  "date": "2026-11-14",
+  "domain": "royalmail-delivers.com",
+  "title": "Book a redelivery | Royal Mail",
+  "file": "urlscan2/01a1dae3-269d-767f-b1e7-907cd052b061.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a1dae3-269d-767f-b1e7-907cd052b061\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1dae3-269d-767f-b1e7-907cd052b061/",
+  "verdict": "none",
+  "titles": [],
+  "note": "копия почтовой службы: «доставка не удалась — оплатите повторную доставку»",
+  "blur": false
+ },
+ {
+  "id": "v-01a19ffe-5616",
+  "scheme": "fake-payment",
+  "source": "urlscan.io",
+  "date": "2026-11-03",
+  "domain": "redelivery-tracking-au.com",
+  "title": "redelivery-tracking-au.com",
+  "file": "urlscan2/01a19ffe-5616-7152-9caf-d8307af97b81.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a19ffe-5616-7152-9caf-d8307af97b81\\screenshot.png",
+  "link": "https://urlscan.io/result/01a19ffe-5616-7152-9caf-d8307af97b81/",
+  "verdict": "none",
+  "titles": [],
+  "note": "копия почтовой службы: «доставка не удалась — оплатите повторную доставку»",
+  "blur": false
+ },
+ {
+  "id": "v-01a1a7ca-76ea",
+  "scheme": "tech-support",
+  "source": "urlscan.io",
+  "date": "2026-11-04",
+  "domain": "5008oczxvfaertwufxxhrhnevseruwoslt-fvacesdbargwdbha.z03.azurefd.net",
+  "title": "Microsoft Security",
+  "file": "urlscan2/01a1a7ca-76ea-75ba-9435-79713d888333.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a1a7ca-76ea-75ba-9435-79713d888333\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1a7ca-76ea-75ba-9435-79713d888333/",
+  "verdict": "danger",
+  "titles": [
+   "Поддельное предупреждение о вирусе с номером «поддержки»"
+  ],
+  "note": "первый экран ложной техподдержки: страница-приманка с окном «закрыть сайт?»; после нажатия открывается «блокировка» с номером телефона",
+  "blur": true
+ },
+ {
+  "id": "v-01a1a7a1-330e",
+  "scheme": "tech-support",
+  "source": "urlscan.io",
+  "date": "2026-11-04",
+  "domain": "5015oeerdmxngbcgnypaayjfvncgwckwml-dveqevh4hdazhzbk.z03.azurefd.net",
+  "title": "Microsoft Security",
+  "file": "urlscan2/01a1a7a1-330e-723d-b021-5e8a281afc86.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a1a7a1-330e-723d-b021-5e8a281afc86\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1a7a1-330e-723d-b021-5e8a281afc86/",
+  "verdict": "danger",
+  "titles": [
+   "Поддельное предупреждение о вирусе с номером «поддержки»"
+  ],
+  "note": "первый экран ложной техподдержки: страница-приманка с окном «закрыть сайт?»; после нажатия открывается «блокировка» с номером телефона",
+  "blur": true
+ },
+ {
+  "id": "v-01a1a262-6d6b",
+  "scheme": "tech-support",
+  "source": "urlscan.io",
+  "date": "2026-11-03",
+  "domain": "5005yzmiradngbtxbpooplqfpgehwmvnzy-apcpg0a7htf0eqa6.z03.azurefd.net",
+  "title": "Microsoft Security",
+  "file": "urlscan2/01a1a262-6d6b-72c0-bd79-71126244d9c0.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a1a262-6d6b-72c0-bd79-71126244d9c0\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1a262-6d6b-72c0-bd79-71126244d9c0/",
+  "verdict": "danger",
+  "titles": [
+   "Поддельное предупреждение о вирусе с номером «поддержки»"
+  ],
+  "note": "первый экран ложной техподдержки: страница-приманка с окном «закрыть сайт?»; после нажатия открывается «блокировка» с номером телефона",
+  "blur": true
+ },
+ {
+  "id": "v-01a1a233-8836",
+  "scheme": "tech-support",
+  "source": "urlscan.io",
+  "date": "2026-11-03",
+  "domain": "5001jmfqaihnbeyfsatewxwyatmbejcuwj-eggedsahc2apgebv.z03.azurefd.net",
+  "title": "Microsoft Security",
+  "file": "urlscan2/01a1a233-8836-71ae-8b2b-1ef5969de11e.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a1a233-8836-71ae-8b2b-1ef5969de11e\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1a233-8836-71ae-8b2b-1ef5969de11e/",
+  "verdict": "danger",
+  "titles": [
+   "Поддельное предупреждение о вирусе с номером «поддержки»"
+  ],
+  "note": "первый экран ложной техподдержки: страница-приманка с окном «закрыть сайт?»; после нажатия открывается «блокировка» с номером телефона",
+  "blur": true
+ },
+ {
+  "id": "v-01a19348-444f",
+  "scheme": "tech-support",
+  "source": "urlscan.io",
+  "date": "2026-10-31",
+  "domain": "7001qoylcxgzlabxewsbychkjdowqviexz-e2gwaag7b0hhh9cg.z03.azurefd.net",
+  "title": "Microsoft Security",
+  "file": "urlscan2/01a19348-444f-7784-963b-621e40033b49.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a19348-444f-7784-963b-621e40033b49\\screenshot.png",
+  "link": "https://urlscan.io/result/01a19348-444f-7784-963b-621e40033b49/",
+  "verdict": "danger",
+  "titles": [
+   "Поддельное предупреждение о вирусе с номером «поддержки»"
+  ],
+  "note": "первый экран ложной техподдержки: страница-приманка с окном «закрыть сайт?»; после нажатия открывается «блокировка» с номером телефона",
+  "blur": true
+ },
+ {
+  "id": "v-01a19326-33ea",
+  "scheme": "tech-support",
+  "source": "urlscan.io",
+  "date": "2026-10-31",
+  "domain": "7006pzjhxlguipeogcqecwgfonyaudbbqb-hfgvhhc2efafe3hx.z03.azurefd.net",
+  "title": "Microsoft Security",
+  "file": "urlscan2/01a19326-33ea-70a8-bc3b-2eef420ef285.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a19326-33ea-70a8-bc3b-2eef420ef285\\screenshot.png",
+  "link": "https://urlscan.io/result/01a19326-33ea-70a8-bc3b-2eef420ef285/",
+  "verdict": "danger",
+  "titles": [
+   "Поддельное предупреждение о вирусе с номером «поддержки»"
+  ],
+  "note": "первый экран ложной техподдержки: страница-приманка с окном «закрыть сайт?»; после нажатия открывается «блокировка» с номером телефона",
+  "blur": true
+ },
+ {
+  "id": "v-01a09ec7-92c3",
+  "scheme": "fake-payment",
+  "source": "urlscan.io",
+  "date": "2026-09-14",
+  "domain": "oplatahub.com",
+  "title": "Оплата заказа",
+  "file": "urlscan2/01a09ec7-92c3-719e-a169-bd2833459a39.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a09ec7-92c3-719e-a169-bd2833459a39\\screenshot.png",
+  "link": "https://urlscan.io/result/01a09ec7-92c3-719e-a169-bd2833459a39/",
+  "verdict": "none",
+  "titles": [],
+  "note": "«Ваш заказ. Следующий шаг — оплата»: 66 320 ₽",
+  "blur": false
+ },
+ {
+  "id": "v-01a0667a-33c4",
+  "scheme": "fake-payment",
+  "source": "urlscan.io",
+  "date": "2026-09-03",
+  "domain": "nalozka-payment.site",
+  "title": "Оплата заказа СДЭК",
+  "file": "urlscan2/01a0667a-33c4-7032-95d7-60a231cf8cdc.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a0667a-33c4-7032-95d7-60a231cf8cdc\\screenshot.png",
+  "link": "https://urlscan.io/result/01a0667a-33c4-7032-95d7-60a231cf8cdc/",
+  "verdict": "none",
+  "titles": [],
+  "note": "«СДЭК — оплата заказа» (наложенный платёж)",
+  "blur": false
+ },
+ {
+  "id": "v-01a10004-1969",
+  "scheme": "fake-shop",
+  "source": "urlscan.io",
+  "date": "2026-10-03",
+  "domain": "www.permanentmall.store",
+  "title": "USPS",
+  "file": "urlscan2/01a10004-1969-72a9-9292-82d4875c1327.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a10004-1969-72a9-9292-82d4875c1327\\screenshot.png",
+  "link": "https://urlscan.io/result/01a10004-1969-72a9-9292-82d4875c1327/",
+  "verdict": "none",
+  "titles": [],
+  "note": "«магазин марок USPS»",
+  "blur": false
+ },
+ {
+  "id": "v-01a13d36-4fbf",
+  "scheme": "fake-payment",
+  "source": "urlscan.io",
+  "date": "2026-10-15",
+  "domain": "fivetelgate-dpd4r4iey27k.edgeone.dev",
+  "title": "Wi5 - Telecommunications - Secure Checkout",
+  "file": "urlscan2/01a13d36-4fbf-7756-a9f4-8e7139537bb0.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a13d36-4fbf-7756-a9f4-8e7139537bb0\\screenshot.png",
+  "link": "https://urlscan.io/result/01a13d36-4fbf-7756-a9f4-8e7139537bb0/",
+  "verdict": "warning",
+  "titles": [
+   "Данные карты уходят на другой сайт"
+  ],
+  "note": "поддельное предупреждение безопасности на бесплатном хостинге",
+  "blur": false
+ },
+ {
+  "id": "v-01a13d28-2c99",
+  "scheme": "fake-payment",
+  "source": "urlscan.io",
+  "date": "2026-10-15",
+  "domain": "paygate-dpj931jj60r0.edgeone.dev",
+  "title": "Wi5 - Telecommunications - Secure Checkout",
+  "file": "urlscan2/01a13d28-2c99-753a-ad29-ee072ef322cf.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a13d28-2c99-753a-ad29-ee072ef322cf\\screenshot.png",
+  "link": "https://urlscan.io/result/01a13d28-2c99-753a-ad29-ee072ef322cf/",
+  "verdict": "warning",
+  "titles": [
+   "Данные карты уходят на другой сайт"
+  ],
+  "note": "поддельное предупреждение безопасности на бесплатном хостинге",
+  "blur": false
+ },
+ {
+  "id": "v-01a08c13-aa47",
+  "scheme": "fake-shop",
+  "source": "urlscan.io",
+  "date": "2026-09-10",
+  "domain": "faviconshopbtcpay-dpnhk2p9wx0h.edgeone.dev",
+  "title": "Secure Checkout - Rolex Luxury Store",
+  "file": "urlscan2/01a08c13-aa47-7474-9eb9-024bf8c050cb.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a08c13-aa47-7474-9eb9-024bf8c050cb\\screenshot.png",
+  "link": "https://urlscan.io/result/01a08c13-aa47-7474-9eb9-024bf8c050cb/",
+  "verdict": "none",
+  "titles": [],
+  "note": "поддельное предупреждение безопасности на бесплатном хостинге",
+  "blur": false
+ },
+ {
+  "id": "v-019c2254-8334",
+  "scheme": "fake-payment",
+  "source": "urlscan.io",
+  "date": "2026-02-03",
+  "domain": "avito2payment.ru",
+  "title": "Авито • Получение оплаты за товар",
+  "file": "urlscan2/019c2254-8334-772a-ab39-5b9c7489cc19.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\019c2254-8334-772a-ab39-5b9c7489cc19\\screenshot.png",
+  "link": "https://urlscan.io/result/019c2254-8334-772a-ab39-5b9c7489cc19/",
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования",
+   "Данные карты уходят в Telegram-бота",
+   "Для получения денег просят секретные данные карты",
+   "Скрипт читает поля карты и умеет отправлять данные"
+  ],
+  "note": "«Авито • Получение оплаты за товар» — продавцу предлагают «получить деньги» по карте",
+  "blur": false
+ },
+ {
+  "id": "v-01a13b81-8a68",
+  "scheme": "tech-support",
+  "source": "urlscan.io",
+  "date": "2026-10-14",
+  "domain": "symmetrical-octo-succotashhh-oiykj24e.on-forge.com",
+  "title": "Windows Security Center",
+  "file": "urlscan2/01a13b81-8a68-77ab-b5be-c4501094dd75.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a13b81-8a68-77ab-b5be-c4501094dd75\\screenshot.png",
+  "link": "https://urlscan.io/result/01a13b81-8a68-77ab-b5be-c4501094dd75/",
+  "verdict": "none",
+  "titles": [],
+  "note": "поддельное окно «Windows Security» поверх копии Microsoft 365 с номером «поддержки»",
+  "blur": false
+ },
+ {
+  "id": "v-01a0ea7c-ce7f",
+  "scheme": "tech-support",
+  "source": "urlscan.io",
+  "date": "2026-09-29",
+  "domain": "microsoft-support-alrt-altr877.pages.dev",
+  "title": "Windows Security Alert",
+  "file": "urlscan2/01a0ea7c-ce7f-74eb-82c9-775d9d722bb6.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a0ea7c-ce7f-74eb-82c9-775d9d722bb6\\screenshot.png",
+  "link": "https://urlscan.io/result/01a0ea7c-ce7f-74eb-82c9-775d9d722bb6/",
+  "verdict": "danger",
+  "titles": [
+   "Поддельное предупреждение о вирусе с номером «поддержки»"
+  ],
+  "note": "«Access to this pc has been blocked for security reasons» и номер +1 (888) 260-5035",
+  "blur": false
+ },
+ {
+  "id": "v-01a0be61-4ae1",
+  "scheme": "tech-support",
+  "source": "urlscan.io",
+  "date": "2026-09-20",
+  "domain": "microsoft-support-alrt-altr98.pages.dev",
+  "title": "Windows Security Alert",
+  "file": "urlscan2/01a0be61-4ae1-742f-96e8-7e775f937592.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a0be61-4ae1-742f-96e8-7e775f937592\\screenshot.png",
+  "link": "https://urlscan.io/result/01a0be61-4ae1-742f-96e8-7e775f937592/",
+  "verdict": "danger",
+  "titles": [
+   "Поддельное предупреждение о вирусе с номером «поддержки»"
+  ],
+  "note": "«Access to this pc has been blocked for security reasons» и номер +1 (888) 260-5035",
+  "blur": false
+ },
+ {
+  "id": "v-01a037df-db94",
+  "scheme": "tech-support",
+  "source": "urlscan.io",
+  "date": "2026-08-25",
+  "domain": "store001-dpk23eng7v19.edgeone.dev",
+  "title": "Windows Security Alert",
+  "file": "urlscan2/01a037df-db94-772e-81e9-5aa6889c2e2e.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a037df-db94-772e-81e9-5aa6889c2e2e\\screenshot.png",
+  "link": "https://urlscan.io/result/01a037df-db94-772e-81e9-5aa6889c2e2e/",
+  "verdict": "danger",
+  "titles": [
+   "Поддельное предупреждение о вирусе с номером «поддержки»"
+  ],
+  "note": "поддельное предупреждение безопасности на бесплатном хостинге",
+  "blur": false
+ },
+ {
+  "id": "v-01a1892f-16dc",
+  "scheme": "tech-support",
+  "source": "urlscan.io",
+  "date": "2026-10-29",
+  "domain": "9005uiigpnubxhnvgkmdcoaezayzrvezsa-d4abc0ayeubfc4gq.z03.azurefd.net",
+  "title": "Microsoft Security",
+  "file": "urlscan2/01a1892f-16dc-70de-bf87-103ebb402cdf.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a1892f-16dc-70de-bf87-103ebb402cdf\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1892f-16dc-70de-bf87-103ebb402cdf/",
+  "verdict": "danger",
+  "titles": [
+   "Поддельное предупреждение о вирусе с номером «поддержки»"
+  ],
+  "note": "первый экран ложной техподдержки: страница-приманка с окном «закрыть сайт?»; после нажатия открывается «блокировка» с номером телефона",
+  "blur": true
+ },
+ {
+  "id": "v-01a17f03-59db",
+  "scheme": "tech-support",
+  "source": "urlscan.io",
+  "date": "2026-10-27",
+  "domain": "5011nuhnnzgkgkpjdafwsglkcytoirjtoa-fabmf4gyd0cchbak.z03.azurefd.net",
+  "title": "Microsoft Security",
+  "file": "urlscan2/01a17f03-59db-7326-a8e9-60ca3d3c4796.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a17f03-59db-7326-a8e9-60ca3d3c4796\\screenshot.png",
+  "link": "https://urlscan.io/result/01a17f03-59db-7326-a8e9-60ca3d3c4796/",
+  "verdict": "danger",
+  "titles": [
+   "Поддельное предупреждение о вирусе с номером «поддержки»"
+  ],
+  "note": "первый экран ложной техподдержки: страница-приманка с окном «закрыть сайт?»; после нажатия открывается «блокировка» с номером телефона",
+  "blur": true
+ },
+ {
+  "id": "v-01a17e89-cfe3",
+  "scheme": "tech-support",
+  "source": "urlscan.io",
+  "date": "2026-10-27",
+  "domain": "5002aixrsmsmhegwswwojdxklroutfzbby-cag4bde6h3bgdyhk.z03.azurefd.net",
+  "title": "Microsoft Security",
+  "file": "urlscan2/01a17e89-cfe3-753f-a4e9-b71d85e3050e.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a17e89-cfe3-753f-a4e9-b71d85e3050e\\screenshot.png",
+  "link": "https://urlscan.io/result/01a17e89-cfe3-753f-a4e9-b71d85e3050e/",
+  "verdict": "danger",
+  "titles": [
+   "Поддельное предупреждение о вирусе с номером «поддержки»"
+  ],
+  "note": "первый экран ложной техподдержки: страница-приманка с окном «закрыть сайт?»; после нажатия открывается «блокировка» с номером телефона",
+  "blur": true
+ },
+ {
+  "id": "v-01a17990-c986",
+  "scheme": "tech-support",
+  "source": "urlscan.io",
+  "date": "2026-10-26",
+  "domain": "9006tmuviwlelkgpkitfamjuqwtfljrjem-encwafaph4a3f4cr.z03.azurefd.net",
+  "title": "Microsoft Security",
+  "file": "urlscan2/01a17990-c986-77cb-9ad1-2d26695b6f3e.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a17990-c986-77cb-9ad1-2d26695b6f3e\\screenshot.png",
+  "link": "https://urlscan.io/result/01a17990-c986-77cb-9ad1-2d26695b6f3e/",
+  "verdict": "danger",
+  "titles": [
+   "Поддельное предупреждение о вирусе с номером «поддержки»"
+  ],
+  "note": "первый экран ложной техподдержки: страница-приманка с окном «закрыть сайт?»; после нажатия открывается «блокировка» с номером телефона",
+  "blur": true
+ },
+ {
+  "id": "v-01a1553e-7e7c",
+  "scheme": "tech-support",
+  "source": "urlscan.io",
+  "date": "2026-10-19",
+  "domain": "3001jstekyazkfrdzfjgjkqkkzfdypfjwr-epdtepe5ffhsb0hd.z03.azurefd.net",
+  "title": "Microsoft Security",
+  "file": "urlscan2/01a1553e-7e7c-7127-a953-e2c279200b18.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a1553e-7e7c-7127-a953-e2c279200b18\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1553e-7e7c-7127-a953-e2c279200b18/",
+  "verdict": "danger",
+  "titles": [
+   "Поддельное предупреждение о вирусе с номером «поддержки»"
+  ],
+  "note": "первый экран ложной техподдержки: страница-приманка с окном «закрыть сайт?»; после нажатия открывается «блокировка» с номером телефона",
+  "blur": true
+ },
+ {
+  "id": "v-01a14b7b-0426",
+  "scheme": "tech-support",
+  "source": "urlscan.io",
+  "date": "2026-10-17",
+  "domain": "8001yspiiyyrwcecqkvbjgjdvfbexjzfao-edh5beetcwfffjf3.z03.azurefd.net",
+  "title": "Microsoft Security",
+  "file": "urlscan2/01a14b7b-0426-70ec-9e8b-c1282707f736.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a14b7b-0426-70ec-9e8b-c1282707f736\\screenshot.png",
+  "link": "https://urlscan.io/result/01a14b7b-0426-70ec-9e8b-c1282707f736/",
+  "verdict": "danger",
+  "titles": [
+   "Поддельное предупреждение о вирусе с номером «поддержки»"
+  ],
+  "note": "первый экран ложной техподдержки: страница-приманка с окном «закрыть сайт?»; после нажатия открывается «блокировка» с номером телефона",
+  "blur": true
+ },
+ {
+  "id": "v-019ec6ac-5863",
+  "scheme": "fines",
+  "source": "urlscan.io",
+  "date": "2026-06-14",
+  "domain": "ez-passupdatebiling.20-228-132-238.cpanel.site",
+  "title": "E-ZPass Service",
+  "file": "urlscan2/019ec6ac-5863-725d-a520-06b85349dc57.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\019ec6ac-5863-725d-a520-06b85349dc57\\screenshot.png",
+  "link": "https://urlscan.io/result/019ec6ac-5863-725d-a520-06b85349dc57/",
+  "verdict": "none",
+  "titles": [],
+  "note": "",
+  "blur": false
+ },
+ {
+  "id": "v-019ea76c-15ea",
+  "scheme": "fines",
+  "source": "urlscan.io",
+  "date": "2026-06-08",
+  "domain": "e-zpasscenter.20-244-12-151.cpanel.site",
+  "title": "E-ZPass Service",
+  "file": "urlscan2/019ea76c-15ea-72af-b781-dc5fa1604a88.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\019ea76c-15ea-72af-b781-dc5fa1604a88\\screenshot.png",
+  "link": "https://urlscan.io/result/019ea76c-15ea-72af-b781-dc5fa1604a88/",
+  "verdict": "none",
+  "titles": [],
+  "note": "«E-ZPass: Outstanding Balance» — неоплаченный проезд",
+  "blur": false
+ },
+ {
+  "id": "v-019ea4b7-469d",
+  "scheme": "fines",
+  "source": "urlscan.io",
+  "date": "2026-06-08",
+  "domain": "e-zpassgroupstatement.20-244-12-151.cpanel.site",
+  "title": "E-ZPass Service",
+  "file": "urlscan2/019ea4b7-469d-761d-bad4-567a215147f2.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\019ea4b7-469d-761d-bad4-567a215147f2\\screenshot.png",
+  "link": "https://urlscan.io/result/019ea4b7-469d-761d-bad4-567a215147f2/",
+  "verdict": "none",
+  "titles": [],
+  "note": "«E-ZPass: Outstanding Balance» — неоплаченный проезд",
+  "blur": false
+ },
+ {
+  "id": "v-019ea43c-b8ea",
+  "scheme": "fines",
+  "source": "urlscan.io",
+  "date": "2026-06-07",
+  "domain": "e-zpassgroup-update.20-244-12-151.cpanel.site",
+  "title": "E-ZPass Service",
+  "file": "urlscan2/019ea43c-b8ea-743b-bb0e-c9a58eac056d.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\019ea43c-b8ea-743b-bb0e-c9a58eac056d\\screenshot.png",
+  "link": "https://urlscan.io/result/019ea43c-b8ea-743b-bb0e-c9a58eac056d/",
+  "verdict": "none",
+  "titles": [],
+  "note": "«E-ZPass: Outstanding Balance» — неоплаченный проезд",
+  "blur": false
+ },
+ {
+  "id": "v-019e6fc7-ce60",
+  "scheme": "fines",
+  "source": "urlscan.io",
+  "date": "2026-05-28",
+  "domain": "energetic-gold-squirrel.213-165-245-113.cpanel.site",
+  "title": "E-ZPass Service",
+  "file": "urlscan2/019e6fc7-ce60-725d-b0a2-70fe8160070e.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\019e6fc7-ce60-725d-b0a2-70fe8160070e\\screenshot.png",
+  "link": "https://urlscan.io/result/019e6fc7-ce60-725d-b0a2-70fe8160070e/",
+  "verdict": "none",
+  "titles": [],
+  "note": "«E-ZPass: Outstanding Balance» — неоплаченный проезд",
+  "blur": false
+ },
+ {
+  "id": "v-019dbef0-a7cf",
+  "scheme": "fines",
+  "source": "urlscan.io",
+  "date": "2026-04-24",
+  "domain": "iagservicecorp.org",
+  "title": "Log in | E-ZPass Service Corp",
+  "file": "urlscan2/019dbef0-a7cf-7554-9b46-5b5c88778460.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\019dbef0-a7cf-7554-9b46-5b5c88778460\\screenshot.png",
+  "link": "https://urlscan.io/result/019dbef0-a7cf-7554-9b46-5b5c88778460/",
+  "verdict": "none",
+  "titles": [],
+  "note": "«E-ZPass: Outstanding Balance» — неоплаченный проезд",
+  "blur": false
+ },
+ {
+  "id": "v-01a01f63-e042",
+  "scheme": "fines",
+  "source": "urlscan.io",
+  "date": "2026-08-20",
+  "domain": "eflow-toll.co.com",
+  "title": "eFlow Pay Toll - M50",
+  "file": "urlscan2/01a01f63-e042-7378-af6f-2333ef82fcd7.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a01f63-e042-7378-af6f-2333ef82fcd7\\screenshot.png",
+  "link": "https://urlscan.io/result/01a01f63-e042-7378-af6f-2333ef82fcd7/",
+  "verdict": "none",
+  "titles": [],
+  "note": "копия eflow (Ирландия): «Pay Toll»",
+  "blur": false
+ },
+ {
+  "id": "v-01a0b8cd-f8cd",
+  "scheme": "fines",
+  "source": "urlscan.io",
+  "date": "2026-09-19",
+  "domain": "ros-gibdd-shtraf.ru",
+  "title": "АвтоШтраф EXPRESS — Проверка и оплата штрафов ГИБДД (Защищено TLS 1.3 / ГИС ГМП)",
+  "file": "urlscan2/01a0b8cd-f8cd-7725-8769-cee08000dfe4.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a0b8cd-f8cd-7725-8769-cee08000dfe4\\screenshot.png",
+  "link": "https://urlscan.io/result/01a0b8cd-f8cd-7725-8769-cee08000dfe4/",
+  "verdict": "warning",
+  "titles": [
+   "Скрипт читает поля карты и умеет отправлять данные"
+  ],
+  "note": "«АвтоШтраф EXPRESS — проверка и оплата штрафов ГИБДД»",
+  "blur": false
+ },
+ {
+  "id": "v-01a10eac-7607",
+  "scheme": "fake-shop",
+  "source": "urlscan.io",
+  "date": "2026-10-06",
+  "domain": "guesschrono.com",
+  "title": "Women's Watches - GUESS Watches",
+  "file": "urlscan2/01a10eac-7607-768c-81cc-1faa96c84aa3.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a10eac-7607-768c-81cc-1faa96c84aa3\\screenshot.png",
+  "link": "https://urlscan.io/result/01a10eac-7607-768c-81cc-1faa96c84aa3/",
+  "verdict": "none",
+  "titles": [],
+  "note": "копия магазина часов GUESS",
+  "blur": false
+ },
+ {
+  "id": "v-01a10bc8-26e3",
+  "scheme": "payout",
+  "source": "urlscan.io",
+  "date": "2026-10-05",
+  "domain": "bulgaria-isplashanie.me",
+  "title": "Компенсация на разходи за електроенергия",
+  "file": "urlscan2/01a10bc8-26e3-70df-8a38-348d2df3ccb2.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a10bc8-26e3-70df-8a38-348d2df3ccb2\\screenshot.png",
+  "link": "https://urlscan.io/result/01a10bc8-26e3-70df-8a38-348d2df3ccb2/",
+  "verdict": "danger",
+  "titles": [
+   "Вместе с картой просят данные, которые для оплаты не нужны",
+   "Скрипт читает поля карты и умеет отправлять данные",
+   "Скрипт читает поля карты и умеет отправлять данные"
+  ],
+  "note": "«компенсация расходов на электроэнергию» (Болгария)",
+  "blur": false
+ },
+ {
+  "id": "v-01a02f32-0252",
+  "scheme": "payout",
+  "source": "urlscan.io",
+  "date": "2026-08-23",
+  "domain": "parite-bulgaria.click",
+  "title": "Компенсация на разходи за електроенергия",
+  "file": "urlscan2/01a02f32-0252-72e8-bea3-e0917cc1f7d7.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a02f32-0252-72e8-bea3-e0917cc1f7d7\\screenshot.png",
+  "link": "https://urlscan.io/result/01a02f32-0252-72e8-bea3-e0917cc1f7d7/",
+  "verdict": "danger",
+  "titles": [
+   "Вместе с картой просят данные, которые для оплаты не нужны",
+   "Скрипт читает поля карты и умеет отправлять данные",
+   "Скрипт читает поля карты и умеет отправлять данные"
+  ],
+  "note": "«компенсация расходов на электроэнергию» (Болгария)",
+  "blur": false
+ },
+ {
+  "id": "v-019f81d7-72cb",
+  "scheme": "payout",
+  "source": "urlscan.io",
+  "date": "2026-07-20",
+  "domain": "www.moneyrefunded.xyz",
+  "title": "Государственная компенсация убытков | Возврат средств",
+  "file": "urlscan2/019f81d7-72cb-74c1-bb54-a3db1b460dcb.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\019f81d7-72cb-74c1-bb54-a3db1b460dcb\\screenshot.png",
+  "link": "https://urlscan.io/result/019f81d7-72cb-74c1-bb54-a3db1b460dcb/",
+  "verdict": "none",
+  "titles": [],
+  "note": "«Правительство компенсирует убытки — узнайте, положена ли вам компенсация»",
+  "blur": false
+ },
+ {
+  "id": "v-019f0df2-84fd",
+  "scheme": "payout",
+  "source": "urlscan.io",
+  "date": "2026-06-28",
+  "domain": "fintrud.ru",
+  "title": "Получить выплату",
+  "file": "urlscan2/019f0df2-84fd-745f-a2dc-84b91e57f7aa.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\019f0df2-84fd-745f-a2dc-84b91e57f7aa\\screenshot.png",
+  "link": "https://urlscan.io/result/019f0df2-84fd-745f-a2dc-84b91e57f7aa/",
+  "verdict": "none",
+  "titles": [],
+  "note": "копия «Работы России»: «Как получить дополнительную выплату от Центра занятости» — форма с ФИО, телефоном и почтой",
+  "blur": false
+ },
+ {
+  "id": "v-019eacd5-1780",
+  "scheme": "payout",
+  "source": "urlscan.io",
+  "date": "2026-06-09",
+  "domain": "trudprof.ru",
+  "title": "Получить выплату",
+  "file": "urlscan2/019eacd5-1780-759e-8922-d7af75be5eb4.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\019eacd5-1780-759e-8922-d7af75be5eb4\\screenshot.png",
+  "link": "https://urlscan.io/result/019eacd5-1780-759e-8922-d7af75be5eb4/",
+  "verdict": "none",
+  "titles": [],
+  "note": "копия «Работы России»: «Как получить дополнительную выплату от Центра занятости» — форма с ФИО, телефоном и почтой",
+  "blur": false
+ },
+ {
+  "id": "v-019c0e27-1488",
+  "scheme": "payout",
+  "source": "urlscan.io",
+  "date": "2026-01-30",
+  "domain": "sfrgos.ru",
+  "title": "Получить выплату",
+  "file": "urlscan2/019c0e27-1488-73de-9247-3a2824c1342e.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\019c0e27-1488-73de-9247-3a2824c1342e\\screenshot.png",
+  "link": "https://urlscan.io/result/019c0e27-1488-73de-9247-3a2824c1342e/",
+  "verdict": "none",
+  "titles": [],
+  "note": "копия «Работы России»: «Как получить дополнительную выплату от Центра занятости» — форма с ФИО, телефоном и почтой",
+  "blur": false
+ },
+ {
+  "id": "v-019ab968-84f8",
+  "scheme": "payout",
+  "source": "urlscan.io",
+  "date": "2025-11-25",
+  "domain": "trudvsemreg.ru",
+  "title": "Получить выплату",
+  "file": "urlscan2/019ab968-84f8-7372-8d0a-4871d6000f98.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\019ab968-84f8-7372-8d0a-4871d6000f98\\screenshot.png",
+  "link": "https://urlscan.io/result/019ab968-84f8-7372-8d0a-4871d6000f98/",
+  "verdict": "none",
+  "titles": [],
+  "note": "копия «Работы России»: «Как получить дополнительную выплату от Центра занятости» — форма с ФИО, телефоном и почтой",
+  "blur": false
+ },
+ {
+  "id": "v-019aad20-333a",
+  "scheme": "payout",
+  "source": "urlscan.io",
+  "date": "2025-11-22",
+  "domain": "www.sfrportal.online",
+  "title": "Получить выплату",
+  "file": "urlscan2/019aad20-333a-75ef-92df-f9e2bc0cadae.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\019aad20-333a-75ef-92df-f9e2bc0cadae\\screenshot.png",
+  "link": "https://urlscan.io/result/019aad20-333a-75ef-92df-f9e2bc0cadae/",
+  "verdict": "none",
+  "titles": [],
+  "note": "копия «Работы России»: «Как получить дополнительную выплату от Центра занятости» — форма с ФИО, телефоном и почтой",
+  "blur": false
+ },
+ {
+  "id": "v-01a0867f-de36",
+  "scheme": "safe-account",
+  "source": "urlscan.io",
+  "date": "2026-09-09",
+  "domain": "yandex-maps-ruclient.online",
+  "title": "Служба безопасности Госуслуг",
+  "file": "urlscan2/01a0867f-de36-763c-9e65-3a8b6f672c84.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a0867f-de36-763c-9e65-3a8b6f672c84\\screenshot.png",
+  "link": "https://urlscan.io/result/01a0867f-de36-763c-9e65-3a8b6f672c84/",
+  "verdict": "danger",
+  "titles": [
+   "Страница пугает взломом и отправляет в Telegram"
+  ],
+  "note": "«Госуслуги: доступ к учётной записи передан на устройство Apple MacBook Air» и кнопка «Обратиться в техподдержку» — первый шаг схемы «безопасный счёт»",
+  "blur": false
+ },
+ {
+  "id": "v-01a0867e-d24a",
+  "scheme": "safe-account",
+  "source": "urlscan.io",
+  "date": "2026-09-09",
+  "domain": "www.yandex-maps-ruclient.online",
+  "title": "Служба безопасности Госуслуг",
+  "file": "urlscan2/01a0867e-d24a-7639-861f-41b9c524762f.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a0867e-d24a-7639-861f-41b9c524762f\\screenshot.png",
+  "link": "https://urlscan.io/result/01a0867e-d24a-7639-861f-41b9c524762f/",
+  "verdict": "danger",
+  "titles": [
+   "Страница пугает взломом и отправляет в Telegram"
+  ],
+  "note": "«Госуслуги: доступ к учётной записи передан на устройство Apple MacBook Air» и кнопка «Обратиться в техподдержку» — первый шаг схемы «безопасный счёт»",
+  "blur": false
+ },
+ {
+  "id": "v-01a08532-a148",
+  "scheme": "safe-account",
+  "source": "urlscan.io",
+  "date": "2026-09-09",
+  "domain": "yandex-maps-def-r-u.online",
+  "title": "Служба безопасности Госуслуг",
+  "file": "urlscan2/01a08532-a148-722e-9705-94aca998c6aa.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a08532-a148-722e-9705-94aca998c6aa\\screenshot.png",
+  "link": "https://urlscan.io/result/01a08532-a148-722e-9705-94aca998c6aa/",
+  "verdict": "danger",
+  "titles": [
+   "Страница пугает взломом и отправляет в Telegram"
+  ],
+  "note": "«Госуслуги: доступ к учётной записи передан на устройство Apple MacBook Air» и кнопка «Обратиться в техподдержку» — первый шаг схемы «безопасный счёт»",
+  "blur": false
+ },
+ {
+  "id": "v-01a08532-3182",
+  "scheme": "safe-account",
+  "source": "urlscan.io",
+  "date": "2026-09-09",
+  "domain": "www.yandex-maps-def-r-u.online",
+  "title": "Служба безопасности Госуслуг",
+  "file": "urlscan2/01a08532-3182-73dd-baef-4a4be2e625a4.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a08532-3182-73dd-baef-4a4be2e625a4\\screenshot.png",
+  "link": "https://urlscan.io/result/01a08532-3182-73dd-baef-4a4be2e625a4/",
+  "verdict": "danger",
+  "titles": [
+   "Страница пугает взломом и отправляет в Telegram"
+  ],
+  "note": "«Госуслуги: доступ к учётной записи передан на устройство Apple MacBook Air» и кнопка «Обратиться в техподдержку» — первый шаг схемы «безопасный счёт»",
+  "blur": false
+ },
+ {
+  "id": "v-01a0850f-0728",
+  "scheme": "safe-account",
+  "source": "urlscan.io",
+  "date": "2026-09-09",
+  "domain": "login-tiktok-secure.online",
+  "title": "Служба безопасности Госуслуг",
+  "file": "urlscan2/01a0850f-0728-72bb-b271-70f065364320.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a0850f-0728-72bb-b271-70f065364320\\screenshot.png",
+  "link": "https://urlscan.io/result/01a0850f-0728-72bb-b271-70f065364320/",
+  "verdict": "danger",
+  "titles": [
+   "Страница пугает взломом и отправляет в Telegram"
+  ],
+  "note": "«Госуслуги: доступ к учётной записи передан на устройство Apple MacBook Air» и кнопка «Обратиться в техподдержку» — первый шаг схемы «безопасный счёт»",
+  "blur": false
  }
 ]

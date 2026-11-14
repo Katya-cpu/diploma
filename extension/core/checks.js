@@ -104,18 +104,26 @@
   // ---------- Сбор скриптов страницы (встроенные + файлы того же сайта или любого в расширении) ----------
   async function collectScripts(doc, allowFetch, loc) {
     loc = loc || doc.location;
-    const list = [];
+    const list = [], pending = [];
+    // Код внешних скриптов скачивается параллельно и не дольше 4 с на скрипт. Без ограничения сервер, который держит
+    // соединение и не отвечает (так было с копией «Службы безопасности Госуслуг», urlscan, 2026), останавливал всю проверку:
+    // панель не появлялась вовсе.
+    const load = async (item) => {
+      const ctrl = new AbortController();
+      const timer = setTimeout(() => ctrl.abort(), 4000);
+      try { item.code = (await (await fetch(item.src, { signal: ctrl.signal })).text()).slice(0, 300000); } catch (e) { item.unreadable = true; }
+      clearTimeout(timer);
+    };
     for (const s of doc.querySelectorAll('script')) {
       const src = s.getAttribute('src');
       if (!src) { list.push({ name: 'встроенный скрипт', host: loc.hostname, code: s.textContent.slice(0, 200000) }); continue; }
       let url;
       try { url = new URL(src, loc.href); } catch (e) { continue; }  // битый адрес (бывает на настоящих сайтах) — пропускаем
       const item = { name: url.pathname.split('/').pop() || url.hostname, host: url.hostname, src: url.href, code: '' };
-      if (allowFetch) {
-        try { item.code = (await (await fetch(url.href)).text()).slice(0, 300000); } catch (e) { item.unreadable = true; }
-      }
+      if (allowFetch) pending.push(load(item));
       list.push(item);
     }
+    await Promise.all(pending);
     return list;
   }
 
@@ -632,16 +640,34 @@
     // и даёт номер «контактного центра». Дальше по телефону «специалист» уводит к переводу денег.
     // Настоящая страница: fnsnalog-ru.online (urlscan, 22.10.2026) — «Вас взломали! Обратитесь в контактный центр Госуслуг 8(800)…».
     // Памятки банков («Что делать, если вас взломали») не считаются: заголовок должен быть утверждением, а не советом.
-    const SCARE = /вас взломали|ваш[а-я]* (?:аккаунт|кабинет|профиль|учётн[а-я]* запис[а-я]*) взлом|обнаружены подозрительные действия|зафиксирован[а-я]* попытк[а-я]* (?:взлома|входа|списани)/i;
+    // Ещё вариант (urlscan, ноябрь 2026, 5 доменов): «Служба безопасности Госуслуг: доступ к учётной записи передан на устройство
+    // Apple MacBook Air. Зафиксирован вход с неизвестного устройства!» и вместо номера — ссылка на Telegram-бота «Сообщить о мошенничестве».
+    const SCARE = /вас взломали|ваш[а-я]* (?:аккаунт|кабинет|профиль|учётн[а-я]* запис[а-я]*) взлом|обнаружены подозрительные действия|обнаружена подозрительная активность|зафиксирован[а-я]* (?:попытк[а-я]* (?:взлома|входа|списани)|вход с неизвестного устройства)|доступ к учётной записи[^.!]{0,40}передан/i;
     const scareHead = [...ctx.doc.querySelectorAll('h1, h2, h3, strong, b, [class*=title], [class*=badge], [class*=alert]')]
       .map((el) => (el.textContent || '').replace(/\s+/g, ' ').trim()).find((t) => t.length < 120 && SCARE.test(t) && !/что делать|если|как |памятк|\?/i.test(t));
     // Номер часто стоит отдельной строкой под просьбой («позвоните на номер ниже»), а перед просьбой — «если это были не вы»:
     // это не отрицание просьбы, поэтому здесь ищем без findAffirmed — контекст уже подтверждён заголовком.
     const callTo = scareHead && ctx.text.match(/(?:позвоните|обратитесь|свяжитесь|звоните)[\s\S]{0,100}?((?:\+7|8)[\s(-]*\d{3}[\s)-]*\d{3}[\s-]*\d{2}[\s-]*\d{2})/i);
-    if (callTo) {
-      out.push({ severity: 'danger', title: 'Страница пугает взломом и просит позвонить по номеру',
-        details: ['Заголовок: «' + scareHead.slice(0, 90) + '». Номер для звонка: ' + callTo[1].replace(/\s+/g, ' ') + '.',
-          'Так начинается схема «безопасный счёт»: по этому номеру ответит «специалист», который убедит перевести деньги или назвать коды. Госуслуги и банки не просят звонить по номеру со страницы — звоните только по номеру с обратной стороны карты или с официального сайта, набранного вручную.'] });
+    const tgLink = scareHead && !callTo && /сообщите|обратитесь|напишите|свяжитесь/i.test(ctx.text) &&
+      [...ctx.doc.querySelectorAll('a[href]')].map((a) => a.getAttribute('href')).find((h) => /^https?:\/\/(?:t\.me|telegram\.me)\//i.test(h));
+    if (callTo || tgLink) {
+      out.push({ severity: 'danger', title: callTo ? 'Страница пугает взломом и просит позвонить по номеру' : 'Страница пугает взломом и отправляет в Telegram',
+        advice: 'Не звоните и не пишите по контактам со страницы. Закройте вкладку и проверьте вход сами: откройте приложение Госуслуг или банка, набрав адрес вручную.',
+        details: ['Заголовок: «' + scareHead.slice(0, 90) + '». ' + (callTo ? 'Номер для звонка: ' + callTo[1].replace(/\s+/g, ' ') : 'Ссылка для связи: ' + tgLink.slice(0, 60)) + '.',
+          'Так начинается схема «безопасный счёт»: там ответит «специалист», который убедит перевести деньги или назвать коды. Госуслуги и банки не просят звонить или писать по контактам со страницы — звоните только по номеру с обратной стороны карты или с официального сайта, набранного вручную.'] });
+    }
+    // Ложная техподдержка: страница изображает предупреждение Windows или антивируса и даёт номер «поддержки Microsoft».
+    // Настоящие страницы: «Threat Detected: Trojan Spyware… Call Windows Security Toll Free: +1-888-…» (urlscan, 2026, больше 15 доменов).
+    // Статьи о таких страницах («how to remove», «scam») не считаются.
+    const VIRUS = /(?:virus(?:es)?|threats?|trojan|spyware|malware) (?:detected|found|alert)|access to this pc has been blocked|(?:your )?(?:computer|pc|system|device) (?:has been |is )?(?:blocked|locked|infected|compromised|hacked|crashed)|вирус обнаружен|компьютер заблокирован|bedrohungen erkannt/i;
+    if (!callTo && !tgLink && VIRUS.test(ctx.text) && !/\bscam\b|how to (?:remove|get rid)|мошенни|fake (?:alert|pop-?up|virus)|prank/i.test(ctx.text)) {
+      const phone = ctx.text.match(/(?:call|contact|toll[ -]?free|helpline|support|позвоните|rufen sie)[\s\S]{0,80}?(\+?1?[\s(.-]*8\d{2}[\s).-]*\d{3}[\s.-]*\d{4}|\+\d{1,3}[\s(.-]*\d{3}[\s).-]*\d{3}[\s.-]*\d{2,4}[\s.-]*\d{0,4})/i);
+      if (phone) {
+        out.push({ severity: 'danger', title: 'Поддельное предупреждение о вирусе с номером «поддержки»',
+          advice: 'Не звоните по номеру и ничего не устанавливайте. Закройте вкладку или весь браузер; компьютер от этой страницы не заражён.',
+          details: ['На странице: «' + ctx.text.match(VIRUS)[0] + '» и номер ' + phone[1].trim() + '.',
+            'Ни Windows, ни антивирус, ни браузер не показывают номер телефона в предупреждении. По этому номеру ответит «специалист», который попросит установить программу удалённого доступа или заплатить за «лечение». Закройте вкладку; если она не закрывается — закройте браузер целиком.'] });
+      }
     }
     if (!ctx.paymentContext) return out;
     const P = [/срочно/i, /немедленно/i, /только сегодня/i, /осталось\s+\d+\s*(?:мин|час|сек)/i, /в течение\s+\d+\s*(?:мин|час)/i,
@@ -870,7 +896,7 @@
     for (const [id, check] of Object.entries(CHECKS)) {
       try {
         // К предупреждению добавляется совет — что человеку сделать прямо сейчас.
-        for (const f of check(ctx)) findings.push(Object.assign({ check: id }, f, f.severity === 'danger' || f.severity === 'warning' ? { advice: ADVICE[id] } : {}));
+        for (const f of check(ctx)) findings.push(Object.assign({ check: id }, f.severity === 'danger' || f.severity === 'warning' ? { advice: ADVICE[id] } : {}, f));
       } catch (e) {
         findings.push({ check: id, severity: 'error', title: 'Проверка завершилась с ошибкой', details: [String(e && e.message || e)] });
       }
