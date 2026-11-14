@@ -100,9 +100,13 @@
   "has_dom": true,
   "file": "urlscan2/01a1d539-62bb-720b-869f-820c27c86668.html",
   "new": {
-   "verdict": "none",
-   "checks": [],
-   "titles": [],
+   "verdict": "warning",
+   "checks": [
+    "income-promise:warning"
+   ],
+   "titles": [
+    "Обещают доход и просят оставить телефон"
+   ],
    "info": []
   }
  },
@@ -265,9 +269,13 @@
   "has_dom": true,
   "file": "urlscan2/01a1dad9-02a6-743f-9591-7686c46ab444.html",
   "new": {
-   "verdict": "none",
-   "checks": [],
-   "titles": [],
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
    "info": []
   }
  },
@@ -287,9 +295,13 @@
   "has_dom": true,
   "file": "urlscan2/01a1da4a-2bc3-732a-aeb6-36775a60fc3c.html",
   "new": {
-   "verdict": "none",
-   "checks": [],
-   "titles": [],
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
    "info": []
   }
  },
@@ -309,9 +321,13 @@
   "has_dom": true,
   "file": "urlscan2/01a1d6db-dd4d-7288-8945-fcd9dc4168ea.html",
   "new": {
-   "verdict": "none",
-   "checks": [],
-   "titles": [],
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
    "info": []
   }
  },
@@ -331,9 +347,13 @@
   "has_dom": true,
   "file": "urlscan2/01a1d64b-fcb0-7122-9747-f61a732b2ab6.html",
   "new": {
-   "verdict": "none",
-   "checks": [],
-   "titles": [],
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
    "info": []
   }
  },
@@ -353,9 +373,13 @@
   "has_dom": true,
   "file": "urlscan2/01a1d5cc-cf81-72ef-881d-56c5e4956105.html",
   "new": {
-   "verdict": "none",
-   "checks": [],
-   "titles": [],
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
    "info": []
   }
  },
@@ -375,9 +399,13 @@
   "has_dom": true,
   "file": "urlscan2/01a1d21a-c89d-714c-951b-5e0dfe9e7517.html",
   "new": {
-   "verdict": "none",
-   "checks": [],
-   "titles": [],
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
    "info": []
   }
  },
@@ -683,69 +711,6 @@
   }
  },
  {
-  "uuid": "01a1a4be-065b-770e-a188-19fd4c0731b5",
-  "scheme": "tech-support",
-  "query": "page.title:\"Security Alert\" AND task.tags:phishing",
-  "time": "2026-11-04T04:08:06.957Z",
-  "url": "https://qualified-scarlet-adfdq6ee-dp2wxwbmrn5w.edgeone.dev/",
-  "domain": "qualified-scarlet-adfdq6ee-dp2wxwbmrn5w.edgeone.dev",
-  "title": "Security Alert",
-  "tags": [
-   "phishing",
-   "malicious"
-  ],
-  "has_dom": true,
-  "file": "urlscan2/01a1a4be-065b-770e-a188-19fd4c0731b5.html",
-  "new": {
-   "verdict": "none",
-   "checks": [],
-   "titles": [],
-   "info": []
-  }
- },
- {
-  "uuid": "01a1a28e-381e-705e-963e-2ab28ad41ed4",
-  "scheme": "tech-support",
-  "query": "page.title:\"Security Alert\" AND task.tags:phishing",
-  "time": "2026-11-03T17:56:39.484Z",
-  "url": "https://virusalert-dpo3euaijey6.edgeone.dev/",
-  "domain": "virusalert-dpo3euaijey6.edgeone.dev",
-  "title": "Security Alert",
-  "tags": [
-   "phishing",
-   "malicious"
-  ],
-  "has_dom": true,
-  "file": "urlscan2/01a1a28e-381e-705e-963e-2ab28ad41ed4.html",
-  "new": {
-   "verdict": "none",
-   "checks": [],
-   "titles": [],
-   "info": []
-  }
- },
- {
-  "uuid": "01a1a288-07c3-729e-a8a6-02eabf0cde25",
-  "scheme": "tech-support",
-  "query": "page.title:\"Security Alert\" AND task.tags:phishing",
-  "time": "2026-11-03T17:49:52.896Z",
-  "url": "https://fundamental-pink-znkafjp3-dpbi6h3i19q1.edgeone.dev/",
-  "domain": "fundamental-pink-znkafjp3-dpbi6h3i19q1.edgeone.dev",
-  "title": "Security Alert",
-  "tags": [
-   "phishing",
-   "malicious"
-  ],
-  "has_dom": true,
-  "file": "urlscan2/01a1a288-07c3-729e-a8a6-02eabf0cde25.html",
-  "new": {
-   "verdict": "none",
-   "checks": [],
-   "titles": [],
-   "info": []
-  }
- },
- {
   "uuid": "01a18aed-283a-7296-a9ff-716a54f92c4e",
   "scheme": "tech-support",
   "query": "page.title:\"Security Alert\" AND task.tags:phishing",
@@ -759,48 +724,6 @@
   ],
   "has_dom": true,
   "file": "urlscan2/01a18aed-283a-7296-a9ff-716a54f92c4e.html",
-  "new": {
-   "verdict": "none",
-   "checks": [],
-   "titles": [],
-   "info": []
-  }
- },
- {
-  "uuid": "01a18900-b2f0-734b-9215-57e899a357c8",
-  "scheme": "tech-support",
-  "query": "page.title:\"Security Alert\" AND task.tags:phishing",
-  "time": "2026-10-29T18:51:34.889Z",
-  "url": "https://advanced-beige-f0s0jclo-dp346upcqlxo.edgeone.dev/",
-  "domain": "advanced-beige-f0s0jclo-dp346upcqlxo.edgeone.dev",
-  "title": "SECURITY ALERT // CODE TAMPER DETECTED",
-  "tags": [
-   "phishing",
-   "malicious"
-  ],
-  "has_dom": true,
-  "file": "urlscan2/01a18900-b2f0-734b-9215-57e899a357c8.html",
-  "new": {
-   "verdict": "none",
-   "checks": [],
-   "titles": [],
-   "info": []
-  }
- },
- {
-  "uuid": "01a16901-33f4-7719-9522-e7a315e6900f",
-  "scheme": "tech-support",
-  "query": "page.title:\"Security Alert\" AND task.tags:phishing",
-  "time": "2026-10-23T13:44:25.652Z",
-  "url": "https://whythis-dpkvk6626b4a.edgeone.dev/",
-  "domain": "whythis-dpkvk6626b4a.edgeone.dev",
-  "title": "FF Account Security Alert",
-  "tags": [
-   "phishing",
-   "malicious"
-  ],
-  "has_dom": true,
-  "file": "urlscan2/01a16901-33f4-7719-9522-e7a315e6900f.html",
   "new": {
    "verdict": "none",
    "checks": [],
@@ -846,9 +769,13 @@
   "has_dom": true,
   "file": "urlscan2/01a1dad1-489f-76db-8001-5d3173ee3c1d.html",
   "new": {
-   "verdict": "none",
-   "checks": [],
-   "titles": [],
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
    "info": []
   }
  },
@@ -868,9 +795,13 @@
   "has_dom": true,
   "file": "urlscan2/01a1dad1-3d7c-71b9-a830-1a4444cc902b.html",
   "new": {
-   "verdict": "none",
-   "checks": [],
-   "titles": [],
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
    "info": []
   }
  },
@@ -952,9 +883,13 @@
   "has_dom": true,
   "file": "urlscan2/01a18885-1a9f-72fa-aa72-8f5d80d580e7.html",
   "new": {
-   "verdict": "none",
-   "checks": [],
-   "titles": [],
+   "verdict": "warning",
+   "checks": [
+    "pressure:warning"
+   ],
+   "titles": [
+    "Требуют срочно оплатить долг или штраф по ссылке"
+   ],
    "info": []
   }
  },
@@ -1314,9 +1249,13 @@
   "has_dom": true,
   "file": "urlscan2/01a1cbd2-ecb3-74cd-914e-5da069f13eb9.html",
   "new": {
-   "verdict": "none",
-   "checks": [],
-   "titles": [],
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
    "info": []
   }
  },
@@ -1335,9 +1274,13 @@
   "has_dom": true,
   "file": "urlscan2/01a1cbd1-9b3e-7338-b327-88d0dff82fe4.html",
   "new": {
-   "verdict": "none",
-   "checks": [],
-   "titles": [],
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
    "info": []
   }
  },
@@ -1356,9 +1299,13 @@
   "has_dom": true,
   "file": "urlscan2/01a1cbcb-7870-74aa-b9dd-1f11ba4307d2.html",
   "new": {
-   "verdict": "none",
-   "checks": [],
-   "titles": [],
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
    "info": []
   }
  },
@@ -1374,9 +1321,13 @@
   "has_dom": true,
   "file": "urlscan2/01a18f55-d60a-73bf-be50-54a147a74486.html",
   "new": {
-   "verdict": "none",
-   "checks": [],
-   "titles": [],
+   "verdict": "warning",
+   "checks": [
+    "income-promise:warning"
+   ],
+   "titles": [
+    "Обещают доход и просят оставить телефон"
+   ],
    "info": []
   }
  },
@@ -1392,9 +1343,13 @@
   "has_dom": true,
   "file": "urlscan2/01a18bc2-0307-7472-9240-39eee8e19bdd.html",
   "new": {
-   "verdict": "none",
-   "checks": [],
-   "titles": [],
+   "verdict": "warning",
+   "checks": [
+    "income-promise:warning"
+   ],
+   "titles": [
+    "Обещают доход и просят оставить телефон"
+   ],
    "info": []
   }
  },
@@ -1410,9 +1365,13 @@
   "has_dom": true,
   "file": "urlscan2/01a18bc1-f780-7357-8188-4a8ffd247c59.html",
   "new": {
-   "verdict": "none",
-   "checks": [],
-   "titles": [],
+   "verdict": "warning",
+   "checks": [
+    "income-promise:warning"
+   ],
+   "titles": [
+    "Обещают доход и просят оставить телефон"
+   ],
    "info": []
   }
  },
@@ -1428,9 +1387,13 @@
   "has_dom": true,
   "file": "urlscan2/01a18bc1-e160-70fb-b52b-19315d15de71.html",
   "new": {
-   "verdict": "none",
-   "checks": [],
-   "titles": [],
+   "verdict": "warning",
+   "checks": [
+    "income-promise:warning"
+   ],
+   "titles": [
+    "Обещают доход и просят оставить телефон"
+   ],
    "info": []
   }
  },
@@ -1446,9 +1409,13 @@
   "has_dom": true,
   "file": "urlscan2/01a1519f-f2aa-72db-a8f2-fab870cb97a2.html",
   "new": {
-   "verdict": "none",
-   "checks": [],
-   "titles": [],
+   "verdict": "warning",
+   "checks": [
+    "income-promise:warning"
+   ],
+   "titles": [
+    "Обещают доход и просят оставить телефон"
+   ],
    "info": []
   }
  },
@@ -1464,9 +1431,13 @@
   "has_dom": true,
   "file": "urlscan2/01a1519f-179c-7470-b3b8-c9877547be21.html",
   "new": {
-   "verdict": "none",
-   "checks": [],
-   "titles": [],
+   "verdict": "warning",
+   "checks": [
+    "income-promise:warning"
+   ],
+   "titles": [
+    "Обещают доход и просят оставить телефон"
+   ],
    "info": []
   }
  },
@@ -1737,27 +1708,6 @@
   }
  },
  {
-  "uuid": "01a15441-c2ce-706a-89cf-7410c5a95466",
-  "scheme": "tech-support",
-  "query": "page.title:\"Security Alert\" AND task.tags:phishing",
-  "time": "2026-10-19T13:03:14.626Z",
-  "url": "https://mathematical-lavender-hms8y3hf-dp5ol93exw4y.edgeone.dev/",
-  "domain": "mathematical-lavender-hms8y3hf-dp5ol93exw4y.edgeone.dev",
-  "title": "System Security Alert",
-  "tags": [
-   "phishing",
-   "malicious"
-  ],
-  "has_dom": true,
-  "file": "urlscan2/01a15441-c2ce-706a-89cf-7410c5a95466.html",
-  "new": {
-   "verdict": "none",
-   "checks": [],
-   "titles": [],
-   "info": []
-  }
- },
- {
   "uuid": "01a1dad0-34d9-76dd-ae55-412a1097f498",
   "scheme": "crypto-drainer",
   "query": "task.tags:drainer",
@@ -1773,9 +1723,13 @@
   "has_dom": true,
   "file": "urlscan2/01a1dad0-34d9-76dd-ae55-412a1097f498.html",
   "new": {
-   "verdict": "none",
-   "checks": [],
-   "titles": [],
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
    "info": []
   }
  },
@@ -1795,9 +1749,13 @@
   "has_dom": true,
   "file": "urlscan2/01a1dad0-32cd-72cc-a601-bc3dcf539a36.html",
   "new": {
-   "verdict": "none",
-   "checks": [],
-   "titles": [],
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
    "info": []
   }
  },
@@ -1861,9 +1819,13 @@
   "has_dom": true,
   "file": "urlscan2/01a1dad0-1bd8-70cf-9710-00a264117e33.html",
   "new": {
-   "verdict": "none",
-   "checks": [],
-   "titles": [],
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
    "info": []
   }
  },
@@ -2225,9 +2187,13 @@
   "has_dom": true,
   "file": "urlscan2/01a1cb6e-4454-7429-9ba0-cbf1d83b8ee4.html",
   "new": {
-   "verdict": "none",
-   "checks": [],
-   "titles": [],
+   "verdict": "warning",
+   "checks": [
+    "income-promise:warning"
+   ],
+   "titles": [
+    "Обещают доход и просят оставить телефон"
+   ],
    "info": []
   }
  },
@@ -2354,9 +2320,13 @@
   "has_dom": true,
   "file": "urlscan2/01a1cbc6-3113-75e4-bf9d-c59a2455a694.html",
   "new": {
-   "verdict": "none",
-   "checks": [],
-   "titles": [],
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
    "info": []
   }
  },
@@ -2375,9 +2345,13 @@
   "has_dom": true,
   "file": "urlscan2/01a1cbc1-39ea-7508-95cd-776d902f607a.html",
   "new": {
-   "verdict": "none",
-   "checks": [],
-   "titles": [],
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
    "info": []
   }
  },
@@ -2396,9 +2370,13 @@
   "has_dom": true,
   "file": "urlscan2/01a1cbb6-cf2c-739a-8087-f3a9000dfff7.html",
   "new": {
-   "verdict": "none",
-   "checks": [],
-   "titles": [],
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
    "info": []
   }
  },
@@ -2417,9 +2395,13 @@
   "has_dom": true,
   "file": "urlscan2/01a1cb90-68ab-7577-b14f-12312aa7e783.html",
   "new": {
-   "verdict": "none",
-   "checks": [],
-   "titles": [],
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
    "info": []
   }
  },
@@ -2438,9 +2420,13 @@
   "has_dom": true,
   "file": "urlscan2/01a1cb86-89e0-7132-8538-a776ef3b67e4.html",
   "new": {
-   "verdict": "none",
-   "checks": [],
-   "titles": [],
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
    "info": []
   }
  },
@@ -2459,9 +2445,13 @@
   "has_dom": true,
   "file": "urlscan2/01a1cb70-5204-726b-b391-92c45785d1c7.html",
   "new": {
-   "verdict": "none",
-   "checks": [],
-   "titles": [],
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
    "info": []
   }
  },
@@ -2477,9 +2467,13 @@
   "has_dom": true,
   "file": "urlscan2/01a0cd55-482e-744b-8369-d3a4980be9c0.html",
   "new": {
-   "verdict": "none",
-   "checks": [],
-   "titles": [],
+   "verdict": "warning",
+   "checks": [
+    "income-promise:warning"
+   ],
+   "titles": [
+    "Обещают доход и просят оставить телефон"
+   ],
    "info": []
   }
  },
@@ -2588,9 +2582,13 @@
   "has_dom": true,
   "file": "urlscan2/01a1519d-ec56-743a-b905-a45a4d90f408.html",
   "new": {
-   "verdict": "none",
-   "checks": [],
-   "titles": [],
+   "verdict": "warning",
+   "checks": [
+    "income-promise:warning"
+   ],
+   "titles": [
+    "Обещают доход и просят оставить телефон"
+   ],
    "info": []
   }
  },
@@ -2606,9 +2604,13 @@
   "has_dom": true,
   "file": "urlscan2/01a1519c-bf85-722c-b636-a5ccdc803ab2.html",
   "new": {
-   "verdict": "none",
-   "checks": [],
-   "titles": [],
+   "verdict": "warning",
+   "checks": [
+    "income-promise:warning"
+   ],
+   "titles": [
+    "Обещают доход и просят оставить телефон"
+   ],
    "info": []
   }
  },
@@ -2624,9 +2626,13 @@
   "has_dom": true,
   "file": "urlscan2/01a1519b-9187-74ca-af0e-7b0c8c698a61.html",
   "new": {
-   "verdict": "none",
-   "checks": [],
-   "titles": [],
+   "verdict": "warning",
+   "checks": [
+    "income-promise:warning"
+   ],
+   "titles": [
+    "Обещают доход и просят оставить телефон"
+   ],
    "info": []
   }
  },
@@ -2642,9 +2648,13 @@
   "has_dom": true,
   "file": "urlscan2/01a1519a-b2a6-73b5-8480-3f3196a090f0.html",
   "new": {
-   "verdict": "none",
-   "checks": [],
-   "titles": [],
+   "verdict": "warning",
+   "checks": [
+    "income-promise:warning"
+   ],
+   "titles": [
+    "Обещают доход и просят оставить телефон"
+   ],
    "info": []
   }
  },
@@ -2660,9 +2670,13 @@
   "has_dom": true,
   "file": "urlscan2/01a15199-ac80-757a-af16-72a4775f6c4b.html",
   "new": {
-   "verdict": "none",
-   "checks": [],
-   "titles": [],
+   "verdict": "warning",
+   "checks": [
+    "income-promise:warning"
+   ],
+   "titles": [
+    "Обещают доход и просят оставить телефон"
+   ],
    "info": []
   }
  },
@@ -2678,9 +2692,13 @@
   "has_dom": true,
   "file": "urlscan2/01a15198-cf1d-716f-b8d5-d1f0386c1bbb.html",
   "new": {
-   "verdict": "none",
-   "checks": [],
-   "titles": [],
+   "verdict": "warning",
+   "checks": [
+    "income-promise:warning"
+   ],
+   "titles": [
+    "Обещают доход и просят оставить телефон"
+   ],
    "info": []
   }
  },
@@ -2753,9 +2771,13 @@
   "has_dom": true,
   "file": "urlscan2/01a15197-efdb-740c-8326-313870fafe3d.html",
   "new": {
-   "verdict": "none",
-   "checks": [],
-   "titles": [],
+   "verdict": "warning",
+   "checks": [
+    "income-promise:warning"
+   ],
+   "titles": [
+    "Обещают доход и просят оставить телефон"
+   ],
    "info": []
   }
  },
@@ -3108,111 +3130,6 @@
   }
  },
  {
-  "uuid": "01a12b2e-1c1f-766b-afd7-c0d2a19b2bc5",
-  "scheme": "tech-support",
-  "query": "page.title:\"Security Alert\" AND task.tags:phishing",
-  "time": "2026-10-11T13:36:50.774Z",
-  "url": "https://given-lime-jwyz6fmv-dp3mpnd5r8lw.edgeone.dev/",
-  "domain": "given-lime-jwyz6fmv-dp3mpnd5r8lw.edgeone.dev",
-  "title": "Security Alert",
-  "tags": [
-   "phishing",
-   "malicious"
-  ],
-  "has_dom": true,
-  "file": "urlscan2/01a12b2e-1c1f-766b-afd7-c0d2a19b2bc5.html",
-  "new": {
-   "verdict": "none",
-   "checks": [],
-   "titles": [],
-   "info": []
-  }
- },
- {
-  "uuid": "01a125f4-2dc9-7568-98b0-a0c15521c470",
-  "scheme": "tech-support",
-  "query": "page.title:\"Security Alert\" AND task.tags:phishing",
-  "time": "2026-10-10T13:15:28.181Z",
-  "url": "https://intelligent-chocolate-10tis2k2-dp0ixah6h8yo.edgeone.dev/",
-  "domain": "intelligent-chocolate-10tis2k2-dp0ixah6h8yo.edgeone.dev",
-  "title": "System Security Alert",
-  "tags": [
-   "phishing",
-   "malicious"
-  ],
-  "has_dom": true,
-  "file": "urlscan2/01a125f4-2dc9-7568-98b0-a0c15521c470.html",
-  "new": {
-   "verdict": "none",
-   "checks": [],
-   "titles": [],
-   "info": []
-  }
- },
- {
-  "uuid": "01a11b76-7f3c-7712-9220-abe786c46c53",
-  "scheme": "tech-support",
-  "query": "page.title:\"Security Alert\" AND task.tags:phishing",
-  "time": "2026-10-08T12:22:00.141Z",
-  "url": "https://qualified-coffee-xffeothr-dpbjli69ajgw.edgeone.dev/",
-  "domain": "qualified-coffee-xffeothr-dpbjli69ajgw.edgeone.dev",
-  "title": "Screenshot 2026-10-08 at 10-09-54 Security Alert Action Required.png",
-  "tags": [
-   "phishing",
-   "malicious"
-  ],
-  "has_dom": true,
-  "file": "urlscan2/01a11b76-7f3c-7712-9220-abe786c46c53.html",
-  "new": {
-   "verdict": "none",
-   "checks": [],
-   "titles": [],
-   "info": []
-  }
- },
- {
-  "uuid": "01a0bef5-f4df-7129-aeaf-cc63b0476fc9",
-  "scheme": "tech-support",
-  "query": "page.title:\"Security Alert\" AND task.tags:phishing",
-  "time": "2026-09-20T13:16:39.509Z",
-  "url": "https://principal-coffee-o6t0lvh5-dp72fwz6cpja.edgeone.dev/",
-  "domain": "principal-coffee-o6t0lvh5-dp72fwz6cpja.edgeone.dev",
-  "title": "System Security Alert",
-  "tags": [
-   "phishing",
-   "malicious"
-  ],
-  "has_dom": true,
-  "file": "urlscan2/01a0bef5-f4df-7129-aeaf-cc63b0476fc9.html",
-  "new": {
-   "verdict": "none",
-   "checks": [],
-   "titles": [],
-   "info": []
-  }
- },
- {
-  "uuid": "01a0b8a9-e4d4-73c9-afb3-1a5b1bcb4e3a",
-  "scheme": "tech-support",
-  "query": "page.title:\"Security Alert\" AND task.tags:phishing",
-  "time": "2026-09-19T07:55:46.992Z",
-  "url": "https://zenith-panel-dpiuzg3uym4g.edgeone.dev/",
-  "domain": "zenith-panel-dpiuzg3uym4g.edgeone.dev",
-  "title": "Security Alert — Site Monitoring Service",
-  "tags": [
-   "phishing",
-   "malicious"
-  ],
-  "has_dom": true,
-  "file": "urlscan2/01a0b8a9-e4d4-73c9-afb3-1a5b1bcb4e3a.html",
-  "new": {
-   "verdict": "none",
-   "checks": [],
-   "titles": [],
-   "info": []
-  }
- },
- {
   "uuid": "01a0db08-d133-741f-8ba7-417dc8df93d7",
   "scheme": "tech-support",
   "query": "page.title:*virus* AND page.title:*detected*",
@@ -3235,72 +3152,6 @@
   }
  },
  {
-  "uuid": "019e01e6-dc04-709f-9f49-5b6a06bfd860",
-  "scheme": "tech-support",
-  "query": "page.title:*virus* AND page.title:*detected*",
-  "time": "2026-05-07T10:06:13.929Z",
-  "url": "https://likely-cyan-vutaijrb97-krjllxfui9.edgeone.app/",
-  "domain": "likely-cyan-vutaijrb97-krjllxfui9.edgeone.app",
-  "title": "🚨 VIRUS DETECTED 🚨",
-  "tags": [
-   "phishing",
-   "malicious"
-  ],
-  "has_dom": true,
-  "file": "urlscan2/019e01e6-dc04-709f-9f49-5b6a06bfd860.html",
-  "new": {
-   "verdict": "none",
-   "checks": [],
-   "titles": [],
-   "info": []
-  }
- },
- {
-  "uuid": "019dc54e-f1dc-7405-a46c-a0bf3e98de77",
-  "scheme": "tech-support",
-  "query": "page.title:*virus* AND page.title:*detected*",
-  "time": "2026-04-25T15:43:10.377Z",
-  "url": "https://bandwaxenno-5rdzpaxa3c.edgeone.app/",
-  "domain": "bandwaxenno-5rdzpaxa3c.edgeone.app",
-  "title": "⚠️ SYSTEM ERROR - VIRUS DETECTED",
-  "tags": [
-   "phishing",
-   "malicious"
-  ],
-  "has_dom": true,
-  "file": "urlscan2/019dc54e-f1dc-7405-a46c-a0bf3e98de77.html",
-  "new": {
-   "verdict": "none",
-   "checks": [],
-   "titles": [],
-   "info": []
-  }
- },
- {
-  "uuid": "019d72e2-762c-73d6-8db7-18cf5f1d4be2",
-  "scheme": "tech-support",
-  "query": "page.title:*virus* AND page.title:*detected*",
-  "time": "2026-04-09T15:35:44.182Z",
-  "url": "https://raubbau67.com/",
-  "domain": "raubbau67.com",
-  "title": "⚠️ (1) VIRUS DETECTED!!!",
-  "tags": [
-   "phishing-thesis"
-  ],
-  "has_dom": true,
-  "file": "urlscan2/019d72e2-762c-73d6-8db7-18cf5f1d4be2.html",
-  "new": {
-   "verdict": "warning",
-   "checks": [
-    "clickfix:warning"
-   ],
-   "titles": [
-    "Проверка «я не робот» нарисована самой страницей"
-   ],
-   "info": []
-  }
- },
- {
   "uuid": "01a1dace-c739-71c3-b09b-2a8919f4a684",
   "scheme": "crypto-drainer",
   "query": "task.tags:drainer",
@@ -3316,9 +3167,13 @@
   "has_dom": true,
   "file": "urlscan2/01a1dace-c739-71c3-b09b-2a8919f4a684.html",
   "new": {
-   "verdict": "none",
-   "checks": [],
-   "titles": [],
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
    "info": []
   }
  },
@@ -3338,9 +3193,13 @@
   "has_dom": true,
   "file": "urlscan2/01a1dace-cd28-74a3-9ba0-42ca3b0d72ec.html",
   "new": {
-   "verdict": "none",
-   "checks": [],
-   "titles": [],
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
    "info": []
   }
  },
@@ -3444,9 +3303,13 @@
   "has_dom": true,
   "file": "urlscan2/019ec6ac-5863-725d-a520-06b85349dc57.html",
   "new": {
-   "verdict": "none",
-   "checks": [],
-   "titles": [],
+   "verdict": "warning",
+   "checks": [
+    "pressure:warning"
+   ],
+   "titles": [
+    "Требуют срочно оплатить долг или штраф по ссылке"
+   ],
    "info": []
   }
  },
@@ -3462,9 +3325,13 @@
   "has_dom": true,
   "file": "urlscan2/019ea76c-15ea-72af-b781-dc5fa1604a88.html",
   "new": {
-   "verdict": "none",
-   "checks": [],
-   "titles": [],
+   "verdict": "warning",
+   "checks": [
+    "pressure:warning"
+   ],
+   "titles": [
+    "Требуют срочно оплатить долг или штраф по ссылке"
+   ],
    "info": []
   }
  },
@@ -3480,9 +3347,13 @@
   "has_dom": true,
   "file": "urlscan2/019ea4b7-469d-761d-bad4-567a215147f2.html",
   "new": {
-   "verdict": "none",
-   "checks": [],
-   "titles": [],
+   "verdict": "warning",
+   "checks": [
+    "pressure:warning"
+   ],
+   "titles": [
+    "Требуют срочно оплатить долг или штраф по ссылке"
+   ],
    "info": []
   }
  },
@@ -3500,9 +3371,13 @@
   "has_dom": true,
   "file": "urlscan2/019ea43c-b8ea-743b-bb0e-c9a58eac056d.html",
   "new": {
-   "verdict": "none",
-   "checks": [],
-   "titles": [],
+   "verdict": "warning",
+   "checks": [
+    "pressure:warning"
+   ],
+   "titles": [
+    "Требуют срочно оплатить долг или штраф по ссылке"
+   ],
    "info": []
   }
  },
@@ -3518,9 +3393,13 @@
   "has_dom": true,
   "file": "urlscan2/019e6fc7-ce60-725d-b0a2-70fe8160070e.html",
   "new": {
-   "verdict": "none",
-   "checks": [],
-   "titles": [],
+   "verdict": "warning",
+   "checks": [
+    "pressure:warning"
+   ],
+   "titles": [
+    "Требуют срочно оплатить долг или штраф по ссылке"
+   ],
    "info": []
   }
  },
@@ -3610,10 +3489,12 @@
   "new": {
    "verdict": "warning",
    "checks": [
-    "skimmer:warning"
+    "skimmer:warning",
+    "pressure:warning"
    ],
    "titles": [
-    "Скрипт читает поля карты и умеет отправлять данные"
+    "Скрипт читает поля карты и умеет отправлять данные",
+    "Требуют срочно оплатить долг или штраф по ссылке"
    ],
    "info": [
     "На странице есть форма для данных карты",
@@ -3826,9 +3707,13 @@
   "has_dom": true,
   "file": "urlscan2/019e39b2-02c5-77fe-8791-df94186d20fd.html",
   "new": {
-   "verdict": "none",
-   "checks": [],
-   "titles": [],
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
    "info": []
   }
  },

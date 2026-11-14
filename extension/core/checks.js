@@ -669,6 +669,21 @@
             'Ни Windows, ни антивирус, ни браузер не показывают номер телефона в предупреждении. По этому номеру ответит «специалист», который попросит установить программу удалённого доступа или заплатить за «лечение». Закройте вкладку; если она не закрывается — закройте браузер целиком.'] });
       }
     }
+    // Поддельный штраф или проезд: долг с суммой, угроза пени и кнопка оплаты прямо на странице.
+    // Настоящие страницы: «E-ZPass: We have noticed an outstanding toll amount of $19.00… To avoid a late fee of $59.99, please
+    // proceed to make the payment» (urlscan, 2026, 6 доменов); «Неоплаченный штраф удваивается» (gibdd-proverka.com).
+    const DEBT = /outstanding (?:toll|balance|amount|invoice)|unpaid (?:toll|fine|invoice|parking|ticket)|toll (?:amount|balance) due|неоплаченн[а-яё]* (?:штраф|проезд|задолженн|налог)|задолженност[а-яё]* по (?:налогу|штрафу|оплате проезда)/i;
+    const THREAT = /late fee|penalt|surcharge|collections?\b|suspen|(?:будет|будут) (?:удвоен|увеличен|передан)|удваива|пени\b|запрет на выезд|арест/i;
+    const PAYBTN = [...ctx.doc.querySelectorAll('button, a, input[type=submit], input[type=button]')]
+      .map((el) => (el.textContent || el.value || '').replace(/\s+/g, ' ').trim()).find((t) => t.length < 40 && /pay|оплат|proceed to payment/i.test(t));
+    const debt = ctx.text.match(DEBT);
+    const sum = /[$€£₽₸]\s?\d|\d[\d\s.,]*\s?(?:[$€£₽₸]|руб|eur|usd)/i.test(ctx.text);
+    if (debt && THREAT.test(ctx.text) && PAYBTN && sum && !/\bscam\b|мошенни|phishing|фишинг/i.test(ctx.text)) {
+      out.push({ severity: 'warning', title: 'Требуют срочно оплатить долг или штраф по ссылке',
+        advice: 'Не платите по ссылке из SMS или письма. Откройте сайт оператора дороги, Госуслуги или приложение банка сами и найдите начисление по номеру машины или постановления.',
+        details: ['На странице: «' + debt[0] + '», угроза пени или штрафа и кнопка «' + PAYBTN + '».',
+          'Так устроены массовые рассылки о «неоплаченном проезде» и «штрафе»: небольшая сумма, угроза её увеличить и кнопка оплаты на странице, куда привела ссылка. Настоящие начисления проверяются на сайте оператора или на Госуслугах.'] });
+    }
     if (!ctx.paymentContext) return out;
     const P = [/срочно/i, /немедленно/i, /только сегодня/i, /осталось\s+\d+\s*(?:мин|час|сек)/i, /в течение\s+\d+\s*(?:мин|час)/i,
       /иначе[^.]{0,40}(отмен|заблок|сгор|аннулир|спиш)/i, /последний шанс/i, /(бронь|заказ|ссылка)[^.]{0,20}истека/i, /\b\d{1,2}:\d{2}\b(?=[^.]{0,30}(?:остал|истека))|(?:остал|истека)[^.]{0,30}\b\d{1,2}:\d{2}\b/i];
@@ -685,6 +700,46 @@
     if (!hits.length) return out;
     return out.concat([{ severity: hits.length >= 2 ? 'warning' : 'info', title: 'Вас торопят',
       details: ['На странице: «' + [...sentences].slice(0, 3).join('» «') + '»', 'Спешка мешает проверить получателя — это стандартный приём социальной инженерии.'] }]);
+  };
+
+  // Мошенническая инвестплатформа: обещание конкретного дохода за период и форма для телефона «менеджера».
+  // Настоящие страницы (urlscan, 2026): «От 100 000 рублей в месяц — стабильный доход от ГазИнвест», «Verdienen Sie bis zu
+  // € 620 täglich» (Bitcoin Era), «mieszkańcy zarabiają od 65 000 zł miesięcznie» (Quantum AI). Честным участникам рынка
+  // обещать доходность запрещено (в России — ст. 6 Закона о рынке ценных бумаг), поэтому сумма за день или месяц — сильный признак.
+  CHECKS['income-promise'] = (ctx) => {
+    const t = ctx.text;
+    if (/\bscam\b|мошенни|\breview\b|отзыв|обзор|oszust/i.test(t.slice(0, 3000))) return [];
+    const MONEY = '(?:[$€£₽₸]\\s?\\d[\\d\\s.,]{1,9}|\\d[\\d\\s.,]{1,9}\\s?(?:[$€£₽₸]|руб|тыс|zł|eur|usd|dollars?|euros?|долл))';
+    const PER = '(?:в (?:день|сутки|неделю|месяц)|ежедневно|ежемесячно|per (?:day|week|month)|a (?:day|week|month)|daily|weekly|monthly|täglich|pro (?:tag|monat)|im monat|monatlich|dziennie|miesięcznie|par jour|par mois|al (?:día|mes)|al giorno|al mese)';
+    const promise = t.match(new RegExp('(?:доход|заработ|зарабатыва|получа|earn|make|profit|income|verdien|zarabia|gagne|guadagn|ganar)[^.!?]{0,60}?' + MONEY + '[^.!?]{0,25}?' + PER, 'i')) ||
+      t.match(new RegExp(MONEY + '[^.!?]{0,25}?' + PER + '[^.!?]{0,40}?(?:доход|прибыл|profit|income|gewinn)', 'i')) ||
+      t.match(/гарантированн[а-яё]* (?:доход|прибыл)|guaranteed (?:profit|return|income)|garantierte[nr]? (?:gewinn|rendite)|без риска[^.!?]{0,30}доход|risk-free (?:profit|return)/i);
+    if (!promise) return [];
+    const phone = [...ctx.doc.querySelectorAll('input')].some((el) => (el.type || '').toLowerCase() === 'tel' ||
+      /phone|tel\b|телефон|telefon|téléphone|mobile/i.test([el.name, el.id, el.placeholder, el.getAttribute('aria-label')].join(' ')));
+    const severity = phone ? 'warning' : 'info';
+    return [{ severity, title: phone ? 'Обещают доход и просят оставить телефон' : 'Обещают конкретный доход',
+      advice: 'Не оставляйте телефон и ничего не переводите. Проверьте компанию в справочнике участников финансового рынка на сайте Банка России (cbr.ru/fmp_check); обещание дохода за день или месяц — уже признак мошенников.',
+      details: ['На странице: «' + promise[0].replace(/\s+/g, ' ').slice(0, 120) + '».' + (phone ? ' Рядом — форма с полем для телефона: дальше звонит «личный менеджер» и уговаривает пополнить счёт переводом.' : ''),
+        'Честные брокеры и банки не обещают сумму дохода: доходность на рынке не гарантирована, а такие обещания запрещены регуляторами. Так выглядят первые страницы «инвестплатформ» Quantum AI, Bitcoin Era, «ГазИнвест».'] }];
+  };
+
+  // Криптодрейнер: «получите токены» и кнопка подключения кошелька. Опасно, если код страницы запрашивает
+  // разрешение на списание (approve / setApprovalForAll / permit) — так одна подпись отдаёт все токены.
+  // Настоящие страницы: «Claim Your $EVR Reward Allocation», «SparkDEX Rewards Proposal», «zkSync Token Distribution» (urlscan.io, Zenodo).
+  CHECKS['wallet-drainer'] = (ctx) => {
+    const t = ctx.text;
+    const connect = /connect (?:your )?wallet|подключ[а-яё]* кошел[её]к|wallet ?connect|connect metamask/i.test(t) ||
+      [...ctx.doc.querySelectorAll('button, a')].some((el) => /^\s*(?:connect|подключить)\s*$/i.test(el.textContent || ''));
+    const lure = t.match(/claim(?:\s+(?:your|now|tokens?|rewards?|airdrop|allocation))?|airdrop|token distribution|rewards? (?:allocation|proposal|date)|eligib|получите токены|раздач[а-яё]* токенов|free mint|бесплатн[а-яё]* (?:токен|nft)/i);
+    if (!connect || !lure) return [];
+    const codes = ctx.scripts.map((s) => s.code + revealHidden(s.code)).join('\n');
+    const drain = codes.match(/setApprovalForAll|increaseAllowance|\bpermit\s*\(|eth_signTypedData(?:_v4)?|signTypedData|Permit2|seaport|transferFrom\s*\(/);
+    return [{ severity: drain ? 'danger' : 'warning',
+      title: drain ? 'Страница запрашивает разрешение на списание всех токенов' : 'Раздача токенов с подключением кошелька',
+      advice: 'Не подключайте кошелёк и ничего не подписывайте. Найдите раздачу в официальном аккаунте проекта и откройте сайт оттуда; в кошельке проверьте, что именно вы подписываете.',
+      details: ['На странице: «' + lure[0] + '» и кнопка подключения кошелька.' + (drain ? ' В коде страницы — запрос «' + drain[0].replace(/\s*\($/, '') + '»: подпись такого запроса разрешает сайту забрать токены с кошелька.' : ''),
+        'Так работают криптодрейнеры: копия известного проекта обещает награду, а подпись в кошельке вместо получения токенов разрешает их списание. В 2025 году так украли 83,85 млн долларов у 106 тыс. человек (Scam Sniffer). Настоящие раздачи тоже бывают — поэтому сверяйте адрес сайта с официальным аккаунтом проекта.'] }];
   };
 
   // 15. ClickFix: поддельная «капча» просит вставить команду в окно «Выполнить»

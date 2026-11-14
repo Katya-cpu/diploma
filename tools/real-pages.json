@@ -1387,8 +1387,10 @@
   "file": "zenodo/crypto-drainer__2024-01_2024-01-08_zksync-reward.net.html",
   "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\crypto-drainer\\2024-01_2024-01-08_zksync-reward.net\\page.png",
   "link": null,
-  "verdict": "none",
-  "titles": [],
+  "verdict": "warning",
+  "titles": [
+   "Раздача токенов с подключением кошелька"
+  ],
   "cardinput": false,
   "blur": false
  },
@@ -1493,8 +1495,10 @@
   "file": "zenodo/crypto-drainer__2024-01_2024-01-13_zk-skalling.net.html",
   "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\crypto-drainer\\2024-01_2024-01-13_zk-skalling.net\\page.png",
   "link": null,
-  "verdict": "none",
-  "titles": [],
+  "verdict": "warning",
+  "titles": [
+   "Раздача токенов с подключением кошелька"
+  ],
   "cardinput": false,
   "blur": false
  },
@@ -1527,10 +1531,8 @@
   "file": "zenodo/fake-payment__2024-01_2024-01-06_dtprojects.eu.org.html",
   "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\fake-payment\\2024-01_2024-01-06_dtprojects.eu.org\\page.png",
   "link": null,
-  "verdict": "danger",
-  "titles": [
-   "Вместе с картой просят данные, которые для оплаты не нужны"
-  ],
+  "verdict": "none",
+  "titles": [],
   "cardinput": true,
   "blur": false
  },
@@ -1545,8 +1547,10 @@
   "file": "zenodo/crypto-drainer__2024-01_2024-01-14_clestia2024.com.html",
   "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\crypto-drainer\\2024-01_2024-01-14_clestia2024.com\\page.png",
   "link": null,
-  "verdict": "none",
-  "titles": [],
+  "verdict": "warning",
+  "titles": [
+   "Раздача токенов с подключением кошелька"
+  ],
   "cardinput": false,
   "blur": false
  },
@@ -1561,8 +1565,100 @@
   "file": "zenodo/crypto-drainer__2024-01_2024-01-14_get-imxtokens.org.html",
   "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\crypto-drainer\\2024-01_2024-01-14_get-imxtokens.org\\page.png",
   "link": null,
-  "verdict": "none",
-  "titles": [],
+  "verdict": "warning",
+  "titles": [
+   "Раздача токенов с подключением кошелька"
+  ],
+  "cardinput": false,
+  "blur": false
+ },
+ {
+  "id": "z-getimmutable-token-com",
+  "scheme": "crypto-drainer",
+  "source": "Zenodo 14880589",
+  "date": "2024-01-14",
+  "domain": "getimmutable-token.com",
+  "title": "",
+  "note": "«получите токены» (Immutable X, Uniswap и др.): раздача с кнопкой подключения кошелька",
+  "file": "zenodo/crypto-drainer__2024-01_2024-01-14_getimmutable-token.com.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\crypto-drainer\\2024-01_2024-01-14_getimmutable-token.com\\page.png",
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Раздача токенов с подключением кошелька"
+  ],
+  "cardinput": false,
+  "blur": false
+ },
+ {
+  "id": "z-getimx-token-org",
+  "scheme": "crypto-drainer",
+  "source": "Zenodo 14880589",
+  "date": "2024-01-14",
+  "domain": "getimx-token.org",
+  "title": "",
+  "note": "«получите токены» (Immutable X, Uniswap и др.): раздача с кнопкой подключения кошелька",
+  "file": "zenodo/crypto-drainer__2024-01_2024-01-14_getimx-token.org.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\crypto-drainer\\2024-01_2024-01-14_getimx-token.org\\page.png",
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Раздача токенов с подключением кошелька"
+  ],
+  "cardinput": false,
+  "blur": false
+ },
+ {
+  "id": "z-immutable2024-com",
+  "scheme": "crypto-drainer",
+  "source": "Zenodo 14880589",
+  "date": "2024-01-14",
+  "domain": "immutable2024.com",
+  "title": "",
+  "note": "«получите токены» (Immutable X, Uniswap и др.): раздача с кнопкой подключения кошелька",
+  "file": "zenodo/crypto-drainer__2024-01_2024-01-14_immutable2024.com.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\crypto-drainer\\2024-01_2024-01-14_immutable2024.com\\page.png",
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Раздача токенов с подключением кошелька"
+  ],
+  "cardinput": false,
+  "blur": false
+ },
+ {
+  "id": "z-ilvclaim-com",
+  "scheme": "crypto-drainer",
+  "source": "Zenodo 14880589",
+  "date": "2024-01-14",
+  "domain": "ilvclaim.com",
+  "title": "",
+  "note": "«получите токены» (Immutable X, Uniswap и др.): раздача с кнопкой подключения кошелька",
+  "file": "zenodo/crypto-drainer__2024-01_2024-01-14_ilvclaim.com.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\crypto-drainer\\2024-01_2024-01-14_ilvclaim.com\\page.png",
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Раздача токенов с подключением кошелька"
+  ],
+  "cardinput": false,
+  "blur": false
+ },
+ {
+  "id": "z-get-immutablex-org",
+  "scheme": "crypto-drainer",
+  "source": "Zenodo 14880589",
+  "date": "2024-01-14",
+  "domain": "get-immutablex.org",
+  "title": "",
+  "note": "«получите токены» (Immutable X, Uniswap и др.): раздача с кнопкой подключения кошелька",
+  "file": "zenodo/crypto-drainer__2024-01_2024-01-14_get-immutablex.org.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\crypto-drainer\\2024-01_2024-01-14_get-immutablex.org\\page.png",
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Раздача токенов с подключением кошелька"
+  ],
   "cardinput": false,
   "blur": false
  },
@@ -1587,6 +1683,60 @@
   "blur": false
  },
  {
+  "id": "z-get-imxtokens-net",
+  "scheme": "crypto-drainer",
+  "source": "Zenodo 14880589",
+  "date": "2024-01-14",
+  "domain": "get-imxtokens.net",
+  "title": "",
+  "note": "«получите токены» (Immutable X, Uniswap и др.): раздача с кнопкой подключения кошелька",
+  "file": "zenodo/crypto-drainer__2024-01_2024-01-14_get-imxtokens.net.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\crypto-drainer\\2024-01_2024-01-14_get-imxtokens.net\\page.png",
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Раздача токенов с подключением кошелька"
+  ],
+  "cardinput": false,
+  "blur": false
+ },
+ {
+  "id": "z-get-imxtokens-com",
+  "scheme": "crypto-drainer",
+  "source": "Zenodo 14880589",
+  "date": "2024-01-14",
+  "domain": "get-imxtokens.com",
+  "title": "",
+  "note": "«получите токены» (Immutable X, Uniswap и др.): раздача с кнопкой подключения кошелька",
+  "file": "zenodo/crypto-drainer__2024-01_2024-01-14_get-imxtokens.com.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\crypto-drainer\\2024-01_2024-01-14_get-imxtokens.com\\page.png",
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Раздача токенов с подключением кошелька"
+  ],
+  "cardinput": false,
+  "blur": false
+ },
+ {
+  "id": "z-get-immutablex-com",
+  "scheme": "crypto-drainer",
+  "source": "Zenodo 14880589",
+  "date": "2024-01-14",
+  "domain": "get-immutablex.com",
+  "title": "",
+  "note": "«получите токены» (Immutable X, Uniswap и др.): раздача с кнопкой подключения кошелька",
+  "file": "zenodo/crypto-drainer__2024-01_2024-01-14_get-immutablex.com.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\crypto-drainer\\2024-01_2024-01-14_get-immutablex.com\\page.png",
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Раздача токенов с подключением кошелька"
+  ],
+  "cardinput": false,
+  "blur": false
+ },
+ {
   "id": "z-vemax-eu",
   "scheme": "fake-payment",
   "source": "Zenodo 14880589",
@@ -1600,6 +1750,150 @@
   "verdict": "ok",
   "titles": [],
   "cardinput": true,
+  "blur": false
+ },
+ {
+  "id": "z-immutablex-token-org",
+  "scheme": "crypto-drainer",
+  "source": "Zenodo 14880589",
+  "date": "2024-01-14",
+  "domain": "immutablex-token.org",
+  "title": "",
+  "note": "«получите токены» (Immutable X, Uniswap и др.): раздача с кнопкой подключения кошелька",
+  "file": "zenodo/fake-payment__2024-01_2024-01-14_immutablex-token.org.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\fake-payment\\2024-01_2024-01-14_immutablex-token.org\\page.png",
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Раздача токенов с подключением кошелька"
+  ],
+  "cardinput": false,
+  "blur": false
+ },
+ {
+  "id": "z-getimmutable-token-org",
+  "scheme": "crypto-drainer",
+  "source": "Zenodo 14880589",
+  "date": "2024-01-14",
+  "domain": "getimmutable-token.org",
+  "title": "",
+  "note": "«получите токены» (Immutable X, Uniswap и др.): раздача с кнопкой подключения кошелька",
+  "file": "zenodo/crypto-drainer__2024-01_2024-01-14_getimmutable-token.org.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\crypto-drainer\\2024-01_2024-01-14_getimmutable-token.org\\page.png",
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Раздача токенов с подключением кошелька"
+  ],
+  "cardinput": false,
+  "blur": false
+ },
+ {
+  "id": "z-join-immutablex-org",
+  "scheme": "crypto-drainer",
+  "source": "Zenodo 14880589",
+  "date": "2024-01-14",
+  "domain": "join-immutablex.org",
+  "title": "",
+  "note": "«получите токены» (Immutable X, Uniswap и др.): раздача с кнопкой подключения кошелька",
+  "file": "zenodo/crypto-drainer__2024-01_2024-01-14_join-immutablex.org.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\crypto-drainer\\2024-01_2024-01-14_join-immutablex.org\\page.png",
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Раздача токенов с подключением кошелька"
+  ],
+  "cardinput": false,
+  "blur": false
+ },
+ {
+  "id": "z-join-immutablex-com",
+  "scheme": "crypto-drainer",
+  "source": "Zenodo 14880589",
+  "date": "2024-01-14",
+  "domain": "join-immutablex.com",
+  "title": "",
+  "note": "«получите токены» (Immutable X, Uniswap и др.): раздача с кнопкой подключения кошелька",
+  "file": "zenodo/crypto-drainer__2024-01_2024-01-14_join-immutablex.com.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\crypto-drainer\\2024-01_2024-01-14_join-immutablex.com\\page.png",
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Раздача токенов с подключением кошелька"
+  ],
+  "cardinput": false,
+  "blur": false
+ },
+ {
+  "id": "z-immutablex-token-net",
+  "scheme": "crypto-drainer",
+  "source": "Zenodo 14880589",
+  "date": "2024-01-14",
+  "domain": "immutablex-token.net",
+  "title": "",
+  "note": "«получите токены» (Immutable X, Uniswap и др.): раздача с кнопкой подключения кошелька",
+  "file": "zenodo/crypto-drainer__2024-01_2024-01-14_immutablex-token.net.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\crypto-drainer\\2024-01_2024-01-14_immutablex-token.net\\page.png",
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Раздача токенов с подключением кошелька"
+  ],
+  "cardinput": false,
+  "blur": false
+ },
+ {
+  "id": "z-get-immutablex-net",
+  "scheme": "crypto-drainer",
+  "source": "Zenodo 14880589",
+  "date": "2024-01-14",
+  "domain": "get-immutablex.net",
+  "title": "",
+  "note": "«получите токены» (Immutable X, Uniswap и др.): раздача с кнопкой подключения кошелька",
+  "file": "zenodo/crypto-drainer__2024-01_2024-01-14_get-immutablex.net.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\crypto-drainer\\2024-01_2024-01-14_get-immutablex.net\\page.png",
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Раздача токенов с подключением кошелька"
+  ],
+  "cardinput": false,
+  "blur": false
+ },
+ {
+  "id": "z-immutablex-token-com",
+  "scheme": "crypto-drainer",
+  "source": "Zenodo 14880589",
+  "date": "2024-01-14",
+  "domain": "immutablex-token.com",
+  "title": "",
+  "note": "«получите токены» (Immutable X, Uniswap и др.): раздача с кнопкой подключения кошелька",
+  "file": "zenodo/crypto-drainer__2024-01_2024-01-14_immutablex-token.com.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\crypto-drainer\\2024-01_2024-01-14_immutablex-token.com\\page.png",
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Раздача токенов с подключением кошелька"
+  ],
+  "cardinput": false,
+  "blur": false
+ },
+ {
+  "id": "z-getimmutable-token-net",
+  "scheme": "crypto-drainer",
+  "source": "Zenodo 14880589",
+  "date": "2024-01-14",
+  "domain": "getimmutable-token.net",
+  "title": "",
+  "note": "«получите токены» (Immutable X, Uniswap и др.): раздача с кнопкой подключения кошелька",
+  "file": "zenodo/crypto-drainer__2024-01_2024-01-14_getimmutable-token.net.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\crypto-drainer\\2024-01_2024-01-14_getimmutable-token.net\\page.png",
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Раздача токенов с подключением кошелька"
+  ],
+  "cardinput": false,
   "blur": false
  },
  {
@@ -1637,6 +1931,42 @@
   "blur": false
  },
  {
+  "id": "z-zksync-era-maya-nfts2-me",
+  "scheme": "crypto-drainer",
+  "source": "Zenodo 14880589",
+  "date": "2024-01-01",
+  "domain": "zksync-era-maya.nfts2.me",
+  "title": "",
+  "note": "«zkSync Token Distribution» / «Join the airdrop»: раздача токенов с кнопкой подключения кошелька",
+  "file": "zenodo/crypto-drainer__2024-01_2024-01-01_zksync-era-maya.nfts2.me.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\crypto-drainer\\2024-01_2024-01-01_zksync-era-maya.nfts2.me\\page.png",
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Раздача токенов с подключением кошелька"
+  ],
+  "cardinput": false,
+  "blur": false
+ },
+ {
+  "id": "z-wkripto-zksync-nfts2-me",
+  "scheme": "crypto-drainer",
+  "source": "Zenodo 14880589",
+  "date": "2024-01-01",
+  "domain": "wkripto-zksync.nfts2.me",
+  "title": "",
+  "note": "«zkSync Token Distribution» / «Join the airdrop»: раздача токенов с кнопкой подключения кошелька",
+  "file": "zenodo/crypto-drainer__2024-01_2024-01-01_wkripto-zksync.nfts2.me.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\crypto-drainer\\2024-01_2024-01-01_wkripto-zksync.nfts2.me\\page.png",
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Раздача токенов с подключением кошелька"
+  ],
+  "cardinput": false,
+  "blur": false
+ },
+ {
   "id": "z-107-165-195-68",
   "scheme": "investment",
   "source": "Zenodo 14880589",
@@ -1649,6 +1979,96 @@
   "link": null,
   "verdict": "none",
   "titles": [],
+  "cardinput": false,
+  "blur": false
+ },
+ {
+  "id": "z-quilling-zksync-nfts2-me",
+  "scheme": "crypto-drainer",
+  "source": "Zenodo 14880589",
+  "date": "2024-01-01",
+  "domain": "quilling-zksync.nfts2.me",
+  "title": "",
+  "note": "«zkSync Token Distribution» / «Join the airdrop»: раздача токенов с кнопкой подключения кошелька",
+  "file": "zenodo/crypto-drainer__2024-01_2024-01-01_quilling-zksync.nfts2.me.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\crypto-drainer\\2024-01_2024-01-01_quilling-zksync.nfts2.me\\page.png",
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Раздача токенов с подключением кошелька"
+  ],
+  "cardinput": false,
+  "blur": false
+ },
+ {
+  "id": "z-lawliet-zksync-nfts2-me",
+  "scheme": "crypto-drainer",
+  "source": "Zenodo 14880589",
+  "date": "2024-01-01",
+  "domain": "lawliet-zksync.nfts2.me",
+  "title": "",
+  "note": "«zkSync Token Distribution» / «Join the airdrop»: раздача токенов с кнопкой подключения кошелька",
+  "file": "zenodo/crypto-drainer__2024-01_2024-01-01_lawliet-zksync.nfts2.me.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\crypto-drainer\\2024-01_2024-01-01_lawliet-zksync.nfts2.me\\page.png",
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Раздача токенов с подключением кошелька"
+  ],
+  "cardinput": false,
+  "blur": false
+ },
+ {
+  "id": "z-zksync-to-the-moon-future-nfts2-me",
+  "scheme": "crypto-drainer",
+  "source": "Zenodo 14880589",
+  "date": "2024-01-01",
+  "domain": "zksync-to-the-moon-future.nfts2.me",
+  "title": "",
+  "note": "«zkSync Token Distribution» / «Join the airdrop»: раздача токенов с кнопкой подключения кошелька",
+  "file": "zenodo/crypto-drainer__2024-01_2024-01-01_zksync-to-the-moon-future.nfts2.me.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\crypto-drainer\\2024-01_2024-01-01_zksync-to-the-moon-future.nfts2.me\\page.png",
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Раздача токенов с подключением кошелька"
+  ],
+  "cardinput": false,
+  "blur": false
+ },
+ {
+  "id": "z-magical-zksync-era-zeus-nfts2-me",
+  "scheme": "crypto-drainer",
+  "source": "Zenodo 14880589",
+  "date": "2024-01-01",
+  "domain": "magical-zksync-era-zeus.nfts2.me",
+  "title": "",
+  "note": "«zkSync Token Distribution» / «Join the airdrop»: раздача токенов с кнопкой подключения кошелька",
+  "file": "zenodo/crypto-drainer__2024-01_2024-01-01_magical-zksync-era-zeus.nfts2.me.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\crypto-drainer\\2024-01_2024-01-01_magical-zksync-era-zeus.nfts2.me\\page.png",
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Раздача токенов с подключением кошелька"
+  ],
+  "cardinput": false,
+  "blur": false
+ },
+ {
+  "id": "z-zksync-era-zktv-nfts2-me",
+  "scheme": "crypto-drainer",
+  "source": "Zenodo 14880589",
+  "date": "2024-01-01",
+  "domain": "zksync-era-zktv.nfts2.me",
+  "title": "",
+  "note": "«zkSync Token Distribution» / «Join the airdrop»: раздача токенов с кнопкой подключения кошелька",
+  "file": "zenodo/crypto-drainer__2024-01_2024-01-01_zksync-era-zktv.nfts2.me.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\crypto-drainer\\2024-01_2024-01-01_zksync-era-zktv.nfts2.me\\page.png",
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Раздача токенов с подключением кошелька"
+  ],
   "cardinput": false,
   "blur": false
  },
@@ -1668,6 +2088,24 @@
    "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
   ],
   "cardinput": true,
+  "blur": false
+ },
+ {
+  "id": "z-zk-skalling-app",
+  "scheme": "crypto-drainer",
+  "source": "Zenodo 14880589",
+  "date": "2024-01-12",
+  "domain": "zk-skalling.app",
+  "title": "",
+  "note": "«zkSync Token Distribution» / «Join the airdrop»: раздача токенов с кнопкой подключения кошелька",
+  "file": "zenodo/crypto-drainer__2024-01_2024-01-12_zk-skalling.app.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\crypto-drainer\\2024-01_2024-01-12_zk-skalling.app\\page.png",
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Раздача токенов с подключением кошелька"
+  ],
+  "cardinput": false,
   "blur": false
  },
  {
@@ -1724,6 +2162,24 @@
    "Данные карты уходят в Telegram-бота"
   ],
   "cardinput": true,
+  "blur": false
+ },
+ {
+  "id": "z-imxtoken-net",
+  "scheme": "crypto-drainer",
+  "source": "Zenodo 14880589",
+  "date": "2024-01-15",
+  "domain": "imxtoken.net",
+  "title": "",
+  "note": "«получите токены» (Immutable X, Uniswap и др.): раздача с кнопкой подключения кошелька",
+  "file": "zenodo/crypto-drainer__2024-01_2024-01-15_imxtoken.net.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\crypto-drainer\\2024-01_2024-01-15_imxtoken.net\\page.png",
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Раздача токенов с подключением кошелька"
+  ],
+  "cardinput": false,
   "blur": false
  },
  {
@@ -1890,6 +2346,24 @@
    "Скрипт читает поля карты и умеет отправлять данные"
   ],
   "cardinput": true,
+  "blur": false
+ },
+ {
+  "id": "z-zksync-claiming-token-run",
+  "scheme": "crypto-drainer",
+  "source": "Zenodo 14880589",
+  "date": "2024-01-16",
+  "domain": "zksync.claiming-token.run",
+  "title": "",
+  "note": "«zkSync Token Distribution» / «Join the airdrop»: раздача токенов с кнопкой подключения кошелька",
+  "file": "zenodo/crypto-drainer__2024-01_2024-01-16_zksync.claiming-token.run.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\crypto-drainer\\2024-01_2024-01-16_zksync.claiming-token.run\\page.png",
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Раздача токенов с подключением кошелька"
+  ],
+  "cardinput": false,
   "blur": false
  },
  {
@@ -2669,8 +3143,10 @@
   "file": "urlscan2/01a1d539-62bb-720b-869f-820c27c86668.html",
   "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a1d539-62bb-720b-869f-820c27c86668\\screenshot.png",
   "link": "https://urlscan.io/result/01a1d539-62bb-720b-869f-820c27c86668/",
-  "verdict": "none",
-  "titles": [],
+  "verdict": "warning",
+  "titles": [
+   "Обещают доход и просят оставить телефон"
+  ],
   "note": "поддельная новость (стилизована под Gazeta.pl): «Пётр Кучиньский поддерживает Quantum AI»",
   "blur": false
  },
@@ -2791,8 +3267,10 @@
   "file": "urlscan2/01a1dad9-02a6-743f-9591-7686c46ab444.html",
   "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a1dad9-02a6-743f-9591-7686c46ab444\\screenshot.png",
   "link": "https://urlscan.io/result/01a1dad9-02a6-743f-9591-7686c46ab444/",
-  "verdict": "none",
-  "titles": [],
+  "verdict": "warning",
+  "titles": [
+   "Раздача токенов с подключением кошелька"
+  ],
   "note": "«SparkDEX Rewards Proposal» — копия криптопроекта с кнопкой подключения кошелька",
   "blur": false
  },
@@ -2806,8 +3284,10 @@
   "file": "urlscan2/01a1da4a-2bc3-732a-aeb6-36775a60fc3c.html",
   "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a1da4a-2bc3-732a-aeb6-36775a60fc3c\\screenshot.png",
   "link": "https://urlscan.io/result/01a1da4a-2bc3-732a-aeb6-36775a60fc3c/",
-  "verdict": "none",
-  "titles": [],
+  "verdict": "warning",
+  "titles": [
+   "Раздача токенов с подключением кошелька"
+  ],
   "note": "«SparkDEX Rewards Proposal» — копия криптопроекта с кнопкой подключения кошелька",
   "blur": false
  },
@@ -2821,8 +3301,10 @@
   "file": "urlscan2/01a1d6db-dd4d-7288-8945-fcd9dc4168ea.html",
   "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a1d6db-dd4d-7288-8945-fcd9dc4168ea\\screenshot.png",
   "link": "https://urlscan.io/result/01a1d6db-dd4d-7288-8945-fcd9dc4168ea/",
-  "verdict": "none",
-  "titles": [],
+  "verdict": "warning",
+  "titles": [
+   "Раздача токенов с подключением кошелька"
+  ],
   "note": "«SparkDEX Rewards Proposal» — копия криптопроекта с кнопкой подключения кошелька",
   "blur": false
  },
@@ -2836,8 +3318,10 @@
   "file": "urlscan2/01a1d64b-fcb0-7122-9747-f61a732b2ab6.html",
   "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a1d64b-fcb0-7122-9747-f61a732b2ab6\\screenshot.png",
   "link": "https://urlscan.io/result/01a1d64b-fcb0-7122-9747-f61a732b2ab6/",
-  "verdict": "none",
-  "titles": [],
+  "verdict": "warning",
+  "titles": [
+   "Раздача токенов с подключением кошелька"
+  ],
   "note": "«SparkDEX Rewards Proposal» — копия криптопроекта с кнопкой подключения кошелька",
   "blur": false
  },
@@ -2851,8 +3335,10 @@
   "file": "urlscan2/01a1d5cc-cf81-72ef-881d-56c5e4956105.html",
   "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a1d5cc-cf81-72ef-881d-56c5e4956105\\screenshot.png",
   "link": "https://urlscan.io/result/01a1d5cc-cf81-72ef-881d-56c5e4956105/",
-  "verdict": "none",
-  "titles": [],
+  "verdict": "warning",
+  "titles": [
+   "Раздача токенов с подключением кошелька"
+  ],
   "note": "«SparkDEX Rewards Proposal» — копия криптопроекта с кнопкой подключения кошелька",
   "blur": false
  },
@@ -2866,9 +3352,26 @@
   "file": "urlscan2/01a1d21a-c89d-714c-951b-5e0dfe9e7517.html",
   "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a1d21a-c89d-714c-951b-5e0dfe9e7517\\screenshot.png",
   "link": "https://urlscan.io/result/01a1d21a-c89d-714c-951b-5e0dfe9e7517/",
+  "verdict": "warning",
+  "titles": [
+   "Раздача токенов с подключением кошелька"
+  ],
+  "note": "«SparkDEX Rewards Proposal» — копия криптопроекта с кнопкой подключения кошелька",
+  "blur": false
+ },
+ {
+  "id": "v-01a1ab55-d846",
+  "scheme": "investment",
+  "source": "urlscan.io",
+  "date": "2026-11-05",
+  "domain": "immediateconnect-nl.online",
+  "title": "Immediate Connect – innovatief handelsplatform met AI-gestuurde analyse 2026",
+  "file": "urlscan2/01a1ab55-d846-76c9-835d-f54989103e41.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a1ab55-d846-76c9-835d-f54989103e41\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1ab55-d846-76c9-835d-f54989103e41/",
   "verdict": "none",
   "titles": [],
-  "note": "«SparkDEX Rewards Proposal» — копия криптопроекта с кнопкой подключения кошелька",
+  "note": "«Immediate Connect / Edge»: «торговая платформа с ИИ» — регуляторы предупреждают о ней как о мошеннической",
   "blur": false
  },
  {
@@ -3086,6 +3589,70 @@
   "file": "urlscan2/01a1dad1-489f-76db-8001-5d3173ee3c1d.html",
   "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a1dad1-489f-76db-8001-5d3173ee3c1d\\screenshot.png",
   "link": "https://urlscan.io/result/01a1dad1-489f-76db-8001-5d3173ee3c1d/",
+  "verdict": "warning",
+  "titles": [
+   "Раздача токенов с подключением кошелька"
+  ],
+  "note": "копия криптопроекта: «голосование о дате выдачи наград» с кнопкой подключения кошелька",
+  "blur": false
+ },
+ {
+  "id": "v-01a1dad1-3d7c",
+  "scheme": "crypto-drainer",
+  "source": "urlscan.io",
+  "date": "2026-11-14",
+  "domain": "4-governance-hyperpolicy.pages.dev",
+  "title": "HYPE Season 3 Vote · Hyperliquid",
+  "file": "urlscan2/01a1dad1-3d7c-71b9-a830-1a4444cc902b.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a1dad1-3d7c-71b9-a830-1a4444cc902b\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1dad1-3d7c-71b9-a830-1a4444cc902b/",
+  "verdict": "warning",
+  "titles": [
+   "Раздача токенов с подключением кошелька"
+  ],
+  "note": "копия криптопроекта: «голосование о дате выдачи наград» с кнопкой подключения кошелька",
+  "blur": false
+ },
+ {
+  "id": "v-01a1dad0-2f87",
+  "scheme": "crypto-drainer",
+  "source": "urlscan.io",
+  "date": "2026-11-14",
+  "domain": "1-ascendlaunchgov.pages.dev",
+  "title": "Ascend Rewards Date Proposal | Elysium",
+  "file": "urlscan2/01a1dad0-2f87-7314-8dc7-a7c0620e0b1b.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a1dad0-2f87-7314-8dc7-a7c0620e0b1b\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1dad0-2f87-7314-8dc7-a7c0620e0b1b/",
+  "verdict": "none",
+  "titles": [],
+  "note": "копия криптопроекта: «голосование о дате выдачи наград» с кнопкой подключения кошелька",
+  "blur": false
+ },
+ {
+  "id": "v-01a1dad0-3959",
+  "scheme": "crypto-drainer",
+  "source": "urlscan.io",
+  "date": "2026-11-14",
+  "domain": "7-allocation-umiafinance.pages.dev",
+  "title": "UMIA Token Auction | Umia",
+  "file": "urlscan2/01a1dad0-3959-7076-8c05-8ce259bee4a1.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a1dad0-3959-7076-8c05-8ce259bee4a1\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1dad0-3959-7076-8c05-8ce259bee4a1/",
+  "verdict": "none",
+  "titles": [],
+  "note": "копия криптопроекта: «голосование о дате выдачи наград» с кнопкой подключения кошелька",
+  "blur": false
+ },
+ {
+  "id": "v-01a1dad0-3aa8",
+  "scheme": "crypto-drainer",
+  "source": "urlscan.io",
+  "date": "2026-11-14",
+  "domain": "11-apyx.pages.dev",
+  "title": "Apyx · Programmable dollars backed by credit and treasuries",
+  "file": "urlscan2/01a1dad0-3aa8-760b-934a-30b909c75587.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a1dad0-3aa8-760b-934a-30b909c75587\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1dad0-3aa8-760b-934a-30b909c75587/",
   "verdict": "none",
   "titles": [],
   "note": "копия криптопроекта: «голосование о дате выдачи наград» с кнопкой подключения кошелька",
@@ -3101,8 +3668,10 @@
   "file": "urlscan2/01a18885-1a9f-72fa-aa72-8f5d80d580e7.html",
   "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a18885-1a9f-72fa-aa72-8f5d80d580e7\\screenshot.png",
   "link": "https://urlscan.io/result/01a18885-1a9f-72fa-aa72-8f5d80d580e7/",
-  "verdict": "none",
-  "titles": [],
+  "verdict": "warning",
+  "titles": [
+   "Требуют срочно оплатить долг или штраф по ссылке"
+  ],
   "note": "«E-ZPass: Outstanding Balance» — неоплаченный проезд",
   "blur": false
  },
@@ -3231,6 +3800,159 @@
   "blur": false
  },
  {
+  "id": "v-01a1cbd2-ecb3",
+  "scheme": "investment",
+  "source": "urlscan.io",
+  "date": "2026-11-11",
+  "domain": "cryptopro-blockchain-dpyae1paz5hn.edgeone.dev",
+  "title": "CryptoPro · USDT Trading Platform",
+  "file": "urlscan2/01a1cbd2-ecb3-74cd-914e-5da069f13eb9.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a1cbd2-ecb3-74cd-914e-5da069f13eb9\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1cbd2-ecb3-74cd-914e-5da069f13eb9/",
+  "verdict": "warning",
+  "titles": [
+   "Раздача токенов с подключением кошелька"
+  ],
+  "note": "«CryptoPro · USDT Trading Platform» на бесплатном хостинге",
+  "blur": false
+ },
+ {
+  "id": "v-01a1cbd1-9b3e",
+  "scheme": "investment",
+  "source": "urlscan.io",
+  "date": "2026-11-11",
+  "domain": "usdt-trading-platform-dpw7p0calbva.edgeone.dev",
+  "title": "CryptoPro · USDT Trading Platform",
+  "file": "urlscan2/01a1cbd1-9b3e-7338-b327-88d0dff82fe4.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a1cbd1-9b3e-7338-b327-88d0dff82fe4\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1cbd1-9b3e-7338-b327-88d0dff82fe4/",
+  "verdict": "warning",
+  "titles": [
+   "Раздача токенов с подключением кошелька"
+  ],
+  "note": "«AI Trading Platform»: один и тот же шаблон под разными названиями, форма регистрации с телефоном",
+  "blur": false
+ },
+ {
+  "id": "v-01a1cbcb-7870",
+  "scheme": "investment",
+  "source": "urlscan.io",
+  "date": "2026-11-11",
+  "domain": "ready-copper-94hyt1zv-dpv1q61zwwxc.edgeone.dev",
+  "title": "CryptoPro · USDT Trading Platform",
+  "file": "urlscan2/01a1cbcb-7870-74aa-b9dd-1f11ba4307d2.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a1cbcb-7870-74aa-b9dd-1f11ba4307d2\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1cbcb-7870-74aa-b9dd-1f11ba4307d2/",
+  "verdict": "warning",
+  "titles": [
+   "Раздача токенов с подключением кошелька"
+  ],
+  "note": "«CryptoPro · USDT Trading Platform» на бесплатном хостинге",
+  "blur": false
+ },
+ {
+  "id": "v-01a18f55-d60a",
+  "scheme": "investment",
+  "source": "urlscan.io",
+  "date": "2026-10-31",
+  "domain": "ulvenraq.icu",
+  "title": "От 100 000 рублей в месяц - стабильный доход от ГазИнвест для граждан РФ. Регистрация открыта с 1 августа",
+  "file": "urlscan2/01a18f55-d60a-73bf-be50-54a147a74486.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a18f55-d60a-73bf-be50-54a147a74486\\screenshot.png",
+  "link": "https://urlscan.io/result/01a18f55-d60a-73bf-be50-54a147a74486/",
+  "verdict": "warning",
+  "titles": [
+   "Обещают доход и просят оставить телефон"
+  ],
+  "note": "«СРОЧНЫЕ НОВОСТИ: новый закон подписан» — поддельная новость, ведущая к «стабильному доходу от ГазИнвест от 100 000 ₽ в месяц» (та же схема, что в деле «ГазИнвест»)",
+  "blur": false
+ },
+ {
+  "id": "v-01a18bc2-0307",
+  "scheme": "investment",
+  "source": "urlscan.io",
+  "date": "2026-10-30",
+  "domain": "oskavren.icu",
+  "title": "От 100 000 рублей в месяц - стабильный доход от ГазИнвест для граждан РФ. Регистрация открыта с 1 августа",
+  "file": "urlscan2/01a18bc2-0307-7472-9240-39eee8e19bdd.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a18bc2-0307-7472-9240-39eee8e19bdd\\screenshot.png",
+  "link": "https://urlscan.io/result/01a18bc2-0307-7472-9240-39eee8e19bdd/",
+  "verdict": "warning",
+  "titles": [
+   "Обещают доход и просят оставить телефон"
+  ],
+  "note": "«СРОЧНЫЕ НОВОСТИ: новый закон подписан» — поддельная новость, ведущая к «стабильному доходу от ГазИнвест от 100 000 ₽ в месяц» (та же схема, что в деле «ГазИнвест»)",
+  "blur": false
+ },
+ {
+  "id": "v-01a18bc1-f780",
+  "scheme": "investment",
+  "source": "urlscan.io",
+  "date": "2026-10-30",
+  "domain": "ravnethq.icu",
+  "title": "От 100 000 рублей в месяц - стабильный доход от ГазИнвест для граждан РФ. Регистрация открыта с 1 августа",
+  "file": "urlscan2/01a18bc1-f780-7357-8188-4a8ffd247c59.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a18bc1-f780-7357-8188-4a8ffd247c59\\screenshot.png",
+  "link": "https://urlscan.io/result/01a18bc1-f780-7357-8188-4a8ffd247c59/",
+  "verdict": "warning",
+  "titles": [
+   "Обещают доход и просят оставить телефон"
+  ],
+  "note": "«СРОЧНЫЕ НОВОСТИ: новый закон подписан» — поддельная новость, ведущая к «стабильному доходу от ГазИнвест от 100 000 ₽ в месяц» (та же схема, что в деле «ГазИнвест»)",
+  "blur": false
+ },
+ {
+  "id": "v-01a18bc1-e160",
+  "scheme": "investment",
+  "source": "urlscan.io",
+  "date": "2026-10-30",
+  "domain": "prymorel.icu",
+  "title": "От 100 000 рублей в месяц - стабильный доход от ГазИнвест для граждан РФ. Регистрация открыта с 1 августа",
+  "file": "urlscan2/01a18bc1-e160-70fb-b52b-19315d15de71.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a18bc1-e160-70fb-b52b-19315d15de71\\screenshot.png",
+  "link": "https://urlscan.io/result/01a18bc1-e160-70fb-b52b-19315d15de71/",
+  "verdict": "warning",
+  "titles": [
+   "Обещают доход и просят оставить телефон"
+  ],
+  "note": "«СРОЧНЫЕ НОВОСТИ: новый закон подписан» — поддельная новость, ведущая к «стабильному доходу от ГазИнвест от 100 000 ₽ в месяц» (та же схема, что в деле «ГазИнвест»)",
+  "blur": false
+ },
+ {
+  "id": "v-01a1519f-f2aa",
+  "scheme": "investment",
+  "source": "urlscan.io",
+  "date": "2026-10-19",
+  "domain": "difmuko.icu",
+  "title": "От 100 000 рублей в месяц - стабильный доход от ГазИнвест для граждан РФ. Регистрация открыта с 1 августа",
+  "file": "urlscan2/01a1519f-f2aa-72db-a8f2-fab870cb97a2.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a1519f-f2aa-72db-a8f2-fab870cb97a2\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1519f-f2aa-72db-a8f2-fab870cb97a2/",
+  "verdict": "warning",
+  "titles": [
+   "Обещают доход и просят оставить телефон"
+  ],
+  "note": "«СРОЧНЫЕ НОВОСТИ: новый закон подписан» — поддельная новость, ведущая к «стабильному доходу от ГазИнвест от 100 000 ₽ в месяц» (та же схема, что в деле «ГазИнвест»)",
+  "blur": false
+ },
+ {
+  "id": "v-01a1519f-179c",
+  "scheme": "investment",
+  "source": "urlscan.io",
+  "date": "2026-10-19",
+  "domain": "cexmuri.icu",
+  "title": "От 100 000 рублей в месяц - стабильный доход от ГазИнвест для граждан РФ. Регистрация открыта с 1 августа",
+  "file": "urlscan2/01a1519f-179c-7470-b3b8-c9877547be21.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a1519f-179c-7470-b3b8-c9877547be21\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1519f-179c-7470-b3b8-c9877547be21/",
+  "verdict": "warning",
+  "titles": [
+   "Обещают доход и просят оставить телефон"
+  ],
+  "note": "«СРОЧНЫЕ НОВОСТИ: новый закон подписан» — поддельная новость, ведущая к «стабильному доходу от ГазИнвест от 100 000 ₽ в месяц» (та же схема, что в деле «ГазИнвест»)",
+  "blur": false
+ },
+ {
   "id": "v-01a1a7ca-76ea",
   "scheme": "tech-support",
   "source": "urlscan.io",
@@ -3331,6 +4053,102 @@
   ],
   "note": "первый экран ложной техподдержки: страница-приманка с окном «закрыть сайт?»; после нажатия открывается «блокировка» с номером телефона",
   "blur": true
+ },
+ {
+  "id": "v-01a1dad0-34d9",
+  "scheme": "crypto-drainer",
+  "source": "urlscan.io",
+  "date": "2026-11-14",
+  "domain": "6-etherfi-allocation.pages.dev",
+  "title": "Stake ETH | ether.fi",
+  "file": "urlscan2/01a1dad0-34d9-76dd-ae55-412a1097f498.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a1dad0-34d9-76dd-ae55-412a1097f498\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1dad0-34d9-76dd-ae55-412a1097f498/",
+  "verdict": "warning",
+  "titles": [
+   "Раздача токенов с подключением кошелька"
+  ],
+  "note": "копия криптопроекта: «голосование о дате выдачи наград» с кнопкой подключения кошелька",
+  "blur": false
+ },
+ {
+  "id": "v-01a1dad0-32cd",
+  "scheme": "crypto-drainer",
+  "source": "urlscan.io",
+  "date": "2026-11-14",
+  "domain": "2-hub-ramsesgovernance.pages.dev",
+  "title": "Ramses | Governance",
+  "file": "urlscan2/01a1dad0-32cd-72cc-a601-bc3dcf539a36.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a1dad0-32cd-72cc-a601-bc3dcf539a36\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1dad0-32cd-72cc-a601-bc3dcf539a36/",
+  "verdict": "warning",
+  "titles": [
+   "Раздача токенов с подключением кошелька"
+  ],
+  "note": "копия криптопроекта: «голосование о дате выдачи наград» с кнопкой подключения кошелька",
+  "blur": false
+ },
+ {
+  "id": "v-01a1dad0-2b11",
+  "scheme": "crypto-drainer",
+  "source": "urlscan.io",
+  "date": "2026-11-14",
+  "domain": "6-mantle-allocations.pages.dev",
+  "title": "Mantle | Institutional Infrastructure for Real-World Assets",
+  "file": "urlscan2/01a1dad0-2b11-71fa-86ea-c628483cb52c.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a1dad0-2b11-71fa-86ea-c628483cb52c\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1dad0-2b11-71fa-86ea-c628483cb52c/",
+  "verdict": "none",
+  "titles": [],
+  "note": "копия криптопроекта: «голосование о дате выдачи наград» с кнопкой подключения кошелька",
+  "blur": false
+ },
+ {
+  "id": "v-01a1dad0-2d18",
+  "scheme": "crypto-drainer",
+  "source": "urlscan.io",
+  "date": "2026-11-14",
+  "domain": "3-xstocks-allocation.pages.dev",
+  "title": "xStocks - Tokenized Equities",
+  "file": "urlscan2/01a1dad0-2d18-74fc-a7a4-567f7843d89e.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a1dad0-2d18-74fc-a7a4-567f7843d89e\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1dad0-2d18-74fc-a7a4-567f7843d89e/",
+  "verdict": "none",
+  "titles": [],
+  "note": "копия криптопроекта: «голосование о дате выдачи наград» с кнопкой подключения кошелька",
+  "blur": false
+ },
+ {
+  "id": "v-01a1dad0-1bd8",
+  "scheme": "crypto-drainer",
+  "source": "urlscan.io",
+  "date": "2026-11-14",
+  "domain": "15-katanagov.pages.dev",
+  "title": "katana | governance",
+  "file": "urlscan2/01a1dad0-1bd8-70cf-9710-00a264117e33.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a1dad0-1bd8-70cf-9710-00a264117e33\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1dad0-1bd8-70cf-9710-00a264117e33/",
+  "verdict": "warning",
+  "titles": [
+   "Раздача токенов с подключением кошелька"
+  ],
+  "note": "копия криптопроекта: «голосование о дате выдачи наград» с кнопкой подключения кошелька",
+  "blur": false
+ },
+ {
+  "id": "v-01a1dad0-1f47",
+  "scheme": "crypto-drainer",
+  "source": "urlscan.io",
+  "date": "2026-11-14",
+  "domain": "33-fx-aladdin.pages.dev",
+  "title": "f(x) Protocol",
+  "file": "urlscan2/01a1dad0-1f47-7328-8048-e5cdd0077f33.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a1dad0-1f47-7328-8048-e5cdd0077f33\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1dad0-1f47-7328-8048-e5cdd0077f33/",
+  "verdict": "none",
+  "titles": [],
+  "note": "копия криптопроекта: «голосование о дате выдачи наград» с кнопкой подключения кошелька",
+  "blur": false
  },
  {
   "id": "v-01a09ec7-92c3",
@@ -3445,6 +4263,261 @@
    "Скрипт читает поля карты и умеет отправлять данные"
   ],
   "note": "«Авито • Получение оплаты за товар» — продавцу предлагают «получить деньги» по карте",
+  "blur": false
+ },
+ {
+  "id": "v-01a1cb6e-4454",
+  "scheme": "investment",
+  "source": "urlscan.io",
+  "date": "2026-11-11",
+  "domain": "characteringsnib.site",
+  "title": "Tagesschau | Quantum AI",
+  "file": "urlscan2/01a1cb6e-4454-7429-9ba0-cbf1d83b8ee4.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a1cb6e-4454-7429-9ba0-cbf1d83b8ee4\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1cb6e-4454-7429-9ba0-cbf1d83b8ee4/",
+  "verdict": "warning",
+  "titles": [
+   "Обещают доход и просят оставить телефон"
+  ],
+  "note": "поддельная статья «Tagesschau»: «Фридрих Мерц запускает Quantum AI»",
+  "blur": false
+ },
+ {
+  "id": "v-01a1cbc6-3113",
+  "scheme": "investment",
+  "source": "urlscan.io",
+  "date": "2026-11-11",
+  "domain": "platform-usdt-dp471locp87d.edgeone.dev",
+  "title": "CryptoPro · USDT Trading Platform",
+  "file": "urlscan2/01a1cbc6-3113-75e4-bf9d-c59a2455a694.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a1cbc6-3113-75e4-bf9d-c59a2455a694\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1cbc6-3113-75e4-bf9d-c59a2455a694/",
+  "verdict": "warning",
+  "titles": [
+   "Раздача токенов с подключением кошелька"
+  ],
+  "note": "поддельное предупреждение безопасности на бесплатном хостинге",
+  "blur": false
+ },
+ {
+  "id": "v-01a1cbc1-39ea",
+  "scheme": "investment",
+  "source": "urlscan.io",
+  "date": "2026-11-11",
+  "domain": "usdt-platform-dpt82age8q3j.edgeone.dev",
+  "title": "CryptoPro · USDT Trading Platform",
+  "file": "urlscan2/01a1cbc1-39ea-7508-95cd-776d902f607a.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a1cbc1-39ea-7508-95cd-776d902f607a\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1cbc1-39ea-7508-95cd-776d902f607a/",
+  "verdict": "warning",
+  "titles": [
+   "Раздача токенов с подключением кошелька"
+  ],
+  "note": "поддельное предупреждение безопасности на бесплатном хостинге",
+  "blur": false
+ },
+ {
+  "id": "v-01a1cbb6-cf2c",
+  "scheme": "investment",
+  "source": "urlscan.io",
+  "date": "2026-11-11",
+  "domain": "usdtplatform-dp2omeqybspv.edgeone.dev",
+  "title": "CryptoPro · USDT Trading Platform",
+  "file": "urlscan2/01a1cbb6-cf2c-739a-8087-f3a9000dfff7.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a1cbb6-cf2c-739a-8087-f3a9000dfff7\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1cbb6-cf2c-739a-8087-f3a9000dfff7/",
+  "verdict": "warning",
+  "titles": [
+   "Раздача токенов с подключением кошелька"
+  ],
+  "note": "поддельное предупреждение безопасности на бесплатном хостинге",
+  "blur": false
+ },
+ {
+  "id": "v-01a1cb90-68ab",
+  "scheme": "investment",
+  "source": "urlscan.io",
+  "date": "2026-11-11",
+  "domain": "structural-lime-vobjmtjc-dpxq60bucv6r.edgeone.dev",
+  "title": "CryptoPro · USDT Trading Platform",
+  "file": "urlscan2/01a1cb90-68ab-7577-b14f-12312aa7e783.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a1cb90-68ab-7577-b14f-12312aa7e783\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1cb90-68ab-7577-b14f-12312aa7e783/",
+  "verdict": "warning",
+  "titles": [
+   "Раздача токенов с подключением кошелька"
+  ],
+  "note": "поддельное предупреждение безопасности на бесплатном хостинге",
+  "blur": false
+ },
+ {
+  "id": "v-01a1cb86-89e0",
+  "scheme": "investment",
+  "source": "urlscan.io",
+  "date": "2026-11-11",
+  "domain": "platform-dps4h7f2vu8m.edgeone.dev",
+  "title": "CryptoPro · USDT Trading Platform",
+  "file": "urlscan2/01a1cb86-89e0-7132-8538-a776ef3b67e4.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a1cb86-89e0-7132-8538-a776ef3b67e4\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1cb86-89e0-7132-8538-a776ef3b67e4/",
+  "verdict": "warning",
+  "titles": [
+   "Раздача токенов с подключением кошелька"
+  ],
+  "note": "поддельное предупреждение безопасности на бесплатном хостинге",
+  "blur": false
+ },
+ {
+  "id": "v-01a1cb70-5204",
+  "scheme": "investment",
+  "source": "urlscan.io",
+  "date": "2026-11-11",
+  "domain": "platform-usdt-dpcrl3pl3t1p.edgeone.dev",
+  "title": "CryptoPro · USDT Trading Platform",
+  "file": "urlscan2/01a1cb70-5204-726b-b391-92c45785d1c7.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a1cb70-5204-726b-b391-92c45785d1c7\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1cb70-5204-726b-b391-92c45785d1c7/",
+  "verdict": "warning",
+  "titles": [
+   "Раздача токенов с подключением кошелька"
+  ],
+  "note": "поддельное предупреждение безопасности на бесплатном хостинге",
+  "blur": false
+ },
+ {
+  "id": "v-01a0cd55-482e",
+  "scheme": "investment",
+  "source": "urlscan.io",
+  "date": "2026-09-23",
+  "domain": "fizzy0-sapiente23.sbs",
+  "title": "Bitcoin Era New",
+  "file": "urlscan2/01a0cd55-482e-744b-8369-d3a4980be9c0.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a0cd55-482e-744b-8369-d3a4980be9c0\\screenshot.png",
+  "link": "https://urlscan.io/result/01a0cd55-482e-744b-8369-d3a4980be9c0/",
+  "verdict": "warning",
+  "titles": [
+   "Обещают доход и просят оставить телефон"
+  ],
+  "note": "«Bitcoin Era»: «торговая платформа с ИИ», о ней предупреждают регуляторы",
+  "blur": false
+ },
+ {
+  "id": "v-01a1519d-ec56",
+  "scheme": "investment",
+  "source": "urlscan.io",
+  "date": "2026-10-19",
+  "domain": "pebblequoin.icu",
+  "title": "От 100 000 рублей в месяц - стабильный доход от ГазИнвест для граждан РФ. Регистрация открыта с 1 августа",
+  "file": "urlscan2/01a1519d-ec56-743a-b905-a45a4d90f408.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a1519d-ec56-743a-b905-a45a4d90f408\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1519d-ec56-743a-b905-a45a4d90f408/",
+  "verdict": "warning",
+  "titles": [
+   "Обещают доход и просят оставить телефон"
+  ],
+  "note": "«СРОЧНЫЕ НОВОСТИ: новый закон подписан» — поддельная новость, ведущая к «стабильному доходу от ГазИнвест от 100 000 ₽ в месяц» (та же схема, что в деле «ГазИнвест»)",
+  "blur": false
+ },
+ {
+  "id": "v-01a1519c-bf85",
+  "scheme": "investment",
+  "source": "urlscan.io",
+  "date": "2026-10-19",
+  "domain": "aqzviro.icu",
+  "title": "От 100 000 рублей в месяц - стабильный доход от ГазИнвест для граждан РФ. Регистрация открыта с 1 августа",
+  "file": "urlscan2/01a1519c-bf85-722c-b636-a5ccdc803ab2.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a1519c-bf85-722c-b636-a5ccdc803ab2\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1519c-bf85-722c-b636-a5ccdc803ab2/",
+  "verdict": "warning",
+  "titles": [
+   "Обещают доход и просят оставить телефон"
+  ],
+  "note": "«СРОЧНЫЕ НОВОСТИ: новый закон подписан» — поддельная новость, ведущая к «стабильному доходу от ГазИнвест от 100 000 ₽ в месяц» (та же схема, что в деле «ГазИнвест»)",
+  "blur": false
+ },
+ {
+  "id": "v-01a1519b-9187",
+  "scheme": "investment",
+  "source": "urlscan.io",
+  "date": "2026-10-19",
+  "domain": "fozpeli.icu",
+  "title": "От 100 000 рублей в месяц - стабильный доход от ГазИнвест для граждан РФ. Регистрация открыта с 1 августа",
+  "file": "urlscan2/01a1519b-9187-74ca-af0e-7b0c8c698a61.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a1519b-9187-74ca-af0e-7b0c8c698a61\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1519b-9187-74ca-af0e-7b0c8c698a61/",
+  "verdict": "warning",
+  "titles": [
+   "Обещают доход и просят оставить телефон"
+  ],
+  "note": "«СРОЧНЫЕ НОВОСТИ: новый закон подписан» — поддельная новость, ведущая к «стабильному доходу от ГазИнвест от 100 000 ₽ в месяц» (та же схема, что в деле «ГазИнвест»)",
+  "blur": false
+ },
+ {
+  "id": "v-01a1519a-b2a6",
+  "scheme": "investment",
+  "source": "urlscan.io",
+  "date": "2026-10-19",
+  "domain": "needlehatch.icu",
+  "title": "От 100 000 рублей в месяц - стабильный доход от ГазИнвест для граждан РФ. Регистрация открыта с 1 августа",
+  "file": "urlscan2/01a1519a-b2a6-73b5-8480-3f3196a090f0.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a1519a-b2a6-73b5-8480-3f3196a090f0\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1519a-b2a6-73b5-8480-3f3196a090f0/",
+  "verdict": "warning",
+  "titles": [
+   "Обещают доход и просят оставить телефон"
+  ],
+  "note": "«СРОЧНЫЕ НОВОСТИ: новый закон подписан» — поддельная новость, ведущая к «стабильному доходу от ГазИнвест от 100 000 ₽ в месяц» (та же схема, что в деле «ГазИнвест»)",
+  "blur": false
+ },
+ {
+  "id": "v-01a15199-ac80",
+  "scheme": "investment",
+  "source": "urlscan.io",
+  "date": "2026-10-19",
+  "domain": "cezravi.icu",
+  "title": "От 100 000 рублей в месяц - стабильный доход от ГазИнвест для граждан РФ. Регистрация открыта с 1 августа",
+  "file": "urlscan2/01a15199-ac80-757a-af16-72a4775f6c4b.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a15199-ac80-757a-af16-72a4775f6c4b\\screenshot.png",
+  "link": "https://urlscan.io/result/01a15199-ac80-757a-af16-72a4775f6c4b/",
+  "verdict": "warning",
+  "titles": [
+   "Обещают доход и просят оставить телефон"
+  ],
+  "note": "«СРОЧНЫЕ НОВОСТИ: новый закон подписан» — поддельная новость, ведущая к «стабильному доходу от ГазИнвест от 100 000 ₽ в месяц» (та же схема, что в деле «ГазИнвест»)",
+  "blur": false
+ },
+ {
+  "id": "v-01a15198-cf1d",
+  "scheme": "investment",
+  "source": "urlscan.io",
+  "date": "2026-10-19",
+  "domain": "hazpuno.icu",
+  "title": "От 100 000 рублей в месяц - стабильный доход от ГазИнвест для граждан РФ. Регистрация открыта с 1 августа",
+  "file": "urlscan2/01a15198-cf1d-716f-b8d5-d1f0386c1bbb.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a15198-cf1d-716f-b8d5-d1f0386c1bbb\\screenshot.png",
+  "link": "https://urlscan.io/result/01a15198-cf1d-716f-b8d5-d1f0386c1bbb/",
+  "verdict": "warning",
+  "titles": [
+   "Обещают доход и просят оставить телефон"
+  ],
+  "note": "«СРОЧНЫЕ НОВОСТИ: новый закон подписан» — поддельная новость, ведущая к «стабильному доходу от ГазИнвест от 100 000 ₽ в месяц» (та же схема, что в деле «ГазИнвест»)",
+  "blur": false
+ },
+ {
+  "id": "v-01a15197-efdb",
+  "scheme": "investment",
+  "source": "urlscan.io",
+  "date": "2026-10-19",
+  "domain": "ironstitch.icu",
+  "title": "От 100 000 рублей в месяц - стабильный доход от ГазИнвест для граждан РФ. Регистрация открыта с 1 августа",
+  "file": "urlscan2/01a15197-efdb-740c-8326-313870fafe3d.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a15197-efdb-740c-8326-313870fafe3d\\screenshot.png",
+  "link": "https://urlscan.io/result/01a15197-efdb-740c-8326-313870fafe3d/",
+  "verdict": "warning",
+  "titles": [
+   "Обещают доход и просят оставить телефон"
+  ],
+  "note": "«СРОЧНЫЕ НОВОСТИ: новый закон подписан» — поддельная новость, ведущая к «стабильному доходу от ГазИнвест от 100 000 ₽ в месяц» (та же схема, что в деле «ГазИнвест»)",
   "blur": false
  },
  {
@@ -3616,6 +4689,55 @@
   "blur": true
  },
  {
+  "id": "v-01a1dace-c739",
+  "scheme": "crypto-drainer",
+  "source": "urlscan.io",
+  "date": "2026-11-14",
+  "domain": "1-governance-fwafun.pages.dev",
+  "title": "Fake World Assets | Governance",
+  "file": "urlscan2/01a1dace-c739-71c3-b09b-2a8919f4a684.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a1dace-c739-71c3-b09b-2a8919f4a684\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1dace-c739-71c3-b09b-2a8919f4a684/",
+  "verdict": "warning",
+  "titles": [
+   "Раздача токенов с подключением кошелька"
+  ],
+  "note": "копия криптопроекта: «голосование о дате выдачи наград» с кнопкой подключения кошелька",
+  "blur": false
+ },
+ {
+  "id": "v-01a1dace-cd28",
+  "scheme": "crypto-drainer",
+  "source": "urlscan.io",
+  "date": "2026-11-14",
+  "domain": "5-up33-allocations.pages.dev",
+  "title": "up. | Airdrop",
+  "file": "urlscan2/01a1dace-cd28-74a3-9ba0-42ca3b0d72ec.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a1dace-cd28-74a3-9ba0-42ca3b0d72ec\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1dace-cd28-74a3-9ba0-42ca3b0d72ec/",
+  "verdict": "warning",
+  "titles": [
+   "Раздача токенов с подключением кошелька"
+  ],
+  "note": "копия криптопроекта: «голосование о дате выдачи наград» с кнопкой подключения кошелька",
+  "blur": false
+ },
+ {
+  "id": "v-01a1dace-9207",
+  "scheme": "crypto-drainer",
+  "source": "urlscan.io",
+  "date": "2026-11-14",
+  "domain": "7-allocations-ponsfamily.pages.dev",
+  "title": "pons",
+  "file": "urlscan2/01a1dace-9207-71a4-a3de-827121b4bad9.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a1dace-9207-71a4-a3de-827121b4bad9\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1dace-9207-71a4-a3de-827121b4bad9/",
+  "verdict": "none",
+  "titles": [],
+  "note": "копия криптопроекта: «голосование о дате выдачи наград» с кнопкой подключения кошелька",
+  "blur": false
+ },
+ {
   "id": "v-019ec6ac-5863",
   "scheme": "fines",
   "source": "urlscan.io",
@@ -3625,8 +4747,10 @@
   "file": "urlscan2/019ec6ac-5863-725d-a520-06b85349dc57.html",
   "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\019ec6ac-5863-725d-a520-06b85349dc57\\screenshot.png",
   "link": "https://urlscan.io/result/019ec6ac-5863-725d-a520-06b85349dc57/",
-  "verdict": "none",
-  "titles": [],
+  "verdict": "warning",
+  "titles": [
+   "Требуют срочно оплатить долг или штраф по ссылке"
+  ],
   "note": "",
   "blur": false
  },
@@ -3640,8 +4764,10 @@
   "file": "urlscan2/019ea76c-15ea-72af-b781-dc5fa1604a88.html",
   "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\019ea76c-15ea-72af-b781-dc5fa1604a88\\screenshot.png",
   "link": "https://urlscan.io/result/019ea76c-15ea-72af-b781-dc5fa1604a88/",
-  "verdict": "none",
-  "titles": [],
+  "verdict": "warning",
+  "titles": [
+   "Требуют срочно оплатить долг или штраф по ссылке"
+  ],
   "note": "«E-ZPass: Outstanding Balance» — неоплаченный проезд",
   "blur": false
  },
@@ -3655,8 +4781,10 @@
   "file": "urlscan2/019ea4b7-469d-761d-bad4-567a215147f2.html",
   "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\019ea4b7-469d-761d-bad4-567a215147f2\\screenshot.png",
   "link": "https://urlscan.io/result/019ea4b7-469d-761d-bad4-567a215147f2/",
-  "verdict": "none",
-  "titles": [],
+  "verdict": "warning",
+  "titles": [
+   "Требуют срочно оплатить долг или штраф по ссылке"
+  ],
   "note": "«E-ZPass: Outstanding Balance» — неоплаченный проезд",
   "blur": false
  },
@@ -3670,8 +4798,10 @@
   "file": "urlscan2/019ea43c-b8ea-743b-bb0e-c9a58eac056d.html",
   "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\019ea43c-b8ea-743b-bb0e-c9a58eac056d\\screenshot.png",
   "link": "https://urlscan.io/result/019ea43c-b8ea-743b-bb0e-c9a58eac056d/",
-  "verdict": "none",
-  "titles": [],
+  "verdict": "warning",
+  "titles": [
+   "Требуют срочно оплатить долг или штраф по ссылке"
+  ],
   "note": "«E-ZPass: Outstanding Balance» — неоплаченный проезд",
   "blur": false
  },
@@ -3685,8 +4815,10 @@
   "file": "urlscan2/019e6fc7-ce60-725d-b0a2-70fe8160070e.html",
   "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\019e6fc7-ce60-725d-b0a2-70fe8160070e\\screenshot.png",
   "link": "https://urlscan.io/result/019e6fc7-ce60-725d-b0a2-70fe8160070e/",
-  "verdict": "none",
-  "titles": [],
+  "verdict": "warning",
+  "titles": [
+   "Требуют срочно оплатить долг или штраф по ссылке"
+  ],
   "note": "«E-ZPass: Outstanding Balance» — неоплаченный проезд",
   "blur": false
  },
@@ -3721,6 +4853,36 @@
   "blur": false
  },
  {
+  "id": "v-019b111e-f926",
+  "scheme": "fines",
+  "source": "urlscan.io",
+  "date": "2025-12-12",
+  "domain": "tolleflow.click",
+  "title": "Pay Toll | eflow",
+  "file": "urlscan2/019b111e-f926-72ff-a91d-e6ce6ff26ac6.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\019b111e-f926-72ff-a91d-e6ce6ff26ac6\\screenshot.png",
+  "link": "https://urlscan.io/result/019b111e-f926-72ff-a91d-e6ce6ff26ac6/",
+  "verdict": "none",
+  "titles": [],
+  "note": "копия eflow (Ирландия): «Pay Toll»",
+  "blur": false
+ },
+ {
+  "id": "v-01a18190-8806",
+  "scheme": "fines",
+  "source": "urlscan.io",
+  "date": "2026-10-28",
+  "domain": "gibdd-auto.ru",
+  "title": "Официальный сайт Госавтоинспекции",
+  "file": "urlscan2/01a18190-8806-72fb-bbfb-cc6b827341b0.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\01a18190-8806-72fb-bbfb-cc6b827341b0\\screenshot.png",
+  "link": "https://urlscan.io/result/01a18190-8806-72fb-bbfb-cc6b827341b0/",
+  "verdict": "none",
+  "titles": [],
+  "note": "копия сайта Госавтоинспекции на чужом домене",
+  "blur": false
+ },
+ {
   "id": "v-01a0b8cd-f8cd",
   "scheme": "fines",
   "source": "urlscan.io",
@@ -3732,7 +4894,8 @@
   "link": "https://urlscan.io/result/01a0b8cd-f8cd-7725-8769-cee08000dfe4/",
   "verdict": "warning",
   "titles": [
-   "Скрипт читает поля карты и умеет отправлять данные"
+   "Скрипт читает поля карты и умеет отправлять данные",
+   "Требуют срочно оплатить долг или штраф по ссылке"
   ],
   "note": "«АвтоШтраф EXPRESS — проверка и оплата штрафов ГИБДД»",
   "blur": false
@@ -3878,6 +5041,23 @@
   "verdict": "none",
   "titles": [],
   "note": "копия «Работы России»: «Как получить дополнительную выплату от Центра занятости» — форма с ФИО, телефоном и почтой",
+  "blur": false
+ },
+ {
+  "id": "v-019e39b2-02c5",
+  "scheme": "crypto-drainer",
+  "source": "urlscan.io",
+  "date": "2026-05-18",
+  "domain": "claim-evr.org",
+  "title": "$EVR Airdrop — Claim Your Reward Allocation | Evernode",
+  "file": "urlscan2/019e39b2-02c5-77fe-8791-df94186d20fd.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan2\\019e39b2-02c5-77fe-8791-df94186d20fd\\screenshot.png",
+  "link": "https://urlscan.io/result/019e39b2-02c5-77fe-8791-df94186d20fd/",
+  "verdict": "warning",
+  "titles": [
+   "Раздача токенов с подключением кошелька"
+  ],
+  "note": "«Claim Your $EVR Reward Allocation» — раздача токенов",
   "blur": false
  },
  {

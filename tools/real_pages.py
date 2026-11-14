@@ -103,6 +103,35 @@ def collect():
     return rows
 
 
+# Шаг схемы, на котором сохранена страница. Размечается независимо от помощника — грубыми правилами по коду страницы,
+# чтобы отделить «помощник промолчал, потому что денег ещё не просили» от «пропустил».
+#   pay     — страница сама просит деньги или доступ к ним: поле карты, кнопка оплаты рядом с суммой, подключение кошелька;
+#   contact — запугивание и контакт «поддержки»: номер телефона или ссылка на Telegram;
+#   lead    — только форма заявки с телефоном (дальше звонит «менеджер»);
+#   first   — первый шаг: витрина, новость-приманка, вход, проверка Cloudflare.
+STAGE_PAY = re.compile(r'<input[^>]*(?:cc-number|card.?num|cardnumber|ccnum|name=["\']?(?:cc|card)["\'\s>]|placeholder=["\'][^"\']*(?:card number|номер карты|0000 0000|1234 1234))', re.I)
+STAGE_BTN = re.compile(r'>\s*(?:pay(?: now| toll)?|proceed to payment|оплатить|перейти к оплате|complete (?:purchase|order)|place order)\s*<', re.I)
+STAGE_SUM = re.compile(r'[$€£₽₸]\s?\d|\d[\d\s.,]*\s?(?:[$€£₽₸]|руб)', re.I)
+STAGE_WALLET = re.compile(r'connect (?:your )?wallet|подключ\w* кошел', re.I)
+STAGE_CALL = re.compile(r'(?:call|позвоните|звоните|toll[ -]?free)[^<]{0,80}?\+?\d[\d\s().-]{8,}\d|t\.me/', re.I)
+STAGE_TEL = re.compile(r'<input[^>]*(?:type=["\']?tel|name=["\']?(?:phone|tel)|placeholder=["\'][^"\']*(?:телефон|phone))', re.I)
+
+
+def stage_of(path):
+    try:
+        h = Path(path).read_text(encoding='utf-8', errors='replace')
+    except OSError:
+        return None
+    body = re.sub(r'(?is)<(script|style)[^>]*>.*?</\1>', ' ', h)
+    if STAGE_PAY.search(h) or (STAGE_BTN.search(body) and STAGE_SUM.search(body)) or STAGE_WALLET.search(body):
+        return 'pay'
+    if STAGE_CALL.search(body):
+        return 'contact'
+    if STAGE_TEL.search(h):
+        return 'lead'
+    return 'first'
+
+
 def plan():
     rows = collect()
     pick, per = [], {}
@@ -141,6 +170,8 @@ def plan():
 def gallery():
     from PIL import Image
     rows = collect()
+    for r in rows:  # шаг схемы — по сохранённому коду страницы (E-Skimming: форма оплаты)
+        r['stage'] = 'pay' if r['source'].startswith('E-Skimming') else (stage_of(WP / 'eval_sample' / r['file'].split('?')[0]) if r.get('file') else None)
     shots = {p.stem for p in (LAB / 'real' / 'ext').glob('*.jpg')}
     # Страницы, удалённые к моменту сканирования (на снимке — «404»): в галерею не попадают.
     gone = {'u-01a1d19a-aa48'}

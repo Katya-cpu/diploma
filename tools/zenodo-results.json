@@ -1737,9 +1737,13 @@
   "url": "https://zksync-reward.net/",
   "file": "zenodo/crypto-drainer__2024-01_2024-01-08_zksync-reward.net.html",
   "new": {
-   "verdict": "none",
-   "checks": [],
-   "titles": [],
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
    "info": []
   }
  },
@@ -1952,9 +1956,13 @@
   "url": "https://zk-skalling.net/",
   "file": "zenodo/crypto-drainer__2024-01_2024-01-13_zk-skalling.net.html",
   "new": {
-   "verdict": "none",
-   "checks": [],
-   "titles": [],
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
    "info": []
   }
  },
@@ -1987,17 +1995,10 @@
   "url": "https://dtprojects.eu.org/",
   "file": "zenodo/fake-payment__2024-01_2024-01-06_dtprojects.eu.org.html",
   "new": {
-   "verdict": "danger",
-   "checks": [
-    "card-form:danger"
-   ],
-   "titles": [
-    "Вместе с картой просят данные, которые для оплаты не нужны"
-   ],
-   "info": [
-    "На странице есть форма для данных карты",
-    "На странице оплаты работает код сторонних сайтов"
-   ]
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
+   "info": []
   }
  },
  {
@@ -2008,9 +2009,13 @@
   "url": "https://clestia2024.com/",
   "file": "zenodo/crypto-drainer__2024-01_2024-01-14_clestia2024.com.html",
   "new": {
-   "verdict": "none",
-   "checks": [],
-   "titles": [],
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
    "info": []
   }
  },
@@ -2022,9 +2027,13 @@
   "url": "https://get-imxtokens.org/",
   "file": "zenodo/crypto-drainer__2024-01_2024-01-14_get-imxtokens.org.html",
   "new": {
-   "verdict": "none",
-   "checks": [],
-   "titles": [],
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
    "info": []
   }
  },
@@ -2036,9 +2045,13 @@
   "url": "https://getimmutable-token.com/",
   "file": "zenodo/crypto-drainer__2024-01_2024-01-14_getimmutable-token.com.html",
   "new": {
-   "verdict": "none",
-   "checks": [],
-   "titles": [],
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
    "info": []
   }
  },
@@ -2050,9 +2063,13 @@
   "url": "https://getimx-token.org/",
   "file": "zenodo/crypto-drainer__2024-01_2024-01-14_getimx-token.org.html",
   "new": {
-   "verdict": "none",
-   "checks": [],
-   "titles": [],
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
    "info": []
   }
  },
@@ -2078,9 +2095,13 @@
   "url": "https://immutable2024.com/",
   "file": "zenodo/crypto-drainer__2024-01_2024-01-14_immutable2024.com.html",
   "new": {
-   "verdict": "none",
-   "checks": [],
-   "titles": [],
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
    "info": []
   }
  },
@@ -2092,9 +2113,13 @@
   "url": "https://ilvclaim.com/",
   "file": "zenodo/crypto-drainer__2024-01_2024-01-14_ilvclaim.com.html",
   "new": {
-   "verdict": "none",
-   "checks": [],
-   "titles": [],
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
    "info": []
   }
  },
@@ -2106,9 +2131,13 @@
   "url": "https://get-immutablex.org/",
   "file": "zenodo/crypto-drainer__2024-01_2024-01-14_get-immutablex.org.html",
   "new": {
-   "verdict": "none",
-   "checks": [],
-   "titles": [],
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
    "info": []
   }
  },
@@ -2172,9 +2201,13 @@
   "url": "https://get-imxtokens.net/",
   "file": "zenodo/crypto-drainer__2024-01_2024-01-14_get-imxtokens.net.html",
   "new": {
-   "verdict": "none",
-   "checks": [],
-   "titles": [],
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
    "info": []
   }
  },
@@ -2214,9 +2247,13 @@
   "url": "https://get-imxtokens.com/",
   "file": "zenodo/crypto-drainer__2024-01_2024-01-14_get-imxtokens.com.html",
   "new": {
-   "verdict": "none",
-   "checks": [],
-   "titles": [],
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
    "info": []
   }
  },
@@ -2228,9 +2265,13 @@
   "url": "https://get-immutablex.com/",
   "file": "zenodo/crypto-drainer__2024-01_2024-01-14_get-immutablex.com.html",
   "new": {
-   "verdict": "none",
-   "checks": [],
-   "titles": [],
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
    "info": []
   }
  },
@@ -2287,9 +2328,13 @@
   "url": "https://immutablex-token.org/",
   "file": "zenodo/fake-payment__2024-01_2024-01-14_immutablex-token.org.html",
   "new": {
-   "verdict": "none",
-   "checks": [],
-   "titles": [],
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
    "info": []
   }
  },
@@ -2301,9 +2346,13 @@
   "url": "https://getimmutable-token.org/",
   "file": "zenodo/crypto-drainer__2024-01_2024-01-14_getimmutable-token.org.html",
   "new": {
-   "verdict": "none",
-   "checks": [],
-   "titles": [],
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
    "info": []
   }
  },
@@ -2315,9 +2364,13 @@
   "url": "https://join-immutablex.org/",
   "file": "zenodo/crypto-drainer__2024-01_2024-01-14_join-immutablex.org.html",
   "new": {
-   "verdict": "none",
-   "checks": [],
-   "titles": [],
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
    "info": []
   }
  },
@@ -2343,9 +2396,13 @@
   "url": "https://join-immutablex.com/",
   "file": "zenodo/crypto-drainer__2024-01_2024-01-14_join-immutablex.com.html",
   "new": {
-   "verdict": "none",
-   "checks": [],
-   "titles": [],
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
    "info": []
   }
  },
@@ -2371,9 +2428,13 @@
   "url": "https://immutablex-token.net/",
   "file": "zenodo/crypto-drainer__2024-01_2024-01-14_immutablex-token.net.html",
   "new": {
-   "verdict": "none",
-   "checks": [],
-   "titles": [],
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
    "info": []
   }
  },
@@ -2385,9 +2446,13 @@
   "url": "https://get-immutablex.net/",
   "file": "zenodo/crypto-drainer__2024-01_2024-01-14_get-immutablex.net.html",
   "new": {
-   "verdict": "none",
-   "checks": [],
-   "titles": [],
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
    "info": []
   }
  },
@@ -2399,9 +2464,13 @@
   "url": "https://immutablex-token.com/",
   "file": "zenodo/crypto-drainer__2024-01_2024-01-14_immutablex-token.com.html",
   "new": {
-   "verdict": "none",
-   "checks": [],
-   "titles": [],
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
    "info": []
   }
  },
@@ -2413,9 +2482,13 @@
   "url": "https://getimmutable-token.net/",
   "file": "zenodo/crypto-drainer__2024-01_2024-01-14_getimmutable-token.net.html",
   "new": {
-   "verdict": "none",
-   "checks": [],
-   "titles": [],
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
    "info": []
   }
  },
@@ -2899,9 +2972,13 @@
   "url": "https://zksync-era-maya.nfts2.me/",
   "file": "zenodo/crypto-drainer__2024-01_2024-01-01_zksync-era-maya.nfts2.me.html",
   "new": {
-   "verdict": "none",
-   "checks": [],
-   "titles": [],
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
    "info": []
   }
  },
@@ -2955,9 +3032,13 @@
   "url": "https://wkripto-zksync.nfts2.me/",
   "file": "zenodo/crypto-drainer__2024-01_2024-01-01_wkripto-zksync.nfts2.me.html",
   "new": {
-   "verdict": "none",
-   "checks": [],
-   "titles": [],
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
    "info": []
   }
  },
@@ -3039,9 +3120,13 @@
   "url": "https://quilling-zksync.nfts2.me/",
   "file": "zenodo/crypto-drainer__2024-01_2024-01-01_quilling-zksync.nfts2.me.html",
   "new": {
-   "verdict": "none",
-   "checks": [],
-   "titles": [],
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
    "info": []
   }
  },
@@ -3067,9 +3152,13 @@
   "url": "https://lawliet-zksync.nfts2.me/",
   "file": "zenodo/crypto-drainer__2024-01_2024-01-01_lawliet-zksync.nfts2.me.html",
   "new": {
-   "verdict": "none",
-   "checks": [],
-   "titles": [],
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
    "info": []
   }
  },
@@ -3123,9 +3212,13 @@
   "url": "https://zksync-to-the-moon-future.nfts2.me/",
   "file": "zenodo/crypto-drainer__2024-01_2024-01-01_zksync-to-the-moon-future.nfts2.me.html",
   "new": {
-   "verdict": "none",
-   "checks": [],
-   "titles": [],
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
    "info": []
   }
  },
@@ -3179,9 +3272,13 @@
   "url": "https://magical-zksync-era-zeus.nfts2.me/",
   "file": "zenodo/crypto-drainer__2024-01_2024-01-01_magical-zksync-era-zeus.nfts2.me.html",
   "new": {
-   "verdict": "none",
-   "checks": [],
-   "titles": [],
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
    "info": []
   }
  },
@@ -3207,9 +3304,13 @@
   "url": "https://zksync-era-zktv.nfts2.me/",
   "file": "zenodo/crypto-drainer__2024-01_2024-01-01_zksync-era-zktv.nfts2.me.html",
   "new": {
-   "verdict": "none",
-   "checks": [],
-   "titles": [],
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
    "info": []
   }
  },
@@ -3396,9 +3497,13 @@
   "url": "https://zk-skalling.app/",
   "file": "zenodo/crypto-drainer__2024-01_2024-01-12_zk-skalling.app.html",
   "new": {
-   "verdict": "none",
-   "checks": [],
-   "titles": [],
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
    "info": []
   }
  },
@@ -3658,9 +3763,13 @@
   "url": "https://imxtoken.net/",
   "file": "zenodo/crypto-drainer__2024-01_2024-01-15_imxtoken.net.html",
   "new": {
-   "verdict": "none",
-   "checks": [],
-   "titles": [],
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
    "info": []
   }
  },
@@ -4402,9 +4511,13 @@
   "url": "https://zksync.claiming-token.run/",
   "file": "zenodo/crypto-drainer__2024-01_2024-01-16_zksync.claiming-token.run.html",
   "new": {
-   "verdict": "none",
-   "checks": [],
-   "titles": [],
+   "verdict": "warning",
+   "checks": [
+    "wallet-drainer:warning"
+   ],
+   "titles": [
+    "Раздача токенов с подключением кошелька"
+   ],
    "info": []
   }
  },

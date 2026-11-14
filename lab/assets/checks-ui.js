@@ -53,6 +53,19 @@
 
   // Настоящие страницы схемы: снимок оригинала и та же страница в Firefox с расширением (tools/real_pages.py).
   const VERD = { danger: 'опасно', warning: 'подозрительно', none: 'молчит', ok: 'молчит', timeout: 'не загрузилась' };
+  // Разрез по шагу схемы: «помощник промолчал, потому что денег ещё не просили» и «пропустил» — разные вещи.
+  const STAGES = [['pay', 'Страница просит деньги или доступ к ним (форма карты, оплата, кошелёк)'], ['contact', 'Запугивание и контакт «поддержки» (номер, Telegram)'],
+    ['lead', 'Только заявка с телефоном — деньги просят потом, по телефону'], ['first', 'Первый шаг: витрина, новость-приманка, вход']];
+  function stageTable(list) {
+    const rows = STAGES.map(([k, label]) => {
+      const part = list.filter((r) => r.stage === k && r.verdict);
+      if (!part.length) return '';
+      const hit = part.filter((r) => r.verdict === 'danger' || r.verdict === 'warning').length;
+      return `<tr><td>${label}</td><td>${part.length}</td><td>${hit} (${Math.round(hit / part.length * 100)} %)</td></tr>`;
+    }).join('');
+    return rows ? `<table class="signals"><thead><tr><th>Шаг схемы на сохранённой странице</th><th>Страниц</th><th>Тревога</th></tr></thead><tbody>${rows}</tbody></table>
+      <p class="small muted">Шаг размечен по коду страницы независимо от помощника. На первых шагах и в заявках платёжного действия ещё нет — там молчание ожидаемо.</p>` : '';
+  }
   function realPages(x) {
     const G = window.REAL_GALLERY;
     const list = (G && G.schemes[x.id]) || [];
@@ -71,6 +84,7 @@
       не грузятся, а в тексте панели вместо адреса мошенников стоит адрес лаборатории (127.0.0.1). Само расширение, как и у обычного
       пользователя, скачивает код внешних скриптов страницы, чтобы его проверить (не дольше 4 секунд на скрипт).
       Слева — снимок оригинала из источника. Проверено ${tested}: «опасно» — ${n('danger')}, «подозрительно» — ${n('warning')}, молчит — ${n('none') + n('ok')}.</p>
+      ${stageTable(list)}
       <div class="realgrid">${shots.map(card).join('')}</div>
       ${rest.length ? `<details class="realmore"><summary>Ещё ${rest.length} страниц — списком</summary><table class="signals"><tbody>${rest.map((r) =>
         `<tr><td><span class="vb ${r.verdict || 'na'}">${VERD[r.verdict] || 'не проверялась'}</span></td><td><b>${esc(r.domain)}</b> · ${esc(r.date)} · ${esc(r.source)}<br><span class="muted">${esc(r.title || '')}${r.note ? ' — ' + esc(r.note) : ''}</span></td>
