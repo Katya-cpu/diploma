@@ -15,6 +15,13 @@
     .side .dot.strong{background:var(--ok)}.side .dot.partial{background:var(--warning)}
     #detail .rel{margin:8px 0 0;font-size:15px;color:var(--ink2)}
     #detail .money{font-size:16px;line-height:1.55;color:var(--ink2);margin:0}
+    .realgrid{display:grid;grid-template-columns:1fr;gap:22px;margin:10px 0 6px}
+    .realshot{margin:0;border-top:1px solid var(--line);padding-top:10px}
+    .realshot img{width:100%;height:auto;display:block;border:1px solid var(--line)}
+    .realshot figcaption{font-size:14px;line-height:1.5;margin-top:6px;color:var(--ink2)}
+    .vb{display:inline-block;font-size:12px;font-weight:600;padding:1px 6px;border:1px solid currentColor;margin-right:6px}
+    .vb.danger{color:var(--danger,#b42318)}.vb.warning{color:var(--warning,#b54708)}.vb.none,.vb.ok,.vb.na,.vb.timeout{color:var(--muted)}
+    .realmore summary{cursor:pointer;margin:8px 0;font-weight:600}
     .side h4{margin:16px 0 4px;font-size:14px;font-weight:700;color:var(--ink)}
     .side a{display:flex;gap:6px;padding:4px 0;color:var(--ink2);font-size:15px;text-decoration:none;line-height:1.35}
     .side a:hover{color:var(--accent);text-decoration:underline}
@@ -117,6 +124,7 @@
   <script src="/extension/core/schemes.js"></script>
   <script src="/assets/runner.js"></script>
   <script src="/real/results.js"></script>
+  <script src="/real/gallery.js"></script>
   <script src="/assets/checks-ui.js"></script>
 </body>
 </html>

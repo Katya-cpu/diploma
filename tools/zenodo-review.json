@@ -1,0 +1,119 @@
+{
+ "_": "Разметка страниц Zenodo по видам мошенничества. Просмотрены снимки всех 310 страниц (14.11.2026). Правила проверяются по порядку: первое совпадение по домену. scheme=skip — страница не относится ни к одной схеме или неясно, мошенническая ли она.",
+ "rules": [
+  [
+   "hasar|ylylkrtzl|trmrtysgsdgpzr|webihlal|ndadl|destekller|ubrirs",
+   "fines",
+   "«Araç Hasar Kaydı Sorgulama» / «ihlal sorgu» (Турция) и «возврат налога»: платная «справка» или «пошлина» — оплата картой"
+  ],
+  [
+   "gosfun|vnonecall",
+   "fake-shop",
+   "магазин со скидками и купонами на известные бренды"
+  ],
+  [
+   "zksync|zk-skalling|clestia|swap-xingtu",
+   "crypto-drainer",
+   "«zkSync Token Distribution» / «Join the airdrop»: раздача токенов с кнопкой подключения кошелька"
+  ],
+  [
+   "fidoptbit",
+   "investment",
+   "«Fidelity Options»: кабинет «инвестплатформы» с балансом"
+  ],
+  [
+   "m4ufree|cloudns\\.biz|aety1|globalduimoveis|501c3center|amarracao|unsubiph|claims-control|causeridi|speechforu|zzstgg|loveformanandandall|maxloans|172\\.166|52\\.52\\.110",
+   "skip",
+   "назначение страницы по снимку неясно"
+  ],
+  [
+   "blundstone|newbalance|drmart|euwears|isetan|stylishwear|vvbrfoot|trendyol|dasisoutlet|schleich|passportglove",
+   "fake-shop",
+   "магазин со скидками на известные бренды"
+  ],
+  [
+   "booking-com",
+   "fake-payment",
+   "копия Booking.com: «подтвердите карту, иначе бронь отменят»"
+  ],
+  [
+   "lovnodntcostmoney|hodgebkonline|wbat\\.net|inforavast|fidelitychartered|bdoupdate|vmi1586423|r0avest",
+   "account-theft",
+   "копия входа в онлайн-банк"
+  ],
+  [
+   "imx|immutable|ilvclaim|paperhand|uniswap|multi-fix|multi-opimal|mfctc|etherhasdf|6155562990|tabichain|ipfsfvm",
+   "crypto-drainer",
+   "«получите токены» (Immutable X, Uniswap и др.): раздача с кнопкой подключения кошелька"
+  ],
+  [
+   "github\\.io$",
+   "skip",
+   "клоны Netflix на GitHub Pages — похожи на учебные проекты"
+  ],
+  [
+   "robinhood|robinhod|robinhud|robinhho|ruobinhood|robinhoo|rooibunhood|robincood|robinhodx|riotplatforms|loguirobinhod|slotsup|globaldulmoveis|prime-renewalsecure|termsapps29|socialsolution|soitron|questradelive|hdfcipo",
+   "skip",
+   "SEO-страницы, рекламные статьи, домены на продажу или двойники брокеров"
+  ],
+  [
+   "glitch\\.me",
+   "fake-payment",
+   "копия входа в Tesco Bank с полями карты; данные уходят в Telegram-бота"
+  ],
+  [
+   "colegiosuizo",
+   "fake-payment",
+   "копия сайта USPS на взломанном сайте школы: оплата «доставки»"
+  ],
+  [
+   "booking\\.",
+   "fake-payment",
+   "копия Booking.com: «подтвердите карту, иначе бронь отменят»"
+  ],
+  [
+   "pickahome",
+   "tech-support",
+   "«McAfee Security Browser Scan: your computer has 2 viruses» — поддельное предупреждение антивируса"
+  ],
+  [
+   "nfts2\\.me|ipfsvm",
+   "crypto-drainer",
+   "страница «Connect Wallet» на конструкторе NFT из списка фишинга; дрейнер ли это — по сохранённому коду не видно"
+  ],
+  [
+   "bni|bnl|gebyar|hadiah|undian",
+   "payout",
+   "«розыгрыш призов банка BNI»: для приза просят номер дебетовой карты, PIN и номер телефона"
+  ],
+  [
+   "alfa-by24",
+   "payout",
+   "«Альфа-Банк поздравляет клиентов и дарит ценные призы»"
+  ],
+  [
+   "digitalcurrencyltd|fidelitygrowth|thefidelityinvest|caalamoscapital|linksfidelity|fidefx|polygononline|^107\\.165|apefficaccyfx|investerix|4ahedge|trade|invest|capital|forex|fx",
+   "investment",
+   "сайт «инвестиционной платформы» с личным кабинетом"
+  ],
+  [
+   "usps|dhl|fedex|swiss|post|parcel|deliver|ship|greenstuffworld|dalladraivien|tracking|royalmail|evri|correos|colissimo|poste",
+   "fake-payment",
+   "оплата «пошлины» или «доставки»: форма карты, затем код из SMS"
+  ],
+  [
+   "arcteryx|funko|wayfair|drawerfac|furniushop|striotary|pinko|brooks|martens|clearbat|designhouse|boutiquemall|annsummers|outdoorstore|wildkard|suciaropa|cosvalves|courselamps|konga|stationnboss|ripcurl|stampslover|isabelmordhorst|\\.shop$|store|sale",
+   "fake-shop",
+   "магазин со скидками до 70–90 % на известные бренды"
+  ],
+  [
+   "att|currently|weebly|wixsite|fleek|tesco|wellsfargo|navy|intesa|arvest|eecu|employees|intuit|quickbooks|orange|astound|yahoo|mail|outlook|docusign|sharepoint|teb|turkekonom|nafath|taenmuine|tanomitanua|sabtskosa|rayyanwate|naqiwater|sapatkosaud|r2\\.dev|codeanyapp|ejercito|login|verify|secure|account|bank",
+   "account-theft",
+   "страница входа (почта, банк, госпортал): крадут логин и пароль"
+  ]
+ ],
+ "default": {
+  "fines": "skip",
+  "tech-support": "skip"
+ }
+}

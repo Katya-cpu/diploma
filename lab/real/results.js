@@ -810,7 +810,7 @@ window.URLSCAN_RESULTS = {
 "domain": "gemola.shop",
 "why": "Фейковый магазин (метка fakeshop): страница /card-form",
 "time": "2026-10-15",
-"verdict": "none",
+"verdict": "ok",
 "titles": []
 },
 {

@@ -1,0 +1,2443 @@
+[
+ {
+  "id": "u-01a1b763-90f9",
+  "scheme": "fake-payment",
+  "source": "urlscan.io",
+  "date": "2026-11-07",
+  "domain": "avito-payment.com",
+  "title": "Авито — Наименование товара",
+  "file": "urlscan/01a1b763-90f9-74d9-b862-cccffe7e5988.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan\\01a1b763-90f9-74d9-b862-cccffe7e5988\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1b763-90f9-74d9-b862-cccffe7e5988/",
+  "verdict": "none",
+  "titles": []
+ },
+ {
+  "id": "u-01a1d19a-aa48",
+  "scheme": "fake-payment",
+  "source": "urlscan.io",
+  "date": "2026-11-12",
+  "domain": "cdek.fast-zoodelivery.ru",
+  "title": "MIR Pay - Платёжный сервис",
+  "file": "urlscan/01a1d19a-aa48-77ae-851c-0c7999e3540a.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan\\01a1d19a-aa48-77ae-851c-0c7999e3540a\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1d19a-aa48-77ae-851c-0c7999e3540a/",
+  "verdict": "none",
+  "titles": []
+ },
+ {
+  "id": "u-01a1cec7-96b7",
+  "scheme": "account-theft",
+  "source": "urlscan.io",
+  "date": "2026-11-12",
+  "domain": "gosuslugicdek-app.com",
+  "title": "Портал государственных услуг Российской Федерации",
+  "file": "urlscan/01a1cec7-96b7-70bf-9a79-a9aa24349261.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan\\01a1cec7-96b7-70bf-9a79-a9aa24349261\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1cec7-96b7-70bf-9a79-a9aa24349261/",
+  "verdict": "none",
+  "titles": []
+ },
+ {
+  "id": "u-01a1c5f5-e0cb",
+  "scheme": "account-theft",
+  "source": "urlscan.io",
+  "date": "2026-11-10",
+  "domain": "gosuslugicdek-app.online",
+  "title": "Портал государственных услуг Российской Федерации",
+  "file": "urlscan/01a1c5f5-e0cb-705d-a49e-34e8b0616a58.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan\\01a1c5f5-e0cb-705d-a49e-34e8b0616a58\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1c5f5-e0cb-705d-a49e-34e8b0616a58/",
+  "verdict": "none",
+  "titles": []
+ },
+ {
+  "id": "u-01a1d06d-7000",
+  "scheme": "payout",
+  "source": "urlscan.io",
+  "date": "2026-11-12",
+  "domain": "vzj4noiy-ozon.easycops.com",
+  "title": "OЗOН AКЦИЯ",
+  "file": "urlscan/01a1d06d-7000-75ee-bda4-5d711f5a6b46.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan\\01a1d06d-7000-75ee-bda4-5d711f5a6b46\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1d06d-7000-75ee-bda4-5d711f5a6b46/",
+  "verdict": "none",
+  "titles": []
+ },
+ {
+  "id": "u-01a1d3b0-3c3b",
+  "scheme": "payout",
+  "source": "urlscan.io",
+  "date": "2026-11-13",
+  "domain": "s902ix4f-wildberries.easycops.com",
+  "title": "Wildbеrriеs",
+  "file": "urlscan/01a1d3b0-3c3b-7709-83ef-581a8f673849.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan\\01a1d3b0-3c3b-7709-83ef-581a8f673849\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1d3b0-3c3b-7709-83ef-581a8f673849/",
+  "verdict": "none",
+  "titles": []
+ },
+ {
+  "id": "u-01a0668b-d4ab",
+  "scheme": "fake-payment",
+  "source": "urlscan.io",
+  "date": "2026-09-03",
+  "domain": "boxberry-trackcode1lsrety324ewkft.pages.dev",
+  "title": "Boxberry - Отслеживание посылки",
+  "file": "urlscan/01a0668b-d4ab-75f4-9203-c29a8806c660.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan\\01a0668b-d4ab-75f4-9203-c29a8806c660\\screenshot.png",
+  "link": "https://urlscan.io/result/01a0668b-d4ab-75f4-9203-c29a8806c660/",
+  "verdict": "none",
+  "titles": []
+ },
+ {
+  "id": "u-01a107b8-2e43",
+  "scheme": "fake-payment",
+  "source": "urlscan.io",
+  "date": "2026-10-04",
+  "domain": "vivid-teal-rq7lwf1o-dpj1mxieiw1c.edgeone.dev",
+  "title": "Кофейня как у бабушки — оплата за столом",
+  "file": "urlscan/01a107b8-2e43-73a8-8f53-ce31ad63e2b1.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan\\01a107b8-2e43-73a8-8f53-ce31ad63e2b1\\screenshot.png",
+  "link": "https://urlscan.io/result/01a107b8-2e43-73a8-8f53-ce31ad63e2b1/",
+  "verdict": "none",
+  "titles": []
+ },
+ {
+  "id": "u-01a1cf99-b77c",
+  "scheme": "fake-payment",
+  "source": "urlscan.io",
+  "date": "2026-11-12",
+  "domain": "pochta-express-delivery.ru",
+  "title": "Экспресс почта для физических лиц и организаций",
+  "file": "urlscan/01a1cf99-b77c-70e9-af82-ebd7b883b8a9.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan\\01a1cf99-b77c-70e9-af82-ebd7b883b8a9\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1cf99-b77c-70e9-af82-ebd7b883b8a9/",
+  "verdict": "none",
+  "titles": []
+ },
+ {
+  "id": "u-01a1cb75-901e",
+  "scheme": "fake-payment",
+  "source": "urlscan.io",
+  "date": "2026-11-11",
+  "domain": "checkout.desbau.com",
+  "title": "Checkout | ChatGPT",
+  "file": "urlscan/01a1cb75-901e-72af-880c-4abb11fe46f9.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan\\01a1cb75-901e-72af-880c-4abb11fe46f9\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1cb75-901e-72af-880c-4abb11fe46f9/",
+  "verdict": "danger",
+  "titles": [
+   "Страница выдаёт себя за окно оплаты Stripe"
+  ]
+ },
+ {
+  "id": "u-01a13b3a-9f05",
+  "scheme": "fake-payment",
+  "source": "urlscan.io",
+  "date": "2026-10-14",
+  "domain": "lilian-maria.de",
+  "title": "OpenAI Subscription",
+  "file": "urlscan/01a13b3a-9f05-7062-9ce0-6ffd3716af38.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan\\01a13b3a-9f05-7062-9ce0-6ffd3716af38\\screenshot.png",
+  "link": "https://urlscan.io/result/01a13b3a-9f05-7062-9ce0-6ffd3716af38/",
+  "verdict": "danger",
+  "titles": [
+   "Страница выдаёт себя за окно оплаты Stripe"
+  ]
+ },
+ {
+  "id": "u-01a1c4a3-e9eb",
+  "scheme": "fake-payment",
+  "source": "urlscan.io",
+  "date": "2026-11-10",
+  "domain": "www.sidermarsrl.it",
+  "title": "Security verification - OpenAI",
+  "file": "urlscan/01a1c4a3-e9eb-75f7-a086-307234c4fab2.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan\\01a1c4a3-e9eb-75f7-a086-307234c4fab2\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1c4a3-e9eb-75f7-a086-307234c4fab2/",
+  "verdict": "none",
+  "titles": []
+ },
+ {
+  "id": "u-01a1bf39-a74b",
+  "scheme": "fake-payment",
+  "source": "urlscan.io",
+  "date": "2026-11-09",
+  "domain": "www.flatsrl.com",
+  "title": "Weryfikacja bezpieczenstwa - OpenAI",
+  "file": "urlscan/01a1bf39-a74b-7729-94ce-45578d0c4a03.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan\\01a1bf39-a74b-7729-94ce-45578d0c4a03\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1bf39-a74b-7729-94ce-45578d0c4a03/",
+  "verdict": "none",
+  "titles": []
+ },
+ {
+  "id": "u-01a13924-6651",
+  "scheme": "fake-payment",
+  "source": "urlscan.io",
+  "date": "2026-10-14",
+  "domain": "www.progettienergetici.com",
+  "title": "Security verification - OpenAI",
+  "file": "urlscan/01a13924-6651-706c-8916-c6a606325f62.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan\\01a13924-6651-706c-8916-c6a606325f62\\screenshot.png",
+  "link": "https://urlscan.io/result/01a13924-6651-706c-8916-c6a606325f62/",
+  "verdict": "none",
+  "titles": []
+ },
+ {
+  "id": "u-01a12fb1-3624",
+  "scheme": "fake-payment",
+  "source": "urlscan.io",
+  "date": "2026-10-12",
+  "domain": "www.musikfactory.it",
+  "title": "Verificaci n de seguridad - OpenAI",
+  "file": "urlscan/01a12fb1-3624-769a-9f94-4020b5ce1cd0.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan\\01a12fb1-3624-769a-9f94-4020b5ce1cd0\\screenshot.png",
+  "link": "https://urlscan.io/result/01a12fb1-3624-769a-9f94-4020b5ce1cd0/",
+  "verdict": "none",
+  "titles": []
+ },
+ {
+  "id": "u-01a0a390-ce6e",
+  "scheme": "fake-payment",
+  "source": "urlscan.io",
+  "date": "2026-09-15",
+  "domain": "www.skydivecostadargento.com",
+  "title": "Security verification - OpenAI",
+  "file": "urlscan/01a0a390-ce6e-76aa-b27a-92d28e23f00e.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan\\01a0a390-ce6e-76aa-b27a-92d28e23f00e\\screenshot.png",
+  "link": "https://urlscan.io/result/01a0a390-ce6e-76aa-b27a-92d28e23f00e/",
+  "verdict": "none",
+  "titles": []
+ },
+ {
+  "id": "u-01a1d3b2-b663",
+  "scheme": "clickfix",
+  "source": "urlscan.io",
+  "date": "2026-11-13",
+  "domain": "colimaenmovimiento.com",
+  "title": "Just a moment...",
+  "file": "urlscan/01a1d3b2-b663-771d-9b75-f9bebafacd06.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan\\01a1d3b2-b663-771d-9b75-f9bebafacd06\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1d3b2-b663-771d-9b75-f9bebafacd06/",
+  "verdict": "danger",
+  "titles": [
+   "Поддельная проверка «я не робот»: вас просят запустить команду"
+  ]
+ },
+ {
+  "id": "u-01a1d3b2-c2e1",
+  "scheme": "clickfix",
+  "source": "urlscan.io",
+  "date": "2026-11-13",
+  "domain": "browser-architecture-sync.com",
+  "title": "Just a moment...",
+  "file": "urlscan/01a1d3b2-c2e1-714c-9082-180438f38c88.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan\\01a1d3b2-c2e1-714c-9082-180438f38c88\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1d3b2-c2e1-714c-9082-180438f38c88/",
+  "verdict": "danger",
+  "titles": [
+   "Поддельная проверка «я не робот»: вас просят запустить команду"
+  ]
+ },
+ {
+  "id": "u-01a1d3b2-bca3",
+  "scheme": "clickfix",
+  "source": "urlscan.io",
+  "date": "2026-11-13",
+  "domain": "hotscriptz.com",
+  "title": "Checking if you are human",
+  "file": "urlscan/01a1d3b2-bca3-74c8-9ad7-14ca4141bb37.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan\\01a1d3b2-bca3-74c8-9ad7-14ca4141bb37\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1d3b2-bca3-74c8-9ad7-14ca4141bb37/",
+  "verdict": "warning",
+  "titles": [
+   "Проверка «я не робот» нарисована самой страницей"
+  ]
+ },
+ {
+  "id": "u-01a1d3b2-9080",
+  "scheme": "clickfix",
+  "source": "urlscan.io",
+  "date": "2026-11-13",
+  "domain": "www.colegiojeanpiaget.com.br",
+  "title": "Colégio Piaget – Preparando Mentes para o Futuro",
+  "file": "urlscan/01a1d3b2-9080-7367-b7d2-55e15458f59d.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan\\01a1d3b2-9080-7367-b7d2-55e15458f59d\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1d3b2-9080-7367-b7d2-55e15458f59d/",
+  "verdict": "danger",
+  "titles": [
+   "Поддельная проверка «я не робот»: вас просят запустить команду"
+  ]
+ },
+ {
+  "id": "u-01a1d3b2-8b66",
+  "scheme": "clickfix",
+  "source": "urlscan.io",
+  "date": "2026-11-13",
+  "domain": "chomleaestates.co.uk",
+  "title": "Chomlea Estates – Property Investment and services",
+  "file": "urlscan/01a1d3b2-8b66-7288-9286-a9ac80e382aa.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan\\01a1d3b2-8b66-7288-9286-a9ac80e382aa\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1d3b2-8b66-7288-9286-a9ac80e382aa/",
+  "verdict": "danger",
+  "titles": [
+   "Поддельная проверка «я не робот»: вас просят запустить команду"
+  ]
+ },
+ {
+  "id": "u-01a1d3b2-9db1",
+  "scheme": "clickfix",
+  "source": "urlscan.io",
+  "date": "2026-11-13",
+  "domain": "viventuresgroup.com",
+  "title": "Just a moment...",
+  "file": "urlscan/01a1d3b2-9db1-74aa-8fbb-191a3d4ccf2f.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan\\01a1d3b2-9db1-74aa-8fbb-191a3d4ccf2f\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1d3b2-9db1-74aa-8fbb-191a3d4ccf2f/",
+  "verdict": "danger",
+  "titles": [
+   "Поддельная проверка «я не робот»: вас просят запустить команду"
+  ]
+ },
+ {
+  "id": "u-01a1d3b2-20a2",
+  "scheme": "clickfix",
+  "source": "urlscan.io",
+  "date": "2026-11-13",
+  "domain": "brookheavyhaulingllc.com",
+  "title": "Just a moment...",
+  "file": "urlscan/01a1d3b2-20a2-7246-9700-cf2325476dad.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan\\01a1d3b2-20a2-7246-9700-cf2325476dad\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1d3b2-20a2-7246-9700-cf2325476dad/",
+  "verdict": "danger",
+  "titles": [
+   "Поддельная проверка «я не робот»: вас просят запустить команду"
+  ]
+ },
+ {
+  "id": "u-01a1d3b1-fb5d",
+  "scheme": "clickfix",
+  "source": "urlscan.io",
+  "date": "2026-11-13",
+  "domain": "sandyheatingandair.com",
+  "title": "Just a moment...",
+  "file": "urlscan/01a1d3b1-fb5d-73a2-8794-1080d51bf2ff.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan\\01a1d3b1-fb5d-73a2-8794-1080d51bf2ff\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1d3b1-fb5d-73a2-8794-1080d51bf2ff/",
+  "verdict": "danger",
+  "titles": [
+   "Поддельная проверка «я не робот»: вас просят запустить команду"
+  ]
+ },
+ {
+  "id": "u-01a1d3b1-ea22",
+  "scheme": "clickfix",
+  "source": "urlscan.io",
+  "date": "2026-11-13",
+  "domain": "piramida.club",
+  "title": "Just a moment...",
+  "file": "urlscan/01a1d3b1-ea22-7611-aa3f-e0026b00eea3.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan\\01a1d3b1-ea22-7611-aa3f-e0026b00eea3\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1d3b1-ea22-7611-aa3f-e0026b00eea3/",
+  "verdict": "danger",
+  "titles": [
+   "Поддельная проверка «я не робот»: вас просят запустить команду"
+  ]
+ },
+ {
+  "id": "u-01a1d3b2-02e7",
+  "scheme": "clickfix",
+  "source": "urlscan.io",
+  "date": "2026-11-13",
+  "domain": "serenehomeliving.net",
+  "title": "Just a moment...",
+  "file": "urlscan/01a1d3b2-02e7-75f9-ac59-117638d37855.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan\\01a1d3b2-02e7-75f9-ac59-117638d37855\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1d3b2-02e7-75f9-ac59-117638d37855/",
+  "verdict": "danger",
+  "titles": [
+   "Поддельная проверка «я не робот»: вас просят запустить команду"
+  ]
+ },
+ {
+  "id": "u-01a1d3b1-f521",
+  "scheme": "clickfix",
+  "source": "urlscan.io",
+  "date": "2026-11-13",
+  "domain": "princetonmtg.com",
+  "title": "Just a moment...",
+  "file": "urlscan/01a1d3b1-f521-75dd-a6ea-9d5c91ee4614.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan\\01a1d3b1-f521-75dd-a6ea-9d5c91ee4614\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1d3b1-f521-75dd-a6ea-9d5c91ee4614/",
+  "verdict": "danger",
+  "titles": [
+   "Поддельная проверка «я не робот»: вас просят запустить команду"
+  ]
+ },
+ {
+  "id": "u-01a1d3b1-c909",
+  "scheme": "clickfix",
+  "source": "urlscan.io",
+  "date": "2026-11-13",
+  "domain": "mendrake.com",
+  "title": "Just a moment...",
+  "file": "urlscan/01a1d3b1-c909-72cc-b5e9-d362d6f78426.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan\\01a1d3b1-c909-72cc-b5e9-d362d6f78426\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1d3b1-c909-72cc-b5e9-d362d6f78426/",
+  "verdict": "danger",
+  "titles": [
+   "Поддельная проверка «я не робот»: вас просят запустить команду"
+  ]
+ },
+ {
+  "id": "u-01a1d3b1-97b7",
+  "scheme": "clickfix",
+  "source": "urlscan.io",
+  "date": "2026-11-13",
+  "domain": "virexontech.com",
+  "title": "Just a moment...",
+  "file": "urlscan/01a1d3b1-97b7-7288-8ab7-2e8fbfb2fb2e.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan\\01a1d3b1-97b7-7288-8ab7-2e8fbfb2fb2e\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1d3b1-97b7-7288-8ab7-2e8fbfb2fb2e/",
+  "verdict": "danger",
+  "titles": [
+   "Поддельная проверка «я не робот»: вас просят запустить команду"
+  ]
+ },
+ {
+  "id": "u-01a1d3b1-1836",
+  "scheme": "clickfix",
+  "source": "urlscan.io",
+  "date": "2026-11-13",
+  "domain": "hillorganicproducts.com",
+  "title": "Hopes",
+  "file": "urlscan/01a1d3b1-1836-778c-a5ad-0a7878d8e1bf.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan\\01a1d3b1-1836-778c-a5ad-0a7878d8e1bf\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1d3b1-1836-778c-a5ad-0a7878d8e1bf/",
+  "verdict": "warning",
+  "titles": [
+   "Проверка «я не робот» нарисована самой страницей"
+  ]
+ },
+ {
+  "id": "u-01a1d3b0-ea6d",
+  "scheme": "clickfix",
+  "source": "urlscan.io",
+  "date": "2026-11-13",
+  "domain": "rebelsupply.co.uk",
+  "title": "Rebel Supply ® Official Site",
+  "file": "urlscan/01a1d3b0-ea6d-74cd-a870-2bcaa55eb708.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan\\01a1d3b0-ea6d-74cd-a870-2bcaa55eb708\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1d3b0-ea6d-74cd-a870-2bcaa55eb708/",
+  "verdict": "warning",
+  "titles": [
+   "Проверка «я не робот» нарисована самой страницей"
+  ]
+ },
+ {
+  "id": "u-01a1d345-40b6",
+  "scheme": "clickfix",
+  "source": "urlscan.io",
+  "date": "2026-11-13",
+  "domain": "buyantivirus.us",
+  "title": "Buy Antivirus key Online on SMS and Email - Buy Antivirus",
+  "file": "urlscan/01a1d345-40b6-70cc-86bf-24f28a06fbd1.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan\\01a1d345-40b6-70cc-86bf-24f28a06fbd1\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1d345-40b6-70cc-86bf-24f28a06fbd1/",
+  "verdict": "danger",
+  "titles": [
+   "Поддельная проверка «я не робот»: вас просят запустить команду"
+  ]
+ },
+ {
+  "id": "u-01a1d345-2d58",
+  "scheme": "clickfix",
+  "source": "urlscan.io",
+  "date": "2026-11-13",
+  "domain": "maswo.ca",
+  "title": "Just a moment…",
+  "file": "urlscan/01a1d345-2d58-710b-b434-f3bdba67ceff.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan\\01a1d345-2d58-710b-b434-f3bdba67ceff\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1d345-2d58-710b-b434-f3bdba67ceff/",
+  "verdict": "danger",
+  "titles": [
+   "Поддельная проверка «я не робот»: вас просят запустить команду"
+  ]
+ },
+ {
+  "id": "u-01a1d344-c095",
+  "scheme": "clickfix",
+  "source": "urlscan.io",
+  "date": "2026-11-13",
+  "domain": "www.brunofoglia.it",
+  "title": "Bruno Foglia | un artista in cerca di spazio",
+  "file": "urlscan/01a1d344-c095-74a8-b4f4-ffc5e02e6668.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan\\01a1d344-c095-74a8-b4f4-ffc5e02e6668\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1d344-c095-74a8-b4f4-ffc5e02e6668/",
+  "verdict": "danger",
+  "titles": [
+   "Поддельная проверка «я не робот»: вас просят запустить команду"
+  ]
+ },
+ {
+  "id": "u-01a1d343-ff42",
+  "scheme": "clickfix",
+  "source": "urlscan.io",
+  "date": "2026-11-13",
+  "domain": "oroojloo.com",
+  "title": "Just a moment...",
+  "file": "urlscan/01a1d343-ff42-75a8-8336-70a7cb3c0c7d.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan\\01a1d343-ff42-75a8-8336-70a7cb3c0c7d\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1d343-ff42-75a8-8336-70a7cb3c0c7d/",
+  "verdict": "danger",
+  "titles": [
+   "Поддельная проверка «я не робот»: вас просят запустить команду"
+  ]
+ },
+ {
+  "id": "u-01a1b69d-f7b5",
+  "scheme": "subscription",
+  "source": "urlscan.io",
+  "date": "2026-11-07",
+  "domain": "oplata.poslaniya.su",
+  "title": "Покупка",
+  "file": "urlscan/01a1b69d-f7b5-7128-8879-ff49ce2c89a2.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan\\01a1b69d-f7b5-7128-8879-ff49ce2c89a2\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1b69d-f7b5-7128-8879-ff49ce2c89a2/",
+  "verdict": "warning",
+  "titles": [
+   "Цена-приманка: сейчас 29 ₽, а дальше — регулярные списания по 1 499 ₽"
+  ]
+ },
+ {
+  "id": "u-01a129a0-1d2f",
+  "scheme": "fines",
+  "source": "urlscan.io",
+  "date": "2026-10-11",
+  "domain": "gibdd-proverka.com",
+  "title": "Проверка штрафов ГИБДД онлайн — РосШтраф",
+  "file": "urlscan/01a129a0-1d2f-7129-ab6a-cf6b30065571.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan\\01a129a0-1d2f-7129-ab6a-cf6b30065571\\screenshot.png",
+  "link": "https://urlscan.io/result/01a129a0-1d2f-7129-ab6a-cf6b30065571/",
+  "verdict": "none",
+  "titles": []
+ },
+ {
+  "id": "u-01a163e2-b5e6",
+  "scheme": "safe-account",
+  "source": "urlscan.io",
+  "date": "2026-10-22",
+  "domain": "fnsnalog-ru.online",
+  "title": "Личный кабинет",
+  "file": "urlscan/01a163e2-b5e6-77dd-b326-91c9c1e6e0d7.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan\\01a163e2-b5e6-77dd-b326-91c9c1e6e0d7\\screenshot.png",
+  "link": "https://urlscan.io/result/01a163e2-b5e6-77dd-b326-91c9c1e6e0d7/",
+  "verdict": "danger",
+  "titles": [
+   "Страница пугает взломом и просит позвонить по номеру"
+  ]
+ },
+ {
+  "id": "u-01a162d8-c282",
+  "scheme": "account-theft",
+  "source": "urlscan.io",
+  "date": "2026-10-22",
+  "domain": "socportalfns3.shop",
+  "title": "Личный кабинет налогоплательщика",
+  "file": "urlscan/01a162d8-c282-777f-85bb-f13660210c9d.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan\\01a162d8-c282-777f-85bb-f13660210c9d\\screenshot.png",
+  "link": "https://urlscan.io/result/01a162d8-c282-777f-85bb-f13660210c9d/",
+  "verdict": "none",
+  "titles": []
+ },
+ {
+  "id": "u-01a1979d-3cad",
+  "scheme": "fines",
+  "source": "urlscan.io",
+  "date": "2026-11-01",
+  "domain": "gov-gibdd.ru",
+  "title": "Официальный сайт Госавтоинспекции",
+  "file": "urlscan/01a1979d-3cad-7524-84e5-450a446c73ca.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan\\01a1979d-3cad-7524-84e5-450a446c73ca\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1979d-3cad-7524-84e5-450a446c73ca/",
+  "verdict": "none",
+  "titles": []
+ },
+ {
+  "id": "u-019fad61-df4d",
+  "scheme": "fake-app",
+  "source": "urlscan.io",
+  "date": "2026-07-29",
+  "domain": "gosscomitetdfrs.online",
+  "title": "Департамент финансовых расследований | г. Минск",
+  "file": "urlscan/019fad61-df4d-73f0-b815-45ff1b49309d.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan\\019fad61-df4d-73f0-b815-45ff1b49309d\\screenshot.png",
+  "link": "https://urlscan.io/result/019fad61-df4d-73f0-b815-45ff1b49309d/",
+  "verdict": "none",
+  "titles": []
+ },
+ {
+  "id": "u-01a141d4-9405",
+  "scheme": "fake-shop",
+  "source": "urlscan.io",
+  "date": "2026-10-15",
+  "domain": "gemola.shop",
+  "title": "Фейковый магазин (метка fakeshop): страница /card-form",
+  "file": "urlscan/01a141d4-9405-7658-965b-8b80c85867d1.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan\\01a141d4-9405-7658-965b-8b80c85867d1\\screenshot.png",
+  "link": "https://urlscan.io/result/01a141d4-9405-7658-965b-8b80c85867d1/",
+  "verdict": "ok",
+  "titles": []
+ },
+ {
+  "id": "u-01a1a7e3-8bc9",
+  "scheme": "skimmer",
+  "source": "urlscan.io",
+  "date": "2026-11-04",
+  "domain": "paradisecoffee.ky",
+  "title": "Welcome To Paradise Coffee - Cayman's Locally Produced Branded Coffee",
+  "file": "urlscan/01a1a7e3-8bc9-7001-ada4-c9c90483ecd3.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan\\01a1a7e3-8bc9-7001-ada4-c9c90483ecd3\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1a7e3-8bc9-7001-ada4-c9c90483ecd3/",
+  "verdict": "none",
+  "titles": []
+ },
+ {
+  "id": "u-01a1a7e3-63f5",
+  "scheme": "skimmer",
+  "source": "urlscan.io",
+  "date": "2026-11-04",
+  "domain": "canadianscholars.ca",
+  "title": "Higher Education Textbooks - Canadian Scholars",
+  "file": "urlscan/01a1a7e3-63f5-72ec-bdb0-707eb90d0b64.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan\\01a1a7e3-63f5-72ec-bdb0-707eb90d0b64\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1a7e3-63f5-72ec-bdb0-707eb90d0b64/",
+  "verdict": "none",
+  "titles": []
+ },
+ {
+  "id": "u-01a1a7e3-7b39",
+  "scheme": "skimmer",
+  "source": "urlscan.io",
+  "date": "2026-11-04",
+  "domain": "runningbelts.com.au",
+  "title": "Treadmill Running Belts - Treadmill Belt Replacement",
+  "file": "urlscan/01a1a7e3-7b39-71d8-be3c-75b2e2cfa58d.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan\\01a1a7e3-7b39-71d8-be3c-75b2e2cfa58d\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1a7e3-7b39-71d8-be3c-75b2e2cfa58d/",
+  "verdict": "none",
+  "titles": []
+ },
+ {
+  "id": "u-01a1a7e3-ba19",
+  "scheme": "skimmer",
+  "source": "urlscan.io",
+  "date": "2026-11-04",
+  "domain": "www.bilsdale-worms.co.uk",
+  "title": "Bilsdale Worms | Dendrobaena Worms | Fishing & Composting",
+  "file": "urlscan/01a1a7e3-ba19-70ce-b94b-a2f82cc89aab.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan\\01a1a7e3-ba19-70ce-b94b-a2f82cc89aab\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1a7e3-ba19-70ce-b94b-a2f82cc89aab/",
+  "verdict": "none",
+  "titles": []
+ },
+ {
+  "id": "u-01a1a7e3-aa85",
+  "scheme": "skimmer",
+  "source": "urlscan.io",
+  "date": "2026-11-04",
+  "domain": "www.sklepszostak.pl",
+  "title": "Sklep myśliwski - sklepszostak.pl",
+  "file": "urlscan/01a1a7e3-aa85-7140-8240-3bc263ef7308.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan\\01a1a7e3-aa85-7140-8240-3bc263ef7308\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1a7e3-aa85-7140-8240-3bc263ef7308/",
+  "verdict": "none",
+  "titles": []
+ },
+ {
+  "id": "u-01a1a7e3-9b86",
+  "scheme": "skimmer",
+  "source": "urlscan.io",
+  "date": "2026-11-04",
+  "domain": "teragu.com",
+  "title": "Teragu | Activewear with style",
+  "file": "urlscan/01a1a7e3-9b86-71ca-a9bb-5511c34248ae.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\urlscan\\01a1a7e3-9b86-71ca-a9bb-5511c34248ae\\screenshot.png",
+  "link": "https://urlscan.io/result/01a1a7e3-9b86-71ca-a9bb-5511c34248ae/",
+  "verdict": "none",
+  "titles": []
+ },
+ {
+  "id": "z-atgoebell-wixsite-com",
+  "scheme": "account-theft",
+  "source": "Zenodo 14880589",
+  "date": "2024-01-11",
+  "domain": "atgoebell.wixsite.com",
+  "title": "",
+  "note": "страница входа (почта, банк, госпортал): крадут логин и пароль",
+  "file": "zenodo/fines__2024-01_2024-01-11_atgoebell.wixsite.com.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\fines\\2024-01_2024-01-11_atgoebell.wixsite.com\\page.png",
+  "link": null,
+  "verdict": "none",
+  "titles": [],
+  "cardinput": false
+ },
+ {
+  "id": "z-www-sapatkosaudisar-ksa-sa-in",
+  "scheme": "account-theft",
+  "source": "Zenodo 14880589",
+  "date": "2024-01-11",
+  "domain": "www.sapatkosaudisar-ksa-sa.in",
+  "title": "",
+  "note": "страница входа (почта, банк, госпортал): крадут логин и пароль",
+  "file": "zenodo/fines__2024-01_2024-01-11_www.sapatkosaudisar-ksa-sa.in.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\fines\\2024-01_2024-01-11_www.sapatkosaudisar-ksa-sa.in\\page.png",
+  "link": null,
+  "verdict": "none",
+  "titles": [],
+  "cardinput": false
+ },
+ {
+  "id": "z-uusps-lqtu-cn",
+  "scheme": "fake-payment",
+  "source": "Zenodo 14880589",
+  "date": "2024-01-11",
+  "domain": "uusps.lqtu.cn",
+  "title": "",
+  "note": "оплата «пошлины» или «доставки»: форма карты, затем код из SMS",
+  "file": "zenodo/fines__2024-01_2024-01-11_uusps.lqtu.cn.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\fines\\2024-01_2024-01-11_uusps.lqtu.cn\\page.png",
+  "link": null,
+  "verdict": "none",
+  "titles": [],
+  "cardinput": false
+ },
+ {
+  "id": "z-zonuzake-wixsite-com",
+  "scheme": "account-theft",
+  "source": "Zenodo 14880589",
+  "date": "2024-01-11",
+  "domain": "zonuzake.wixsite.com",
+  "title": "",
+  "note": "страница входа (почта, банк, госпортал): крадут логин и пароль",
+  "file": "zenodo/fines__2024-01_2024-01-11_zonuzake.wixsite.com.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\fines\\2024-01_2024-01-11_zonuzake.wixsite.com\\page.png",
+  "link": null,
+  "verdict": "none",
+  "titles": [],
+  "cardinput": false
+ },
+ {
+  "id": "z-ylylkrtzl-net",
+  "scheme": "fines",
+  "source": "Zenodo 14880589",
+  "date": "2024-01-11",
+  "domain": "ylylkrtzl.net",
+  "title": "",
+  "note": "«Araç Hasar Kaydı Sorgulama» / «ihlal sorgu» (Турция) и «возврат налога»: платная «справка» или «пошлина» — оплата картой",
+  "file": "zenodo/fake-payment__2024-01_2024-01-11_ylylkrtzl.net.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\fake-payment\\2024-01_2024-01-11_ylylkrtzl.net\\page.png",
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "cardinput": true
+ },
+ {
+  "id": "z-ghghlmwsndhf-weebly-com",
+  "scheme": "account-theft",
+  "source": "Zenodo 14880589",
+  "date": "2024-01-11",
+  "domain": "ghghlmwsndhf.weebly.com",
+  "title": "",
+  "note": "страница входа (почта, банк, госпортал): крадут логин и пароль",
+  "file": "zenodo/fines__2024-01_2024-01-11_ghghlmwsndhf.weebly.com.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\fines\\2024-01_2024-01-11_ghghlmwsndhf.weebly.com\\page.png",
+  "link": null,
+  "verdict": "none",
+  "titles": [],
+  "cardinput": false
+ },
+ {
+  "id": "z-turkekonom-com",
+  "scheme": "account-theft",
+  "source": "Zenodo 14880589",
+  "date": "2024-01-11",
+  "domain": "turkekonom.com",
+  "title": "",
+  "note": "страница входа (почта, банк, госпортал): крадут логин и пароль",
+  "file": "zenodo/fines__2024-01_2024-01-11_turkekonom.com.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\fines\\2024-01_2024-01-11_turkekonom.com\\page.png",
+  "link": null,
+  "verdict": "none",
+  "titles": [],
+  "cardinput": false
+ },
+ {
+  "id": "z-webihlalsorgutr-com",
+  "scheme": "fines",
+  "source": "Zenodo 14880589",
+  "date": "2024-01-11",
+  "domain": "webihlalsorgutr.com",
+  "title": "",
+  "note": "«Araç Hasar Kaydı Sorgulama» / «ihlal sorgu» (Турция) и «возврат налога»: платная «справка» или «пошлина» — оплата картой",
+  "file": "zenodo/fake-payment__2024-01_2024-01-11_webihlalsorgutr.com.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\fake-payment\\2024-01_2024-01-11_webihlalsorgutr.com\\page.png",
+  "link": null,
+  "verdict": "none",
+  "titles": [],
+  "cardinput": false
+ },
+ {
+  "id": "z-frfrkinsshdf-weebly-com",
+  "scheme": "account-theft",
+  "source": "Zenodo 14880589",
+  "date": "2024-01-11",
+  "domain": "frfrkinsshdf.weebly.com",
+  "title": "",
+  "note": "страница входа (почта, банк, госпортал): крадут логин и пароль",
+  "file": "zenodo/fines__2024-01_2024-01-11_frfrkinsshdf.weebly.com.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\fines\\2024-01_2024-01-11_frfrkinsshdf.weebly.com\\page.png",
+  "link": null,
+  "verdict": "none",
+  "titles": [],
+  "cardinput": false
+ },
+ {
+  "id": "z-aceteryxstore-top",
+  "scheme": "fake-shop",
+  "source": "Zenodo 14880589",
+  "date": "2024-01-11",
+  "domain": "aceteryxstore.top",
+  "title": "",
+  "note": "магазин со скидками до 70–90 % на известные бренды",
+  "file": "zenodo/fake-payment__2024-01_2024-01-11_aceteryxstore.top.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\fake-payment\\2024-01_2024-01-11_aceteryxstore.top\\page.png",
+  "link": null,
+  "verdict": "none",
+  "titles": [],
+  "cardinput": false
+ },
+ {
+  "id": "z-www-stampslover-com",
+  "scheme": "fake-shop",
+  "source": "Zenodo 14880589",
+  "date": "2024-01-11",
+  "domain": "www.stampslover.com",
+  "title": "",
+  "note": "магазин со скидками до 70–90 % на известные бренды",
+  "file": "zenodo/fines__2024-01_2024-01-11_www.stampslover.com.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\fines\\2024-01_2024-01-11_www.stampslover.com\\page.png",
+  "link": null,
+  "verdict": "none",
+  "titles": [],
+  "cardinput": false
+ },
+ {
+  "id": "z-www-arcteryxonline-xyz",
+  "scheme": "fake-shop",
+  "source": "Zenodo 14880589",
+  "date": "2024-01-11",
+  "domain": "www.arcteryxonline.xyz",
+  "title": "",
+  "note": "магазин со скидками до 70–90 % на известные бренды",
+  "file": "zenodo/fake-payment__2024-01_2024-01-11_www.arcteryxonline.xyz.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\fake-payment\\2024-01_2024-01-11_www.arcteryxonline.xyz\\page.png",
+  "link": null,
+  "verdict": "none",
+  "titles": [],
+  "cardinput": false
+ },
+ {
+  "id": "z-pub-375cf12e9c164ac5946c77d111a194c3-r2-",
+  "scheme": "account-theft",
+  "source": "Zenodo 14880589",
+  "date": "2024-01-11",
+  "domain": "pub-375cf12e9c164ac5946c77d111a194c3.r2.dev",
+  "title": "",
+  "note": "страница входа (почта, банк, госпортал): крадут логин и пароль",
+  "file": "zenodo/fake-payment__2024-01_2024-01-11_pub-375cf12e9c164ac5946c77d111a194c3.r2.dev.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\fake-payment\\2024-01_2024-01-11_pub-375cf12e9c164ac5946c77d111a194c3.r2.dev\\page.png",
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Вместе с картой просят данные, которые для оплаты не нужны",
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "cardinput": false
+ },
+ {
+  "id": "z-usps-pcpostsale-top",
+  "scheme": "fake-payment",
+  "source": "Zenodo 14880589",
+  "date": "2024-01-11",
+  "domain": "usps.pcpostsale.top",
+  "title": "",
+  "note": "оплата «пошлины» или «доставки»: форма карты, затем код из SMS",
+  "file": "zenodo/fines__2024-01_2024-01-11_usps.pcpostsale.top.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\fines\\2024-01_2024-01-11_usps.pcpostsale.top\\page.png",
+  "link": null,
+  "verdict": "none",
+  "titles": [],
+  "cardinput": false
+ },
+ {
+  "id": "z-arcteryxjacket-xyz",
+  "scheme": "fake-shop",
+  "source": "Zenodo 14880589",
+  "date": "2024-01-11",
+  "domain": "arcteryxjacket.xyz",
+  "title": "",
+  "note": "магазин со скидками до 70–90 % на известные бренды",
+  "file": "zenodo/fines__2024-01_2024-01-11_arcteryxjacket.xyz.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\fines\\2024-01_2024-01-11_arcteryxjacket.xyz\\page.png",
+  "link": null,
+  "verdict": "none",
+  "titles": [],
+  "cardinput": false
+ },
+ {
+  "id": "z-biomassociazione-it",
+  "scheme": "fake-payment",
+  "source": "Zenodo 14880589",
+  "date": "2024-01-11",
+  "domain": "biomassociazione.it",
+  "title": "",
+  "note": "",
+  "file": "zenodo/fake-payment__2024-01_2024-01-11_biomassociazione.it.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\fake-payment\\2024-01_2024-01-11_biomassociazione.it\\page.png",
+  "link": null,
+  "verdict": "ok",
+  "titles": [],
+  "cardinput": true
+ },
+ {
+  "id": "z-flash-usps-top",
+  "scheme": "fake-payment",
+  "source": "Zenodo 14880589",
+  "date": "2024-01-11",
+  "domain": "flash-usps.top",
+  "title": "",
+  "note": "оплата «пошлины» или «доставки»: форма карты, затем код из SMS",
+  "file": "zenodo/fines__2024-01_2024-01-11_flash-usps.top.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\fines\\2024-01_2024-01-11_flash-usps.top\\page.png",
+  "link": null,
+  "verdict": "none",
+  "titles": [],
+  "cardinput": false
+ },
+ {
+  "id": "z-www-dalladraiviengisod-com",
+  "scheme": "fake-payment",
+  "source": "Zenodo 14880589",
+  "date": "2024-01-11",
+  "domain": "www.dalladraiviengisod.com",
+  "title": "",
+  "note": "оплата «пошлины» или «доставки»: форма карты, затем код из SMS",
+  "file": "zenodo/fines__2024-01_2024-01-11_www.dalladraiviengisod.com.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\fines\\2024-01_2024-01-11_www.dalladraiviengisod.com\\page.png",
+  "link": null,
+  "verdict": "none",
+  "titles": [],
+  "cardinput": false
+ },
+ {
+  "id": "z-php-gray-alligator-arubanet81245887-code",
+  "scheme": "account-theft",
+  "source": "Zenodo 14880589",
+  "date": "2024-01-11",
+  "domain": "php-gray-alligator-arubanet81245887.codeanyapp.com",
+  "title": "",
+  "note": "страница входа (почта, банк, госпортал): крадут логин и пароль",
+  "file": "zenodo/fake-payment__2024-01_2024-01-11_php-gray-alligator-arubanet81245887.codeanyapp.com.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\fake-payment\\2024-01_2024-01-11_php-gray-alligator-arubanet81245887.codeanyapp.com\\page.png",
+  "link": null,
+  "verdict": "none",
+  "titles": [],
+  "cardinput": true
+ },
+ {
+  "id": "z-annsummersuk-com",
+  "scheme": "fake-shop",
+  "source": "Zenodo 14880589",
+  "date": "2024-01-11",
+  "domain": "annsummersuk.com",
+  "title": "",
+  "note": "магазин со скидками до 70–90 % на известные бренды",
+  "file": "zenodo/fines__2024-01_2024-01-11_annsummersuk.com.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\fines\\2024-01_2024-01-11_annsummersuk.com\\page.png",
+  "link": null,
+  "verdict": "none",
+  "titles": [],
+  "cardinput": false
+ },
+ {
+  "id": "z-uspsmnk-com",
+  "scheme": "fake-payment",
+  "source": "Zenodo 14880589",
+  "date": "2024-01-11",
+  "domain": "uspsmnk.com",
+  "title": "",
+  "note": "оплата «пошлины» или «доставки»: форма карты, затем код из SMS",
+  "file": "zenodo/fines__2024-01_2024-01-11_uspsmnk.com.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\fines\\2024-01_2024-01-11_uspsmnk.com\\page.png",
+  "link": null,
+  "verdict": "none",
+  "titles": [],
+  "cardinput": false
+ },
+ {
+  "id": "z-www-isabelmordhorst-com",
+  "scheme": "fake-shop",
+  "source": "Zenodo 14880589",
+  "date": "2024-01-11",
+  "domain": "www.isabelmordhorst.com",
+  "title": "",
+  "note": "магазин со скидками до 70–90 % на известные бренды",
+  "file": "zenodo/fines__2024-01_2024-01-11_www.isabelmordhorst.com.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\fines\\2024-01_2024-01-11_www.isabelmordhorst.com\\page.png",
+  "link": null,
+  "verdict": "none",
+  "titles": [],
+  "cardinput": false
+ },
+ {
+  "id": "z-swisspost-ch-ch-post-codeanyapp-com",
+  "scheme": "fake-payment",
+  "source": "Zenodo 14880589",
+  "date": "2024-01-10",
+  "domain": "swisspost-ch-ch-post.codeanyapp.com",
+  "title": "",
+  "note": "оплата «пошлины» или «доставки»: форма карты, затем код из SMS",
+  "file": "zenodo/fake-payment__2024-01_2024-01-10_swisspost-ch-ch-post.codeanyapp.com.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\fake-payment\\2024-01_2024-01-10_swisspost-ch-ch-post.codeanyapp.com\\page.png",
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "cardinput": false
+ },
+ {
+  "id": "z-xdu-lzh-mybluehost-me",
+  "scheme": "fake-payment",
+  "source": "Zenodo 14880589",
+  "date": "2024-01-10",
+  "domain": "xdu.lzh.mybluehost.me",
+  "title": "",
+  "note": "",
+  "file": "zenodo/fake-payment__2024-01_2024-01-10_xdu.lzh.mybluehost.me.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\fake-payment\\2024-01_2024-01-10_xdu.lzh.mybluehost.me\\page.png",
+  "link": null,
+  "verdict": "none",
+  "titles": [],
+  "cardinput": true
+ },
+ {
+  "id": "z-claim-zksync-io-com",
+  "scheme": "crypto-drainer",
+  "source": "Zenodo 14880589",
+  "date": "2024-01-10",
+  "domain": "claim-zksync-io.com",
+  "title": "",
+  "note": "«zkSync Token Distribution» / «Join the airdrop»: раздача токенов с кнопкой подключения кошелька",
+  "file": "zenodo/crypto-drainer__2024-01_2024-01-10_claim-zksync-io.com.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\crypto-drainer\\2024-01_2024-01-10_claim-zksync-io.com\\page.png",
+  "link": null,
+  "verdict": "none",
+  "titles": [],
+  "cardinput": false
+ },
+ {
+  "id": "z-service-polst-com",
+  "scheme": "fake-payment",
+  "source": "Zenodo 14880589",
+  "date": "2024-01-10",
+  "domain": "service-polst.com",
+  "title": "",
+  "note": "",
+  "file": "zenodo/fake-payment__2024-01_2024-01-10_service-polst.com.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\fake-payment\\2024-01_2024-01-10_service-polst.com\\page.png",
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "cardinput": true
+ },
+ {
+  "id": "z-swisspostwp-blogspot-com",
+  "scheme": "fake-payment",
+  "source": "Zenodo 14880589",
+  "date": "2024-01-10",
+  "domain": "swisspostwp.blogspot.com",
+  "title": "",
+  "note": "оплата «пошлины» или «доставки»: форма карты, затем код из SMS",
+  "file": "zenodo/fake-payment__2024-01_2024-01-10_swisspostwp.blogspot.com.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\fake-payment\\2024-01_2024-01-10_swisspostwp.blogspot.com\\page.png",
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "cardinput": false
+ },
+ {
+  "id": "z-www-fidefx-cc",
+  "scheme": "investment",
+  "source": "Zenodo 14880589",
+  "date": "2024-01-31",
+  "domain": "www.fidefx.cc",
+  "title": "",
+  "note": "сайт «инвестиционной платформы» с личным кабинетом",
+  "file": "zenodo/investment__2024-01_2024-01-31_www.fidefx.cc.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\investment\\2024-01_2024-01-31_www.fidefx.cc\\page.png",
+  "link": null,
+  "verdict": "none",
+  "titles": [],
+  "cardinput": false
+ },
+ {
+  "id": "z-alfa-by24-online",
+  "scheme": "payout",
+  "source": "Zenodo 14880589",
+  "date": "2024-01-31",
+  "domain": "alfa-by24.online",
+  "title": "",
+  "note": "«Альфа-Банк поздравляет клиентов и дарит ценные призы»",
+  "file": "zenodo/investment__2024-01_2024-01-31_alfa-by24.online.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\investment\\2024-01_2024-01-31_alfa-by24.online\\page.png",
+  "link": null,
+  "verdict": "none",
+  "titles": [],
+  "cardinput": false
+ },
+ {
+  "id": "z-linksfidelity-com",
+  "scheme": "investment",
+  "source": "Zenodo 14880589",
+  "date": "2024-01-31",
+  "domain": "linksfidelity.com",
+  "title": "",
+  "note": "сайт «инвестиционной платформы» с личным кабинетом",
+  "file": "zenodo/investment__2024-01_2024-01-31_linksfidelity.com.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\investment\\2024-01_2024-01-31_linksfidelity.com\\page.png",
+  "link": null,
+  "verdict": "none",
+  "titles": [],
+  "cardinput": false
+ },
+ {
+  "id": "z-trmrtysgsdgpzr-net",
+  "scheme": "fines",
+  "source": "Zenodo 14880589",
+  "date": "2024-01-31",
+  "domain": "trmrtysgsdgpzr.net",
+  "title": "",
+  "note": "«Araç Hasar Kaydı Sorgulama» / «ihlal sorgu» (Турция) и «возврат налога»: платная «справка» или «пошлина» — оплата картой",
+  "file": "zenodo/fake-payment__2024-01_2024-01-31_trmrtysgsdgpzr.net.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\fake-payment\\2024-01_2024-01-31_trmrtysgsdgpzr.net\\page.png",
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "cardinput": true
+ },
+ {
+  "id": "z-7-24destekller-com-tr",
+  "scheme": "fines",
+  "source": "Zenodo 14880589",
+  "date": "2024-01-31",
+  "domain": "7-24destekller.com.tr",
+  "title": "",
+  "note": "«Araç Hasar Kaydı Sorgulama» / «ihlal sorgu» (Турция) и «возврат налога»: платная «справка» или «пошлина» — оплата картой",
+  "file": "zenodo/fake-payment__2024-01_2024-01-31_7-24destekller.com.tr.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\fake-payment\\2024-01_2024-01-31_7-24destekller.com.tr\\page.png",
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "cardinput": true
+ },
+ {
+  "id": "z-www-linksfidelity-com",
+  "scheme": "investment",
+  "source": "Zenodo 14880589",
+  "date": "2024-01-31",
+  "domain": "www.linksfidelity.com",
+  "title": "",
+  "note": "сайт «инвестиционной платформы» с личным кабинетом",
+  "file": "zenodo/investment__2024-01_2024-01-31_www.linksfidelity.com.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\investment\\2024-01_2024-01-31_www.linksfidelity.com\\page.png",
+  "link": null,
+  "verdict": "none",
+  "titles": [],
+  "cardinput": false
+ },
+ {
+  "id": "z-fidoptbit-com",
+  "scheme": "investment",
+  "source": "Zenodo 14880589",
+  "date": "2024-01-31",
+  "domain": "fidoptbit.com",
+  "title": "",
+  "note": "«Fidelity Options»: кабинет «инвестплатформы» с балансом",
+  "file": "zenodo/crypto-drainer__2024-01_2024-01-31_fidoptbit.com.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\crypto-drainer\\2024-01_2024-01-31_fidoptbit.com\\page.png",
+  "link": null,
+  "verdict": "none",
+  "titles": [],
+  "cardinput": false
+ },
+ {
+  "id": "z-tvnetflxonline-com",
+  "scheme": "fake-payment",
+  "source": "Zenodo 14880589",
+  "date": "2024-01-27",
+  "domain": "tvnetflxonline.com",
+  "title": "",
+  "note": "",
+  "file": "zenodo/fake-payment__2024-01_2024-01-27_tvnetflxonline.com.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\fake-payment\\2024-01_2024-01-27_tvnetflxonline.com\\page.png",
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "cardinput": true
+ },
+ {
+  "id": "z-ubrirs-online",
+  "scheme": "fines",
+  "source": "Zenodo 14880589",
+  "date": "2024-01-27",
+  "domain": "ubrirs.online",
+  "title": "",
+  "note": "«Araç Hasar Kaydı Sorgulama» / «ihlal sorgu» (Турция) и «возврат налога»: платная «справка» или «пошлина» — оплата картой",
+  "file": "zenodo/fake-payment__2024-01_2024-01-27_ubrirs.online.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\fake-payment\\2024-01_2024-01-27_ubrirs.online\\page.png",
+  "link": null,
+  "verdict": "none",
+  "titles": [],
+  "cardinput": false
+ },
+ {
+  "id": "z-swap-xingtu-network",
+  "scheme": "crypto-drainer",
+  "source": "Zenodo 14880589",
+  "date": "2024-01-27",
+  "domain": "swap.xingtu.network",
+  "title": "",
+  "note": "",
+  "file": "zenodo/crypto-drainer__2024-01_2024-01-27_swap.xingtu.network.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\crypto-drainer\\2024-01_2024-01-27_swap.xingtu.network\\page.png",
+  "link": null,
+  "verdict": "none",
+  "titles": [],
+  "cardinput": false
+ },
+ {
+  "id": "z-ndadltt-net",
+  "scheme": "fines",
+  "source": "Zenodo 14880589",
+  "date": "2024-01-08",
+  "domain": "ndadltt.net",
+  "title": "",
+  "note": "«Araç Hasar Kaydı Sorgulama» / «ihlal sorgu» (Турция) и «возврат налога»: платная «справка» или «пошлина» — оплата картой",
+  "file": "zenodo/fake-payment__2024-01_2024-01-08_ndadltt.net.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\fake-payment\\2024-01_2024-01-08_ndadltt.net\\page.png",
+  "link": null,
+  "verdict": "none",
+  "titles": [],
+  "cardinput": false
+ },
+ {
+  "id": "z-bnl-awalltahun-danaidjkt-com",
+  "scheme": "payout",
+  "source": "Zenodo 14880589",
+  "date": "2024-01-08",
+  "domain": "bnl-awalltahun.danaidjkt.com",
+  "title": "",
+  "note": "«розыгрыш призов банка BNI»: для приза просят номер дебетовой карты, PIN и номер телефона",
+  "file": "zenodo/fake-payment__2024-01_2024-01-08_bnl-awalltahun.danaidjkt.com.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\fake-payment\\2024-01_2024-01-08_bnl-awalltahun.danaidjkt.com\\page.png",
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Данные карты уходят в Telegram-бота"
+  ],
+  "cardinput": true
+ },
+ {
+  "id": "z-caalamoscapital-com",
+  "scheme": "investment",
+  "source": "Zenodo 14880589",
+  "date": "2024-01-08",
+  "domain": "caalamoscapital.com",
+  "title": "",
+  "note": "сайт «инвестиционной платформы» с личным кабинетом",
+  "file": "zenodo/investment__2024-01_2024-01-08_caalamoscapital.com.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\investment\\2024-01_2024-01-08_caalamoscapital.com\\page.png",
+  "link": null,
+  "verdict": "none",
+  "titles": [],
+  "cardinput": false
+ },
+ {
+  "id": "z-zksync-reward-net",
+  "scheme": "crypto-drainer",
+  "source": "Zenodo 14880589",
+  "date": "2024-01-08",
+  "domain": "zksync-reward.net",
+  "title": "",
+  "note": "«zkSync Token Distribution» / «Join the airdrop»: раздача токенов с кнопкой подключения кошелька",
+  "file": "zenodo/crypto-drainer__2024-01_2024-01-08_zksync-reward.net.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\crypto-drainer\\2024-01_2024-01-08_zksync-reward.net\\page.png",
+  "link": null,
+  "verdict": "none",
+  "titles": [],
+  "cardinput": false
+ },
+ {
+  "id": "z-noisy-lacy-bait-glitch-me",
+  "scheme": "fake-payment",
+  "source": "Zenodo 14880589",
+  "date": "2024-01-08",
+  "domain": "noisy-lacy-bait.glitch.me",
+  "title": "",
+  "note": "копия входа в Tesco Bank с полями карты; данные уходят в Telegram-бота",
+  "file": "zenodo/fake-payment__2024-01_2024-01-08_noisy-lacy-bait.glitch.me.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\fake-payment\\2024-01_2024-01-08_noisy-lacy-bait.glitch.me\\page.png",
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Данные карты уходят в Telegram-бота",
+   "Скрипт читает поля карты и умеет отправлять данные",
+   "Скрипт читает поля карты и умеет отправлять данные"
+  ],
+  "cardinput": true
+ },
+ {
+  "id": "z-xeb-lcb-mybluehost-me",
+  "scheme": "fake-payment",
+  "source": "Zenodo 14880589",
+  "date": "2024-01-08",
+  "domain": "xeb.lcb.mybluehost.me",
+  "title": "",
+  "note": "",
+  "file": "zenodo/fake-payment__2024-01_2024-01-08_xeb.lcb.mybluehost.me.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\fake-payment\\2024-01_2024-01-08_xeb.lcb.mybluehost.me\\page.png",
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "cardinput": true
+ },
+ {
+  "id": "z-kmvehasar-online",
+  "scheme": "fines",
+  "source": "Zenodo 14880589",
+  "date": "2024-01-08",
+  "domain": "kmvehasar.online",
+  "title": "",
+  "note": "«Araç Hasar Kaydı Sorgulama» / «ihlal sorgu» (Турция) и «возврат налога»: платная «справка» или «пошлина» — оплата картой",
+  "file": "zenodo/fake-payment__2024-01_2024-01-08_kmvehasar.online.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\fake-payment\\2024-01_2024-01-08_kmvehasar.online\\page.png",
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "cardinput": true
+ },
+ {
+  "id": "z-bnl-tarif-transaksi-ssd-i-com",
+  "scheme": "payout",
+  "source": "Zenodo 14880589",
+  "date": "2024-01-08",
+  "domain": "bnl-tarif-transaksi.ssd-i.com",
+  "title": "",
+  "note": "«розыгрыш призов банка BNI»: для приза просят номер дебетовой карты, PIN и номер телефона",
+  "file": "zenodo/fake-payment__2024-01_2024-01-08_bnl-tarif-transaksi.ssd-i.com.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\fake-payment\\2024-01_2024-01-08_bnl-tarif-transaksi.ssd-i.com\\page.png",
+  "link": null,
+  "verdict": "ok",
+  "titles": [],
+  "cardinput": true
+ },
+ {
+  "id": "z-usps-com-zv209-vip",
+  "scheme": "fake-payment",
+  "source": "Zenodo 14880589",
+  "date": "2024-01-13",
+  "domain": "usps.com.zv209.vip",
+  "title": "",
+  "note": "оплата «пошлины» или «доставки»: форма карты, затем код из SMS",
+  "file": "zenodo/fake-payment__2024-01_2024-01-13_usps.com.zv209.vip.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\fake-payment\\2024-01_2024-01-13_usps.com.zv209.vip\\page.png",
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "cardinput": false
+ },
+ {
+  "id": "z-zk-skalling-net",
+  "scheme": "crypto-drainer",
+  "source": "Zenodo 14880589",
+  "date": "2024-01-13",
+  "domain": "zk-skalling.net",
+  "title": "",
+  "note": "«zkSync Token Distribution» / «Join the airdrop»: раздача токенов с кнопкой подключения кошелька",
+  "file": "zenodo/crypto-drainer__2024-01_2024-01-13_zk-skalling.net.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\crypto-drainer\\2024-01_2024-01-13_zk-skalling.net\\page.png",
+  "link": null,
+  "verdict": "none",
+  "titles": [],
+  "cardinput": false
+ },
+ {
+  "id": "z-chnet-dhlservice-is-a-green-com",
+  "scheme": "fake-payment",
+  "source": "Zenodo 14880589",
+  "date": "2024-01-06",
+  "domain": "chnet-dhlservice.is-a-green.com",
+  "title": "",
+  "note": "оплата «пошлины» или «доставки»: форма карты, затем код из SMS",
+  "file": "zenodo/fake-payment__2024-01_2024-01-06_chnet-dhlservice.is-a-green.com.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\fake-payment\\2024-01_2024-01-06_chnet-dhlservice.is-a-green.com\\page.png",
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "cardinput": true
+ },
+ {
+  "id": "z-dtprojects-eu-org",
+  "scheme": "fake-payment",
+  "source": "Zenodo 14880589",
+  "date": "2024-01-06",
+  "domain": "dtprojects.eu.org",
+  "title": "",
+  "note": "",
+  "file": "zenodo/fake-payment__2024-01_2024-01-06_dtprojects.eu.org.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\fake-payment\\2024-01_2024-01-06_dtprojects.eu.org\\page.png",
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Вместе с картой просят данные, которые для оплаты не нужны"
+  ],
+  "cardinput": true
+ },
+ {
+  "id": "z-clestia2024-com",
+  "scheme": "crypto-drainer",
+  "source": "Zenodo 14880589",
+  "date": "2024-01-14",
+  "domain": "clestia2024.com",
+  "title": "",
+  "note": "«zkSync Token Distribution» / «Join the airdrop»: раздача токенов с кнопкой подключения кошелька",
+  "file": "zenodo/crypto-drainer__2024-01_2024-01-14_clestia2024.com.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\crypto-drainer\\2024-01_2024-01-14_clestia2024.com\\page.png",
+  "link": null,
+  "verdict": "none",
+  "titles": [],
+  "cardinput": false
+ },
+ {
+  "id": "z-get-imxtokens-org",
+  "scheme": "crypto-drainer",
+  "source": "Zenodo 14880589",
+  "date": "2024-01-14",
+  "domain": "get-imxtokens.org",
+  "title": "",
+  "note": "«получите токены» (Immutable X, Uniswap и др.): раздача с кнопкой подключения кошелька",
+  "file": "zenodo/crypto-drainer__2024-01_2024-01-14_get-imxtokens.org.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\crypto-drainer\\2024-01_2024-01-14_get-imxtokens.org\\page.png",
+  "link": null,
+  "verdict": "none",
+  "titles": [],
+  "cardinput": false
+ },
+ {
+  "id": "z-mature-spicy-eoraptor-glitch-me",
+  "scheme": "fake-payment",
+  "source": "Zenodo 14880589",
+  "date": "2024-01-14",
+  "domain": "mature-spicy-eoraptor.glitch.me",
+  "title": "",
+  "note": "копия входа в Tesco Bank с полями карты; данные уходят в Telegram-бота",
+  "file": "zenodo/fake-payment__2024-01_2024-01-14_mature-spicy-eoraptor.glitch.me.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\fake-payment\\2024-01_2024-01-14_mature-spicy-eoraptor.glitch.me\\page.png",
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Данные карты уходят в Telegram-бота",
+   "Скрипт читает поля карты и умеет отправлять данные",
+   "Скрипт читает поля карты и умеет отправлять данные"
+  ],
+  "cardinput": true
+ },
+ {
+  "id": "z-vemax-eu",
+  "scheme": "fake-payment",
+  "source": "Zenodo 14880589",
+  "date": "2024-01-14",
+  "domain": "vemax.eu",
+  "title": "",
+  "note": "",
+  "file": "zenodo/fake-payment__2024-01_2024-01-14_vemax.eu.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\fake-payment\\2024-01_2024-01-14_vemax.eu\\page.png",
+  "link": null,
+  "verdict": "ok",
+  "titles": [],
+  "cardinput": true
+ },
+ {
+  "id": "z-booking-info-93843-bid",
+  "scheme": "fake-payment",
+  "source": "Zenodo 14880589",
+  "date": "2024-01-17",
+  "domain": "booking.info-93843.bid",
+  "title": "",
+  "note": "копия Booking.com: «подтвердите карту, иначе бронь отменят»",
+  "file": "zenodo/payout__2024-01_2024-01-17_booking.info-93843.bid.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\payout\\2024-01_2024-01-17_booking.info-93843.bid\\page.png",
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "cardinput": true
+ },
+ {
+  "id": "z-bni-secure-redi4pp-com",
+  "scheme": "payout",
+  "source": "Zenodo 14880589",
+  "date": "2024-01-17",
+  "domain": "bni-secure.redi4pp.com",
+  "title": "",
+  "note": "«розыгрыш призов банка BNI»: для приза просят номер дебетовой карты, PIN и номер телефона",
+  "file": "zenodo/payout__2024-01_2024-01-17_bni-secure.redi4pp.com.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\payout\\2024-01_2024-01-17_bni-secure.redi4pp.com\\page.png",
+  "link": null,
+  "verdict": "ok",
+  "titles": [],
+  "cardinput": true
+ },
+ {
+  "id": "z-107-165-195-68",
+  "scheme": "investment",
+  "source": "Zenodo 14880589",
+  "date": "2024-01-01",
+  "domain": "107.165.195.68",
+  "title": "",
+  "note": "сайт «инвестиционной платформы» с личным кабинетом",
+  "file": "zenodo/investment__2024-01_2024-01-01_107.165.195.68.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\investment\\2024-01_2024-01-01_107.165.195.68\\page.png",
+  "link": null,
+  "verdict": "none",
+  "titles": [],
+  "cardinput": false
+ },
+ {
+  "id": "z-dhlinternationale-page-link",
+  "scheme": "fake-payment",
+  "source": "Zenodo 14880589",
+  "date": "2024-01-01",
+  "domain": "dhlinternationale.page.link",
+  "title": "",
+  "note": "оплата «пошлины» или «доставки»: форма карты, затем код из SMS",
+  "file": "zenodo/payout__2024-01_2024-01-01_dhlinternationale.page.link.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\payout\\2024-01_2024-01-01_dhlinternationale.page.link\\page.png",
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "cardinput": true
+ },
+ {
+  "id": "z-feline-autumn-oriole-glitch-me",
+  "scheme": "fake-payment",
+  "source": "Zenodo 14880589",
+  "date": "2024-01-12",
+  "domain": "feline-autumn-oriole.glitch.me",
+  "title": "",
+  "note": "копия входа в Tesco Bank с полями карты; данные уходят в Telegram-бота",
+  "file": "zenodo/investment__2024-01_2024-01-12_feline-autumn-oriole.glitch.me.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\investment\\2024-01_2024-01-12_feline-autumn-oriole.glitch.me\\page.png",
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Данные карты уходят в Telegram-бота",
+   "Скрипт читает поля карты и умеет отправлять данные",
+   "Скрипт читает поля карты и умеет отправлять данные"
+  ],
+  "cardinput": true
+ },
+ {
+  "id": "z-bnl-awaltahun-updetterbaru-com",
+  "scheme": "payout",
+  "source": "Zenodo 14880589",
+  "date": "2024-01-12",
+  "domain": "bnl-awaltahun.updetterbaru.com",
+  "title": "",
+  "note": "«розыгрыш призов банка BNI»: для приза просят номер дебетовой карты, PIN и номер телефона",
+  "file": "zenodo/payout__2024-01_2024-01-12_bnl-awaltahun.updetterbaru.com.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\payout\\2024-01_2024-01-12_bnl-awaltahun.updetterbaru.com\\page.png",
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Данные карты уходят в Telegram-бота"
+  ],
+  "cardinput": true
+ },
+ {
+  "id": "z-bni-pestapoint-awaltahun-bshsjsksks1-com",
+  "scheme": "payout",
+  "source": "Zenodo 14880589",
+  "date": "2024-01-15",
+  "domain": "bni-pestapoint-awaltahun.bshsjsksks1.com",
+  "title": "",
+  "note": "«розыгрыш призов банка BNI»: для приза просят номер дебетовой карты, PIN и номер телефона",
+  "file": "zenodo/payout__2024-01_2024-01-15_bni-pestapoint-awaltahun.bshsjsksks1.com.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\payout\\2024-01_2024-01-15_bni-pestapoint-awaltahun.bshsjsksks1.com\\page.png",
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Данные карты уходят в Telegram-бота"
+  ],
+  "cardinput": true
+ },
+ {
+  "id": "z-scratch-sassy-writer-glitch-me",
+  "scheme": "fake-payment",
+  "source": "Zenodo 14880589",
+  "date": "2024-01-15",
+  "domain": "scratch-sassy-writer.glitch.me",
+  "title": "",
+  "note": "копия входа в Tesco Bank с полями карты; данные уходят в Telegram-бота",
+  "file": "zenodo/investment__2024-01_2024-01-15_scratch-sassy-writer.glitch.me.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\investment\\2024-01_2024-01-15_scratch-sassy-writer.glitch.me\\page.png",
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Данные карты уходят в Telegram-бота",
+   "Скрипт читает поля карты и умеет отправлять данные",
+   "Скрипт читает поля карты и умеет отправлять данные"
+  ],
+  "cardinput": true
+ },
+ {
+  "id": "z-gebyar-undian-berhadiah-bshsjsksks1-com",
+  "scheme": "payout",
+  "source": "Zenodo 14880589",
+  "date": "2024-01-15",
+  "domain": "gebyar-undian-berhadiah.bshsjsksks1.com",
+  "title": "",
+  "note": "«розыгрыш призов банка BNI»: для приза просят номер дебетовой карты, PIN и номер телефона",
+  "file": "zenodo/payout__2024-01_2024-01-15_gebyar-undian-berhadiah.bshsjsksks1.com.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\payout\\2024-01_2024-01-15_gebyar-undian-berhadiah.bshsjsksks1.com\\page.png",
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Данные карты уходят в Telegram-бота"
+  ],
+  "cardinput": true
+ },
+ {
+  "id": "z-skema-tarifbnl-vercel-app",
+  "scheme": "payout",
+  "source": "Zenodo 14880589",
+  "date": "2024-01-15",
+  "domain": "skema-tarifbnl.vercel.app",
+  "title": "",
+  "note": "«розыгрыш призов банка BNI»: для приза просят номер дебетовой карты, PIN и номер телефона",
+  "file": "zenodo/payout__2024-01_2024-01-15_skema-tarifbnl.vercel.app.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\payout\\2024-01_2024-01-15_skema-tarifbnl.vercel.app\\page.png",
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Данные карты уходят в Telegram-бота"
+  ],
+  "cardinput": true
+ },
+ {
+  "id": "z-gebyar-undian-bni-awal-tahun-resmi2024-a",
+  "scheme": "payout",
+  "source": "Zenodo 14880589",
+  "date": "2024-01-15",
+  "domain": "gebyar-undian-bni-awal-tahun.resmi2024.art",
+  "title": "",
+  "note": "«розыгрыш призов банка BNI»: для приза просят номер дебетовой карты, PIN и номер телефона",
+  "file": "zenodo/payout__2024-01_2024-01-15_gebyar-undian-bni-awal-tahun.resmi2024.art.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\payout\\2024-01_2024-01-15_gebyar-undian-bni-awal-tahun.resmi2024.art\\page.png",
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Данные карты уходят в Telegram-бота"
+  ],
+  "cardinput": true
+ },
+ {
+  "id": "z-hadiahbnl2024-danaidjkt-com",
+  "scheme": "payout",
+  "source": "Zenodo 14880589",
+  "date": "2024-01-15",
+  "domain": "hadiahbnl2024.danaidjkt.com",
+  "title": "",
+  "note": "«розыгрыш призов банка BNI»: для приза просят номер дебетовой карты, PIN и номер телефона",
+  "file": "zenodo/payout__2024-01_2024-01-15_hadiahbnl2024.danaidjkt.com.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\payout\\2024-01_2024-01-15_hadiahbnl2024.danaidjkt.com\\page.png",
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Данные карты уходят в Telegram-бота"
+  ],
+  "cardinput": true
+ },
+ {
+  "id": "z-gebyarbnipromo-bshsjsksks-com",
+  "scheme": "payout",
+  "source": "Zenodo 14880589",
+  "date": "2024-01-02",
+  "domain": "gebyarbnipromo.bshsjsksks.com",
+  "title": "",
+  "note": "«розыгрыш призов банка BNI»: для приза просят номер дебетовой карты, PIN и номер телефона",
+  "file": "zenodo/payout__2024-01_2024-01-02_gebyarbnipromo.bshsjsksks.com.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\payout\\2024-01_2024-01-02_gebyarbnipromo.bshsjsksks.com\\page.png",
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Данные карты уходят в Telegram-бота"
+  ],
+  "cardinput": true
+ },
+ {
+  "id": "z-www-colegiosuizo-net",
+  "scheme": "fake-payment",
+  "source": "Zenodo 14880589",
+  "date": "2024-01-29",
+  "domain": "www.colegiosuizo.net",
+  "title": "",
+  "note": "копия сайта USPS на взломанном сайте школы: оплата «доставки»",
+  "file": "zenodo/payout__2024-01_2024-01-29_www.colegiosuizo.net.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\payout\\2024-01_2024-01-29_www.colegiosuizo.net\\page.png",
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "cardinput": true
+ },
+ {
+  "id": "z-colegiosuizo-net",
+  "scheme": "fake-payment",
+  "source": "Zenodo 14880589",
+  "date": "2024-01-29",
+  "domain": "colegiosuizo.net",
+  "title": "",
+  "note": "копия сайта USPS на взломанном сайте школы: оплата «доставки»",
+  "file": "zenodo/payout__2024-01_2024-01-29_colegiosuizo.net.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\payout\\2024-01_2024-01-29_colegiosuizo.net\\page.png",
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "cardinput": true
+ },
+ {
+  "id": "z-regular-helix-august-glitch-me",
+  "scheme": "fake-payment",
+  "source": "Zenodo 14880589",
+  "date": "2024-01-04",
+  "domain": "regular-helix-august.glitch.me",
+  "title": "",
+  "note": "копия входа в Tesco Bank с полями карты; данные уходят в Telegram-бота",
+  "file": "zenodo/investment__2024-01_2024-01-04_regular-helix-august.glitch.me.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\investment\\2024-01_2024-01-04_regular-helix-august.glitch.me\\page.png",
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Данные карты уходят в Telegram-бота",
+   "Скрипт читает поля карты и умеет отправлять данные",
+   "Скрипт читает поля карты и умеет отправлять данные"
+  ],
+  "cardinput": true
+ },
+ {
+  "id": "z-glen-early-pantydraco-glitch-me",
+  "scheme": "fake-payment",
+  "source": "Zenodo 14880589",
+  "date": "2024-01-25",
+  "domain": "glen-early-pantydraco.glitch.me",
+  "title": "",
+  "note": "копия входа в Tesco Bank с полями карты; данные уходят в Telegram-бота",
+  "file": "zenodo/investment__2024-01_2024-01-25_glen-early-pantydraco.glitch.me.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\investment\\2024-01_2024-01-25_glen-early-pantydraco.glitch.me\\page.png",
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Данные карты уходят в Telegram-бота",
+   "Скрипт читает поля карты и умеет отправлять данные",
+   "Скрипт читает поля карты и умеет отправлять данные"
+  ],
+  "cardinput": true
+ },
+ {
+  "id": "z-relic-thankful-flavor-glitch-me",
+  "scheme": "fake-payment",
+  "source": "Zenodo 14880589",
+  "date": "2024-01-25",
+  "domain": "relic-thankful-flavor.glitch.me",
+  "title": "",
+  "note": "копия входа в Tesco Bank с полями карты; данные уходят в Telegram-бота",
+  "file": "zenodo/investment__2024-01_2024-01-25_relic-thankful-flavor.glitch.me.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\investment\\2024-01_2024-01-25_relic-thankful-flavor.glitch.me\\page.png",
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Данные карты уходят в Telegram-бота",
+   "Скрипт читает поля карты и умеет отправлять данные",
+   "Скрипт читает поля карты и умеет отправлять данные"
+  ],
+  "cardinput": true
+ },
+ {
+  "id": "z-cooked-quirky-gambler-glitch-me",
+  "scheme": "fake-payment",
+  "source": "Zenodo 14880589",
+  "date": "2024-01-03",
+  "domain": "cooked-quirky-gambler.glitch.me",
+  "title": "",
+  "note": "копия входа в Tesco Bank с полями карты; данные уходят в Telegram-бота",
+  "file": "zenodo/investment__2024-01_2024-01-03_cooked-quirky-gambler.glitch.me.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\investment\\2024-01_2024-01-03_cooked-quirky-gambler.glitch.me\\page.png",
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Данные карты уходят в Telegram-бота",
+   "Скрипт читает поля карты и умеет отправлять данные",
+   "Скрипт читает поля карты и умеет отправлять данные"
+  ],
+  "cardinput": true
+ },
+ {
+  "id": "z-www-pickahome-com",
+  "scheme": "tech-support",
+  "source": "Zenodo 14880589",
+  "date": "2024-01-30",
+  "domain": "www.pickahome.com",
+  "title": "",
+  "note": "«McAfee Security Browser Scan: your computer has 2 viruses» — поддельное предупреждение антивируса",
+  "file": "zenodo/tech-support__2024-01_2024-01-30_www.pickahome.com.html",
+  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\tech-support\\2024-01_2024-01-30_www.pickahome.com\\page.png",
+  "link": null,
+  "verdict": "none",
+  "titles": [],
+  "cardinput": false
+ },
+ {
+  "id": "p-0",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "crm.carsinia.com",
+  "title": "подделка impots",
+  "file": "phish/0.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "impots"
+ },
+ {
+  "id": "p-1",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "irs.gov-validate-details.mitreacris-trans.ro",
+  "title": "подделка irs",
+  "file": "phish/1.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Вместе с картой просят данные, которые для оплаты не нужны",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "irs"
+ },
+ {
+  "id": "p-2",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "mail.fallauae.com",
+  "title": "подделка chase",
+  "file": "phish/2.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Вместе с картой просят данные, которые для оплаты не нужны",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "chase"
+ },
+ {
+  "id": "p-7",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "witchheal.com",
+  "title": "подделка amex",
+  "file": "phish/7.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "amex"
+ },
+ {
+  "id": "p-9",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "metrocti.com",
+  "title": "подделка apple",
+  "file": "phish/9.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Вместе с картой просят данные, которые для оплаты не нужны",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "apple"
+ },
+ {
+  "id": "p-21",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "orange.fr-clientespace.ga",
+  "title": "подделка orange",
+  "file": "phish/21.html",
+  "orig": null,
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "orange"
+ },
+ {
+  "id": "p-23",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "mail.royalfenceandgate.com",
+  "title": "подделка cibc",
+  "file": "phish/23.html",
+  "orig": null,
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "cibc"
+ },
+ {
+  "id": "p-36",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "support-amznuk.com",
+  "title": "подделка amazon",
+  "file": "phish/36.html",
+  "orig": null,
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "amazon"
+ },
+ {
+  "id": "p-38",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "www.smcsistemas.com.br",
+  "title": "подделка sfr",
+  "file": "phish/38.html",
+  "orig": null,
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "sfr"
+ },
+ {
+  "id": "p-48",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "theseller.com.mx",
+  "title": "подделка boa",
+  "file": "phish/48.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "boa"
+ },
+ {
+  "id": "p-62",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "assured.register-access.com",
+  "title": "подделка netflix",
+  "file": "phish/62.html",
+  "orig": null,
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "netflix"
+ },
+ {
+  "id": "p-74",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "access004app.000webhostapp.com",
+  "title": "подделка paypal",
+  "file": "phish/74.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "paypal"
+ },
+ {
+  "id": "p-97",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "www.visadpsgiftcard.com",
+  "title": "подделка navy",
+  "file": "phish/97.html",
+  "orig": null,
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "navy"
+ },
+ {
+  "id": "p-111",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "www.apctt.org",
+  "title": "подделка bmo",
+  "file": "phish/111.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "bmo"
+ },
+ {
+  "id": "p-123",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "www.exinvilproduc.com",
+  "title": "подделка wellsfargo",
+  "file": "phish/123.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Вместе с картой просят данные, которые для оплаты не нужны",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "wellsfargo"
+ },
+ {
+  "id": "p-145",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "vulpzelindro.tk",
+  "title": "подделка facebook",
+  "file": "phish/145.html",
+  "orig": null,
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "facebook"
+ },
+ {
+  "id": "p-147",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "coachtestprep.s3.amazonaws.com",
+  "title": "подделка usaa",
+  "file": "phish/147.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Вместе с картой просят данные, которые для оплаты не нужны",
+   "Данные карты уходят на другой сайт",
+   "Данные карты уходят на другой сайт"
+  ],
+  "brand": "usaa"
+ },
+ {
+  "id": "p-149",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "acesso-online.com",
+  "title": "подделка itau",
+  "file": "phish/149.html",
+  "orig": null,
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "itau"
+ },
+ {
+  "id": "p-151",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "shivanjalienterprises.com",
+  "title": "подделка dhl",
+  "file": "phish/151.html",
+  "orig": null,
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "dhl"
+ },
+ {
+  "id": "p-154",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "saluti24.ru",
+  "title": "подделка xfinity",
+  "file": "phish/154.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "xfinity"
+ },
+ {
+  "id": "p-205",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "ib.nabaccount.info",
+  "title": "подделка nab",
+  "file": "phish/205.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Вместе с картой просят данные, которые для оплаты не нужны",
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "nab"
+ },
+ {
+  "id": "p-206",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "gooldex.com",
+  "title": "подделка att",
+  "file": "phish/206.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Вместе с картой просят данные, которые для оплаты не нужны",
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "att"
+ },
+ {
+  "id": "p-248",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "coxmailsecurel0ap.blogdns.org",
+  "title": "подделка cox",
+  "file": "phish/248.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Вместе с картой просят данные, которые для оплаты не нужны"
+  ],
+  "brand": "cox"
+ },
+ {
+  "id": "p-287",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "ccj.org.do",
+  "title": "подделка google",
+  "file": "phish/287.html",
+  "orig": null,
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "google"
+ },
+ {
+  "id": "p-337",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "bullhire.com",
+  "title": "подделка sparkasse",
+  "file": "phish/337.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "sparkasse"
+ },
+ {
+  "id": "p-346",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "traditioperennis.com",
+  "title": "подделка natwest",
+  "file": "phish/346.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "natwest"
+ },
+ {
+  "id": "p-440",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "bounce2health.com",
+  "title": "подделка aol",
+  "file": "phish/440.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Вместе с картой просят данные, которые для оплаты не нужны",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "aol"
+ },
+ {
+  "id": "p-503",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "www.infinityautoparts.com.pa",
+  "title": "подделка capitalone",
+  "file": "phish/503.html",
+  "orig": null,
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "capitalone"
+ },
+ {
+  "id": "p-563",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "algaddal.org",
+  "title": "подделка match",
+  "file": "phish/563.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "match"
+ },
+ {
+  "id": "p-584",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "www.keep-link.ru",
+  "title": "подделка phish",
+  "file": "phish/584.html",
+  "orig": null,
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "phish"
+ },
+ {
+  "id": "es-lab1",
+  "scheme": "skimmer",
+  "source": "E-Skimming Labs (учебная копия)",
+  "date": "2025",
+  "domain": "lab1",
+  "title": "Lab 1: классический Magecart — код дописан в скрипт оформления заказа",
+  "note": "Скрипт скиммера checkout-compromised.js найден по коду. Признак поведения («номер карты ушёл на посторонний сайт») не сработал: в учебной копии «сервер злоумышленника» стоит на том же адресе, что и магазин, — в настоящих атаках это чужой домен. Строки «Кому уйдут деньги: карта Visa •••• 4242» — тестовые номера, напечатанные на учебной странице.",
+  "file": "eskimming/lab1/checkout_single.html",
+  "type": "#card-number",
+  "orig": null,
+  "link": "https://github.com/pci-tamper-protect/e-skimming-labs",
+  "verdict": "warning",
+  "titles": [
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру",
+   "Скрипт читает поля карты и умеет отправлять данные"
+  ]
+ },
+ {
+  "id": "es-lab2-overlay",
+  "scheme": "skimmer",
+  "source": "E-Skimming Labs (учебная копия)",
+  "date": "2025",
+  "domain": "lab2",
+  "title": "Lab 2: поддельная форма поверх настоящей",
+  "note": "Скрипт form-overlay.js найден по коду; саму наложенную форму проверка «поддельная форма поверх настоящей» не увидела. Признак поведения («номер карты ушёл на посторонний сайт») не сработал: в учебной копии «сервер злоумышленника» стоит на том же адресе, что и магазин, — в настоящих атаках это чужой домен. Строки «Кому уйдут деньги: карта Visa •••• 4242» — тестовые номера, напечатанные на учебной странице.",
+  "file": "eskimming/lab2/banking.html?variant=form-overlay",
+  "type": "#card-number",
+  "orig": null,
+  "link": "https://github.com/pci-tamper-protect/e-skimming-labs",
+  "verdict": "warning",
+  "titles": [
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру",
+   "Скрипт читает поля карты и умеет отправлять данные"
+  ]
+ },
+ {
+  "id": "es-lab2-shadow",
+  "scheme": "skimmer",
+  "source": "E-Skimming Labs (учебная копия)",
+  "date": "2025",
+  "domain": "lab2",
+  "title": "Lab 2: скиммер прячется в Shadow DOM",
+  "note": "Скрипт shadow-skimmer.js найден по коду. Признак поведения («номер карты ушёл на посторонний сайт») не сработал: в учебной копии «сервер злоумышленника» стоит на том же адресе, что и магазин, — в настоящих атаках это чужой домен. Строки «Кому уйдут деньги: карта Visa •••• 4242» — тестовые номера, напечатанные на учебной странице.",
+  "file": "eskimming/lab2/banking.html?variant=shadow-skimmer",
+  "type": "#card-number",
+  "orig": null,
+  "link": "https://github.com/pci-tamper-protect/e-skimming-labs",
+  "verdict": "warning",
+  "titles": [
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру",
+   "Скрипт читает поля карты и умеет отправлять данные"
+  ]
+ },
+ {
+  "id": "es-lab2-monitor",
+  "scheme": "skimmer",
+  "source": "E-Skimming Labs (учебная копия)",
+  "date": "2025",
+  "domain": "lab2",
+  "title": "Lab 2: скиммер следит за изменениями страницы",
+  "note": "Скрипт dom-monitor.js найден по коду. Признак поведения («номер карты ушёл на посторонний сайт») не сработал: в учебной копии «сервер злоумышленника» стоит на том же адресе, что и магазин, — в настоящих атаках это чужой домен. Строки «Кому уйдут деньги: карта Visa •••• 4242» — тестовые номера, напечатанные на учебной странице.",
+  "file": "eskimming/lab2/banking.html?variant=dom-monitor",
+  "type": "#card-number",
+  "orig": null,
+  "link": "https://github.com/pci-tamper-protect/e-skimming-labs",
+  "verdict": "warning",
+  "titles": [
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру",
+   "Скрипт читает поля карты и умеет отправлять данные"
+  ]
+ },
+ {
+  "id": "es-lab4",
+  "scheme": "skimmer",
+  "source": "E-Skimming Labs (учебная копия)",
+  "date": "2025",
+  "domain": "lab4",
+  "title": "Lab 4: код скиммера спрятан в картинке значка сайта (стеганография)",
+  "note": "Код скиммера спрятан в картинке значка сайта — в тексте скриптов его нет, и проверка кода его не нашла. Сработал только признак формы. Признак поведения («номер карты ушёл на посторонний сайт») не сработал: в учебной копии «сервер злоумышленника» стоит на том же адресе, что и магазин, — в настоящих атаках это чужой домен. Строки «Кому уйдут деньги: карта Visa •••• 4242» — тестовые номера, напечатанные на учебной странице.",
+  "file": "eskimming/lab4/index.html",
+  "type": "#card-number",
+  "orig": null,
+  "link": "https://github.com/pci-tamper-protect/e-skimming-labs",
+  "verdict": "warning",
+  "titles": [
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ]
+ }
+]

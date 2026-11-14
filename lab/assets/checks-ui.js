@@ -33,6 +33,49 @@
         <div><b>${esc(k.name)}</b> — ${esc(k.what)} <a target="_blank" rel="noopener" href="${k.source.url}">Источник</a>
         ${k.shot ? `<a class="shot" target="_blank" href="/${k.shot}"><img src="/${k.shot}" alt="Снимок настоящей страницы: ${esc(k.name)}"><span>Снимок настоящей страницы. Источник: urlscan.io</span></a>` : ''}</div></div>`;
 
+  // Классификация схемы: собственные пункты схемы (x.taxonomy) и все пункты проверок, которые в ней срабатывают.
+  // Номера не придумываются заново: у проверок они сверены с каталогами MITRE (docs/scenario-evidence.md).
+  function schemeTaxonomy(x) {
+    const rows = new Map();
+    for (const t of x.taxonomy || []) rows.set(t.id, { t, from: ['схема целиком'] });
+    for (const k of x.checks) for (const t of PGCatalog.byId(k.id).taxonomy) {
+      if (!rows.has(t.id)) rows.set(t.id, { t, from: [] });
+      rows.get(t.id).from.push(NUM[k.id]);
+    }
+    const order = (id) => (id.startsWith('CAPEC') ? 0 : id.startsWith('ATT') ? 1 : 2);
+    const list = [...rows.values()].sort((a, b) => order(a.t.id) - order(b.t.id));
+    return `<h2>Классификация MITRE</h2>
+      <p class="small muted">CAPEC — шаблоны атак, ATT&amp;CK — техники злоумышленников, F3 (Fight Fraud Framework) — техники мошенничества.
+      В правом столбце — из какой проверки пришёл номер.</p>
+      <table class="tax"><tbody>${list.map(({ t, from }) => `<tr><td><a target="_blank" rel="noopener" href="${t.url}">${esc(t.id)}</a></td>
+        <td><b>${esc(t.name)}</b><br><span class="muted">${esc(t.why)}</span></td><td class="muted">${esc(from.join(', '))}</td></tr>`).join('')}</tbody></table>`;
+  }
+
+  // Настоящие страницы схемы: снимок оригинала и та же страница в Firefox с расширением (tools/real_pages.py).
+  const VERD = { danger: 'опасно', warning: 'подозрительно', none: 'молчит', ok: 'молчит', timeout: 'не загрузилась' };
+  function realPages(x) {
+    const G = window.REAL_GALLERY;
+    const list = (G && G.schemes[x.id]) || [];
+    if (!list.length) return `<h2>Настоящие страницы</h2><p class="muted">Настоящих страниц этой схемы с сохранённым кодом пока нет.</p>`;
+    const shots = list.filter((r) => r.img);
+    const rest = list.filter((r) => !r.img);
+    const n = (v) => list.filter((r) => r.verdict === v).length;
+    const tested = list.filter((r) => r.verdict).length;
+    const card = (r) => `<figure class="realshot">
+        <a target="_blank" href="/${r.img}"><img loading="lazy" src="/${r.img}" alt="${esc(r.domain)}: снимок страницы и панель помощника"></a>
+        <figcaption><span class="vb ${r.verdict || 'na'}">${VERD[r.verdict] || 'не проверялась'}</span>
+          <b>${esc(r.domain)}</b> · ${esc(r.date)} · ${esc(r.source)}${r.link ? ` · <a target="_blank" rel="noopener" href="${r.link}">открыть в песочнице</a>` : ''}
+          ${r.titles && r.titles.length ? `<br>${esc(r.titles.join('; '))}` : ''}${r.note ? `<br><span class="muted">${esc(r.note)}</span>` : ''}</figcaption></figure>`;
+    return `<h2>Настоящие страницы и что показал помощник</h2>
+      <p class="small muted">Сохранённый код каждой страницы открыт в Firefox с расширением; скрипты страницы и сетевые запросы запрещены,
+      поэтому картинки и стили не грузятся, а в тексте панели вместо адреса мошенников стоит адрес лаборатории (127.0.0.1).
+      Слева — снимок оригинала из источника. Проверено ${tested}: «опасно» — ${n('danger')}, «подозрительно» — ${n('warning')}, молчит — ${n('none') + n('ok')}.</p>
+      <div class="realgrid">${shots.map(card).join('')}</div>
+      ${rest.length ? `<details class="realmore"><summary>Ещё ${rest.length} страниц — списком</summary><table class="signals"><tbody>${rest.map((r) =>
+        `<tr><td><span class="vb ${r.verdict || 'na'}">${VERD[r.verdict] || 'не проверялась'}</span></td><td><b>${esc(r.domain)}</b> · ${esc(r.date)} · ${esc(r.source)}<br><span class="muted">${esc(r.title || '')}${r.note ? ' — ' + esc(r.note) : ''}</span></td>
+         <td>${r.orig ? `<a target="_blank" href="/${r.orig}">снимок</a>` : ''} ${r.link ? `<a target="_blank" rel="noopener" href="${r.link}">песочница</a>` : ''}</td></tr>`).join('')}</tbody></table></details>` : ''}`;
+  }
+
   // ---------- Вид мошенничества ----------
   function showScheme(x) {
     side.querySelectorAll('a').forEach((a) => a.classList.toggle('on', a.dataset.id === 's-' + x.id));
@@ -48,10 +91,12 @@
       <p class="money">${esc(x.money)}</p>
       <h2>Реальные случаи</h2>
       <div class="cases">${x.cases.map(caseHtml).join('')}</div>
+      ${realPages(x)}
       <h2>Что ловит помощник</h2>
       <table class="signals"><tbody>${x.checks.map((k) => `<tr><td>${checkLink(k.id)}</td><td>${esc(k.role)}</td></tr>`).join('')}</tbody></table>
       <h2>Чего помощник в этой схеме не видит</h2>
       <ul class="limits">${x.blind.map((d) => '<li>' + esc(d) + '</li>').join('')}</ul>
+      ${schemeTaxonomy(x)}
       <h2>Источники</h2>
       <div class="src">${srcs.map((q) => `<a target="_blank" rel="noopener" href="${q.url}">${esc(q.title)}</a>`).join('')}</div>`;
     window.scrollTo(0, 0);
