@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Платёжный помощник",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Перед оплатой проверяет страницу: кому уйдут деньги, не подменены ли реквизиты и QR-код, не крадёт ли страница данные карты.",
   "browser_specific_settings": { "gecko": { "id": "payment-helper@diploma.local", "strict_min_version": "109.0" } },
   "permissions": ["storage", "webRequest", "<all_urls>"],
