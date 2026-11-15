@@ -1,6 +1,6 @@
 'use strict';
 const api = typeof browser !== 'undefined' ? browser : chrome;
-const TITLES = { danger: 'Высокий риск — не платите', warning: 'Есть подозрительные признаки', ok: 'Явных признаков обмана не найдено', none: 'Платёжных действий не найдено' };
+const TITLES = { danger: 'Высокий риск – не платите', warning: 'Есть подозрительные признаки', ok: 'Явных признаков обмана не найдено', none: 'Платёжных действий не найдено' };
 const SEV = { danger: ['Опасно', '#d92d20'], warning: ['Подозрительно', '#dc6803'], info: ['К сведению', '#667085'], error: ['Ошибка', '#667085'] };
 const el = (tag, text, cls) => { const e = document.createElement(tag); if (text) e.textContent = text; if (cls) e.className = cls; return e; };
 
@@ -28,7 +28,7 @@ async function load() {
       f.details.forEach((t) => d.append(el('p', t, 'why')));
       const c = PGCatalog.byId(f.check);
       if (f.advice) d.append(el('p', 'Что делать: ' + f.advice, 'todo'));
-      if (c && c.cases && c.cases[0]) d.append(el('p', 'Где такое уже было: ' + c.cases[0].name + ' — ' + c.cases[0].what, 'why'));
+      if (c && c.cases && c.cases[0]) d.append(el('p', 'Где такое уже было: ' + c.cases[0].name + ' – ' + c.cases[0].what, 'why'));
       list.append(d);
     }
     const lim = document.getElementById('limits'); lim.textContent = '';
