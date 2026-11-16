@@ -145,10 +145,8 @@ def plan():
         key = (r['scheme'], r['source'])
         alarm = r['verdict'] in ALARM
         if r['source'] == 'Phish360':
-            # Из 1000 фишинговых страниц Phish360 — по одной на бренд, где помощник сработал, и все пропуски с полем карты.
-            b = r.get('brand')
-            if alarm and per.get(('p360', b), 0) < 1:
-                per[('p360', b)] = 1
+            # Из фишинговых страниц Phish360 снимаются все, на которых помощник сработал.
+            if alarm:
                 pick.append(r)
             continue
         if r['id'].startswith('v-') and not alarm and per.get(key + ('v',), 0) >= 8:
