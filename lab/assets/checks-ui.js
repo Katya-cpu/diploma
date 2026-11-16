@@ -76,7 +76,15 @@
     const G = window.REAL_GALLERY;
     const list = (x.real || []).flatMap((k) => (G && G.schemes[k]) || []);
     if (!list.length) return `<h2>Настоящие страницы</h2><p class="muted">${emptyNote || 'Настоящих страниц с сохранённым кодом пока нет.'}</p>`;
-    const shots = list.filter((r) => r.img);
+    // В снимках – страницы, на которых помощник предупредил: сначала «опасно», источники вперемешку (urlscan.io, Zenodo, Phish360…).
+    const alarm = (r) => r.verdict === 'danger' || r.verdict === 'warning';
+    const bySrc = {};
+    list.filter((r) => r.img && alarm(r)).sort((a, b) => (a.verdict === 'danger' ? 0 : 1) - (b.verdict === 'danger' ? 0 : 1))
+      .forEach((r) => (bySrc[r.source] = bySrc[r.source] || []).push(r));
+    const shots = [];
+    for (let i = 0, left = true; left; i++) { left = false; for (const q of Object.values(bySrc)) if (q[i]) { shots.push(q[i]); left = true; } }
+    const FIRST = 40;
+    const quiet = list.filter((r) => r.img && !alarm(r));   // снимки, где помощник молчит, – отдельным блоком
     const rest = list.filter((r) => !r.img);
     const n = (v) => list.filter((r) => r.verdict === v).length;
     const tested = list.filter((r) => r.verdict).length;
@@ -91,8 +99,11 @@
       пользователя, скачивает код внешних скриптов страницы, чтобы его проверить (не дольше 4 секунд на скрипт).
       Слева – снимок оригинала из источника. Проверено ${tested}: «опасно» – ${n('danger')}, «подозрительно» – ${n('warning')}, молчит – ${n('none') + n('ok')}.</p>
       ${stageTable(list)}
-      <div class="realgrid">${shots.map(card).join('')}</div>
-      ${rest.length ? `<details class="realmore"><summary>Ещё ${rest.length} страниц – списком</summary><table class="signals"><tbody>${rest.map((r) =>
+      ${shots.length ? `<h3 class="realh">Где помощник предупредил – ${shots.length} снимков</h3>` : '<p class="muted">На сохранённых страницах этого вида помощник не предупреждал: денег на них ещё не просят (витрина, первый шаг).</p>'}
+      <div class="realgrid">${shots.slice(0, FIRST).map(card).join('')}</div>
+      ${shots.length > FIRST ? `<details class="realmore"><summary>Ещё ${shots.length - FIRST} снимков с предупреждением</summary><div class="realgrid">${shots.slice(FIRST).map(card).join('')}</div></details>` : ''}
+      ${quiet.length ? `<details class="realmore"><summary>Где помощник молчит – ${quiet.length} снимков</summary><div class="realgrid">${quiet.map(card).join('')}</div></details>` : ''}
+      ${rest.length ? `<details class="realmore"><summary>Без снимка – ещё ${rest.length} страниц списком</summary><table class="signals"><tbody>${rest.map((r) =>
         `<tr><td><span class="vb ${r.verdict || 'na'}">${VERD[r.verdict] || 'не проверялась'}</span></td><td><b>${esc(r.domain)}</b> · ${esc(r.date)} · ${esc(r.source)}<br><span class="muted">${esc(r.title || '')}${r.note ? ' – ' + esc(r.note) : ''}</span></td>
          <td>${r.orig ? `<a target="_blank" href="/${r.orig}">снимок</a>` : ''} ${r.link ? `<a target="_blank" rel="noopener" href="${r.link}">песочница</a>` : ''}</td></tr>`).join('')}</tbody></table></details>` : ''}`;
   }

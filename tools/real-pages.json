@@ -2536,6 +2536,23 @@
   "blur": false
  },
  {
+  "id": "p-12",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "zarnazmeson.ir",
+  "title": "подделка amex",
+  "file": "phish/12.html",
+  "orig": null,
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "amex",
+  "blur": false
+ },
+ {
   "id": "p-21",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -2570,6 +2587,97 @@
   "blur": false
  },
  {
+  "id": "p-25",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "saigonsportcity.com",
+  "title": "подделка chase",
+  "file": "phish/25.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Вместе с картой просят данные, которые для оплаты не нужны"
+  ],
+  "brand": "chase",
+  "blur": false
+ },
+ {
+  "id": "p-27",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "asyateknik.org",
+  "title": "подделка chase",
+  "file": "phish/27.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Вместе с картой просят данные, которые для оплаты не нужны",
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "chase",
+  "blur": false
+ },
+ {
+  "id": "p-29",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "coloradopoolcovers.com",
+  "title": "подделка irs",
+  "file": "phish/29.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Вместе с картой просят данные, которые для оплаты не нужны",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "irs",
+  "blur": false
+ },
+ {
+  "id": "p-34",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "suppliersbd.com",
+  "title": "подделка chase",
+  "file": "phish/34.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Вместе с картой просят данные, которые для оплаты не нужны",
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "chase",
+  "blur": false
+ },
+ {
+  "id": "p-35",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "secure0authinfo.redirectme.net",
+  "title": "подделка chase",
+  "file": "phish/35.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Вместе с картой просят данные, которые для оплаты не нужны",
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "chase",
+  "blur": false
+ },
+ {
   "id": "p-36",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -2587,6 +2695,25 @@
   "blur": false
  },
  {
+  "id": "p-37",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "campoequip.com",
+  "title": "подделка chase",
+  "file": "phish/37.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Вместе с картой просят данные, которые для оплаты не нужны",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "chase",
+  "blur": false
+ },
+ {
   "id": "p-38",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -2601,6 +2728,24 @@
    "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
   ],
   "brand": "sfr",
+  "blur": false
+ },
+ {
+  "id": "p-43",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "uplink.natco-groups.com",
+  "title": "подделка chase",
+  "file": "phish/43.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Вместе с картой просят данные, которые для оплаты не нужны",
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "chase",
   "blur": false
  },
  {
@@ -2622,6 +2767,59 @@
   "blur": false
  },
  {
+  "id": "p-51",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "rnsmazon.com",
+  "title": "подделка amazon",
+  "file": "phish/51.html",
+  "orig": null,
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "amazon",
+  "blur": false
+ },
+ {
+  "id": "p-52",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "mysecurityapple.com",
+  "title": "подделка apple",
+  "file": "phish/52.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "apple",
+  "blur": false
+ },
+ {
+  "id": "p-53",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "araucaniatv.cl",
+  "title": "подделка chase",
+  "file": "phish/53.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Вместе с картой просят данные, которые для оплаты не нужны",
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "chase",
+  "blur": false
+ },
+ {
   "id": "p-62",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -2636,6 +2834,61 @@
    "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
   ],
   "brand": "netflix",
+  "blur": false
+ },
+ {
+  "id": "p-63",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "pappcorn.com",
+  "title": "подделка amex",
+  "file": "phish/63.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "amex",
+  "blur": false
+ },
+ {
+  "id": "p-66",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "rasana.in",
+  "title": "подделка netflix",
+  "file": "phish/66.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "netflix",
+  "blur": false
+ },
+ {
+  "id": "p-72",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "joinermallets.com",
+  "title": "подделка boa",
+  "file": "phish/72.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Вместе с картой просят данные, которые для оплаты не нужны",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "boa",
   "blur": false
  },
  {
@@ -2658,6 +2911,112 @@
   "blur": false
  },
  {
+  "id": "p-75",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "chiefocomedy.com",
+  "title": "подделка apple",
+  "file": "phish/75.html",
+  "orig": null,
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "apple",
+  "blur": false
+ },
+ {
+  "id": "p-76",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "www.dreamcalzature.it",
+  "title": "подделка apple",
+  "file": "phish/76.html",
+  "orig": null,
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "apple",
+  "blur": false
+ },
+ {
+  "id": "p-79",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "regubuil-der.xyz",
+  "title": "подделка netflix",
+  "file": "phish/79.html",
+  "orig": null,
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Данные карты уходят на другой сайт",
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "netflix",
+  "blur": false
+ },
+ {
+  "id": "p-83",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "bulkdonut.com",
+  "title": "подделка boa",
+  "file": "phish/83.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Вместе с картой просят данные, которые для оплаты не нужны",
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "boa",
+  "blur": false
+ },
+ {
+  "id": "p-94",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "smartindianagriculture.com",
+  "title": "подделка sfr",
+  "file": "phish/94.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "sfr",
+  "blur": false
+ },
+ {
+  "id": "p-96",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "t3395702.p.clickup-attachments.com",
+  "title": "подделка chase",
+  "file": "phish/96.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Вместе с картой просят данные, которые для оплаты не нужны",
+   "Данные карты уходят на другой сайт"
+  ],
+  "brand": "chase",
+  "blur": false
+ },
+ {
   "id": "p-97",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -2672,6 +3031,42 @@
    "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
   ],
   "brand": "navy",
+  "blur": false
+ },
+ {
+  "id": "p-101",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "mail.highestpointent.com",
+  "title": "подделка apple",
+  "file": "phish/101.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "apple",
+  "blur": false
+ },
+ {
+  "id": "p-104",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "www.saarstore.com",
+  "title": "подделка chase",
+  "file": "phish/104.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Вместе с картой просят данные, которые для оплаты не нужны",
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "chase",
   "blur": false
  },
  {
@@ -2693,6 +3088,96 @@
   "blur": false
  },
  {
+  "id": "p-112",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "130097880-427789851941116712.preview.editmysite.com",
+  "title": "подделка boa",
+  "file": "phish/112.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Вместе с картой просят данные, которые для оплаты не нужны",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "boa",
+  "blur": false
+ },
+ {
+  "id": "p-116",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "whatsapp.loopytime.im",
+  "title": "подделка netflix",
+  "file": "phish/116.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS"
+  ],
+  "brand": "netflix",
+  "blur": false
+ },
+ {
+  "id": "p-117",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "www.marathontrack.com",
+  "title": "подделка chase",
+  "file": "phish/117.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Вместе с картой просят данные, которые для оплаты не нужны",
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "chase",
+  "blur": false
+ },
+ {
+  "id": "p-119",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "hokibolt.hu",
+  "title": "подделка chase",
+  "file": "phish/119.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Вместе с картой просят данные, которые для оплаты не нужны",
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "chase",
+  "blur": false
+ },
+ {
+  "id": "p-122",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "dromananow.stagingsite.com.au",
+  "title": "подделка chase",
+  "file": "phish/122.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Вместе с картой просят данные, которые для оплаты не нужны",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "chase",
+  "blur": false
+ },
+ {
   "id": "p-123",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -2709,6 +3194,77 @@
    "Данные карты будут отправлены без шифрования"
   ],
   "brand": "wellsfargo",
+  "blur": false
+ },
+ {
+  "id": "p-125",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "131187547-758969404492316567.preview.editmysite.com",
+  "title": "подделка boa",
+  "file": "phish/125.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Вместе с картой просят данные, которые для оплаты не нужны",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "boa",
+  "blur": false
+ },
+ {
+  "id": "p-126",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "simplehome.ca",
+  "title": "подделка paypal",
+  "file": "phish/126.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "paypal",
+  "blur": false
+ },
+ {
+  "id": "p-127",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "ecrs.in",
+  "title": "подделка apple",
+  "file": "phish/127.html",
+  "orig": null,
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "apple",
+  "blur": false
+ },
+ {
+  "id": "p-135",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "informations-update.com",
+  "title": "подделка apple",
+  "file": "phish/135.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "apple",
   "blur": false
  },
  {
@@ -2748,6 +3304,24 @@
   "blur": false
  },
  {
+  "id": "p-148",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "het-impp11.com",
+  "title": "подделка impots",
+  "file": "phish/148.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "impots",
+  "blur": false
+ },
+ {
   "id": "p-149",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -2762,6 +3336,23 @@
    "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
   ],
   "brand": "itau",
+  "blur": false
+ },
+ {
+  "id": "p-150",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "www.paypalverifycentral.com",
+  "title": "подделка paypal",
+  "file": "phish/150.html",
+  "orig": null,
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "paypal",
   "blur": false
  },
  {
@@ -2797,6 +3388,377 @@
    "Данные карты будут отправлены без шифрования"
   ],
   "brand": "xfinity",
+  "blur": false
+ },
+ {
+  "id": "p-155",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "smartindianagriculture.com",
+  "title": "подделка sfr",
+  "file": "phish/155.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "sfr",
+  "blur": false
+ },
+ {
+  "id": "p-160",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "cartoworld.co.ke",
+  "title": "подделка chase",
+  "file": "phish/160.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Вместе с картой просят данные, которые для оплаты не нужны",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "chase",
+  "blur": false
+ },
+ {
+  "id": "p-162",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "downtowndavis.org",
+  "title": "подделка chase",
+  "file": "phish/162.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "chase",
+  "blur": false
+ },
+ {
+  "id": "p-163",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "35.188.36.185",
+  "title": "подделка cibc",
+  "file": "phish/163.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты уходят на другой сайт",
+   "Данные карты уходят на другой сайт",
+   "Данные карты уходят на другой сайт"
+  ],
+  "brand": "cibc",
+  "blur": false
+ },
+ {
+  "id": "p-168",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "173.82.143.219",
+  "title": "подделка amazon",
+  "file": "phish/168.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Вместе с картой просят данные, которые для оплаты не нужны"
+  ],
+  "brand": "amazon",
+  "blur": false
+ },
+ {
+  "id": "p-169",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "securitybb.duckdns.org",
+  "title": "подделка apple",
+  "file": "phish/169.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "apple",
+  "blur": false
+ },
+ {
+  "id": "p-170",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "aapkaclassified.in",
+  "title": "подделка netflix",
+  "file": "phish/170.html",
+  "orig": null,
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "netflix",
+  "blur": false
+ },
+ {
+  "id": "p-175",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "wazislamic.com",
+  "title": "подделка chase",
+  "file": "phish/175.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Вместе с картой просят данные, которые для оплаты не нужны",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "chase",
+  "blur": false
+ },
+ {
+  "id": "p-177",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "glassbjerget.no",
+  "title": "подделка wellsfargo",
+  "file": "phish/177.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Вместе с картой просят данные, которые для оплаты не нужны",
+   "Данные карты будут отправлены без шифрования",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "wellsfargo",
+  "blur": false
+ },
+ {
+  "id": "p-178",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "www.cv76se.com",
+  "title": "подделка usaa",
+  "file": "phish/178.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Вместе с картой просят данные, которые для оплаты не нужны",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "usaa",
+  "blur": false
+ },
+ {
+  "id": "p-179",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "orange.fr.sanpedroandjankowitz.com",
+  "title": "подделка orange",
+  "file": "phish/179.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "orange",
+  "blur": false
+ },
+ {
+  "id": "p-182",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "uptimeds.com",
+  "title": "подделка cibc",
+  "file": "phish/182.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Вместе с картой просят данные, которые для оплаты не нужны",
+   "Данные карты будут отправлены без шифрования",
+   "Данные карты будут отправлены без шифрования",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "cibc",
+  "blur": false
+ },
+ {
+  "id": "p-186",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "www.usaa.rbintll.com",
+  "title": "подделка usaa",
+  "file": "phish/186.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Вместе с картой просят данные, которые для оплаты не нужны",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "usaa",
+  "blur": false
+ },
+ {
+  "id": "p-187",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "puli-hostel.com.tw",
+  "title": "подделка amazon",
+  "file": "phish/187.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "amazon",
+  "blur": false
+ },
+ {
+  "id": "p-190",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "bursaburo.com",
+  "title": "подделка chase",
+  "file": "phish/190.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Вместе с картой просят данные, которые для оплаты не нужны",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "chase",
+  "blur": false
+ },
+ {
+  "id": "p-192",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "www.carterschartersfishing.com",
+  "title": "подделка netflix",
+  "file": "phish/192.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "netflix",
+  "blur": false
+ },
+ {
+  "id": "p-194",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "thebitcoindoubler.org",
+  "title": "подделка bmo",
+  "file": "phish/194.html",
+  "orig": null,
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "bmo",
+  "blur": false
+ },
+ {
+  "id": "p-197",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "proxima-net.com",
+  "title": "подделка paypal",
+  "file": "phish/197.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Вместе с картой просят данные, которые для оплаты не нужны",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "paypal",
+  "blur": false
+ },
+ {
+  "id": "p-200",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "fashionkeeda.in",
+  "title": "подделка bmo",
+  "file": "phish/200.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Вместе с картой просят данные, которые для оплаты не нужны",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "bmo",
+  "blur": false
+ },
+ {
+  "id": "p-204",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "worldvisainfo.com",
+  "title": "подделка boa",
+  "file": "phish/204.html",
+  "orig": null,
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "boa",
   "blur": false
  },
  {
@@ -2836,6 +3798,277 @@
   "blur": false
  },
  {
+  "id": "p-213",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "1www-ameeriican-expreess-com-mx.a12519.com",
+  "title": "подделка amex",
+  "file": "phish/213.html",
+  "orig": null,
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "amex",
+  "blur": false
+ },
+ {
+  "id": "p-217",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "46.21.147.248",
+  "title": "подделка cibc",
+  "file": "phish/217.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "cibc",
+  "blur": false
+ },
+ {
+  "id": "p-221",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "assalweb.org",
+  "title": "подделка boa",
+  "file": "phish/221.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Вместе с картой просят данные, которые для оплаты не нужны",
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "boa",
+  "blur": false
+ },
+ {
+  "id": "p-222",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "www.studiocoge.eu",
+  "title": "подделка paypal",
+  "file": "phish/222.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "paypal",
+  "blur": false
+ },
+ {
+  "id": "p-225",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "101.99.90.161",
+  "title": "подделка cibc",
+  "file": "phish/225.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "cibc",
+  "blur": false
+ },
+ {
+  "id": "p-229",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "www.kerenorins.co.il",
+  "title": "подделка paypal",
+  "file": "phish/229.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "paypal",
+  "blur": false
+ },
+ {
+  "id": "p-230",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "kd-vrn.ru",
+  "title": "подделка apple",
+  "file": "phish/230.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Вместе с картой просят данные, которые для оплаты не нужны",
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "apple",
+  "blur": false
+ },
+ {
+  "id": "p-231",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "www.musikschule-elegie.de",
+  "title": "подделка cibc",
+  "file": "phish/231.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования",
+   "Данные карты будут отправлены без шифрования",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "cibc",
+  "blur": false
+ },
+ {
+  "id": "p-232",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "deafnewsline.com",
+  "title": "подделка chase",
+  "file": "phish/232.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Вместе с картой просят данные, которые для оплаты не нужны",
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "chase",
+  "blur": false
+ },
+ {
+  "id": "p-236",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "solidaire.apf.asso.fr",
+  "title": "подделка nab",
+  "file": "phish/236.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "nab",
+  "blur": false
+ },
+ {
+  "id": "p-237",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "deep-institute.com",
+  "title": "подделка boa",
+  "file": "phish/237.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Вместе с картой просят данные, которые для оплаты не нужны",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "boa",
+  "blur": false
+ },
+ {
+  "id": "p-242",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "www.diycarbonwheels.com",
+  "title": "подделка paypal",
+  "file": "phish/242.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "paypal",
+  "blur": false
+ },
+ {
+  "id": "p-243",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "oneclick877.webcindario.com",
+  "title": "подделка boa",
+  "file": "phish/243.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Вместе с картой просят данные, которые для оплаты не нужны",
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "boa",
+  "blur": false
+ },
+ {
+  "id": "p-246",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "viewnflix.idtoken.ga",
+  "title": "подделка netflix",
+  "file": "phish/246.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "netflix",
+  "blur": false
+ },
+ {
+  "id": "p-247",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "naukriortaiyari.com",
+  "title": "подделка apple",
+  "file": "phish/247.html",
+  "orig": null,
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "apple",
+  "blur": false
+ },
+ {
   "id": "p-248",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -2853,6 +4086,294 @@
   "blur": false
  },
  {
+  "id": "p-249",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "primasofa.com",
+  "title": "подделка paypal",
+  "file": "phish/249.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "paypal",
+  "blur": false
+ },
+ {
+  "id": "p-253",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "www.groupinsurance.net.in",
+  "title": "подделка xfinity",
+  "file": "phish/253.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Вместе с картой просят данные, которые для оплаты не нужны",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "xfinity",
+  "blur": false
+ },
+ {
+  "id": "p-254",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "boaofsafe.webcindario.com",
+  "title": "подделка boa",
+  "file": "phish/254.html",
+  "orig": null,
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "boa",
+  "blur": false
+ },
+ {
+  "id": "p-255",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "quick-activity.ghsinfotech.com",
+  "title": "подделка boa",
+  "file": "phish/255.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "boa",
+  "blur": false
+ },
+ {
+  "id": "p-256",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "www.e-perpus.sidoarjokab.go.id",
+  "title": "подделка bmo",
+  "file": "phish/256.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "bmo",
+  "blur": false
+ },
+ {
+  "id": "p-258",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "aerioustravel.com",
+  "title": "подделка boa",
+  "file": "phish/258.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "boa",
+  "blur": false
+ },
+ {
+  "id": "p-259",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "aerioustravel.com",
+  "title": "подделка boa",
+  "file": "phish/259.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "boa",
+  "blur": false
+ },
+ {
+  "id": "p-260",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "derynwarren.com",
+  "title": "подделка paypal",
+  "file": "phish/260.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "paypal",
+  "blur": false
+ },
+ {
+  "id": "p-261",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "art-sticker.fr",
+  "title": "подделка cox",
+  "file": "phish/261.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "cox",
+  "blur": false
+ },
+ {
+  "id": "p-263",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "vuybinokloliuytr68ik-okgt.pagedemo.co",
+  "title": "подделка amazon",
+  "file": "phish/263.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "amazon",
+  "blur": false
+ },
+ {
+  "id": "p-264",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "account.notifications.support.cugl.co.in",
+  "title": "подделка paypal",
+  "file": "phish/264.html",
+  "orig": null,
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "paypal",
+  "blur": false
+ },
+ {
+  "id": "p-265",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "slabcitysweets.com",
+  "title": "подделка bmo",
+  "file": "phish/265.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "bmo",
+  "blur": false
+ },
+ {
+  "id": "p-266",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "paypal-support.valid389.ml",
+  "title": "подделка paypal",
+  "file": "phish/266.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "paypal",
+  "blur": false
+ },
+ {
+  "id": "p-275",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "availableupgrade1enhancedsupp6470.ml",
+  "title": "подделка bmo",
+  "file": "phish/275.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Вместе с картой просят данные, которые для оплаты не нужны",
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "bmo",
+  "blur": false
+ },
+ {
+  "id": "p-281",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "viaggioblu.jp",
+  "title": "подделка cox",
+  "file": "phish/281.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Вместе с картой просят данные, которые для оплаты не нужны"
+  ],
+  "brand": "cox",
+  "blur": false
+ },
+ {
+  "id": "p-284",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "www.haunreoiye.com",
+  "title": "подделка amex",
+  "file": "phish/284.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "amex",
+  "blur": false
+ },
+ {
   "id": "p-287",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -2867,6 +4388,276 @@
    "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
   ],
   "brand": "google",
+  "blur": false
+ },
+ {
+  "id": "p-292",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "findtheseess.art",
+  "title": "подделка chase",
+  "file": "phish/292.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Вместе с картой просят данные, которые для оплаты не нужны"
+  ],
+  "brand": "chase",
+  "blur": false
+ },
+ {
+  "id": "p-296",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "pruebadepaginate.webcindario.com",
+  "title": "подделка boa",
+  "file": "phish/296.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Вместе с картой просят данные, которые для оплаты не нужны",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "boa",
+  "blur": false
+ },
+ {
+  "id": "p-298",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "invoidcz35.com",
+  "title": "подделка cibc",
+  "file": "phish/298.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "cibc",
+  "blur": false
+ },
+ {
+  "id": "p-300",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "www.linkedinpublic.com",
+  "title": "подделка paypal",
+  "file": "phish/300.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "paypal",
+  "blur": false
+ },
+ {
+  "id": "p-305",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "proxima-net.com",
+  "title": "подделка paypal",
+  "file": "phish/305.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Вместе с картой просят данные, которые для оплаты не нужны",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "paypal",
+  "blur": false
+ },
+ {
+  "id": "p-310",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "bqinteriors.co.za",
+  "title": "подделка cox",
+  "file": "phish/310.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Вместе с картой просят данные, которые для оплаты не нужны",
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "cox",
+  "blur": false
+ },
+ {
+  "id": "p-311",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "hoganlong.com",
+  "title": "подделка wellsfargo",
+  "file": "phish/311.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Вместе с картой просят данные, которые для оплаты не нужны",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "wellsfargo",
+  "blur": false
+ },
+ {
+  "id": "p-314",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "cnnfan.org",
+  "title": "подделка bmo",
+  "file": "phish/314.html",
+  "orig": null,
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "bmo",
+  "blur": false
+ },
+ {
+  "id": "p-318",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "r-industrialeslucianaierl.com",
+  "title": "подделка cibc",
+  "file": "phish/318.html",
+  "orig": null,
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "cibc",
+  "blur": false
+ },
+ {
+  "id": "p-326",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "cafecitoperez.ivanidzakovic.com",
+  "title": "подделка itau",
+  "file": "phish/326.html",
+  "orig": null,
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "itau",
+  "blur": false
+ },
+ {
+  "id": "p-329",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "www.webonedesign.de",
+  "title": "подделка usaa",
+  "file": "phish/329.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "usaa",
+  "blur": false
+ },
+ {
+  "id": "p-330",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "104.197.144.174",
+  "title": "подделка apple",
+  "file": "phish/330.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Вместе с картой просят данные, которые для оплаты не нужны",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "apple",
+  "blur": false
+ },
+ {
+  "id": "p-332",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "u511082kbt.ha003.t.justns.ru",
+  "title": "подделка impots",
+  "file": "phish/332.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "impots",
+  "blur": false
+ },
+ {
+  "id": "p-333",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "bakinsoport.webcindario.com",
+  "title": "подделка boa",
+  "file": "phish/333.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Вместе с картой просят данные, которые для оплаты не нужны",
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "boa",
+  "blur": false
+ },
+ {
+  "id": "p-335",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "valenzuelapropiedades.com",
+  "title": "подделка paypal",
+  "file": "phish/335.html",
+  "orig": null,
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "paypal",
   "blur": false
  },
  {
@@ -2888,6 +4679,60 @@
   "blur": false
  },
  {
+  "id": "p-338",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "jobselect.ml",
+  "title": "подделка cox",
+  "file": "phish/338.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Вместе с картой просят данные, которые для оплаты не нужны",
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "cox",
+  "blur": false
+ },
+ {
+  "id": "p-339",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "syyysssteemgayo.com",
+  "title": "подделка chase",
+  "file": "phish/339.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Вместе с картой просят данные, которые для оплаты не нужны",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "chase",
+  "blur": false
+ },
+ {
+  "id": "p-345",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "hizqui.com",
+  "title": "подделка apple",
+  "file": "phish/345.html",
+  "orig": null,
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "apple",
+  "blur": false
+ },
+ {
   "id": "p-346",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -2903,6 +4748,904 @@
    "Данные карты будут отправлены без шифрования"
   ],
   "brand": "natwest",
+  "blur": false
+ },
+ {
+  "id": "p-347",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "usaa.com-sec-inet-auth-logon-ent-logon-logon-redirectjsp8774.oceanvibes.com.au",
+  "title": "подделка usaa",
+  "file": "phish/347.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Вместе с картой просят данные, которые для оплаты не нужны",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "usaa",
+  "blur": false
+ },
+ {
+  "id": "p-351",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "swafanfare.co.kr",
+  "title": "подделка nab",
+  "file": "phish/351.html",
+  "orig": null,
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "nab",
+  "blur": false
+ },
+ {
+  "id": "p-352",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "chasa-inc.sytes.net",
+  "title": "подделка chase",
+  "file": "phish/352.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Вместе с картой просят данные, которые для оплаты не нужны",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "chase",
+  "blur": false
+ },
+ {
+  "id": "p-353",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "www.exestateteasales.com",
+  "title": "подделка boa",
+  "file": "phish/353.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Вместе с картой просят данные, которые для оплаты не нужны"
+  ],
+  "brand": "boa",
+  "blur": false
+ },
+ {
+  "id": "p-355",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "rog.services",
+  "title": "подделка cibc",
+  "file": "phish/355.html",
+  "orig": null,
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "cibc",
+  "blur": false
+ },
+ {
+  "id": "p-358",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "verificationeric.webcindario.com",
+  "title": "подделка boa",
+  "file": "phish/358.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "boa",
+  "blur": false
+ },
+ {
+  "id": "p-359",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "verificationeric.webcindario.com",
+  "title": "подделка boa",
+  "file": "phish/359.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "boa",
+  "blur": false
+ },
+ {
+  "id": "p-362",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "augmentedtransport.com",
+  "title": "подделка paypal",
+  "file": "phish/362.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Вместе с картой просят данные, которые для оплаты не нужны",
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "paypal",
+  "blur": false
+ },
+ {
+  "id": "p-364",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "gamcinx.com",
+  "title": "подделка netflix",
+  "file": "phish/364.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "netflix",
+  "blur": false
+ },
+ {
+  "id": "p-365",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "appl.rec0v-acc0upd-sec932.com",
+  "title": "подделка apple",
+  "file": "phish/365.html",
+  "orig": null,
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "apple",
+  "blur": false
+ },
+ {
+  "id": "p-366",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "servincnet.ddns.net",
+  "title": "подделка orange",
+  "file": "phish/366.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "orange",
+  "blur": false
+ },
+ {
+  "id": "p-367",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "diaconaleplatforms.nl",
+  "title": "подделка boa",
+  "file": "phish/367.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Вместе с картой просят данные, которые для оплаты не нужны"
+  ],
+  "brand": "boa",
+  "blur": false
+ },
+ {
+  "id": "p-370",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "www.tnc.com.co",
+  "title": "подделка boa",
+  "file": "phish/370.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "boa",
+  "blur": false
+ },
+ {
+  "id": "p-373",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "www.ready2study.com",
+  "title": "подделка paypal",
+  "file": "phish/373.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "paypal",
+  "blur": false
+ },
+ {
+  "id": "p-375",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "longsdale.dk",
+  "title": "подделка paypal",
+  "file": "phish/375.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "paypal",
+  "blur": false
+ },
+ {
+  "id": "p-376",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "www.amancreations.de",
+  "title": "подделка wellsfargo",
+  "file": "phish/376.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Вместе с картой просят данные, которые для оплаты не нужны",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "wellsfargo",
+  "blur": false
+ },
+ {
+  "id": "p-377",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "www.gimaq.com",
+  "title": "подделка chase",
+  "file": "phish/377.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Вместе с картой просят данные, которые для оплаты не нужны",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "chase",
+  "blur": false
+ },
+ {
+  "id": "p-378",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "www.husnadesigns.uk",
+  "title": "подделка chase",
+  "file": "phish/378.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Вместе с картой просят данные, которые для оплаты не нужны",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "chase",
+  "blur": false
+ },
+ {
+  "id": "p-379",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "tta.org.mk",
+  "title": "подделка boa",
+  "file": "phish/379.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Вместе с картой просят данные, которые для оплаты не нужны",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "boa",
+  "blur": false
+ },
+ {
+  "id": "p-380",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "austlives.com",
+  "title": "подделка nab",
+  "file": "phish/380.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "nab",
+  "blur": false
+ },
+ {
+  "id": "p-382",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "142.93.208.119",
+  "title": "подделка bmo",
+  "file": "phish/382.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "bmo",
+  "blur": false
+ },
+ {
+  "id": "p-383",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "142.93.208.119",
+  "title": "подделка bmo",
+  "file": "phish/383.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "bmo",
+  "blur": false
+ },
+ {
+  "id": "p-384",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "3ka2.ir",
+  "title": "подделка cibc",
+  "file": "phish/384.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "cibc",
+  "blur": false
+ },
+ {
+  "id": "p-385",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "igrejabatistadetambau.com.br",
+  "title": "подделка amex",
+  "file": "phish/385.html",
+  "orig": null,
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "amex",
+  "blur": false
+ },
+ {
+  "id": "p-386",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "moxs.co.za",
+  "title": "подделка apple",
+  "file": "phish/386.html",
+  "orig": null,
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "apple",
+  "blur": false
+ },
+ {
+  "id": "p-387",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "kosmetologbel.ru",
+  "title": "подделка amex",
+  "file": "phish/387.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "amex",
+  "blur": false
+ },
+ {
+  "id": "p-393",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "150.242.180.31",
+  "title": "подделка paypal",
+  "file": "phish/393.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "paypal",
+  "blur": false
+ },
+ {
+  "id": "p-394",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "weready.org",
+  "title": "подделка paypal",
+  "file": "phish/394.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "paypal",
+  "blur": false
+ },
+ {
+  "id": "p-395",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "www.securyz.fr",
+  "title": "подделка paypal",
+  "file": "phish/395.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "paypal",
+  "blur": false
+ },
+ {
+  "id": "p-396",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "paypal.finprac.in",
+  "title": "подделка paypal",
+  "file": "phish/396.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "paypal",
+  "blur": false
+ },
+ {
+  "id": "p-397",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "teck.rhone-sec.co.uk",
+  "title": "подделка apple",
+  "file": "phish/397.html",
+  "orig": null,
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "apple",
+  "blur": false
+ },
+ {
+  "id": "p-399",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "bodrogiirodahaz.hu",
+  "title": "подделка apple",
+  "file": "phish/399.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "apple",
+  "blur": false
+ },
+ {
+  "id": "p-400",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "globalsports.com.bd",
+  "title": "подделка paypal",
+  "file": "phish/400.html",
+  "orig": null,
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "paypal",
+  "blur": false
+ },
+ {
+  "id": "p-402",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "www.donnairons.com",
+  "title": "подделка apple",
+  "file": "phish/402.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "apple",
+  "blur": false
+ },
+ {
+  "id": "p-403",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "www.goalpost.com.br",
+  "title": "подделка amazon",
+  "file": "phish/403.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "amazon",
+  "blur": false
+ },
+ {
+  "id": "p-404",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "www.globalsports.com.bd",
+  "title": "подделка paypal",
+  "file": "phish/404.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "paypal",
+  "blur": false
+ },
+ {
+  "id": "p-405",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "www.cecilliawang.com",
+  "title": "подделка paypal",
+  "file": "phish/405.html",
+  "orig": null,
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "paypal",
+  "blur": false
+ },
+ {
+  "id": "p-406",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "www.riversandyears.com",
+  "title": "подделка boa",
+  "file": "phish/406.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Вместе с картой просят данные, которые для оплаты не нужны",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "boa",
+  "blur": false
+ },
+ {
+  "id": "p-407",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "www.riversandyears.com",
+  "title": "подделка boa",
+  "file": "phish/407.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Вместе с картой просят данные, которые для оплаты не нужны",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "boa",
+  "blur": false
+ },
+ {
+  "id": "p-408",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "www.riversandyears.com",
+  "title": "подделка boa",
+  "file": "phish/408.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Вместе с картой просят данные, которые для оплаты не нужны",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "boa",
+  "blur": false
+ },
+ {
+  "id": "p-409",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "secure.info.updates.chase.log.alertno.id89321980321832107321612931269132.ienop.org.pe",
+  "title": "подделка chase",
+  "file": "phish/409.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "chase",
+  "blur": false
+ },
+ {
+  "id": "p-410",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "xn--80abmuei.xn--p1ai",
+  "title": "подделка wellsfargo",
+  "file": "phish/410.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Вместе с картой просят данные, которые для оплаты не нужны",
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "wellsfargo",
+  "blur": false
+ },
+ {
+  "id": "p-414",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "www.kmacraeandson.co.uk",
+  "title": "подделка paypal",
+  "file": "phish/414.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "paypal",
+  "blur": false
+ },
+ {
+  "id": "p-425",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "nordazpro.flywheelsites.com",
+  "title": "подделка apple",
+  "file": "phish/425.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "apple",
+  "blur": false
+ },
+ {
+  "id": "p-427",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "elearning.agence-erasmus.fr",
+  "title": "подделка paypal",
+  "file": "phish/427.html",
+  "orig": null,
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "paypal",
+  "blur": false
+ },
+ {
+  "id": "p-433",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "siam-ship.com",
+  "title": "подделка usaa",
+  "file": "phish/433.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Вместе с картой просят данные, которые для оплаты не нужны",
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "usaa",
+  "blur": false
+ },
+ {
+  "id": "p-435",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "curso48horas.com.br",
+  "title": "подделка chase",
+  "file": "phish/435.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Вместе с картой просят данные, которые для оплаты не нужны",
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "chase",
+  "blur": false
+ },
+ {
+  "id": "p-436",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "gluk.kg",
+  "title": "подделка sfr",
+  "file": "phish/436.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "sfr",
+  "blur": false
+ },
+ {
+  "id": "p-437",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "swimtens.com",
+  "title": "подделка paypal",
+  "file": "phish/437.html",
+  "orig": null,
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "paypal",
+  "blur": false
+ },
+ {
+  "id": "p-438",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "mustafajones.com",
+  "title": "подделка paypal",
+  "file": "phish/438.html",
+  "orig": null,
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "paypal",
   "blur": false
  },
  {
@@ -2925,6 +5668,473 @@
   "blur": false
  },
  {
+  "id": "p-442",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "support-amazon.com-alert.service23.com",
+  "title": "подделка amazon",
+  "file": "phish/442.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Вместе с картой просят данные, которые для оплаты не нужны",
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "amazon",
+  "blur": false
+ },
+ {
+  "id": "p-443",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "1-844-rogers.com",
+  "title": "подделка cibc",
+  "file": "phish/443.html",
+  "orig": null,
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "cibc",
+  "blur": false
+ },
+ {
+  "id": "p-445",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "renew.thisistap.com",
+  "title": "подделка paypal",
+  "file": "phish/445.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Вместе с картой просят данные, которые для оплаты не нужны",
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "paypal",
+  "blur": false
+ },
+ {
+  "id": "p-447",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "piwik.seaforth-blackpool.co.uk",
+  "title": "подделка boa",
+  "file": "phish/447.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "boa",
+  "blur": false
+ },
+ {
+  "id": "p-449",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "ilcoppale.it",
+  "title": "подделка paypal",
+  "file": "phish/449.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "paypal",
+  "blur": false
+ },
+ {
+  "id": "p-450",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "macan.mo",
+  "title": "подделка paypal",
+  "file": "phish/450.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Вместе с картой просят данные, которые для оплаты не нужны",
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "paypal",
+  "blur": false
+ },
+ {
+  "id": "p-453",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "s3cur3-d3p0s1t.com",
+  "title": "подделка cibc",
+  "file": "phish/453.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "cibc",
+  "blur": false
+ },
+ {
+  "id": "p-454",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "jobsearchinaustria.info",
+  "title": "подделка amazon",
+  "file": "phish/454.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "amazon",
+  "blur": false
+ },
+ {
+  "id": "p-455",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "grapemile.com",
+  "title": "подделка paypal",
+  "file": "phish/455.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "paypal",
+  "blur": false
+ },
+ {
+  "id": "p-457",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "nwolb.com.login.asppersonalreferendent.security.united.mvfglobal.org",
+  "title": "подделка natwest",
+  "file": "phish/457.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "natwest",
+  "blur": false
+ },
+ {
+  "id": "p-460",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "editorakazua.com.br",
+  "title": "подделка apple",
+  "file": "phish/460.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS"
+  ],
+  "brand": "apple",
+  "blur": false
+ },
+ {
+  "id": "p-462",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "www.praxis-lenzinger.de",
+  "title": "подделка paypal",
+  "file": "phish/462.html",
+  "orig": null,
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "paypal",
+  "blur": false
+ },
+ {
+  "id": "p-464",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "nathansenges.com",
+  "title": "подделка boa",
+  "file": "phish/464.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Вместе с картой просят данные, которые для оплаты не нужны",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "boa",
+  "blur": false
+ },
+ {
+  "id": "p-467",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "sg2plcpnl0101.prod.sin2.secureserver.net",
+  "title": "подделка paypal",
+  "file": "phish/467.html",
+  "orig": null,
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "paypal",
+  "blur": false
+ },
+ {
+  "id": "p-468",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "bogdanstepien.com",
+  "title": "подделка paypal",
+  "file": "phish/468.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Вместе с картой просят данные, которые для оплаты не нужны",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "paypal",
+  "blur": false
+ },
+ {
+  "id": "p-475",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "www.doradothemes.com",
+  "title": "подделка paypal",
+  "file": "phish/475.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "paypal",
+  "blur": false
+ },
+ {
+  "id": "p-478",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "commoncarriers.net",
+  "title": "подделка cibc",
+  "file": "phish/478.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "cibc",
+  "blur": false
+ },
+ {
+  "id": "p-479",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "111.90.150.44",
+  "title": "подделка cibc",
+  "file": "phish/479.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "cibc",
+  "blur": false
+ },
+ {
+  "id": "p-484",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "nabonline.aba.ae",
+  "title": "подделка nab",
+  "file": "phish/484.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "nab",
+  "blur": false
+ },
+ {
+  "id": "p-486",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "www.coque-avec-photo.com",
+  "title": "подделка amazon",
+  "file": "phish/486.html",
+  "orig": null,
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "amazon",
+  "blur": false
+ },
+ {
+  "id": "p-487",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "frankallen.com.au",
+  "title": "подделка boa",
+  "file": "phish/487.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Вместе с картой просят данные, которые для оплаты не нужны",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "boa",
+  "blur": false
+ },
+ {
+  "id": "p-488",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "advert-verify-support.com",
+  "title": "подделка facebook",
+  "file": "phish/488.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "facebook",
+  "blur": false
+ },
+ {
+  "id": "p-492",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "paypsec.aba.ae",
+  "title": "подделка nab",
+  "file": "phish/492.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "nab",
+  "blur": false
+ },
+ {
+  "id": "p-498",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "droodwqr.kr",
+  "title": "подделка cibc",
+  "file": "phish/498.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "cibc",
+  "blur": false
+ },
+ {
+  "id": "p-501",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "i-nettutorials.com",
+  "title": "подделка chase",
+  "file": "phish/501.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Вместе с картой просят данные, которые для оплаты не нужны",
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "chase",
+  "blur": false
+ },
+ {
+  "id": "p-502",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "jpmorgan.advancedrpm.com",
+  "title": "подделка chase",
+  "file": "phish/502.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Вместе с картой просят данные, которые для оплаты не нужны",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "chase",
+  "blur": false
+ },
+ {
   "id": "p-503",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -2939,6 +6149,495 @@
    "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
   ],
   "brand": "capitalone",
+  "blur": false
+ },
+ {
+  "id": "p-504",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "www.arnold.se",
+  "title": "подделка chase",
+  "file": "phish/504.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Вместе с картой просят данные, которые для оплаты не нужны",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "chase",
+  "blur": false
+ },
+ {
+  "id": "p-507",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "forgedhero.com",
+  "title": "подделка apple",
+  "file": "phish/507.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "apple",
+  "blur": false
+ },
+ {
+  "id": "p-509",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "secure.bofa-solvingproblem.com",
+  "title": "подделка boa",
+  "file": "phish/509.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Вместе с картой просят данные, которые для оплаты не нужны",
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "boa",
+  "blur": false
+ },
+ {
+  "id": "p-510",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "aswanintokyo.com",
+  "title": "подделка paypal",
+  "file": "phish/510.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Вместе с картой просят данные, которые для оплаты не нужны",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "paypal",
+  "blur": false
+ },
+ {
+  "id": "p-511",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "mygreenbooking.com",
+  "title": "подделка paypal",
+  "file": "phish/511.html",
+  "orig": null,
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "paypal",
+  "blur": false
+ },
+ {
+  "id": "p-512",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "www.paypal-nostroservizioaccount.it",
+  "title": "подделка paypal",
+  "file": "phish/512.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "paypal",
+  "blur": false
+ },
+ {
+  "id": "p-514",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "tennis-ware.com.ua",
+  "title": "подделка apple",
+  "file": "phish/514.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "apple",
+  "blur": false
+ },
+ {
+  "id": "p-515",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "ib-nab.bankingg.au.fatimahalotaibi.com",
+  "title": "подделка nab",
+  "file": "phish/515.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "nab",
+  "blur": false
+ },
+ {
+  "id": "p-516",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "ib-nab.bankingg.au.fatimahalotaibi.com",
+  "title": "подделка nab",
+  "file": "phish/516.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "nab",
+  "blur": false
+ },
+ {
+  "id": "p-518",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "ib-nab.bankingg.au.fatimahalotaibi.com",
+  "title": "подделка nab",
+  "file": "phish/518.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "nab",
+  "blur": false
+ },
+ {
+  "id": "p-521",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "hotelekaa.com",
+  "title": "подделка paypal",
+  "file": "phish/521.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "paypal",
+  "blur": false
+ },
+ {
+  "id": "p-522",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "novem.cc",
+  "title": "подделка amazon",
+  "file": "phish/522.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "amazon",
+  "blur": false
+ },
+ {
+  "id": "p-523",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "suzhou.ir",
+  "title": "подделка amazon",
+  "file": "phish/523.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "amazon",
+  "blur": false
+ },
+ {
+  "id": "p-524",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "ogkahijm.com",
+  "title": "подделка cibc",
+  "file": "phish/524.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "cibc",
+  "blur": false
+ },
+ {
+  "id": "p-525",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "hairblog.fr",
+  "title": "подделка orange",
+  "file": "phish/525.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "orange",
+  "blur": false
+ },
+ {
+  "id": "p-526",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "www.hrpa.org.in",
+  "title": "подделка cox",
+  "file": "phish/526.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Вместе с картой просят данные, которые для оплаты не нужны"
+  ],
+  "brand": "cox",
+  "blur": false
+ },
+ {
+  "id": "p-528",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "104.130.140.101",
+  "title": "подделка amazon",
+  "file": "phish/528.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "amazon",
+  "blur": false
+ },
+ {
+  "id": "p-530",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "herdint.com",
+  "title": "подделка amazon",
+  "file": "phish/530.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Вместе с картой просят данные, которые для оплаты не нужны",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "amazon",
+  "blur": false
+ },
+ {
+  "id": "p-532",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "iconicfitnessltd.co.uk",
+  "title": "подделка boa",
+  "file": "phish/532.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Вместе с картой просят данные, которые для оплаты не нужны",
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "boa",
+  "blur": false
+ },
+ {
+  "id": "p-535",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "cenfopar.com",
+  "title": "подделка xfinity",
+  "file": "phish/535.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "xfinity",
+  "blur": false
+ },
+ {
+  "id": "p-540",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "www.karaliskosdovanos.lt",
+  "title": "подделка apple",
+  "file": "phish/540.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "apple",
+  "blur": false
+ },
+ {
+  "id": "p-542",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "www.raydper.com",
+  "title": "подделка paypal",
+  "file": "phish/542.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Вместе с картой просят данные, которые для оплаты не нужны",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "paypal",
+  "blur": false
+ },
+ {
+  "id": "p-543",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "suzhou.ir",
+  "title": "подделка amazon",
+  "file": "phish/543.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "amazon",
+  "blur": false
+ },
+ {
+  "id": "p-546",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "bmodevelop.com",
+  "title": "подделка bmo",
+  "file": "phish/546.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "bmo",
+  "blur": false
+ },
+ {
+  "id": "p-554",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "cesg.co.uk",
+  "title": "подделка paypal",
+  "file": "phish/554.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "paypal",
+  "blur": false
+ },
+ {
+  "id": "p-556",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "gamaraagency.com",
+  "title": "подделка paypal",
+  "file": "phish/556.html",
+  "orig": null,
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "paypal",
+  "blur": false
+ },
+ {
+  "id": "p-557",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "bozokmyoradyosu.com",
+  "title": "подделка paypal",
+  "file": "phish/557.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "paypal",
   "blur": false
  },
  {
@@ -2960,6 +6659,95 @@
   "blur": false
  },
  {
+  "id": "p-564",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "192.185.130.225",
+  "title": "подделка cibc",
+  "file": "phish/564.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "cibc",
+  "blur": false
+ },
+ {
+  "id": "p-568",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "www.grafa70.com.ar",
+  "title": "подделка paypal",
+  "file": "phish/568.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "paypal",
+  "blur": false
+ },
+ {
+  "id": "p-569",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "kenpaes.com",
+  "title": "подделка boa",
+  "file": "phish/569.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Вместе с картой просят данные, которые для оплаты не нужны"
+  ],
+  "brand": "boa",
+  "blur": false
+ },
+ {
+  "id": "p-576",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "sslsubid09888278doc.padamukti-garut.desa.id",
+  "title": "подделка boa",
+  "file": "phish/576.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "boa",
+  "blur": false
+ },
+ {
+  "id": "p-578",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "1services1.azurewebsites.net",
+  "title": "подделка paypal",
+  "file": "phish/578.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Вместе с картой просят данные, которые для оплаты не нужны"
+  ],
+  "brand": "paypal",
+  "blur": false
+ },
+ {
   "id": "p-584",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -2967,6 +6755,1599 @@
   "domain": "www.keep-link.ru",
   "title": "подделка phish",
   "file": "phish/584.html",
+  "orig": null,
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "phish",
+  "blur": false
+ },
+ {
+  "id": "p-589",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "theworkingrealtor.com",
+  "title": "подделка phish",
+  "file": "phish/589.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "phish",
+  "blur": false
+ },
+ {
+  "id": "p-592",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "www.beyondedizioni.com",
+  "title": "подделка phish",
+  "file": "phish/592.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "phish",
+  "blur": false
+ },
+ {
+  "id": "p-593",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "tyredc.com",
+  "title": "подделка phish",
+  "file": "phish/593.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Вместе с картой просят данные, которые для оплаты не нужны",
+   "Данные карты будут отправлены без шифрования",
+   "Данные карты будут отправлены без шифрования",
+   "Данные карты будут отправлены без шифрования",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "phish",
+  "blur": false
+ },
+ {
+  "id": "p-601",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "164.52.146.18",
+  "title": "подделка phish",
+  "file": "phish/601.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Вместе с картой просят данные, которые для оплаты не нужны",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "phish",
+  "blur": false
+ },
+ {
+  "id": "p-606",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "eaglesresorthurghada.de",
+  "title": "подделка phish",
+  "file": "phish/606.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Вместе с картой просят данные, которые для оплаты не нужны",
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "phish",
+  "blur": false
+ },
+ {
+  "id": "p-613",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "www-lngbe.homebnq.info",
+  "title": "подделка phish",
+  "file": "phish/613.html",
+  "orig": null,
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "phish",
+  "blur": false
+ },
+ {
+  "id": "p-614",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "partaleplerininz.org",
+  "title": "подделка phish",
+  "file": "phish/614.html",
+  "orig": null,
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "phish",
+  "blur": false
+ },
+ {
+  "id": "p-616",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "na-citiprepaid.com",
+  "title": "подделка phish",
+  "file": "phish/616.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "phish",
+  "blur": false
+ },
+ {
+  "id": "p-617",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "rubeeworks.com",
+  "title": "подделка phish",
+  "file": "phish/617.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "phish",
+  "blur": false
+ },
+ {
+  "id": "p-618",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "gify-agent.support",
+  "title": "подделка phish",
+  "file": "phish/618.html",
+  "orig": null,
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "phish",
+  "blur": false
+ },
+ {
+  "id": "p-620",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "woplata.pp.ru",
+  "title": "подделка phish",
+  "file": "phish/620.html",
+  "orig": null,
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "phish",
+  "blur": false
+ },
+ {
+  "id": "p-623",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "stradebianchediromagna.it",
+  "title": "подделка phish",
+  "file": "phish/623.html",
+  "orig": null,
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "phish",
+  "blur": false
+ },
+ {
+  "id": "p-624",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "imperialmotorcycles.com",
+  "title": "подделка phish",
+  "file": "phish/624.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "phish",
+  "blur": false
+ },
+ {
+  "id": "p-626",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "wwamleli-ser.com",
+  "title": "подделка phish",
+  "file": "phish/626.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "phish",
+  "blur": false
+ },
+ {
+  "id": "p-627",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "iconsultas.online",
+  "title": "подделка phish",
+  "file": "phish/627.html",
+  "orig": null,
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "phish",
+  "blur": false
+ },
+ {
+  "id": "p-629",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "www.dolines.ru",
+  "title": "подделка phish",
+  "file": "phish/629.html",
+  "orig": null,
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "phish",
+  "blur": false
+ },
+ {
+  "id": "p-636",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "bancaporinternet-interbankpe.expeditor.cl",
+  "title": "подделка phish",
+  "file": "phish/636.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "phish",
+  "blur": false
+ },
+ {
+  "id": "p-638",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "graynhub.com",
+  "title": "подделка phish",
+  "file": "phish/638.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "phish",
+  "blur": false
+ },
+ {
+  "id": "p-640",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "enelenergiapro.com",
+  "title": "подделка phish",
+  "file": "phish/640.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "phish",
+  "blur": false
+ },
+ {
+  "id": "p-644",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "redllnk.sytes.net",
+  "title": "подделка phish",
+  "file": "phish/644.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "phish",
+  "blur": false
+ },
+ {
+  "id": "p-651",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "ouisyupiyullis.000webhostapp.com",
+  "title": "подделка phish",
+  "file": "phish/651.html",
+  "orig": null,
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "phish",
+  "blur": false
+ },
+ {
+  "id": "p-657",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "1-800-fidowireless.com",
+  "title": "подделка phish",
+  "file": "phish/657.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "phish",
+  "blur": false
+ },
+ {
+  "id": "p-658",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "paymeninter.com",
+  "title": "подделка phish",
+  "file": "phish/658.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "phish",
+  "blur": false
+ },
+ {
+  "id": "p-659",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "www.mijn-authenticatiebetaalpas.xyz",
+  "title": "подделка phish",
+  "file": "phish/659.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "phish",
+  "blur": false
+ },
+ {
+  "id": "p-660",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "minimumtender.com",
+  "title": "подделка phish",
+  "file": "phish/660.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "phish",
+  "blur": false
+ },
+ {
+  "id": "p-662",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "mail-faster.com",
+  "title": "подделка phish",
+  "file": "phish/662.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "phish",
+  "blur": false
+ },
+ {
+  "id": "p-663",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "gr-remodelaciones.com.ar",
+  "title": "подделка phish",
+  "file": "phish/663.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Вместе с картой просят данные, которые для оплаты не нужны",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "phish",
+  "blur": false
+ },
+ {
+  "id": "p-673",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "kaliachakcollege.edu.in",
+  "title": "подделка phish",
+  "file": "phish/673.html",
+  "orig": null,
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "phish",
+  "blur": false
+ },
+ {
+  "id": "p-674",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "spotfysup.com",
+  "title": "подделка phish",
+  "file": "phish/674.html",
+  "orig": null,
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "phish",
+  "blur": false
+ },
+ {
+  "id": "p-680",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "alphaproject.us",
+  "title": "подделка phish",
+  "file": "phish/680.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Вместе с картой просят данные, которые для оплаты не нужны",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "phish",
+  "blur": false
+ },
+ {
+  "id": "p-685",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "sdn03kaligelang.sch.id",
+  "title": "подделка phish",
+  "file": "phish/685.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Вместе с картой просят данные, которые для оплаты не нужны",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "phish",
+  "blur": false
+ },
+ {
+  "id": "p-686",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "pixeels.net",
+  "title": "подделка phish",
+  "file": "phish/686.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "phish",
+  "blur": false
+ },
+ {
+  "id": "p-691",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "nikacharm.com",
+  "title": "подделка phish",
+  "file": "phish/691.html",
+  "orig": null,
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "phish",
+  "blur": false
+ },
+ {
+  "id": "p-695",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "user-restore.com",
+  "title": "подделка phish",
+  "file": "phish/695.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "phish",
+  "blur": false
+ },
+ {
+  "id": "p-698",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "certificazione.mpsprivati.com",
+  "title": "подделка phish",
+  "file": "phish/698.html",
+  "orig": null,
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "phish",
+  "blur": false
+ },
+ {
+  "id": "p-706",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "dev.seatassignmate.net",
+  "title": "подделка phish",
+  "file": "phish/706.html",
+  "orig": null,
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "phish",
+  "blur": false
+ },
+ {
+  "id": "p-707",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "ludicando.com.br",
+  "title": "подделка phish",
+  "file": "phish/707.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "phish",
+  "blur": false
+ },
+ {
+  "id": "p-709",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "ded5441.inmotionhosting.com",
+  "title": "подделка phish",
+  "file": "phish/709.html",
+  "orig": null,
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "phish",
+  "blur": false
+ },
+ {
+  "id": "p-715",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "mpmm.com",
+  "title": "подделка phish",
+  "file": "phish/715.html",
+  "orig": null,
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "phish",
+  "blur": false
+ },
+ {
+  "id": "p-719",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "www.thaistigmatines.org",
+  "title": "подделка phish",
+  "file": "phish/719.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Вместе с картой просят данные, которые для оплаты не нужны",
+   "Данные карты будут отправлены без шифрования",
+   "Данные карты будут отправлены без шифрования",
+   "Данные карты будут отправлены без шифрования",
+   "Данные карты будут отправлены без шифрования",
+   "Данные карты будут отправлены без шифрования",
+   "Данные карты будут отправлены без шифрования",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "phish",
+  "blur": false
+ },
+ {
+  "id": "p-723",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "zekibilardo.com",
+  "title": "подделка phish",
+  "file": "phish/723.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "phish",
+  "blur": false
+ },
+ {
+  "id": "p-728",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "middleeastexecutive.com",
+  "title": "подделка phish",
+  "file": "phish/728.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "phish",
+  "blur": false
+ },
+ {
+  "id": "p-730",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "konark.ua",
+  "title": "подделка phish",
+  "file": "phish/730.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "phish",
+  "blur": false
+ },
+ {
+  "id": "p-737",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "craigslist-robot.com.stormcross.co.kr",
+  "title": "подделка phish",
+  "file": "phish/737.html",
+  "orig": null,
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "phish",
+  "blur": false
+ },
+ {
+  "id": "p-742",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "www.app-suivi.com",
+  "title": "подделка phish",
+  "file": "phish/742.html",
+  "orig": null,
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "phish",
+  "blur": false
+ },
+ {
+  "id": "p-744",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "membership.butflulake.org",
+  "title": "подделка phish",
+  "file": "phish/744.html",
+  "orig": null,
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "phish",
+  "blur": false
+ },
+ {
+  "id": "p-748",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "paykassa.name",
+  "title": "подделка phish",
+  "file": "phish/748.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "phish",
+  "blur": false
+ },
+ {
+  "id": "p-749",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "www.suivi-post-ch.info",
+  "title": "подделка phish",
+  "file": "phish/749.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "phish",
+  "blur": false
+ },
+ {
+  "id": "p-757",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "vervangen.xyz",
+  "title": "подделка phish",
+  "file": "phish/757.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "phish",
+  "blur": false
+ },
+ {
+  "id": "p-758",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "mpaciv.com",
+  "title": "подделка phish",
+  "file": "phish/758.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Вместе с картой просят данные, которые для оплаты не нужны",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "phish",
+  "blur": false
+ },
+ {
+  "id": "p-760",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "bcpzonasegurabeta.viabcp.cominiciar.sesion.hwtravel.online",
+  "title": "подделка phish",
+  "file": "phish/760.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "phish",
+  "blur": false
+ },
+ {
+  "id": "p-761",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "www.doline.ru",
+  "title": "подделка phish",
+  "file": "phish/761.html",
+  "orig": null,
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "phish",
+  "blur": false
+ },
+ {
+  "id": "p-763",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "www.tradelinksurat.in",
+  "title": "подделка phish",
+  "file": "phish/763.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "phish",
+  "blur": false
+ },
+ {
+  "id": "p-764",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "bcpzonagura-viaportal.com",
+  "title": "подделка phish",
+  "file": "phish/764.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования",
+   "Данные карты будут отправлены без шифрования",
+   "Данные карты будут отправлены без шифрования",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "phish",
+  "blur": false
+ },
+ {
+  "id": "p-766",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "www.sewissposte.me",
+  "title": "подделка phish",
+  "file": "phish/766.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "phish",
+  "blur": false
+ },
+ {
+  "id": "p-770",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "brent-baldwin.com",
+  "title": "подделка phish",
+  "file": "phish/770.html",
+  "orig": null,
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "phish",
+  "blur": false
+ },
+ {
+  "id": "p-771",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "tracking-royalmail.com-parcelnumber.jsp.eurodenetim.com",
+  "title": "подделка phish",
+  "file": "phish/771.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "phish",
+  "blur": false
+ },
+ {
+  "id": "p-773",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "main.d2myzk9of4b932.amplifyapp.com",
+  "title": "подделка phish",
+  "file": "phish/773.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Вместе с картой просят данные, которые для оплаты не нужны",
+   "Данные карты уходят на другой сайт"
+  ],
+  "brand": "phish",
+  "blur": false
+ },
+ {
+  "id": "p-774",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "kosmetologbel.ru",
+  "title": "подделка phish",
+  "file": "phish/774.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "phish",
+  "blur": false
+ },
+ {
+  "id": "p-778",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "www.afakot4you.co.il",
+  "title": "подделка phish",
+  "file": "phish/778.html",
+  "orig": null,
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "phish",
+  "blur": false
+ },
+ {
+  "id": "p-785",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "teamcustomerhomersupportregardesakf90ew.000webhostapp.com",
+  "title": "подделка phish",
+  "file": "phish/785.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Вместе с картой просят данные, которые для оплаты не нужны",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "phish",
+  "blur": false
+ },
+ {
+  "id": "p-789",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "kosmetologbel.ru",
+  "title": "подделка phish",
+  "file": "phish/789.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "phish",
+  "blur": false
+ },
+ {
+  "id": "p-791",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "craigslist.posting-review.us",
+  "title": "подделка phish",
+  "file": "phish/791.html",
+  "orig": null,
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "phish",
+  "blur": false
+ },
+ {
+  "id": "p-792",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "benditagraca.com.br",
+  "title": "подделка phish",
+  "file": "phish/792.html",
+  "orig": null,
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "phish",
+  "blur": false
+ },
+ {
+  "id": "p-795",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "dpd-billing.com",
+  "title": "подделка phish",
+  "file": "phish/795.html",
+  "orig": null,
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "phish",
+  "blur": false
+ },
+ {
+  "id": "p-802",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "wesrternsurnion.com",
+  "title": "подделка phish",
+  "file": "phish/802.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "phish",
+  "blur": false
+ },
+ {
+  "id": "p-805",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "www.celtiweb.fr",
+  "title": "подделка phish",
+  "file": "phish/805.html",
+  "orig": null,
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "phish",
+  "blur": false
+ },
+ {
+  "id": "p-806",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "194.182.65.105",
+  "title": "подделка phish",
+  "file": "phish/806.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "phish",
+  "blur": false
+ },
+ {
+  "id": "p-810",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "aml76903b67fe76h8i.ngrok.io",
+  "title": "подделка phish",
+  "file": "phish/810.html",
+  "orig": null,
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "phish",
+  "blur": false
+ },
+ {
+  "id": "p-814",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "abnrecyclepunt.kantoorbericht.dkfns.eu",
+  "title": "подделка phish",
+  "file": "phish/814.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "phish",
+  "blur": false
+ },
+ {
+  "id": "p-818",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "wowlong.cn",
+  "title": "подделка phish",
+  "file": "phish/818.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "phish",
+  "blur": false
+ },
+ {
+  "id": "p-819",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "flashauto53.com",
+  "title": "подделка phish",
+  "file": "phish/819.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "phish",
+  "blur": false
+ },
+ {
+  "id": "p-822",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "travellershavenltd.com.ng",
+  "title": "подделка phish",
+  "file": "phish/822.html",
+  "orig": null,
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "phish",
+  "blur": false
+ },
+ {
+  "id": "p-825",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "www.tusofaconestilo.com",
+  "title": "подделка phish",
+  "file": "phish/825.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "phish",
+  "blur": false
+ },
+ {
+  "id": "p-829",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "148.251.192.93",
+  "title": "подделка phish",
+  "file": "phish/829.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS"
+  ],
+  "brand": "phish",
+  "blur": false
+ },
+ {
+  "id": "p-830",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "etma.nccu.edu.tw",
+  "title": "подделка phish",
+  "file": "phish/830.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Вместе с картой просят данные, которые для оплаты не нужны",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "phish",
+  "blur": false
+ },
+ {
+  "id": "p-833",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "westsidegroup.home.pl",
+  "title": "подделка phish",
+  "file": "phish/833.html",
+  "orig": null,
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "phish",
+  "blur": false
+ },
+ {
+  "id": "p-834",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "kosho-55.gq",
+  "title": "подделка phish",
+  "file": "phish/834.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Вместе с картой просят данные, которые для оплаты не нужны",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "phish",
+  "blur": false
+ },
+ {
+  "id": "p-835",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "nycellist.com",
+  "title": "подделка phish",
+  "file": "phish/835.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Вместе с картой просят данные, которые для оплаты не нужны",
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "phish",
+  "blur": false
+ },
+ {
+  "id": "p-837",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "ajanish.com",
+  "title": "подделка phish",
+  "file": "phish/837.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "phish",
+  "blur": false
+ },
+ {
+  "id": "p-839",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "newpharmacies.org",
+  "title": "подделка phish",
+  "file": "phish/839.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "phish",
+  "blur": false
+ },
+ {
+  "id": "p-840",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "getupandthriveidaho.com",
+  "title": "подделка phish",
+  "file": "phish/840.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "phish",
+  "blur": false
+ },
+ {
+  "id": "p-841",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "postfinance2secure.com",
+  "title": "подделка phish",
+  "file": "phish/841.html",
+  "orig": null,
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "phish",
+  "blur": false
+ },
+ {
+  "id": "p-842",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "eurolifecare.com.ua",
+  "title": "подделка phish",
+  "file": "phish/842.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Страница с вводом карты открыта без HTTPS",
+   "Данные карты будут отправлены без шифрования"
+  ],
+  "brand": "phish",
+  "blur": false
+ },
+ {
+  "id": "p-843",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "www.wildwoodrecovery.com",
+  "title": "подделка phish",
+  "file": "phish/843.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Вместе с картой просят данные, которые для оплаты не нужны",
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "phish",
+  "blur": false
+ },
+ {
+  "id": "p-849",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "agas.uz",
+  "title": "подделка phish",
+  "file": "phish/849.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Вместе с картой просят данные, которые для оплаты не нужны",
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "phish",
+  "blur": false
+ },
+ {
+  "id": "p-851",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "discountcope.com",
+  "title": "подделка phish",
+  "file": "phish/851.html",
+  "orig": null,
+  "link": null,
+  "verdict": "danger",
+  "titles": [
+   "Вместе с картой просят данные, которые для оплаты не нужны",
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "phish",
+  "blur": false
+ },
+ {
+  "id": "p-852",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "6d7cd743-f8b9-4146-9ef2-6517f0b26e51.id.repl.co",
+  "title": "подделка phish",
+  "file": "phish/852.html",
+  "orig": null,
+  "link": null,
+  "verdict": "warning",
+  "titles": [
+   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+  ],
+  "brand": "phish",
+  "blur": false
+ },
+ {
+  "id": "p-853",
+  "scheme": "fake-payment",
+  "source": "Phish360",
+  "date": "2020–2023",
+  "domain": "www.na-citiprepaidcard.com",
+  "title": "подделка phish",
+  "file": "phish/853.html",
   "orig": null,
   "link": null,
   "verdict": "warning",
