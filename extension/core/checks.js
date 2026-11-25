@@ -22,9 +22,6 @@
   // Обещание человеку получить деньги («получите выплату», «для получения средств», «вывести деньги»).
   // Формы третьего лица («магазин получает оплату», «мы получим перевод») – это рассказ о работе сайта, не приманка.
   const RECEIVE_WORDS = /(получи(?:ть|те)|получени[еяю]|зачисли(?:ть|те|м)|зачислени[еяю]|принять|вывести|вывод)\s+(?:\S+\s+){0,3}(деньг|оплат|выплат|средств|перевод|компенсац)/i;
-  // Действие, которое ведёт к деньгам или необратимому подтверждению. По нему решаем,
-  // относится ли обман интерфейса к платежу, – чтобы не предупреждать про каждую кнопку на сайте.
-  const PAY_ACTION = /оплат|перевод|перевед|подтверд|подпис|списан|купить|charge|checkout|subscri|transfer|confirm|withdraw|(?:^|[^a-z])pay(?![a-z])/i;
 
   function amountsIn(text) {
     const out = [];
@@ -87,20 +84,6 @@
     const h = Math.min(a.y + a.h, b.y + b.h) - Math.max(a.y, b.y);
     return w > 0 && h > 0 ? (w * h) / Math.max(1, Math.min(a.w * a.h, b.w * b.h)) : 0;
   }
-  // Кто на самом деле получит нажатие в середине видимой кнопки: спрашиваем у браузера (elementFromPoint).
-  // Перекрытия по координатам мало – невидимый слой может лежать ПОД кнопкой (например, рекламное окно под текстом).
-  function receivesClick(doc, win, visibleEl, inv) {
-    const a = rectOf(visibleEl), b = rectOf(inv);
-    const x0 = Math.max(a.x, b.x), x1 = Math.min(a.x + a.w, b.x + b.w), y0 = Math.max(a.y, b.y), y1 = Math.min(a.y + a.h, b.y + b.h);
-    let x = (x0 + x1) / 2, y = (y0 + y1) / 2;
-    const sx = win.scrollX, sy = win.scrollY;
-    const outside = x < 0 || y < 0 || x >= win.innerWidth || y >= win.innerHeight;
-    if (outside) { win.scrollTo(sx + x - win.innerWidth / 2, sy + y - win.innerHeight / 2); x -= win.scrollX - sx; y -= win.scrollY - sy; }
-    const hit = doc.elementsFromPoint(x, y).find((el) => !el.closest('[data-pg-panel]')); // панель самого помощника пропускаем
-    if (outside) win.scrollTo(sx, sy); // вернуть страницу туда, где её оставил пользователь
-    return !!hit && (hit === inv || inv.contains(hit));
-  }
-
   // ---------- Сбор скриптов страницы (встроенные + файлы того же сайта или любого в расширении) ----------
   async function collectScripts(doc, allowFetch, loc) {
     loc = loc || doc.location;
@@ -111,15 +94,16 @@
     const load = async (item) => {
       const ctrl = new AbortController();
       const timer = setTimeout(() => ctrl.abort(), 4000);
-      try { item.code = (await (await fetch(item.src, { signal: ctrl.signal })).text()).slice(0, 300000); } catch (e) { item.unreadable = true; }
+      try { item.code = (await (await fetch(item.fetchSrc || item.src, { signal: ctrl.signal })).text()).slice(0, 300000); } catch (e) { item.unreadable = true; }
       clearTimeout(timer);
     };
     for (const s of doc.querySelectorAll('script')) {
       const src = s.getAttribute('src');
       if (!src) { list.push({ name: 'встроенный скрипт', host: loc.hostname, code: s.textContent.slice(0, 200000) }); continue; }
-      let url;
-      try { url = new URL(src, loc.href); } catch (e) { continue; }  // битый адрес (бывает на настоящих сайтах) – пропускаем
-      const item = { name: url.pathname.split('/').pop() || url.hostname, host: url.hostname, src: url.href, code: '' };
+      let url, fetchUrl;
+      try { url = new URL(src, loc.href); fetchUrl = new URL(src, doc.baseURI); } catch (e) { continue; }  // битый адрес (бывает на настоящих сайтах) – пропускаем
+      // В отчёте – адрес относительно страницы (в лаборатории – её настоящий адрес), а код берётся оттуда, откуда страница открыта.
+      const item = { name: url.pathname.split('/').pop() || url.hostname, host: url.hostname, src: url.href, fetchSrc: fetchUrl.href, code: '' };
       if (allowFetch) pending.push(load(item));
       list.push(item);
     }
@@ -141,617 +125,435 @@
   }
 
   // =====================================================================
-  //  Проверки. Каждая получает общий контекст ctx и возвращает список находок.
+  //  Проверки. Семь тем – семь вопросов, которые человек задал бы перед оплатой:
+  //    1. data         – куда уйдут введённые данные (карта, коды, пароли);
+  //    2. recipient    – кому уйдут деньги (реквизиты, QR-код, ссылка СБП);
+  //    3. charges      – сколько спишут (подписка, скрытая сумма, кнопка-обманка);
+  //    4. page-code    – что делает код страницы (скиммер, скрытый загрузчик);
+  //    5. pressure     – давят ли на человека (запугивание, долг, обещание дохода, таймер);
+  //    6. clickfix     – просят ли запустить команду на компьютере;
+  //    7. crypto-wallet – просят ли подключить и подписать криптокошелёк.
+  //  Каждая находка: severity, title (факт одной фразой), details (что именно найдено), advice (что делать).
   // =====================================================================
   const CHECKS = {};
 
-  // 1. Форма ввода карты: где она и куда отправит данные
-  CHECKS['card-form'] = (ctx) => {
-    const cards = ctx.fields.filter((f) => f.kind === 'cardNumber');
-    if (!cards.length) return [];
-    const out = [{ severity: 'info', title: 'На странице есть форма для данных карты',
-      details: ['Сайт: ' + ctx.host + '. Вводите данные карты только на сайте, адрес которого вы проверили сами.'] }];
-    if (ctx.protocol === 'http:' && !ctx.isLocal) {
-      out.push({ severity: 'danger', title: 'Страница с вводом карты открыта без HTTPS', details: ['Данные могут быть перехвачены по пути к сайту.'] });
+  // Что просит страница – словами, понятными человеку.
+  const ASK = { cardNumber: 'номер карты', cvv: 'CVV', expiry: 'срок действия карты', pin: 'PIN-код карты', smsCode: 'код из SMS',
+    bankPassword: 'кодовое слово или пароль банка', password: 'пароль', mailPassword: 'пароль от почты', ssn: 'номер соцстрахования',
+    maiden: 'девичью фамилию матери', balance: 'баланс карты' };
+  // Сервисы, которые пересылают содержимое формы владельцу на почту, в чат или таблицу. Честные магазины
+  // не принимают через них оплату, а фишинговые наборы пользуются ими постоянно: сервер не нужен.
+  const FORM_SERVICES = /(?:^|\.)(?:formsubmit\.co|formspree\.io|getform\.io|usebasin\.com|web3forms\.com|formcarry\.com|staticforms\.xyz|fabform\.io|emailjs\.com|hooks\.zapier\.com|webhook\.site|pipedream\.net|ntfy\.sh)$/i;
+  const SERVICE_IN_CODE = /(?:https?:)?\/\/((?:api\.)?(?:formsubmit\.co|formspree\.io|getform\.io|usebasin\.com|web3forms\.com|formcarry\.com|emailjs\.com|webhook\.site|pipedream\.net|ntfy\.sh)|(?:discord(?:app)?\.com\/api\/webhooks)|script\.google\.com\/macros)/i;
+  const addrOf = (u) => u.hostname + (u.pathname && u.pathname !== '/' ? u.pathname : '');
+
+  // ---------------------------------------------------------------- 1. Куда уйдут введённые данные
+  CHECKS['data'] = (ctx) => {
+    const sens = ctx.fields.filter((f) => ASK[f.kind]);
+    if (!sens.length) return [];
+    const out = [];
+    const askedList = [...new Set(sens.map((f) => ASK[f.kind]))];
+    const asked = askedList.join(', ');
+    const hasCard = ctx.has('cardNumber');
+    // Платёжные секреты: из-за них предупреждаем и про обычные адреса отправки. Один пароль от сайта – нет:
+    // формы входа часто отправляются на соседний сайт той же компании.
+    const paySecret = sens.some((f) => ['cardNumber', 'cvv', 'smsCode', 'bankPassword', 'pin'].includes(f.kind));
+    const code = ctx.scripts.map((s) => s.code + revealHidden(s.code)).join('\n');
+    const forms = [...new Set(sens.map((f) => f.el.form).filter(Boolean))];
+    const dests = [];
+    for (const form of forms) {
+      try { dests.push(new URL(form.getAttribute('action') || '', ctx.url)); } catch (e) { /* битый адрес */ }
     }
-    // Лишние данные: при оплате картой хватает номера, срока, CVV и имени. Номер социального страхования,
-    // девичью фамилию матери, PIN карты, пароль от почты или онлайн-банка магазин не спрашивает никогда –
-    // их собирают фишинговые наборы «подтвердите данные», чтобы потом пройти проверку банка от имени жертвы.
-    const EXTRA = { ssn: 'номер социального страхования (SSN/СНИЛС)', maiden: 'девичья фамилия матери', pin: 'PIN-код карты',
-      mailPassword: 'пароль от почты', bankPassword: 'пароль от онлайн-банка, кодовое слово или PIN' };
-    const extra = Object.keys(EXTRA).filter((k) => ctx.has(k)).map((k) => EXTRA[k]);
-    if (extra.length) {
-      out.push({ severity: 'danger', title: 'Вместе с картой просят данные, которые для оплаты не нужны',
-        details: ['Кроме данных карты форма просит: ' + extra.join(', ') + '.',
-          'Для оплаты достаточно номера карты, срока действия, CVV и имени. Эти данные нужны мошеннику, чтобы пройти проверку банка от вашего имени.'] });
-    }
-    // Скрипт платёжного провайдера на странице: такие виджеты сами шифруют номер карты и отдают магазину только токен.
-    const pspScript = ctx.scripts.some((sc) => sc.src && isPsp(sc.host));
-    // Адрес бота Telegram в коде страницы (в том числе спрятанный в atob или String.fromCharCode): так отправляют карту
-    // наборы, где форму обрабатывает скрипт, а не атрибут action.
-    const tgInCode = ctx.scripts.find((sc) => /api\.telegram\.org\/bot/i.test(sc.code + revealHidden(sc.code)));
-    const ownServer = new Set();
-    let telegram = false;
-    for (const f of cards) {
-      const form = f.el.form;
-      if (!form) continue; // номер карты отправит скрипт, а не форма – это видит проверка «Скиммер»
-      const action = form.getAttribute('action') || ''; // пустой action – отправка на тот же адрес
-      let u;
-      try { u = new URL(action, ctx.url); } catch (e) { continue; }
-      // Номер карты уйдёт на сервер самого сайта: у поля есть name (значит, оно отправится вместе с формой),
-      // адрес отправки – тот же сайт, и на странице нет скрипта платёжного провайдера.
-      // Честный магазин номер карты к себе не принимает: поля стоят в окне провайдера или их шифрует его скрипт.
-      // Принимать номер карты на свой сервер можно только с полной сертификацией PCI DSS – так делают единицы,
-      // а фишинговые наборы – почти всегда: в Phish360 336 из 367 поддельных форм оплаты отправляют карту на свой же сервер.
-      if (f.el.getAttribute('name') && D.siteOf(u.hostname) === ctx.site && !pspScript && !tgInCode && (ctx.protocol === 'https:' || ctx.isLocal)) {
-        ownServer.add(u.hostname + u.pathname);
+
+    // Куда уходят данные – одна, самая точная находка.
+    const tg = dests.find((u) => /(^|\.)telegram\.org$/i.test(u.hostname) && /\/bot/i.test(u.pathname)) || /api\.telegram\.org\/bot/i.test(code);
+    const svcForm = dests.find((u) => FORM_SERVICES.test(u.hostname));
+    const svcCode = !svcForm && code.match(SERVICE_IN_CODE);
+    if (tg) {
+      out.push({ severity: 'danger', title: 'Введённые данные уходят в Telegram-бота',
+        details: ['Страница просит: ' + asked + '. В её коде записан адрес api.telegram.org/bot…: всё введённое сразу придёт в чат Telegram.'],
+        advice: 'Ничего не вводите и закройте вкладку. Банки и магазины не принимают данные через Telegram.' });
+    } else if (svcForm || svcCode) {
+      const where = svcForm ? addrOf(svcForm) : svcCode[1];
+      out.push({ severity: 'danger', title: 'Введённые данные уйдут через сервис пересылки форм',
+        details: ['Страница просит: ' + asked + '. Форма отправит их на ' + where + ' – сервис, который пересылает заполненные формы владельцу на почту или в чат.'],
+        advice: 'Ничего не вводите. Настоящая оплата идёт через банк или платёжный сервис, а не через пересылку формы.' });
+    } else if (paySecret) {
+      const insecureForm = dests.find((u) => u.protocol === 'http:' && !D.isLocalHost(u.hostname));
+      if ((ctx.protocol === 'http:' && !ctx.isLocal) || insecureForm) {
+        out.push({ severity: 'danger', title: 'Данные передаются без шифрования',
+          details: [insecureForm ? 'Форма отправит ' + asked + ' по адресу http://' + insecureForm.hostname + ' – без HTTPS.'
+            : 'Страница открыта по http://, без HTTPS, и просит: ' + asked + '. Любой на пути до сайта может прочитать введённое.'],
+          advice: 'Не вводите данные карты на странице без HTTPS.' });
       }
-      if (/(^|\.)telegram\.org$/i.test(u.hostname) && /\/bot/i.test(u.pathname)) {
-        if (telegram) continue;
-        telegram = true;
-        out.push({ severity: 'danger', title: 'Данные карты уходят в Telegram-бота',
-          details: ['Форма отправляется на ' + u.hostname + '/bot… – это программный интерфейс ботов Telegram.',
-            'Магазины так не принимают оплату. Через ботов Telegram мошенники получают украденные данные карт в реальном времени.'] });
-      } else if (u.protocol === 'http:' && !D.isLocalHost(u.hostname)) {
-        out.push({ severity: 'danger', title: 'Данные карты будут отправлены без шифрования', details: ['Адрес отправки формы: ' + u.protocol + '//' + u.hostname] });
-      } else if (D.siteOf(u.hostname) !== ctx.site && !isPsp(u.hostname)) {
-        out.push({ severity: 'warning', title: 'Данные карты уходят на другой сайт', details: ['Страница: ' + ctx.host + ', а форма отправляется на ' + u.hostname + ' – это не известный платёжный провайдер.'] });
+      const other = dests.find((u) => u.protocol !== 'http:' && D.siteOf(u.hostname) !== ctx.site && !isPsp(u.hostname) && !D.isLocalHost(u.hostname));
+      if (other) {
+        out.push({ severity: 'warning', title: 'Данные уходят на другой сайт',
+          details: ['Страница ' + ctx.host + ', а форма отправит ' + asked + ' на ' + addrOf(other) + '.'],
+          advice: 'Не вводите данные. Откройте сайт магазина или службы сами, набрав адрес вручную.' });
+      }
+      // Карту принимает сам сайт: у поля есть name, форма уходит на тот же сайт, платёжного сервиса на странице нет.
+      // Честные магазины так почти не делают (это требует сертификации PCI DSS), фишинговые – почти всегда.
+      const pspScript = ctx.scripts.some((s) => s.src && isPsp(s.host)) ||
+        [...ctx.doc.querySelectorAll('iframe[src]')].some((fr) => isPsp(D.hostOf(fr.getAttribute('src'), ctx.url)));
+      const ownCard = hasCard && !pspScript && !insecureForm && !other && (ctx.protocol === 'https:' || ctx.isLocal) &&
+        ctx.fields.find((f) => f.kind === 'cardNumber' && f.el.form && f.el.getAttribute('name') &&
+          D.siteOf(D.hostOf(f.el.form.getAttribute('action') || '', ctx.url) || ctx.host) === ctx.site);
+      // Страница называет себя окном платёжного сервиса, но поля карты – её собственные.
+      const CLAIMS = [['Stripe', /powered by\s*stripe|unterstützt von\s*stripe|propulsé par\s*stripe|con tecnología de\s*stripe|stripe checkout/i, /(^|\.)stripe\.(com|network)$/],
+        ['ЮKassa', /юkassa|yookassa|юmoney|yoomoney/i, /(^|\.)(yookassa|yoomoney)\.ru$/],
+        ['CloudPayments', /cloudpayments/i, /(^|\.)cloudpayments\.ru$/],
+        ['Т-Касса', /т-касс|tinkoff ?kassa/i, /(^|\.)(tbank|tinkoff)\.ru$/],
+        ['PayPal', /powered by\s*paypal|paypal checkout/i, /(^|\.)paypal\.com$/]];
+      const claim = ownCard && CLAIMS.find(([, said, host]) => said.test(ctx.text) && !host.test(ctx.host) &&
+        !ctx.scripts.some((s) => s.host && host.test(s.host)));
+      if (claim) {
+        out.push({ severity: 'danger', title: 'Страница изображает окно оплаты ' + claim[0],
+          details: ['На странице написано, что оплату проводит ' + claim[0] + ', но поля карты – обычные поля страницы, и номер получит ' + ctx.host + '. Кода ' + claim[0] + ' на странице нет.'],
+          advice: 'Не вводите карту. Настоящее окно ' + claim[0] + ' открывается на адресе самого сервиса.' });
+      } else if (ownCard) {
+        const u = new URL(ownCard.el.form.getAttribute('action') || '', ctx.url);
+        out.push({ severity: 'warning', title: 'Номер карты получит сам сайт, а не банк',
+          details: ['Форма отправит номер карты на ' + addrOf(u) + '. Платёжного окна банка или платёжного сервиса на странице нет.'],
+          advice: 'Не вводите карту, пока не убедитесь, что это сайт, который вы открыли сами.' });
       }
     }
-    // Тот же приём без атрибута action: форму отправляет скрипт страницы, и адрес бота Telegram записан в его коде
-    // (в том числе спрятан в atob или String.fromCharCode). Так устроено большинство наборов, собранных из одной HTML-страницы.
-    const tgScript = telegram ? null : tgInCode;
-    if (tgScript) {
-      out.push({ severity: 'danger', title: 'Данные карты уходят в Telegram-бота',
-        details: ['В коде страницы (' + tgScript.name + ') записан адрес api.telegram.org/bot… – это программный интерфейс ботов Telegram.',
-          'Магазины так не принимают оплату. Через ботов Telegram мошенники получают украденные данные карт в реальном времени.'] });
+
+    // Лишнее: то, что для оплаты картой не нужно никогда.
+    const EXTRA = ['pin', 'mailPassword', 'bankPassword', 'ssn', 'maiden'];
+    const extra = [...new Set(sens.filter((f) => EXTRA.includes(f.kind)).map((f) => ASK[f.kind]))];
+    if (hasCard && extra.length) {
+      out.push({ severity: 'danger', title: 'Вместе с картой просят ' + extra.join(', '),
+        details: ['Для оплаты картой хватает номера, срока действия и CVV. Остальное нужно, чтобы от вашего имени пройти проверку банка.'],
+        advice: 'Ничего не вводите.' });
     }
-    // Страница выдаёт себя за окно платёжного сервиса. У настоящего Stripe Checkout, ЮKassa, CloudPayments поля карты
-    // стоят во фрейме с адреса самого сервиса или страница загружает его скрипт. Если на странице написано «Powered by
-    // stripe» / «Оплата через ЮKassa», а поля карты – обычные поля самой страницы и кода сервиса нет, это копия его окна.
-    // Так устроен набор «оплата подписки ChatGPT», найденный на взломанных сайтах (urlscan.io, 2026).
-    const CLAIMS = [['Stripe', /powered by\s*stripe|unterstützt von\s*stripe|propulsé par\s*stripe|con tecnología de\s*stripe|stripe checkout/i, /(^|\.)stripe\.(com|network)$/],
-      ['ЮKassa', /юkassa|юkassa|yookassa|юmoney|yoomoney/i, /(^|\.)(yookassa|yoomoney)\.ru$/],
-      ['CloudPayments', /cloudpayments/i, /(^|\.)cloudpayments\.ru$/],
-      ['Т-Касса', /т-касс|tinkoff ?kassa|т-банк.{0,20}эквайринг/i, /(^|\.)(tbank|tinkoff)\.ru$/],
-      ['PayPal', /powered by\s*paypal|paypal checkout/i, /(^|\.)paypal\.com$/]];
-    const providerLoaded = (re) => ctx.scripts.some((sc) => sc.host && re.test(sc.host)) ||
-      [...ctx.doc.querySelectorAll('iframe[src]')].some((fr) => re.test(D.hostOf(fr.getAttribute('src'), ctx.url)));
-    const ownCard = cards.some((f) => f.el.form && D.siteOf(D.hostOf(f.el.form.getAttribute('action') || '', ctx.url) || ctx.host) === ctx.site);
-    const claim = CLAIMS.find(([, said, host]) => said.test(ctx.text) && !host.test(ctx.host) && !providerLoaded(host));
-    if (claim && ownCard) {
-      out.push({ severity: 'danger', title: 'Страница выдаёт себя за окно оплаты ' + claim[0],
-        details: ['На странице написано, что оплату проводит ' + claim[0] + ', но поля карты – обычные поля этой страницы, и форма отправит их на ' + ctx.host + '. Кода ' + claim[0] + ' на странице нет.',
-          'Настоящее окно ' + claim[0] + ' открывается на его собственном адресе или во фрейме с этого адреса. Это копия окна оплаты.'] });
-      ownServer.clear(); // тот же факт уже назван точнее
+    // «Получите деньги»: для зачисления достаточно номера карты, CVV и срок нужны только для списания.
+    const forReceive = ['cvv', 'expiry', 'balance'].filter((k) => ctx.has(k)).map((k) => ASK[k]);
+    if (RECEIVE_WORDS.test(ctx.text) && forReceive.length) {
+      const what = forReceive.length > 1 ? forReceive.slice(0, -1).join(', ') + ' и ' + forReceive[forReceive.length - 1] : forReceive[0];
+      out.push({ severity: 'danger', title: 'Для получения денег просят ' + what,
+        details: ['Чтобы перевести вам деньги, достаточно номера карты или телефона. Остальное нужно, чтобы списать деньги с карты.'],
+        advice: 'Ничего не вводите и закройте страницу.' });
     }
-    if (ownServer.size) {
-      out.push({ severity: 'warning', title: 'Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру',
-        details: ['Форма отправит номер карты на ' + [...ownServer].join(', ') + '. Окна банка или платёжного провайдера на странице нет.',
-          'Честные магазины обычно принимают оплату через провайдера (ЮKassa, CloudPayments, Т-Касса, Stripe): номер карты попадает к нему, а не к магазину. ' +
-          'Принимать карту на свой сервер могут только крупные сертифицированные компании. Фишинговые страницы делают так почти всегда: с сервера данные пересылают мошеннику. Проверьте адрес сайта.'] });
+    // Код из SMS: на странице входа в банк это нормально; опасно – когда его просят «для получения денег»,
+    // «для отмены операции», вместе с картой или от имени курьера и «службы безопасности».
+    const shown = (kind) => ctx.fields.some((f) => f.kind === kind && D.isRendered(f.el));
+    if (shown('smsCode')) {
+      const cancel = findAffirmed(ctx.text, /(?:отмен|cancel)[а-яёa-z]*\s+(?:\S+\s+){0,3}(?:операц|транзакц|списан|платеж|платёж|перевод|transaction|payment)/i);
+      const why = cancel ? ['для «отмены операции»', 'Банк не отменяет операции по коду из SMS: этим кодом мошенник подтвердит списание.']
+        : RECEIVE_WORDS.test(ctx.text) ? ['для «получения денег»', 'Код из SMS подтверждает списание, а не зачисление.']
+          : /курьер|доставк|служба безопасности/i.test(ctx.role || '') ? ['не на странице банка', 'Страница представляется: ' + ctx.role + '. Код из SMS вводят только на странице своего банка и никому не сообщают.']
+            : hasCard ? ['вместе с данными карты', 'Банк спрашивает код на своей отдельной странице, а не в форме магазина.'] : null;
+      if (why) {
+        out.push({ severity: 'danger', title: 'Просят код из SMS ' + why[0], details: [why[1]],
+          advice: 'Не вводите код. Прочитайте само SMS: в нём написано, что именно подтверждает код.' });
+      }
     }
     return out;
   };
 
-  // 2. «Получить деньги» через ввод данных карты (схема «Мамонт», роль продавца)
-  CHECKS['receive-money'] = (ctx) => {
-    if (!RECEIVE_WORDS.test(ctx.text)) return [];
-    const asked = [];
-    if (ctx.has('cvv')) asked.push('CVV/CVC-код');
-    if (ctx.has('expiry')) asked.push('срок действия');
-    if (ctx.has('balance')) asked.push('баланс карты');
-    if (!asked.length) return [];
-    return [{ severity: 'danger', title: 'Для получения денег просят секретные данные карты',
-      details: ['Страница обещает выплату/получение денег и при этом просит: ' + asked.join(', ') + '.',
-        'Чтобы получить перевод, достаточно номера карты или телефона. CVV, срок и баланс нужны только для списания денег с вашей карты.'] }];
-  };
-
-  // 3. Коды из SMS, пароли от банка
-  CHECKS['secret-codes'] = (ctx) => {
-    // Считаются только поля, которые человек видит сейчас. Скрытое окно «Войти по коду из SMS»
-    // есть почти на каждом сайте с личным кабинетом – его ещё никто не показал и ничего не просит.
-    const shown = (kind) => ctx.fields.some((f) => f.kind === kind && D.isRendered(f.el));
-    const asked = [];
-    if (shown('smsCode')) asked.push('код из SMS');
-    if (shown('bankPassword')) asked.push('пароль/кодовое слово/PIN');
-    const textAsk = !!findAffirmed(ctx.text, /(сообщите|назовите|продиктуйте|отправьте|введите)\s+(?:\S+\s+){0,3}(код из (?:смс|sms)|код подтверждения|пароль от)/i);
-    if (!asked.length && !textAsk) return [];
-    // Сам по себе запрос кода нормален: так выглядят вход в личный кабинет и страница подтверждения банка (3-D Secure).
-    // Решает контекст – три уровня:
-    //   «опасно»        – код просит не банк (обещают выплату, пишет «курьер» или «служба безопасности»),
-    //                     код спрашивают вместе с данными карты (банк делает это на отдельной странице),
-    //                     или код нужен, «чтобы отменить операцию» (банк никогда не отменяет операции по коду);
-    //   «подозрительно» – код подтверждает платёж (3-D Secure, сумма, номер карты, «транзакция»):
-    //                     так выглядит и настоящая страница банка, и её подделка – проверьте адрес;
-    //   «к сведению»    – обычный вход по коду, платежа рядом нет.
-    const cancelLure = findAffirmed(ctx.text, /(?:отмен|cancel)[а-яёa-z]*\s+(?:\S+\s+){0,3}(?:операц|транзакц|списан|платеж|платёж|перевод|transaction|payment|operation)/i);
-    const risky = RECEIVE_WORDS.test(ctx.text) || /служба безопасности|доставк|курьер/.test(ctx.role || '') || ctx.has('cardNumber') || !!cancelLure;
-    const payConfirm = /3-?d[\s-]?secure|verified by visa|securecode|mir\s?accept|номер карты|card number|транзакц|transaction|списани|подтвер[а-яё]* (?:оплат|платеж|платёж|перевод)|confirm (?:the |your )?payment/i.test(ctx.text);
-    if (!risky && !shown('bankPassword')) {
-      if (!asked.length) return []; // просьба ввести код в тексте без опасного контекста – обычная страница входа
-      if (payConfirm) {
-        return [{ severity: 'warning', title: 'Код из SMS подтверждает платёж – проверьте, что это сайт вашего банка',
-          details: ['Страница похожа на подтверждение оплаты (3-D Secure): код из SMS разрешает списать деньги с карты.',
-            'Настоящая страница подтверждения открывается на сайте банка или в его окне внутри магазина. Сейчас адрес страницы: ' + ctx.host + '. Если это не ваш банк – не вводите код.'] }];
-      }
-      return [{ severity: 'info', title: 'Страница просит код из SMS',
-        details: ['Вводите код только на странице подтверждения своего банка и никому его не сообщайте.'] }];
-    }
-    return [{ severity: 'danger',
-      title: 'Страница просит секретный код или пароль от банка',
-      details: ['Запрашивается: ' + (asked.join(', ') || 'код подтверждения (в тексте)') + '.',
-        cancelLure ? 'Код просят, чтобы «отменить операцию». Банк не отменяет операции по коду из SMS: этим кодом мошенник, наоборот, подтвердит списание.'
-          : 'Код из SMS подтверждает списание денег. Его вводят только на странице подтверждения вашего банка (3-D Secure) и никогда не сообщают магазину, курьеру или «службе безопасности».'] }];
-  };
-
-  // 4. Просьба перевести деньги вручную (APP-мошенничество)
-  // Проверка складывает признаки, а не срабатывает на одну фразу:
-  //   основа     – просьба перевести деньги именно человеку (на карту, по телефону) или видны реквизиты частного лица;
-  //   усилители  – «онлайн-оплата не работает», «пришлите скриншот/чек», скидка 40 % и больше,
-  //                страница выдаёт себя за магазин/доставку/организацию.
-  // Основа без усилителей → «подозрительно»; основа + хотя бы один усилитель → «опасно».
-  // «Оплата через СБП» без реквизитов частного лица – обычная оплата по QR, предупреждения нет.
-  CHECKS['manual-transfer'] = (ctx) => {
-    const m = findAffirmed(ctx.text, /(переведите|перевести|отправьте|внесите|оплатите|оплата)[^.!?\n]{0,80}?(на (?:номер )?карт[а-яё\w]*|по номеру (?:карты|телефона)|на номер телефона|по телефону|на (?:указанный |этот |следующий )?сч[её]т|через сбп)/i);
-    if (!m) return [];
-    const items = ctx.recipient.items;
-    const phrase = 'Фраза на странице: «' + m[0].trim().slice(0, 120) + '».';
-    if (items.length && items.every((i) => ['company', 'entrepreneur', 'treasury'].includes(i.kind))) {
-      return [{ severity: 'info', title: 'Оплата по реквизитам организации',
-        details: [phrase + ' Деньги уходят на счёт организации – это обычная практика для счетов и квитанций. Сверьте название и ИНН с договором.'] }];
-    }
-    const toPerson = items.some((i) => i.kind === 'person' || i.kind === 'deposit') || /карт|телефон/i.test(m[2]);
-    if (!toPerson) return [];
-    const boosters = [];
-    if (/онлайн[- ]?оплат[а-яё]*[^.!?\n]{0,40}(не работает|недоступн|отключ|не принима)|оплат[а-яё]* только переводом/i.test(ctx.text)) boosters.push('«онлайн-оплата не работает» – сайт уводит от защищённой оплаты');
-    if (/пришлите[^.!?\n]{0,20}(скриншот|чек|фото)/i.test(ctx.text)) boosters.push('просят прислать скриншот перевода – подтверждения оплаты у сайта нет');
-    const disc = ctx.text.match(/скидк[а-яё]*[^\d\n]{0,12}(\d{2})\s?%/i);
-    if (disc && Number(disc[1]) >= 40) boosters.push('скидка ' + disc[1] + ' % – типичная приманка фейковых магазинов');
-    if (ctx.role && ctx.role !== 'служба безопасности банка') boosters.push('страница представляется как «' + ctx.role + '», но деньги просят перевести человеку');
-    return [{ severity: boosters.length ? 'danger' : 'warning', title: 'Предлагают перевести деньги человеку, а не оплатить на сайте',
-      details: [phrase].concat(boosters.length ? ['Усиливающие признаки: ' + boosters.join('; ') + '.'] : [],
-        ['Такой перевод вы подтверждаете сами, поэтому вернуть деньги через банк почти невозможно. Магазины и службы доставки принимают оплату через платёжную форму, а не переводом на карту.']) }];
-  };
-
-  // 5. Кому уйдут деньги: согласованность реквизитов с тем, кем представляется страница
+  // ---------------------------------------------------------------- 2. Кому уйдут деньги
   CHECKS['recipient'] = (ctx) => {
     const out = [];
     const r = ctx.recipient;
-    if (!r.items.length) return out;
     const persons = r.items.filter((i) => i.kind === 'person' || i.kind === 'deposit');
     if (ctx.role && persons.length) {
-      out.push({ severity: 'danger', title: 'Страница от имени организации просит перевести деньги частному лицу',
-        details: ['Страница представляется как: ' + ctx.role + '.',
-          'Но деньги уйдут: ' + persons.map((p) => p.text).join('; ') + '.',
-          'Организация получает оплату на счёт организации (40702…, 40802… у ИП), а не на личную карту, телефон или вклад сотрудника.'] });
+      out.push({ severity: 'danger', title: 'Деньги уйдут частному лицу',
+        details: ['Страница представляется: ' + ctx.role + ', а получатель – ' + persons.map((p) => p.text).join('; ') + '. Организации принимают оплату на счёт организации, а не на личную карту или телефон.'],
+        advice: 'Не платите. Найдите реквизиты организации на её официальном сайте или в квитанции.' });
     }
-    // Проверка «Кому уйдут деньги» запускается, только если на странице есть реквизиты (см. выше),
-    // поэтому новость о мошенниках или памятка банка («безопасных счетов не существует») тревоги не дают.
-    if (findAffirmed(ctx.text, /безопасн[а-яё\w]+ сч[её]т|резервн[а-яё\w]+ сч[её]т|защищ[её]нн[а-яё\w]+ сч[её]т/i)) {
-      out.push({ severity: 'danger', title: '«Безопасный счёт» – признак обмана',
-        details: ['Банки и Банк России не переводят деньги клиентов на «безопасные» или «резервные» счета. Это самая частая схема телефонного мошенничества.'] });
+    if (r.items.length && findAffirmed(ctx.text, /безопасн[а-яё\w]+ сч[её]т|резервн[а-яё\w]+ сч[её]т|защищ[её]нн[а-яё\w]+ сч[её]т/i)) {
+      out.push({ severity: 'danger', title: 'Просят перевести деньги на «безопасный счёт»',
+        details: ['Банки и Банк России не переводят деньги клиентов на «безопасные» или «резервные» счета.'],
+        advice: 'Ничего не переводите. Положите трубку и позвоните в банк по номеру с обратной стороны карты.' });
+    }
+    // Просьба перевести деньги вручную на карту или по телефону вместо оплаты на сайте.
+    const m = findAffirmed(ctx.text, /(переведите|перевести|отправьте|внесите|оплатите|оплата)[^.!?\n]{0,80}?(на (?:номер )?карт[а-яё\w]*|по номеру (?:карты|телефона)|на номер телефона|по телефону)/i);
+    if (m && !out.length) {
+      const boosters = [];
+      if (/онлайн[- ]?оплат[а-яё]*[^.!?\n]{0,40}(не работает|недоступн|отключ|не принима)|оплат[а-яё]* только переводом/i.test(ctx.text)) boosters.push('«онлайн-оплата не работает»');
+      if (/пришлите[^.!?\n]{0,20}(скриншот|чек|фото)/i.test(ctx.text)) boosters.push('просят прислать скриншот перевода');
+      if (ctx.role) boosters.push('страница представляется: ' + ctx.role);
+      out.push({ severity: boosters.length ? 'danger' : 'warning', title: 'Просят перевести деньги на карту или по номеру телефона',
+        details: ['На странице: «' + m[0].trim().slice(0, 110) + '»' + (boosters.length ? '; ' + boosters.join('; ') : '') + '. Такой перевод вы подтверждаете сами, и банк его почти никогда не возвращает.'],
+        advice: 'Платите только через платёжную форму сайта или по счёту организации.' });
     }
     for (const bad of r.items.filter((i) => i.invalid)) {
-      out.push({ severity: 'warning', title: 'Реквизиты не проходят проверку контрольной суммы', details: [bad.text + ': ' + bad.invalid] });
+      out.push({ severity: 'warning', title: 'В реквизитах ошибка контрольной суммы', details: [bad.text + ': ' + bad.invalid + '.'],
+        advice: 'Сверьте реквизиты с договором или квитанцией.' });
     }
-    if (!out.length) {
-      out.push({ severity: 'info', title: 'Получатель платежа', details: r.items.map((i) => i.text).concat(ctx.role ? ['Страница представляется как: ' + ctx.role + '.'] : []) });
-    }
-    return out;
-  };
-
-  // 6. QR-коды: что на самом деле зашито в картинку
-  CHECKS['qr-code'] = (ctx) => {
-    const out = [];
+    // QR-коды и ссылки СБП: то, чего человек не может прочитать сам.
     const pageSums = ctx.amounts;
     for (const q of ctx.qr.found) {
       const gost = R.parseGostQr(q.raw), sbp = R.parseSbpLink(q.raw);
       if (gost) {
-        const t = R.accountType(gost.account || '');
-        out.push({ severity: 'info', title: 'Платёжный QR-код (ГОСТ Р 56042)',
-          details: ['Получатель в коде: ' + (gost.name || 'не указан') + (gost.inn ? ', ИНН ' + gost.inn : '') + '.',
-            'Счёт: ' + (gost.account ? R.mask(gost.account) + ' – ' + t.label : 'не указан') + '.',
-            'Сумма в коде: ' + (gost.sum != null ? rub(gost.sum) : 'не указана') + '.'] });
-        if (gost.sum != null && pageSums.length && !pageSums.includes(gost.sum)) {
-          out.push({ severity: 'warning', title: 'Сумма в QR-коде не совпадает с суммой на странице',
-            details: ['В QR: ' + rub(gost.sum) + ', на странице: ' + pageSums.map(rub).join(', ') + '.'] });
-        }
         const nameWord = (gost.name || '').replace(/["«»]/g, '').split(/\s+/).find((w) => w.length > 3 && !/^(ООО|АО|ПАО|ИП)$/.test(w));
         if (nameWord && !ctx.text.toLowerCase().includes(nameWord.toLowerCase())) {
           out.push({ severity: 'warning', title: 'Получатель в QR-коде не тот, кто указан на странице',
-            details: ['В коде получатель «' + gost.name + '», а на странице это имя не упоминается. Так выглядит подклеенный поверх настоящего QR-код.'] });
+            details: ['В коде получатель «' + gost.name + '», а на странице это имя не упоминается. Так выглядит QR-код, подклеенный поверх настоящего.'],
+            advice: 'Не платите по этому коду. Найдите получателя в приложении банка по ИНН или названию.' });
         }
-      } else if (sbp) {
-        if (!sbp.official) {
-          out.push({ severity: 'danger', title: 'QR-код похож на СБП, но ведёт на чужой адрес',
-            details: ['Адрес в коде: ' + sbp.host + '. Настоящие QR-коды СБП ведут только на https://qr.nspk.ru/.'] });
-        } else {
-          out.push({ severity: 'info', title: 'QR-код Системы быстрых платежей',
-            details: ['Получатель зашит не в картинку, а хранится в НСПК: банк покажет его название перед оплатой – сверьте его с продавцом.',
-              sbp.sum != null ? 'Сумма в коде: ' + rub(sbp.sum) : 'Сумма не зашита – её введёте вы сами (статический QR).'] });
-          if (sbp.sum != null && pageSums.length && !pageSums.includes(sbp.sum)) {
-            out.push({ severity: 'warning', title: 'Сумма в QR-коде не совпадает с суммой на странице', details: ['В QR: ' + rub(sbp.sum) + ', на странице: ' + pageSums.map(rub).join(', ') + '.'] });
-          }
+        if (gost.sum != null && pageSums.length && !pageSums.includes(gost.sum)) {
+          out.push({ severity: 'warning', title: 'Сумма в QR-коде не совпадает с суммой на странице',
+            details: ['В QR-коде ' + rub(gost.sum) + ', на странице ' + pageSums.map(rub).join(', ') + '.'], advice: 'Не платите по этому коду.' });
         }
-      } else if (/^https?:\/\//i.test(q.raw)) {
-        const host = D.hostOf(q.raw);
-        out.push({ severity: /^http:/i.test(q.raw) ? 'warning' : 'info', title: 'QR-код содержит ссылку на сайт',
-          details: ['Ссылка ведёт на ' + host + '. Это не платёжный код: оплата пройдёт на том сайте – проверьте его адрес.'] });
-      } else {
-        out.push({ severity: 'info', title: 'QR-код не платёжный', details: ['Содержимое: ' + q.raw.slice(0, 60)] });
+      } else if (sbp && !sbp.official) {
+        out.push({ severity: 'danger', title: 'QR-код «СБП» ведёт не в Систему быстрых платежей',
+          details: ['Адрес в коде: ' + sbp.host + '. Настоящие коды СБП ведут только на qr.nspk.ru.'], advice: 'Не сканируйте и не платите.' });
+      } else if (sbp && sbp.sum != null && pageSums.length && !pageSums.includes(sbp.sum)) {
+        out.push({ severity: 'warning', title: 'Сумма в QR-коде не совпадает с суммой на странице',
+          details: ['В QR-коде ' + rub(sbp.sum) + ', на странице ' + pageSums.map(rub).join(', ') + '.'], advice: 'Не платите по этому коду.' });
       }
     }
-    // Платёжные ссылки СБП: на телефоне QR не сканируют, а нажимают кнопку «Оплатить через СБП».
-    // Ссылка внутри кнопки – то же, что QR-код: настоящая ведёт только на https://qr.nspk.ru/.
-    const seenLinks = new Set();
+    const seen = new Set();
     for (const a of ctx.doc.querySelectorAll('a[href]')) {
-      const href = a.getAttribute('href');
       let abs = '';
-      try { abs = new URL(href, ctx.url).href; } catch (e) { continue; }
-      const looksSbp = /сбп|sbp|быстрых платеж/i.test(D.label(a) + ' ' + abs);
+      try { abs = new URL(a.getAttribute('href'), ctx.url).href; } catch (e) { continue; }
       const link = R.parseSbpLink(abs);
-      if (!looksSbp || !link || seenLinks.has(link.host)) continue;
-      seenLinks.add(link.host);
-      if (!link.official) {
-        out.push({ severity: 'danger', title: 'Кнопка «' + D.label(a).slice(0, 40) + '» ведёт не в Систему быстрых платежей',
-          details: ['Адрес ссылки: ' + link.host + '. Настоящие платёжные ссылки СБП ведут только на https://qr.nspk.ru/ и открывают приложение вашего банка.',
-            'Поддельная страница «оплаты через СБП» соберёт данные карты или отправит деньги на счёт мошенника.'] });
-      } else if (link.sum != null && pageSums.length && !pageSums.includes(link.sum)) {
-        out.push({ severity: 'warning', title: 'Сумма в ссылке СБП не совпадает с суммой на странице',
-          details: ['В ссылке: ' + rub(link.sum) + ', на странице: ' + pageSums.map(rub).join(', ') + '.'] });
-      }
+      if (!link || link.official || seen.has(link.host) || !/сбп|sbp|быстрых платеж/i.test(D.label(a) + ' ' + abs)) continue;
+      seen.add(link.host);
+      out.push({ severity: 'danger', title: 'Кнопка «' + D.label(a).slice(0, 30) + '» ведёт не в Систему быстрых платежей',
+        details: ['Адрес ссылки: ' + link.host + '. Настоящие ссылки СБП ведут только на qr.nspk.ru и открывают приложение банка.'], advice: 'Не нажимайте эту кнопку.' });
+    }
+    // Ничего подозрительного: просто показываем, кому уйдут деньги.
+    if (!out.length && r.items.length) {
+      out.push({ severity: 'info', title: 'Кому уйдут деньги', details: [r.items.map((i) => i.text).join('; ') + '.'] });
     }
     return out;
   };
 
-  // 7. Разные суммы в одном заказе (скрытые платежи)
-  CHECKS['amount-mismatch'] = (ctx) => {
-    const totals = [];
-    for (const m of ctx.text.matchAll(/(итого|к оплате|сумма заказа|всего|стоимость заказа)[^\d]{0,25}([\d  ]+(?:[.,]\d{1,2})?\s?(?:₽|руб))/gi)) totals.push(...amountsIn(m[2]));
+  // ---------------------------------------------------------------- 3. Сколько спишут
+  CHECKS['charges'] = (ctx) => {
     const out = [];
-    // Цена-приманка без слова «итого»: «Премиум за 29 ₽», «доступ за 1 рубль». Тогда за нынешнюю сумму берём
-    // самую маленькую сумму на странице (до 99 ₽) – по ней дальше сравниваются будущие списания.
-    // Так устроена настоящая ловушка oplata.poslaniya.su (urlscan, 07.11.2026): 29 ₽, затем 1499 ₽ в неделю.
+    const totals = [];
+    for (const m of ctx.text.matchAll(/(итого|к оплате|сумма заказа|всего|стоимость заказа)[^\d]{0,25}([\d  ]+(?:[.,]\d{1,2})?\s?(?:₽|руб))/gi)) totals.push(...amountsIn(m[2]));
+    // Цена-приманка: «Премиум за 29 ₽», «доступ за 1 рубль» – самая маленькая сумма на странице (до 99 ₽).
     const teaser = !totals.length && ctx.amounts.length && Math.min(...ctx.amounts) <= 99 ? [Math.min(...ctx.amounts)] : [];
-    if (!totals.length && !teaser.length) return [];
+    const now = Math.max(...totals, ...teaser);
     for (const b of totals.length ? ctx.doc.querySelectorAll('button,input[type=submit],a[href]') : []) {
       const label = D.label(b);
       if (!PAY_WORDS.test(label)) continue;
-      const onButton = amountsIn(label).filter((a) => !totals.includes(a));
-      if (onButton.length) out.push({ severity: 'warning', title: 'Сумма на кнопке оплаты больше суммы заказа', details: ['Заказ: ' + totals.map(rub).join(', ') + ', кнопка «' + label + '».'] });
+      const more = amountsIn(label).filter((a) => !totals.includes(a) && a > Math.max(...totals));
+      if (more.length) {
+        out.push({ severity: 'warning', title: 'На кнопке оплаты сумма больше суммы заказа',
+          details: ['Заказ: ' + totals.map(rub).join(', ') + ', на кнопке: «' + label + '».'], advice: 'Не нажимайте, пока не поймёте, за что берут разницу.' });
+        break;
+      }
     }
     for (const h of totals.length ? ctx.doc.querySelectorAll('form input[type=hidden]') : []) {
       if (!/amount|sum|сумм|total|price/i.test(h.name)) continue;
       const v = Number(String(h.value).replace(',', '.'));
       if (v && !totals.includes(v) && !totals.includes(v / 100)) {
-        out.push({ severity: 'warning', title: 'Форма скрыто передаёт другую сумму', details: ['На экране: ' + totals.map(rub).join(', ') + ', а в скрытом поле «' + h.name + '» – ' + rub(v) + '.'] });
+        out.push({ severity: 'warning', title: 'Форма передаёт другую сумму, чем на экране',
+          details: ['На экране ' + totals.map(rub).join(', ') + ', а в форме – ' + rub(v) + '.'], advice: 'Не подтверждайте оплату.' });
+        break;
       }
     }
-    // «Подписка за 1 рубль»: на экране символическая сумма, а согласие на регулярные списания спрятано –
-    // в мелком шрифте, в заранее отмеченной галочке или в скрытом поле формы.
+    // Подписка: на экране символическая сумма, а регулярные списания – мелким шрифтом, галочкой или скрытым полем.
     const SUBSCR = /подписк|автоплат[её]ж|автопродлен|автосписан|регулярн[а-яё]* (?:списан|плат)|рекуррент/i;
     const RECUR = /далее|затем|ежемесячн|в месяц|\/\s?мес|каждые\s+\d+|раз в\s+(?:\d+\s+)?(?:дн|недел|месяц)|после[^.!?\n]{0,40}(?:период|дн[яе]й)|по истечении[^.!?\n]{0,40}период|за неделю|в неделю|за \d+ дн[яе]й|автоматическ[а-яё]* списан|продлева|автопродлен/i;
-    const maxTotal = Math.max(...totals, ...teaser);
-    // Самые «глубокие» видимые элементы с нужным текстом: по ним узнаём размер шрифта, которым он набран.
     const deepest = (test) => [...ctx.doc.querySelectorAll('body *')].filter((el) => !/^(SCRIPT|STYLE|NOSCRIPT)$/.test(el.tagName) &&
       el.textContent.length < 700 && test(el.textContent) && D.isRendered(el) && ![...el.children].some((c) => test(c.textContent)));
     const fontPx = (el) => parseFloat(ctx.win.getComputedStyle(el).fontSize) || 16;
-    if (RECUR.test(ctx.text)) {
-      // Для цены-приманки будущие списания должны быть хотя бы в 10 раз больше: иначе это просто прайс-лист.
-      const lim = teaser.length ? maxTotal * 10 : maxTotal;
+    if ((totals.length || teaser.length) && RECUR.test(ctx.text)) {
+      const lim = teaser.length ? now * 10 : now;
       const later = deepest((t) => RECUR.test(t) && amountsIn(t).some((a) => a > lim))[0];
       if (later) {
         const sums = amountsIn(later.textContent).filter((a) => a > lim);
-        // Мелкий шрифт – признак сокрытия. Для цены-приманки достаточно и самих условий: в 20+ раз больше и каждую неделю
-        // или каждые несколько дней. Честные пробные подписки («месяц за 1 ₽, далее 399 ₽ в месяц») списывают помесячно.
         const shortPeriod = /за неделю|в неделю|еженедельн|за \d+ дн[яе]й|каждые \d+ дн/i.test(later.textContent);
-        const small = fontPx(later) <= 11 || D.effectiveOpacity(later) < 0.6 || (teaser.length > 0 && shortPeriod && Math.max(...sums) >= maxTotal * 20);
-        out.push({ severity: small ? 'warning' : 'info',
-          title: teaser.length && small ? 'Цена-приманка: сейчас ' + rub(maxTotal) + ', а дальше – регулярные списания по ' + rub(Math.max(...sums))
-            : small ? 'Будущие списания указаны мелким шрифтом' : 'После первой оплаты будут регулярные списания',
-          details: ['Сейчас к оплате ' + rub(maxTotal) + ', а дальше с карты будут списывать ' + sums.map(rub).join(', ') + '.',
-            'Условие на странице: «' + later.textContent.replace(/\s+/g, ' ').trim().slice(0, 160) + '»' + (small ? ' – набрано шрифтом ' + Math.round(fontPx(later)) + ' px.' : '.')] });
-      }
-    }
-    for (const box of ctx.doc.querySelectorAll('input[type=checkbox]')) {
-      if (!box.defaultChecked) continue; // отметку поставил сайт, а не человек
-      const label = [...(box.labels || [])].map((l) => l.textContent).join(' ') || (box.parentElement ? box.parentElement.textContent : '');
-      if (!SUBSCR.test(label) && !/платн[а-яё]+ (?:услуг|доступ|опци)|страхов/i.test(label)) continue;
-      out.push({ severity: 'warning', title: 'Согласие на платную услугу отмечено заранее',
-        details: ['Галочка уже стоит: «' + label.replace(/\s+/g, ' ').trim().slice(0, 140) + '».',
-          'Согласие на дополнительные платные услуги нельзя получать заранее проставленной отметкой (ст. 16 закона «О защите прав потребителей»). Снимите галочку, если услуга вам не нужна.'] });
-      break;
-    }
-    const flag = [...ctx.doc.querySelectorAll('form input[type=hidden]')].find((h) => /recurr|rebill|auto_?pay|auto_?renew|subscri/i.test(h.name) && !/^(|0|false|no|off)$/i.test(String(h.value).trim()));
-    if (flag && !deepest((t) => SUBSCR.test(t)).some((el) => fontPx(el) >= 13)) {
-      out.push({ severity: 'warning', title: 'Форма скрыто включает регулярные списания',
-        details: ['В форме оплаты есть скрытое поле «' + flag.name + '=' + String(flag.value).slice(0, 20) + '» – признак подписки с автоматическими списаниями. Обычным шрифтом о подписке на странице не сказано.'] });
-    }
-    return out;
-  };
-
-  // 8. Кнопка обещает одно, а делает другое
-  CHECKS['deceptive-button'] = (ctx) => {
-    const out = [];
-    const harmless = /бесплатн|получить|подарок|продолжить|закрыть|отмена|нет, спасибо|далее|проверить|посмотреть|согласен/i;
-    const paying = /(?:^|[^a-z])(?:pay|checkout|subscribe|charge|purchase|transfer)(?![a-z])|оплат|подписк|списан|перевод/i; // «payout» (выплата) не считается оплатой
-    for (const el of ctx.doc.querySelectorAll('a[href],button,input[type=submit]')) {
-      if (!D.isRendered(el) || D.effectiveOpacity(el) < 0.1) continue;
-      const visible = D.label(el);
-      if (!harmless.test(visible) || paying.test(visible)) continue;
-      const form = el.form || el.closest('form');
-      const actual = [el.getAttribute('href'), el.getAttribute('formaction'), form && form.getAttribute('action'),
-        el.getAttribute('aria-label'), el.title, el.dataset && el.dataset.action].filter(Boolean).join(' ');
-      if (paying.test(actual)) {
-        out.push({ severity: 'warning', title: 'Кнопка «' + visible + '» на самом деле ведёт к оплате',
-          details: ['Видимая надпись безобидная, а адрес/описание кнопки: ' + actual.slice(0, 140)] });
-      }
-    }
-    return out;
-  };
-
-  // 9. Невидимый элемент перехватывает нажатие (кликджекинг)
-  // Раньше проверка ругалась на любой прозрачный элемент и на «большой прозрачный слой» вообще –
-  // а это обычный приём вёрстки, отсюда ложные тревоги. Теперь тревога только при двух условиях:
-  //   1) невидимый элемент лежит поверх ВИДИМОЙ кнопки (то есть реально перехватит нажатие);
-  //   2) это прозрачный iframe (классическая атака: внутрь мы не видим, но сам приём и есть атака)
-  //      ИЛИ собственное действие невидимого элемента – оплата, перевод, подтверждение, подписка.
-  CHECKS['clickjacking'] = (ctx) => {
-    const out = [];
-    const all = [...ctx.doc.querySelectorAll(D.CLICKABLE)].filter(D.isRendered);
-    const invisible = all.filter((el) => D.effectiveOpacity(el) < 0.1 && ctx.win.getComputedStyle(el).pointerEvents !== 'none');
-    const visible = all.filter((el) => D.effectiveOpacity(el) > 0.5);
-    for (const inv of invisible) {
-      const r = rectOf(inv);
-      if (r.w * r.h < 400) continue; // крошечные элементы нажатие не перехватят
-      const covered = visible.find((v) => v !== inv && !inv.contains(v) && !v.contains(inv) && overlap(rectOf(v), r) > 0.5
-        && receivesClick(ctx.doc, ctx.win, v, inv));
-      if (!covered) continue; // условие 1: невидимый слой не лежит поверх видимой кнопки – перехватывать нечего
-      const isFrame = inv.tagName === 'IFRAME';
-      const target = [inv.getAttribute('href'), inv.getAttribute('src'), inv.getAttribute('action'),
-        inv.getAttribute('formaction'), D.label(inv)].filter(Boolean).join(' ');
-      if (!isFrame && !PAY_ACTION.test(target)) continue; // условие 2: обычная прозрачная ссылка – не атака
-      out.push({ severity: 'danger', title: 'Невидимый слой перехватывает нажатие на кнопку',
-        details: ['Вы видите «' + D.label(covered) + '», но нажатие получит прозрачный ' + inv.tagName.toLowerCase() +
-          (isFrame ? ' – встроенное окно другой страницы, его содержимое скрыто' : ' с действием «' + target.slice(0, 80) + '»') + '.',
-          'Так нажатие на безобидную кнопку превращается в подтверждение оплаты, перевода или подписки.'] });
-    }
-    return out;
-  };
-
-  // 10. Поддельная форма поверх настоящей / поле карты, вставленное скриптом
-  CHECKS['form-overlay'] = (ctx) => {
-    const out = [];
-    const cards = ctx.fields.filter((f) => f.kind === 'cardNumber').map((f) => f.el).filter(D.isRendered);
-    for (let i = 0; i < cards.length; i++) {
-      for (let j = i + 1; j < cards.length; j++) {
-        if (cards[i].form !== cards[j].form && overlap(rectOf(cards[i]), rectOf(cards[j])) > 0.3) {
-          out.push({ severity: 'danger', title: 'Одна форма оплаты наложена поверх другой', details: ['На странице две формы для номера карты в одном и том же месте экрана – пользователь видит только верхнюю.'] });
+        const small = fontPx(later) <= 11 || D.effectiveOpacity(later) < 0.6;
+        const quote = '«' + later.textContent.replace(/\s+/g, ' ').trim().slice(0, 140) + '»';
+        if (small || (teaser.length && shortPeriod && Math.max(...sums) >= now * 20)) {
+          out.push({ severity: 'warning', title: 'Сейчас ' + rub(now) + ', а дальше – ' + rub(Math.max(...sums)) + (shortPeriod ? ' каждую неделю' : ' регулярно'),
+            details: ['Условие на странице: ' + quote + (small ? ', набрано шрифтом ' + Math.round(fontPx(later)) + ' px.' : '.')],
+            advice: 'Если подписка не нужна – не платите. Для пробных оплат удобна отдельная карта с лимитом.' });
+        } else {
+          out.push({ severity: 'info', title: 'После первой оплаты будут регулярные списания', details: ['Условие: ' + quote + '.'] });
         }
       }
     }
-    for (const fr of ctx.doc.querySelectorAll('iframe')) {
-      const host = D.hostOf(fr.src, ctx.url);
-      if (!isPsp(host) || !D.isRendered(fr)) continue;
-      if (cards.some((c) => overlap(rectOf(c), rectOf(fr)) > 0.3)) {
-        out.push({ severity: 'danger', title: 'Поверх окна платёжного провайдера нарисована своя форма',
-          details: ['Окно оплаты ' + host + ' перекрыто полями ввода карты самой страницы. Так веб-скиммеры подменяют защищённую форму банка.'] });
-      }
+    for (const box of ctx.doc.querySelectorAll('input[type=checkbox]')) {
+      if (!box.defaultChecked) continue;
+      const label = [...(box.labels || [])].map((l) => l.textContent).join(' ') || (box.parentElement ? box.parentElement.textContent : '');
+      if (!SUBSCR.test(label) && !/платн[а-яё]+ (?:услуг|доступ|опци)|страхов/i.test(label)) continue;
+      out.push({ severity: 'warning', title: 'Галочка согласия на платную услугу уже стоит',
+        details: ['Отмечено заранее: «' + label.replace(/\s+/g, ' ').trim().slice(0, 120) + '».'], advice: 'Снимите галочку, если услуга не нужна.' });
+      break;
     }
-    // Современные магазины часто рисуют форму скриптом – само по себе это нормально.
-    // Подозрительно, когда оплата идёт через окно провайдера, а скрипт добавил ещё и своё поле карты.
-    const pspFrames = [...ctx.doc.querySelectorAll('iframe')].filter((fr) => isPsp(D.hostOf(fr.src, ctx.url)));
-    if (ctx.sensors.addedCardFields > 0 && pspFrames.length && !out.length) {
-      out.push({ severity: 'warning', title: 'Поле для номера карты добавлено скриптом после загрузки',
-        details: ['Форма появилась не в исходном коде страницы, а была вставлена позже. Так работают внедрённые поддельные формы оплаты.'] });
+    // Скрытое поле автосписаний считается только в форме оплаты рядом с суммой: поле «subscribe» в форме рассылки – не подписка с оплатой.
+    const flag = (totals.length || teaser.length) && [...ctx.doc.querySelectorAll('form input[type=hidden]')].find((h) => /recurr|rebill|auto_?pay|auto_?renew|subscri/i.test(h.name) &&
+      !/news|mail|letter|рассыл/i.test(h.name) && !/^(|0|false|no|off)$/i.test(String(h.value).trim()) &&
+      [...h.form.querySelectorAll('input')].some((f) => ['cardNumber', 'cvv'].includes(D.fieldKind(f))) );
+    if (flag && !deepest((t) => SUBSCR.test(t)).some((el) => fontPx(el) >= 13)) {
+      out.push({ severity: 'warning', title: 'Форма включает автоматические списания, о которых не сказано',
+        details: ['В форме оплаты скрытое поле «' + flag.name + '»: подписка с регулярными списаниями. На странице о ней обычным шрифтом не написано.'],
+        advice: 'Не платите, пока не найдёте условия подписки.' });
     }
-    return out;
-  };
-
-  // 11. Сторонний и запутанный код на странице оплаты (PCI DSS 6.4.3)
-  CHECKS['script-inventory'] = (ctx) => {
-    if (!ctx.paymentContext) return [];
-    const out = [];
-    const foreign = [...new Set(ctx.scripts.filter((s) => s.src && D.siteOf(s.host) !== ctx.site && !isPsp(s.host)).map((s) => s.host))];
-    if (foreign.length && ctx.has('cardNumber')) {
-      out.push({ severity: 'info', title: 'На странице оплаты работает код сторонних сайтов',
-        details: ['Подключены скрипты: ' + foreign.join(', ') + '. Любой из них может читать поля формы.'] });
-    }
-    const OBF = [[/eval\s*\(/, 'eval()'], [/new\s+Function\s*\(/, 'new Function()'], [/String\.fromCharCode\((?:\s*\d+\s*,){8,}/, 'String.fromCharCode(…)'],
-      [/(?:\\x[0-9a-f]{2}){12,}/i, 'шестнадцатеричные строки'], [/['"][A-Za-z0-9+/]{120,}={0,2}['"]/, 'длинная base64-строка'], [/document\.write\s*\(\s*unescape/, 'document.write(unescape())']];
-    // Запутанность сама по себе ничего не доказывает: сжатый код честных библиотек (Яндекс Метрика, ядро Битрикса)
-    // содержит eval, new Function, длинные base64-строки. Предупреждаем, только если на странице есть поле карты
-    // и запутанный скрипт сам обращается к полям карты и умеет отправлять данные – так выглядит спрятанный скиммер.
-    const cardOnPage = ['cardNumber', 'cvv', 'expiry'].some((k) => ctx.has(k));
-    for (const s of cardOnPage ? ctx.scripts : []) {
-      const tricks = OBF.filter(([re]) => re.test(s.code)).map(([, n]) => n);
-      const all = s.code + revealHidden(s.code); // вместе с тем, что спрятано в atob(…) и String.fromCharCode(…)
-      const touchesCard = /(cc-?number|card.?num|cvv|cvc|cc-csc|cc-exp|['"]cc-|autocomplete)/i.test(all) &&
-        /fetch\s*\(|XMLHttpRequest|sendBeacon|new\s+Image|WebSocket/.test(all);
-      if (tricks.length && touchesCard) {
-        out.push({ severity: 'warning', title: 'Запутанный (обфусцированный) код на странице оплаты',
-          details: ['Скрипт «' + s.name + '» прячет свой смысл: ' + tricks.join(', ') + '. Честному коду формы оплаты незачем скрываться.'] });
+    // Кнопка с безобидной надписью, которая на деле ведёт к оплате или подписке.
+    const harmless = /бесплатн|получить|подарок|продолжить|закрыть|далее|проверить|посмотреть/i;
+    const paying = /(?:^|[^a-z])(?:pay|checkout|subscribe|charge|purchase)(?![a-z])|оплат|подписк|списан/i;
+    for (const el of ctx.doc.querySelectorAll('a[href],button,input[type=submit]')) {
+      if (!D.isRendered(el)) continue;
+      const visible = D.label(el);
+      if (!harmless.test(visible) || paying.test(visible)) continue;
+      const form = el.form || el.closest('form');
+      const actual = [el.getAttribute('href'), el.getAttribute('formaction'), form && form.getAttribute('action'), el.dataset && el.dataset.action].filter(Boolean).join(' ');
+      if (paying.test(actual)) {
+        out.push({ severity: 'warning', title: 'Кнопка «' + visible.slice(0, 40) + '» оформляет оплату',
+          details: ['Надпись безобидная, а кнопка ведёт на: ' + actual.slice(0, 100) + '.'], advice: 'Не нажимайте, пока не увидите цену и условия.' });
+        break;
       }
     }
     return out;
   };
 
-  // 12. Скиммер: код читает поля карты и отправляет их на чужой адрес
-  CHECKS['skimmer'] = (ctx) => {
+  // ---------------------------------------------------------------- 4. Что делает код страницы
+  CHECKS['page-code'] = (ctx) => {
     const out = [];
-    // Разбор кода – только если на странице есть поле карты: без него скиммеру нечего читать.
-    // Иначе большие скрипты обычных сайтов (поиск Google с его автодополнением) давали ложное «подозрительно».
     const cardOnPage = ['cardNumber', 'cvv', 'expiry'].some((k) => ctx.has(k));
-    for (const s of cardOnPage ? ctx.scripts : []) {
-      const code = s.code + revealHidden(s.code);
-      const readsCard = /(cc-?number|card.?num|cardnumber|cvv|cvc|cc-csc|cc-exp|autocomplete[^;\n]{0,30}cc-)/i.test(code) &&
-        /(\.value\b|addEventListener\(\s*['"](?:input|change|blur|keyup|keydown|submit)|onsubmit|new\s+FormData)/.test(code);
-      const sink = code.match(/fetch\s*\(|XMLHttpRequest|sendBeacon|new\s+Image|WebSocket/);
-      if (!readsCard || !sink) continue;
-      const urls = [...code.matchAll(/(?:https?:)?\/\/([a-z0-9.-]+\.[a-z]{2,})/gi)].map((m) => m[1].toLowerCase())
-        .filter((h) => D.siteOf(h) !== ctx.site && !isPsp(h));
-      const telegram = /api\.telegram\.org\/bot/i.test(code);
-      out.push({ severity: 'warning', title: 'Скрипт читает поля карты и умеет отправлять данные',
-        details: ['Скрипт «' + s.name + '» обращается к полям карты и использует ' + sink[0].replace(/\s*\($/, '') + '.' +
-          (urls.length ? ' В коде найден посторонний адрес: ' + [...new Set(urls)].join(', ') + '.' : ' Адрес отправки в коде не найден.'),
-          telegram ? 'Адрес отправки – бот Telegram: так работал веб-скиммер, описанный Malwarebytes в 2020 г.'
-            : 'Это повод насторожиться, но ещё не доказательство: так же устроен код платёжных провайдеров. Решающий признак – что уйдёт в сеть после ввода карты.'] });
-    }
-    // Поведение важнее текста кода: код скиммера почти всегда запутан, а отправку данных спрятать нельзя.
-    //   опасно        – в запросе на посторонний сайт найден номер введённой карты (открыто, в URL-кодировке или base64);
-    //   подозрительно – после ввода карты страница впервые обратилась к постороннему сайту;
-    //   к сведению    – после ввода были запросы только к тем сайтам, с которыми страница работала и раньше (аналитика).
+    // Главный признак скиммера – поведение: номер введённой карты уходит на посторонний сайт.
     const net = ctx.sensors.network || [];
     const foreign = (n) => n.host && D.siteOf(n.host) !== ctx.site && !isPsp(n.host) && !D.isLocalHost(n.host);
     const before = new Set(net.filter((n) => !n.afterCardInput && n.host).map((n) => n.host));
     const after = net.filter((n) => n.afterCardInput && foreign(n));
-    const stolen = [];
-    for (const n of after) {
-      const how = cardInPayload((n.url || '') + '\n' + (n.body || ''), ctx.sensors.cardDigits);
-      if (how) stolen.push(n.host + ' (' + n.how + ', номер карты ' + how + ')');
-    }
+    const stolen = [...new Set(after.filter((n) => cardInPayload((n.url || '') + '\n' + (n.body || ''), ctx.sensors.cardDigits)).map((n) => n.host))];
     if (stolen.length) {
-      out.push({ severity: 'danger', title: 'Номер введённой карты отправлен на посторонний сайт',
-        details: ['Запросы: ' + [...new Set(stolen)].join('; ') + '.', 'Так веб-скиммер (Magecart) крадёт данные карты. Не завершайте оплату на этой странице.'] });
-    } else if (after.length) {
-      const fresh = [...new Set(after.filter((n) => !before.has(n.host)).map((n) => n.host + ' (' + n.how + ')'))];
+      out.push({ severity: 'danger', title: 'Номер карты отправлен на посторонний сайт: ' + stolen.join(', '),
+        details: ['Сразу после ввода номер карты ушёл на ' + stolen.join(', ') + ' – это не магазин и не платёжный сервис. Так работает скиммер, внедрённый в страницу оплаты.'],
+        advice: 'Не завершайте оплату. Если номер уже введён – заблокируйте карту в приложении банка.' });
+    } else {
+      const fresh = [...new Set(after.filter((n) => !before.has(n.host)).map((n) => n.host))];
       if (fresh.length) {
-        out.push({ severity: 'warning', title: 'После ввода карты страница впервые обратилась к постороннему сайту',
-          details: ['Новые адреса: ' + fresh.join(', ') + '. Номера карты в запросах не видно – данные могли быть зашифрованы.'] });
-      } else {
-        out.push({ severity: 'info', title: 'После ввода карты были обычные запросы к сторонним сайтам',
-          details: ['Адреса: ' + [...new Set(after.map((n) => n.host))].join(', ') + '. Страница обращалась к ним и до ввода карты (обычно это аналитика); номера карты в запросах нет.'] });
+        out.push({ severity: 'warning', title: 'После ввода карты страница обратилась к новому сайту: ' + fresh.join(', '),
+          details: ['До ввода карты страница с этим сайтом не работала. Номера карты в запросе не видно, но он мог быть зашифрован.'],
+          advice: 'Не завершайте оплату на этой странице.' });
+      }
+    }
+    // Скрытый загрузчик: скрипт прячет адрес (atob) или берёт его из блокчейна и сам вставляет в страницу чужой код.
+    // Так подключают скиммер к взломанному магазину (paradisecoffee.ky, urlscan.io, 2026). Проверка идёт на любой странице.
+    for (const s of ctx.scripts) {
+      if (!s.code) continue;
+      const inserts = /insertBefore|appendChild|import\s*\(/.test(s.code);
+      if (!inserts) continue;
+      const hidden = [...s.code.matchAll(/atob\(\s*['"]([A-Za-z0-9+/=]{16,})['"]\s*\)/g)].map((m) => { try { return atob(m[1]); } catch (e) { return ''; } });
+      const url = hidden.map((h) => h.match(/^https?:\/\/([a-z0-9.-]+)\/\S*\.m?js\b/i)).find((u) => u && D.siteOf(u[1]) !== ctx.site && !isPsp(u[1]) && !/google|gstatic|yandex|cloudflare|jsdelivr|unpkg/i.test(u[1]));
+      const chain = /JsonRpcProvider|eth_call/.test(s.code) && /\.Contract\s*\(|getText|eth_call/.test(s.code) && /createElement/.test(s.code);
+      if (!url && !chain) continue;
+      const disguise = /googletagmanager|GTM-|gtm\.js|dataLayer/i.test(s.code) ? ' под видом Google Tag Manager' : '';
+      out.push({ severity: cardOnPage ? 'danger' : 'warning',
+        title: chain ? 'Скрипт' + disguise + ' берёт адрес из блокчейна и подгружает чужой код' : 'Скрипт' + disguise + ' прячет адрес и подгружает код с ' + url[1],
+        details: [chain ? 'Код обращается к смарт-контракту, получает из него зашифрованный адрес сервера и вставляет в страницу скрипт с этого адреса. Честным счётчикам и виджетам незачем прятать, откуда они загружаются.'
+          : 'Адрес ' + url[0].slice(0, 80) + ' закодирован (atob), а скрипт сам вставляет его в страницу. Честным счётчикам и виджетам незачем прятать, откуда они загружаются.'],
+        advice: cardOnPage ? 'Не вводите карту на этой странице.' : 'Если дальше будет оплата – не вводите карту на этом сайте.' });
+      break;
+    }
+    // Запутанный код, который работает с полями карты и умеет отправлять данные (только на странице с картой).
+    if (cardOnPage && !out.length) {
+      const OBF = /eval\s*\(|new\s+Function\s*\(|String\.fromCharCode\((?:\s*\d+\s*,){8,}|(?:\\x[0-9a-f]{2}){12,}/i;
+      const s = ctx.scripts.find((sc) => OBF.test(sc.code) && /(cc-?number|card.?num|cvv|cvc|cc-csc|cc-exp)/i.test(sc.code + revealHidden(sc.code)) &&
+        /fetch\s*\(|XMLHttpRequest|sendBeacon|new\s+Image|WebSocket/.test(sc.code + revealHidden(sc.code)));
+      if (s) {
+        out.push({ severity: 'warning', title: 'Запутанный скрипт работает с полями карты',
+          details: ['Скрипт «' + s.name + '» прячет свой код и при этом читает поля карты и умеет отправлять данные. Код честной формы оплаты незачем прятать.'],
+          advice: 'Не вводите карту на этой странице.' });
+      }
+    }
+    // Своя форма карты поверх окна платёжного сервиса.
+    const cards = ctx.fields.filter((f) => f.kind === 'cardNumber').map((f) => f.el).filter(D.isRendered);
+    for (const fr of ctx.doc.querySelectorAll('iframe')) {
+      const host = D.hostOf(fr.src, ctx.url);
+      if (!isPsp(host) || !D.isRendered(fr)) continue;
+      if (cards.some((c) => overlap(rectOf(c), rectOf(fr)) > 0.3)) {
+        out.push({ severity: 'danger', title: 'Поверх окна платёжного сервиса нарисована своя форма карты',
+          details: ['Окно оплаты ' + host + ' закрыто полями самой страницы: номер карты получит не платёжный сервис, а тот, кто добавил форму.'],
+          advice: 'Не вводите карту. Сообщите магазину.' });
+        break;
       }
     }
     return out;
   };
 
-  // 13. Подмена реквизитов после загрузки страницы
-  CHECKS['requisites-swap'] = (ctx) => ctx.sensors.changes.map((c) => ({
-    severity: 'danger', title: 'Реквизиты на странице подменились',
-    details: ['Через ' + (Math.round(c.afterMs / 100) / 10).toLocaleString('ru-RU') + ' с после открытия ' + c.kind + ' ' + c.from + ' заменилась на ' + c.to + '. Так вредоносный код подставляет свои реквизиты в настоящий счёт.'],
-  }));
-
-  // 14. Давление и срочность рядом с оплатой
+  // ---------------------------------------------------------------- 5. Давление и обещания
   CHECKS['pressure'] = (ctx) => {
     const out = [];
-    // Вход в схему «безопасный счёт»: страница от имени Госуслуг, банка или ведомства пугает взломом
-    // и даёт номер «контактного центра». Дальше по телефону «специалист» уводит к переводу денег.
-    // Настоящая страница: fnsnalog-ru.online (urlscan, 22.10.2026) – «Вас взломали! Обратитесь в контактный центр Госуслуг 8(800)…».
-    // Памятки банков («Что делать, если вас взломали») не считаются: заголовок должен быть утверждением, а не советом.
-    // Ещё вариант (urlscan, ноябрь 2026, 5 доменов): «Служба безопасности Госуслуг: доступ к учётной записи передан на устройство
-    // Apple MacBook Air. Зафиксирован вход с неизвестного устройства!» и вместо номера – ссылка на Telegram-бота «Сообщить о мошенничестве».
+    // «Вас взломали» + номер телефона или Telegram: вход в схему «безопасный счёт».
     const SCARE = /вас взломали|ваш[а-я]* (?:аккаунт|кабинет|профиль|учётн[а-я]* запис[а-я]*) взлом|обнаружены подозрительные действия|обнаружена подозрительная активность|зафиксирован[а-я]* (?:попытк[а-я]* (?:взлома|входа|списани)|вход с неизвестного устройства)|доступ к учётной записи[^.!]{0,40}передан/i;
     const scareHead = [...ctx.doc.querySelectorAll('h1, h2, h3, strong, b, [class*=title], [class*=badge], [class*=alert]')]
       .map((el) => (el.textContent || '').replace(/\s+/g, ' ').trim()).find((t) => t.length < 120 && SCARE.test(t) && !/что делать|если|как |памятк|\?/i.test(t));
-    // Номер часто стоит отдельной строкой под просьбой («позвоните на номер ниже»), а перед просьбой – «если это были не вы»:
-    // это не отрицание просьбы, поэтому здесь ищем без findAffirmed – контекст уже подтверждён заголовком.
     const callTo = scareHead && ctx.text.match(/(?:позвоните|обратитесь|свяжитесь|звоните)[\s\S]{0,100}?((?:\+7|8)[\s(-]*\d{3}[\s)-]*\d{3}[\s-]*\d{2}[\s-]*\d{2})/i);
     const tgLink = scareHead && !callTo && /сообщите|обратитесь|напишите|свяжитесь/i.test(ctx.text) &&
       [...ctx.doc.querySelectorAll('a[href]')].map((a) => a.getAttribute('href')).find((h) => /^https?:\/\/(?:t\.me|telegram\.me)\//i.test(h));
     if (callTo || tgLink) {
-      out.push({ severity: 'danger', title: callTo ? 'Страница пугает взломом и просит позвонить по номеру' : 'Страница пугает взломом и отправляет в Telegram',
-        advice: 'Не звоните и не пишите по контактам со страницы. Закройте вкладку и проверьте вход сами: откройте приложение Госуслуг или банка, набрав адрес вручную.',
-        details: ['Заголовок: «' + scareHead.slice(0, 90) + '». ' + (callTo ? 'Номер для звонка: ' + callTo[1].replace(/\s+/g, ' ') : 'Ссылка для связи: ' + tgLink.slice(0, 60)) + '.',
-          'Так начинается схема «безопасный счёт»: там ответит «специалист», который убедит перевести деньги или назвать коды. Госуслуги и банки не просят звонить или писать по контактам со страницы – звоните только по номеру с обратной стороны карты или с официального сайта, набранного вручную.'] });
+      out.push({ severity: 'danger', title: callTo ? '«Вас взломали»: страница просит позвонить по номеру' : '«Вас взломали»: страница отправляет в Telegram',
+        details: ['Заголовок: «' + scareHead.slice(0, 90) + '». ' + (callTo ? 'Номер: ' + callTo[1].replace(/\s+/g, ' ') : 'Ссылка: ' + tgLink.slice(0, 50)) +
+          '. Там ответит «специалист», который уговорит перевести деньги или назвать коды.'],
+        advice: 'Не звоните и не пишите. Проверьте вход сами в приложении Госуслуг или банка.' });
     }
-    // Ложная техподдержка: страница изображает предупреждение Windows или антивируса и даёт номер «поддержки Microsoft».
-    // Настоящие страницы: «Threat Detected: Trojan Spyware… Call Windows Security Toll Free: +1-888-…» (urlscan, 2026, больше 15 доменов).
-    // Статьи о таких страницах («how to remove», «scam») не считаются.
-    const VIRUS = /(?:virus(?:es)?|threats?|trojan|spyware|malware) (?:detected|found|alert)|access to this pc has been blocked|(?:your )?(?:computer|pc|system|device) (?:has been |is )?(?:blocked|locked|infected|compromised|hacked|crashed)|вирус обнаружен|компьютер заблокирован|bedrohungen erkannt/i;
-    if (!callTo && !tgLink && VIRUS.test(ctx.text) && !/\bscam\b|how to (?:remove|get rid)|мошенни|fake (?:alert|pop-?up|virus)|prank/i.test(ctx.text)) {
+    // Ложная техподдержка: «вирус» и номер «поддержки».
+    const VIRUS = /(?:virus(?:es)?|threats?|trojan|spyware|malware) (?:detected|found|alert)|access to this pc has been blocked|(?:your )?(?:computer|pc|system|device) (?:has been |is )?(?:blocked|locked|infected|compromised|hacked)|вирус обнаружен|компьютер заблокирован|bedrohungen erkannt/i;
+    if (!out.length && VIRUS.test(ctx.text) && !/\bscam\b|how to (?:remove|get rid)|мошенни|fake (?:alert|pop-?up|virus)|prank/i.test(ctx.text)) {
       const phone = ctx.text.match(/(?:call|contact|toll[ -]?free|helpline|support|позвоните|rufen sie)[\s\S]{0,80}?(\+?1?[\s(.-]*8\d{2}[\s).-]*\d{3}[\s.-]*\d{4}|\+\d{1,3}[\s(.-]*\d{3}[\s).-]*\d{3}[\s.-]*\d{2,4}[\s.-]*\d{0,4})/i);
       if (phone) {
         out.push({ severity: 'danger', title: 'Поддельное предупреждение о вирусе с номером «поддержки»',
-          advice: 'Не звоните по номеру и ничего не устанавливайте. Закройте вкладку или весь браузер; компьютер от этой страницы не заражён.',
-          details: ['На странице: «' + ctx.text.match(VIRUS)[0] + '» и номер ' + phone[1].trim() + '.',
-            'Ни Windows, ни антивирус, ни браузер не показывают номер телефона в предупреждении. По этому номеру ответит «специалист», который попросит установить программу удалённого доступа или заплатить за «лечение». Закройте вкладку; если она не закрывается – закройте браузер целиком.'] });
+          details: ['На странице: «' + ctx.text.match(VIRUS)[0] + '» и номер ' + phone[1].trim() + '. Windows и антивирусы не показывают номер телефона в предупреждениях.'],
+          advice: 'Не звоните и ничего не устанавливайте. Закройте вкладку или браузер целиком.' });
       }
     }
-    // Поддельный штраф или проезд: долг с суммой, угроза пени и кнопка оплаты прямо на странице.
-    // Настоящие страницы: «E-ZPass: We have noticed an outstanding toll amount of $19.00… To avoid a late fee of $59.99, please
-    // proceed to make the payment» (urlscan, 2026, 6 доменов); «Неоплаченный штраф удваивается» (gibdd-proverka.com).
+    // Программа удалённого доступа «для защиты счёта».
+    const rat = ctx.text.match(/anydesk|rustdesk|teamviewer|rudesktop|airdroid|ammyy|quick ?support/i);
+    if (rat && /(установите|скачайте|запустите|продиктуйте|сообщите)/i.test(ctx.text) && /(банк|служб[а-яё]* безопасности|защит|госуслуг|счёт|счет)/i.test(ctx.text)) {
+      out.push({ severity: 'danger', title: 'Просят установить ' + rat[0],
+        details: ['Через программу удалённого доступа мошенник видит экран и сам подтверждает переводы в вашем банковском приложении.'],
+        advice: 'Ничего не устанавливайте. Банки никогда не просят ставить такие программы.' });
+    }
+    // Долг или штраф с угрозой пени и кнопкой оплаты прямо на странице.
     const DEBT = /outstanding (?:toll|balance|amount|invoice)|unpaid (?:toll|fine|invoice|parking|ticket)|toll (?:amount|balance) due|неоплаченн[а-яё]* (?:штраф|проезд|задолженн|налог)|задолженност[а-яё]* по (?:налогу|штрафу|оплате проезда)/i;
     const THREAT = /late fee|penalt|surcharge|collections?\b|suspen|(?:будет|будут) (?:удвоен|увеличен|передан)|удваива|пени\b|запрет на выезд|арест/i;
     const PAYBTN = [...ctx.doc.querySelectorAll('button, a, input[type=submit], input[type=button]')]
       .map((el) => (el.textContent || el.value || '').replace(/\s+/g, ' ').trim()).find((t) => t.length < 40 && /pay|оплат|proceed to payment/i.test(t));
     const debt = ctx.text.match(DEBT);
-    const sum = /[$€£₽₸]\s?\d|\d[\d\s.,]*\s?(?:[$€£₽₸]|руб|eur|usd)/i.test(ctx.text);
-    if (debt && THREAT.test(ctx.text) && PAYBTN && sum && !/\bscam\b|мошенни|phishing|фишинг/i.test(ctx.text)) {
+    if (debt && THREAT.test(ctx.text) && PAYBTN && /[$€£₽₸]\s?\d|\d[\d\s.,]*\s?(?:[$€£₽₸]|руб|eur|usd)/i.test(ctx.text) && !/\bscam\b|мошенни|phishing|фишинг/i.test(ctx.text)) {
       out.push({ severity: 'warning', title: 'Требуют срочно оплатить долг или штраф по ссылке',
-        advice: 'Не платите по ссылке из SMS или письма. Откройте сайт оператора дороги, Госуслуги или приложение банка сами и найдите начисление по номеру машины или постановления.',
-        details: ['На странице: «' + debt[0] + '», угроза пени или штрафа и кнопка «' + PAYBTN + '».',
-          'Так устроены массовые рассылки о «неоплаченном проезде» и «штрафе»: небольшая сумма, угроза её увеличить и кнопка оплаты на странице, куда привела ссылка. Настоящие начисления проверяются на сайте оператора или на Госуслугах.'] });
+        details: ['На странице: «' + debt[0] + '», угроза пени и кнопка «' + PAYBTN + '». Так выглядят рассылки о «неоплаченном проезде» и «штрафе».'],
+        advice: 'Не платите по ссылке. Проверьте начисления сами – на Госуслугах или сайте оператора.' });
     }
-    if (!ctx.paymentContext) return out;
-    const P = [/срочно/i, /немедленно/i, /только сегодня/i, /осталось\s+\d+\s*(?:мин|час|сек)/i, /в течение\s+\d+\s*(?:мин|час)/i,
-      /иначе[^.]{0,40}(отмен|заблок|сгор|аннулир|спиш)/i, /последний шанс/i, /(бронь|заказ|ссылка)[^.]{0,20}истека/i, /\b\d{1,2}:\d{2}\b(?=[^.]{0,30}(?:остал|истека))|(?:остал|истека)[^.]{0,30}\b\d{1,2}:\d{2}\b/i];
-    const t = ctx.text, hits = [], sentences = new Set();
-    for (const re of P) {
-      const m = t.match(re);
-      if (!m) continue;
-      hits.push(m[0]);
-      // цитируем всё предложение, в котором найдена фраза
-      const start = Math.max(t.lastIndexOf('.', m.index), t.lastIndexOf('!', m.index), t.lastIndexOf('\n', m.index)) + 1;
-      const ends = ['.', '!', '\n'].map((c) => t.indexOf(c, m.index + m[0].length)).filter((i) => i >= 0);
-      sentences.add(t.slice(start, ends.length ? Math.min(...ends) + 1 : t.length).trim().slice(0, 140));
+    // Обещание конкретного дохода за день или месяц.
+    if (!/\bscam\b|мошенни|\breview\b|отзыв|обзор/i.test(ctx.text.slice(0, 3000))) {
+      const MONEY = '(?:[$€£₽₸]\\s?\\d[\\d\\s.,]{1,9}|\\d[\\d\\s.,]{1,9}\\s?(?:[$€£₽₸]|руб|тыс|zł|eur|usd|dollars?|euros?|долл))';
+      const PER = '(?:в (?:день|сутки|неделю|месяц)|ежедневно|ежемесячно|per (?:day|week|month)|a (?:day|week|month)|daily|weekly|monthly|täglich|pro (?:tag|monat)|im monat|monatlich|dziennie|miesięcznie|par jour|par mois|al (?:día|mes)|al giorno|al mese)';
+      const t = ctx.text;
+      const promise = t.match(new RegExp('(?:доход|заработ|зарабатыва|получа|earn|make|profit|income|verdien|zarabia|gagne|guadagn|ganar)[^.!?]{0,60}?' + MONEY + '[^.!?]{0,25}?' + PER, 'i')) ||
+        t.match(new RegExp(MONEY + '[^.!?]{0,25}?' + PER + '[^.!?]{0,40}?(?:доход|прибыл|profit|income|gewinn)', 'i')) ||
+        t.match(/гарантированн[а-яё]* (?:доход|прибыл)|guaranteed (?:profit|return|income)|garantierte[nr]? (?:gewinn|rendite)|risk-free (?:profit|return)/i);
+      if (promise) {
+        const phone = [...ctx.doc.querySelectorAll('input')].some((el) => (el.type || '').toLowerCase() === 'tel' ||
+          /phone|tel\b|телефон|telefon|téléphone|mobile/i.test([el.name, el.id, el.placeholder].join(' ')));
+        out.push({ severity: phone ? 'warning' : 'info', title: phone ? 'Обещают доход и просят телефон' : 'Обещают конкретный доход',
+          details: ['На странице: «' + promise[0].replace(/\s+/g, ' ').slice(0, 110) + '». Честные брокеры и банки не обещают сумму дохода.' + (phone ? ' После заявки звонит «менеджер» и уговаривает пополнить счёт.' : '')],
+          advice: 'Не оставляйте телефон. Проверьте компанию в справочнике Банка России cbr.ru/fmp_check.' });
+      }
     }
-    if (!hits.length) return out;
-    return out.concat([{ severity: hits.length >= 2 ? 'warning' : 'info', title: 'Вас торопят',
-      details: ['На странице: «' + [...sentences].slice(0, 3).join('» «') + '»', 'Спешка мешает проверить получателя – это стандартный приём социальной инженерии.'] }]);
+    // Таймеры и «только сегодня» рядом с оплатой.
+    if (ctx.paymentContext) {
+      const P = [/срочно/i, /немедленно/i, /только сегодня/i, /осталось\s+\d+\s*(?:мин|час|сек)/i, /в течение\s+\d+\s*(?:мин|час)/i,
+        /иначе[^.]{0,40}(отмен|заблок|сгор|аннулир|спиш)/i, /последний шанс/i, /(бронь|заказ|ссылка)[^.]{0,20}истека/i];
+      const hits = P.map((re) => ctx.text.match(re)).filter(Boolean);
+      if (hits.length >= 2) {
+        out.push({ severity: 'warning', title: 'Вас торопят',
+          details: ['На странице: «' + hits.slice(0, 3).map((h) => h[0]).join('», «') + '». Спешка мешает проверить, кому вы платите.'],
+          advice: 'Не торопитесь: на проверку адреса сайта и получателя нужна минута.' });
+      }
+    }
+    return out;
   };
 
-  // Мошенническая инвестплатформа: обещание конкретного дохода за период и форма для телефона «менеджера».
-  // Настоящие страницы (urlscan, 2026): «От 100 000 рублей в месяц – стабильный доход от ГазИнвест», «Verdienen Sie bis zu
-  // € 620 täglich» (Bitcoin Era), «mieszkańcy zarabiają od 65 000 zł miesięcznie» (Quantum AI). Честным участникам рынка
-  // обещать доходность запрещено (в России – ст. 6 Закона о рынке ценных бумаг), поэтому сумма за день или месяц – сильный признак.
-  CHECKS['income-promise'] = (ctx) => {
-    const t = ctx.text;
-    if (/\bscam\b|мошенни|\breview\b|отзыв|обзор|oszust/i.test(t.slice(0, 3000))) return [];
-    const MONEY = '(?:[$€£₽₸]\\s?\\d[\\d\\s.,]{1,9}|\\d[\\d\\s.,]{1,9}\\s?(?:[$€£₽₸]|руб|тыс|zł|eur|usd|dollars?|euros?|долл))';
-    const PER = '(?:в (?:день|сутки|неделю|месяц)|ежедневно|ежемесячно|per (?:day|week|month)|a (?:day|week|month)|daily|weekly|monthly|täglich|pro (?:tag|monat)|im monat|monatlich|dziennie|miesięcznie|par jour|par mois|al (?:día|mes)|al giorno|al mese)';
-    const promise = t.match(new RegExp('(?:доход|заработ|зарабатыва|получа|earn|make|profit|income|verdien|zarabia|gagne|guadagn|ganar)[^.!?]{0,60}?' + MONEY + '[^.!?]{0,25}?' + PER, 'i')) ||
-      t.match(new RegExp(MONEY + '[^.!?]{0,25}?' + PER + '[^.!?]{0,40}?(?:доход|прибыл|profit|income|gewinn)', 'i')) ||
-      t.match(/гарантированн[а-яё]* (?:доход|прибыл)|guaranteed (?:profit|return|income)|garantierte[nr]? (?:gewinn|rendite)|без риска[^.!?]{0,30}доход|risk-free (?:profit|return)/i);
-    if (!promise) return [];
-    const phone = [...ctx.doc.querySelectorAll('input')].some((el) => (el.type || '').toLowerCase() === 'tel' ||
-      /phone|tel\b|телефон|telefon|téléphone|mobile/i.test([el.name, el.id, el.placeholder, el.getAttribute('aria-label')].join(' ')));
-    const severity = phone ? 'warning' : 'info';
-    return [{ severity, title: phone ? 'Обещают доход и просят оставить телефон' : 'Обещают конкретный доход',
-      advice: 'Не оставляйте телефон и ничего не переводите. Проверьте компанию в справочнике участников финансового рынка на сайте Банка России (cbr.ru/fmp_check); обещание дохода за день или месяц – уже признак мошенников.',
-      details: ['На странице: «' + promise[0].replace(/\s+/g, ' ').slice(0, 120) + '».' + (phone ? ' Рядом – форма с полем для телефона: дальше звонит «личный менеджер» и уговаривает пополнить счёт переводом.' : ''),
-        'Честные брокеры и банки не обещают сумму дохода: доходность на рынке не гарантирована, а такие обещания запрещены регуляторами. Так выглядят первые страницы «инвестплатформ» Quantum AI, Bitcoin Era, «ГазИнвест».'] }];
-  };
-
-  // Криптодрейнер: «получите токены» и кнопка подключения кошелька. Опасно, если код страницы запрашивает
-  // разрешение на списание (approve / setApprovalForAll / permit) – так одна подпись отдаёт все токены.
-  // Настоящие страницы: «Claim Your $EVR Reward Allocation», «SparkDEX Rewards Proposal», «zkSync Token Distribution» (urlscan.io, Zenodo).
-  CHECKS['wallet-drainer'] = (ctx) => {
-    const t = ctx.text;
-    const connect = /connect (?:your )?wallet|подключ[а-яё]* кошел[её]к|wallet ?connect|connect metamask/i.test(t) ||
-      [...ctx.doc.querySelectorAll('button, a')].some((el) => /^\s*(?:connect|подключить)\s*$/i.test(el.textContent || ''));
-    const lure = t.match(/claim(?:\s+(?:your|now|tokens?|rewards?|airdrop|allocation))?|airdrop|token distribution|rewards? (?:allocation|proposal|date)|eligib|получите токены|раздач[а-яё]* токенов|free mint|бесплатн[а-яё]* (?:токен|nft)/i);
-    if (!connect || !lure) return [];
-    const codes = ctx.scripts.map((s) => s.code + revealHidden(s.code)).join('\n');
-    const drain = codes.match(/setApprovalForAll|increaseAllowance|\bpermit\s*\(|eth_signTypedData(?:_v4)?|signTypedData|Permit2|seaport|transferFrom\s*\(/);
-    return [{ severity: drain ? 'danger' : 'warning',
-      title: drain ? 'Страница запрашивает разрешение на списание всех токенов' : 'Раздача токенов с подключением кошелька',
-      advice: 'Не подключайте кошелёк и ничего не подписывайте. Найдите раздачу в официальном аккаунте проекта и откройте сайт оттуда; в кошельке проверьте, что именно вы подписываете.',
-      details: ['На странице: «' + lure[0] + '» и кнопка подключения кошелька.' + (drain ? ' В коде страницы – запрос «' + drain[0].replace(/\s*\($/, '') + '»: подпись такого запроса разрешает сайту забрать токены с кошелька.' : ''),
-        'Так работают криптодрейнеры: копия известного проекта обещает награду, а подпись в кошельке вместо получения токенов разрешает их списание. В 2025 году так украли 83,85 млн долларов у 106 тыс. человек (Scam Sniffer). Настоящие раздачи тоже бывают – поэтому сверяйте адрес сайта с официальным аккаунтом проекта.'] }];
-  };
-
-  // 15. ClickFix: поддельная «капча» просит вставить команду в окно «Выполнить»
+  // ---------------------------------------------------------------- 6. Просят запустить команду (ClickFix)
   CHECKS['clickfix'] = (ctx) => {
-    // Текст и скрипты самой страницы и её встроенных окон того же сайта (iframe srcdoc): настоящие наборы
-    // прячут поддельную капчу во вложенный документ, и в тексте основной страницы инструкции нет.
     const docs = [ctx.doc];
     for (const fr of ctx.doc.querySelectorAll('iframe')) {
       try { if (fr.contentDocument && fr.contentDocument.body) docs.push(fr.contentDocument); } catch (e) { /* чужое окно недоступно */ }
     }
-    // Инструкцию ищем во всём тексте, в том числе скрытом: шаги «Win+R → Ctrl+V» показываются только после нажатия
-    // на «капчу», а предупредить нужно до него. Код скриптов и стилей в текст не попадает.
+    // Инструкцию ищем во всём тексте, в том числе скрытом: шаги появляются только после нажатия на «капчу».
     const allText = (d) => {
       const out = [], walk = d.createTreeWalker(d.body, 4);
       for (let n = walk.nextNode(); n; n = walk.nextNode()) {
@@ -761,135 +563,52 @@
     };
     const text = docs.map(allText).join('\n');
     const codes = ctx.scripts.map((s) => s.code).concat(docs.slice(1).flatMap((d) => [...d.querySelectorAll('script:not([src])')].map((s) => s.textContent)));
-    // Инструкция: открыть окно запуска команд и вставить туда текст. Встречается в двух вариантах:
-    //   Win+R (окно «Выполнить») → Ctrl+V → Enter;  Win+X → «Windows PowerShell»/«Терминал» → Ctrl+V → Enter.
-    // Клавишу Win часто рисуют картинкой – тогда в тексте остаётся только «+ R» / «+ X».
     const OPEN = /(?:win(?:dows)?(?:\s*key)?\s*\+\s*[rx]\b|⊞\s*\+\s*[rx]\b|(?:^|\s)\+\s*[rx]\b|окно\s*«?выполнить»?|run dialog|windows powershell|терминал|terminal)/i;
-    const PASTE = /ctrl\s*\+\s*v|вставьте|paste/i;
     let instr = null;
     for (const m of text.matchAll(new RegExp(OPEN.source, 'gi'))) {
       const tail = text.slice(m.index, m.index + 400);
-      if (PASTE.test(tail) && /enter|ввод/i.test(tail)) { instr = tail.slice(0, (tail.search(/enter|ввод/i) || 140) + 5); break; }
+      if (/ctrl\s*\+\s*v|вставьте|paste/i.test(tail) && /enter|ввод/i.test(tail)) { instr = tail.slice(0, (tail.search(/enter|ввод/i) || 140) + 5); break; }
     }
     const clipWrite = codes.some((c) => /clipboard\.writeText|execCommand\(\s*['"]copy/.test(c + revealHidden(c)));
-    // Те же шаги (Win+R → Ctrl+V → Enter) есть в честных инструкциях по Windows. ClickFix отличается тем, что выдаёт их
-    // за проверку «я не робот» или сам кладёт текст в буфер обмена. Без одного из этих двух условий инструкция – не признак.
     const VERIFY = /not a robot|не робот|verify (?:that )?you(?:'re| are)|human verification|captcha|капч|cloudflare|verification (?:step|id|code)|подтвердите,? что вы/i;
-    if (instr && !clipWrite && !VERIFY.test(text)) instr = null;
+    if (instr && !clipWrite && !VERIFY.test(text)) instr = null; // честная инструкция по Windows, не «проверка»
     const command = codes.some((c) => /powershell|mshta|cmd(?:\.exe)?\s*\/c|iwr\s|invoke-webrequest|curl\s|bitsadmin|rundll32|msiexec/i.test(c + revealHidden(c)) &&
       /clipboard\.writeText|execCommand\(\s*['"]copy/.test(c + revealHidden(c)));
-    // «Опасно»: инструкция (вставить в окно запуска команд) или скрипт, который кладёт в буфер команду Windows.
-    // Одна запись в буфер без инструкции и без команды – обычная кнопка «Скопировать», тревоги нет.
-    if (!instr && !command) {
-      // Первый шаг ClickFix: страница показывает флажок «я не робот», а инструкцию подгружает уже после нажатия.
-      // Настоящую проверку (Cloudflare Turnstile, reCAPTCHA, hCaptcha, Яндекс SmartCaptcha) всегда загружает сервер
-      // провайдера. Если фраза стоит в коротком элементе самой страницы, а кода провайдера нет – проверка нарисована.
-      const PHRASE = /i'?m not a robot|i am not a robot|verify (?:that )?you are (?:a )?human|я не робот|checking if you are human|je ne suis pas un robot/i;
-      const PROVIDER = /challenges\.cloudflare\.com|google\.com\/recaptcha|recaptcha\.net|gstatic\.com\/recaptcha|hcaptcha\.com|smartcaptcha|captcha-api\.yandex|arkoselabs|funcaptcha|geetest/i;
-      const drawn = docs.some((d) => [...d.querySelectorAll('label, span, div, p, button, h1, h2')].some((el) =>
-        el.children.length <= 2 && el.textContent.length < 80 && PHRASE.test(el.textContent)));
-      const provider = docs.some((d) => [...d.querySelectorAll('script[src], iframe[src]')].some((el) => PROVIDER.test(el.getAttribute('src'))));
-      if (!drawn || provider) return [];
-      return [{ severity: 'warning', title: 'Проверка «я не робот» нарисована самой страницей',
-        details: ['На странице флажок «я не робот», но кода настоящей службы проверки (Cloudflare, reCAPTCHA, hCaptcha, Яндекс) нет.',
-          'Так начинается ClickFix: после нажатия страница попросит нажать Win+R или открыть PowerShell и вставить команду. Не выполняйте никаких шагов с клавиатурой.'] }];
+    if (instr || command) {
+      const hiddenNow = instr && !ctx.text.replace(/\s+/g, ' ').includes(instr.replace(/\s+/g, ' ').trim().slice(0, 15));
+      return [{ severity: 'danger', title: 'Поддельная проверка «я не робот» просит запустить команду',
+        details: [(instr ? 'Инструкция: «' + instr.replace(/\s+/g, ' ').trim().slice(0, 140) + '»' + (hiddenNow ? ' – появится после нажатия на «проверку»' : '') + '. ' : '') +
+          (command || clipWrite ? 'Скрипт страницы кладёт в буфер обмена команду, которая скачает и запустит вредоносную программу. ' : '') +
+          'Настоящая капча не просит открывать «Выполнить», PowerShell или терминал.'],
+        advice: 'Ничего не нажимайте и не вставляйте. Если команду уже запустили – отключите интернет и смените пароли с другого устройства.' }];
     }
-    const details = [];
-    if (instr) details.push('Инструкция на странице: «' + instr.replace(/\s+/g, ' ').trim().slice(0, 160) + '».');
-    if (command) details.push('Скрипт страницы кладёт в буфер обмена команду для Windows (PowerShell, mshta или cmd). После вставки и Enter она скачает и запустит вредоносную программу.');
-    else if (clipWrite) details.push('Скрипт страницы при нажатии на «проверку» записывает что-то в буфер обмена – это и есть команда, которую просят вставить.');
-    if (instr && !ctx.text.replace(/\s+/g, ' ').includes(instr.replace(/\s+/g, ' ').trim().slice(0, 15))) {
-      details.push('Инструкция пока скрыта: она появится после нажатия на «проверку»' + (docs.length > 1 ? ' и лежит во встроенном окне страницы' : '') + '. Не нажимайте её.');
-    }
-    details.push('Настоящая капча никогда не просит открывать окно «Выполнить», PowerShell или терминал и что-то туда вставлять.');
-    return [{ severity: 'danger', title: 'Поддельная проверка «я не робот»: вас просят запустить команду', details }];
+    // Первый шаг: флажок «я не робот» нарисован самой страницей, кода настоящей службы проверки нет.
+    const PHRASE = /i'?m not a robot|i am not a robot|verify (?:that )?you are (?:a )?human|я не робот|checking if you are human|je ne suis pas un robot/i;
+    const PROVIDER = /challenges\.cloudflare\.com|google\.com\/recaptcha|recaptcha\.net|gstatic\.com\/recaptcha|hcaptcha\.com|smartcaptcha|captcha-api\.yandex|arkoselabs|funcaptcha|geetest/i;
+    const drawn = docs.some((d) => [...d.querySelectorAll('label, span, div, p, button, h1, h2')].some((el) =>
+      el.children.length <= 2 && el.textContent.length < 80 && PHRASE.test(el.textContent)));
+    const provider = docs.some((d) => [...d.querySelectorAll('script[src], iframe[src]')].some((el) => PROVIDER.test(el.getAttribute('src'))));
+    if (!drawn || provider) return [];
+    return [{ severity: 'warning', title: 'Проверка «я не робот» нарисована самой страницей',
+      details: ['Флажок есть, а кода настоящей службы проверки (Cloudflare, reCAPTCHA, hCaptcha, Яндекс) нет. Так начинается ClickFix: после нажатия попросят нажать Win+R и вставить команду.'],
+      advice: 'Не выполняйте никаких шагов с клавиатурой.' }];
   };
 
-  // 16. Фейковое «приложение банка» (.apk) и программы удалённого доступа (схема NFCGate / NGate)
-  CHECKS['fake-app'] = (ctx) => {
-    const out = [];
-    const apks = [...ctx.doc.querySelectorAll('a[href]')].filter((a) => /\.apk(?:$|[?#])/i.test(a.getAttribute('href')) || /\.apk$/i.test(a.getAttribute('download') || ''));
-    const risky = /(банк|служб[а-яё]* безопасности|защит|отмен[а-яё]* операц|госуслуг|возврат|бесконтактн|nfc|карт)/i.test(ctx.text);
-    if (apks.length) {
-      out.push({ severity: risky ? 'danger' : 'warning', title: 'Предлагают установить приложение из файла .apk, а не из магазина приложений',
-        details: ['Ссылка: «' + D.label(apks[0]) + '» → ' + apks[0].getAttribute('href').slice(0, 80) + '.',
-          'Так распространяют поддельные «банковские» приложения: они перехватывают SMS и данные карты (схемы NFCGate, NGate). Банки публикуют приложения только в официальных магазинах и на своём сайте.'] });
-    }
-    const rat = ctx.text.match(/(anydesk|rustdesk|teamviewer|rudesktop|airdroid|ammyy|quick ?support|демонстраци[а-яё]* экрана)/i);
-    if (rat && /(установите|скачайте|включите|запустите|продиктуйте|сообщите)/i.test(ctx.text) && risky) {
-      out.push({ severity: 'danger', title: 'Просят установить программу удалённого доступа',
-        details: ['На странице упоминается «' + rat[0] + '». Через неё мошенник видит экран и сам подтверждает переводы в вашем банковском приложении. Сотрудники банка никогда об этом не просят.'] });
-    }
-    return out;
-  };
-
-  // 17. Домен-двойник: буквы другого алфавита в адресе (IDN-омограф)
-  CHECKS['homograph'] = (ctx) => {
-    const out = [], seen = new Set();
-    const hosts = [[ctx.host, 'адрес этой страницы']];
-    for (const a of ctx.doc.querySelectorAll('a[href], form[action]')) {
-      const h = D.hostOf(a.getAttribute('href') || a.getAttribute('action'), ctx.url);
-      if (h) hosts.push([h, 'ссылка «' + D.label(a) + '»']);
-    }
-    for (const [h, where] of hosts) {
-      if (seen.has(h) || !h.includes('xn--')) continue;
-      seen.add(h);
-      const r = D.readableHost(h);
-      if (r.mixed) {
-        out.push({ severity: 'danger', title: 'Адрес-двойник: в домене смешаны латинские и русские буквы',
-          details: [where + ': выглядит как «' + r.unicode + '», а на самом деле это ' + h + '.',
-            'Буквы «а», «е», «о», «р», «с» в кириллице и латинице выглядят одинаково – так подделывают адреса банков и магазинов.'] });
-      } else if (ctx.paymentContext) {
-        out.push({ severity: 'info', title: 'Адрес на национальном алфавите', details: [where + ': ' + r.unicode + ' (' + h + '). Убедитесь, что это нужный сайт.'] });
-      }
-    }
-    return out;
-  };
-
-  // 18. Browser-in-the-Browser: окно входа с «адресной строкой», нарисованное внутри страницы
-  CHECKS['bitb'] = (ctx) => {
-    const out = [];
-    const boxes = [...ctx.doc.querySelectorAll('div, section, dialog, aside')].filter((el) => {
-      const st = ctx.win.getComputedStyle(el);
-      if (!['fixed', 'absolute'].includes(st.position) || !D.isRendered(el)) return false;
-      const r = el.getBoundingClientRect();
-      return r.width >= 250 && r.height >= 200 && el.querySelector('input, iframe');
-    });
-    for (const box of boxes) {
-      // В наборах BitB (mr.d0x) форма входа часто лежит во фрейме внутри нарисованного окна – его тоже считаем.
-      const sensitive = [...box.querySelectorAll('input')].some((i) => i.type === 'password' || D.fieldKind(i)) || !!box.querySelector('iframe');
-      const fakeUrl = (box.innerText || '').match(/(?:https?:\/\/|🔒\s*)([a-z0-9-]+(?:\.[a-z0-9-]+)+)(?:\/\S*)?/i);
-      if (!sensitive || !fakeUrl) continue;
-      if (D.siteOf(fakeUrl[1]) === ctx.site) continue; // окно со своим же адресом – не подделка чужого сайта
-      // настоящее всплывающее окно браузера не является частью страницы – значит, это рисунок
-      out.push({ severity: 'danger', title: 'Поддельное окно браузера внутри страницы',
-        details: ['Внутри страницы нарисовано «окно» с адресной строкой «' + fakeUrl[0].slice(0, 60) + '» и полями для входа.',
-          'Настоящее окно входа открывает сам браузер, его можно вытащить за пределы страницы. Это окно – часть страницы ' + ctx.host + ', и данные уйдут ей.'] });
-      break;
-    }
-    return out;
-  };
-
-  // Что делать человеку, если проверка сработала. Одно-два действия, которые можно выполнить сразу.
-  const ADVICE = {
-    'card-form': 'Не вводите данные карты. Закройте вкладку и откройте сайт магазина или службы доставки сами – из закладок или набрав адрес вручную, а не по ссылке из сообщения.',
-    'receive-money': 'Ничего не вводите. Чтобы получить перевод, достаточно номера карты или телефона – срок действия, CVV и баланс для этого не нужны.',
-    'secret-codes': 'Не вводите код. Прочитайте само SMS: в нём написано, что именно подтверждает код (сумма и магазин или вход в банк). Если не совпадает с тем, что вы делаете, – закройте страницу.',
-    'manual-transfer': 'Не переводите деньги человеку. Попросите оплату через платёжную форму сайта или счёт организации; если «оплата не работает» – откажитесь от покупки.',
-    'recipient': 'Сверьте получателя с договором, квитанцией или официальным сайтом организации. Если просят перевести деньги на «безопасный счёт» – положите трубку и позвоните в банк по номеру на карте.',
-    'qr-code': 'Не платите по этому коду или ссылке. Оплатите через приложение банка, найдя организацию по ИНН или названию, либо в личном кабинете на её официальном сайте.',
-    'amount-mismatch': 'Не подтверждайте оплату, пока не увидите полную сумму и условия. Если подписка не нужна – снимите галочку или закройте страницу; для разовых покупок удобна отдельная карта с лимитом.',
-    'deceptive-button': 'Не нажимайте эту кнопку, пока не найдёте на странице честное название действия и цену. Если отказаться можно только мелкой ссылкой – нажмите её.',
-    'clickjacking': 'Не нажимайте на кнопку. Закройте страницу: нажатие получит невидимый элемент, а не то, что вы видите.',
-    'form-overlay': 'Не вводите карту в эту форму. Сообщите магазину и оплатите другим способом – настоящая форма банка открывается в собственном окне с адресом платёжного сервиса.',
-    'script-inventory': 'Не вводите карту на этой странице. Если покупка нужна – оплатите через СБП или при получении и сообщите магазину о постороннем коде.',
-    'skimmer': 'Не завершайте оплату. Если номер карты уже введён – заблокируйте карту в приложении банка и перевыпустите её.',
-    'requisites-swap': 'Не платите по реквизитам с этой страницы. Запросите счёт у организации по другому каналу (телефон из договора) и сверьте номер счёта по цифрам.',
-    'pressure': 'Не торопитесь: настоящая бронь или заказ не пропадут за те минуты, что нужны на проверку адреса сайта и получателя.',
-    'clickfix': 'Ничего не нажимайте и не вставляйте. Закройте вкладку. Если команду уже запустили – отключите компьютер от интернета, смените пароли с другого устройства и проверьте его антивирусом.',
-    'fake-app': 'Не скачивайте файл и не устанавливайте программу. Приложение банка ставится только из магазина приложений или с сайта банка, адрес которого вы набрали сами.',
-    'homograph': 'Не переходите по ссылке. Откройте сайт банка или магазина из закладок или набрав адрес вручную.',
-    'bitb': 'Не вводите пароль. Попробуйте перетащить это окно за край страницы: настоящее окно браузера выдвигается за её пределы, нарисованное – нет.',
+  // ---------------------------------------------------------------- 7. Криптокошелёк
+  CHECKS['crypto-wallet'] = (ctx) => {
+    const t = ctx.text;
+    // Голая кнопка «Connect» считается кнопкой кошелька, только если на странице вообще говорится о кошельке или токенах.
+    const crypto = /wallet|кошел[её]к|metamask|token|токен|airdrop|blockchain|блокчейн|nft|web3|defi|staking|\$[A-Z]{2,6}\b/.test(t) || /wallet|кошел[её]к|metamask|airdrop|blockchain|блокчейн|web3|staking/i.test(t);
+    const connect = /connect\s+(?:your\s+)?wallet|подключ[а-яё]*\s+кошел[её]к|wallet\s?connect|connect\s+metamask/i.test(t) ||
+      (crypto && [...ctx.doc.querySelectorAll('button, a')].some((el) => /^\s*(?:connect|подключить)\s*$/i.test(el.textContent || '')));
+    const lure = t.match(/\bclaim(?:ing)?\b(?:\s+(?:your|now|tokens?|rewards?|airdrop|allocation))?|\bairdrop|token\s+distribution|rewards?\s+(?:allocation|proposal|date|distribution)|\beligib|получите\s+токены|раздач[а-яё]*\s+токенов|free\s+mint|бесплатн[а-яё]*\s+(?:токен|nft)/i);
+    if (!connect || !lure) return [];
+    const codes = ctx.scripts.map((s) => s.code + revealHidden(s.code)).join('\n');
+    const drain = codes.match(/setApprovalForAll|increaseAllowance|\bpermit\s*\(|eth_signTypedData(?:_v4)?|signTypedData|Permit2|seaport|transferFrom\s*\(/);
+    return [{ severity: drain ? 'danger' : 'warning',
+      title: drain ? 'Сайт готовит подпись, которая разрешит списать ваши токены' : 'Раздача токенов с подключением кошелька',
+      details: ['На странице: «' + lure[0] + '» и кнопка подключения кошелька.' + (drain ? ' В коде – запрос «' + drain[0].replace(/\s*\($/, '') + '»: такая подпись разрешает сайту забрать токены.' : ' Так выглядят копии криптопроектов, где вместо получения токенов подпись разрешает их списание.')],
+      advice: 'Не подключайте кошелёк. Найдите раздачу в официальном аккаунте проекта и откройте сайт оттуда.' }];
   };
 
   // =====================================================================
@@ -898,7 +617,10 @@
   function describeRecipient(text, qrFound) {
     const req = R.findRequisites(text);
     const items = [];
-    for (const c of req.cards) items.push({ kind: 'person', text: 'карта ' + c.system + ' ' + c.masked + ' (личная карта человека)' });
+    for (const c of req.cards) {
+      if (!R.nearPayment(text, c.at) || /test|тестов/i.test(text.slice(Math.max(0, c.at - 200), c.at))) continue; // номер в инструкции или примере – не реквизит
+      items.push({ kind: 'person', text: 'карта ' + c.system + ' ' + c.masked + ' (личная карта)' });
+    }
     for (const p of req.phones) {
       if (!R.nearPayment(text, p.at)) continue; // контактный телефон, а не реквизит для перевода
       items.push({ kind: 'person', text: 'перевод по телефону ' + p.masked + ' (через СБП – человеку)' });
@@ -951,7 +673,7 @@
     for (const [id, check] of Object.entries(CHECKS)) {
       try {
         // К предупреждению добавляется совет – что человеку сделать прямо сейчас.
-        for (const f of check(ctx)) findings.push(Object.assign({ check: id }, f.severity === 'danger' || f.severity === 'warning' ? { advice: ADVICE[id] } : {}, f));
+        for (const f of check(ctx)) findings.push(Object.assign({ check: id }, f));
       } catch (e) {
         findings.push({ check: id, severity: 'error', title: 'Проверка завершилась с ошибкой', details: [String(e && e.message || e)] });
       }
@@ -981,11 +703,11 @@
   }
 
   const VERDICTS = {
-    danger: { title: 'Высокий риск – не платите', tone: 'danger' },
+    danger: { title: 'Высокий риск', tone: 'danger' },
     warning: { title: 'Есть подозрительные признаки', tone: 'warning' },
     ok: { title: 'Явных признаков обмана не найдено', tone: 'ok' },
     none: { title: 'Платёжных действий не найдено', tone: 'none' },
   };
 
-  root.PGChecks = { inspect, CHECK_IDS: Object.keys(CHECKS), VERDICTS, ADVICE, amountsIn };
+  root.PGChecks = { inspect, CHECK_IDS: Object.keys(CHECKS), VERDICTS, amountsIn };
 })(typeof window !== 'undefined' ? window : globalThis);

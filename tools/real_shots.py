@@ -15,7 +15,9 @@
 import asyncio
 import base64
 import io
+import os
 import json
+from urllib.parse import quote
 import subprocess
 import sys
 import tempfile
@@ -86,7 +88,7 @@ async def run(items):
         OUT.mkdir(parents=True, exist_ok=True)
         for k, it in enumerate(items):
             try:
-                await asyncio.wait_for(b.cmd('browsingContext.navigate', {'context': ctx, 'url': 'http://127.0.0.1:8765/corpus/' + it['file'], 'wait': 'complete'}), 25)
+                await asyncio.wait_for(b.cmd('browsingContext.navigate', {'context': ctx, 'url': 'http://127.0.0.1:8765/corpus/' + it['file'] + ('?orig=' + quote(it['url'], safe='') if it.get('url') else ''), 'wait': 'complete'}), 25)
             except asyncio.TimeoutError:
                 pass
             await asyncio.sleep(it.get('wait', 8))  # расширение ждёт внешние скрипты до 4 с
@@ -105,7 +107,10 @@ async def run(items):
             except Exception as e:
                 print('нет снимка', it['id'], e, flush=True)
                 continue
-            compose(base64.b64decode(shot['data']), it.get('orig'), OUT / (it['id'] + '.jpg'), blur=bool(it.get('blur')))
+            raw = base64.b64decode(shot['data'])
+            if os.environ.get('PG_RAW_DIR'):  # кадр расширения в полном разрешении – для рисунков статьи
+                Path(os.environ['PG_RAW_DIR'], it['id'] + '.png').write_bytes(raw)
+            compose(raw, it.get('orig'), OUT / (it['id'] + '.jpg'), blur=bool(it.get('blur')))
             print(f'{k + 1}/{len(items)}', it['id'], flush=True)
     finally:
         proc.terminate()

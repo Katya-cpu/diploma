@@ -17,16 +17,12 @@
   "new": {
    "verdict": "danger",
    "checks": [
-    "card-form:danger",
-    "skimmer:warning"
+    "data:danger"
    ],
    "titles": [
-    "Данные карты уходят в Telegram-бота",
-    "Скрипт читает поля карты и умеет отправлять данные"
+    "Введённые данные уходят в Telegram-бота"
    ],
-   "info": [
-    "На странице есть форма для данных карты"
-   ]
+   "info": []
   }
  },
  {
@@ -102,10 +98,10 @@
   "new": {
    "verdict": "warning",
    "checks": [
-    "income-promise:warning"
+    "pressure:warning"
    ],
    "titles": [
-    "Обещают доход и просят оставить телефон"
+    "Обещают доход и просят телефон"
    ],
    "info": []
   }
@@ -167,13 +163,9 @@
   "has_dom": true,
   "file": "urlscan2/01a1dabc-5bca-773f-acec-faeffaa3c405.html",
   "new": {
-   "verdict": "warning",
-   "checks": [
-    "fake-app:warning"
-   ],
-   "titles": [
-    "Предлагают установить приложение из файла .apk, а не из магазина приложений"
-   ],
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
    "info": []
   }
  },
@@ -271,7 +263,7 @@
   "new": {
    "verdict": "warning",
    "checks": [
-    "wallet-drainer:warning"
+    "crypto-wallet:warning"
    ],
    "titles": [
     "Раздача токенов с подключением кошелька"
@@ -297,7 +289,7 @@
   "new": {
    "verdict": "warning",
    "checks": [
-    "wallet-drainer:warning"
+    "crypto-wallet:warning"
    ],
    "titles": [
     "Раздача токенов с подключением кошелька"
@@ -323,7 +315,7 @@
   "new": {
    "verdict": "warning",
    "checks": [
-    "wallet-drainer:warning"
+    "crypto-wallet:warning"
    ],
    "titles": [
     "Раздача токенов с подключением кошелька"
@@ -349,7 +341,7 @@
   "new": {
    "verdict": "warning",
    "checks": [
-    "wallet-drainer:warning"
+    "crypto-wallet:warning"
    ],
    "titles": [
     "Раздача токенов с подключением кошелька"
@@ -375,7 +367,7 @@
   "new": {
    "verdict": "warning",
    "checks": [
-    "wallet-drainer:warning"
+    "crypto-wallet:warning"
    ],
    "titles": [
     "Раздача токенов с подключением кошелька"
@@ -401,7 +393,7 @@
   "new": {
    "verdict": "warning",
    "checks": [
-    "wallet-drainer:warning"
+    "crypto-wallet:warning"
    ],
    "titles": [
     "Раздача токенов с подключением кошелька"
@@ -771,7 +763,7 @@
   "new": {
    "verdict": "warning",
    "checks": [
-    "wallet-drainer:warning"
+    "crypto-wallet:warning"
    ],
    "titles": [
     "Раздача токенов с подключением кошелька"
@@ -797,7 +789,7 @@
   "new": {
    "verdict": "warning",
    "checks": [
-    "wallet-drainer:warning"
+    "crypto-wallet:warning"
    ],
    "titles": [
     "Раздача токенов с подключением кошелька"
@@ -931,18 +923,12 @@
   "new": {
    "verdict": "danger",
    "checks": [
-    "card-form:danger",
-    "skimmer:warning"
+    "data:danger"
    ],
    "titles": [
-    "Вместе с картой просят данные, которые для оплаты не нужны",
-    "Скрипт читает поля карты и умеет отправлять данные",
-    "Скрипт читает поля карты и умеет отправлять данные"
+    "Вместе с картой просят номер соцстрахования"
    ],
-   "info": [
-    "На странице есть форма для данных карты",
-    "На странице оплаты работает код сторонних сайтов"
-   ]
+   "info": []
   }
  },
  {
@@ -1249,13 +1235,9 @@
   "has_dom": true,
   "file": "urlscan2/01a1cbd2-ecb3-74cd-914e-5da069f13eb9.html",
   "new": {
-   "verdict": "warning",
-   "checks": [
-    "wallet-drainer:warning"
-   ],
-   "titles": [
-    "Раздача токенов с подключением кошелька"
-   ],
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
    "info": []
   }
  },
@@ -1274,13 +1256,9 @@
   "has_dom": true,
   "file": "urlscan2/01a1cbd1-9b3e-7338-b327-88d0dff82fe4.html",
   "new": {
-   "verdict": "warning",
-   "checks": [
-    "wallet-drainer:warning"
-   ],
-   "titles": [
-    "Раздача токенов с подключением кошелька"
-   ],
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
    "info": []
   }
  },
@@ -1299,13 +1277,9 @@
   "has_dom": true,
   "file": "urlscan2/01a1cbcb-7870-74aa-b9dd-1f11ba4307d2.html",
   "new": {
-   "verdict": "warning",
-   "checks": [
-    "wallet-drainer:warning"
-   ],
-   "titles": [
-    "Раздача токенов с подключением кошелька"
-   ],
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
    "info": []
   }
  },
@@ -1323,10 +1297,10 @@
   "new": {
    "verdict": "warning",
    "checks": [
-    "income-promise:warning"
+    "pressure:warning"
    ],
    "titles": [
-    "Обещают доход и просят оставить телефон"
+    "Обещают доход и просят телефон"
    ],
    "info": []
   }
@@ -1345,10 +1319,10 @@
   "new": {
    "verdict": "warning",
    "checks": [
-    "income-promise:warning"
+    "pressure:warning"
    ],
    "titles": [
-    "Обещают доход и просят оставить телефон"
+    "Обещают доход и просят телефон"
    ],
    "info": []
   }
@@ -1367,10 +1341,10 @@
   "new": {
    "verdict": "warning",
    "checks": [
-    "income-promise:warning"
+    "pressure:warning"
    ],
    "titles": [
-    "Обещают доход и просят оставить телефон"
+    "Обещают доход и просят телефон"
    ],
    "info": []
   }
@@ -1389,10 +1363,10 @@
   "new": {
    "verdict": "warning",
    "checks": [
-    "income-promise:warning"
+    "pressure:warning"
    ],
    "titles": [
-    "Обещают доход и просят оставить телефон"
+    "Обещают доход и просят телефон"
    ],
    "info": []
   }
@@ -1411,10 +1385,10 @@
   "new": {
    "verdict": "warning",
    "checks": [
-    "income-promise:warning"
+    "pressure:warning"
    ],
    "titles": [
-    "Обещают доход и просят оставить телефон"
+    "Обещают доход и просят телефон"
    ],
    "info": []
   }
@@ -1433,10 +1407,10 @@
   "new": {
    "verdict": "warning",
    "checks": [
-    "income-promise:warning"
+    "pressure:warning"
    ],
    "titles": [
-    "Обещают доход и просят оставить телефон"
+    "Обещают доход и просят телефон"
    ],
    "info": []
   }
@@ -1725,7 +1699,7 @@
   "new": {
    "verdict": "warning",
    "checks": [
-    "wallet-drainer:warning"
+    "crypto-wallet:warning"
    ],
    "titles": [
     "Раздача токенов с подключением кошелька"
@@ -1751,7 +1725,7 @@
   "new": {
    "verdict": "warning",
    "checks": [
-    "wallet-drainer:warning"
+    "crypto-wallet:warning"
    ],
    "titles": [
     "Раздача токенов с подключением кошелька"
@@ -1821,7 +1795,7 @@
   "new": {
    "verdict": "warning",
    "checks": [
-    "wallet-drainer:warning"
+    "crypto-wallet:warning"
    ],
    "titles": [
     "Раздача токенов с подключением кошелька"
@@ -1943,17 +1917,14 @@
   "has_dom": true,
   "file": "urlscan2/01a13d36-4fbf-7756-a9f4-8e7139537bb0.html",
   "new": {
-   "verdict": "warning",
+   "verdict": "danger",
    "checks": [
-    "card-form:warning"
+    "data:danger"
    ],
    "titles": [
-    "Данные карты уходят на другой сайт"
+    "Введённые данные уйдут через сервис пересылки форм"
    ],
-   "info": [
-    "На странице есть форма для данных карты",
-    "На странице оплаты работает код сторонних сайтов"
-   ]
+   "info": []
   }
  },
  {
@@ -1971,17 +1942,14 @@
   "has_dom": true,
   "file": "urlscan2/01a13d28-2c99-753a-ad29-ee072ef322cf.html",
   "new": {
-   "verdict": "warning",
+   "verdict": "danger",
    "checks": [
-    "card-form:warning"
+    "data:danger"
    ],
    "titles": [
-    "Данные карты уходят на другой сайт"
+    "Введённые данные уйдут через сервис пересылки форм"
    ],
-   "info": [
-    "На странице есть форма для данных карты",
-    "На странице оплаты работает код сторонних сайтов"
-   ]
+   "info": []
   }
  },
  {
@@ -2002,10 +1970,7 @@
    "verdict": "ok",
    "checks": [],
    "titles": [],
-   "info": [
-    "На странице есть форма для данных карты",
-    "На странице оплаты работает код сторонних сайтов"
-   ]
+   "info": []
   }
  },
  {
@@ -2064,20 +2029,13 @@
   "new": {
    "verdict": "danger",
    "checks": [
-    "card-form:danger",
-    "receive-money:danger",
-    "skimmer:warning"
+    "data:danger"
    ],
    "titles": [
-    "Страница с вводом карты открыта без HTTPS",
-    "Данные карты будут отправлены без шифрования",
-    "Данные карты уходят в Telegram-бота",
-    "Для получения денег просят секретные данные карты",
-    "Скрипт читает поля карты и умеет отправлять данные"
+    "Введённые данные уходят в Telegram-бота",
+    "Для получения денег просят CVV и срок действия карты"
    ],
-   "info": [
-    "На странице есть форма для данных карты"
-   ]
+   "info": []
   }
  },
  {
@@ -2189,10 +2147,10 @@
   "new": {
    "verdict": "warning",
    "checks": [
-    "income-promise:warning"
+    "pressure:warning"
    ],
    "titles": [
-    "Обещают доход и просят оставить телефон"
+    "Обещают доход и просят телефон"
    ],
    "info": []
   }
@@ -2320,13 +2278,9 @@
   "has_dom": true,
   "file": "urlscan2/01a1cbc6-3113-75e4-bf9d-c59a2455a694.html",
   "new": {
-   "verdict": "warning",
-   "checks": [
-    "wallet-drainer:warning"
-   ],
-   "titles": [
-    "Раздача токенов с подключением кошелька"
-   ],
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
    "info": []
   }
  },
@@ -2345,13 +2299,9 @@
   "has_dom": true,
   "file": "urlscan2/01a1cbc1-39ea-7508-95cd-776d902f607a.html",
   "new": {
-   "verdict": "warning",
-   "checks": [
-    "wallet-drainer:warning"
-   ],
-   "titles": [
-    "Раздача токенов с подключением кошелька"
-   ],
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
    "info": []
   }
  },
@@ -2370,13 +2320,9 @@
   "has_dom": true,
   "file": "urlscan2/01a1cbb6-cf2c-739a-8087-f3a9000dfff7.html",
   "new": {
-   "verdict": "warning",
-   "checks": [
-    "wallet-drainer:warning"
-   ],
-   "titles": [
-    "Раздача токенов с подключением кошелька"
-   ],
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
    "info": []
   }
  },
@@ -2395,13 +2341,9 @@
   "has_dom": true,
   "file": "urlscan2/01a1cb90-68ab-7577-b14f-12312aa7e783.html",
   "new": {
-   "verdict": "warning",
-   "checks": [
-    "wallet-drainer:warning"
-   ],
-   "titles": [
-    "Раздача токенов с подключением кошелька"
-   ],
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
    "info": []
   }
  },
@@ -2420,13 +2362,9 @@
   "has_dom": true,
   "file": "urlscan2/01a1cb86-89e0-7132-8538-a776ef3b67e4.html",
   "new": {
-   "verdict": "warning",
-   "checks": [
-    "wallet-drainer:warning"
-   ],
-   "titles": [
-    "Раздача токенов с подключением кошелька"
-   ],
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
    "info": []
   }
  },
@@ -2445,13 +2383,9 @@
   "has_dom": true,
   "file": "urlscan2/01a1cb70-5204-726b-b391-92c45785d1c7.html",
   "new": {
-   "verdict": "warning",
-   "checks": [
-    "wallet-drainer:warning"
-   ],
-   "titles": [
-    "Раздача токенов с подключением кошелька"
-   ],
+   "verdict": "none",
+   "checks": [],
+   "titles": [],
    "info": []
   }
  },
@@ -2469,10 +2403,10 @@
   "new": {
    "verdict": "warning",
    "checks": [
-    "income-promise:warning"
+    "pressure:warning"
    ],
    "titles": [
-    "Обещают доход и просят оставить телефон"
+    "Обещают доход и просят телефон"
    ],
    "info": []
   }
@@ -2584,10 +2518,10 @@
   "new": {
    "verdict": "warning",
    "checks": [
-    "income-promise:warning"
+    "pressure:warning"
    ],
    "titles": [
-    "Обещают доход и просят оставить телефон"
+    "Обещают доход и просят телефон"
    ],
    "info": []
   }
@@ -2606,10 +2540,10 @@
   "new": {
    "verdict": "warning",
    "checks": [
-    "income-promise:warning"
+    "pressure:warning"
    ],
    "titles": [
-    "Обещают доход и просят оставить телефон"
+    "Обещают доход и просят телефон"
    ],
    "info": []
   }
@@ -2628,10 +2562,10 @@
   "new": {
    "verdict": "warning",
    "checks": [
-    "income-promise:warning"
+    "pressure:warning"
    ],
    "titles": [
-    "Обещают доход и просят оставить телефон"
+    "Обещают доход и просят телефон"
    ],
    "info": []
   }
@@ -2650,10 +2584,10 @@
   "new": {
    "verdict": "warning",
    "checks": [
-    "income-promise:warning"
+    "pressure:warning"
    ],
    "titles": [
-    "Обещают доход и просят оставить телефон"
+    "Обещают доход и просят телефон"
    ],
    "info": []
   }
@@ -2672,10 +2606,10 @@
   "new": {
    "verdict": "warning",
    "checks": [
-    "income-promise:warning"
+    "pressure:warning"
    ],
    "titles": [
-    "Обещают доход и просят оставить телефон"
+    "Обещают доход и просят телефон"
    ],
    "info": []
   }
@@ -2694,10 +2628,10 @@
   "new": {
    "verdict": "warning",
    "checks": [
-    "income-promise:warning"
+    "pressure:warning"
    ],
    "titles": [
-    "Обещают доход и просят оставить телефон"
+    "Обещают доход и просят телефон"
    ],
    "info": []
   }
@@ -2773,10 +2707,10 @@
   "new": {
    "verdict": "warning",
    "checks": [
-    "income-promise:warning"
+    "pressure:warning"
    ],
    "titles": [
-    "Обещают доход и просят оставить телефон"
+    "Обещают доход и просят телефон"
    ],
    "info": []
   }
@@ -3169,7 +3103,7 @@
   "new": {
    "verdict": "warning",
    "checks": [
-    "wallet-drainer:warning"
+    "crypto-wallet:warning"
    ],
    "titles": [
     "Раздача токенов с подключением кошелька"
@@ -3195,7 +3129,7 @@
   "new": {
    "verdict": "warning",
    "checks": [
-    "wallet-drainer:warning"
+    "crypto-wallet:warning"
    ],
    "titles": [
     "Раздача токенов с подключением кошелька"
@@ -3489,18 +3423,12 @@
   "new": {
    "verdict": "warning",
    "checks": [
-    "skimmer:warning",
     "pressure:warning"
    ],
    "titles": [
-    "Скрипт читает поля карты и умеет отправлять данные",
     "Требуют срочно оплатить долг или штраф по ссылке"
    ],
-   "info": [
-    "На странице есть форма для данных карты",
-    "На странице оплаты работает код сторонних сайтов",
-    "Адрес на национальном алфавите"
-   ]
+   "info": []
   }
  },
  {
@@ -3541,18 +3469,12 @@
   "new": {
    "verdict": "danger",
    "checks": [
-    "card-form:danger",
-    "skimmer:warning"
+    "data:danger"
    ],
    "titles": [
-    "Вместе с картой просят данные, которые для оплаты не нужны",
-    "Скрипт читает поля карты и умеет отправлять данные",
-    "Скрипт читает поля карты и умеет отправлять данные"
+    "Вместе с картой просят номер соцстрахования"
    ],
-   "info": [
-    "На странице есть форма для данных карты",
-    "На странице оплаты работает код сторонних сайтов"
-   ]
+   "info": []
   }
  },
  {
@@ -3569,18 +3491,12 @@
   "new": {
    "verdict": "danger",
    "checks": [
-    "card-form:danger",
-    "skimmer:warning"
+    "data:danger"
    ],
    "titles": [
-    "Вместе с картой просят данные, которые для оплаты не нужны",
-    "Скрипт читает поля карты и умеет отправлять данные",
-    "Скрипт читает поля карты и умеет отправлять данные"
+    "Вместе с картой просят номер соцстрахования"
    ],
-   "info": [
-    "На странице есть форма для данных карты",
-    "На странице оплаты работает код сторонних сайтов"
-   ]
+   "info": []
   }
  },
  {
@@ -3709,7 +3625,7 @@
   "new": {
    "verdict": "warning",
    "checks": [
-    "wallet-drainer:warning"
+    "crypto-wallet:warning"
    ],
    "titles": [
     "Раздача токенов с подключением кошелька"
@@ -3776,7 +3692,7 @@
     "pressure:danger"
    ],
    "titles": [
-    "Страница пугает взломом и отправляет в Telegram"
+    "«Вас взломали»: страница отправляет в Telegram"
    ],
    "info": []
   }
@@ -3798,7 +3714,7 @@
     "pressure:danger"
    ],
    "titles": [
-    "Страница пугает взломом и отправляет в Telegram"
+    "«Вас взломали»: страница отправляет в Telegram"
    ],
    "info": []
   }
@@ -3820,7 +3736,7 @@
     "pressure:danger"
    ],
    "titles": [
-    "Страница пугает взломом и отправляет в Telegram"
+    "«Вас взломали»: страница отправляет в Telegram"
    ],
    "info": []
   }
@@ -3842,7 +3758,7 @@
     "pressure:danger"
    ],
    "titles": [
-    "Страница пугает взломом и отправляет в Telegram"
+    "«Вас взломали»: страница отправляет в Telegram"
    ],
    "info": []
   }
@@ -3864,7 +3780,7 @@
     "pressure:danger"
    ],
    "titles": [
-    "Страница пугает взломом и отправляет в Telegram"
+    "«Вас взломали»: страница отправляет в Telegram"
    ],
    "info": []
   }

@@ -21,7 +21,7 @@ FIREFOX = r'C:\Program Files\Mozilla Firefox\firefox.exe'
 PORT = 9333
 SHOTS = ROOT / 'tools' / 'firefox-shots'
 PAGES = sys.argv[1:] or ['delivery.html', 'marketplace-transfer.html', 'fine-qr.html', 'tea-shop-skimmer.html',
-                         'invoice-swap.html', 'prize-clickjacking.html', 'trial-subscription.html', 'honest-receipt.html']
+                         'clickfix-tickets.html', 'trial-subscription.html', 'honest-receipt.html']
 
 
 class Bidi:

@@ -1,5 +1,5 @@
 {
- "_": "Разметка страниц Zenodo по видам мошенничества. Просмотрены снимки всех 310 страниц (14.11.2026). Правила проверяются по порядку: первое совпадение по домену. scheme=skip — страница не относится ни к одной схеме или неясно, мошенническая ли она.",
+ "_": "Разметка страниц Zenodo по видам мошенничества. Просмотрены снимки всех 310 страниц (14.11.2026). Правила проверяются по порядку: первое совпадение по домену. scheme=skip — страница не относится ни к одной схеме или неясно, мошенническая ли она. С 26.11.2026 входы в онлайн-банк относятся к схеме «Поддельная страница оплаты или входа в банк», входы в почту и офисные сервисы – skip.",
  "rules": [
   [
    "hasar|ylylkrtzl|trmrtysgsdgpzr|webihlal|ndadl|destekller|ubrirs",
@@ -38,7 +38,7 @@
   ],
   [
    "lovnodntcostmoney|hodgebkonline|wbat\\.net|inforavast|fidelitychartered|bdoupdate|vmi1586423|r0avest",
-   "account-theft",
+   "fake-payment",
    "копия входа в онлайн-банк"
   ],
   [
@@ -59,7 +59,7 @@
   [
    "glitch\\.me",
    "fake-payment",
-   "копия входа в Tesco Bank с полями карты; данные уходят в Telegram-бота"
+   "копия входа в онлайн-банк Tesco Bank: логин, пароль, цифры секретного кода и девичья фамилия матери уходят в Telegram-бота"
   ],
   [
    "colegiosuizo",
@@ -107,9 +107,14 @@
    "магазин со скидками до 70–90 % на известные бренды"
   ],
   [
+   "tesco|wellsfargo|navy|intesa|arvest|eecu|bank",
+   "fake-payment",
+   "копия входа в онлайн-банк: логин и пароль"
+  ],
+  [
    "att|currently|weebly|wixsite|fleek|tesco|wellsfargo|navy|intesa|arvest|eecu|employees|intuit|quickbooks|orange|astound|yahoo|mail|outlook|docusign|sharepoint|teb|turkekonom|nafath|taenmuine|tanomitanua|sabtskosa|rayyanwate|naqiwater|sapatkosaud|r2\\.dev|codeanyapp|ejercito|login|verify|secure|account|bank",
-   "account-theft",
-   "страница входа (почта, банк, госпортал): крадут логин и пароль"
+   "skip",
+   "вход в почту, офисные сервисы, госпортал – не платёжная страница"
   ]
  ],
  "default": {

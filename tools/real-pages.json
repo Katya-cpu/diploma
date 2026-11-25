@@ -1,5 +1,6 @@
 [
  {
+  "url": "https://avito-payment.com/?v=1",
   "id": "u-01a1b763-90f9",
   "scheme": "fake-payment",
   "source": "urlscan.io",
@@ -14,6 +15,7 @@
   "blur": false
  },
  {
+  "url": "https://cdek.fast-zoodelivery.ru/",
   "id": "u-01a1d19a-aa48",
   "scheme": "fake-payment",
   "source": "urlscan.io",
@@ -28,6 +30,7 @@
   "blur": false
  },
  {
+  "url": "https://gosuslugicdek-app.com/login",
   "id": "u-01a1cec7-96b7",
   "scheme": "account-theft",
   "source": "urlscan.io",
@@ -42,6 +45,7 @@
   "blur": false
  },
  {
+  "url": "https://gosuslugicdek-app.online/login",
   "id": "u-01a1c5f5-e0cb",
   "scheme": "account-theft",
   "source": "urlscan.io",
@@ -56,6 +60,7 @@
   "blur": false
  },
  {
+  "url": "https://vzj4noiy-ozon.easycops.com/?3QHLte=SKOyLyS7qJ&click_id=SKOyLyS7qJ",
   "id": "u-01a1d06d-7000",
   "scheme": "payout",
   "source": "urlscan.io",
@@ -70,6 +75,7 @@
   "blur": false
  },
  {
+  "url": "https://s902ix4f-wildberries.easycops.com/?3QHLte=IBbvjzi7Bu&click_id=IBbvjzi7Bu",
   "id": "u-01a1d3b0-3c3b",
   "scheme": "payout",
   "source": "urlscan.io",
@@ -84,6 +90,7 @@
   "blur": false
  },
  {
+  "url": "https://boxberry-trackcode1lsrety324ewkft.pages.dev/",
   "id": "u-01a0668b-d4ab",
   "scheme": "fake-payment",
   "source": "urlscan.io",
@@ -98,6 +105,7 @@
   "blur": false
  },
  {
+  "url": "https://vivid-teal-rq7lwf1o-dpj1mxieiw1c.edgeone.dev/",
   "id": "u-01a107b8-2e43",
   "scheme": "fake-payment",
   "source": "urlscan.io",
@@ -112,6 +120,7 @@
   "blur": false
  },
  {
+  "url": "https://pochta-express-delivery.ru/",
   "id": "u-01a1cf99-b77c",
   "scheme": "fake-payment",
   "source": "urlscan.io",
@@ -126,6 +135,7 @@
   "blur": false
  },
  {
+  "url": "https://checkout.desbau.com/v01/web/pay.php",
   "id": "u-01a1cb75-901e",
   "scheme": "fake-payment",
   "source": "urlscan.io",
@@ -142,6 +152,7 @@
   "blur": false
  },
  {
+  "url": "https://lilian-maria.de/chatgpt/web/pay.php",
   "id": "u-01a13b3a-9f05",
   "scheme": "fake-payment",
   "source": "urlscan.io",
@@ -158,6 +169,7 @@
   "blur": false
  },
  {
+  "url": "https://www.sidermarsrl.it/openurass/web/pay.php",
   "id": "u-01a1c4a3-e9eb",
   "scheme": "fake-payment",
   "source": "urlscan.io",
@@ -172,6 +184,7 @@
   "blur": false
  },
  {
+  "url": "https://www.flatsrl.com/old/openurass/web/pay.php",
   "id": "u-01a1bf39-a74b",
   "scheme": "fake-payment",
   "source": "urlscan.io",
@@ -186,6 +199,7 @@
   "blur": false
  },
  {
+  "url": "https://www.progettienergetici.com/ris/openurass/web/pay.php",
   "id": "u-01a13924-6651",
   "scheme": "fake-payment",
   "source": "urlscan.io",
@@ -200,6 +214,7 @@
   "blur": false
  },
  {
+  "url": "https://www.musikfactory.it/wp-content/upgrade/openurass/web/pay.php",
   "id": "u-01a12fb1-3624",
   "scheme": "fake-payment",
   "source": "urlscan.io",
@@ -214,6 +229,7 @@
   "blur": false
  },
  {
+  "url": "https://www.skydivecostadargento.com/wp-admin/openurass/web/pay.php",
   "id": "u-01a0a390-ce6e",
   "scheme": "fake-payment",
   "source": "urlscan.io",
@@ -228,6 +244,7 @@
   "blur": false
  },
  {
+  "url": "https://colimaenmovimiento.com/",
   "id": "u-01a1d3b2-b663",
   "scheme": "clickfix",
   "source": "urlscan.io",
@@ -244,6 +261,7 @@
   "blur": false
  },
  {
+  "url": "https://browser-architecture-sync.com/",
   "id": "u-01a1d3b2-c2e1",
   "scheme": "clickfix",
   "source": "urlscan.io",
@@ -260,6 +278,7 @@
   "blur": false
  },
  {
+  "url": "https://hotscriptz.com/",
   "id": "u-01a1d3b2-bca3",
   "scheme": "clickfix",
   "source": "urlscan.io",
@@ -276,6 +295,7 @@
   "blur": false
  },
  {
+  "url": "https://www.colegiojeanpiaget.com.br/",
   "id": "u-01a1d3b2-9080",
   "scheme": "clickfix",
   "source": "urlscan.io",
@@ -292,6 +312,7 @@
   "blur": false
  },
  {
+  "url": "https://chomleaestates.co.uk/",
   "id": "u-01a1d3b2-8b66",
   "scheme": "clickfix",
   "source": "urlscan.io",
@@ -308,6 +329,7 @@
   "blur": false
  },
  {
+  "url": "https://viventuresgroup.com/",
   "id": "u-01a1d3b2-9db1",
   "scheme": "clickfix",
   "source": "urlscan.io",
@@ -324,6 +346,7 @@
   "blur": false
  },
  {
+  "url": "https://brookheavyhaulingllc.com/",
   "id": "u-01a1d3b2-20a2",
   "scheme": "clickfix",
   "source": "urlscan.io",
@@ -340,6 +363,7 @@
   "blur": false
  },
  {
+  "url": "https://sandyheatingandair.com/",
   "id": "u-01a1d3b1-fb5d",
   "scheme": "clickfix",
   "source": "urlscan.io",
@@ -356,6 +380,7 @@
   "blur": false
  },
  {
+  "url": "https://piramida.club/",
   "id": "u-01a1d3b1-ea22",
   "scheme": "clickfix",
   "source": "urlscan.io",
@@ -372,6 +397,7 @@
   "blur": false
  },
  {
+  "url": "https://serenehomeliving.net/",
   "id": "u-01a1d3b2-02e7",
   "scheme": "clickfix",
   "source": "urlscan.io",
@@ -388,6 +414,7 @@
   "blur": false
  },
  {
+  "url": "https://princetonmtg.com/",
   "id": "u-01a1d3b1-f521",
   "scheme": "clickfix",
   "source": "urlscan.io",
@@ -404,6 +431,7 @@
   "blur": false
  },
  {
+  "url": "https://mendrake.com/",
   "id": "u-01a1d3b1-c909",
   "scheme": "clickfix",
   "source": "urlscan.io",
@@ -420,6 +448,7 @@
   "blur": false
  },
  {
+  "url": "https://virexontech.com/",
   "id": "u-01a1d3b1-97b7",
   "scheme": "clickfix",
   "source": "urlscan.io",
@@ -436,6 +465,7 @@
   "blur": false
  },
  {
+  "url": "https://hillorganicproducts.com/",
   "id": "u-01a1d3b1-1836",
   "scheme": "clickfix",
   "source": "urlscan.io",
@@ -452,6 +482,7 @@
   "blur": false
  },
  {
+  "url": "https://rebelsupply.co.uk/",
   "id": "u-01a1d3b0-ea6d",
   "scheme": "clickfix",
   "source": "urlscan.io",
@@ -468,6 +499,7 @@
   "blur": false
  },
  {
+  "url": "https://buyantivirus.us/",
   "id": "u-01a1d345-40b6",
   "scheme": "clickfix",
   "source": "urlscan.io",
@@ -484,6 +516,7 @@
   "blur": false
  },
  {
+  "url": "https://maswo.ca/",
   "id": "u-01a1d345-2d58",
   "scheme": "clickfix",
   "source": "urlscan.io",
@@ -500,6 +533,7 @@
   "blur": false
  },
  {
+  "url": "https://www.brunofoglia.it/",
   "id": "u-01a1d344-c095",
   "scheme": "clickfix",
   "source": "urlscan.io",
@@ -516,6 +550,7 @@
   "blur": false
  },
  {
+  "url": "https://oroojloo.com/",
   "id": "u-01a1d343-ff42",
   "scheme": "clickfix",
   "source": "urlscan.io",
@@ -532,6 +567,7 @@
   "blur": false
  },
  {
+  "url": "https://oplata.poslaniya.su/?p=eyJhaSI6IjU5Nzk4NDEwNjEiLCJpaSI6ImluaXQ6c29DLUVEVkg6MTMiLCJhIjoyOSwidHAiOjMsInJwIjpbWzE0OTksN10sWzY0OSw1XSxbMjk5LDNdLFs5OSwxXV19",
   "id": "u-01a1b69d-f7b5",
   "scheme": "subscription",
   "source": "urlscan.io",
@@ -548,6 +584,7 @@
   "blur": false
  },
  {
+  "url": "https://gibdd-proverka.com/",
   "id": "u-01a129a0-1d2f",
   "scheme": "fines",
   "source": "urlscan.io",
@@ -562,6 +599,7 @@
   "blur": false
  },
  {
+  "url": "https://fnsnalog-ru.online/",
   "id": "u-01a163e2-b5e6",
   "scheme": "safe-account",
   "source": "urlscan.io",
@@ -578,6 +616,7 @@
   "blur": false
  },
  {
+  "url": "https://socportalfns3.shop/",
   "id": "u-01a162d8-c282",
   "scheme": "account-theft",
   "source": "urlscan.io",
@@ -592,6 +631,7 @@
   "blur": false
  },
  {
+  "url": "https://gov-gibdd.ru/",
   "id": "u-01a1979d-3cad",
   "scheme": "fines",
   "source": "urlscan.io",
@@ -606,6 +646,7 @@
   "blur": false
  },
  {
+  "url": "https://gosscomitetdfrs.online/",
   "id": "u-019fad61-df4d",
   "scheme": "fake-app",
   "source": "urlscan.io",
@@ -620,6 +661,7 @@
   "blur": false
  },
  {
+  "url": "https://gemola.shop/card-form",
   "id": "u-01a141d4-9405",
   "scheme": "fake-shop",
   "source": "urlscan.io",
@@ -634,6 +676,7 @@
   "blur": false
  },
  {
+  "url": "https://paradisecoffee.ky/",
   "id": "u-01a1a7e3-8bc9",
   "scheme": "skimmer",
   "source": "urlscan.io",
@@ -648,6 +691,7 @@
   "blur": false
  },
  {
+  "url": "https://canadianscholars.ca/",
   "id": "u-01a1a7e3-63f5",
   "scheme": "skimmer",
   "source": "urlscan.io",
@@ -662,6 +706,7 @@
   "blur": false
  },
  {
+  "url": "https://runningbelts.com.au/",
   "id": "u-01a1a7e3-7b39",
   "scheme": "skimmer",
   "source": "urlscan.io",
@@ -676,6 +721,7 @@
   "blur": false
  },
  {
+  "url": "https://www.bilsdale-worms.co.uk/",
   "id": "u-01a1a7e3-ba19",
   "scheme": "skimmer",
   "source": "urlscan.io",
@@ -690,6 +736,7 @@
   "blur": false
  },
  {
+  "url": "https://www.sklepszostak.pl/",
   "id": "u-01a1a7e3-aa85",
   "scheme": "skimmer",
   "source": "urlscan.io",
@@ -704,6 +751,7 @@
   "blur": false
  },
  {
+  "url": "https://teragu.com/",
   "id": "u-01a1a7e3-9b86",
   "scheme": "skimmer",
   "source": "urlscan.io",
@@ -718,38 +766,7 @@
   "blur": false
  },
  {
-  "id": "z-atgoebell-wixsite-com",
-  "scheme": "account-theft",
-  "source": "Zenodo 14880589",
-  "date": "2024-01-11",
-  "domain": "atgoebell.wixsite.com",
-  "title": "",
-  "note": "страница входа (почта, банк, госпортал): крадут логин и пароль",
-  "file": "zenodo/fines__2024-01_2024-01-11_atgoebell.wixsite.com.html",
-  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\fines\\2024-01_2024-01-11_atgoebell.wixsite.com\\page.png",
-  "link": null,
-  "verdict": "none",
-  "titles": [],
-  "cardinput": false,
-  "blur": false
- },
- {
-  "id": "z-www-sapatkosaudisar-ksa-sa-in",
-  "scheme": "account-theft",
-  "source": "Zenodo 14880589",
-  "date": "2024-01-11",
-  "domain": "www.sapatkosaudisar-ksa-sa.in",
-  "title": "",
-  "note": "страница входа (почта, банк, госпортал): крадут логин и пароль",
-  "file": "zenodo/fines__2024-01_2024-01-11_www.sapatkosaudisar-ksa-sa.in.html",
-  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\fines\\2024-01_2024-01-11_www.sapatkosaudisar-ksa-sa.in\\page.png",
-  "link": null,
-  "verdict": "none",
-  "titles": [],
-  "cardinput": false,
-  "blur": false
- },
- {
+  "url": "https://uusps.lqtu.cn/",
   "id": "z-uusps-lqtu-cn",
   "scheme": "fake-payment",
   "source": "Zenodo 14880589",
@@ -766,22 +783,7 @@
   "blur": false
  },
  {
-  "id": "z-zonuzake-wixsite-com",
-  "scheme": "account-theft",
-  "source": "Zenodo 14880589",
-  "date": "2024-01-11",
-  "domain": "zonuzake.wixsite.com",
-  "title": "",
-  "note": "страница входа (почта, банк, госпортал): крадут логин и пароль",
-  "file": "zenodo/fines__2024-01_2024-01-11_zonuzake.wixsite.com.html",
-  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\fines\\2024-01_2024-01-11_zonuzake.wixsite.com\\page.png",
-  "link": null,
-  "verdict": "none",
-  "titles": [],
-  "cardinput": false,
-  "blur": false
- },
- {
+  "url": "https://ylylkrtzl.net/",
   "id": "z-ylylkrtzl-net",
   "scheme": "fines",
   "source": "Zenodo 14880589",
@@ -800,38 +802,7 @@
   "blur": false
  },
  {
-  "id": "z-ghghlmwsndhf-weebly-com",
-  "scheme": "account-theft",
-  "source": "Zenodo 14880589",
-  "date": "2024-01-11",
-  "domain": "ghghlmwsndhf.weebly.com",
-  "title": "",
-  "note": "страница входа (почта, банк, госпортал): крадут логин и пароль",
-  "file": "zenodo/fines__2024-01_2024-01-11_ghghlmwsndhf.weebly.com.html",
-  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\fines\\2024-01_2024-01-11_ghghlmwsndhf.weebly.com\\page.png",
-  "link": null,
-  "verdict": "none",
-  "titles": [],
-  "cardinput": false,
-  "blur": false
- },
- {
-  "id": "z-turkekonom-com",
-  "scheme": "account-theft",
-  "source": "Zenodo 14880589",
-  "date": "2024-01-11",
-  "domain": "turkekonom.com",
-  "title": "",
-  "note": "страница входа (почта, банк, госпортал): крадут логин и пароль",
-  "file": "zenodo/fines__2024-01_2024-01-11_turkekonom.com.html",
-  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\fines\\2024-01_2024-01-11_turkekonom.com\\page.png",
-  "link": null,
-  "verdict": "none",
-  "titles": [],
-  "cardinput": false,
-  "blur": false
- },
- {
+  "url": "https://webihlalsorgutr.com/",
   "id": "z-webihlalsorgutr-com",
   "scheme": "fines",
   "source": "Zenodo 14880589",
@@ -848,22 +819,7 @@
   "blur": false
  },
  {
-  "id": "z-frfrkinsshdf-weebly-com",
-  "scheme": "account-theft",
-  "source": "Zenodo 14880589",
-  "date": "2024-01-11",
-  "domain": "frfrkinsshdf.weebly.com",
-  "title": "",
-  "note": "страница входа (почта, банк, госпортал): крадут логин и пароль",
-  "file": "zenodo/fines__2024-01_2024-01-11_frfrkinsshdf.weebly.com.html",
-  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\fines\\2024-01_2024-01-11_frfrkinsshdf.weebly.com\\page.png",
-  "link": null,
-  "verdict": "none",
-  "titles": [],
-  "cardinput": false,
-  "blur": false
- },
- {
+  "url": "https://aceteryxstore.top/",
   "id": "z-aceteryxstore-top",
   "scheme": "fake-shop",
   "source": "Zenodo 14880589",
@@ -880,6 +836,7 @@
   "blur": false
  },
  {
+  "url": "https://www.stampslover.com/",
   "id": "z-www-stampslover-com",
   "scheme": "fake-shop",
   "source": "Zenodo 14880589",
@@ -896,6 +853,7 @@
   "blur": false
  },
  {
+  "url": "https://www.arcteryxonline.xyz/",
   "id": "z-www-arcteryxonline-xyz",
   "scheme": "fake-shop",
   "source": "Zenodo 14880589",
@@ -912,25 +870,7 @@
   "blur": false
  },
  {
-  "id": "z-pub-375cf12e9c164ac5946c77d111a194c3-r2-",
-  "scheme": "account-theft",
-  "source": "Zenodo 14880589",
-  "date": "2024-01-11",
-  "domain": "pub-375cf12e9c164ac5946c77d111a194c3.r2.dev",
-  "title": "",
-  "note": "страница входа (почта, банк, госпортал): крадут логин и пароль",
-  "file": "zenodo/fake-payment__2024-01_2024-01-11_pub-375cf12e9c164ac5946c77d111a194c3.r2.dev.html",
-  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\fake-payment\\2024-01_2024-01-11_pub-375cf12e9c164ac5946c77d111a194c3.r2.dev\\page.png",
-  "link": null,
-  "verdict": "danger",
-  "titles": [
-   "Вместе с картой просят данные, которые для оплаты не нужны",
-   "Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
-  ],
-  "cardinput": false,
-  "blur": false
- },
- {
+  "url": "https://usps.pcpostsale.top/",
   "id": "z-usps-pcpostsale-top",
   "scheme": "fake-payment",
   "source": "Zenodo 14880589",
@@ -947,6 +887,7 @@
   "blur": false
  },
  {
+  "url": "https://arcteryxjacket.xyz/",
   "id": "z-arcteryxjacket-xyz",
   "scheme": "fake-shop",
   "source": "Zenodo 14880589",
@@ -963,6 +904,7 @@
   "blur": false
  },
  {
+  "url": "https://biomassociazione.it/",
   "id": "z-biomassociazione-it",
   "scheme": "fake-payment",
   "source": "Zenodo 14880589",
@@ -979,6 +921,7 @@
   "blur": false
  },
  {
+  "url": "https://flash-usps.top/",
   "id": "z-flash-usps-top",
   "scheme": "fake-payment",
   "source": "Zenodo 14880589",
@@ -995,6 +938,7 @@
   "blur": false
  },
  {
+  "url": "https://www.dalladraiviengisod.com/",
   "id": "z-www-dalladraiviengisod-com",
   "scheme": "fake-payment",
   "source": "Zenodo 14880589",
@@ -1011,22 +955,7 @@
   "blur": false
  },
  {
-  "id": "z-php-gray-alligator-arubanet81245887-code",
-  "scheme": "account-theft",
-  "source": "Zenodo 14880589",
-  "date": "2024-01-11",
-  "domain": "php-gray-alligator-arubanet81245887.codeanyapp.com",
-  "title": "",
-  "note": "страница входа (почта, банк, госпортал): крадут логин и пароль",
-  "file": "zenodo/fake-payment__2024-01_2024-01-11_php-gray-alligator-arubanet81245887.codeanyapp.com.html",
-  "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\fake-payment\\2024-01_2024-01-11_php-gray-alligator-arubanet81245887.codeanyapp.com\\page.png",
-  "link": null,
-  "verdict": "none",
-  "titles": [],
-  "cardinput": true,
-  "blur": false
- },
- {
+  "url": "https://annsummersuk.com/",
   "id": "z-annsummersuk-com",
   "scheme": "fake-shop",
   "source": "Zenodo 14880589",
@@ -1043,6 +972,7 @@
   "blur": false
  },
  {
+  "url": "https://uspsmnk.com/",
   "id": "z-uspsmnk-com",
   "scheme": "fake-payment",
   "source": "Zenodo 14880589",
@@ -1059,6 +989,7 @@
   "blur": false
  },
  {
+  "url": "https://www.isabelmordhorst.com/",
   "id": "z-www-isabelmordhorst-com",
   "scheme": "fake-shop",
   "source": "Zenodo 14880589",
@@ -1075,6 +1006,7 @@
   "blur": false
  },
  {
+  "url": "https://swisspost-ch-ch-post.codeanyapp.com/",
   "id": "z-swisspost-ch-ch-post-codeanyapp-com",
   "scheme": "fake-payment",
   "source": "Zenodo 14880589",
@@ -1093,6 +1025,7 @@
   "blur": false
  },
  {
+  "url": "https://xdu.lzh.mybluehost.me/",
   "id": "z-xdu-lzh-mybluehost-me",
   "scheme": "fake-payment",
   "source": "Zenodo 14880589",
@@ -1109,6 +1042,7 @@
   "blur": false
  },
  {
+  "url": "https://claim-zksync-io.com/",
   "id": "z-claim-zksync-io-com",
   "scheme": "crypto-drainer",
   "source": "Zenodo 14880589",
@@ -1125,6 +1059,7 @@
   "blur": false
  },
  {
+  "url": "https://service-polst.com/",
   "id": "z-service-polst-com",
   "scheme": "fake-payment",
   "source": "Zenodo 14880589",
@@ -1143,6 +1078,7 @@
   "blur": false
  },
  {
+  "url": "https://swisspostwp.blogspot.com/",
   "id": "z-swisspostwp-blogspot-com",
   "scheme": "fake-payment",
   "source": "Zenodo 14880589",
@@ -1161,6 +1097,7 @@
   "blur": false
  },
  {
+  "url": "https://www.fidefx.cc/",
   "id": "z-www-fidefx-cc",
   "scheme": "investment",
   "source": "Zenodo 14880589",
@@ -1177,6 +1114,7 @@
   "blur": false
  },
  {
+  "url": "https://alfa-by24.online/",
   "id": "z-alfa-by24-online",
   "scheme": "payout",
   "source": "Zenodo 14880589",
@@ -1193,6 +1131,7 @@
   "blur": false
  },
  {
+  "url": "https://linksfidelity.com/",
   "id": "z-linksfidelity-com",
   "scheme": "investment",
   "source": "Zenodo 14880589",
@@ -1209,6 +1148,7 @@
   "blur": false
  },
  {
+  "url": "https://trmrtysgsdgpzr.net/",
   "id": "z-trmrtysgsdgpzr-net",
   "scheme": "fines",
   "source": "Zenodo 14880589",
@@ -1227,6 +1167,7 @@
   "blur": false
  },
  {
+  "url": "https://7-24destekller.com.tr/",
   "id": "z-7-24destekller-com-tr",
   "scheme": "fines",
   "source": "Zenodo 14880589",
@@ -1245,6 +1186,7 @@
   "blur": false
  },
  {
+  "url": "https://www.linksfidelity.com/",
   "id": "z-www-linksfidelity-com",
   "scheme": "investment",
   "source": "Zenodo 14880589",
@@ -1261,6 +1203,7 @@
   "blur": false
  },
  {
+  "url": "https://fidoptbit.com/",
   "id": "z-fidoptbit-com",
   "scheme": "investment",
   "source": "Zenodo 14880589",
@@ -1277,6 +1220,7 @@
   "blur": false
  },
  {
+  "url": "https://tvnetflxonline.com/",
   "id": "z-tvnetflxonline-com",
   "scheme": "fake-payment",
   "source": "Zenodo 14880589",
@@ -1295,6 +1239,7 @@
   "blur": false
  },
  {
+  "url": "https://ubrirs.online/",
   "id": "z-ubrirs-online",
   "scheme": "fines",
   "source": "Zenodo 14880589",
@@ -1311,6 +1256,7 @@
   "blur": false
  },
  {
+  "url": "https://swap.xingtu.network/",
   "id": "z-swap-xingtu-network",
   "scheme": "crypto-drainer",
   "source": "Zenodo 14880589",
@@ -1327,6 +1273,7 @@
   "blur": false
  },
  {
+  "url": "https://ndadltt.net/",
   "id": "z-ndadltt-net",
   "scheme": "fines",
   "source": "Zenodo 14880589",
@@ -1343,6 +1290,7 @@
   "blur": false
  },
  {
+  "url": "https://bnl-awalltahun.danaidjkt.com/",
   "id": "z-bnl-awalltahun-danaidjkt-com",
   "scheme": "payout",
   "source": "Zenodo 14880589",
@@ -1361,6 +1309,7 @@
   "blur": false
  },
  {
+  "url": "https://caalamoscapital.com/",
   "id": "z-caalamoscapital-com",
   "scheme": "investment",
   "source": "Zenodo 14880589",
@@ -1377,6 +1326,7 @@
   "blur": false
  },
  {
+  "url": "https://zksync-reward.net/",
   "id": "z-zksync-reward-net",
   "scheme": "crypto-drainer",
   "source": "Zenodo 14880589",
@@ -1395,13 +1345,14 @@
   "blur": false
  },
  {
+  "url": "https://noisy-lacy-bait.glitch.me/",
   "id": "z-noisy-lacy-bait-glitch-me",
   "scheme": "fake-payment",
   "source": "Zenodo 14880589",
   "date": "2024-01-08",
   "domain": "noisy-lacy-bait.glitch.me",
   "title": "",
-  "note": "копия входа в Tesco Bank с полями карты; данные уходят в Telegram-бота",
+  "note": "копия входа в онлайн-банк Tesco Bank: логин, пароль, цифры секретного кода и девичья фамилия матери уходят в Telegram-бота",
   "file": "zenodo/fake-payment__2024-01_2024-01-08_noisy-lacy-bait.glitch.me.html",
   "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\fake-payment\\2024-01_2024-01-08_noisy-lacy-bait.glitch.me\\page.png",
   "link": null,
@@ -1415,6 +1366,7 @@
   "blur": false
  },
  {
+  "url": "https://xeb.lcb.mybluehost.me/",
   "id": "z-xeb-lcb-mybluehost-me",
   "scheme": "fake-payment",
   "source": "Zenodo 14880589",
@@ -1433,6 +1385,7 @@
   "blur": false
  },
  {
+  "url": "https://kmvehasar.online/",
   "id": "z-kmvehasar-online",
   "scheme": "fines",
   "source": "Zenodo 14880589",
@@ -1451,6 +1404,7 @@
   "blur": false
  },
  {
+  "url": "https://bnl-tarif-transaksi.ssd-i.com/",
   "id": "z-bnl-tarif-transaksi-ssd-i-com",
   "scheme": "payout",
   "source": "Zenodo 14880589",
@@ -1467,6 +1421,7 @@
   "blur": false
  },
  {
+  "url": "https://usps.com.zv209.vip/",
   "id": "z-usps-com-zv209-vip",
   "scheme": "fake-payment",
   "source": "Zenodo 14880589",
@@ -1485,6 +1440,7 @@
   "blur": false
  },
  {
+  "url": "https://zk-skalling.net/",
   "id": "z-zk-skalling-net",
   "scheme": "crypto-drainer",
   "source": "Zenodo 14880589",
@@ -1503,6 +1459,7 @@
   "blur": false
  },
  {
+  "url": "https://chnet-dhlservice.is-a-green.com/",
   "id": "z-chnet-dhlservice-is-a-green-com",
   "scheme": "fake-payment",
   "source": "Zenodo 14880589",
@@ -1521,6 +1478,7 @@
   "blur": false
  },
  {
+  "url": "https://dtprojects.eu.org/",
   "id": "z-dtprojects-eu-org",
   "scheme": "fake-payment",
   "source": "Zenodo 14880589",
@@ -1537,6 +1495,7 @@
   "blur": false
  },
  {
+  "url": "https://clestia2024.com/",
   "id": "z-clestia2024-com",
   "scheme": "crypto-drainer",
   "source": "Zenodo 14880589",
@@ -1555,6 +1514,7 @@
   "blur": false
  },
  {
+  "url": "https://get-imxtokens.org/",
   "id": "z-get-imxtokens-org",
   "scheme": "crypto-drainer",
   "source": "Zenodo 14880589",
@@ -1573,6 +1533,7 @@
   "blur": false
  },
  {
+  "url": "https://getimmutable-token.com/",
   "id": "z-getimmutable-token-com",
   "scheme": "crypto-drainer",
   "source": "Zenodo 14880589",
@@ -1591,6 +1552,7 @@
   "blur": false
  },
  {
+  "url": "https://getimx-token.org/",
   "id": "z-getimx-token-org",
   "scheme": "crypto-drainer",
   "source": "Zenodo 14880589",
@@ -1609,6 +1571,7 @@
   "blur": false
  },
  {
+  "url": "https://immutable2024.com/",
   "id": "z-immutable2024-com",
   "scheme": "crypto-drainer",
   "source": "Zenodo 14880589",
@@ -1627,6 +1590,7 @@
   "blur": false
  },
  {
+  "url": "https://ilvclaim.com/",
   "id": "z-ilvclaim-com",
   "scheme": "crypto-drainer",
   "source": "Zenodo 14880589",
@@ -1645,6 +1609,7 @@
   "blur": false
  },
  {
+  "url": "https://get-immutablex.org/",
   "id": "z-get-immutablex-org",
   "scheme": "crypto-drainer",
   "source": "Zenodo 14880589",
@@ -1663,13 +1628,14 @@
   "blur": false
  },
  {
+  "url": "https://mature-spicy-eoraptor.glitch.me/",
   "id": "z-mature-spicy-eoraptor-glitch-me",
   "scheme": "fake-payment",
   "source": "Zenodo 14880589",
   "date": "2024-01-14",
   "domain": "mature-spicy-eoraptor.glitch.me",
   "title": "",
-  "note": "копия входа в Tesco Bank с полями карты; данные уходят в Telegram-бота",
+  "note": "копия входа в онлайн-банк Tesco Bank: логин, пароль, цифры секретного кода и девичья фамилия матери уходят в Telegram-бота",
   "file": "zenodo/fake-payment__2024-01_2024-01-14_mature-spicy-eoraptor.glitch.me.html",
   "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\fake-payment\\2024-01_2024-01-14_mature-spicy-eoraptor.glitch.me\\page.png",
   "link": null,
@@ -1683,6 +1649,7 @@
   "blur": false
  },
  {
+  "url": "https://get-imxtokens.net/",
   "id": "z-get-imxtokens-net",
   "scheme": "crypto-drainer",
   "source": "Zenodo 14880589",
@@ -1701,6 +1668,7 @@
   "blur": false
  },
  {
+  "url": "https://get-imxtokens.com/",
   "id": "z-get-imxtokens-com",
   "scheme": "crypto-drainer",
   "source": "Zenodo 14880589",
@@ -1719,6 +1687,7 @@
   "blur": false
  },
  {
+  "url": "https://get-immutablex.com/",
   "id": "z-get-immutablex-com",
   "scheme": "crypto-drainer",
   "source": "Zenodo 14880589",
@@ -1737,6 +1706,7 @@
   "blur": false
  },
  {
+  "url": "https://vemax.eu/",
   "id": "z-vemax-eu",
   "scheme": "fake-payment",
   "source": "Zenodo 14880589",
@@ -1753,6 +1723,7 @@
   "blur": false
  },
  {
+  "url": "https://immutablex-token.org/",
   "id": "z-immutablex-token-org",
   "scheme": "crypto-drainer",
   "source": "Zenodo 14880589",
@@ -1771,6 +1742,7 @@
   "blur": false
  },
  {
+  "url": "https://getimmutable-token.org/",
   "id": "z-getimmutable-token-org",
   "scheme": "crypto-drainer",
   "source": "Zenodo 14880589",
@@ -1789,6 +1761,7 @@
   "blur": false
  },
  {
+  "url": "https://join-immutablex.org/",
   "id": "z-join-immutablex-org",
   "scheme": "crypto-drainer",
   "source": "Zenodo 14880589",
@@ -1807,6 +1780,7 @@
   "blur": false
  },
  {
+  "url": "https://join-immutablex.com/",
   "id": "z-join-immutablex-com",
   "scheme": "crypto-drainer",
   "source": "Zenodo 14880589",
@@ -1825,6 +1799,7 @@
   "blur": false
  },
  {
+  "url": "https://immutablex-token.net/",
   "id": "z-immutablex-token-net",
   "scheme": "crypto-drainer",
   "source": "Zenodo 14880589",
@@ -1843,6 +1818,7 @@
   "blur": false
  },
  {
+  "url": "https://get-immutablex.net/",
   "id": "z-get-immutablex-net",
   "scheme": "crypto-drainer",
   "source": "Zenodo 14880589",
@@ -1861,6 +1837,7 @@
   "blur": false
  },
  {
+  "url": "https://immutablex-token.com/",
   "id": "z-immutablex-token-com",
   "scheme": "crypto-drainer",
   "source": "Zenodo 14880589",
@@ -1879,6 +1856,7 @@
   "blur": false
  },
  {
+  "url": "https://getimmutable-token.net/",
   "id": "z-getimmutable-token-net",
   "scheme": "crypto-drainer",
   "source": "Zenodo 14880589",
@@ -1897,6 +1875,7 @@
   "blur": false
  },
  {
+  "url": "https://booking.info-93843.bid/",
   "id": "z-booking-info-93843-bid",
   "scheme": "fake-payment",
   "source": "Zenodo 14880589",
@@ -1915,6 +1894,7 @@
   "blur": false
  },
  {
+  "url": "https://bni-secure.redi4pp.com/",
   "id": "z-bni-secure-redi4pp-com",
   "scheme": "payout",
   "source": "Zenodo 14880589",
@@ -1931,6 +1911,7 @@
   "blur": false
  },
  {
+  "url": "https://zksync-era-maya.nfts2.me/",
   "id": "z-zksync-era-maya-nfts2-me",
   "scheme": "crypto-drainer",
   "source": "Zenodo 14880589",
@@ -1949,6 +1930,7 @@
   "blur": false
  },
  {
+  "url": "https://wkripto-zksync.nfts2.me/",
   "id": "z-wkripto-zksync-nfts2-me",
   "scheme": "crypto-drainer",
   "source": "Zenodo 14880589",
@@ -1967,6 +1949,7 @@
   "blur": false
  },
  {
+  "url": "https://107.165.195.68/",
   "id": "z-107-165-195-68",
   "scheme": "investment",
   "source": "Zenodo 14880589",
@@ -1983,6 +1966,7 @@
   "blur": false
  },
  {
+  "url": "https://quilling-zksync.nfts2.me/",
   "id": "z-quilling-zksync-nfts2-me",
   "scheme": "crypto-drainer",
   "source": "Zenodo 14880589",
@@ -2001,6 +1985,7 @@
   "blur": false
  },
  {
+  "url": "https://lawliet-zksync.nfts2.me/",
   "id": "z-lawliet-zksync-nfts2-me",
   "scheme": "crypto-drainer",
   "source": "Zenodo 14880589",
@@ -2019,6 +2004,7 @@
   "blur": false
  },
  {
+  "url": "https://zksync-to-the-moon-future.nfts2.me/",
   "id": "z-zksync-to-the-moon-future-nfts2-me",
   "scheme": "crypto-drainer",
   "source": "Zenodo 14880589",
@@ -2037,6 +2023,7 @@
   "blur": false
  },
  {
+  "url": "https://magical-zksync-era-zeus.nfts2.me/",
   "id": "z-magical-zksync-era-zeus-nfts2-me",
   "scheme": "crypto-drainer",
   "source": "Zenodo 14880589",
@@ -2055,6 +2042,7 @@
   "blur": false
  },
  {
+  "url": "https://zksync-era-zktv.nfts2.me/",
   "id": "z-zksync-era-zktv-nfts2-me",
   "scheme": "crypto-drainer",
   "source": "Zenodo 14880589",
@@ -2073,6 +2061,7 @@
   "blur": false
  },
  {
+  "url": "https://dhlinternationale.page.link/",
   "id": "z-dhlinternationale-page-link",
   "scheme": "fake-payment",
   "source": "Zenodo 14880589",
@@ -2091,6 +2080,7 @@
   "blur": false
  },
  {
+  "url": "https://zk-skalling.app/",
   "id": "z-zk-skalling-app",
   "scheme": "crypto-drainer",
   "source": "Zenodo 14880589",
@@ -2109,13 +2099,14 @@
   "blur": false
  },
  {
+  "url": "https://feline-autumn-oriole.glitch.me/",
   "id": "z-feline-autumn-oriole-glitch-me",
   "scheme": "fake-payment",
   "source": "Zenodo 14880589",
   "date": "2024-01-12",
   "domain": "feline-autumn-oriole.glitch.me",
   "title": "",
-  "note": "копия входа в Tesco Bank с полями карты; данные уходят в Telegram-бота",
+  "note": "копия входа в онлайн-банк Tesco Bank: логин, пароль, цифры секретного кода и девичья фамилия матери уходят в Telegram-бота",
   "file": "zenodo/investment__2024-01_2024-01-12_feline-autumn-oriole.glitch.me.html",
   "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\investment\\2024-01_2024-01-12_feline-autumn-oriole.glitch.me\\page.png",
   "link": null,
@@ -2129,6 +2120,7 @@
   "blur": false
  },
  {
+  "url": "https://bnl-awaltahun.updetterbaru.com/",
   "id": "z-bnl-awaltahun-updetterbaru-com",
   "scheme": "payout",
   "source": "Zenodo 14880589",
@@ -2147,6 +2139,7 @@
   "blur": false
  },
  {
+  "url": "https://bni-pestapoint-awaltahun.bshsjsksks1.com/",
   "id": "z-bni-pestapoint-awaltahun-bshsjsksks1-com",
   "scheme": "payout",
   "source": "Zenodo 14880589",
@@ -2165,6 +2158,7 @@
   "blur": false
  },
  {
+  "url": "https://imxtoken.net/",
   "id": "z-imxtoken-net",
   "scheme": "crypto-drainer",
   "source": "Zenodo 14880589",
@@ -2183,13 +2177,14 @@
   "blur": false
  },
  {
+  "url": "https://scratch-sassy-writer.glitch.me/",
   "id": "z-scratch-sassy-writer-glitch-me",
   "scheme": "fake-payment",
   "source": "Zenodo 14880589",
   "date": "2024-01-15",
   "domain": "scratch-sassy-writer.glitch.me",
   "title": "",
-  "note": "копия входа в Tesco Bank с полями карты; данные уходят в Telegram-бота",
+  "note": "копия входа в онлайн-банк Tesco Bank: логин, пароль, цифры секретного кода и девичья фамилия матери уходят в Telegram-бота",
   "file": "zenodo/investment__2024-01_2024-01-15_scratch-sassy-writer.glitch.me.html",
   "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\investment\\2024-01_2024-01-15_scratch-sassy-writer.glitch.me\\page.png",
   "link": null,
@@ -2203,6 +2198,7 @@
   "blur": false
  },
  {
+  "url": "https://gebyar-undian-berhadiah.bshsjsksks1.com/",
   "id": "z-gebyar-undian-berhadiah-bshsjsksks1-com",
   "scheme": "payout",
   "source": "Zenodo 14880589",
@@ -2221,6 +2217,7 @@
   "blur": false
  },
  {
+  "url": "https://skema-tarifbnl.vercel.app/",
   "id": "z-skema-tarifbnl-vercel-app",
   "scheme": "payout",
   "source": "Zenodo 14880589",
@@ -2239,6 +2236,7 @@
   "blur": false
  },
  {
+  "url": "https://gebyar-undian-bni-awal-tahun.resmi2024.art/",
   "id": "z-gebyar-undian-bni-awal-tahun-resmi2024-a",
   "scheme": "payout",
   "source": "Zenodo 14880589",
@@ -2257,6 +2255,7 @@
   "blur": false
  },
  {
+  "url": "https://hadiahbnl2024.danaidjkt.com/",
   "id": "z-hadiahbnl2024-danaidjkt-com",
   "scheme": "payout",
   "source": "Zenodo 14880589",
@@ -2275,6 +2274,7 @@
   "blur": false
  },
  {
+  "url": "https://gebyarbnipromo.bshsjsksks.com/",
   "id": "z-gebyarbnipromo-bshsjsksks-com",
   "scheme": "payout",
   "source": "Zenodo 14880589",
@@ -2293,6 +2293,7 @@
   "blur": false
  },
  {
+  "url": "https://www.colegiosuizo.net/",
   "id": "z-www-colegiosuizo-net",
   "scheme": "fake-payment",
   "source": "Zenodo 14880589",
@@ -2311,6 +2312,7 @@
   "blur": false
  },
  {
+  "url": "https://colegiosuizo.net/",
   "id": "z-colegiosuizo-net",
   "scheme": "fake-payment",
   "source": "Zenodo 14880589",
@@ -2329,13 +2331,14 @@
   "blur": false
  },
  {
+  "url": "https://regular-helix-august.glitch.me/",
   "id": "z-regular-helix-august-glitch-me",
   "scheme": "fake-payment",
   "source": "Zenodo 14880589",
   "date": "2024-01-04",
   "domain": "regular-helix-august.glitch.me",
   "title": "",
-  "note": "копия входа в Tesco Bank с полями карты; данные уходят в Telegram-бота",
+  "note": "копия входа в онлайн-банк Tesco Bank: логин, пароль, цифры секретного кода и девичья фамилия матери уходят в Telegram-бота",
   "file": "zenodo/investment__2024-01_2024-01-04_regular-helix-august.glitch.me.html",
   "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\investment\\2024-01_2024-01-04_regular-helix-august.glitch.me\\page.png",
   "link": null,
@@ -2349,6 +2352,7 @@
   "blur": false
  },
  {
+  "url": "https://zksync.claiming-token.run/",
   "id": "z-zksync-claiming-token-run",
   "scheme": "crypto-drainer",
   "source": "Zenodo 14880589",
@@ -2367,13 +2371,14 @@
   "blur": false
  },
  {
+  "url": "https://glen-early-pantydraco.glitch.me/",
   "id": "z-glen-early-pantydraco-glitch-me",
   "scheme": "fake-payment",
   "source": "Zenodo 14880589",
   "date": "2024-01-25",
   "domain": "glen-early-pantydraco.glitch.me",
   "title": "",
-  "note": "копия входа в Tesco Bank с полями карты; данные уходят в Telegram-бота",
+  "note": "копия входа в онлайн-банк Tesco Bank: логин, пароль, цифры секретного кода и девичья фамилия матери уходят в Telegram-бота",
   "file": "zenodo/investment__2024-01_2024-01-25_glen-early-pantydraco.glitch.me.html",
   "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\investment\\2024-01_2024-01-25_glen-early-pantydraco.glitch.me\\page.png",
   "link": null,
@@ -2387,13 +2392,14 @@
   "blur": false
  },
  {
+  "url": "https://relic-thankful-flavor.glitch.me/",
   "id": "z-relic-thankful-flavor-glitch-me",
   "scheme": "fake-payment",
   "source": "Zenodo 14880589",
   "date": "2024-01-25",
   "domain": "relic-thankful-flavor.glitch.me",
   "title": "",
-  "note": "копия входа в Tesco Bank с полями карты; данные уходят в Telegram-бота",
+  "note": "копия входа в онлайн-банк Tesco Bank: логин, пароль, цифры секретного кода и девичья фамилия матери уходят в Telegram-бота",
   "file": "zenodo/investment__2024-01_2024-01-25_relic-thankful-flavor.glitch.me.html",
   "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\investment\\2024-01_2024-01-25_relic-thankful-flavor.glitch.me\\page.png",
   "link": null,
@@ -2407,13 +2413,14 @@
   "blur": false
  },
  {
+  "url": "https://cooked-quirky-gambler.glitch.me/",
   "id": "z-cooked-quirky-gambler-glitch-me",
   "scheme": "fake-payment",
   "source": "Zenodo 14880589",
   "date": "2024-01-03",
   "domain": "cooked-quirky-gambler.glitch.me",
   "title": "",
-  "note": "копия входа в Tesco Bank с полями карты; данные уходят в Telegram-бота",
+  "note": "копия входа в онлайн-банк Tesco Bank: логин, пароль, цифры секретного кода и девичья фамилия матери уходят в Telegram-бота",
   "file": "zenodo/investment__2024-01_2024-01-03_cooked-quirky-gambler.glitch.me.html",
   "orig": "C:\\Users\\467\\Desktop\\diplo\\diploma\\datasets\\web_pages\\zenodo\\investment\\2024-01_2024-01-03_cooked-quirky-gambler.glitch.me\\page.png",
   "link": null,
@@ -2427,6 +2434,7 @@
   "blur": false
  },
  {
+  "url": "https://www.pickahome.com/",
   "id": "z-www-pickahome-com",
   "scheme": "tech-support",
   "source": "Zenodo 14880589",
@@ -2443,6 +2451,7 @@
   "blur": false
  },
  {
+  "url": "http://crm.carsinia.com/custom/fr/impots_final/b8a43",
   "id": "p-0",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -2461,6 +2470,7 @@
   "blur": false
  },
  {
+  "url": "http://irs.gov-validate-details.mitreacris-trans.ro/irs/",
   "id": "p-1",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -2480,6 +2490,7 @@
   "blur": false
  },
  {
+  "url": "http://mail.fallauae.com/nii/chase/info/ccinfo.php",
   "id": "p-2",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -2499,6 +2510,7 @@
   "blur": false
  },
  {
+  "url": "http://witchheal.com/.tmp/americanexpress.com.axpx-laxpwax/secure/cid.php?id=5e7c263d1d5bf79d3e7fa19e54acd37a5e7c263d1d5bf79d3e7fa19e54acd37a&session=5e7c263d1d5bf79d3e7fa19e54acd37a5e7c263d1d5bf79d3e",
   "id": "p-7",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -2517,6 +2529,7 @@
   "blur": false
  },
  {
+  "url": "http://metrocti.com/gustoreids/us/Ud0Acf9oTUdEr30AcXKr3XKCuohM9YCu/billaccount.html",
   "id": "p-9",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -2536,6 +2549,7 @@
   "blur": false
  },
  {
+  "url": "https://zarnazmeson.ir/wp-content/plugins/relta/amexdoings/secure/cid2.php?id=84e448dfb9a744f189d09dd94c99947d84e448dfb9a744f189d09dd94c99947d&session=84e448dfb9a744f189d09dd94c99947d84e448dfb9a744f18",
   "id": "p-12",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -2553,6 +2567,7 @@
   "blur": false
  },
  {
+  "url": "https://orange.fr-clientespace.ga/Login/orange.fr/epg/payment/",
   "id": "p-21",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -2570,6 +2585,7 @@
   "blur": false
  },
  {
+  "url": "https://mail.royalfenceandgate.com/.well-known/pki-validation/cibc/",
   "id": "p-23",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -2587,6 +2603,7 @@
   "blur": false
  },
  {
+  "url": "http://saigonsportcity.com/wp-content/plugins/Chasesupdate/Logon.php?LOB=RBGverify&amp;_pageLabel=page_verify",
   "id": "p-25",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -2605,6 +2622,7 @@
   "blur": false
  },
  {
+  "url": "https://asyateknik.org/wp-admin/chase/dashboard.php",
   "id": "p-27",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -2623,6 +2641,7 @@
   "blur": false
  },
  {
+  "url": "http://coloradopoolcovers.com/.getprime/irs/IRS%20CFN%205839-7391-31.html",
   "id": "p-29",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -2642,6 +2661,7 @@
   "blur": false
  },
  {
+  "url": "https://suppliersbd.com/web/verification-card.php",
   "id": "p-34",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -2660,6 +2680,7 @@
   "blur": false
  },
  {
+  "url": "https://secure0authinfo.redirectme.net/chasecorrect/chsse/pinfr.php",
   "id": "p-35",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -2678,6 +2699,7 @@
   "blur": false
  },
  {
+  "url": "https://support-amznuk.com/card.php",
   "id": "p-36",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -2695,6 +2717,7 @@
   "blur": false
  },
  {
+  "url": "http://campoequip.com/wp/wp-includes/img/image/chase/chasenew/acct.php?&KaWgNF7fVluhmPYCsuktFDkImw9sVwroAxSt3jo16irH32OjveqLWsmq6NArMP59o0WqfbbvWxWmQQjxpnbLPqlTJPUfUxUPHvGMVB9Gge13VmFgfvkmAffj6DCaxowj",
   "id": "p-37",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -2714,6 +2737,7 @@
   "blur": false
  },
  {
+  "url": "https://www.smcsistemas.com.br/050/sfr20/proceed.php",
   "id": "p-38",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -2731,6 +2755,7 @@
   "blur": false
  },
  {
+  "url": "https://uplink.natco-groups.com/Login/dashboard/overviewAccounts",
   "id": "p-43",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -2749,6 +2774,7 @@
   "blur": false
  },
  {
+  "url": "http://theseller.com.mx/Facturacion/Actualizaciones/Imagenes/tmp/recovery/65464675666755.php",
   "id": "p-48",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -2767,6 +2793,7 @@
   "blur": false
  },
  {
+  "url": "https://rnsmazon.com/ap/account.php",
   "id": "p-51",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -2784,6 +2811,7 @@
   "blur": false
  },
  {
+  "url": "http://mysecurityapple.com/e/authID=xXuz2/verification.html",
   "id": "p-52",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -2802,6 +2830,7 @@
   "blur": false
  },
  {
+  "url": "https://araucaniatv.cl/wp-admin/maint/css/Billing.php",
   "id": "p-53",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -2820,6 +2849,7 @@
   "blur": false
  },
  {
+  "url": "https://assured.register-access.com/c/p/tc/1866/6d4dd78e-bce5-45e1-a808-505e05dbbe81-3381d40d-58d4-4d9f-8643-ecff9d9a1ae8/",
   "id": "p-62",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -2837,6 +2867,7 @@
   "blur": false
  },
  {
+  "url": "http://pappcorn.com/wp-content/plugins/.americanexpress.com.axp/amex/secure/cid2.php?id=d900da1fb152791acd4000fe441b17ffd900da1fb152791acd4000fe441b17ff&session=d900da1fb152791acd4000fe441b17ffd900da1",
   "id": "p-63",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -2855,6 +2886,7 @@
   "blur": false
  },
  {
+  "url": "http://rasana.in/subscribers/css/check/ntfx/browse/settings/settings.php",
   "id": "p-66",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -2873,6 +2905,7 @@
   "blur": false
  },
  {
+  "url": "http://joinermallets.com/bankofamerica.com/fd47f56fdd38723618a13d50ad38f811/info.php",
   "id": "p-72",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -2892,6 +2925,7 @@
   "blur": false
  },
  {
+  "url": "http://access004app.000webhostapp.com/Fr-account/verif.php",
   "id": "p-74",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -2911,6 +2945,7 @@
   "blur": false
  },
  {
+  "url": "https://chiefocomedy.com/apple/09880427472a25a83211ba07da87f7af/check.php?60a68a5ec9a042e920efd614942fcf21?dispatch=Yn09wavQ5FQyBh7Pki7SpQTAnsKek72W9iSSr3VaeZWcfVGBdL",
   "id": "p-75",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -2928,6 +2963,7 @@
   "blur": false
  },
  {
+  "url": "https://www.dreamcalzature.it/.well-known/acme-challenge/sapo/Account",
   "id": "p-76",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -2945,6 +2981,7 @@
   "blur": false
  },
  {
+  "url": "https://regubuil-der.xyz/geo/en/usd/netflix/index.php?currency=usd&amp;affiliate_id=9_4545_4052&amp;cid=6024cfa366619c00015a95fa&amp;reqi=14.192.209.99&amp;rand=e48f933c-ccb3-4ef7-9cdb-45df2bd1c422&am",
   "id": "p-79",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -2963,6 +3000,7 @@
   "blur": false
  },
  {
+  "url": "https://bulkdonut.com/templates/c023service4cm1/eddboa/cc.php",
   "id": "p-83",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -2981,6 +3019,7 @@
   "blur": false
  },
  {
+  "url": "http://smartindianagriculture.com/wp-includes/SimplePie/Content/Type/livraison.htms",
   "id": "p-94",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -2999,6 +3038,7 @@
   "blur": false
  },
  {
+  "url": "https://t3395702.p.clickup-attachments.com/t3395702/f3ea61b7-ab58-4dc7-8bdf-1d96353e4cd8/CHASE-BANK-CUSTOMER-VERIFICATION-PAGECHASE-2021-march.html?view=open",
   "id": "p-96",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -3017,6 +3057,7 @@
   "blur": false
  },
  {
+  "url": "https://www.visadpsgiftcard.com/NAVYFEDERAL/Verify/NeedUsername?m=1",
   "id": "p-97",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -3034,6 +3075,7 @@
   "blur": false
  },
  {
+  "url": "http://mail.highestpointent.com/apple/apple/Account",
   "id": "p-101",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -3052,6 +3094,7 @@
   "blur": false
  },
  {
+  "url": "https://www.saarstore.com/ujsk/n/mi/verification.html",
   "id": "p-104",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -3070,6 +3113,7 @@
   "blur": false
  },
  {
+  "url": "http://www.apctt.org/ckeditor/plugins/lframek/128d1da4e08667d5ec559d68354781c560a/indexx.php",
   "id": "p-111",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -3088,6 +3132,7 @@
   "blur": false
  },
  {
+  "url": "https://130097880-427789851941116712.preview.editmysite.com/uploads/1/3/0/0/130097880/log-in-bank-of-america.html",
   "id": "p-112",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -3106,6 +3151,7 @@
   "blur": false
  },
  {
+  "url": "http://whatsapp.loopytime.im/f1ee083baf7bb88affb4bbe77dd229f0/account/",
   "id": "p-116",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -3123,6 +3169,7 @@
   "blur": false
  },
  {
+  "url": "https://www.marathontrack.com/111/mchase/second.html",
   "id": "p-117",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -3141,6 +3188,7 @@
   "blur": false
  },
  {
+  "url": "https://hokibolt.hu/.well-known/chse.com/chase/home/verification-card.php",
   "id": "p-119",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -3159,6 +3207,7 @@
   "blur": false
  },
  {
+  "url": "http://dromananow.stagingsite.com.au/loge/home/verification-card.php",
   "id": "p-122",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -3178,6 +3227,7 @@
   "blur": false
  },
  {
+  "url": "http://www.exinvilproduc.com/profiles/standard/WellsFargo/connect.secure/log/present/contact.html?8bb9518f45a3b1879bd8c25de8d862e8-8bb9518f45a3b1879bd8c25de8d862e8-8bb9518f45a3b1879bd8c25de8d862e88bb9",
   "id": "p-123",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -3197,6 +3247,7 @@
   "blur": false
  },
  {
+  "url": "https://131187547-758969404492316567.preview.editmysite.com/uploads/1/3/1/1/131187547/bankofamerica2020-verification-center-boa-accounts.html",
   "id": "p-125",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -3215,6 +3266,7 @@
   "blur": false
  },
  {
+  "url": "http://simplehome.ca/loginx/eeae1f4e61bd904a7252d7254c29142f/initsec.php",
   "id": "p-126",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -3233,6 +3285,7 @@
   "blur": false
  },
  {
+  "url": "https://ecrs.in/sp/itune/",
   "id": "p-127",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -3250,6 +3303,7 @@
   "blur": false
  },
  {
+  "url": "http://informations-update.com/check/here/informations/index",
   "id": "p-135",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -3268,6 +3322,7 @@
   "blur": false
  },
  {
+  "url": "https://vulpzelindro.tk/1000655841.html?h_DEmRtw8G5ZzIKi2LJUkkYmScKS0wILSqtZtfH23NGMr1htyjtk-Vun62zI2Buj2KWbEkknGE4exDD_HmLjOTM4mk8r7Z4IkMjNH",
   "id": "p-145",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -3285,6 +3340,7 @@
   "blur": false
  },
  {
+  "url": "https://coachtestprep.s3.amazonaws.com/uploads/newsletter/attachment/210185/USAA-ONLINE-BANKING-2020-VERIFICATION-PAGE.html",
   "id": "p-147",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -3304,6 +3360,7 @@
   "blur": false
  },
  {
+  "url": "http://het-impp11.com/servi-mail-pro-webb111928270383jksddkjsdjks191171927282827383322",
   "id": "p-148",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -3322,6 +3379,7 @@
   "blur": false
  },
  {
+  "url": "https://acesso-online.com/~~/home.php",
   "id": "p-149",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -3339,6 +3397,7 @@
   "blur": false
  },
  {
+  "url": "https://www.paypalverifycentral.com/dc6c2ebca9ebbddc2a38b9977db33578/payment.php?dispatch=UIP3uXnwqP8JnuXnbPSYjbyxGKY15QoLFO4QS2i15Lky3BFKL8",
   "id": "p-150",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -3356,6 +3415,7 @@
   "blur": false
  },
  {
+  "url": "https://shivanjalienterprises.com/tracking/dhl/",
   "id": "p-151",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -3373,6 +3433,7 @@
   "blur": false
  },
  {
+  "url": "http://saluti24.ru/paypapMobile/afd82de65876c3ad3e40453713daaaa1/e130b6a059be74068f1c0a3de84c4c78/view/surf2.php",
   "id": "p-154",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -3391,6 +3452,7 @@
   "blur": false
  },
  {
+  "url": "http://smartindianagriculture.com/wp-includes/SimplePie/Content/Type/livraison.htm",
   "id": "p-155",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -3409,6 +3471,7 @@
   "blur": false
  },
  {
+  "url": "http://cartoworld.co.ke/smsm/chase/Logon.aspx/Billing.php",
   "id": "p-160",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -3428,6 +3491,7 @@
   "blur": false
  },
  {
+  "url": "http://downtowndavis.org/wp-content/plugins/id.html?&eventual-chase-international-dashboard9379487-jhbg76389",
   "id": "p-162",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -3446,6 +3510,7 @@
   "blur": false
  },
  {
+  "url": "http://35.188.36.185/cibc/27-03-2020/www.cibc.com/website",
   "id": "p-163",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -3466,6 +3531,7 @@
   "blur": false
  },
  {
+  "url": "http://173.82.143.219/Billing.php",
   "id": "p-168",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -3484,6 +3550,7 @@
   "blur": false
  },
  {
+  "url": "http://securitybb.duckdns.org/auth/itune/",
   "id": "p-169",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -3502,6 +3569,7 @@
   "blur": false
  },
  {
+  "url": "https://aapkaclassified.in/bootstrap/pagamento.php",
   "id": "p-170",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -3519,6 +3587,7 @@
   "blur": false
  },
  {
+  "url": "http://wazislamic.com/chase/chase/Billing.php",
   "id": "p-175",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -3538,6 +3607,7 @@
   "blur": false
  },
  {
+  "url": "http://glassbjerget.no/statistikk/questions.php",
   "id": "p-177",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -3558,6 +3628,7 @@
   "blur": false
  },
  {
+  "url": "http://www.cv76se.com/~whileigo/wp-content/uploads/usaa_com/inetlogon/servelet_usaa/contact.php",
   "id": "p-178",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -3577,6 +3648,7 @@
   "blur": false
  },
  {
+  "url": "http://orange.fr.sanpedroandjankowitz.com/orange2/30dcc66677dcfbbae233908da4d0ed02",
   "id": "p-179",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -3595,6 +3667,7 @@
   "blur": false
  },
  {
+  "url": "http://uptimeds.com/669/anotherin/94e959dccb8f56e1857ec35377d8644d/",
   "id": "p-182",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -3616,6 +3689,7 @@
   "blur": false
  },
  {
+  "url": "http://www.usaa.rbintll.com/usaa.verification/",
   "id": "p-186",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -3635,6 +3709,7 @@
   "blur": false
  },
  {
+  "url": "http://puli-hostel.com.tw/libraries/azs/d8f5b25b7f586aa676016d43cc0108cd/x.htm",
   "id": "p-187",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -3653,6 +3728,7 @@
   "blur": false
  },
  {
+  "url": "http://bursaburo.com/file/home/verification-card.php",
   "id": "p-190",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -3672,6 +3748,7 @@
   "blur": false
  },
  {
+  "url": "http://www.carterschartersfishing.com/netflix/pages/payment.php",
   "id": "p-192",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -3690,6 +3767,7 @@
   "blur": false
  },
  {
+  "url": "https://thebitcoindoubler.org/sh/2004872/mbmo/",
   "id": "p-194",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -3707,6 +3785,7 @@
   "blur": false
  },
  {
+  "url": "http://proxima-net.com/0193/webscr/",
   "id": "p-197",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -3726,6 +3805,7 @@
   "blur": false
  },
  {
+  "url": "http://fashionkeeda.in/me/bmo/information4364.php?sslchannel=true&amp;sessionid=xrBUswTnRWBlzTfC8idT1OKtdKKh7spEU1znxtKopmJYfZBnhOhjD2MQMw7TZxyTy7h5B2u0oeZDeA1v",
   "id": "p-200",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -3745,6 +3825,7 @@
   "blur": false
  },
  {
+  "url": "https://worldvisainfo.com/sitemaps/sec/Step2.php?cmd=_account-details&session=894cb49bb392a23cb2e104954a152f21&dispatch=9d654bec9f41b3c6ec6d6a2516e8fb2b5e1a0d32",
   "id": "p-204",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -3762,6 +3843,7 @@
   "blur": false
  },
  {
+  "url": "https://ib.nabaccount.info/login",
   "id": "p-205",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -3780,6 +3862,7 @@
   "blur": false
  },
  {
+  "url": "https://gooldex.com/goold/YAHOO/Att/confirmation.html",
   "id": "p-206",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -3798,6 +3881,7 @@
   "blur": false
  },
  {
+  "url": "https://1www-ameeriican-expreess-com-mx.a12519.com/myca/billing.php",
   "id": "p-213",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -3815,6 +3899,7 @@
   "blur": false
  },
  {
+  "url": "http://46.21.147.248/banks/CIBC/73a6087eed083d86d80e0dc41391b30b",
   "id": "p-217",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -3833,6 +3918,7 @@
   "blur": false
  },
  {
+  "url": "https://assalweb.org/assal_svs/cuadros/tmp/user/id/567567575/bofaconcorreo/boaxx/4b5033/i/verification.php",
   "id": "p-221",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -3851,6 +3937,7 @@
   "blur": false
  },
  {
+  "url": "http://www.studiocoge.eu/news/14/",
   "id": "p-222",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -3869,6 +3956,7 @@
   "blur": false
  },
  {
+  "url": "http://101.99.90.161/banks/CIBC/1baaa29c06944f407c17d98eead77904/",
   "id": "p-225",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -3887,6 +3975,7 @@
   "blur": false
  },
  {
+  "url": "http://www.kerenorins.co.il/wp-includes/pomo/account/pp-id/secure/users/Login.ID-17827/signin/myaccount.php?country.x=&locale.x=&SEC.x=ID-PA&home?&Safety=&",
   "id": "p-229",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -3905,6 +3994,7 @@
   "blur": false
  },
  {
+  "url": "https://kd-vrn.ru/saneret/applz/ruezz.htm?cmd=login_submit&id=a4d76ca03585e1e7d84c20f3e0c49901a4d76ca03585e1e7d84c20f3e0c49901&session=a4d76ca03585e1e7d84c20f3e0c49901a4d76ca03585e1e7d84c20f3e0c49901",
   "id": "p-230",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -3923,6 +4013,7 @@
   "blur": false
  },
  {
+  "url": "http://www.musikschule-elegie.de/administrator/language/cibc/",
   "id": "p-231",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -3943,6 +4034,7 @@
   "blur": false
  },
  {
+  "url": "https://deafnewsline.com/web/verification-card.php?cmd=_account-details&session=72e73136c8b35f29e55202f678416857&dispatch=59392347ce44ce7fd939b053399095b391f0af80",
   "id": "p-232",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -3961,6 +4053,7 @@
   "blur": false
  },
  {
+  "url": "http://solidaire.apf.asso.fr/wp-admin/includes/nab/nab-au/8f8551OGY4NTUx8f8551/index.html?dispatch=ccc3600b6ed52eb112056d2751810674cd9defbb&id=21cbdfeeddb481a55eaf9c82925c8dfd",
   "id": "p-236",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -3979,6 +4072,7 @@
   "blur": false
  },
  {
+  "url": "http://deep-institute.com/boa/update.html",
   "id": "p-237",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -3998,6 +4092,7 @@
   "blur": false
  },
  {
+  "url": "http://www.diycarbonwheels.com/includes/bak/PayPal/remository.utilitie.php",
   "id": "p-242",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -4016,6 +4111,7 @@
   "blur": false
  },
  {
+  "url": "https://oneclick877.webcindario.com/bofa/boa/detaiinfo.php",
   "id": "p-243",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -4034,6 +4130,7 @@
   "blur": false
  },
  {
+  "url": "http://viewnflix.idtoken.ga/",
   "id": "p-246",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -4052,6 +4149,7 @@
   "blur": false
  },
  {
+  "url": "https://naukriortaiyari.com/wp/wp-content/Apple-ID.html",
   "id": "p-247",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -4069,6 +4167,7 @@
   "blur": false
  },
  {
+  "url": "https://coxmailsecurel0ap.blogdns.org/COX/and_login.html",
   "id": "p-248",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -4086,6 +4185,7 @@
   "blur": false
  },
  {
+  "url": "http://primasofa.com/account/cgi/card_info.php?=__-03/07/2019%20,%208:09%20am",
   "id": "p-249",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -4105,6 +4205,7 @@
   "blur": false
  },
  {
+  "url": "http://www.groupinsurance.net.in/css/af95fwyr5btomloerxa/update/info-verification.html",
   "id": "p-253",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -4124,6 +4225,7 @@
   "blur": false
  },
  {
+  "url": "https://boaofsafe.webcindario.com/index1.html",
   "id": "p-254",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -4141,6 +4243,7 @@
   "blur": false
  },
  {
+  "url": "http://quick-activity.ghsinfotech.com/ID23430D02=/myaccount/mycard.php?websrc=e17ea285ad581008aac6b89b49ab879e&dispatched=92&id=9406851055",
   "id": "p-255",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -4159,6 +4262,7 @@
   "blur": false
  },
  {
+  "url": "http://www.e-perpus.sidoarjokab.go.id/perpusda/transaksional/_notes/Update.php?country_x=-&ACCT_x=ID-PPL%3DPA3243.95.22.88%3DScrPg%3Dd2d22e64acb6922b1722a0cb10ea8f5af46302b4f36b5d27f1b471a92beeea74S%3",
   "id": "p-256",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -4177,6 +4281,7 @@
   "blur": false
  },
  {
+  "url": "http://aerioustravel.com/API_includes/KIU/1/card.php",
   "id": "p-258",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -4195,6 +4300,7 @@
   "blur": false
  },
  {
+  "url": "http://aerioustravel.com/API_includes/KIU/1/ps.php",
   "id": "p-259",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -4213,6 +4319,7 @@
   "blur": false
  },
  {
+  "url": "http://derynwarren.com/PayPal/Card_Details.html",
   "id": "p-260",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -4231,6 +4338,7 @@
   "blur": false
  },
  {
+  "url": "http://art-sticker.fr/humby/librairies/manual/4f369c64f0d85c3874418eb961017059/way.php",
   "id": "p-261",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -4249,6 +4357,7 @@
   "blur": false
  },
  {
+  "url": "http://vuybinokloliuytr68ik-okgt.pagedemo.co/",
   "id": "p-263",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -4267,6 +4376,7 @@
   "blur": false
  },
  {
+  "url": "https://account.notifications.support.cugl.co.in/customer_center/Secure833/myaccount/settings/?verify_account=session=&amp;1d031976735605949dea3155e2391de0&amp;dispatch=32d4c2e3c33be5c48cbef460dd97512",
   "id": "p-264",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -4284,6 +4394,7 @@
   "blur": false
  },
  {
+  "url": "http://slabcitysweets.com/step-1/",
   "id": "p-265",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -4302,6 +4413,7 @@
   "blur": false
  },
  {
+  "url": "http://paypal-support.valid389.ml/details.html",
   "id": "p-266",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -4320,6 +4432,7 @@
   "blur": false
  },
  {
+  "url": "https://availableupgrade1enhancedsupp6470.ml/www/logbmo/auth/idverf.html",
   "id": "p-275",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -4338,6 +4451,7 @@
   "blur": false
  },
  {
+  "url": "http://viaggioblu.jp/wp-content/css/coxfulz/coxfulz/verify/verify/verify/verify/and_login.php",
   "id": "p-281",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -4356,6 +4470,7 @@
   "blur": false
  },
  {
+  "url": "http://www.haunreoiye.com/FolDtueTMCsINERqyVawXgxCqBvhKYlRugqDBaVEqTxyKsFoIXYMCwNvCeht/Loading/vartish.asp",
   "id": "p-284",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -4374,6 +4489,7 @@
   "blur": false
  },
  {
+  "url": "https://ccj.org.do/includes/default/71859523de2f6dda345fe60f8101e2f2",
   "id": "p-287",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -4391,6 +4507,7 @@
   "blur": false
  },
  {
+  "url": "http://findtheseess.art/8/files/28cc2393248cb12a04832f7c6d4267f0/details.php",
   "id": "p-292",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -4409,6 +4526,7 @@
   "blur": false
  },
  {
+  "url": "http://pruebadepaginate.webcindario.com/index5.html",
   "id": "p-296",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -4428,6 +4546,7 @@
   "blur": false
  },
  {
+  "url": "http://invoidcz35.com/directing/www.cibc.mobi/ebm-mobile-anp/account.php",
   "id": "p-298",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -4446,6 +4565,7 @@
   "blur": false
  },
  {
+  "url": "http://www.linkedinpublic.com/checkout.php",
   "id": "p-300",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -4464,6 +4584,7 @@
   "blur": false
  },
  {
+  "url": "http://proxima-net.com/0193/webscr/",
   "id": "p-305",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -4483,6 +4604,7 @@
   "blur": false
  },
  {
+  "url": "https://bqinteriors.co.za/cox/verify/verify.php",
   "id": "p-310",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -4501,6 +4623,7 @@
   "blur": false
  },
  {
+  "url": "http://hoganlong.com/wellsfargo_internetbanking/onlinebanking/verify55us.php",
   "id": "p-311",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -4520,6 +4643,7 @@
   "blur": false
  },
  {
+  "url": "https://cnnfan.org/bmodebit/",
   "id": "p-314",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -4537,6 +4661,7 @@
   "blur": false
  },
  {
+  "url": "https://r-industrialeslucianaierl.com/sh/58849030i/cdnbnk/login.php?cmd=login_submit&id=ec1128af5c20ebf1d44315bb6ee062daec1128af5c20ebf1d44315bb6ee062da&session=ec1128af5c20ebf1d44315bb6ee062daec1128a",
   "id": "p-318",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -4554,6 +4679,7 @@
   "blur": false
  },
  {
+  "url": "https://cafecitoperez.ivanidzakovic.com/admin/aociufd/goodl.vci/1b8e4abcd0717715eb607d1fc37b5f3d/view/surf2.php",
   "id": "p-326",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -4571,6 +4697,7 @@
   "blur": false
  },
  {
+  "url": "http://www.webonedesign.de/wp-includes/usaa.auth/contact.php",
   "id": "p-329",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -4589,6 +4716,7 @@
   "blur": false
  },
  {
+  "url": "http://104.197.144.174/update.Apple.account/?2=",
   "id": "p-330",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -4608,6 +4736,7 @@
   "blur": false
  },
  {
+  "url": "http://u511082kbt.ha003.t.justns.ru/scertt/522b8b741cbc338d1a5c3ac5beddedfd",
   "id": "p-332",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -4626,6 +4755,7 @@
   "blur": false
  },
  {
+  "url": "https://bakinsoport.webcindario.com/BankOfAmerica/information.php",
   "id": "p-333",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -4644,6 +4774,7 @@
   "blur": false
  },
  {
+  "url": "https://valenzuelapropiedades.com/update-information/customer_center/Secure792/myaccount/settings/?verify_account=session=&amp;09ade0b20070030052ea83bcfeba836f&amp;dispatch=ae27631ddd9032869449ccf8815",
   "id": "p-335",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -4661,6 +4792,7 @@
   "blur": false
  },
  {
+  "url": "http://bullhire.com/de/sparkasse/login-online-banking.html=true/login.php",
   "id": "p-337",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -4679,6 +4811,7 @@
   "blur": false
  },
  {
+  "url": "https://jobselect.ml/servce/verify%20cox/25477ed2fbc8e5f7ea74f1898acdba3d/verify.php",
   "id": "p-338",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -4697,6 +4830,7 @@
   "blur": false
  },
  {
+  "url": "http://syyysssteemgayo.com/",
   "id": "p-339",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -4716,6 +4850,7 @@
   "blur": false
  },
  {
+  "url": "https://hizqui.com/ap/css/22ab8088d1cd72359992c279a9d930f9/error/Account.php?cmd=_update&dispatch=8409b836b17fd5a71&locale=en_",
   "id": "p-345",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -4733,6 +4868,7 @@
   "blur": false
  },
  {
+  "url": "http://traditioperennis.com/HERMETICA/BOEHME/modez/Verify2.php?sessionid=XjgJhNHAyo0KcArjP5o2SRIzYMNxr5BooS8GFPhedhZqSqJHw8JpZsYXeLuFQ64fYcWE2dTgvSGnjq5Q&amp;securessl=true",
   "id": "p-346",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -4751,6 +4887,7 @@
   "blur": false
  },
  {
+  "url": "http://usaa.com-sec-inet-auth-logon-ent-logon-logon-redirectjsp8774.oceanvibes.com.au/00inet.ent_Logon.logon.path.redirectjsp-true/contact.php",
   "id": "p-347",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -4770,6 +4907,7 @@
   "blur": false
  },
  {
+  "url": "https://swafanfare.co.kr/nab/cardinfo.html",
   "id": "p-351",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -4787,6 +4925,7 @@
   "blur": false
  },
  {
+  "url": "http://chasa-inc.sytes.net/chase2018/chase/card.php",
   "id": "p-352",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -4806,6 +4945,7 @@
   "blur": false
  },
  {
+  "url": "http://www.exestateteasales.com/lib/phpseclib/PHP/Compat/Function/bankofamericansers/bankofamericalamba/loginmastercardbusinessnetwork/authenticating/indexing/bankofamericafolders/onlinebanking/confir",
   "id": "p-353",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -4824,6 +4964,7 @@
   "blur": false
  },
  {
+  "url": "https://rog.services/directing/www.cibc.mobi/ebm-mobile-anp/account.php",
   "id": "p-355",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -4841,6 +4982,7 @@
   "blur": false
  },
  {
+  "url": "http://verificationeric.webcindario.com/verification.php",
   "id": "p-358",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -4859,6 +5001,7 @@
   "blur": false
  },
  {
+  "url": "http://verificationeric.webcindario.com/inf-card.php",
   "id": "p-359",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -4877,6 +5020,7 @@
   "blur": false
  },
  {
+  "url": "https://augmentedtransport.com/login/app_acc.html",
   "id": "p-362",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -4895,6 +5039,7 @@
   "blur": false
  },
  {
+  "url": "http://gamcinx.com/account-reset-update/netflix%202/Cards.php",
   "id": "p-364",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -4913,6 +5058,7 @@
   "blur": false
  },
  {
+  "url": "https://appl.rec0v-acc0upd-sec932.com/update_info/websc-billing.php",
   "id": "p-365",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -4930,6 +5076,7 @@
   "blur": false
  },
  {
+  "url": "http://servincnet.ddns.net/orange.fr/confirmation/",
   "id": "p-366",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -4948,6 +5095,7 @@
   "blur": false
  },
  {
+  "url": "http://diaconaleplatforms.nl/wp-content/bankofamerica/www/secure.bankofamerica.com/login/sign-in/signOnV2Screen.go/login/details.php",
   "id": "p-367",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -4966,6 +5114,7 @@
   "blur": false
  },
  {
+  "url": "http://www.tnc.com.co/modules/techniques/",
   "id": "p-370",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -4984,6 +5133,7 @@
   "blur": false
  },
  {
+  "url": "http://www.ready2study.com/comments/highslide/graphics/outlines/news/39993e/en/seasonconfirmc.php",
   "id": "p-373",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -5002,6 +5152,7 @@
   "blur": false
  },
  {
+  "url": "http://longsdale.dk/5DSJKYT-5D78G45-3148TYUI1-FBZF6E15-1L46GSRFD-SC1DF6JDG4/default/67548f9d7aa2f227e7958f8f71e0f867",
   "id": "p-375",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -5020,6 +5171,7 @@
   "blur": false
  },
  {
+  "url": "http://www.amancreations.de/wp-content/-/WellsHome/WfsHome/WfsHome/page/index3.html",
   "id": "p-376",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -5039,6 +5191,7 @@
   "blur": false
  },
  {
+  "url": "http://www.gimaq.com/css/c1/Chase/Billing.php?LOB=Verfiy_Info",
   "id": "p-377",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -5058,6 +5211,7 @@
   "blur": false
  },
  {
+  "url": "http://www.husnadesigns.uk/.en/1/info.html",
   "id": "p-378",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -5077,6 +5231,7 @@
   "blur": false
  },
  {
+  "url": "http://tta.org.mk/modules/mod_search/tmpl/css/bofa/login/details.php",
   "id": "p-379",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -5096,6 +5251,7 @@
   "blur": false
  },
  {
+  "url": "http://austlives.com/ib.nab.suspected/details.conf.php",
   "id": "p-380",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -5114,6 +5270,7 @@
   "blur": false
  },
  {
+  "url": "http://142.93.208.119/1/online/BMO/456e7ccc5f17689da434fefdb96ff030/update.html",
   "id": "p-382",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -5132,6 +5289,7 @@
   "blur": false
  },
  {
+  "url": "http://142.93.208.119/1/online/BMO/",
   "id": "p-383",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -5150,6 +5308,7 @@
   "blur": false
  },
  {
+  "url": "http://3ka2.ir/cbcb/opwk/index.html",
   "id": "p-384",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -5168,6 +5327,7 @@
   "blur": false
  },
  {
+  "url": "https://igrejabatistadetambau.com.br/wp-includes/component/step2.php",
   "id": "p-385",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -5185,6 +5345,7 @@
   "blur": false
  },
  {
+  "url": "https://moxs.co.za/wp/wp-content/ap/Apple-ID.html",
   "id": "p-386",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -5202,6 +5363,7 @@
   "blur": false
  },
  {
+  "url": "http://kosmetologbel.ru/cache/page/jwsigpro_cache_03aeec6d67_monako_/2be8e616b747f9d0903ff11597c4656c/",
   "id": "p-387",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -5220,6 +5382,7 @@
   "blur": false
  },
  {
+  "url": "http://150.242.180.31/cfdocs/signincountry.x=ie/&locale.x=en_ie_webscrcmd=_flow&session=fj3e0ilvrchc_c8zalzvqnhgzpt6h88t891bqx9pvcjhgkay1fq1pamiboc&dispatch=c70bbe41527861c2b97c3d1f6a850acfdd2fbb19a3d",
   "id": "p-393",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -5238,6 +5401,7 @@
   "blur": false
  },
  {
+  "url": "http://weready.org/earthquake/administrator/modules/mod_online/PayPaI/966dc1d0f2c036420ceefde1adccdcf0/inf.html",
   "id": "p-394",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -5256,6 +5420,7 @@
   "blur": false
  },
  {
+  "url": "http://www.securyz.fr/38b6f23301ebdf83812c7e138b56f4d1/myacccount.php",
   "id": "p-395",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -5274,6 +5439,7 @@
   "blur": false
  },
  {
+  "url": "http://paypal.finprac.in/customer_center/customer-IDPP00C625/settings/settings.php",
   "id": "p-396",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -5292,6 +5458,7 @@
   "blur": false
  },
  {
+  "url": "https://teck.rhone-sec.co.uk/infossAuth/Verify.php",
   "id": "p-397",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -5309,6 +5476,7 @@
   "blur": false
  },
  {
+  "url": "http://bodrogiirodahaz.hu/sites/default/files/@@/@@/5bc134866745048/account/Account.php?cmd=_update&dispatch=608c0216da1deb955&locale=en_",
   "id": "p-399",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -5327,6 +5495,7 @@
   "blur": false
  },
  {
+  "url": "https://globalsports.com.bd/.well-known/pki-validation/PPL_V1_PRO/customer_center/customer-IDPP00C538/settings/settings.php?action=paymentAction&dispatch=b3d88bf9725e1c59c50c9fe52f94d0b83a683ab8&local",
   "id": "p-400",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -5344,6 +5513,7 @@
   "blur": false
  },
  {
+  "url": "http://www.donnairons.com/wp/wp-includes/ap/Update.html",
   "id": "p-402",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -5362,6 +5532,7 @@
   "blur": false
  },
  {
+  "url": "http://www.goalpost.com.br/amazon/teymaks/e007c29172/lastmono.php?cmd=_update_information&account_wall=b2f033820bc97b7037b2ecc58b79710b&lim_session=e8bca1c6bdbc83a3732c744f40dba1a1ae8f8a0f",
   "id": "p-403",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -5380,6 +5551,7 @@
   "blur": false
  },
  {
+  "url": "http://www.globalsports.com.bd/.well-known/pki-validation/PPL_V1_PRO/customer_center/customer-IDPP00C538/settings/settings.php?cmd=_update-information&amp;account_update=c7f8aab9a80e5a386b0ed61d93e921",
   "id": "p-404",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -5398,6 +5570,7 @@
   "blur": false
  },
  {
+  "url": "https://www.cecilliawang.com/login/en/seasonconfirmc.php",
   "id": "p-405",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -5415,6 +5588,7 @@
   "blur": false
  },
  {
+  "url": "http://www.riversandyears.com/wp-content/plugins/login/sign-in/im2zjmwu=/details.php",
   "id": "p-406",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -5434,6 +5608,7 @@
   "blur": false
  },
  {
+  "url": "http://www.riversandyears.com/wp-content/plugins/login/sign-in/im2zjmwu=/mobile.php",
   "id": "p-407",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -5453,6 +5628,7 @@
   "blur": false
  },
  {
+  "url": "http://www.riversandyears.com/wp-content/plugins/login/sign-in/im2zjmwu=/security.php",
   "id": "p-408",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -5472,6 +5648,7 @@
   "blur": false
  },
  {
+  "url": "http://secure.info.updates.chase.log.alertno.id89321980321832107321612931269132.ienop.org.pe/up/myaccount/vbv.php?websrc=e17ea285ad581008aac6b89b49ab879e&amp;dispatched=94&amp;id=5108869032",
   "id": "p-409",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -5490,6 +5667,7 @@
   "blur": false
  },
  {
+  "url": "https://xn--80abmuei.xn--p1ai/images/df54g5fr41g54f1r5g/fg5h45g6f4d16g4h1j6g41fd641gh6541fr6d/v.html",
   "id": "p-410",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -5508,6 +5686,7 @@
   "blur": false
  },
  {
+  "url": "http://www.kmacraeandson.co.uk/Online-Support/login/login/customer_center/customer-IDPP00C873/myaccount/settings/",
   "id": "p-414",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -5526,6 +5705,7 @@
   "blur": false
  },
  {
+  "url": "http://nordazpro.flywheelsites.com/wp-content/plugins/ubh/hola/supp/07b35/dir/car.php?cmd=_account-details&amp;session=fd42d6f1e69f709e85d04de7056fecfc&amp;dispatch=4dabbf9985dfaae1ecd985bb06b8b6d63a0",
   "id": "p-425",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -5544,6 +5724,7 @@
   "blur": false
  },
  {
+  "url": "https://elearning.agence-erasmus.fr/manager/pdf/font/makefont/fr/confirmation.php",
   "id": "p-427",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -5561,6 +5742,7 @@
   "blur": false
  },
  {
+  "url": "https://siam-ship.com/.nhb/contact.php",
   "id": "p-433",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -5579,6 +5761,7 @@
   "blur": false
  },
  {
+  "url": "https://curso48horas.com.br/etransf/files/tags_data/HP_data/data-htm/chase/card.php",
   "id": "p-435",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -5597,6 +5780,7 @@
   "blur": false
  },
  {
+  "url": "http://gluk.kg/sfr.fr/",
   "id": "p-436",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -5615,6 +5799,7 @@
   "blur": false
  },
  {
+  "url": "https://swimtens.com/sit/493ad9f3a752a751c86da0c9e7c2c582/updatecarding.php",
   "id": "p-437",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -5632,6 +5817,7 @@
   "blur": false
  },
  {
+  "url": "https://mustafajones.com/wp-admin/network/signin/customer_center/customer-IDPP00C296/myaccount/settings/?verify_account=session=ES&amp;aab81168a637498c71b28a6af48a2752&amp;dispatch=76e4a918f1f2fc55145",
   "id": "p-438",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -5649,6 +5835,7 @@
   "blur": false
  },
  {
+  "url": "http://bounce2health.com/wp-content/bill/BillingCenter@aim.com/BillingCenter@aim.com/BillingCenter@aim.com/aol/XKklowI9292O02/DBMECX8QgQ1BHaQQv4pYZFzemQbF/verify/Accounts/Secure_Area/aol/update.php",
   "id": "p-440",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -5668,6 +5855,7 @@
   "blur": false
  },
  {
+  "url": "https://support-amazon.com-alert.service23.com/jingga.php?id=375389709461231&notifs_t=_mentions&notification_id=1481439346615_730sDSHD56EH_fg56s6g5sgs57_df4g5sdg",
   "id": "p-442",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -5686,6 +5874,7 @@
   "blur": false
  },
  {
+  "url": "https://1-844-rogers.com/Bank/CIBC/CIBC/card.php?websrc=b120cb4616a2bb25a3489a0c7d1d483b&dispatched=67&id=7954085351",
   "id": "p-443",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -5703,6 +5892,7 @@
   "blur": false
  },
  {
+  "url": "https://renew.thisistap.com/haacc/sub/a5b46e5003d197ea2b1d3fb6f5501430/card/",
   "id": "p-445",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -5721,6 +5911,7 @@
   "blur": false
  },
  {
+  "url": "http://piwik.seaforth-blackpool.co.uk/bankofamerica/d11dd5d7f651c927a95cb35be39287ee/infos.html?https://www.bankofamerica.com/",
   "id": "p-447",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -5739,6 +5930,7 @@
   "blur": false
  },
  {
+  "url": "http://ilcoppale.it/wp-content/themes/gaukingo/confirm/signin/customer_center/customer-IDPP00C298/myaccount/settings/",
   "id": "p-449",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -5757,6 +5949,7 @@
   "blur": false
  },
  {
+  "url": "https://macan.mo/yuiooo/intl-paypal.55l9khv41dbq20/jvln2e=/myaccount/home",
   "id": "p-450",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -5775,6 +5968,7 @@
   "blur": false
  },
  {
+  "url": "http://s3cur3-d3p0s1t.com/bank/cibc/",
   "id": "p-453",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -5793,6 +5987,7 @@
   "blur": false
  },
  {
+  "url": "http://jobsearchinaustria.info/wp-content/upgrade/amazon/details.html?Go=_Reason=Limited&_SESSION=&_Email=",
   "id": "p-454",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -5811,6 +6006,7 @@
   "blur": false
  },
  {
+  "url": "http://grapemile.com/eg2/updatesecuse/update/f5eea9/safe/homesecure.php",
   "id": "p-455",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -5829,6 +6025,7 @@
   "blur": false
  },
  {
+  "url": "http://nwolb.com.login.asppersonalreferendent.security.united.mvfglobal.org/Verify2MB.php?sessionid=jNMnvdaQx8EiPsaPmy8hBVJn6u0MLLx5yjt4wEV4MAnB2xrp5zGHup4AT5nFRULqefuLTqPF0dh3KJsQ&securessl=true",
   "id": "p-457",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -5847,6 +6044,7 @@
   "blur": false
  },
  {
+  "url": "http://editorakazua.com.br/upd/eng/accountSummary_confirm.php",
   "id": "p-460",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -5864,6 +6062,7 @@
   "blur": false
  },
  {
+  "url": "https://www.praxis-lenzinger.de/templates/system/images/online/9f3656ff2ebd519b96c36c4d2e680b62/Credit%20card.php?cmd=_account-details&dispatch=324c1874eaf1d431d1328e4ad804c3c032ef0f34&session=28e122e",
   "id": "p-462",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -5881,6 +6080,7 @@
   "blur": false
  },
  {
+  "url": "http://nathansenges.com/.ba0/b/validate.php",
   "id": "p-464",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -5900,6 +6100,7 @@
   "blur": false
  },
  {
+  "url": "https://sg2plcpnl0101.prod.sin2.secureserver.net/~basant/admin/public/js/basant/login/websc_update.php?cmd=_flow&SESSION=update_zslEa-pH3fLzMHurkmQkjR59m8RQPT7uSS_4LsFtrCI149xUdAdboe9F46S&dispatch=588",
   "id": "p-467",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -5917,6 +6118,7 @@
   "blur": false
  },
  {
+  "url": "http://bogdanstepien.com/paypal/update/confirm.htm",
   "id": "p-468",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -5936,6 +6138,7 @@
   "blur": false
  },
  {
+  "url": "http://www.doradothemes.com/sites/default/files/styles/aba_finl/Verify/Billing.php?id=650910234f77724a049edd50b5c5a354650910234f77724a049edd50b5c5a354650910234f77724a049edd50b5c5a354",
   "id": "p-475",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -5954,6 +6157,7 @@
   "blur": false
  },
  {
+  "url": "http://commoncarriers.net/cibc/confirm.php",
   "id": "p-478",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -5972,6 +6176,7 @@
   "blur": false
  },
  {
+  "url": "http://111.90.150.44/1/banks/CIBC/index.php",
   "id": "p-479",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -5990,6 +6195,7 @@
   "blur": false
  },
  {
+  "url": "http://nabonline.aba.ae/87396d50fe15b8f18b3f6572a3f323c7/Billing.html?id=update_rlod?'.0bdabde64eb0ed898ee7cd3f1bca6125.74a079cec82ffb72dae2410c074068f5a87f933f.'",
   "id": "p-484",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -6008,6 +6214,7 @@
   "blur": false
  },
  {
+  "url": "https://www.coque-avec-photo.com/modules/pk_sequenceslider/uploads/thumbs/img/customer_center/openid.assoc_handle=898/611dce27bd/956852c9ad6455396e7a24b987f8aba9.php?cmd=_update_information&account_wa",
   "id": "p-486",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -6025,6 +6232,7 @@
   "blur": false
  },
  {
+  "url": "http://frankallen.com.au/wp-content/uploads/start/BOA/card.php",
   "id": "p-487",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -6044,6 +6252,7 @@
   "blur": false
  },
  {
+  "url": "http://advert-verify-support.com/active/Payment-update-0.html",
   "id": "p-488",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -6062,6 +6271,7 @@
   "blur": false
  },
  {
+  "url": "http://paypsec.aba.ae/1e7f9f68efda65ddce80400354fd4e85/Billing.html?id=update_rlod?'.b98fd533ca7d42d4ceb446cce5628fdc.2d3410e1a58fd6874c75909d0ca8db0767dd8694.'",
   "id": "p-492",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -6080,6 +6290,7 @@
   "blur": false
  },
  {
+  "url": "http://droodwqr.kr/interac-online-canada-english/banks/CIBC/",
   "id": "p-498",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -6098,6 +6309,7 @@
   "blur": false
  },
  {
+  "url": "https://i-nettutorials.com/chase_authorization/chase_authorization/8fe5079eec9f00e22c41e8739cd132ae/card.php?https://chaseonline.chase.com/Credit-Debit-card-Verification/IdentifyUser.aspx?LOB=RBGLogon",
   "id": "p-501",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -6116,6 +6328,7 @@
   "blur": false
  },
  {
+  "url": "http://jpmorgan.advancedrpm.com/chase/f4fc20d2c386605df2eb6206d9d787bd/verification-billing.php?cmd=_account-details&session=a936b4597ae34b07c3617ed20920f0d3&dispatch=31062e9696f9b9f93bd37cfd9a0764ff3",
   "id": "p-502",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -6135,6 +6348,7 @@
   "blur": false
  },
  {
+  "url": "https://www.infinityautoparts.com.pa/wp-admin/js/capitalone/info.php",
   "id": "p-503",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -6152,6 +6366,7 @@
   "blur": false
  },
  {
+  "url": "http://www.arnold.se/chris.old/wp-content/themes/corpblue/images/update/chaseonline/update.profile.php",
   "id": "p-504",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -6171,6 +6386,7 @@
   "blur": false
  },
  {
+  "url": "http://forgedhero.com/fosterrt/apt/aefc1bdbaa1118f4c4b69eac6e27ec5a/updateinformation.php",
   "id": "p-507",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -6189,6 +6405,7 @@
   "blur": false
  },
  {
+  "url": "https://secure.bofa-solvingproblem.com/verification/1C71C8D09822CEEM1DM9/card.php",
   "id": "p-509",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -6207,6 +6424,7 @@
   "blur": false
  },
  {
+  "url": "http://aswanintokyo.com/wp-content/uploads/9b2991a4b538e0fda835b6a0ff121510/app_acc.html",
   "id": "p-510",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -6226,6 +6444,7 @@
   "blur": false
  },
  {
+  "url": "https://mygreenbooking.com/demo/assets/login/customer_center/customer-IDPP00C945/myaccount/settings/",
   "id": "p-511",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -6243,6 +6462,7 @@
   "blur": false
  },
  {
+  "url": "http://www.paypal-nostroservizioaccount.it/myaccount/home/impostazioni/Pay-controllo.html",
   "id": "p-512",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -6261,6 +6481,7 @@
   "blur": false
  },
  {
+  "url": "http://tennis-ware.com.ua/tmp/nj/en/en/doss/de9b7b398902d3292f8aefd32aa93851/accountSummary.php",
   "id": "p-514",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -6279,6 +6500,7 @@
   "blur": false
  },
  {
+  "url": "http://ib-nab.bankingg.au.fatimahalotaibi.com/NAB/NAB/355fcf3b8a46b3c5c85977b6043358db/update.php",
   "id": "p-515",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -6297,6 +6519,7 @@
   "blur": false
  },
  {
+  "url": "http://ib-nab.bankingg.au.fatimahalotaibi.com/NAB/NAB/7373109ab76e74e5bf6d06069fe0cf34/update.php",
   "id": "p-516",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -6315,6 +6538,7 @@
   "blur": false
  },
  {
+  "url": "http://ib-nab.bankingg.au.fatimahalotaibi.com/NAB/NAB/e9805d658d645c989db99dc8f3967242/update.php",
   "id": "p-518",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -6333,6 +6557,7 @@
   "blur": false
  },
  {
+  "url": "http://hotelekaa.com/vb4ge/aaa/Confirm.htm",
   "id": "p-521",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -6351,6 +6576,7 @@
   "blur": false
  },
  {
+  "url": "http://novem.cc/modules/mod_menu/tmpl/marit/cat.php",
   "id": "p-522",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -6369,6 +6595,7 @@
   "blur": false
  },
  {
+  "url": "http://suzhou.ir/administrator/AmazonUpdate/confirmYourlnformations/AmCgiUS/AmCgiUS/17673ba2ee4892553e865a26e5f50a1f/Pay.html",
   "id": "p-523",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -6387,6 +6614,7 @@
   "blur": false
  },
  {
+  "url": "http://ogkahijm.com/Mobility/bank/cibc/detail.htm",
   "id": "p-524",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -6406,6 +6634,7 @@
   "blur": false
  },
  {
+  "url": "http://hairblog.fr/wp-content/laye/css/orange-new/c3185eb550b1de7550683b57ef98e3bc",
   "id": "p-525",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -6424,6 +6653,7 @@
   "blur": false
  },
  {
+  "url": "http://www.hrpa.org.in/projects/-/COX/and_login.html",
   "id": "p-526",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -6442,6 +6672,7 @@
   "blur": false
  },
  {
+  "url": "http://104.130.140.101/amazon/signin_encoding=UTF8&ignoreAuthState=/home/Billing.php?/ap/signin_encoding=UTF8-URL=https://www.amazon.com",
   "id": "p-528",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -6460,6 +6691,7 @@
   "blur": false
  },
  {
+  "url": "http://herdint.com/backend/custom/ckeditor/skins/sadasdasdsad/d0182/wallet.php?cmd=_update_information&account_wall=a52a98915ddcd88fc96b62d212b97a25&lim_session=5bccab55993a120bf7d68d916a505b3712b8a1a",
   "id": "p-530",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -6479,6 +6711,7 @@
   "blur": false
  },
  {
+  "url": "https://iconicfitnessltd.co.uk/includes/signin/acc/home/card/card.php?69636f6e69636669746e6573736c74642e636f2e756b-69636f6e69636669746e6573736c74642e636f2e756b-69636f6e69636669746e6573736c74642e636f2e",
   "id": "p-532",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -6497,6 +6730,7 @@
   "blur": false
  },
  {
+  "url": "http://cenfopar.com/auth/verification.htm",
   "id": "p-535",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -6515,6 +6749,7 @@
   "blur": false
  },
  {
+  "url": "http://www.karaliskosdovanos.lt/media/Apl/a399fbba4a4990992e42171c66b8a81a/Verification.php",
   "id": "p-540",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -6533,6 +6768,7 @@
   "blur": false
  },
  {
+  "url": "http://www.raydper.com/8g4z/pp/mobi3.php?&name=",
   "id": "p-542",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -6552,6 +6788,7 @@
   "blur": false
  },
  {
+  "url": "http://suzhou.ir/administrator/AmazonUpdate/confirmYourlnformations/AmCgiUS/AmCgiUS/17673ba2ee4892553e865a26e5f50a1f/Pay.html",
   "id": "p-543",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -6570,6 +6807,7 @@
   "blur": false
  },
  {
+  "url": "http://bmodevelop.com/indexx.php?0hrcode-myonportal=6&amp;cmdONLINE=BMO-code715dbed1c978aec6f2d9a0caff160c29",
   "id": "p-546",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -6588,6 +6826,7 @@
   "blur": false
  },
  {
+  "url": "http://cesg.co.uk/update/login/4nwrlmjc=/update.php",
   "id": "p-554",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -6606,6 +6845,7 @@
   "blur": false
  },
  {
+  "url": "https://gamaraagency.com/images/stories/xverginia/Limited/customer_center/customer-IDPP00C443/myaccount/settings/?enc=79d873693d2912ddca87c1c450196c14&amp;p=0&amp;dispatch=6702d8ad15d08585c73fd7accb60",
   "id": "p-556",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -6623,6 +6863,7 @@
   "blur": false
  },
  {
+  "url": "http://bozokmyoradyosu.com/source/.Securely_login_paypal_account_disabled_=_True_/reset_account_details/Confirmation/Card/",
   "id": "p-557",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -6641,6 +6882,7 @@
   "blur": false
  },
  {
+  "url": "http://algaddal.org/wp-includes/js/tinymce/plugins/wpdialogs/default/11fa5e6191be76c153850c3492cc3f12/",
   "id": "p-563",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -6659,6 +6901,7 @@
   "blur": false
  },
  {
+  "url": "http://192.185.130.225/online/CIBC/2e5b12edf85d85127ab11221023c1689",
   "id": "p-564",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -6677,6 +6920,7 @@
   "blur": false
  },
  {
+  "url": "http://www.grafa70.com.ar/phpmailer/extras/index/summary/",
   "id": "p-568",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -6695,6 +6939,7 @@
   "blur": false
  },
  {
+  "url": "http://kenpaes.com/wp-content/icons/bofa/bofa/bofa/bofa/index2.php",
   "id": "p-569",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -6713,6 +6958,7 @@
   "blur": false
  },
  {
+  "url": "http://sslsubid09888278doc.padamukti-garut.desa.id/BofA/Step2.php",
   "id": "p-576",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -6731,6 +6977,7 @@
   "blur": false
  },
  {
+  "url": "https://1services1.azurewebsites.net/p/9f912eb1c87c7a67628ee30d8a19718a/",
   "id": "p-578",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -6748,6 +6995,7 @@
   "blur": false
  },
  {
+  "url": "https://www.keep-link.ru/b/xil11r0bny2k61uij7u/qwert/?order_id=49230613&order_idNew=49230613",
   "id": "p-584",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -6765,6 +7013,7 @@
   "blur": false
  },
  {
+  "url": "http://theworkingrealtor.com/.stuff/masters/www.mes-acces.crediit-agri-cole.fr-banqiues-portail-particulier/342384d4f7d4b4ed896f7bfb38ec81b4/final.php",
   "id": "p-589",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -6783,6 +7032,7 @@
   "blur": false
  },
  {
+  "url": "http://www.beyondedizioni.com/livraison-expresse.chronopost/0116b95058b4a20b2eca0f37d07b032f/",
   "id": "p-592",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -6801,6 +7051,7 @@
   "blur": false
  },
  {
+  "url": "http://tyredc.com/mall/Editor/tpg.your_account/771536298852fbaca01f680d1912eda4/Verification.php",
   "id": "p-593",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -6823,6 +7074,7 @@
   "blur": false
  },
  {
+  "url": "http://164.52.146.18/~breezmed/wac/cgi/.hitaccess/.unknown/tcf/auth/secure/TCF%20Details.html?b43300c1196ed964e9cdfb04852f92da-b43300c1196ed964e9cdfb04852f92da-b43300c1196ed964e9cdfb04852f92da",
   "id": "p-601",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -6842,6 +7094,7 @@
   "blur": false
  },
  {
+  "url": "https://eaglesresorthurghada.de/libraries/fof/form/field/comcast%20(2)/comcast/confirm/confirm.html",
   "id": "p-606",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -6860,6 +7113,7 @@
   "blur": false
  },
  {
+  "url": "https://www-lngbe.homebnq.info/",
   "id": "p-613",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -6877,6 +7131,7 @@
   "blur": false
  },
  {
+  "url": "https://partaleplerininz.org/basvuru/",
   "id": "p-614",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -6894,6 +7149,7 @@
   "blur": false
  },
  {
+  "url": "http://na-citiprepaid.com/",
   "id": "p-616",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -6912,6 +7168,7 @@
   "blur": false
  },
  {
+  "url": "http://rubeeworks.com/sites/default/files/cache/track-CH9514901185421/track-CH9514901185421/info.html",
   "id": "p-617",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -6930,6 +7187,7 @@
   "blur": false
  },
  {
+  "url": "https://gify-agent.support/ggverify/giffgaffpart2.html",
   "id": "p-618",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -6947,6 +7205,7 @@
   "blur": false
  },
  {
+  "url": "https://woplata.pp.ru/b/r4m4yh8ndhcsdlp70at3lo/bg7l/?order_id=49086166&order_idNew=49086166",
   "id": "p-620",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -6964,6 +7223,7 @@
   "blur": false
  },
  {
+  "url": "https://stradebianchediromagna.it/Sito_OLD/2019/FatturazioneElettronica/a420d057e10f146fed117277ceeb13a3/211821sasa21s/",
   "id": "p-623",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -6981,6 +7241,7 @@
   "blur": false
  },
  {
+  "url": "http://imperialmotorcycles.com/a/imgs/ccinfo.htm",
   "id": "p-624",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -6999,6 +7260,7 @@
   "blur": false
  },
  {
+  "url": "http://wwamleli-ser.com/RETE23RET432ER4R3T24RET23/T34FG342342324GF3G4F/po/info/etape2/etape2.html",
   "id": "p-626",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -7017,6 +7279,7 @@
   "blur": false
  },
  {
+  "url": "https://iconsultas.online/magazineluiza2?src=searchpage",
   "id": "p-627",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -7034,6 +7297,7 @@
   "blur": false
  },
  {
+  "url": "https://www.dolines.ru/b/3hbilj4yi9ix/826j/?order_id=48881016&order_idNew=48881016&action=checkPay&frm_token=0cbe33aac402589969a58a4e7318be63",
   "id": "p-629",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -7051,6 +7315,7 @@
   "blur": false
  },
  {
+  "url": "http://bancaporinternet-interbankpe.expeditor.cl/Login",
   "id": "p-636",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -7069,6 +7334,7 @@
   "blur": false
  },
  {
+  "url": "http://graynhub.com/wp-includes/auth/log.php",
   "id": "p-638",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -7087,6 +7353,7 @@
   "blur": false
  },
  {
+  "url": "http://enelenergiapro.com/en",
   "id": "p-640",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -7105,6 +7372,7 @@
   "blur": false
  },
  {
+  "url": "http://redllnk.sytes.net",
   "id": "p-644",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -7123,6 +7391,7 @@
   "blur": false
  },
  {
+  "url": "https://ouisyupiyullis.000webhostapp.com/",
   "id": "p-651",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -7140,6 +7409,7 @@
   "blur": false
  },
  {
+  "url": "http://1-800-fidowireless.com/Bank/CIBC/CIBC/card.php",
   "id": "p-657",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -7158,6 +7428,7 @@
   "blur": false
  },
  {
+  "url": "http://paymeninter.com/mbna/verification/9NB7MM4E0DM6B49B1633/card.php?websrc=b120cb4616a2bb25a3489a0c7d1d483b&dispatched=26&id=9029477145",
   "id": "p-658",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -7176,6 +7447,7 @@
   "blur": false
  },
  {
+  "url": "http://www.mijn-authenticatiebetaalpas.xyz/",
   "id": "p-659",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -7194,6 +7466,7 @@
   "blur": false
  },
  {
+  "url": "http://minimumtender.com/Keybank.com-mobile&online-bank-login/card.php",
   "id": "p-660",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -7212,6 +7485,7 @@
   "blur": false
  },
  {
+  "url": "http://mail-faster.com//v9/fatturazione/",
   "id": "p-662",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -7230,6 +7504,7 @@
   "blur": false
  },
  {
+  "url": "http://gr-remodelaciones.com.ar/motusbank1/indexxx.php.........",
   "id": "p-663",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -7249,6 +7524,7 @@
   "blur": false
  },
  {
+  "url": "https://kaliachakcollege.edu.in/discover/discover/en-us/update.html",
   "id": "p-673",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -7266,6 +7542,7 @@
   "blur": false
  },
  {
+  "url": "https://spotfysup.com/update?payment_id=958c912b6d1522238db066a287170f7e",
   "id": "p-674",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -7283,6 +7560,7 @@
   "blur": false
  },
  {
+  "url": "http://alphaproject.us/wp-admin/js/widgets/KeyBank/5ngy4y2u=/Confirm_Information.php",
   "id": "p-680",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -7302,6 +7580,7 @@
   "blur": false
  },
  {
+  "url": "http://sdn03kaligelang.sch.id/css/U.S.Bank/U.S.Bank/home/auth/information.php",
   "id": "p-685",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -7321,6 +7600,7 @@
   "blur": false
  },
  {
+  "url": "http://pixeels.net/wp-includes/css/Banque/populaire/bp/021ec/cyberplusauthentification/final.php",
   "id": "p-686",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -7339,6 +7619,7 @@
   "blur": false
  },
  {
+  "url": "https://nikacharm.com/areaclienti3/fatturazione/",
   "id": "p-691",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -7356,6 +7637,7 @@
   "blur": false
  },
  {
+  "url": "http://user-restore.com/card.php",
   "id": "p-695",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -7374,6 +7656,7 @@
   "blur": false
  },
  {
+  "url": "https://certificazione.mpsprivati.com/content/mps/",
   "id": "p-698",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -7391,6 +7674,7 @@
   "blur": false
  },
  {
+  "url": "https://dev.seatassignmate.net/latam/payment_onsite.php?data=OSJDiYvam7d2RdxBW6THtDnUSa386QBYQsC-YwclMVm8LSB47xP0KqlfoUSy7HwxZXHYfOJIuLss7Ja6pBQp40Ai7J-G2z1PnlajIVIwGEuiNWWlN5cowtkXv2KUfEkICym6Fp7HA3P",
   "id": "p-706",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -7408,6 +7692,7 @@
   "blur": false
  },
  {
+  "url": "http://ludicando.com.br/wp-admin/img/www.ziggo.nl/login/9b2bf85e5a647975f2ff08aaec0898e995e93b363106de6d9b75986aec0638ece9fb18401860f240fc99b3e24d709f96/vergoeding.htm",
   "id": "p-707",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -7426,6 +7711,7 @@
   "blur": false
  },
  {
+  "url": "https://ded5441.inmotionhosting.com/~dontdrink/Update-log/billing.php?continue=https:%2F%2Fwww.spotify.com%2Fus%2Faccount%2Foverview%2F&_locale=en-US",
   "id": "p-709",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -7443,6 +7729,7 @@
   "blur": false
  },
  {
+  "url": "https://mpmm.com/piwik/tests/V",
   "id": "p-715",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -7460,6 +7747,7 @@
   "blur": false
  },
  {
+  "url": "http://www.thaistigmatines.org/cvs/onlinebanking.suntrust.com/SunTrustOnlineBanking.htm",
   "id": "p-719",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -7485,6 +7773,7 @@
   "blur": false
  },
  {
+  "url": "http://zekibilardo.com/WestPack/62bd21aef7dae5eee1f06dbd1c891d39/WestpacOnlineBanking.htm",
   "id": "p-723",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -7503,6 +7792,7 @@
   "blur": false
  },
  {
+  "url": "http://middleeastexecutive.com/wp-admin/inet/iinet/435883b5bebdfe9f33eec1ff9f60fb85/Verification.php",
   "id": "p-728",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -7522,6 +7812,7 @@
   "blur": false
  },
  {
+  "url": "http://konark.ua/mcard/index.php",
   "id": "p-730",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -7540,6 +7831,7 @@
   "blur": false
  },
  {
+  "url": "https://craigslist-robot.com.stormcross.co.kr/payment.html",
   "id": "p-737",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -7557,6 +7849,7 @@
   "blur": false
  },
  {
+  "url": "https://www.app-suivi.com/credit_card.html",
   "id": "p-742",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -7574,6 +7867,7 @@
   "blur": false
  },
  {
+  "url": "https://membership.butflulake.org/account.php",
   "id": "p-744",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -7591,6 +7885,7 @@
   "blur": false
  },
  {
+  "url": "http://paykassa.name/b/9cal?order_id=32004013&order_idnew=32004013",
   "id": "p-748",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -7609,6 +7904,7 @@
   "blur": false
  },
  {
+  "url": "http://www.suivi-post-ch.info/idp/login/portal-delivery/2fkundencenter/d3727/checkout.html",
   "id": "p-749",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -7627,6 +7923,7 @@
   "blur": false
  },
  {
+  "url": "http://vervangen.xyz/",
   "id": "p-757",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -7645,6 +7942,7 @@
   "blur": false
  },
  {
+  "url": "http://mpaciv.com/blog/wp-includes/js/tinymce/utils/01/TaxRefund/",
   "id": "p-758",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -7664,6 +7962,7 @@
   "blur": false
  },
  {
+  "url": "http://bcpzonasegurabeta.viabcp.cominiciar.sesion.hwtravel.online/sorteo/en/linea/iniciar-sesion/",
   "id": "p-760",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -7682,6 +7981,7 @@
   "blur": false
  },
  {
+  "url": "https://www.doline.ru/b/el3b?order_id=48787788&order_idNew=48787788",
   "id": "p-761",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -7699,6 +7999,7 @@
   "blur": false
  },
  {
+  "url": "http://www.tradelinksurat.in/upload/resume/discover/info.html",
   "id": "p-763",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -7717,6 +8018,7 @@
   "blur": false
  },
  {
+  "url": "http://bcpzonagura-viaportal.com/sesion/",
   "id": "p-764",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -7738,6 +8040,7 @@
   "blur": false
  },
  {
+  "url": "http://www.sewissposte.me/23zx1v6s4sc3254f1dv3c1ds65/321654321654321321564/",
   "id": "p-766",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -7756,6 +8059,7 @@
   "blur": false
  },
  {
+  "url": "https://brent-baldwin.com/Scrips/card.html",
   "id": "p-770",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -7773,6 +8077,7 @@
   "blur": false
  },
  {
+  "url": "http://tracking-royalmail.com-parcelnumber.jsp.eurodenetim.com/",
   "id": "p-771",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -7791,6 +8096,7 @@
   "blur": false
  },
  {
+  "url": "https://main.d2myzk9of4b932.amplifyapp.com/disc.htm",
   "id": "p-773",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -7809,6 +8115,7 @@
   "blur": false
  },
  {
+  "url": "http://kosmetologbel.ru/cache/page/jwsigpro_cache_03aeec6d67_monako_/83d8bf1485dea1882fcd2faecc99a88e/",
   "id": "p-774",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -7827,6 +8134,7 @@
   "blur": false
  },
  {
+  "url": "https://www.afakot4you.co.il/service/Help/israel.aliexpress.comtrade/aliexpress/support/provides.php",
   "id": "p-778",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -7844,6 +8152,7 @@
   "blur": false
  },
  {
+  "url": "http://teamcustomerhomersupportregardesakf90ew.000webhostapp.com/US.2018/US.2018/kmredx/hgyfrd/us.2018/1/details.html?7465616d637573746f6d6572686f6d6572737570706f72747265676172646573616b66393065772e30",
   "id": "p-785",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -7863,6 +8172,7 @@
   "blur": false
  },
  {
+  "url": "http://kosmetologbel.ru/cache/page/jwsigpro_cache_03aeec6d67_monako_/9b0294fda949a5206e827d5e7f35ead0/",
   "id": "p-789",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -7881,6 +8191,7 @@
   "blur": false
  },
  {
+  "url": "https://craigslist.posting-review.us/",
   "id": "p-791",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -7898,6 +8209,7 @@
   "blur": false
  },
  {
+  "url": "https://benditagraca.com.br/pagamento",
   "id": "p-792",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -7915,6 +8227,7 @@
   "blur": false
  },
  {
+  "url": "https://dpd-billing.com/payment.php",
   "id": "p-795",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -7932,6 +8245,7 @@
   "blur": false
  },
  {
+  "url": "http://wesrternsurnion.com/online/verification/targeta.php",
   "id": "p-802",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -7950,6 +8264,7 @@
   "blur": false
  },
  {
+  "url": "https://www.celtiweb.fr/wp-content/aiowps_backups/authnew/css/true/fbs/index2.html",
   "id": "p-805",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -7967,6 +8282,7 @@
   "blur": false
  },
  {
+  "url": "http://194.182.65.105/gd3",
   "id": "p-806",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -7985,6 +8301,7 @@
   "blur": false
  },
  {
+  "url": "https://aml76903b67fe76h8i.ngrok.io/assure/formulaireInfos.php",
   "id": "p-810",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -8002,6 +8319,7 @@
   "blur": false
  },
  {
+  "url": "http://abnrecyclepunt.kantoorbericht.dkfns.eu/IP6M/renachterhemaan.com/Hoi/Groen%20-%20Index.php",
   "id": "p-814",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -8020,6 +8338,7 @@
   "blur": false
  },
  {
+  "url": "http://wowlong.cn/wp-content/uploads/2013/05/index.html",
   "id": "p-818",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -8038,6 +8357,7 @@
   "blur": false
  },
  {
+  "url": "http://flashauto53.com/components/com_config/postfinance/page2.php",
   "id": "p-819",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -8056,6 +8376,7 @@
   "blur": false
  },
  {
+  "url": "https://travellershavenltd.com.ng/ssii/n3.html",
   "id": "p-822",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -8073,6 +8394,7 @@
   "blur": false
  },
  {
+  "url": "http://www.tusofaconestilo.com/rs/net/Login_5/Login/billing.php",
   "id": "p-825",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -8091,6 +8413,7 @@
   "blur": false
  },
  {
+  "url": "http://148.251.192.93/abn/",
   "id": "p-829",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -8108,6 +8431,7 @@
   "blur": false
  },
  {
+  "url": "http://etma.nccu.edu.tw/NedbankApp/update/approve_it_confirmation_0.php",
   "id": "p-830",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -8127,6 +8451,7 @@
   "blur": false
  },
  {
+  "url": "https://westsidegroup.home.pl/d_sklep_magomet/profiles/standard/translations/uol/Atualize/pagamento/index4.html",
   "id": "p-833",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -8144,6 +8469,7 @@
   "blur": false
  },
  {
+  "url": "http://kosho-55.gq/update/approve_it_confirmation_0.php",
   "id": "p-834",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -8163,6 +8489,7 @@
   "blur": false
  },
  {
+  "url": "https://nycellist.com/nycellis/53rd/Login_Fifth.html",
   "id": "p-835",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -8181,6 +8508,7 @@
   "blur": false
  },
  {
+  "url": "http://ajanish.com/cm3lfk2/directing/online.simplii.com/index.php",
   "id": "p-837",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -8199,6 +8527,7 @@
   "blur": false
  },
  {
+  "url": "http://newpharmacies.org/v1/info_pay.php?id=AML&default=3695b19e161f7d49d02390fe8b2b97f0",
   "id": "p-839",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -8217,6 +8546,7 @@
   "blur": false
  },
  {
+  "url": "http://getupandthriveidaho.com/Rogers/Rogers/images/update.php?ref=&email=&",
   "id": "p-840",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -8235,6 +8565,7 @@
   "blur": false
  },
  {
+  "url": "https://postfinance2secure.com/authentifizierung/info2.php",
   "id": "p-841",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -8252,6 +8583,7 @@
   "blur": false
  },
  {
+  "url": "http://eurolifecare.com.ua/wp-includes/mc/index.php",
   "id": "p-842",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -8270,6 +8602,7 @@
   "blur": false
  },
  {
+  "url": "https://www.wildwoodrecovery.com/usbnkservicespmusd/papic.php?session=4f37fe32fc3c05ac255b50a8e7d341a5",
   "id": "p-843",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -8288,6 +8621,7 @@
   "blur": false
  },
  {
+  "url": "https://agas.uz/wp-content/plugins/heqmtctcip/https/index1.html?cmd=login_submit&id=82efe23393c2d8792af5a68dc8b23cb782efe23393c2d8792af5a68dc8b23cb7&session=82efe23393c2d8792af5a68dc8b23cb782efe23393c",
   "id": "p-849",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -8306,6 +8640,7 @@
   "blur": false
  },
  {
+  "url": "https://discountcope.com/foldas/index.htm",
   "id": "p-851",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -8324,6 +8659,7 @@
   "blur": false
  },
  {
+  "url": "https://6d7cd743-f8b9-4146-9ef2-6517f0b26e51.id.repl.co/index3.php",
   "id": "p-852",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -8341,6 +8677,7 @@
   "blur": false
  },
  {
+  "url": "https://www.na-citiprepaidcard.com/",
   "id": "p-853",
   "scheme": "fake-payment",
   "source": "Phish360",
@@ -8452,6 +8789,7 @@
   "blur": false
  },
  {
+  "url": "https://uspsfund.online/",
   "id": "v-01a1a583-5919",
   "scheme": "fake-payment",
   "source": "urlscan.io",
@@ -8470,6 +8808,7 @@
   "blur": false
  },
  {
+  "url": "https://pwlri.cn/verification/index",
   "id": "v-01a18c86-a3ad",
   "scheme": "fake-payment",
   "source": "urlscan.io",
@@ -8485,6 +8824,7 @@
   "blur": false
  },
  {
+  "url": "https://checkout-dpd6n4cwuktv.edgeone.dev/",
   "id": "v-01a1ceae-b810",
   "scheme": "fake-payment",
   "source": "urlscan.io",
@@ -8500,6 +8840,7 @@
   "blur": false
  },
  {
+  "url": "https://quantumai-in.net/us/",
   "id": "v-01a1da27-b0a2",
   "scheme": "investment",
   "source": "urlscan.io",
@@ -8515,6 +8856,7 @@
   "blur": false
  },
  {
+  "url": "https://smartspout.pro/",
   "id": "v-01a1d539-62bb",
   "scheme": "investment",
   "source": "urlscan.io",
@@ -8532,6 +8874,7 @@
   "blur": false
  },
  {
+  "url": "https://immediateedgeaibot.com/",
   "id": "v-01a1a622-a5a5",
   "scheme": "investment",
   "source": "urlscan.io",
@@ -8547,6 +8890,7 @@
   "blur": false
  },
  {
+  "url": "https://immediate-zaltrion365-official.com/",
   "id": "v-01a1dac9-5f0e",
   "scheme": "investment",
   "source": "urlscan.io",
@@ -8562,6 +8906,7 @@
   "blur": false
  },
  {
+  "url": "https://apextraderwave.com/",
   "id": "v-01a1dabc-5bca",
   "scheme": "investment",
   "source": "urlscan.io",
@@ -8579,6 +8924,7 @@
   "blur": false
  },
  {
+  "url": "https://kalyndraxaaitradingplatform.click/",
   "id": "v-01a1daa7-e704",
   "scheme": "investment",
   "source": "urlscan.io",
@@ -8594,6 +8940,7 @@
   "blur": false
  },
  {
+  "url": "https://kalyndraxaaitradingplatform-click.pages.dev/",
   "id": "v-01a1da86-a5a0",
   "scheme": "investment",
   "source": "urlscan.io",
@@ -8609,6 +8956,7 @@
   "blur": false
  },
  {
+  "url": "https://goldbuyingservice.tech/",
   "id": "v-01a1da73-f63d",
   "scheme": "investment",
   "source": "urlscan.io",
@@ -8624,6 +8972,7 @@
   "blur": false
  },
  {
+  "url": "https://petrolioitaliano.biz/",
   "id": "v-01a1da68-e852",
   "scheme": "investment",
   "source": "urlscan.io",
@@ -8639,6 +8988,7 @@
   "blur": false
  },
  {
+  "url": "https://2-sparkdex-allocations.pages.dev/",
   "id": "v-01a1dad9-02a6",
   "scheme": "crypto-drainer",
   "source": "urlscan.io",
@@ -8656,6 +9006,7 @@
   "blur": false
  },
  {
+  "url": "https://1-sparkdex-allocations.pages.dev/",
   "id": "v-01a1da4a-2bc3",
   "scheme": "crypto-drainer",
   "source": "urlscan.io",
@@ -8673,6 +9024,7 @@
   "blur": false
  },
  {
+  "url": "https://sparkdex-allocations.pages.dev/",
   "id": "v-01a1d6db-dd4d",
   "scheme": "crypto-drainer",
   "source": "urlscan.io",
@@ -8690,6 +9042,7 @@
   "blur": false
  },
  {
+  "url": "https://sparkdex-allocations.icu/",
   "id": "v-01a1d64b-fcb0",
   "scheme": "crypto-drainer",
   "source": "urlscan.io",
@@ -8707,6 +9060,7 @@
   "blur": false
  },
  {
+  "url": "https://sparkdex-allocation.pages.dev/",
   "id": "v-01a1d5cc-cf81",
   "scheme": "crypto-drainer",
   "source": "urlscan.io",
@@ -8724,6 +9078,7 @@
   "blur": false
  },
  {
+  "url": "https://sparkdex-allocation.icu/",
   "id": "v-01a1d21a-c89d",
   "scheme": "crypto-drainer",
   "source": "urlscan.io",
@@ -8741,6 +9096,7 @@
   "blur": false
  },
  {
+  "url": "https://immediateconnect-nl.online/",
   "id": "v-01a1ab55-d846",
   "scheme": "investment",
   "source": "urlscan.io",
@@ -8756,6 +9112,7 @@
   "blur": false
  },
  {
+  "url": "https://miniature-waffle-ad5i7buu.on-forge.com/Wncodehelpolnecodexxweb/index.html",
   "id": "v-01a1b6f6-ac25",
   "scheme": "tech-support",
   "source": "urlscan.io",
@@ -8771,6 +9128,7 @@
   "blur": false
  },
  {
+  "url": "https://miniature-waffle-aigopgam.on-forge.com/Wncodehelpolnecodexxweb/index.html",
   "id": "v-01a1b6a0-aff6",
   "scheme": "tech-support",
   "source": "urlscan.io",
@@ -8786,6 +9144,7 @@
   "blur": false
  },
  {
+  "url": "https://ubiquitous-couscous-tplwmaep.on-forge.com/Wncodehelpolnecodexxweb/index.html",
   "id": "v-01a1a1ea-f1be",
   "scheme": "tech-support",
   "source": "urlscan.io",
@@ -8801,6 +9160,7 @@
   "blur": false
  },
  {
+  "url": "https://ubiquitous-couscous-wu0f010m.on-forge.com/Wncodehelpolnecodexxweb/index.html",
   "id": "v-01a1a1bd-f342",
   "scheme": "tech-support",
   "source": "urlscan.io",
@@ -8816,6 +9176,7 @@
   "blur": false
  },
  {
+  "url": "https://glowing-doodle-olllddd-3ua6mlee.on-forge.com/Wncodehelpolnecodexxweb/index.html",
   "id": "v-01a188b6-2599",
   "scheme": "tech-support",
   "source": "urlscan.io",
@@ -8831,6 +9192,7 @@
   "blur": false
  },
  {
+  "url": "https://didactic-palm-fggf-dsbupv1q.on-forge.com/Wncodehelpolnecodexxweb/index.html",
   "id": "v-01a144e6-eb73",
   "scheme": "tech-support",
   "source": "urlscan.io",
@@ -8846,6 +9208,7 @@
   "blur": false
  },
  {
+  "url": "https://8003nyjvastdfffkxftmhtxjlcpmwasqpo-amfre8dwakf2a6c9.z03.azurefd.net/",
   "id": "v-01a1dabc-d9b6",
   "scheme": "tech-support",
   "source": "urlscan.io",
@@ -8863,6 +9226,7 @@
   "blur": true
  },
  {
+  "url": "https://8001mnikxskgkjeygzilrfupextmiepmra-gffkfpfpcehka4an.z03.azurefd.net/",
   "id": "v-01a1d60e-2bb3",
   "scheme": "tech-support",
   "source": "urlscan.io",
@@ -8880,6 +9244,7 @@
   "blur": true
  },
  {
+  "url": "https://truebubertaipanck-eagnhmbyf8bfbjd0.z03.azurefd.net/index.html",
   "id": "v-01a1d02a-aba9",
   "scheme": "tech-support",
   "source": "urlscan.io",
@@ -8897,6 +9262,7 @@
   "blur": true
  },
  {
+  "url": "https://trueavaliant7i-cjfph0d9d9f9d7fw.z03.azurefd.net/index.html?_event=811d3367999132f98b1335682c6e0a21&click_id=1f28108mwaxolem&tid=1043&subid=geogle.com&ref=geogle.com&18%3Fclick_id=1f28108mwaxolem&tid=1043&subid=geogle.com&ref=geogle.com&18=",
   "id": "v-01a1cc44-c89f",
   "scheme": "tech-support",
   "source": "urlscan.io",
@@ -8914,6 +9280,7 @@
   "blur": true
  },
  {
+  "url": "https://5009vwtcoyrbivpgtdjkgcrxdywpdscogy-gzfwdbapd0fqc9d6.z03.azurefd.net/?msclkid=95d6722633ae1938290718cdb8630cbc",
   "id": "v-01a1a823-7135",
   "scheme": "tech-support",
   "source": "urlscan.io",
@@ -8931,6 +9298,7 @@
   "blur": true
  },
  {
+  "url": "https://better-moccasin-rwnnpr3f-dpn5e8j270g7.edgeone.dev/",
   "id": "v-01a18aed-283a",
   "scheme": "tech-support",
   "source": "urlscan.io",
@@ -8946,6 +9314,7 @@
   "blur": false
  },
  {
+  "url": "https://veranta-vote-app3.pages.dev/",
   "id": "v-01a1dad1-7292",
   "scheme": "crypto-drainer",
   "source": "urlscan.io",
@@ -8961,6 +9330,7 @@
   "blur": false
  },
  {
+  "url": "https://5-governance-fraxfinance.pages.dev/",
   "id": "v-01a1dad1-489f",
   "scheme": "crypto-drainer",
   "source": "urlscan.io",
@@ -8978,6 +9348,7 @@
   "blur": false
  },
  {
+  "url": "https://4-governance-hyperpolicy.pages.dev/",
   "id": "v-01a1dad1-3d7c",
   "scheme": "crypto-drainer",
   "source": "urlscan.io",
@@ -8995,6 +9366,7 @@
   "blur": false
  },
  {
+  "url": "https://1-ascendlaunchgov.pages.dev/",
   "id": "v-01a1dad0-2f87",
   "scheme": "crypto-drainer",
   "source": "urlscan.io",
@@ -9010,6 +9382,7 @@
   "blur": false
  },
  {
+  "url": "https://7-allocation-umiafinance.pages.dev/",
   "id": "v-01a1dad0-3959",
   "scheme": "crypto-drainer",
   "source": "urlscan.io",
@@ -9025,6 +9398,7 @@
   "blur": false
  },
  {
+  "url": "https://11-apyx.pages.dev/",
   "id": "v-01a1dad0-3aa8",
   "scheme": "crypto-drainer",
   "source": "urlscan.io",
@@ -9040,6 +9414,7 @@
   "blur": false
  },
  {
+  "url": "https://ez-pazz-billing.129-121-100-114.cpanel.site/?kocak=pepek",
   "id": "v-01a18885-1a9f",
   "scheme": "fines",
   "source": "urlscan.io",
@@ -9057,6 +9432,7 @@
   "blur": false
  },
  {
+  "url": "https://ripcurlsale.com/collections/surfboards",
   "id": "v-01a1bf4a-09c1",
   "scheme": "fake-shop",
   "source": "urlscan.io",
@@ -9072,6 +9448,7 @@
   "blur": false
  },
  {
+  "url": "https://bg-plasthane.top/receive/714709825?a=150&d=31.12.2026&h=24",
   "id": "v-01a1ca75-38b7",
   "scheme": "payout",
   "source": "urlscan.io",
@@ -9091,6 +9468,7 @@
   "blur": false
  },
  {
+  "url": "https://ckvptc.com/",
   "id": "v-01a1b0ce-0d66",
   "scheme": "payout",
   "source": "urlscan.io",
@@ -9106,6 +9484,7 @@
   "blur": false
  },
  {
+  "url": "https://underground-emerald-qxnszcll-dpckhtvzsu9f.edgeone.dev/",
   "id": "v-01a17d5f-1b59",
   "scheme": "payout",
   "source": "urlscan.io",
@@ -9121,6 +9500,7 @@
   "blur": false
  },
  {
+  "url": "https://usps-server.serv00.net/",
   "id": "v-01a1446c-d672",
   "scheme": "fake-payment",
   "source": "urlscan.io",
@@ -9136,6 +9516,7 @@
   "blur": false
  },
  {
+  "url": "https://www.usps-server.serv00.net/",
   "id": "v-01a1446c-0e6f",
   "scheme": "fake-payment",
   "source": "urlscan.io",
@@ -9151,6 +9532,7 @@
   "blur": false
  },
  {
+  "url": "https://royalmail-delivers.com/",
   "id": "v-01a1dae3-269d",
   "scheme": "fake-payment",
   "source": "urlscan.io",
@@ -9166,6 +9548,7 @@
   "blur": false
  },
  {
+  "url": "https://redelivery-tracking-au.com/",
   "id": "v-01a19ffe-5616",
   "scheme": "fake-payment",
   "source": "urlscan.io",
@@ -9181,6 +9564,7 @@
   "blur": false
  },
  {
+  "url": "https://cryptopro-blockchain-dpyae1paz5hn.edgeone.dev/",
   "id": "v-01a1cbd2-ecb3",
   "scheme": "investment",
   "source": "urlscan.io",
@@ -9198,6 +9582,7 @@
   "blur": false
  },
  {
+  "url": "https://usdt-trading-platform-dpw7p0calbva.edgeone.dev/",
   "id": "v-01a1cbd1-9b3e",
   "scheme": "investment",
   "source": "urlscan.io",
@@ -9215,6 +9600,7 @@
   "blur": false
  },
  {
+  "url": "https://ready-copper-94hyt1zv-dpv1q61zwwxc.edgeone.dev/",
   "id": "v-01a1cbcb-7870",
   "scheme": "investment",
   "source": "urlscan.io",
@@ -9232,6 +9618,7 @@
   "blur": false
  },
  {
+  "url": "https://ulvenraq.icu/lander/do_64_v7_grisha_very_stupid_gaz_age_target_75_thanks_sardelkanewdate/index.php",
   "id": "v-01a18f55-d60a",
   "scheme": "investment",
   "source": "urlscan.io",
@@ -9249,6 +9636,7 @@
   "blur": false
  },
  {
+  "url": "https://oskavren.icu/lander/do_64_v7_grisha_very_stupid_gaz_age_target_75_thanks_sardelkanewdate/index.php",
   "id": "v-01a18bc2-0307",
   "scheme": "investment",
   "source": "urlscan.io",
@@ -9266,6 +9654,7 @@
   "blur": false
  },
  {
+  "url": "https://ravnethq.icu/lander/do_64_v7_grisha_very_stupid_gaz_age_target_75_thanks_sardelkanewdate/index.php",
   "id": "v-01a18bc1-f780",
   "scheme": "investment",
   "source": "urlscan.io",
@@ -9283,6 +9672,7 @@
   "blur": false
  },
  {
+  "url": "https://prymorel.icu/lander/do_64_v7_grisha_very_stupid_gaz_age_target_75_thanks_sardelkanewdate/index.php",
   "id": "v-01a18bc1-e160",
   "scheme": "investment",
   "source": "urlscan.io",
@@ -9300,6 +9690,7 @@
   "blur": false
  },
  {
+  "url": "https://difmuko.icu/lander/do_64_v3_very_stupid_gaz_age_target_75_thanks_sardelkanewdate/index.php",
   "id": "v-01a1519f-f2aa",
   "scheme": "investment",
   "source": "urlscan.io",
@@ -9317,6 +9708,7 @@
   "blur": false
  },
  {
+  "url": "https://cexmuri.icu/lander/do_64_v3_very_stupid_gaz_age_target_75_thanks_sardelkanewdate/index.php",
   "id": "v-01a1519f-179c",
   "scheme": "investment",
   "source": "urlscan.io",
@@ -9334,6 +9726,7 @@
   "blur": false
  },
  {
+  "url": "https://5008oczxvfaertwufxxhrhnevseruwoslt-fvacesdbargwdbha.z03.azurefd.net/?msclkid=3a97a5671d0314fb860fcf8c7c0ad21e",
   "id": "v-01a1a7ca-76ea",
   "scheme": "tech-support",
   "source": "urlscan.io",
@@ -9351,6 +9744,7 @@
   "blur": true
  },
  {
+  "url": "https://5015oeerdmxngbcgnypaayjfvncgwckwml-dveqevh4hdazhzbk.z03.azurefd.net/",
   "id": "v-01a1a7a1-330e",
   "scheme": "tech-support",
   "source": "urlscan.io",
@@ -9368,6 +9762,7 @@
   "blur": true
  },
  {
+  "url": "https://5005yzmiradngbtxbpooplqfpgehwmvnzy-apcpg0a7htf0eqa6.z03.azurefd.net/",
   "id": "v-01a1a262-6d6b",
   "scheme": "tech-support",
   "source": "urlscan.io",
@@ -9385,6 +9780,7 @@
   "blur": true
  },
  {
+  "url": "https://5001jmfqaihnbeyfsatewxwyatmbejcuwj-eggedsahc2apgebv.z03.azurefd.net/",
   "id": "v-01a1a233-8836",
   "scheme": "tech-support",
   "source": "urlscan.io",
@@ -9402,6 +9798,7 @@
   "blur": true
  },
  {
+  "url": "https://7001qoylcxgzlabxewsbychkjdowqviexz-e2gwaag7b0hhh9cg.z03.azurefd.net/",
   "id": "v-01a19348-444f",
   "scheme": "tech-support",
   "source": "urlscan.io",
@@ -9419,6 +9816,7 @@
   "blur": true
  },
  {
+  "url": "https://7006pzjhxlguipeogcqecwgfonyaudbbqb-hfgvhhc2efafe3hx.z03.azurefd.net/",
   "id": "v-01a19326-33ea",
   "scheme": "tech-support",
   "source": "urlscan.io",
@@ -9436,6 +9834,7 @@
   "blur": true
  },
  {
+  "url": "https://6-etherfi-allocation.pages.dev/",
   "id": "v-01a1dad0-34d9",
   "scheme": "crypto-drainer",
   "source": "urlscan.io",
@@ -9453,6 +9852,7 @@
   "blur": false
  },
  {
+  "url": "https://2-hub-ramsesgovernance.pages.dev/",
   "id": "v-01a1dad0-32cd",
   "scheme": "crypto-drainer",
   "source": "urlscan.io",
@@ -9470,6 +9870,7 @@
   "blur": false
  },
  {
+  "url": "https://6-mantle-allocations.pages.dev/",
   "id": "v-01a1dad0-2b11",
   "scheme": "crypto-drainer",
   "source": "urlscan.io",
@@ -9485,6 +9886,7 @@
   "blur": false
  },
  {
+  "url": "https://3-xstocks-allocation.pages.dev/",
   "id": "v-01a1dad0-2d18",
   "scheme": "crypto-drainer",
   "source": "urlscan.io",
@@ -9500,6 +9902,7 @@
   "blur": false
  },
  {
+  "url": "https://15-katanagov.pages.dev/",
   "id": "v-01a1dad0-1bd8",
   "scheme": "crypto-drainer",
   "source": "urlscan.io",
@@ -9517,6 +9920,7 @@
   "blur": false
  },
  {
+  "url": "https://33-fx-aladdin.pages.dev/",
   "id": "v-01a1dad0-1f47",
   "scheme": "crypto-drainer",
   "source": "urlscan.io",
@@ -9532,6 +9936,7 @@
   "blur": false
  },
  {
+  "url": "https://oplatahub.com/pay/800e7cd76c961c4a5b17d99a2924cc8f672b1c897e4466b80f3a6c1cd963eba4",
   "id": "v-01a09ec7-92c3",
   "scheme": "fake-payment",
   "source": "urlscan.io",
@@ -9547,6 +9952,7 @@
   "blur": false
  },
  {
+  "url": "https://nalozka-payment.site/payment.html?adid=185&order=10313726864&route=%d0%9a%d0%b0%d0%bc%d1%8b%d1%88%d0%b8%d0%bd%20-%20%d0%92%d0%be%d1%80%d0%be%d0%bd%d0%b5%d0%b6&amount=64900%20%e2%82%bd",
   "id": "v-01a0667a-33c4",
   "scheme": "fake-payment",
   "source": "urlscan.io",
@@ -9562,6 +9968,7 @@
   "blur": false
  },
  {
+  "url": "https://www.permanentmall.store/",
   "id": "v-01a10004-1969",
   "scheme": "fake-shop",
   "source": "urlscan.io",
@@ -9577,6 +9984,7 @@
   "blur": false
  },
  {
+  "url": "https://fivetelgate-dpd4r4iey27k.edgeone.dev/",
   "id": "v-01a13d36-4fbf",
   "scheme": "fake-payment",
   "source": "urlscan.io",
@@ -9594,6 +10002,7 @@
   "blur": false
  },
  {
+  "url": "https://paygate-dpj931jj60r0.edgeone.dev/",
   "id": "v-01a13d28-2c99",
   "scheme": "fake-payment",
   "source": "urlscan.io",
@@ -9611,6 +10020,7 @@
   "blur": false
  },
  {
+  "url": "https://faviconshopbtcpay-dpnhk2p9wx0h.edgeone.dev/",
   "id": "v-01a08c13-aa47",
   "scheme": "fake-shop",
   "source": "urlscan.io",
@@ -9626,6 +10036,7 @@
   "blur": false
  },
  {
+  "url": "http://avito2payment.ru/",
   "id": "v-019c2254-8334",
   "scheme": "fake-payment",
   "source": "urlscan.io",
@@ -9647,6 +10058,7 @@
   "blur": false
  },
  {
+  "url": "https://characteringsnib.site/",
   "id": "v-01a1cb6e-4454",
   "scheme": "investment",
   "source": "urlscan.io",
@@ -9664,6 +10076,7 @@
   "blur": false
  },
  {
+  "url": "https://platform-usdt-dp471locp87d.edgeone.dev/",
   "id": "v-01a1cbc6-3113",
   "scheme": "investment",
   "source": "urlscan.io",
@@ -9681,6 +10094,7 @@
   "blur": false
  },
  {
+  "url": "https://usdt-platform-dpt82age8q3j.edgeone.dev/",
   "id": "v-01a1cbc1-39ea",
   "scheme": "investment",
   "source": "urlscan.io",
@@ -9698,6 +10112,7 @@
   "blur": false
  },
  {
+  "url": "https://usdtplatform-dp2omeqybspv.edgeone.dev/",
   "id": "v-01a1cbb6-cf2c",
   "scheme": "investment",
   "source": "urlscan.io",
@@ -9715,6 +10130,7 @@
   "blur": false
  },
  {
+  "url": "https://structural-lime-vobjmtjc-dpxq60bucv6r.edgeone.dev/",
   "id": "v-01a1cb90-68ab",
   "scheme": "investment",
   "source": "urlscan.io",
@@ -9732,6 +10148,7 @@
   "blur": false
  },
  {
+  "url": "https://platform-dps4h7f2vu8m.edgeone.dev/",
   "id": "v-01a1cb86-89e0",
   "scheme": "investment",
   "source": "urlscan.io",
@@ -9749,6 +10166,7 @@
   "blur": false
  },
  {
+  "url": "https://platform-usdt-dpcrl3pl3t1p.edgeone.dev/",
   "id": "v-01a1cb70-5204",
   "scheme": "investment",
   "source": "urlscan.io",
@@ -9766,6 +10184,7 @@
   "blur": false
  },
  {
+  "url": "https://fizzy0-sapiente23.sbs/?d=QjNxVaDVWV0%2FutRMC9qoaahpRdvhwRrR6tojJyOseg34VeNo%2BTO6c5qvNfBK7ANnsobRHoxiRWqTJAFtvCTo2jUib3%2BewkD%2FLXDQ4uDmj6ayLOUxKXM6wGGHfBuLWnRdBtRFbUb4v7GC7gUxIvZdR2OLrapqjv1Uajt01wuvcJnHHx7h9pSp9V5nNoN9qrfwJd6hkBuP16lCo2Jdvd8NvYLeXEhTnBYqZe6Sbz%2Fq9nJzrIvG46C213ncMAuYijFX&on=Bitcoin+Era+New",
   "id": "v-01a0cd55-482e",
   "scheme": "investment",
   "source": "urlscan.io",
@@ -9783,6 +10202,7 @@
   "blur": false
  },
  {
+  "url": "https://pebblequoin.icu/lander/do_64_v3_very_stupid_gaz_age_target_75_thanks_sardelkanewdate/index.php",
   "id": "v-01a1519d-ec56",
   "scheme": "investment",
   "source": "urlscan.io",
@@ -9800,6 +10220,7 @@
   "blur": false
  },
  {
+  "url": "https://aqzviro.icu/lander/do_64_v3_very_stupid_gaz_age_target_75_thanks_sardelkanewdate/index.php",
   "id": "v-01a1519c-bf85",
   "scheme": "investment",
   "source": "urlscan.io",
@@ -9817,6 +10238,7 @@
   "blur": false
  },
  {
+  "url": "https://fozpeli.icu/lander/do_64_v7_grisha_very_stupid_gaz_age_target_75_thanks_sardelkanewdate/index.php",
   "id": "v-01a1519b-9187",
   "scheme": "investment",
   "source": "urlscan.io",
@@ -9834,6 +10256,7 @@
   "blur": false
  },
  {
+  "url": "https://needlehatch.icu/lander/do_64_v3_very_stupid_gaz_age_target_75_thanks_sardelkanewdate/index.php",
   "id": "v-01a1519a-b2a6",
   "scheme": "investment",
   "source": "urlscan.io",
@@ -9851,6 +10274,7 @@
   "blur": false
  },
  {
+  "url": "https://cezravi.icu/lander/do_64_v3_very_stupid_gaz_age_target_75_thanks_sardelkanewdate/index.php",
   "id": "v-01a15199-ac80",
   "scheme": "investment",
   "source": "urlscan.io",
@@ -9868,6 +10292,7 @@
   "blur": false
  },
  {
+  "url": "https://hazpuno.icu/lander/do_64_v3_very_stupid_gaz_age_target_75_thanks_sardelkanewdate/index.php",
   "id": "v-01a15198-cf1d",
   "scheme": "investment",
   "source": "urlscan.io",
@@ -9885,6 +10310,7 @@
   "blur": false
  },
  {
+  "url": "https://ironstitch.icu/lander/do_64_v7_grisha_very_stupid_gaz_age_target_75_thanks_sardelkanewdate/index.php",
   "id": "v-01a15197-efdb",
   "scheme": "investment",
   "source": "urlscan.io",
@@ -9902,6 +10328,7 @@
   "blur": false
  },
  {
+  "url": "https://symmetrical-octo-succotashhh-oiykj24e.on-forge.com/Wncodehelpolnecodexxweb/index.html",
   "id": "v-01a13b81-8a68",
   "scheme": "tech-support",
   "source": "urlscan.io",
@@ -9917,6 +10344,7 @@
   "blur": false
  },
  {
+  "url": "https://microsoft-support-alrt-altr877.pages.dev/",
   "id": "v-01a0ea7c-ce7f",
   "scheme": "tech-support",
   "source": "urlscan.io",
@@ -9934,6 +10362,7 @@
   "blur": false
  },
  {
+  "url": "https://microsoft-support-alrt-altr98.pages.dev/",
   "id": "v-01a0be61-4ae1",
   "scheme": "tech-support",
   "source": "urlscan.io",
@@ -9951,6 +10380,7 @@
   "blur": false
  },
  {
+  "url": "https://store001-dpk23eng7v19.edgeone.dev/",
   "id": "v-01a037df-db94",
   "scheme": "tech-support",
   "source": "urlscan.io",
@@ -9968,6 +10398,7 @@
   "blur": false
  },
  {
+  "url": "https://9005uiigpnubxhnvgkmdcoaezayzrvezsa-d4abc0ayeubfc4gq.z03.azurefd.net/",
   "id": "v-01a1892f-16dc",
   "scheme": "tech-support",
   "source": "urlscan.io",
@@ -9985,6 +10416,7 @@
   "blur": true
  },
  {
+  "url": "https://5011nuhnnzgkgkpjdafwsglkcytoirjtoa-fabmf4gyd0cchbak.z03.azurefd.net/?msclkid=810b964b4fc818861dabfcaa4da03ab3",
   "id": "v-01a17f03-59db",
   "scheme": "tech-support",
   "source": "urlscan.io",
@@ -10002,6 +10434,7 @@
   "blur": true
  },
  {
+  "url": "https://5002aixrsmsmhegwswwojdxklroutfzbby-cag4bde6h3bgdyhk.z03.azurefd.net/?msclkid=2ce770779094132fa3561a97590b6ae4",
   "id": "v-01a17e89-cfe3",
   "scheme": "tech-support",
   "source": "urlscan.io",
@@ -10019,6 +10452,7 @@
   "blur": true
  },
  {
+  "url": "https://9006tmuviwlelkgpkitfamjuqwtfljrjem-encwafaph4a3f4cr.z03.azurefd.net/",
   "id": "v-01a17990-c986",
   "scheme": "tech-support",
   "source": "urlscan.io",
@@ -10036,6 +10470,7 @@
   "blur": true
  },
  {
+  "url": "https://3001jstekyazkfrdzfjgjkqkkzfdypfjwr-epdtepe5ffhsb0hd.z03.azurefd.net/",
   "id": "v-01a1553e-7e7c",
   "scheme": "tech-support",
   "source": "urlscan.io",
@@ -10053,6 +10488,7 @@
   "blur": true
  },
  {
+  "url": "https://8001yspiiyyrwcecqkvbjgjdvfbexjzfao-edh5beetcwfffjf3.z03.azurefd.net/",
   "id": "v-01a14b7b-0426",
   "scheme": "tech-support",
   "source": "urlscan.io",
@@ -10070,6 +10506,7 @@
   "blur": true
  },
  {
+  "url": "https://1-governance-fwafun.pages.dev/",
   "id": "v-01a1dace-c739",
   "scheme": "crypto-drainer",
   "source": "urlscan.io",
@@ -10087,6 +10524,7 @@
   "blur": false
  },
  {
+  "url": "https://5-up33-allocations.pages.dev/",
   "id": "v-01a1dace-cd28",
   "scheme": "crypto-drainer",
   "source": "urlscan.io",
@@ -10104,6 +10542,7 @@
   "blur": false
  },
  {
+  "url": "https://7-allocations-ponsfamily.pages.dev/",
   "id": "v-01a1dace-9207",
   "scheme": "crypto-drainer",
   "source": "urlscan.io",
@@ -10119,6 +10558,7 @@
   "blur": false
  },
  {
+  "url": "https://ez-passupdatebiling.20-228-132-238.cpanel.site/?kocak=pepek",
   "id": "v-019ec6ac-5863",
   "scheme": "fines",
   "source": "urlscan.io",
@@ -10136,6 +10576,7 @@
   "blur": false
  },
  {
+  "url": "https://e-zpasscenter.20-244-12-151.cpanel.site/?kocak=pepek",
   "id": "v-019ea76c-15ea",
   "scheme": "fines",
   "source": "urlscan.io",
@@ -10153,6 +10594,7 @@
   "blur": false
  },
  {
+  "url": "https://e-zpassgroupstatement.20-244-12-151.cpanel.site/?kocak=pepek",
   "id": "v-019ea4b7-469d",
   "scheme": "fines",
   "source": "urlscan.io",
@@ -10170,6 +10612,7 @@
   "blur": false
  },
  {
+  "url": "https://e-zpassgroup-update.20-244-12-151.cpanel.site/?kocak=pepek",
   "id": "v-019ea43c-b8ea",
   "scheme": "fines",
   "source": "urlscan.io",
@@ -10187,6 +10630,7 @@
   "blur": false
  },
  {
+  "url": "https://energetic-gold-squirrel.213-165-245-113.cpanel.site/public/?kocak=pepek",
   "id": "v-019e6fc7-ce60",
   "scheme": "fines",
   "source": "urlscan.io",
@@ -10204,6 +10648,7 @@
   "blur": false
  },
  {
+  "url": "https://iagservicecorp.org/user/login",
   "id": "v-019dbef0-a7cf",
   "scheme": "fines",
   "source": "urlscan.io",
@@ -10219,6 +10664,7 @@
   "blur": false
  },
  {
+  "url": "https://eflow-toll.co.com/",
   "id": "v-01a01f63-e042",
   "scheme": "fines",
   "source": "urlscan.io",
@@ -10234,6 +10680,7 @@
   "blur": false
  },
  {
+  "url": "https://tolleflow.click/",
   "id": "v-019b111e-f926",
   "scheme": "fines",
   "source": "urlscan.io",
@@ -10249,6 +10696,7 @@
   "blur": false
  },
  {
+  "url": "https://gibdd-auto.ru/?ysclid=mvrs4rp0z9944756738",
   "id": "v-01a18190-8806",
   "scheme": "fines",
   "source": "urlscan.io",
@@ -10264,6 +10712,7 @@
   "blur": false
  },
  {
+  "url": "https://ros-gibdd-shtraf.ru/",
   "id": "v-01a0b8cd-f8cd",
   "scheme": "fines",
   "source": "urlscan.io",
@@ -10282,6 +10731,7 @@
   "blur": false
  },
  {
+  "url": "https://guesschrono.com/women-s-watches/",
   "id": "v-01a10eac-7607",
   "scheme": "fake-shop",
   "source": "urlscan.io",
@@ -10297,6 +10747,7 @@
   "blur": false
  },
  {
+  "url": "https://bulgaria-isplashanie.me/receive/4920130?a=150&d=31.12.2026&h=24",
   "id": "v-01a10bc8-26e3",
   "scheme": "payout",
   "source": "urlscan.io",
@@ -10316,6 +10767,7 @@
   "blur": false
  },
  {
+  "url": "https://parite-bulgaria.click/receive/70778810?a=600&d=31.12.2026&h=24",
   "id": "v-01a02f32-0252",
   "scheme": "payout",
   "source": "urlscan.io",
@@ -10335,6 +10787,7 @@
   "blur": false
  },
  {
+  "url": "https://www.moneyrefunded.xyz/",
   "id": "v-019f81d7-72cb",
   "scheme": "payout",
   "source": "urlscan.io",
@@ -10350,6 +10803,7 @@
   "blur": false
  },
  {
+  "url": "https://fintrud.ru/",
   "id": "v-019f0df2-84fd",
   "scheme": "payout",
   "source": "urlscan.io",
@@ -10365,6 +10819,7 @@
   "blur": false
  },
  {
+  "url": "https://trudprof.ru/",
   "id": "v-019eacd5-1780",
   "scheme": "payout",
   "source": "urlscan.io",
@@ -10380,6 +10835,7 @@
   "blur": false
  },
  {
+  "url": "https://sfrgos.ru/",
   "id": "v-019c0e27-1488",
   "scheme": "payout",
   "source": "urlscan.io",
@@ -10395,6 +10851,7 @@
   "blur": false
  },
  {
+  "url": "https://trudvsemreg.ru/",
   "id": "v-019ab968-84f8",
   "scheme": "payout",
   "source": "urlscan.io",
@@ -10410,6 +10867,7 @@
   "blur": false
  },
  {
+  "url": "https://www.sfrportal.online/",
   "id": "v-019aad20-333a",
   "scheme": "payout",
   "source": "urlscan.io",
@@ -10425,6 +10883,7 @@
   "blur": false
  },
  {
+  "url": "https://claim-evr.org/?fake_crap_for_dvmb_nalve_ldlots",
   "id": "v-019e39b2-02c5",
   "scheme": "crypto-drainer",
   "source": "urlscan.io",
@@ -10442,6 +10901,7 @@
   "blur": false
  },
  {
+  "url": "https://yandex-maps-ruclient.online/",
   "id": "v-01a0867f-de36",
   "scheme": "safe-account",
   "source": "urlscan.io",
@@ -10459,6 +10919,7 @@
   "blur": false
  },
  {
+  "url": "https://www.yandex-maps-ruclient.online/",
   "id": "v-01a0867e-d24a",
   "scheme": "safe-account",
   "source": "urlscan.io",
@@ -10476,6 +10937,7 @@
   "blur": false
  },
  {
+  "url": "https://yandex-maps-def-r-u.online/",
   "id": "v-01a08532-a148",
   "scheme": "safe-account",
   "source": "urlscan.io",
@@ -10493,6 +10955,7 @@
   "blur": false
  },
  {
+  "url": "https://www.yandex-maps-def-r-u.online/",
   "id": "v-01a08532-3182",
   "scheme": "safe-account",
   "source": "urlscan.io",
@@ -10510,6 +10973,7 @@
   "blur": false
  },
  {
+  "url": "https://login-tiktok-secure.online/",
   "id": "v-01a0850f-0728",
   "scheme": "safe-account",
   "source": "urlscan.io",
