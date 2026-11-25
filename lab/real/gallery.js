@@ -3,6 +3,7 @@ window.REAL_GALLERY = {
 "schemes": {
 "fake-payment": [
 {
+"url": "http://crm.carsinia.com/custom/fr/impots_final/b8a43",
 "id": "p-0",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -13,13 +14,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-0.jpg"
 },
 {
+"url": "http://irs.gov-validate-details.mitreacris-trans.ro/irs/",
 "id": "p-1",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -30,14 +31,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Вместе с картой просят данные, которые для оплаты не нужны",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования",
+"Вместе с картой просят девичью фамилию матери, номер соцстрахования"
 ],
 "stage": "pay",
 "img": "real/ext/p-1.jpg"
 },
 {
+"url": "http://mail.fallauae.com/nii/chase/info/ccinfo.php",
 "id": "p-2",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -48,14 +49,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Вместе с картой просят данные, которые для оплаты не нужны",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования",
+"Вместе с картой просят номер соцстрахования"
 ],
 "stage": "pay",
 "img": "real/ext/p-2.jpg"
 },
 {
+"url": "http://witchheal.com/.tmp/americanexpress.com.axpx-laxpwax/secure/cid.php?id=5e7c263d1d5bf79d3e7fa19e54acd37a5e7c263d1d5bf79d3e7fa19e54acd37a&session=5e7c263d1d5bf79d3e7fa19e54acd37a5e7c263d1d5bf79d3e",
 "id": "p-7",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -66,13 +67,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-7.jpg"
 },
 {
+"url": "http://metrocti.com/gustoreids/us/Ud0Acf9oTUdEr30AcXKr3XKCuohM9YCu/billaccount.html",
 "id": "p-9",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -83,14 +84,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Вместе с картой просят данные, которые для оплаты не нужны",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования",
+"Вместе с картой просят номер соцстрахования"
 ],
 "stage": "pay",
 "img": "real/ext/p-9.jpg"
 },
 {
+"url": "http://saigonsportcity.com/wp-content/plugins/Chasesupdate/Logon.php?LOB=RBGverify&amp;_pageLabel=page_verify",
 "id": "p-25",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -101,13 +102,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Вместе с картой просят данные, которые для оплаты не нужны"
+"Данные передаются без шифрования",
+"Вместе с картой просят пароль от почты, номер соцстрахования, девичью фамилию матери, PIN-код карты"
 ],
 "stage": "pay",
 "img": "real/ext/p-25.jpg"
 },
 {
+"url": "https://asyateknik.org/wp-admin/chase/dashboard.php",
 "id": "p-27",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -118,13 +120,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Вместе с картой просят данные, которые для оплаты не нужны",
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Вместе с картой просят пароль от почты, номер соцстрахования, PIN-код карты, девичью фамилию матери",
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/p-27.jpg"
 },
 {
+"url": "http://coloradopoolcovers.com/.getprime/irs/IRS%20CFN%205839-7391-31.html",
 "id": "p-29",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -135,14 +138,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Вместе с картой просят данные, которые для оплаты не нужны",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования",
+"Вместе с картой просят номер соцстрахования, девичью фамилию матери"
 ],
 "stage": "pay",
 "img": "real/ext/p-29.jpg"
 },
 {
+"url": "https://suppliersbd.com/web/verification-card.php",
 "id": "p-34",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -153,13 +156,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Вместе с картой просят данные, которые для оплаты не нужны",
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Вместе с картой просят PIN-код карты, девичью фамилию матери",
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/p-34.jpg"
 },
 {
+"url": "https://secure0authinfo.redirectme.net/chasecorrect/chsse/pinfr.php",
 "id": "p-35",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -170,13 +174,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Вместе с картой просят данные, которые для оплаты не нужны",
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Вместе с картой просят номер соцстрахования, девичью фамилию матери, PIN-код карты",
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/p-35.jpg"
 },
 {
+"url": "http://campoequip.com/wp/wp-includes/img/image/chase/chasenew/acct.php?&KaWgNF7fVluhmPYCsuktFDkImw9sVwroAxSt3jo16irH32OjveqLWsmq6NArMP59o0WqfbbvWxWmQQjxpnbLPqlTJPUfUxUPHvGMVB9Gge13VmFgfvkmAffj6DCaxowj",
 "id": "p-37",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -187,14 +192,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Вместе с картой просят данные, которые для оплаты не нужны",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования",
+"Вместе с картой просят номер соцстрахования"
 ],
 "stage": "pay",
 "img": "real/ext/p-37.jpg"
 },
 {
+"url": "https://uplink.natco-groups.com/Login/dashboard/overviewAccounts",
 "id": "p-43",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -205,13 +210,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Вместе с картой просят данные, которые для оплаты не нужны",
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Вместе с картой просят пароль от почты, PIN-код карты, номер соцстрахования, девичью фамилию матери",
+"Данные уходят на другой сайт"
 ],
 "stage": "pay",
 "img": "real/ext/p-43.jpg"
 },
 {
+"url": "http://theseller.com.mx/Facturacion/Actualizaciones/Imagenes/tmp/recovery/65464675666755.php",
 "id": "p-48",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -222,13 +228,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-48.jpg"
 },
 {
+"url": "http://mysecurityapple.com/e/authID=xXuz2/verification.html",
 "id": "p-52",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -239,13 +245,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-52.jpg"
 },
 {
+"url": "https://araucaniatv.cl/wp-admin/maint/css/Billing.php",
 "id": "p-53",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -256,13 +262,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Вместе с картой просят данные, которые для оплаты не нужны",
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Вместе с картой просят номер соцстрахования, девичью фамилию матери",
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/p-53.jpg"
 },
 {
+"url": "http://pappcorn.com/wp-content/plugins/.americanexpress.com.axp/amex/secure/cid2.php?id=d900da1fb152791acd4000fe441b17ffd900da1fb152791acd4000fe441b17ff&session=d900da1fb152791acd4000fe441b17ffd900da1",
 "id": "p-63",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -273,13 +280,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-63.jpg"
 },
 {
+"url": "http://rasana.in/subscribers/css/check/ntfx/browse/settings/settings.php",
 "id": "p-66",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -290,13 +297,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-66.jpg"
 },
 {
+"url": "http://joinermallets.com/bankofamerica.com/fd47f56fdd38723618a13d50ad38f811/info.php",
 "id": "p-72",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -307,14 +314,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Вместе с картой просят данные, которые для оплаты не нужны",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования",
+"Вместе с картой просят номер соцстрахования"
 ],
 "stage": "pay",
 "img": "real/ext/p-72.jpg"
 },
 {
+"url": "http://access004app.000webhostapp.com/Fr-account/verif.php",
 "id": "p-74",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -325,14 +332,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-74.jpg"
 },
 {
+"url": "https://bulkdonut.com/templates/c023service4cm1/eddboa/cc.php",
 "id": "p-83",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -343,13 +349,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Вместе с картой просят данные, которые для оплаты не нужны",
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Вместе с картой просят PIN-код карты",
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/p-83.jpg"
 },
 {
+"url": "http://smartindianagriculture.com/wp-includes/SimplePie/Content/Type/livraison.htms",
 "id": "p-94",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -360,13 +367,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-94.jpg"
 },
 {
+"url": "https://t3395702.p.clickup-attachments.com/t3395702/f3ea61b7-ab58-4dc7-8bdf-1d96353e4cd8/CHASE-BANK-CUSTOMER-VERIFICATION-PAGECHASE-2021-march.html?view=open",
 "id": "p-96",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -377,13 +384,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Вместе с картой просят данные, которые для оплаты не нужны",
-"Данные карты уходят на другой сайт"
+"Введённые данные уйдут через сервис пересылки форм",
+"Вместе с картой просят номер соцстрахования, пароль от почты"
 ],
 "stage": "pay",
 "img": "real/ext/p-96.jpg"
 },
 {
+"url": "http://mail.highestpointent.com/apple/apple/Account",
 "id": "p-101",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -394,13 +402,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-101.jpg"
 },
 {
+"url": "https://www.saarstore.com/ujsk/n/mi/verification.html",
 "id": "p-104",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -411,13 +419,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Вместе с картой просят данные, которые для оплаты не нужны",
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Вместе с картой просят девичью фамилию матери, номер соцстрахования, PIN-код карты, пароль от почты",
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/p-104.jpg"
 },
 {
+"url": "http://www.apctt.org/ckeditor/plugins/lframek/128d1da4e08667d5ec559d68354781c560a/indexx.php",
 "id": "p-111",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -428,13 +437,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-111.jpg"
 },
 {
+"url": "https://130097880-427789851941116712.preview.editmysite.com/uploads/1/3/0/0/130097880/log-in-bank-of-america.html",
 "id": "p-112",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -445,13 +454,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Вместе с картой просят данные, которые для оплаты не нужны",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования",
+"Вместе с картой просят PIN-код карты, номер соцстрахования, пароль от почты"
 ],
 "stage": "pay",
 "img": "real/ext/p-112.jpg"
 },
 {
+"url": "http://whatsapp.loopytime.im/f1ee083baf7bb88affb4bbe77dd229f0/account/",
 "id": "p-116",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -462,12 +472,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-116.jpg"
 },
 {
+"url": "https://www.marathontrack.com/111/mchase/second.html",
 "id": "p-117",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -478,13 +489,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Вместе с картой просят данные, которые для оплаты не нужны",
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Вместе с картой просят девичью фамилию матери",
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/p-117.jpg"
 },
 {
+"url": "https://hokibolt.hu/.well-known/chse.com/chase/home/verification-card.php",
 "id": "p-119",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -495,13 +507,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Вместе с картой просят данные, которые для оплаты не нужны",
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Вместе с картой просят номер соцстрахования, PIN-код карты, девичью фамилию матери",
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/p-119.jpg"
 },
 {
+"url": "http://dromananow.stagingsite.com.au/loge/home/verification-card.php",
 "id": "p-122",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -512,14 +525,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Вместе с картой просят данные, которые для оплаты не нужны",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования",
+"Вместе с картой просят номер соцстрахования, PIN-код карты, девичью фамилию матери"
 ],
 "stage": "pay",
 "img": "real/ext/p-122.jpg"
 },
 {
+"url": "http://www.exinvilproduc.com/profiles/standard/WellsFargo/connect.secure/log/present/contact.html?8bb9518f45a3b1879bd8c25de8d862e8-8bb9518f45a3b1879bd8c25de8d862e8-8bb9518f45a3b1879bd8c25de8d862e88bb9",
 "id": "p-123",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -530,14 +543,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Вместе с картой просят данные, которые для оплаты не нужны",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования",
+"Вместе с картой просят номер соцстрахования, PIN-код карты, пароль от почты"
 ],
 "stage": "pay",
 "img": "real/ext/p-123.jpg"
 },
 {
+"url": "https://131187547-758969404492316567.preview.editmysite.com/uploads/1/3/1/1/131187547/bankofamerica2020-verification-center-boa-accounts.html",
 "id": "p-125",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -548,13 +561,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Вместе с картой просят данные, которые для оплаты не нужны",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования",
+"Вместе с картой просят PIN-код карты, номер соцстрахования, пароль от почты"
 ],
 "stage": "pay",
 "img": "real/ext/p-125.jpg"
 },
 {
+"url": "http://simplehome.ca/loginx/eeae1f4e61bd904a7252d7254c29142f/initsec.php",
 "id": "p-126",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -565,13 +579,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-126.jpg"
 },
 {
+"url": "http://informations-update.com/check/here/informations/index",
 "id": "p-135",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -582,13 +596,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-135.jpg"
 },
 {
+"url": "https://coachtestprep.s3.amazonaws.com/uploads/newsletter/attachment/210185/USAA-ONLINE-BANKING-2020-VERIFICATION-PAGE.html",
 "id": "p-147",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -599,14 +613,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Вместе с картой просят данные, которые для оплаты не нужны",
-"Данные карты уходят на другой сайт",
-"Данные карты уходят на другой сайт"
+"Введённые данные уйдут через сервис пересылки форм",
+"Вместе с картой просят PIN-код карты, пароль от почты"
 ],
 "stage": "pay",
 "img": "real/ext/p-147.jpg"
 },
 {
+"url": "http://het-impp11.com/servi-mail-pro-webb111928270383jksddkjsdjks191171927282827383322",
 "id": "p-148",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -617,13 +631,31 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-148.jpg"
 },
 {
+"url": "https://www.paypalverifycentral.com/dc6c2ebca9ebbddc2a38b9977db33578/payment.php?dispatch=UIP3uXnwqP8JnuXnbPSYjbyxGKY15QoLFO4QS2i15Lky3BFKL8",
+"id": "p-150",
+"scheme": "fake-payment",
+"source": "Phish360",
+"date": "2020–2023",
+"domain": "www.paypalverifycentral.com",
+"title": "подделка paypal",
+"orig": null,
+"link": null,
+"verdict": "danger",
+"titles": [
+"Вместе с картой просят номер соцстрахования",
+"Номер карты получит сам сайт, а не банк"
+],
+"stage": "pay",
+"img": "real/ext/p-150.jpg"
+},
+{
+"url": "http://saluti24.ru/paypapMobile/afd82de65876c3ad3e40453713daaaa1/e130b6a059be74068f1c0a3de84c4c78/view/surf2.php",
 "id": "p-154",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -634,13 +666,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-154.jpg"
 },
 {
+"url": "http://smartindianagriculture.com/wp-includes/SimplePie/Content/Type/livraison.htm",
 "id": "p-155",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -651,13 +683,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-155.jpg"
 },
 {
+"url": "http://cartoworld.co.ke/smsm/chase/Logon.aspx/Billing.php",
 "id": "p-160",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -668,14 +700,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Вместе с картой просят данные, которые для оплаты не нужны",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования",
+"Вместе с картой просят номер соцстрахования, девичью фамилию матери, PIN-код карты"
 ],
 "stage": "pay",
 "img": "real/ext/p-160.jpg"
 },
 {
+"url": "http://downtowndavis.org/wp-content/plugins/id.html?&eventual-chase-international-dashboard9379487-jhbg76389",
 "id": "p-162",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -686,13 +718,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-162.jpg"
 },
 {
+"url": "http://35.188.36.185/cibc/27-03-2020/www.cibc.com/website",
 "id": "p-163",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -703,15 +735,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты уходят на другой сайт",
-"Данные карты уходят на другой сайт",
-"Данные карты уходят на другой сайт"
+"Данные передаются без шифрования",
+"Данные уходят на другой сайт"
 ],
 "stage": "pay",
 "img": "real/ext/p-163.jpg"
 },
 {
+"url": "http://173.82.143.219/Billing.php",
 "id": "p-168",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -722,13 +753,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Вместе с картой просят данные, которые для оплаты не нужны"
+"Данные передаются без шифрования",
+"Вместе с картой просят номер соцстрахования"
 ],
 "stage": "pay",
 "img": "real/ext/p-168.jpg"
 },
 {
+"url": "http://securitybb.duckdns.org/auth/itune/",
 "id": "p-169",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -739,13 +771,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-169.jpg"
 },
 {
+"url": "http://wazislamic.com/chase/chase/Billing.php",
 "id": "p-175",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -756,14 +788,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Вместе с картой просят данные, которые для оплаты не нужны",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования",
+"Вместе с картой просят номер соцстрахования, девичью фамилию матери"
 ],
 "stage": "pay",
 "img": "real/ext/p-175.jpg"
 },
 {
+"url": "http://glassbjerget.no/statistikk/questions.php",
 "id": "p-177",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -774,15 +806,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Вместе с картой просят данные, которые для оплаты не нужны",
-"Данные карты будут отправлены без шифрования",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования",
+"Вместе с картой просят пароль от почты, номер соцстрахования, девичью фамилию матери"
 ],
 "stage": "pay",
 "img": "real/ext/p-177.jpg"
 },
 {
+"url": "http://www.cv76se.com/~whileigo/wp-content/uploads/usaa_com/inetlogon/servelet_usaa/contact.php",
 "id": "p-178",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -793,14 +824,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Вместе с картой просят данные, которые для оплаты не нужны",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования",
+"Вместе с картой просят пароль от почты, номер соцстрахования, PIN-код карты"
 ],
 "stage": "pay",
 "img": "real/ext/p-178.jpg"
 },
 {
+"url": "http://orange.fr.sanpedroandjankowitz.com/orange2/30dcc66677dcfbbae233908da4d0ed02",
 "id": "p-179",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -811,13 +842,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-179.jpg"
 },
 {
+"url": "http://uptimeds.com/669/anotherin/94e959dccb8f56e1857ec35377d8644d/",
 "id": "p-182",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -828,16 +859,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Вместе с картой просят данные, которые для оплаты не нужны",
-"Данные карты будут отправлены без шифрования",
-"Данные карты будут отправлены без шифрования",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования",
+"Вместе с картой просят пароль от почты"
 ],
 "stage": "pay",
 "img": "real/ext/p-182.jpg"
 },
 {
+"url": "http://www.usaa.rbintll.com/usaa.verification/",
 "id": "p-186",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -848,14 +877,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Вместе с картой просят данные, которые для оплаты не нужны",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования",
+"Вместе с картой просят PIN-код карты, пароль от почты, номер соцстрахования, девичью фамилию матери"
 ],
 "stage": "pay",
 "img": "real/ext/p-186.jpg"
 },
 {
+"url": "http://puli-hostel.com.tw/libraries/azs/d8f5b25b7f586aa676016d43cc0108cd/x.htm",
 "id": "p-187",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -866,13 +895,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования",
+"Вместе с картой просят девичью фамилию матери, номер соцстрахования"
 ],
 "stage": "pay",
 "img": "real/ext/p-187.jpg"
 },
 {
+"url": "http://bursaburo.com/file/home/verification-card.php",
 "id": "p-190",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -883,14 +913,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Вместе с картой просят данные, которые для оплаты не нужны",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования",
+"Вместе с картой просят номер соцстрахования, PIN-код карты, девичью фамилию матери"
 ],
 "stage": "pay",
 "img": "real/ext/p-190.jpg"
 },
 {
+"url": "http://www.carterschartersfishing.com/netflix/pages/payment.php",
 "id": "p-192",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -901,13 +931,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-192.jpg"
 },
 {
+"url": "http://proxima-net.com/0193/webscr/",
 "id": "p-197",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -918,14 +948,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Вместе с картой просят данные, которые для оплаты не нужны",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования",
+"Вместе с картой просят номер соцстрахования"
 ],
 "stage": "pay",
 "img": "real/ext/p-197.jpg"
 },
 {
+"url": "http://fashionkeeda.in/me/bmo/information4364.php?sslchannel=true&amp;sessionid=xrBUswTnRWBlzTfC8idT1OKtdKKh7spEU1znxtKopmJYfZBnhOhjD2MQMw7TZxyTy7h5B2u0oeZDeA1v",
 "id": "p-200",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -936,14 +966,32 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Вместе с картой просят данные, которые для оплаты не нужны",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования",
+"Вместе с картой просят девичью фамилию матери, пароль от почты, PIN-код карты"
 ],
 "stage": "pay",
 "img": "real/ext/p-200.jpg"
 },
 {
+"url": "https://worldvisainfo.com/sitemaps/sec/Step2.php?cmd=_account-details&session=894cb49bb392a23cb2e104954a152f21&dispatch=9d654bec9f41b3c6ec6d6a2516e8fb2b5e1a0d32",
+"id": "p-204",
+"scheme": "fake-payment",
+"source": "Phish360",
+"date": "2020–2023",
+"domain": "worldvisainfo.com",
+"title": "подделка boa",
+"orig": null,
+"link": null,
+"verdict": "danger",
+"titles": [
+"Вместе с картой просят PIN-код карты",
+"Номер карты получит сам сайт, а не банк"
+],
+"stage": "pay",
+"img": "real/ext/p-204.jpg"
+},
+{
+"url": "https://ib.nabaccount.info/login",
 "id": "p-205",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -954,13 +1002,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Вместе с картой просят данные, которые для оплаты не нужны",
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Вместе с картой просят PIN-код карты",
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/p-205.jpg"
 },
 {
+"url": "https://gooldex.com/goold/YAHOO/Att/confirmation.html",
 "id": "p-206",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -971,13 +1020,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Вместе с картой просят данные, которые для оплаты не нужны",
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Вместе с картой просят девичью фамилию матери, номер соцстрахования",
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/p-206.jpg"
 },
 {
+"url": "http://46.21.147.248/banks/CIBC/73a6087eed083d86d80e0dc41391b30b",
 "id": "p-217",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -988,13 +1038,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-217.jpg"
 },
 {
+"url": "https://assalweb.org/assal_svs/cuadros/tmp/user/id/567567575/bofaconcorreo/boaxx/4b5033/i/verification.php",
 "id": "p-221",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -1005,13 +1055,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Вместе с картой просят данные, которые для оплаты не нужны",
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Вместе с картой просят пароль от почты",
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/p-221.jpg"
 },
 {
+"url": "http://www.studiocoge.eu/news/14/",
 "id": "p-222",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -1022,13 +1073,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-222.jpg"
 },
 {
+"url": "http://101.99.90.161/banks/CIBC/1baaa29c06944f407c17d98eead77904/",
 "id": "p-225",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -1039,13 +1090,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-225.jpg"
 },
 {
+"url": "http://www.kerenorins.co.il/wp-includes/pomo/account/pp-id/secure/users/Login.ID-17827/signin/myaccount.php?country.x=&locale.x=&SEC.x=ID-PA&home?&Safety=&",
 "id": "p-229",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -1056,13 +1107,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-229.jpg"
 },
 {
+"url": "https://kd-vrn.ru/saneret/applz/ruezz.htm?cmd=login_submit&id=a4d76ca03585e1e7d84c20f3e0c49901a4d76ca03585e1e7d84c20f3e0c49901&session=a4d76ca03585e1e7d84c20f3e0c49901a4d76ca03585e1e7d84c20f3e0c49901",
 "id": "p-230",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -1073,13 +1124,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Вместе с картой просят данные, которые для оплаты не нужны",
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Вместе с картой просят пароль от почты, номер соцстрахования, PIN-код карты",
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/p-230.jpg"
 },
 {
+"url": "http://www.musikschule-elegie.de/administrator/language/cibc/",
 "id": "p-231",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -1090,15 +1142,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования",
-"Данные карты будут отправлены без шифрования",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-231.jpg"
 },
 {
+"url": "https://deafnewsline.com/web/verification-card.php?cmd=_account-details&session=72e73136c8b35f29e55202f678416857&dispatch=59392347ce44ce7fd939b053399095b391f0af80",
 "id": "p-232",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -1109,13 +1159,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Вместе с картой просят данные, которые для оплаты не нужны",
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Вместе с картой просят номер соцстрахования, PIN-код карты, девичью фамилию матери",
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/p-232.jpg"
 },
 {
+"url": "http://solidaire.apf.asso.fr/wp-admin/includes/nab/nab-au/8f8551OGY4NTUx8f8551/index.html?dispatch=ccc3600b6ed52eb112056d2751810674cd9defbb&id=21cbdfeeddb481a55eaf9c82925c8dfd",
 "id": "p-236",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -1126,13 +1177,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-236.jpg"
 },
 {
+"url": "http://deep-institute.com/boa/update.html",
 "id": "p-237",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -1143,14 +1194,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Вместе с картой просят данные, которые для оплаты не нужны",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования",
+"Вместе с картой просят PIN-код карты, номер соцстрахования"
 ],
 "stage": "pay",
 "img": "real/ext/p-237.jpg"
 },
 {
+"url": "http://www.diycarbonwheels.com/includes/bak/PayPal/remository.utilitie.php",
 "id": "p-242",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -1161,13 +1212,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-242.jpg"
 },
 {
+"url": "https://oneclick877.webcindario.com/bofa/boa/detaiinfo.php",
 "id": "p-243",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -1178,13 +1229,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Вместе с картой просят данные, которые для оплаты не нужны",
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Вместе с картой просят номер соцстрахования, PIN-код карты, пароль от почты",
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/p-243.jpg"
 },
 {
+"url": "http://viewnflix.idtoken.ga/",
 "id": "p-246",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -1195,13 +1247,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-246.jpg"
 },
 {
+"url": "https://coxmailsecurel0ap.blogdns.org/COX/and_login.html",
 "id": "p-248",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -1212,12 +1264,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Вместе с картой просят данные, которые для оплаты не нужны"
+"Вместе с картой просят девичью фамилию матери, номер соцстрахования, PIN-код карты"
 ],
 "stage": "pay",
 "img": "real/ext/p-248.jpg"
 },
 {
+"url": "http://primasofa.com/account/cgi/card_info.php?=__-03/07/2019%20,%208:09%20am",
 "id": "p-249",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -1228,14 +1281,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-249.jpg"
 },
 {
+"url": "http://www.groupinsurance.net.in/css/af95fwyr5btomloerxa/update/info-verification.html",
 "id": "p-253",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -1246,14 +1298,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Вместе с картой просят данные, которые для оплаты не нужны",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования",
+"Вместе с картой просят девичью фамилию матери, номер соцстрахования"
 ],
 "stage": "pay",
 "img": "real/ext/p-253.jpg"
 },
 {
+"url": "http://quick-activity.ghsinfotech.com/ID23430D02=/myaccount/mycard.php?websrc=e17ea285ad581008aac6b89b49ab879e&dispatched=92&id=9406851055",
 "id": "p-255",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -1264,13 +1316,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-255.jpg"
 },
 {
+"url": "http://www.e-perpus.sidoarjokab.go.id/perpusda/transaksional/_notes/Update.php?country_x=-&ACCT_x=ID-PPL%3DPA3243.95.22.88%3DScrPg%3Dd2d22e64acb6922b1722a0cb10ea8f5af46302b4f36b5d27f1b471a92beeea74S%3",
 "id": "p-256",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -1281,13 +1333,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-256.jpg"
 },
 {
+"url": "http://aerioustravel.com/API_includes/KIU/1/card.php",
 "id": "p-258",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -1298,13 +1350,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования",
+"Вместе с картой просят PIN-код карты"
 ],
 "stage": "pay",
 "img": "real/ext/p-258.jpg"
 },
 {
+"url": "http://aerioustravel.com/API_includes/KIU/1/ps.php",
 "id": "p-259",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -1315,13 +1368,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-259.jpg"
 },
 {
+"url": "http://derynwarren.com/PayPal/Card_Details.html",
 "id": "p-260",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -1332,13 +1385,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-260.jpg"
 },
 {
+"url": "http://art-sticker.fr/humby/librairies/manual/4f369c64f0d85c3874418eb961017059/way.php",
 "id": "p-261",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -1349,13 +1402,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования",
+"Вместе с картой просят номер соцстрахования"
 ],
 "stage": "pay",
 "img": "real/ext/p-261.jpg"
 },
 {
+"url": "http://vuybinokloliuytr68ik-okgt.pagedemo.co/",
 "id": "p-263",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -1366,13 +1420,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-263.jpg"
 },
 {
+"url": "http://slabcitysweets.com/step-1/",
 "id": "p-265",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -1383,13 +1437,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-265.jpg"
 },
 {
+"url": "http://paypal-support.valid389.ml/details.html",
 "id": "p-266",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -1400,13 +1454,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования",
+"Вместе с картой просят номер соцстрахования"
 ],
 "stage": "pay",
 "img": "real/ext/p-266.jpg"
 },
 {
+"url": "https://availableupgrade1enhancedsupp6470.ml/www/logbmo/auth/idverf.html",
 "id": "p-275",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -1417,13 +1472,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Вместе с картой просят данные, которые для оплаты не нужны",
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Вместе с картой просят номер соцстрахования, PIN-код карты, пароль от почты",
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/p-275.jpg"
 },
 {
+"url": "http://viaggioblu.jp/wp-content/css/coxfulz/coxfulz/verify/verify/verify/verify/and_login.php",
 "id": "p-281",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -1434,13 +1490,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Вместе с картой просят данные, которые для оплаты не нужны"
+"Данные передаются без шифрования",
+"Вместе с картой просят девичью фамилию матери, номер соцстрахования, PIN-код карты"
 ],
 "stage": "pay",
 "img": "real/ext/p-281.jpg"
 },
 {
+"url": "http://www.haunreoiye.com/FolDtueTMCsINERqyVawXgxCqBvhKYlRugqDBaVEqTxyKsFoIXYMCwNvCeht/Loading/vartish.asp",
 "id": "p-284",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -1451,13 +1508,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-284.jpg"
 },
 {
+"url": "http://findtheseess.art/8/files/28cc2393248cb12a04832f7c6d4267f0/details.php",
 "id": "p-292",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -1468,13 +1525,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Вместе с картой просят данные, которые для оплаты не нужны"
+"Данные передаются без шифрования",
+"Вместе с картой просят номер соцстрахования, девичью фамилию матери, PIN-код карты"
 ],
 "stage": "pay",
 "img": "real/ext/p-292.jpg"
 },
 {
+"url": "http://pruebadepaginate.webcindario.com/index5.html",
 "id": "p-296",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -1485,14 +1543,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Вместе с картой просят данные, которые для оплаты не нужны",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования",
+"Вместе с картой просят номер соцстрахования, PIN-код карты"
 ],
 "stage": "pay",
 "img": "real/ext/p-296.jpg"
 },
 {
+"url": "http://invoidcz35.com/directing/www.cibc.mobi/ebm-mobile-anp/account.php",
 "id": "p-298",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -1503,13 +1561,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-298.jpg"
 },
 {
+"url": "http://www.linkedinpublic.com/checkout.php",
 "id": "p-300",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -1520,13 +1578,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-300.jpg"
 },
 {
+"url": "http://proxima-net.com/0193/webscr/",
 "id": "p-305",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -1537,14 +1595,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Вместе с картой просят данные, которые для оплаты не нужны",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования",
+"Вместе с картой просят номер соцстрахования"
 ],
 "stage": "pay",
 "img": "real/ext/p-305.jpg"
 },
 {
+"url": "https://bqinteriors.co.za/cox/verify/verify.php",
 "id": "p-310",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -1555,13 +1613,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Вместе с картой просят данные, которые для оплаты не нужны",
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Вместе с картой просят номер соцстрахования, девичью фамилию матери",
+"Данные уходят на другой сайт"
 ],
 "stage": "pay",
 "img": "real/ext/p-310.jpg"
 },
 {
+"url": "http://hoganlong.com/wellsfargo_internetbanking/onlinebanking/verify55us.php",
 "id": "p-311",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -1572,14 +1631,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Вместе с картой просят данные, которые для оплаты не нужны",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования",
+"Вместе с картой просят номер соцстрахования, PIN-код карты, пароль от почты"
 ],
 "stage": "pay",
 "img": "real/ext/p-311.jpg"
 },
 {
+"url": "http://www.webonedesign.de/wp-includes/usaa.auth/contact.php",
 "id": "p-329",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -1590,13 +1649,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-329.jpg"
 },
 {
+"url": "http://104.197.144.174/update.Apple.account/?2=",
 "id": "p-330",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -1607,14 +1666,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Вместе с картой просят данные, которые для оплаты не нужны",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования",
+"Вместе с картой просят девичью фамилию матери"
 ],
 "stage": "pay",
 "img": "real/ext/p-330.jpg"
 },
 {
+"url": "http://u511082kbt.ha003.t.justns.ru/scertt/522b8b741cbc338d1a5c3ac5beddedfd",
 "id": "p-332",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -1625,13 +1684,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-332.jpg"
 },
 {
+"url": "https://bakinsoport.webcindario.com/BankOfAmerica/information.php",
 "id": "p-333",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -1642,13 +1701,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Вместе с картой просят данные, которые для оплаты не нужны",
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Вместе с картой просят PIN-код карты, номер соцстрахования",
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/p-333.jpg"
 },
 {
+"url": "http://bullhire.com/de/sparkasse/login-online-banking.html=true/login.php",
 "id": "p-337",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -1659,13 +1719,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-337.jpg"
 },
 {
+"url": "https://jobselect.ml/servce/verify%20cox/25477ed2fbc8e5f7ea74f1898acdba3d/verify.php",
 "id": "p-338",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -1676,13 +1736,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Вместе с картой просят данные, которые для оплаты не нужны",
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Вместе с картой просят номер соцстрахования, девичью фамилию матери",
+"Данные уходят на другой сайт"
 ],
 "stage": "pay",
 "img": "real/ext/p-338.jpg"
 },
 {
+"url": "http://syyysssteemgayo.com/",
 "id": "p-339",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -1693,14 +1754,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Вместе с картой просят данные, которые для оплаты не нужны",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования",
+"Вместе с картой просят PIN-код карты, номер соцстрахования"
 ],
 "stage": "pay",
 "img": "real/ext/p-339.jpg"
 },
 {
+"url": "http://traditioperennis.com/HERMETICA/BOEHME/modez/Verify2.php?sessionid=XjgJhNHAyo0KcArjP5o2SRIzYMNxr5BooS8GFPhedhZqSqJHw8JpZsYXeLuFQ64fYcWE2dTgvSGnjq5Q&amp;securessl=true",
 "id": "p-346",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -1711,13 +1772,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-346.jpg"
 },
 {
+"url": "http://usaa.com-sec-inet-auth-logon-ent-logon-logon-redirectjsp8774.oceanvibes.com.au/00inet.ent_Logon.logon.path.redirectjsp-true/contact.php",
 "id": "p-347",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -1728,14 +1789,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Вместе с картой просят данные, которые для оплаты не нужны",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования",
+"Вместе с картой просят пароль от почты, номер соцстрахования, PIN-код карты"
 ],
 "stage": "pay",
 "img": "real/ext/p-347.jpg"
 },
 {
+"url": "http://chasa-inc.sytes.net/chase2018/chase/card.php",
 "id": "p-352",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -1746,14 +1807,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Вместе с картой просят данные, которые для оплаты не нужны",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования",
+"Вместе с картой просят PIN-код карты, номер соцстрахования, девичью фамилию матери"
 ],
 "stage": "pay",
 "img": "real/ext/p-352.jpg"
 },
 {
+"url": "http://www.exestateteasales.com/lib/phpseclib/PHP/Compat/Function/bankofamericansers/bankofamericalamba/loginmastercardbusinessnetwork/authenticating/indexing/bankofamericafolders/onlinebanking/confir",
 "id": "p-353",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -1764,13 +1825,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Вместе с картой просят данные, которые для оплаты не нужны"
+"Данные передаются без шифрования",
+"Вместе с картой просят PIN-код карты, пароль от почты, номер соцстрахования, девичью фамилию матери"
 ],
 "stage": "pay",
 "img": "real/ext/p-353.jpg"
 },
 {
+"url": "http://verificationeric.webcindario.com/verification.php",
 "id": "p-358",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -1781,13 +1843,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования",
+"Вместе с картой просят PIN-код карты"
 ],
 "stage": "pay",
 "img": "real/ext/p-358.jpg"
 },
 {
+"url": "http://verificationeric.webcindario.com/inf-card.php",
 "id": "p-359",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -1798,13 +1861,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования",
+"Вместе с картой просят PIN-код карты"
 ],
 "stage": "pay",
 "img": "real/ext/p-359.jpg"
 },
 {
+"url": "https://augmentedtransport.com/login/app_acc.html",
 "id": "p-362",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -1815,13 +1879,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Вместе с картой просят данные, которые для оплаты не нужны",
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Вместе с картой просят девичью фамилию матери",
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/p-362.jpg"
 },
 {
+"url": "http://gamcinx.com/account-reset-update/netflix%202/Cards.php",
 "id": "p-364",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -1832,13 +1897,31 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-364.jpg"
 },
 {
+"url": "https://appl.rec0v-acc0upd-sec932.com/update_info/websc-billing.php",
+"id": "p-365",
+"scheme": "fake-payment",
+"source": "Phish360",
+"date": "2020–2023",
+"domain": "appl.rec0v-acc0upd-sec932.com",
+"title": "подделка apple",
+"orig": null,
+"link": null,
+"verdict": "danger",
+"titles": [
+"Вместе с картой просят PIN-код карты",
+"Номер карты получит сам сайт, а не банк"
+],
+"stage": "pay",
+"img": "real/ext/p-365.jpg"
+},
+{
+"url": "http://servincnet.ddns.net/orange.fr/confirmation/",
 "id": "p-366",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -1849,13 +1932,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-366.jpg"
 },
 {
+"url": "http://diaconaleplatforms.nl/wp-content/bankofamerica/www/secure.bankofamerica.com/login/sign-in/signOnV2Screen.go/login/details.php",
 "id": "p-367",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -1866,13 +1949,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Вместе с картой просят данные, которые для оплаты не нужны"
+"Данные передаются без шифрования",
+"Вместе с картой просят PIN-код карты, пароль от почты"
 ],
 "stage": "pay",
 "img": "real/ext/p-367.jpg"
 },
 {
+"url": "http://www.tnc.com.co/modules/techniques/",
 "id": "p-370",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -1883,13 +1967,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-370.jpg"
 },
 {
+"url": "http://www.ready2study.com/comments/highslide/graphics/outlines/news/39993e/en/seasonconfirmc.php",
 "id": "p-373",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -1900,13 +1984,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-373.jpg"
 },
 {
+"url": "http://longsdale.dk/5DSJKYT-5D78G45-3148TYUI1-FBZF6E15-1L46GSRFD-SC1DF6JDG4/default/67548f9d7aa2f227e7958f8f71e0f867",
 "id": "p-375",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -1917,13 +2001,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-375.jpg"
 },
 {
+"url": "http://www.amancreations.de/wp-content/-/WellsHome/WfsHome/WfsHome/page/index3.html",
 "id": "p-376",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -1934,14 +2018,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Вместе с картой просят данные, которые для оплаты не нужны",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования",
+"Вместе с картой просят PIN-код карты, номер соцстрахования"
 ],
 "stage": "pay",
 "img": "real/ext/p-376.jpg"
 },
 {
+"url": "http://www.gimaq.com/css/c1/Chase/Billing.php?LOB=Verfiy_Info",
 "id": "p-377",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -1952,14 +2036,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Вместе с картой просят данные, которые для оплаты не нужны",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования",
+"Вместе с картой просят девичью фамилию матери, PIN-код карты, пароль от почты"
 ],
 "stage": "pay",
 "img": "real/ext/p-377.jpg"
 },
 {
+"url": "http://www.husnadesigns.uk/.en/1/info.html",
 "id": "p-378",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -1970,14 +2054,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Вместе с картой просят данные, которые для оплаты не нужны",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования",
+"Вместе с картой просят PIN-код карты, номер соцстрахования"
 ],
 "stage": "pay",
 "img": "real/ext/p-378.jpg"
 },
 {
+"url": "http://tta.org.mk/modules/mod_search/tmpl/css/bofa/login/details.php",
 "id": "p-379",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -1988,14 +2072,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Вместе с картой просят данные, которые для оплаты не нужны",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования",
+"Вместе с картой просят номер соцстрахования, PIN-код карты, пароль от почты"
 ],
 "stage": "pay",
 "img": "real/ext/p-379.jpg"
 },
 {
+"url": "http://austlives.com/ib.nab.suspected/details.conf.php",
 "id": "p-380",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -2006,13 +2090,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-380.jpg"
 },
 {
+"url": "http://142.93.208.119/1/online/BMO/456e7ccc5f17689da434fefdb96ff030/update.html",
 "id": "p-382",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -2023,13 +2107,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-382.jpg"
 },
 {
+"url": "http://142.93.208.119/1/online/BMO/",
 "id": "p-383",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -2040,13 +2124,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-383.jpg"
 },
 {
+"url": "http://3ka2.ir/cbcb/opwk/index.html",
 "id": "p-384",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -2057,13 +2141,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-384.jpg"
 },
 {
+"url": "http://kosmetologbel.ru/cache/page/jwsigpro_cache_03aeec6d67_monako_/2be8e616b747f9d0903ff11597c4656c/",
 "id": "p-387",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -2074,13 +2158,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-387.jpg"
 },
 {
+"url": "http://150.242.180.31/cfdocs/signincountry.x=ie/&locale.x=en_ie_webscrcmd=_flow&session=fj3e0ilvrchc_c8zalzvqnhgzpt6h88t891bqx9pvcjhgkay1fq1pamiboc&dispatch=c70bbe41527861c2b97c3d1f6a850acfdd2fbb19a3d",
 "id": "p-393",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -2091,13 +2175,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-393.jpg"
 },
 {
+"url": "http://weready.org/earthquake/administrator/modules/mod_online/PayPaI/966dc1d0f2c036420ceefde1adccdcf0/inf.html",
 "id": "p-394",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -2108,13 +2192,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-394.jpg"
 },
 {
+"url": "http://www.securyz.fr/38b6f23301ebdf83812c7e138b56f4d1/myacccount.php",
 "id": "p-395",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -2125,13 +2209,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-395.jpg"
 },
 {
+"url": "http://paypal.finprac.in/customer_center/customer-IDPP00C625/settings/settings.php",
 "id": "p-396",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -2142,13 +2226,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-396.jpg"
 },
 {
+"url": "http://bodrogiirodahaz.hu/sites/default/files/@@/@@/5bc134866745048/account/Account.php?cmd=_update&dispatch=608c0216da1deb955&locale=en_",
 "id": "p-399",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -2159,13 +2243,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-399.jpg"
 },
 {
+"url": "http://www.donnairons.com/wp/wp-includes/ap/Update.html",
 "id": "p-402",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -2176,13 +2260,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-402.jpg"
 },
 {
+"url": "http://www.goalpost.com.br/amazon/teymaks/e007c29172/lastmono.php?cmd=_update_information&account_wall=b2f033820bc97b7037b2ecc58b79710b&lim_session=e8bca1c6bdbc83a3732c744f40dba1a1ae8f8a0f",
 "id": "p-403",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -2193,13 +2277,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-403.jpg"
 },
 {
+"url": "http://www.globalsports.com.bd/.well-known/pki-validation/PPL_V1_PRO/customer_center/customer-IDPP00C538/settings/settings.php?cmd=_update-information&amp;account_update=c7f8aab9a80e5a386b0ed61d93e921",
 "id": "p-404",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -2210,13 +2294,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-404.jpg"
 },
 {
+"url": "http://www.riversandyears.com/wp-content/plugins/login/sign-in/im2zjmwu=/details.php",
 "id": "p-406",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -2227,14 +2311,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Вместе с картой просят данные, которые для оплаты не нужны",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования",
+"Вместе с картой просят пароль от почты, номер соцстрахования, PIN-код карты"
 ],
 "stage": "pay",
 "img": "real/ext/p-406.jpg"
 },
 {
+"url": "http://www.riversandyears.com/wp-content/plugins/login/sign-in/im2zjmwu=/mobile.php",
 "id": "p-407",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -2245,14 +2329,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Вместе с картой просят данные, которые для оплаты не нужны",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования",
+"Вместе с картой просят пароль от почты, PIN-код карты"
 ],
 "stage": "pay",
 "img": "real/ext/p-407.jpg"
 },
 {
+"url": "http://www.riversandyears.com/wp-content/plugins/login/sign-in/im2zjmwu=/security.php",
 "id": "p-408",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -2263,14 +2347,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Вместе с картой просят данные, которые для оплаты не нужны",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования",
+"Вместе с картой просят пароль от почты, номер соцстрахования, PIN-код карты"
 ],
 "stage": "pay",
 "img": "real/ext/p-408.jpg"
 },
 {
+"url": "http://secure.info.updates.chase.log.alertno.id89321980321832107321612931269132.ienop.org.pe/up/myaccount/vbv.php?websrc=e17ea285ad581008aac6b89b49ab879e&amp;dispatched=94&amp;id=5108869032",
 "id": "p-409",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -2281,13 +2365,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования",
+"Вместе с картой просят номер соцстрахования"
 ],
 "stage": "pay",
 "img": "real/ext/p-409.jpg"
 },
 {
+"url": "https://xn--80abmuei.xn--p1ai/images/df54g5fr41g54f1r5g/fg5h45g6f4d16g4h1j6g41fd641gh6541fr6d/v.html",
 "id": "p-410",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -2298,13 +2383,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Вместе с картой просят данные, которые для оплаты не нужны",
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Вместе с картой просят номер соцстрахования, девичью фамилию матери, пароль от почты, PIN-код карты",
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/p-410.jpg"
 },
 {
+"url": "http://www.kmacraeandson.co.uk/Online-Support/login/login/customer_center/customer-IDPP00C873/myaccount/settings/",
 "id": "p-414",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -2315,13 +2401,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-414.jpg"
 },
 {
+"url": "http://nordazpro.flywheelsites.com/wp-content/plugins/ubh/hola/supp/07b35/dir/car.php?cmd=_account-details&amp;session=fd42d6f1e69f709e85d04de7056fecfc&amp;dispatch=4dabbf9985dfaae1ecd985bb06b8b6d63a0",
 "id": "p-425",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -2332,13 +2418,32 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования",
+"Вместе с картой просят номер соцстрахования"
 ],
 "stage": "pay",
 "img": "real/ext/p-425.jpg"
 },
 {
+"url": "https://elearning.agence-erasmus.fr/manager/pdf/font/makefont/fr/confirmation.php",
+"id": "p-427",
+"scheme": "fake-payment",
+"source": "Phish360",
+"date": "2020–2023",
+"domain": "elearning.agence-erasmus.fr",
+"title": "подделка paypal",
+"orig": null,
+"link": null,
+"verdict": "danger",
+"titles": [
+"Вместе с картой просят PIN-код карты",
+"Номер карты получит сам сайт, а не банк"
+],
+"stage": "pay",
+"img": "real/ext/p-427.jpg"
+},
+{
+"url": "https://siam-ship.com/.nhb/contact.php",
 "id": "p-433",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -2349,13 +2454,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Вместе с картой просят данные, которые для оплаты не нужны",
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Вместе с картой просят пароль от почты, номер соцстрахования, PIN-код карты",
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/p-433.jpg"
 },
 {
+"url": "https://curso48horas.com.br/etransf/files/tags_data/HP_data/data-htm/chase/card.php",
 "id": "p-435",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -2366,13 +2472,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Вместе с картой просят данные, которые для оплаты не нужны",
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Вместе с картой просят PIN-код карты, номер соцстрахования",
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/p-435.jpg"
 },
 {
+"url": "http://gluk.kg/sfr.fr/",
 "id": "p-436",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -2383,13 +2490,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-436.jpg"
 },
 {
+"url": "http://bounce2health.com/wp-content/bill/BillingCenter@aim.com/BillingCenter@aim.com/BillingCenter@aim.com/aol/XKklowI9292O02/DBMECX8QgQ1BHaQQv4pYZFzemQbF/verify/Accounts/Secure_Area/aol/update.php",
 "id": "p-440",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -2400,14 +2507,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Вместе с картой просят данные, которые для оплаты не нужны",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования",
+"Вместе с картой просят девичью фамилию матери, номер соцстрахования"
 ],
 "stage": "pay",
 "img": "real/ext/p-440.jpg"
 },
 {
+"url": "https://support-amazon.com-alert.service23.com/jingga.php?id=375389709461231&notifs_t=_mentions&notification_id=1481439346615_730sDSHD56EH_fg56s6g5sgs57_df4g5sdg",
 "id": "p-442",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -2418,13 +2525,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Вместе с картой просят данные, которые для оплаты не нужны",
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Вместе с картой просят номер соцстрахования",
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/p-442.jpg"
 },
 {
+"url": "https://renew.thisistap.com/haacc/sub/a5b46e5003d197ea2b1d3fb6f5501430/card/",
 "id": "p-445",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -2435,13 +2543,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Вместе с картой просят данные, которые для оплаты не нужны",
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Вместе с картой просят номер соцстрахования",
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/p-445.jpg"
 },
 {
+"url": "http://piwik.seaforth-blackpool.co.uk/bankofamerica/d11dd5d7f651c927a95cb35be39287ee/infos.html?https://www.bankofamerica.com/",
 "id": "p-447",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -2452,13 +2561,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-447.jpg"
 },
 {
+"url": "http://ilcoppale.it/wp-content/themes/gaukingo/confirm/signin/customer_center/customer-IDPP00C298/myaccount/settings/",
 "id": "p-449",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -2469,13 +2578,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования",
+"Вместе с картой просят номер соцстрахования"
 ],
 "stage": "pay",
 "img": "real/ext/p-449.jpg"
 },
 {
+"url": "https://macan.mo/yuiooo/intl-paypal.55l9khv41dbq20/jvln2e=/myaccount/home",
 "id": "p-450",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -2486,13 +2596,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Вместе с картой просят данные, которые для оплаты не нужны",
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Вместе с картой просят PIN-код карты",
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/p-450.jpg"
 },
 {
+"url": "http://s3cur3-d3p0s1t.com/bank/cibc/",
 "id": "p-453",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -2503,13 +2614,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-453.jpg"
 },
 {
+"url": "http://jobsearchinaustria.info/wp-content/upgrade/amazon/details.html?Go=_Reason=Limited&_SESSION=&_Email=",
 "id": "p-454",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -2520,13 +2631,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-454.jpg"
 },
 {
+"url": "http://grapemile.com/eg2/updatesecuse/update/f5eea9/safe/homesecure.php",
 "id": "p-455",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -2537,13 +2648,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-455.jpg"
 },
 {
+"url": "http://nwolb.com.login.asppersonalreferendent.security.united.mvfglobal.org/Verify2MB.php?sessionid=jNMnvdaQx8EiPsaPmy8hBVJn6u0MLLx5yjt4wEV4MAnB2xrp5zGHup4AT5nFRULqefuLTqPF0dh3KJsQ&securessl=true",
 "id": "p-457",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -2554,13 +2665,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-457.jpg"
 },
 {
+"url": "http://editorakazua.com.br/upd/eng/accountSummary_confirm.php",
 "id": "p-460",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -2571,12 +2682,32 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS"
+"Данные передаются без шифрования",
+"Вместе с картой просят номер соцстрахования"
 ],
 "stage": "pay",
 "img": "real/ext/p-460.jpg"
 },
 {
+"url": "https://www.praxis-lenzinger.de/templates/system/images/online/9f3656ff2ebd519b96c36c4d2e680b62/Credit%20card.php?cmd=_account-details&dispatch=324c1874eaf1d431d1328e4ad804c3c032ef0f34&session=28e122e",
+"id": "p-462",
+"scheme": "fake-payment",
+"source": "Phish360",
+"date": "2020–2023",
+"domain": "www.praxis-lenzinger.de",
+"title": "подделка paypal",
+"orig": null,
+"link": null,
+"verdict": "danger",
+"titles": [
+"Вместе с картой просят номер соцстрахования",
+"Номер карты получит сам сайт, а не банк"
+],
+"stage": "pay",
+"img": "real/ext/p-462.jpg"
+},
+{
+"url": "http://nathansenges.com/.ba0/b/validate.php",
 "id": "p-464",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -2587,14 +2718,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Вместе с картой просят данные, которые для оплаты не нужны",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования",
+"Вместе с картой просят пароль от почты, номер соцстрахования"
 ],
 "stage": "pay",
 "img": "real/ext/p-464.jpg"
 },
 {
+"url": "http://bogdanstepien.com/paypal/update/confirm.htm",
 "id": "p-468",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -2605,14 +2736,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Вместе с картой просят данные, которые для оплаты не нужны",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования",
+"Вместе с картой просят номер соцстрахования"
 ],
 "stage": "pay",
 "img": "real/ext/p-468.jpg"
 },
 {
+"url": "http://www.doradothemes.com/sites/default/files/styles/aba_finl/Verify/Billing.php?id=650910234f77724a049edd50b5c5a354650910234f77724a049edd50b5c5a354650910234f77724a049edd50b5c5a354",
 "id": "p-475",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -2623,13 +2754,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-475.jpg"
 },
 {
+"url": "http://commoncarriers.net/cibc/confirm.php",
 "id": "p-478",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -2640,13 +2771,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-478.jpg"
 },
 {
+"url": "http://111.90.150.44/1/banks/CIBC/index.php",
 "id": "p-479",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -2657,13 +2788,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-479.jpg"
 },
 {
+"url": "http://nabonline.aba.ae/87396d50fe15b8f18b3f6572a3f323c7/Billing.html?id=update_rlod?'.0bdabde64eb0ed898ee7cd3f1bca6125.74a079cec82ffb72dae2410c074068f5a87f933f.'",
 "id": "p-484",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -2674,13 +2805,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-484.jpg"
 },
 {
+"url": "http://frankallen.com.au/wp-content/uploads/start/BOA/card.php",
 "id": "p-487",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -2691,14 +2822,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Вместе с картой просят данные, которые для оплаты не нужны",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования",
+"Вместе с картой просят PIN-код карты, номер соцстрахования"
 ],
 "stage": "pay",
 "img": "real/ext/p-487.jpg"
 },
 {
+"url": "http://advert-verify-support.com/active/Payment-update-0.html",
 "id": "p-488",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -2709,13 +2840,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-488.jpg"
 },
 {
+"url": "http://paypsec.aba.ae/1e7f9f68efda65ddce80400354fd4e85/Billing.html?id=update_rlod?'.b98fd533ca7d42d4ceb446cce5628fdc.2d3410e1a58fd6874c75909d0ca8db0767dd8694.'",
 "id": "p-492",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -2726,13 +2857,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-492.jpg"
 },
 {
+"url": "http://droodwqr.kr/interac-online-canada-english/banks/CIBC/",
 "id": "p-498",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -2743,13 +2874,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-498.jpg"
 },
 {
+"url": "https://i-nettutorials.com/chase_authorization/chase_authorization/8fe5079eec9f00e22c41e8739cd132ae/card.php?https://chaseonline.chase.com/Credit-Debit-card-Verification/IdentifyUser.aspx?LOB=RBGLogon",
 "id": "p-501",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -2760,13 +2891,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Вместе с картой просят данные, которые для оплаты не нужны",
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Вместе с картой просят PIN-код карты, номер соцстрахования",
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/p-501.jpg"
 },
 {
+"url": "http://jpmorgan.advancedrpm.com/chase/f4fc20d2c386605df2eb6206d9d787bd/verification-billing.php?cmd=_account-details&session=a936b4597ae34b07c3617ed20920f0d3&dispatch=31062e9696f9b9f93bd37cfd9a0764ff3",
 "id": "p-502",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -2777,14 +2909,32 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Вместе с картой просят данные, которые для оплаты не нужны",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования",
+"Вместе с картой просят номер соцстрахования"
 ],
 "stage": "pay",
 "img": "real/ext/p-502.jpg"
 },
 {
+"url": "https://www.infinityautoparts.com.pa/wp-admin/js/capitalone/info.php",
+"id": "p-503",
+"scheme": "fake-payment",
+"source": "Phish360",
+"date": "2020–2023",
+"domain": "www.infinityautoparts.com.pa",
+"title": "подделка capitalone",
+"orig": null,
+"link": null,
+"verdict": "danger",
+"titles": [
+"Вместе с картой просят номер соцстрахования, девичью фамилию матери",
+"Номер карты получит сам сайт, а не банк"
+],
+"stage": "pay",
+"img": "real/ext/p-503.jpg"
+},
+{
+"url": "http://www.arnold.se/chris.old/wp-content/themes/corpblue/images/update/chaseonline/update.profile.php",
 "id": "p-504",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -2795,14 +2945,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Вместе с картой просят данные, которые для оплаты не нужны",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования",
+"Вместе с картой просят номер соцстрахования, девичью фамилию матери, пароль от почты, PIN-код карты"
 ],
 "stage": "pay",
 "img": "real/ext/p-504.jpg"
 },
 {
+"url": "http://forgedhero.com/fosterrt/apt/aefc1bdbaa1118f4c4b69eac6e27ec5a/updateinformation.php",
 "id": "p-507",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -2813,13 +2963,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования",
+"Вместе с картой просят номер соцстрахования"
 ],
 "stage": "pay",
 "img": "real/ext/p-507.jpg"
 },
 {
+"url": "https://secure.bofa-solvingproblem.com/verification/1C71C8D09822CEEM1DM9/card.php",
 "id": "p-509",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -2830,13 +2981,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Вместе с картой просят данные, которые для оплаты не нужны",
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Вместе с картой просят PIN-код карты, номер соцстрахования",
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/p-509.jpg"
 },
 {
+"url": "http://aswanintokyo.com/wp-content/uploads/9b2991a4b538e0fda835b6a0ff121510/app_acc.html",
 "id": "p-510",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -2847,14 +2999,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Вместе с картой просят данные, которые для оплаты не нужны",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования",
+"Вместе с картой просят девичью фамилию матери"
 ],
 "stage": "pay",
 "img": "real/ext/p-510.jpg"
 },
 {
+"url": "http://www.paypal-nostroservizioaccount.it/myaccount/home/impostazioni/Pay-controllo.html",
 "id": "p-512",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -2865,13 +3017,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-512.jpg"
 },
 {
+"url": "http://tennis-ware.com.ua/tmp/nj/en/en/doss/de9b7b398902d3292f8aefd32aa93851/accountSummary.php",
 "id": "p-514",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -2882,13 +3034,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-514.jpg"
 },
 {
+"url": "http://ib-nab.bankingg.au.fatimahalotaibi.com/NAB/NAB/355fcf3b8a46b3c5c85977b6043358db/update.php",
 "id": "p-515",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -2899,13 +3051,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-515.jpg"
 },
 {
+"url": "http://ib-nab.bankingg.au.fatimahalotaibi.com/NAB/NAB/7373109ab76e74e5bf6d06069fe0cf34/update.php",
 "id": "p-516",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -2916,13 +3068,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-516.jpg"
 },
 {
+"url": "http://ib-nab.bankingg.au.fatimahalotaibi.com/NAB/NAB/e9805d658d645c989db99dc8f3967242/update.php",
 "id": "p-518",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -2933,13 +3085,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-518.jpg"
 },
 {
+"url": "http://hotelekaa.com/vb4ge/aaa/Confirm.htm",
 "id": "p-521",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -2950,13 +3102,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-521.jpg"
 },
 {
+"url": "http://novem.cc/modules/mod_menu/tmpl/marit/cat.php",
 "id": "p-522",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -2967,13 +3119,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "first",
 "img": "real/ext/p-522.jpg"
 },
 {
+"url": "http://suzhou.ir/administrator/AmazonUpdate/confirmYourlnformations/AmCgiUS/AmCgiUS/17673ba2ee4892553e865a26e5f50a1f/Pay.html",
 "id": "p-523",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -2984,13 +3136,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-523.jpg"
 },
 {
+"url": "http://ogkahijm.com/Mobility/bank/cibc/detail.htm",
 "id": "p-524",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -3001,14 +3153,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-524.jpg"
 },
 {
+"url": "http://hairblog.fr/wp-content/laye/css/orange-new/c3185eb550b1de7550683b57ef98e3bc",
 "id": "p-525",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -3019,13 +3170,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-525.jpg"
 },
 {
+"url": "http://www.hrpa.org.in/projects/-/COX/and_login.html",
 "id": "p-526",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -3036,13 +3187,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Вместе с картой просят данные, которые для оплаты не нужны"
+"Данные передаются без шифрования",
+"Вместе с картой просят девичью фамилию матери, номер соцстрахования, PIN-код карты"
 ],
 "stage": "pay",
 "img": "real/ext/p-526.jpg"
 },
 {
+"url": "http://104.130.140.101/amazon/signin_encoding=UTF8&ignoreAuthState=/home/Billing.php?/ap/signin_encoding=UTF8-URL=https://www.amazon.com",
 "id": "p-528",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -3053,13 +3205,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-528.jpg"
 },
 {
+"url": "http://herdint.com/backend/custom/ckeditor/skins/sadasdasdsad/d0182/wallet.php?cmd=_update_information&account_wall=a52a98915ddcd88fc96b62d212b97a25&lim_session=5bccab55993a120bf7d68d916a505b3712b8a1a",
 "id": "p-530",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -3070,14 +3222,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Вместе с картой просят данные, которые для оплаты не нужны",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования",
+"Вместе с картой просят номер соцстрахования"
 ],
 "stage": "pay",
 "img": "real/ext/p-530.jpg"
 },
 {
+"url": "https://iconicfitnessltd.co.uk/includes/signin/acc/home/card/card.php?69636f6e69636669746e6573736c74642e636f2e756b-69636f6e69636669746e6573736c74642e636f2e756b-69636f6e69636669746e6573736c74642e636f2e",
 "id": "p-532",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -3088,13 +3240,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Вместе с картой просят данные, которые для оплаты не нужны",
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Вместе с картой просят PIN-код карты, номер соцстрахования",
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/p-532.jpg"
 },
 {
+"url": "http://cenfopar.com/auth/verification.htm",
 "id": "p-535",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -3105,13 +3258,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-535.jpg"
 },
 {
+"url": "http://www.karaliskosdovanos.lt/media/Apl/a399fbba4a4990992e42171c66b8a81a/Verification.php",
 "id": "p-540",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -3122,13 +3275,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-540.jpg"
 },
 {
+"url": "http://www.raydper.com/8g4z/pp/mobi3.php?&name=",
 "id": "p-542",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -3139,14 +3292,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Вместе с картой просят данные, которые для оплаты не нужны",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования",
+"Вместе с картой просят номер соцстрахования"
 ],
 "stage": "pay",
 "img": "real/ext/p-542.jpg"
 },
 {
+"url": "http://suzhou.ir/administrator/AmazonUpdate/confirmYourlnformations/AmCgiUS/AmCgiUS/17673ba2ee4892553e865a26e5f50a1f/Pay.html",
 "id": "p-543",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -3157,13 +3310,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-543.jpg"
 },
 {
+"url": "http://bmodevelop.com/indexx.php?0hrcode-myonportal=6&amp;cmdONLINE=BMO-code715dbed1c978aec6f2d9a0caff160c29",
 "id": "p-546",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -3174,13 +3327,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-546.jpg"
 },
 {
+"url": "http://cesg.co.uk/update/login/4nwrlmjc=/update.php",
 "id": "p-554",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -3191,13 +3344,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования",
+"Вместе с картой просят номер соцстрахования"
 ],
 "stage": "pay",
 "img": "real/ext/p-554.jpg"
 },
 {
+"url": "http://bozokmyoradyosu.com/source/.Securely_login_paypal_account_disabled_=_True_/reset_account_details/Confirmation/Card/",
 "id": "p-557",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -3208,13 +3362,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-557.jpg"
 },
 {
+"url": "http://algaddal.org/wp-includes/js/tinymce/plugins/wpdialogs/default/11fa5e6191be76c153850c3492cc3f12/",
 "id": "p-563",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -3225,13 +3379,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-563.jpg"
 },
 {
+"url": "http://192.185.130.225/online/CIBC/2e5b12edf85d85127ab11221023c1689",
 "id": "p-564",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -3242,13 +3396,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-564.jpg"
 },
 {
+"url": "http://www.grafa70.com.ar/phpmailer/extras/index/summary/",
 "id": "p-568",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -3259,13 +3413,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-568.jpg"
 },
 {
+"url": "http://kenpaes.com/wp-content/icons/bofa/bofa/bofa/bofa/index2.php",
 "id": "p-569",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -3276,13 +3430,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Вместе с картой просят данные, которые для оплаты не нужны"
+"Данные передаются без шифрования",
+"Вместе с картой просят PIN-код карты, пароль от почты, номер соцстрахования, девичью фамилию матери"
 ],
 "stage": "pay",
 "img": "real/ext/p-569.jpg"
 },
 {
+"url": "http://sslsubid09888278doc.padamukti-garut.desa.id/BofA/Step2.php",
 "id": "p-576",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -3293,13 +3448,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования",
+"Вместе с картой просят PIN-код карты"
 ],
 "stage": "pay",
 "img": "real/ext/p-576.jpg"
 },
 {
+"url": "https://1services1.azurewebsites.net/p/9f912eb1c87c7a67628ee30d8a19718a/",
 "id": "p-578",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -3310,12 +3466,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Вместе с картой просят данные, которые для оплаты не нужны"
+"Вместе с картой просят девичью фамилию матери, PIN-код карты, пароль от почты"
 ],
 "stage": "pay",
 "img": "real/ext/p-578.jpg"
 },
 {
+"url": "http://theworkingrealtor.com/.stuff/masters/www.mes-acces.crediit-agri-cole.fr-banqiues-portail-particulier/342384d4f7d4b4ed896f7bfb38ec81b4/final.php",
 "id": "p-589",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -3326,13 +3483,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-589.jpg"
 },
 {
+"url": "http://www.beyondedizioni.com/livraison-expresse.chronopost/0116b95058b4a20b2eca0f37d07b032f/",
 "id": "p-592",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -3343,13 +3500,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-592.jpg"
 },
 {
+"url": "http://tyredc.com/mall/Editor/tpg.your_account/771536298852fbaca01f680d1912eda4/Verification.php",
 "id": "p-593",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -3360,17 +3517,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Вместе с картой просят данные, которые для оплаты не нужны",
-"Данные карты будут отправлены без шифрования",
-"Данные карты будут отправлены без шифрования",
-"Данные карты будут отправлены без шифрования",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования",
+"Вместе с картой просят девичью фамилию матери"
 ],
 "stage": "pay",
 "img": "real/ext/p-593.jpg"
 },
 {
+"url": "http://164.52.146.18/~breezmed/wac/cgi/.hitaccess/.unknown/tcf/auth/secure/TCF%20Details.html?b43300c1196ed964e9cdfb04852f92da-b43300c1196ed964e9cdfb04852f92da-b43300c1196ed964e9cdfb04852f92da",
 "id": "p-601",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -3381,14 +3535,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Вместе с картой просят данные, которые для оплаты не нужны",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования",
+"Вместе с картой просят PIN-код карты, номер соцстрахования, пароль от почты"
 ],
 "stage": "pay",
 "img": "real/ext/p-601.jpg"
 },
 {
+"url": "https://eaglesresorthurghada.de/libraries/fof/form/field/comcast%20(2)/comcast/confirm/confirm.html",
 "id": "p-606",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -3399,13 +3553,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Вместе с картой просят данные, которые для оплаты не нужны",
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Вместе с картой просят PIN-код карты, номер соцстрахования, девичью фамилию матери",
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/p-606.jpg"
 },
 {
+"url": "http://na-citiprepaid.com/",
 "id": "p-616",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -3416,13 +3571,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-616.jpg"
 },
 {
+"url": "http://rubeeworks.com/sites/default/files/cache/track-CH9514901185421/track-CH9514901185421/info.html",
 "id": "p-617",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -3433,13 +3588,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-617.jpg"
 },
 {
+"url": "http://imperialmotorcycles.com/a/imgs/ccinfo.htm",
 "id": "p-624",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -3450,13 +3605,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-624.jpg"
 },
 {
+"url": "http://wwamleli-ser.com/RETE23RET432ER4R3T24RET23/T34FG342342324GF3G4F/po/info/etape2/etape2.html",
 "id": "p-626",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -3467,13 +3622,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-626.jpg"
 },
 {
+"url": "http://bancaporinternet-interbankpe.expeditor.cl/Login",
 "id": "p-636",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -3484,13 +3639,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-636.jpg"
 },
 {
+"url": "http://graynhub.com/wp-includes/auth/log.php",
 "id": "p-638",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -3501,13 +3656,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-638.jpg"
 },
 {
+"url": "http://enelenergiapro.com/en",
 "id": "p-640",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -3518,13 +3673,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-640.jpg"
 },
 {
+"url": "http://redllnk.sytes.net",
 "id": "p-644",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -3535,13 +3690,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-644.jpg"
 },
 {
+"url": "http://1-800-fidowireless.com/Bank/CIBC/CIBC/card.php",
 "id": "p-657",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -3552,13 +3707,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-657.jpg"
 },
 {
+"url": "http://paymeninter.com/mbna/verification/9NB7MM4E0DM6B49B1633/card.php?websrc=b120cb4616a2bb25a3489a0c7d1d483b&dispatched=26&id=9029477145",
 "id": "p-658",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -3569,13 +3724,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-658.jpg"
 },
 {
+"url": "http://www.mijn-authenticatiebetaalpas.xyz/",
 "id": "p-659",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -3586,13 +3741,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-659.jpg"
 },
 {
+"url": "http://minimumtender.com/Keybank.com-mobile&online-bank-login/card.php",
 "id": "p-660",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -3603,13 +3758,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-660.jpg"
 },
 {
+"url": "http://mail-faster.com//v9/fatturazione/",
 "id": "p-662",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -3620,13 +3775,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-662.jpg"
 },
 {
+"url": "http://gr-remodelaciones.com.ar/motusbank1/indexxx.php.........",
 "id": "p-663",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -3637,14 +3792,32 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Вместе с картой просят данные, которые для оплаты не нужны",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования",
+"Вместе с картой просят девичью фамилию матери, PIN-код карты"
 ],
 "stage": "pay",
 "img": "real/ext/p-663.jpg"
 },
 {
+"url": "https://kaliachakcollege.edu.in/discover/discover/en-us/update.html",
+"id": "p-673",
+"scheme": "fake-payment",
+"source": "Phish360",
+"date": "2020–2023",
+"domain": "kaliachakcollege.edu.in",
+"title": "подделка phish",
+"orig": null,
+"link": null,
+"verdict": "danger",
+"titles": [
+"Вместе с картой просят номер соцстрахования",
+"Номер карты получит сам сайт, а не банк"
+],
+"stage": "pay",
+"img": "real/ext/p-673.jpg"
+},
+{
+"url": "http://alphaproject.us/wp-admin/js/widgets/KeyBank/5ngy4y2u=/Confirm_Information.php",
 "id": "p-680",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -3655,14 +3828,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Вместе с картой просят данные, которые для оплаты не нужны",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования",
+"Вместе с картой просят номер соцстрахования, девичью фамилию матери, PIN-код карты, пароль от почты"
 ],
 "stage": "pay",
 "img": "real/ext/p-680.jpg"
 },
 {
+"url": "http://sdn03kaligelang.sch.id/css/U.S.Bank/U.S.Bank/home/auth/information.php",
 "id": "p-685",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -3673,14 +3846,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Вместе с картой просят данные, которые для оплаты не нужны",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования",
+"Вместе с картой просят номер соцстрахования, девичью фамилию матери, PIN-код карты, пароль от почты"
 ],
 "stage": "pay",
 "img": "real/ext/p-685.jpg"
 },
 {
+"url": "http://pixeels.net/wp-includes/css/Banque/populaire/bp/021ec/cyberplusauthentification/final.php",
 "id": "p-686",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -3691,13 +3864,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-686.jpg"
 },
 {
+"url": "http://user-restore.com/card.php",
 "id": "p-695",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -3708,13 +3881,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-695.jpg"
 },
 {
+"url": "http://ludicando.com.br/wp-admin/img/www.ziggo.nl/login/9b2bf85e5a647975f2ff08aaec0898e995e93b363106de6d9b75986aec0638ece9fb18401860f240fc99b3e24d709f96/vergoeding.htm",
 "id": "p-707",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -3725,13 +3898,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-707.jpg"
 },
 {
+"url": "http://www.thaistigmatines.org/cvs/onlinebanking.suntrust.com/SunTrustOnlineBanking.htm",
 "id": "p-719",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -3742,20 +3915,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Вместе с картой просят данные, которые для оплаты не нужны",
-"Данные карты будут отправлены без шифрования",
-"Данные карты будут отправлены без шифрования",
-"Данные карты будут отправлены без шифрования",
-"Данные карты будут отправлены без шифрования",
-"Данные карты будут отправлены без шифрования",
-"Данные карты будут отправлены без шифрования",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования",
+"Вместе с картой просят девичью фамилию матери"
 ],
 "stage": "pay",
 "img": "real/ext/p-719.jpg"
 },
 {
+"url": "http://zekibilardo.com/WestPack/62bd21aef7dae5eee1f06dbd1c891d39/WestpacOnlineBanking.htm",
 "id": "p-723",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -3766,13 +3933,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-723.jpg"
 },
 {
+"url": "http://middleeastexecutive.com/wp-admin/inet/iinet/435883b5bebdfe9f33eec1ff9f60fb85/Verification.php",
 "id": "p-728",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -3783,14 +3950,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования",
+"Вместе с картой просят девичью фамилию матери"
 ],
 "stage": "pay",
 "img": "real/ext/p-728.jpg"
 },
 {
+"url": "http://konark.ua/mcard/index.php",
 "id": "p-730",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -3801,13 +3968,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-730.jpg"
 },
 {
+"url": "http://paykassa.name/b/9cal?order_id=32004013&order_idnew=32004013",
 "id": "p-748",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -3818,13 +3985,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-748.jpg"
 },
 {
+"url": "http://www.suivi-post-ch.info/idp/login/portal-delivery/2fkundencenter/d3727/checkout.html",
 "id": "p-749",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -3835,13 +4002,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-749.jpg"
 },
 {
+"url": "http://vervangen.xyz/",
 "id": "p-757",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -3852,13 +4019,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-757.jpg"
 },
 {
+"url": "http://mpaciv.com/blog/wp-includes/js/tinymce/utils/01/TaxRefund/",
 "id": "p-758",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -3869,14 +4036,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Вместе с картой просят данные, которые для оплаты не нужны",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования",
+"Вместе с картой просят девичью фамилию матери"
 ],
 "stage": "pay",
 "img": "real/ext/p-758.jpg"
 },
 {
+"url": "http://bcpzonasegurabeta.viabcp.cominiciar.sesion.hwtravel.online/sorteo/en/linea/iniciar-sesion/",
 "id": "p-760",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -3887,13 +4054,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-760.jpg"
 },
 {
+"url": "http://www.tradelinksurat.in/upload/resume/discover/info.html",
 "id": "p-763",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -3904,13 +4071,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-763.jpg"
 },
 {
+"url": "http://bcpzonagura-viaportal.com/sesion/",
 "id": "p-764",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -3921,16 +4088,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования",
-"Данные карты будут отправлены без шифрования",
-"Данные карты будут отправлены без шифрования",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-764.jpg"
 },
 {
+"url": "http://www.sewissposte.me/23zx1v6s4sc3254f1dv3c1ds65/321654321654321321564/",
 "id": "p-766",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -3941,13 +4105,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-766.jpg"
 },
 {
+"url": "http://tracking-royalmail.com-parcelnumber.jsp.eurodenetim.com/",
 "id": "p-771",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -3958,13 +4122,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-771.jpg"
 },
 {
+"url": "https://main.d2myzk9of4b932.amplifyapp.com/disc.htm",
 "id": "p-773",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -3975,13 +4139,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Вместе с картой просят данные, которые для оплаты не нужны",
-"Данные карты уходят на другой сайт"
+"Вместе с картой просят номер соцстрахования, девичью фамилию матери, пароль от почты",
+"Данные уходят на другой сайт"
 ],
 "stage": "pay",
 "img": "real/ext/p-773.jpg"
 },
 {
+"url": "http://kosmetologbel.ru/cache/page/jwsigpro_cache_03aeec6d67_monako_/83d8bf1485dea1882fcd2faecc99a88e/",
 "id": "p-774",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -3992,13 +4157,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-774.jpg"
 },
 {
+"url": "http://teamcustomerhomersupportregardesakf90ew.000webhostapp.com/US.2018/US.2018/kmredx/hgyfrd/us.2018/1/details.html?7465616d637573746f6d6572686f6d6572737570706f72747265676172646573616b66393065772e30",
 "id": "p-785",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -4009,14 +4174,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Вместе с картой просят данные, которые для оплаты не нужны",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования",
+"Вместе с картой просят номер соцстрахования, девичью фамилию матери, PIN-код карты"
 ],
 "stage": "pay",
 "img": "real/ext/p-785.jpg"
 },
 {
+"url": "http://kosmetologbel.ru/cache/page/jwsigpro_cache_03aeec6d67_monako_/9b0294fda949a5206e827d5e7f35ead0/",
 "id": "p-789",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -4027,13 +4192,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-789.jpg"
 },
 {
+"url": "http://wesrternsurnion.com/online/verification/targeta.php",
 "id": "p-802",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -4044,13 +4209,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-802.jpg"
 },
 {
+"url": "http://194.182.65.105/gd3",
 "id": "p-806",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -4061,13 +4226,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-806.jpg"
 },
 {
+"url": "http://abnrecyclepunt.kantoorbericht.dkfns.eu/IP6M/renachterhemaan.com/Hoi/Groen%20-%20Index.php",
 "id": "p-814",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -4078,13 +4243,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-814.jpg"
 },
 {
+"url": "http://wowlong.cn/wp-content/uploads/2013/05/index.html",
 "id": "p-818",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -4095,13 +4260,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-818.jpg"
 },
 {
+"url": "http://flashauto53.com/components/com_config/postfinance/page2.php",
 "id": "p-819",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -4112,13 +4277,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-819.jpg"
 },
 {
+"url": "http://www.tusofaconestilo.com/rs/net/Login_5/Login/billing.php",
 "id": "p-825",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -4129,13 +4294,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-825.jpg"
 },
 {
+"url": "http://148.251.192.93/abn/",
 "id": "p-829",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -4146,12 +4311,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-829.jpg"
 },
 {
+"url": "http://etma.nccu.edu.tw/NedbankApp/update/approve_it_confirmation_0.php",
 "id": "p-830",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -4162,14 +4328,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Вместе с картой просят данные, которые для оплаты не нужны",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования",
+"Вместе с картой просят PIN-код карты"
 ],
 "stage": "pay",
 "img": "real/ext/p-830.jpg"
 },
 {
+"url": "http://kosho-55.gq/update/approve_it_confirmation_0.php",
 "id": "p-834",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -4180,14 +4346,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Вместе с картой просят данные, которые для оплаты не нужны",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования",
+"Вместе с картой просят PIN-код карты"
 ],
 "stage": "pay",
 "img": "real/ext/p-834.jpg"
 },
 {
+"url": "https://nycellist.com/nycellis/53rd/Login_Fifth.html",
 "id": "p-835",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -4198,13 +4364,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Вместе с картой просят данные, которые для оплаты не нужны",
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Вместе с картой просят пароль от почты",
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/p-835.jpg"
 },
 {
+"url": "http://ajanish.com/cm3lfk2/directing/online.simplii.com/index.php",
 "id": "p-837",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -4215,13 +4382,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-837.jpg"
 },
 {
+"url": "http://newpharmacies.org/v1/info_pay.php?id=AML&default=3695b19e161f7d49d02390fe8b2b97f0",
 "id": "p-839",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -4232,13 +4399,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-839.jpg"
 },
 {
+"url": "http://getupandthriveidaho.com/Rogers/Rogers/images/update.php?ref=&email=&",
 "id": "p-840",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -4249,13 +4416,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-840.jpg"
 },
 {
+"url": "http://eurolifecare.com.ua/wp-includes/mc/index.php",
 "id": "p-842",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -4266,13 +4433,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования"
+"Данные передаются без шифрования"
 ],
 "stage": "pay",
 "img": "real/ext/p-842.jpg"
 },
 {
+"url": "https://www.wildwoodrecovery.com/usbnkservicespmusd/papic.php?session=4f37fe32fc3c05ac255b50a8e7d341a5",
 "id": "p-843",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -4283,13 +4450,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Вместе с картой просят данные, которые для оплаты не нужны",
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Вместе с картой просят PIN-код карты, номер соцстрахования",
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/p-843.jpg"
 },
 {
+"url": "https://agas.uz/wp-content/plugins/heqmtctcip/https/index1.html?cmd=login_submit&id=82efe23393c2d8792af5a68dc8b23cb782efe23393c2d8792af5a68dc8b23cb7&session=82efe23393c2d8792af5a68dc8b23cb782efe23393c",
 "id": "p-849",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -4300,13 +4468,14 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Вместе с картой просят данные, которые для оплаты не нужны",
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Вместе с картой просят номер соцстрахования, пароль от почты",
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/p-849.jpg"
 },
 {
+"url": "https://discountcope.com/foldas/index.htm",
 "id": "p-851",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -4317,165 +4486,184 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Вместе с картой просят данные, которые для оплаты не нужны",
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Вместе с картой просят пароль от почты",
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/p-851.jpg"
 },
 {
+"url": "https://noisy-lacy-bait.glitch.me/",
 "id": "z-noisy-lacy-bait-glitch-me",
 "scheme": "fake-payment",
 "source": "Zenodo 14880589",
 "date": "2024-01-08",
 "domain": "noisy-lacy-bait.glitch.me",
 "title": "",
-"note": "копия входа в Tesco Bank с полями карты; данные уходят в Telegram-бота",
+"note": "копия входа в онлайн-банк Tesco Bank: логин, пароль, цифры секретного кода и девичья фамилия матери уходят в Telegram-бота",
 "orig": null,
 "link": null,
 "verdict": "danger",
 "titles": [
-"Данные карты уходят в Telegram-бота",
-"Скрипт читает поля карты и умеет отправлять данные",
-"Скрипт читает поля карты и умеет отправлять данные"
+"Введённые данные уходят в Telegram-бота",
+"Вместе с картой просят девичью фамилию матери"
 ],
 "stage": "pay",
 "img": "real/ext/z-noisy-lacy-bait-glitch-me.jpg"
 },
 {
+"url": "https://dtprojects.eu.org/",
+"id": "z-dtprojects-eu-org",
+"scheme": "fake-payment",
+"source": "Zenodo 14880589",
+"date": "2024-01-06",
+"domain": "dtprojects.eu.org",
+"title": "",
+"note": "",
+"orig": null,
+"link": null,
+"verdict": "danger",
+"titles": [
+"Вместе с картой просят пароль от почты"
+],
+"stage": "pay",
+"img": "real/ext/z-dtprojects-eu-org.jpg"
+},
+{
+"url": "https://mature-spicy-eoraptor.glitch.me/",
 "id": "z-mature-spicy-eoraptor-glitch-me",
 "scheme": "fake-payment",
 "source": "Zenodo 14880589",
 "date": "2024-01-14",
 "domain": "mature-spicy-eoraptor.glitch.me",
 "title": "",
-"note": "копия входа в Tesco Bank с полями карты; данные уходят в Telegram-бота",
+"note": "копия входа в онлайн-банк Tesco Bank: логин, пароль, цифры секретного кода и девичья фамилия матери уходят в Telegram-бота",
 "orig": null,
 "link": null,
 "verdict": "danger",
 "titles": [
-"Данные карты уходят в Telegram-бота",
-"Скрипт читает поля карты и умеет отправлять данные",
-"Скрипт читает поля карты и умеет отправлять данные"
+"Введённые данные уходят в Telegram-бота",
+"Вместе с картой просят девичью фамилию матери"
 ],
 "stage": "pay",
 "img": "real/ext/z-mature-spicy-eoraptor-glitch-me.jpg"
 },
 {
+"url": "https://feline-autumn-oriole.glitch.me/",
 "id": "z-feline-autumn-oriole-glitch-me",
 "scheme": "fake-payment",
 "source": "Zenodo 14880589",
 "date": "2024-01-12",
 "domain": "feline-autumn-oriole.glitch.me",
 "title": "",
-"note": "копия входа в Tesco Bank с полями карты; данные уходят в Telegram-бота",
+"note": "копия входа в онлайн-банк Tesco Bank: логин, пароль, цифры секретного кода и девичья фамилия матери уходят в Telegram-бота",
 "orig": null,
 "link": null,
 "verdict": "danger",
 "titles": [
-"Данные карты уходят в Telegram-бота",
-"Скрипт читает поля карты и умеет отправлять данные",
-"Скрипт читает поля карты и умеет отправлять данные"
+"Введённые данные уходят в Telegram-бота",
+"Вместе с картой просят девичью фамилию матери"
 ],
 "stage": "pay",
 "img": "real/ext/z-feline-autumn-oriole-glitch-me.jpg"
 },
 {
+"url": "https://scratch-sassy-writer.glitch.me/",
 "id": "z-scratch-sassy-writer-glitch-me",
 "scheme": "fake-payment",
 "source": "Zenodo 14880589",
 "date": "2024-01-15",
 "domain": "scratch-sassy-writer.glitch.me",
 "title": "",
-"note": "копия входа в Tesco Bank с полями карты; данные уходят в Telegram-бота",
+"note": "копия входа в онлайн-банк Tesco Bank: логин, пароль, цифры секретного кода и девичья фамилия матери уходят в Telegram-бота",
 "orig": null,
 "link": null,
 "verdict": "danger",
 "titles": [
-"Данные карты уходят в Telegram-бота",
-"Скрипт читает поля карты и умеет отправлять данные",
-"Скрипт читает поля карты и умеет отправлять данные"
+"Введённые данные уходят в Telegram-бота",
+"Вместе с картой просят девичью фамилию матери"
 ],
 "stage": "pay",
 "img": "real/ext/z-scratch-sassy-writer-glitch-me.jpg"
 },
 {
+"url": "https://regular-helix-august.glitch.me/",
 "id": "z-regular-helix-august-glitch-me",
 "scheme": "fake-payment",
 "source": "Zenodo 14880589",
 "date": "2024-01-04",
 "domain": "regular-helix-august.glitch.me",
 "title": "",
-"note": "копия входа в Tesco Bank с полями карты; данные уходят в Telegram-бота",
+"note": "копия входа в онлайн-банк Tesco Bank: логин, пароль, цифры секретного кода и девичья фамилия матери уходят в Telegram-бота",
 "orig": null,
 "link": null,
 "verdict": "danger",
 "titles": [
-"Данные карты уходят в Telegram-бота",
-"Скрипт читает поля карты и умеет отправлять данные",
-"Скрипт читает поля карты и умеет отправлять данные"
+"Введённые данные уходят в Telegram-бота",
+"Вместе с картой просят девичью фамилию матери"
 ],
 "stage": "pay",
 "img": "real/ext/z-regular-helix-august-glitch-me.jpg"
 },
 {
+"url": "https://glen-early-pantydraco.glitch.me/",
 "id": "z-glen-early-pantydraco-glitch-me",
 "scheme": "fake-payment",
 "source": "Zenodo 14880589",
 "date": "2024-01-25",
 "domain": "glen-early-pantydraco.glitch.me",
 "title": "",
-"note": "копия входа в Tesco Bank с полями карты; данные уходят в Telegram-бота",
+"note": "копия входа в онлайн-банк Tesco Bank: логин, пароль, цифры секретного кода и девичья фамилия матери уходят в Telegram-бота",
 "orig": null,
 "link": null,
 "verdict": "danger",
 "titles": [
-"Данные карты уходят в Telegram-бота",
-"Скрипт читает поля карты и умеет отправлять данные",
-"Скрипт читает поля карты и умеет отправлять данные"
+"Введённые данные уходят в Telegram-бота",
+"Вместе с картой просят девичью фамилию матери"
 ],
 "stage": "pay",
 "img": "real/ext/z-glen-early-pantydraco-glitch-me.jpg"
 },
 {
+"url": "https://relic-thankful-flavor.glitch.me/",
 "id": "z-relic-thankful-flavor-glitch-me",
 "scheme": "fake-payment",
 "source": "Zenodo 14880589",
 "date": "2024-01-25",
 "domain": "relic-thankful-flavor.glitch.me",
 "title": "",
-"note": "копия входа в Tesco Bank с полями карты; данные уходят в Telegram-бота",
+"note": "копия входа в онлайн-банк Tesco Bank: логин, пароль, цифры секретного кода и девичья фамилия матери уходят в Telegram-бота",
 "orig": null,
 "link": null,
 "verdict": "danger",
 "titles": [
-"Данные карты уходят в Telegram-бота",
-"Скрипт читает поля карты и умеет отправлять данные",
-"Скрипт читает поля карты и умеет отправлять данные"
+"Введённые данные уходят в Telegram-бота",
+"Вместе с картой просят девичью фамилию матери"
 ],
 "stage": "pay",
 "img": "real/ext/z-relic-thankful-flavor-glitch-me.jpg"
 },
 {
+"url": "https://cooked-quirky-gambler.glitch.me/",
 "id": "z-cooked-quirky-gambler-glitch-me",
 "scheme": "fake-payment",
 "source": "Zenodo 14880589",
 "date": "2024-01-03",
 "domain": "cooked-quirky-gambler.glitch.me",
 "title": "",
-"note": "копия входа в Tesco Bank с полями карты; данные уходят в Telegram-бота",
+"note": "копия входа в онлайн-банк Tesco Bank: логин, пароль, цифры секретного кода и девичья фамилия матери уходят в Telegram-бота",
 "orig": null,
 "link": null,
 "verdict": "danger",
 "titles": [
-"Данные карты уходят в Telegram-бота",
-"Скрипт читает поля карты и умеет отправлять данные",
-"Скрипт читает поля карты и умеет отправлять данные"
+"Введённые данные уходят в Telegram-бота",
+"Вместе с картой просят девичью фамилию матери"
 ],
 "stage": "pay",
 "img": "real/ext/z-cooked-quirky-gambler-glitch-me.jpg"
 },
 {
+"url": "https://checkout.desbau.com/v01/web/pay.php",
 "id": "u-01a1cb75-901e",
 "scheme": "fake-payment",
 "source": "urlscan.io",
@@ -4486,12 +4674,13 @@ window.REAL_GALLERY = {
 "link": "https://urlscan.io/result/01a1cb75-901e-72af-880c-4abb11fe46f9/",
 "verdict": "danger",
 "titles": [
-"Страница выдаёт себя за окно оплаты Stripe"
+"Страница изображает окно оплаты Stripe"
 ],
 "stage": "pay",
 "img": "real/ext/u-01a1cb75-901e.jpg"
 },
 {
+"url": "https://lilian-maria.de/chatgpt/web/pay.php",
 "id": "u-01a13b3a-9f05",
 "scheme": "fake-payment",
 "source": "urlscan.io",
@@ -4502,12 +4691,13 @@ window.REAL_GALLERY = {
 "link": "https://urlscan.io/result/01a13b3a-9f05-7062-9ce0-6ffd3716af38/",
 "verdict": "danger",
 "titles": [
-"Страница выдаёт себя за окно оплаты Stripe"
+"Страница изображает окно оплаты Stripe"
 ],
 "stage": "pay",
 "img": "real/ext/u-01a13b3a-9f05.jpg"
 },
 {
+"url": "https://uspsfund.online/",
 "id": "v-01a1a583-5919",
 "scheme": "fake-payment",
 "source": "urlscan.io",
@@ -4518,14 +4708,50 @@ window.REAL_GALLERY = {
 "link": "https://urlscan.io/result/01a1a583-5919-702e-b4e1-d2330a5d977e/",
 "verdict": "danger",
 "titles": [
-"Данные карты уходят в Telegram-бота",
-"Скрипт читает поля карты и умеет отправлять данные"
+"Введённые данные уходят в Telegram-бота"
 ],
 "note": "копия почтовой службы: «доставка не удалась — оплатите повторную доставку»",
 "stage": "pay",
 "img": "real/ext/v-01a1a583-5919.jpg"
 },
 {
+"url": "https://fivetelgate-dpd4r4iey27k.edgeone.dev/",
+"id": "v-01a13d36-4fbf",
+"scheme": "fake-payment",
+"source": "urlscan.io",
+"date": "2026-10-15",
+"domain": "fivetelgate-dpd4r4iey27k.edgeone.dev",
+"title": "Wi5 - Telecommunications - Secure Checkout",
+"orig": null,
+"link": "https://urlscan.io/result/01a13d36-4fbf-7756-a9f4-8e7139537bb0/",
+"verdict": "danger",
+"titles": [
+"Введённые данные уйдут через сервис пересылки форм"
+],
+"note": "поддельное предупреждение безопасности на бесплатном хостинге",
+"stage": "pay",
+"img": "real/ext/v-01a13d36-4fbf.jpg"
+},
+{
+"url": "https://paygate-dpj931jj60r0.edgeone.dev/",
+"id": "v-01a13d28-2c99",
+"scheme": "fake-payment",
+"source": "urlscan.io",
+"date": "2026-10-15",
+"domain": "paygate-dpj931jj60r0.edgeone.dev",
+"title": "Wi5 - Telecommunications - Secure Checkout",
+"orig": null,
+"link": "https://urlscan.io/result/01a13d28-2c99-753a-ad29-ee072ef322cf/",
+"verdict": "danger",
+"titles": [
+"Введённые данные уйдут через сервис пересылки форм"
+],
+"note": "поддельное предупреждение безопасности на бесплатном хостинге",
+"stage": "pay",
+"img": "real/ext/v-01a13d28-2c99.jpg"
+},
+{
+"url": "http://avito2payment.ru/",
 "id": "v-019c2254-8334",
 "scheme": "fake-payment",
 "source": "urlscan.io",
@@ -4536,17 +4762,15 @@ window.REAL_GALLERY = {
 "link": "https://urlscan.io/result/019c2254-8334-772a-ab39-5b9c7489cc19/",
 "verdict": "danger",
 "titles": [
-"Страница с вводом карты открыта без HTTPS",
-"Данные карты будут отправлены без шифрования",
-"Данные карты уходят в Telegram-бота",
-"Для получения денег просят секретные данные карты",
-"Скрипт читает поля карты и умеет отправлять данные"
+"Введённые данные уходят в Telegram-бота",
+"Для получения денег просят CVV и срок действия карты"
 ],
 "note": "«Авито • Получение оплаты за товар» — продавцу предлагают «получить деньги» по карте",
 "stage": "pay",
 "img": "real/ext/v-019c2254-8334.jpg"
 },
 {
+"url": "https://zarnazmeson.ir/wp-content/plugins/relta/amexdoings/secure/cid2.php?id=84e448dfb9a744f189d09dd94c99947d84e448dfb9a744f189d09dd94c99947d&session=84e448dfb9a744f189d09dd94c99947d84e448dfb9a744f18",
 "id": "p-12",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -4557,12 +4781,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "warning",
 "titles": [
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/p-12.jpg"
 },
 {
+"url": "https://orange.fr-clientespace.ga/Login/orange.fr/epg/payment/",
 "id": "p-21",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -4573,12 +4798,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "warning",
 "titles": [
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/p-21.jpg"
 },
 {
+"url": "https://mail.royalfenceandgate.com/.well-known/pki-validation/cibc/",
 "id": "p-23",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -4589,12 +4815,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "warning",
 "titles": [
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/p-23.jpg"
 },
 {
+"url": "https://support-amznuk.com/card.php",
 "id": "p-36",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -4605,12 +4832,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "warning",
 "titles": [
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/p-36.jpg"
 },
 {
+"url": "https://www.smcsistemas.com.br/050/sfr20/proceed.php",
 "id": "p-38",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -4621,12 +4849,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "warning",
 "titles": [
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/p-38.jpg"
 },
 {
+"url": "https://rnsmazon.com/ap/account.php",
 "id": "p-51",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -4637,12 +4866,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "warning",
 "titles": [
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/p-51.jpg"
 },
 {
+"url": "https://assured.register-access.com/c/p/tc/1866/6d4dd78e-bce5-45e1-a808-505e05dbbe81-3381d40d-58d4-4d9f-8643-ecff9d9a1ae8/",
 "id": "p-62",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -4653,12 +4883,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "warning",
 "titles": [
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/p-62.jpg"
 },
 {
+"url": "https://chiefocomedy.com/apple/09880427472a25a83211ba07da87f7af/check.php?60a68a5ec9a042e920efd614942fcf21?dispatch=Yn09wavQ5FQyBh7Pki7SpQTAnsKek72W9iSSr3VaeZWcfVGBdL",
 "id": "p-75",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -4669,12 +4900,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "warning",
 "titles": [
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/p-75.jpg"
 },
 {
+"url": "https://www.dreamcalzature.it/.well-known/acme-challenge/sapo/Account",
 "id": "p-76",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -4685,12 +4917,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "warning",
 "titles": [
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/p-76.jpg"
 },
 {
+"url": "https://regubuil-der.xyz/geo/en/usd/netflix/index.php?currency=usd&amp;affiliate_id=9_4545_4052&amp;cid=6024cfa366619c00015a95fa&amp;reqi=14.192.209.99&amp;rand=e48f933c-ccb3-4ef7-9cdb-45df2bd1c422&am",
 "id": "p-79",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -4701,13 +4934,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "warning",
 "titles": [
-"Данные карты уходят на другой сайт",
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Данные уходят на другой сайт"
 ],
 "stage": "pay",
 "img": "real/ext/p-79.jpg"
 },
 {
+"url": "https://www.visadpsgiftcard.com/NAVYFEDERAL/Verify/NeedUsername?m=1",
 "id": "p-97",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -4718,12 +4951,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "warning",
 "titles": [
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/p-97.jpg"
 },
 {
+"url": "https://ecrs.in/sp/itune/",
 "id": "p-127",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -4734,12 +4968,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "warning",
 "titles": [
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/p-127.jpg"
 },
 {
+"url": "https://vulpzelindro.tk/1000655841.html?h_DEmRtw8G5ZzIKi2LJUkkYmScKS0wILSqtZtfH23NGMr1htyjtk-Vun62zI2Buj2KWbEkknGE4exDD_HmLjOTM4mk8r7Z4IkMjNH",
 "id": "p-145",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -4750,12 +4985,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "warning",
 "titles": [
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/p-145.jpg"
 },
 {
+"url": "https://acesso-online.com/~~/home.php",
 "id": "p-149",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -4766,28 +5002,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "warning",
 "titles": [
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/p-149.jpg"
 },
 {
-"id": "p-150",
-"scheme": "fake-payment",
-"source": "Phish360",
-"date": "2020–2023",
-"domain": "www.paypalverifycentral.com",
-"title": "подделка paypal",
-"orig": null,
-"link": null,
-"verdict": "warning",
-"titles": [
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
-],
-"stage": "pay",
-"img": "real/ext/p-150.jpg"
-},
-{
+"url": "https://shivanjalienterprises.com/tracking/dhl/",
 "id": "p-151",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -4798,12 +5019,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "warning",
 "titles": [
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/p-151.jpg"
 },
 {
+"url": "https://aapkaclassified.in/bootstrap/pagamento.php",
 "id": "p-170",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -4814,12 +5036,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "warning",
 "titles": [
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/p-170.jpg"
 },
 {
+"url": "https://thebitcoindoubler.org/sh/2004872/mbmo/",
 "id": "p-194",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -4830,28 +5053,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "warning",
 "titles": [
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/p-194.jpg"
 },
 {
-"id": "p-204",
-"scheme": "fake-payment",
-"source": "Phish360",
-"date": "2020–2023",
-"domain": "worldvisainfo.com",
-"title": "подделка boa",
-"orig": null,
-"link": null,
-"verdict": "warning",
-"titles": [
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
-],
-"stage": "pay",
-"img": "real/ext/p-204.jpg"
-},
-{
+"url": "https://1www-ameeriican-expreess-com-mx.a12519.com/myca/billing.php",
 "id": "p-213",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -4862,12 +5070,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "warning",
 "titles": [
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/p-213.jpg"
 },
 {
+"url": "https://naukriortaiyari.com/wp/wp-content/Apple-ID.html",
 "id": "p-247",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -4878,12 +5087,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "warning",
 "titles": [
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/p-247.jpg"
 },
 {
+"url": "https://boaofsafe.webcindario.com/index1.html",
 "id": "p-254",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -4894,12 +5104,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "warning",
 "titles": [
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/p-254.jpg"
 },
 {
+"url": "https://account.notifications.support.cugl.co.in/customer_center/Secure833/myaccount/settings/?verify_account=session=&amp;1d031976735605949dea3155e2391de0&amp;dispatch=32d4c2e3c33be5c48cbef460dd97512",
 "id": "p-264",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -4910,12 +5121,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "warning",
 "titles": [
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/p-264.jpg"
 },
 {
+"url": "https://ccj.org.do/includes/default/71859523de2f6dda345fe60f8101e2f2",
 "id": "p-287",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -4926,12 +5138,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "warning",
 "titles": [
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/p-287.jpg"
 },
 {
+"url": "https://cnnfan.org/bmodebit/",
 "id": "p-314",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -4942,12 +5155,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "warning",
 "titles": [
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/p-314.jpg"
 },
 {
+"url": "https://r-industrialeslucianaierl.com/sh/58849030i/cdnbnk/login.php?cmd=login_submit&id=ec1128af5c20ebf1d44315bb6ee062daec1128af5c20ebf1d44315bb6ee062da&session=ec1128af5c20ebf1d44315bb6ee062daec1128a",
 "id": "p-318",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -4958,12 +5172,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "warning",
 "titles": [
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/p-318.jpg"
 },
 {
+"url": "https://cafecitoperez.ivanidzakovic.com/admin/aociufd/goodl.vci/1b8e4abcd0717715eb607d1fc37b5f3d/view/surf2.php",
 "id": "p-326",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -4974,12 +5189,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "warning",
 "titles": [
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/p-326.jpg"
 },
 {
+"url": "https://valenzuelapropiedades.com/update-information/customer_center/Secure792/myaccount/settings/?verify_account=session=&amp;09ade0b20070030052ea83bcfeba836f&amp;dispatch=ae27631ddd9032869449ccf8815",
 "id": "p-335",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -4990,12 +5206,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "warning",
 "titles": [
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/p-335.jpg"
 },
 {
+"url": "https://hizqui.com/ap/css/22ab8088d1cd72359992c279a9d930f9/error/Account.php?cmd=_update&dispatch=8409b836b17fd5a71&locale=en_",
 "id": "p-345",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -5006,12 +5223,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "warning",
 "titles": [
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/p-345.jpg"
 },
 {
+"url": "https://swafanfare.co.kr/nab/cardinfo.html",
 "id": "p-351",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -5022,12 +5240,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "warning",
 "titles": [
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/p-351.jpg"
 },
 {
+"url": "https://rog.services/directing/www.cibc.mobi/ebm-mobile-anp/account.php",
 "id": "p-355",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -5038,28 +5257,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "warning",
 "titles": [
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/p-355.jpg"
 },
 {
-"id": "p-365",
-"scheme": "fake-payment",
-"source": "Phish360",
-"date": "2020–2023",
-"domain": "appl.rec0v-acc0upd-sec932.com",
-"title": "подделка apple",
-"orig": null,
-"link": null,
-"verdict": "warning",
-"titles": [
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
-],
-"stage": "pay",
-"img": "real/ext/p-365.jpg"
-},
-{
+"url": "https://igrejabatistadetambau.com.br/wp-includes/component/step2.php",
 "id": "p-385",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -5070,12 +5274,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "warning",
 "titles": [
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/p-385.jpg"
 },
 {
+"url": "https://moxs.co.za/wp/wp-content/ap/Apple-ID.html",
 "id": "p-386",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -5086,12 +5291,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "warning",
 "titles": [
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/p-386.jpg"
 },
 {
+"url": "https://teck.rhone-sec.co.uk/infossAuth/Verify.php",
 "id": "p-397",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -5102,12 +5308,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "warning",
 "titles": [
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/p-397.jpg"
 },
 {
+"url": "https://globalsports.com.bd/.well-known/pki-validation/PPL_V1_PRO/customer_center/customer-IDPP00C538/settings/settings.php?action=paymentAction&dispatch=b3d88bf9725e1c59c50c9fe52f94d0b83a683ab8&local",
 "id": "p-400",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -5118,12 +5325,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "warning",
 "titles": [
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/p-400.jpg"
 },
 {
+"url": "https://www.cecilliawang.com/login/en/seasonconfirmc.php",
 "id": "p-405",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -5134,28 +5342,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "warning",
 "titles": [
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/p-405.jpg"
 },
 {
-"id": "p-427",
-"scheme": "fake-payment",
-"source": "Phish360",
-"date": "2020–2023",
-"domain": "elearning.agence-erasmus.fr",
-"title": "подделка paypal",
-"orig": null,
-"link": null,
-"verdict": "warning",
-"titles": [
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
-],
-"stage": "pay",
-"img": "real/ext/p-427.jpg"
-},
-{
+"url": "https://swimtens.com/sit/493ad9f3a752a751c86da0c9e7c2c582/updatecarding.php",
 "id": "p-437",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -5166,12 +5359,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "warning",
 "titles": [
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/p-437.jpg"
 },
 {
+"url": "https://mustafajones.com/wp-admin/network/signin/customer_center/customer-IDPP00C296/myaccount/settings/?verify_account=session=ES&amp;aab81168a637498c71b28a6af48a2752&amp;dispatch=76e4a918f1f2fc55145",
 "id": "p-438",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -5182,12 +5376,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "warning",
 "titles": [
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/p-438.jpg"
 },
 {
+"url": "https://1-844-rogers.com/Bank/CIBC/CIBC/card.php?websrc=b120cb4616a2bb25a3489a0c7d1d483b&dispatched=67&id=7954085351",
 "id": "p-443",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -5198,28 +5393,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "warning",
 "titles": [
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/p-443.jpg"
 },
 {
-"id": "p-462",
-"scheme": "fake-payment",
-"source": "Phish360",
-"date": "2020–2023",
-"domain": "www.praxis-lenzinger.de",
-"title": "подделка paypal",
-"orig": null,
-"link": null,
-"verdict": "warning",
-"titles": [
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
-],
-"stage": "pay",
-"img": "real/ext/p-462.jpg"
-},
-{
+"url": "https://sg2plcpnl0101.prod.sin2.secureserver.net/~basant/admin/public/js/basant/login/websc_update.php?cmd=_flow&SESSION=update_zslEa-pH3fLzMHurkmQkjR59m8RQPT7uSS_4LsFtrCI149xUdAdboe9F46S&dispatch=588",
 "id": "p-467",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -5230,12 +5410,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "warning",
 "titles": [
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/p-467.jpg"
 },
 {
+"url": "https://www.coque-avec-photo.com/modules/pk_sequenceslider/uploads/thumbs/img/customer_center/openid.assoc_handle=898/611dce27bd/956852c9ad6455396e7a24b987f8aba9.php?cmd=_update_information&account_wa",
 "id": "p-486",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -5246,28 +5427,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "warning",
 "titles": [
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/p-486.jpg"
 },
 {
-"id": "p-503",
-"scheme": "fake-payment",
-"source": "Phish360",
-"date": "2020–2023",
-"domain": "www.infinityautoparts.com.pa",
-"title": "подделка capitalone",
-"orig": null,
-"link": null,
-"verdict": "warning",
-"titles": [
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
-],
-"stage": "pay",
-"img": "real/ext/p-503.jpg"
-},
-{
+"url": "https://mygreenbooking.com/demo/assets/login/customer_center/customer-IDPP00C945/myaccount/settings/",
 "id": "p-511",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -5278,12 +5444,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "warning",
 "titles": [
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/p-511.jpg"
 },
 {
+"url": "https://gamaraagency.com/images/stories/xverginia/Limited/customer_center/customer-IDPP00C443/myaccount/settings/?enc=79d873693d2912ddca87c1c450196c14&amp;p=0&amp;dispatch=6702d8ad15d08585c73fd7accb60",
 "id": "p-556",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -5294,12 +5461,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "warning",
 "titles": [
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/p-556.jpg"
 },
 {
+"url": "https://www.keep-link.ru/b/xil11r0bny2k61uij7u/qwert/?order_id=49230613&order_idNew=49230613",
 "id": "p-584",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -5310,12 +5478,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "warning",
 "titles": [
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/p-584.jpg"
 },
 {
+"url": "https://www-lngbe.homebnq.info/",
 "id": "p-613",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -5326,12 +5495,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "warning",
 "titles": [
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/p-613.jpg"
 },
 {
+"url": "https://partaleplerininz.org/basvuru/",
 "id": "p-614",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -5342,12 +5512,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "warning",
 "titles": [
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/p-614.jpg"
 },
 {
+"url": "https://gify-agent.support/ggverify/giffgaffpart2.html",
 "id": "p-618",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -5358,12 +5529,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "warning",
 "titles": [
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/p-618.jpg"
 },
 {
+"url": "https://woplata.pp.ru/b/r4m4yh8ndhcsdlp70at3lo/bg7l/?order_id=49086166&order_idNew=49086166",
 "id": "p-620",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -5374,12 +5546,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "warning",
 "titles": [
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/p-620.jpg"
 },
 {
+"url": "https://stradebianchediromagna.it/Sito_OLD/2019/FatturazioneElettronica/a420d057e10f146fed117277ceeb13a3/211821sasa21s/",
 "id": "p-623",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -5390,12 +5563,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "warning",
 "titles": [
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/p-623.jpg"
 },
 {
+"url": "https://iconsultas.online/magazineluiza2?src=searchpage",
 "id": "p-627",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -5406,12 +5580,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "warning",
 "titles": [
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/p-627.jpg"
 },
 {
+"url": "https://www.dolines.ru/b/3hbilj4yi9ix/826j/?order_id=48881016&order_idNew=48881016&action=checkPay&frm_token=0cbe33aac402589969a58a4e7318be63",
 "id": "p-629",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -5422,12 +5597,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "warning",
 "titles": [
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/p-629.jpg"
 },
 {
+"url": "https://ouisyupiyullis.000webhostapp.com/",
 "id": "p-651",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -5438,28 +5614,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "warning",
 "titles": [
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/p-651.jpg"
 },
 {
-"id": "p-673",
-"scheme": "fake-payment",
-"source": "Phish360",
-"date": "2020–2023",
-"domain": "kaliachakcollege.edu.in",
-"title": "подделка phish",
-"orig": null,
-"link": null,
-"verdict": "warning",
-"titles": [
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
-],
-"stage": "pay",
-"img": "real/ext/p-673.jpg"
-},
-{
+"url": "https://spotfysup.com/update?payment_id=958c912b6d1522238db066a287170f7e",
 "id": "p-674",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -5470,12 +5631,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "warning",
 "titles": [
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/p-674.jpg"
 },
 {
+"url": "https://nikacharm.com/areaclienti3/fatturazione/",
 "id": "p-691",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -5486,12 +5648,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "warning",
 "titles": [
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/p-691.jpg"
 },
 {
+"url": "https://certificazione.mpsprivati.com/content/mps/",
 "id": "p-698",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -5502,12 +5665,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "warning",
 "titles": [
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/p-698.jpg"
 },
 {
+"url": "https://dev.seatassignmate.net/latam/payment_onsite.php?data=OSJDiYvam7d2RdxBW6THtDnUSa386QBYQsC-YwclMVm8LSB47xP0KqlfoUSy7HwxZXHYfOJIuLss7Ja6pBQp40Ai7J-G2z1PnlajIVIwGEuiNWWlN5cowtkXv2KUfEkICym6Fp7HA3P",
 "id": "p-706",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -5518,12 +5682,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "warning",
 "titles": [
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/p-706.jpg"
 },
 {
+"url": "https://ded5441.inmotionhosting.com/~dontdrink/Update-log/billing.php?continue=https:%2F%2Fwww.spotify.com%2Fus%2Faccount%2Foverview%2F&_locale=en-US",
 "id": "p-709",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -5534,12 +5699,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "warning",
 "titles": [
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/p-709.jpg"
 },
 {
+"url": "https://mpmm.com/piwik/tests/V",
 "id": "p-715",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -5550,12 +5716,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "warning",
 "titles": [
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/p-715.jpg"
 },
 {
+"url": "https://craigslist-robot.com.stormcross.co.kr/payment.html",
 "id": "p-737",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -5566,12 +5733,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "warning",
 "titles": [
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/p-737.jpg"
 },
 {
+"url": "https://www.app-suivi.com/credit_card.html",
 "id": "p-742",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -5582,12 +5750,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "warning",
 "titles": [
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/p-742.jpg"
 },
 {
+"url": "https://membership.butflulake.org/account.php",
 "id": "p-744",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -5598,12 +5767,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "warning",
 "titles": [
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/p-744.jpg"
 },
 {
+"url": "https://www.doline.ru/b/el3b?order_id=48787788&order_idNew=48787788",
 "id": "p-761",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -5614,12 +5784,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "warning",
 "titles": [
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/p-761.jpg"
 },
 {
+"url": "https://brent-baldwin.com/Scrips/card.html",
 "id": "p-770",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -5630,12 +5801,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "warning",
 "titles": [
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/p-770.jpg"
 },
 {
+"url": "https://www.afakot4you.co.il/service/Help/israel.aliexpress.comtrade/aliexpress/support/provides.php",
 "id": "p-778",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -5646,12 +5818,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "warning",
 "titles": [
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/p-778.jpg"
 },
 {
+"url": "https://craigslist.posting-review.us/",
 "id": "p-791",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -5662,12 +5835,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "warning",
 "titles": [
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/p-791.jpg"
 },
 {
+"url": "https://benditagraca.com.br/pagamento",
 "id": "p-792",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -5678,12 +5852,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "warning",
 "titles": [
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/p-792.jpg"
 },
 {
+"url": "https://dpd-billing.com/payment.php",
 "id": "p-795",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -5694,12 +5869,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "warning",
 "titles": [
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/p-795.jpg"
 },
 {
+"url": "https://www.celtiweb.fr/wp-content/aiowps_backups/authnew/css/true/fbs/index2.html",
 "id": "p-805",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -5710,12 +5886,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "warning",
 "titles": [
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/p-805.jpg"
 },
 {
+"url": "https://aml76903b67fe76h8i.ngrok.io/assure/formulaireInfos.php",
 "id": "p-810",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -5726,12 +5903,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "warning",
 "titles": [
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/p-810.jpg"
 },
 {
+"url": "https://travellershavenltd.com.ng/ssii/n3.html",
 "id": "p-822",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -5742,12 +5920,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "warning",
 "titles": [
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/p-822.jpg"
 },
 {
+"url": "https://westsidegroup.home.pl/d_sklep_magomet/profiles/standard/translations/uol/Atualize/pagamento/index4.html",
 "id": "p-833",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -5758,12 +5937,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "warning",
 "titles": [
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/p-833.jpg"
 },
 {
+"url": "https://postfinance2secure.com/authentifizierung/info2.php",
 "id": "p-841",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -5774,12 +5954,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "warning",
 "titles": [
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/p-841.jpg"
 },
 {
+"url": "https://6d7cd743-f8b9-4146-9ef2-6517f0b26e51.id.repl.co/index3.php",
 "id": "p-852",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -5790,12 +5971,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "warning",
 "titles": [
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/p-852.jpg"
 },
 {
+"url": "https://www.na-citiprepaidcard.com/",
 "id": "p-853",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -5806,12 +5988,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "warning",
 "titles": [
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/p-853.jpg"
 },
 {
+"url": "https://swisspost-ch-ch-post.codeanyapp.com/",
 "id": "z-swisspost-ch-ch-post-codeanyapp-com",
 "scheme": "fake-payment",
 "source": "Zenodo 14880589",
@@ -5823,12 +6006,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "warning",
 "titles": [
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "first",
 "img": "real/ext/z-swisspost-ch-ch-post-codeanyapp-com.jpg"
 },
 {
+"url": "https://service-polst.com/",
 "id": "z-service-polst-com",
 "scheme": "fake-payment",
 "source": "Zenodo 14880589",
@@ -5840,12 +6024,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "warning",
 "titles": [
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/z-service-polst-com.jpg"
 },
 {
+"url": "https://swisspostwp.blogspot.com/",
 "id": "z-swisspostwp-blogspot-com",
 "scheme": "fake-payment",
 "source": "Zenodo 14880589",
@@ -5857,12 +6042,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "warning",
 "titles": [
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "first",
 "img": "real/ext/z-swisspostwp-blogspot-com.jpg"
 },
 {
+"url": "https://tvnetflxonline.com/",
 "id": "z-tvnetflxonline-com",
 "scheme": "fake-payment",
 "source": "Zenodo 14880589",
@@ -5874,12 +6060,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "warning",
 "titles": [
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/z-tvnetflxonline-com.jpg"
 },
 {
+"url": "https://xeb.lcb.mybluehost.me/",
 "id": "z-xeb-lcb-mybluehost-me",
 "scheme": "fake-payment",
 "source": "Zenodo 14880589",
@@ -5891,12 +6078,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "warning",
 "titles": [
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/z-xeb-lcb-mybluehost-me.jpg"
 },
 {
+"url": "https://usps.com.zv209.vip/",
 "id": "z-usps-com-zv209-vip",
 "scheme": "fake-payment",
 "source": "Zenodo 14880589",
@@ -5908,12 +6096,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "warning",
 "titles": [
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "lead",
 "img": "real/ext/z-usps-com-zv209-vip.jpg"
 },
 {
+"url": "https://chnet-dhlservice.is-a-green.com/",
 "id": "z-chnet-dhlservice-is-a-green-com",
 "scheme": "fake-payment",
 "source": "Zenodo 14880589",
@@ -5925,12 +6114,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "warning",
 "titles": [
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/z-chnet-dhlservice-is-a-green-com.jpg"
 },
 {
+"url": "https://booking.info-93843.bid/",
 "id": "z-booking-info-93843-bid",
 "scheme": "fake-payment",
 "source": "Zenodo 14880589",
@@ -5942,12 +6132,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "warning",
 "titles": [
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/z-booking-info-93843-bid.jpg"
 },
 {
+"url": "https://dhlinternationale.page.link/",
 "id": "z-dhlinternationale-page-link",
 "scheme": "fake-payment",
 "source": "Zenodo 14880589",
@@ -5959,12 +6150,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "warning",
 "titles": [
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/z-dhlinternationale-page-link.jpg"
 },
 {
+"url": "https://www.colegiosuizo.net/",
 "id": "z-www-colegiosuizo-net",
 "scheme": "fake-payment",
 "source": "Zenodo 14880589",
@@ -5976,12 +6168,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "warning",
 "titles": [
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/z-www-colegiosuizo-net.jpg"
 },
 {
+"url": "https://colegiosuizo.net/",
 "id": "z-colegiosuizo-net",
 "scheme": "fake-payment",
 "source": "Zenodo 14880589",
@@ -5993,46 +6186,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "warning",
 "titles": [
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/z-colegiosuizo-net.jpg"
 },
 {
-"id": "v-01a13d36-4fbf",
-"scheme": "fake-payment",
-"source": "urlscan.io",
-"date": "2026-10-15",
-"domain": "fivetelgate-dpd4r4iey27k.edgeone.dev",
-"title": "Wi5 - Telecommunications - Secure Checkout",
-"orig": null,
-"link": "https://urlscan.io/result/01a13d36-4fbf-7756-a9f4-8e7139537bb0/",
-"verdict": "warning",
-"titles": [
-"Данные карты уходят на другой сайт"
-],
-"note": "поддельное предупреждение безопасности на бесплатном хостинге",
-"stage": "pay",
-"img": "real/ext/v-01a13d36-4fbf.jpg"
-},
-{
-"id": "v-01a13d28-2c99",
-"scheme": "fake-payment",
-"source": "urlscan.io",
-"date": "2026-10-15",
-"domain": "paygate-dpj931jj60r0.edgeone.dev",
-"title": "Wi5 - Telecommunications - Secure Checkout",
-"orig": null,
-"link": "https://urlscan.io/result/01a13d28-2c99-753a-ad29-ee072ef322cf/",
-"verdict": "warning",
-"titles": [
-"Данные карты уходят на другой сайт"
-],
-"note": "поддельное предупреждение безопасности на бесплатном хостинге",
-"stage": "pay",
-"img": "real/ext/v-01a13d28-2c99.jpg"
-},
-{
+"url": "https://uusps.lqtu.cn/",
 "id": "z-uusps-lqtu-cn",
 "scheme": "fake-payment",
 "source": "Zenodo 14880589",
@@ -6048,6 +6208,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/z-uusps-lqtu-cn.jpg"
 },
 {
+"url": "https://usps.pcpostsale.top/",
 "id": "z-usps-pcpostsale-top",
 "scheme": "fake-payment",
 "source": "Zenodo 14880589",
@@ -6063,6 +6224,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/z-usps-pcpostsale-top.jpg"
 },
 {
+"url": "https://biomassociazione.it/",
 "id": "z-biomassociazione-it",
 "scheme": "fake-payment",
 "source": "Zenodo 14880589",
@@ -6078,6 +6240,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/z-biomassociazione-it.jpg"
 },
 {
+"url": "https://flash-usps.top/",
 "id": "z-flash-usps-top",
 "scheme": "fake-payment",
 "source": "Zenodo 14880589",
@@ -6093,6 +6256,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/z-flash-usps-top.jpg"
 },
 {
+"url": "https://www.dalladraiviengisod.com/",
 "id": "z-www-dalladraiviengisod-com",
 "scheme": "fake-payment",
 "source": "Zenodo 14880589",
@@ -6108,6 +6272,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/z-www-dalladraiviengisod-com.jpg"
 },
 {
+"url": "https://uspsmnk.com/",
 "id": "z-uspsmnk-com",
 "scheme": "fake-payment",
 "source": "Zenodo 14880589",
@@ -6123,6 +6288,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/z-uspsmnk-com.jpg"
 },
 {
+"url": "https://xdu.lzh.mybluehost.me/",
 "id": "z-xdu-lzh-mybluehost-me",
 "scheme": "fake-payment",
 "source": "Zenodo 14880589",
@@ -6138,21 +6304,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/z-xdu-lzh-mybluehost-me.jpg"
 },
 {
-"id": "z-dtprojects-eu-org",
-"scheme": "fake-payment",
-"source": "Zenodo 14880589",
-"date": "2024-01-06",
-"domain": "dtprojects.eu.org",
-"title": "",
-"note": "",
-"orig": null,
-"link": null,
-"verdict": "none",
-"titles": [],
-"stage": "pay",
-"img": "real/ext/z-dtprojects-eu-org.jpg"
-},
-{
+"url": "https://vemax.eu/",
 "id": "z-vemax-eu",
 "scheme": "fake-payment",
 "source": "Zenodo 14880589",
@@ -6168,6 +6320,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/z-vemax-eu.jpg"
 },
 {
+"url": "https://avito-payment.com/?v=1",
 "id": "u-01a1b763-90f9",
 "scheme": "fake-payment",
 "source": "urlscan.io",
@@ -6182,6 +6335,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/u-01a1b763-90f9.jpg"
 },
 {
+"url": "https://boxberry-trackcode1lsrety324ewkft.pages.dev/",
 "id": "u-01a0668b-d4ab",
 "scheme": "fake-payment",
 "source": "urlscan.io",
@@ -6196,6 +6350,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/u-01a0668b-d4ab.jpg"
 },
 {
+"url": "https://vivid-teal-rq7lwf1o-dpj1mxieiw1c.edgeone.dev/",
 "id": "u-01a107b8-2e43",
 "scheme": "fake-payment",
 "source": "urlscan.io",
@@ -6210,6 +6365,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/u-01a107b8-2e43.jpg"
 },
 {
+"url": "https://pochta-express-delivery.ru/",
 "id": "u-01a1cf99-b77c",
 "scheme": "fake-payment",
 "source": "urlscan.io",
@@ -6224,6 +6380,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/u-01a1cf99-b77c.jpg"
 },
 {
+"url": "https://www.sidermarsrl.it/openurass/web/pay.php",
 "id": "u-01a1c4a3-e9eb",
 "scheme": "fake-payment",
 "source": "urlscan.io",
@@ -6238,6 +6395,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/u-01a1c4a3-e9eb.jpg"
 },
 {
+"url": "https://www.flatsrl.com/old/openurass/web/pay.php",
 "id": "u-01a1bf39-a74b",
 "scheme": "fake-payment",
 "source": "urlscan.io",
@@ -6252,6 +6410,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/u-01a1bf39-a74b.jpg"
 },
 {
+"url": "https://www.progettienergetici.com/ris/openurass/web/pay.php",
 "id": "u-01a13924-6651",
 "scheme": "fake-payment",
 "source": "urlscan.io",
@@ -6266,6 +6425,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/u-01a13924-6651.jpg"
 },
 {
+"url": "https://www.musikfactory.it/wp-content/upgrade/openurass/web/pay.php",
 "id": "u-01a12fb1-3624",
 "scheme": "fake-payment",
 "source": "urlscan.io",
@@ -6280,6 +6440,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/u-01a12fb1-3624.jpg"
 },
 {
+"url": "https://www.skydivecostadargento.com/wp-admin/openurass/web/pay.php",
 "id": "u-01a0a390-ce6e",
 "scheme": "fake-payment",
 "source": "urlscan.io",
@@ -6294,6 +6455,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/u-01a0a390-ce6e.jpg"
 },
 {
+"url": "https://pwlri.cn/verification/index",
 "id": "v-01a18c86-a3ad",
 "scheme": "fake-payment",
 "source": "urlscan.io",
@@ -6309,6 +6471,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/v-01a18c86-a3ad.jpg"
 },
 {
+"url": "https://checkout-dpd6n4cwuktv.edgeone.dev/",
 "id": "v-01a1ceae-b810",
 "scheme": "fake-payment",
 "source": "urlscan.io",
@@ -6324,6 +6487,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/v-01a1ceae-b810.jpg"
 },
 {
+"url": "https://usps-server.serv00.net/",
 "id": "v-01a1446c-d672",
 "scheme": "fake-payment",
 "source": "urlscan.io",
@@ -6339,6 +6503,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/v-01a1446c-d672.jpg"
 },
 {
+"url": "https://www.usps-server.serv00.net/",
 "id": "v-01a1446c-0e6f",
 "scheme": "fake-payment",
 "source": "urlscan.io",
@@ -6354,6 +6519,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/v-01a1446c-0e6f.jpg"
 },
 {
+"url": "https://royalmail-delivers.com/",
 "id": "v-01a1dae3-269d",
 "scheme": "fake-payment",
 "source": "urlscan.io",
@@ -6369,6 +6535,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/v-01a1dae3-269d.jpg"
 },
 {
+"url": "https://redelivery-tracking-au.com/",
 "id": "v-01a19ffe-5616",
 "scheme": "fake-payment",
 "source": "urlscan.io",
@@ -6384,6 +6551,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/v-01a19ffe-5616.jpg"
 },
 {
+"url": "https://oplatahub.com/pay/800e7cd76c961c4a5b17d99a2924cc8f672b1c897e4466b80f3a6c1cd963eba4",
 "id": "v-01a09ec7-92c3",
 "scheme": "fake-payment",
 "source": "urlscan.io",
@@ -6399,6 +6567,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/v-01a09ec7-92c3.jpg"
 },
 {
+"url": "https://nalozka-payment.site/payment.html?adid=185&order=10313726864&route=%d0%9a%d0%b0%d0%bc%d1%8b%d1%88%d0%b8%d0%bd%20-%20%d0%92%d0%be%d1%80%d0%be%d0%bd%d0%b5%d0%b6&amount=64900%20%e2%82%bd",
 "id": "v-01a0667a-33c4",
 "scheme": "fake-payment",
 "source": "urlscan.io",
@@ -6414,6 +6583,229 @@ window.REAL_GALLERY = {
 "img": "real/ext/v-01a0667a-33c4.jpg"
 },
 {
+"url": "http://www.bospoint.com/wp-includes/pomo/welsfa/we/esti.html",
+"id": "p-141",
+"scheme": "fake-payment",
+"source": "Phish360",
+"date": "2020–2023",
+"domain": "www.bospoint.com",
+"title": "подделка wellsfargo",
+"orig": null,
+"link": null,
+"verdict": "danger",
+"titles": [
+"Данные передаются без шифрования"
+],
+"stage": "pay",
+"img": null
+},
+{
+"url": "http://atualizacao-itaucard.linehosting.top/home/enter.php",
+"id": "p-164",
+"scheme": "fake-payment",
+"source": "Phish360",
+"date": "2020–2023",
+"domain": "atualizacao-itaucard.linehosting.top",
+"title": "подделка itau",
+"orig": null,
+"link": null,
+"verdict": "danger",
+"titles": [
+"Данные передаются без шифрования"
+],
+"stage": "pay",
+"img": null
+},
+{
+"url": "http://u810354hcc.ha004.t.justns.ru/MyNetfES/manage/",
+"id": "p-173",
+"scheme": "fake-payment",
+"source": "Phish360",
+"date": "2020–2023",
+"domain": "u810354hcc.ha004.t.justns.ru",
+"title": "подделка netflix",
+"orig": null,
+"link": null,
+"verdict": "danger",
+"titles": [
+"Данные передаются без шифрования"
+],
+"stage": "pay",
+"img": null
+},
+{
+"url": "http://marl1.eu/wp-content/AccountProfile-1-2.htm",
+"id": "p-203",
+"scheme": "fake-payment",
+"source": "Phish360",
+"date": "2020–2023",
+"domain": "marl1.eu",
+"title": "подделка paypal",
+"orig": null,
+"link": null,
+"verdict": "danger",
+"titles": [
+"Данные передаются без шифрования"
+],
+"stage": "pay",
+"img": null
+},
+{
+"url": "http://bankofamericsng.webcindario.com/signOnV2Screen2020/auth.php",
+"id": "p-238",
+"scheme": "fake-payment",
+"source": "Phish360",
+"date": "2020–2023",
+"domain": "bankofamericsng.webcindario.com",
+"title": "подделка boa",
+"orig": null,
+"link": null,
+"verdict": "danger",
+"titles": [
+"Данные передаются без шифрования"
+],
+"stage": "pay",
+"img": null
+},
+{
+"url": "http://www.ipassages.com/hirethatwriter.com/PPP/myaccount/card.html",
+"id": "p-299",
+"scheme": "fake-payment",
+"source": "Phish360",
+"date": "2020–2023",
+"domain": "www.ipassages.com",
+"title": "подделка paypal",
+"orig": null,
+"link": null,
+"verdict": "danger",
+"titles": [
+"Данные передаются без шифрования"
+],
+"stage": "pay",
+"img": null
+},
+{
+"url": "http://www.khedtekhidari.com/.quarantine/personal-accounts/ddr/Contact-Us/Banklng/SignOn/account/go/confirm.php",
+"id": "p-340",
+"scheme": "fake-payment",
+"source": "Phish360",
+"date": "2020–2023",
+"domain": "www.khedtekhidari.com",
+"title": "подделка boa",
+"orig": null,
+"link": null,
+"verdict": "danger",
+"titles": [
+"Данные передаются без шифрования"
+],
+"stage": "pay",
+"img": null
+},
+{
+"url": "http://www.egmotorsclub.com/wt-include/core/bofa/Verify2.php?sessionid=OKJjs0oyr90PbkUc4mRJiiKlo7fLWCRLnA4PBtn3DoSOIM1N9SwsbhNAo2llFd62NbRpEfshDl6m789h0GJcYwMmz8IelOh909yFo1X2n4pvcyMdfvpd2cACkiRF78O7h",
+"id": "p-363",
+"scheme": "fake-payment",
+"source": "Phish360",
+"date": "2020–2023",
+"domain": "www.egmotorsclub.com",
+"title": "подделка boa",
+"orig": null,
+"link": null,
+"verdict": "danger",
+"titles": [
+"Данные передаются без шифрования"
+],
+"stage": "pay",
+"img": null
+},
+{
+"url": "http://nycteethwhiteningservice.com/chat/incl/com/auth/login/present/details.html?df4b26710122e9ce5019eff6afa95c88-df4b26710122e9ce5019eff6afa95c88-df4b26710122e9ce5019eff6afa95c88df4b26710122e9ce5019",
+"id": "p-580",
+"scheme": "fake-payment",
+"source": "Phish360",
+"date": "2020–2023",
+"domain": "nycteethwhiteningservice.com",
+"title": "подделка wellsfargo",
+"orig": null,
+"link": null,
+"verdict": "danger",
+"titles": [
+"Данные передаются без шифрования"
+],
+"stage": "pay",
+"img": null
+},
+{
+"url": "http://191.232.246.45/pagamento.php?skullid=NzQ5MjczODgxJjEw",
+"id": "p-779",
+"scheme": "fake-payment",
+"source": "Phish360",
+"date": "2020–2023",
+"domain": "191.232.246.45",
+"title": "подделка phish",
+"orig": null,
+"link": null,
+"verdict": "danger",
+"titles": [
+"Данные передаются без шифрования"
+],
+"stage": "pay",
+"img": null
+},
+{
+"url": "http://offersupto.in/public/assets/css/indus/personal/",
+"id": "p-780",
+"scheme": "fake-payment",
+"source": "Phish360",
+"date": "2020–2023",
+"domain": "offersupto.in",
+"title": "подделка phish",
+"orig": null,
+"link": null,
+"verdict": "danger",
+"titles": [
+"Данные передаются без шифрования"
+],
+"stage": "first",
+"img": null
+},
+{
+"url": "http://k5.dns-cloud.net/ibx.key.com/ibxolb/olb/index.html/login/details.html?34dd54f1b292bb4018bbcb76e9fb6c30-34dd54f1b292bb4018bbcb76e9fb6c30-34dd54f1b292bb4018bbcb76e9fb6c3034dd54f1b292bb4018bbcb76e",
+"id": "p-826",
+"scheme": "fake-payment",
+"source": "Phish360",
+"date": "2020–2023",
+"domain": "k5.dns-cloud.net",
+"title": "подделка phish",
+"orig": null,
+"link": null,
+"verdict": "danger",
+"titles": [
+"Данные передаются без шифрования"
+],
+"stage": "pay",
+"img": null
+},
+{
+"url": "https://geode-puzzle-velociraptor.glitch.me/",
+"id": "z-geode-puzzle-velociraptor-glitch-me",
+"scheme": "fake-payment",
+"source": "Zenodo 14880589",
+"date": "2024-01-11",
+"domain": "geode-puzzle-velociraptor.glitch.me",
+"title": "",
+"note": "копия входа в онлайн-банк Tesco Bank: логин, пароль, цифры секретного кода и девичья фамилия матери уходят в Telegram-бота",
+"orig": "real/orig/z-geode-puzzle-velociraptor-glitch-me.jpg",
+"link": null,
+"verdict": "warning",
+"titles": [
+"Данные уходят на другой сайт"
+],
+"stage": "first",
+"img": null
+},
+{
+"url": "https://www.waldorfkindergarten-herdecke.de/wp-admin/maint/shippment/dhl2020-usa-telegram/manage/?view=login&appIdKey=fcd00c0656cc490&country=",
 "id": "p-14",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -6428,6 +6820,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://mail.royalfenceandgate.com/.well-known/pki-validation/cibc/SignOn.cibc.php",
 "id": "p-22",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -6442,6 +6835,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://verf-ltdpay.solde-confirmation.ltd/connexion",
 "id": "p-33",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -6456,6 +6850,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "http://natwest.active-payee.co.uk/Login.php",
 "id": "p-42",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -6470,6 +6865,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://byairmail.xyz/mmmm/k/redirect-bin.php",
 "id": "p-44",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -6484,6 +6880,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://mega-webmagazin.kiev.ua/plugins/impot-/66d4eb706b36801/Professionnel.php?",
 "id": "p-60",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -6498,20 +6895,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
-"id": "p-141",
-"scheme": "fake-payment",
-"source": "Phish360",
-"date": "2020–2023",
-"domain": "www.bospoint.com",
-"title": "подделка wellsfargo",
-"orig": null,
-"link": null,
-"verdict": "none",
-"titles": [],
-"stage": "pay",
-"img": null
-},
-{
+"url": "https://app-agencia.com/~~/router_t2.php",
 "id": "p-152",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -6526,6 +6910,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://telecine-online.com/Netflix/e20def759c9a736904dc81da845ef2a2/confirmacao.php",
 "id": "p-157",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -6540,62 +6925,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
-"id": "p-164",
-"scheme": "fake-payment",
-"source": "Phish360",
-"date": "2020–2023",
-"domain": "atualizacao-itaucard.linehosting.top",
-"title": "подделка itau",
-"orig": null,
-"link": null,
-"verdict": "none",
-"titles": [],
-"stage": "pay",
-"img": null
-},
-{
-"id": "p-173",
-"scheme": "fake-payment",
-"source": "Phish360",
-"date": "2020–2023",
-"domain": "u810354hcc.ha004.t.justns.ru",
-"title": "подделка netflix",
-"orig": null,
-"link": null,
-"verdict": "none",
-"titles": [],
-"stage": "pay",
-"img": null
-},
-{
-"id": "p-203",
-"scheme": "fake-payment",
-"source": "Phish360",
-"date": "2020–2023",
-"domain": "marl1.eu",
-"title": "подделка paypal",
-"orig": null,
-"link": null,
-"verdict": "none",
-"titles": [],
-"stage": "pay",
-"img": null
-},
-{
-"id": "p-238",
-"scheme": "fake-payment",
-"source": "Phish360",
-"date": "2020–2023",
-"domain": "bankofamericsng.webcindario.com",
-"title": "подделка boa",
-"orig": null,
-"link": null,
-"verdict": "none",
-"titles": [],
-"stage": "pay",
-"img": null
-},
-{
+"url": "https://nwolb.personal-supportuk.com/",
 "id": "p-273",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -6610,48 +6940,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
-"id": "p-299",
-"scheme": "fake-payment",
-"source": "Phish360",
-"date": "2020–2023",
-"domain": "www.ipassages.com",
-"title": "подделка paypal",
-"orig": null,
-"link": null,
-"verdict": "none",
-"titles": [],
-"stage": "pay",
-"img": null
-},
-{
-"id": "p-340",
-"scheme": "fake-payment",
-"source": "Phish360",
-"date": "2020–2023",
-"domain": "www.khedtekhidari.com",
-"title": "подделка boa",
-"orig": null,
-"link": null,
-"verdict": "none",
-"titles": [],
-"stage": "pay",
-"img": null
-},
-{
-"id": "p-363",
-"scheme": "fake-payment",
-"source": "Phish360",
-"date": "2020–2023",
-"domain": "www.egmotorsclub.com",
-"title": "подделка boa",
-"orig": null,
-"link": null,
-"verdict": "none",
-"titles": [],
-"stage": "pay",
-"img": null
-},
-{
+"url": "https://ita-eng.com/wells/k/redirect-bin.php",
 "id": "p-415",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -6666,6 +6955,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://na1tionlus.com/BanOfAmerca/login/sign-in/signOn/details.html?3c7dff9be5f7096b0b6728bb89182f17-3c7dff9be5f7096b0b6728bb89182f17-3c7dff9be5f7096b0b6728bb89182f173c7dff9be5f7096b0b6728bb89182f173",
 "id": "p-451",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -6680,20 +6970,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
-"id": "p-580",
-"scheme": "fake-payment",
-"source": "Phish360",
-"date": "2020–2023",
-"domain": "nycteethwhiteningservice.com",
-"title": "подделка wellsfargo",
-"orig": null,
-"link": null,
-"verdict": "none",
-"titles": [],
-"stage": "pay",
-"img": null
-},
-{
+"url": "https://www.piscinadisolbiateolona.it/au/opts/paymentinformation.php",
 "id": "p-599",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -6708,6 +6985,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://unicellular-baud.000webhostapp.com/hc/M/default/log-re/MY%20ACCOUNT%20Verification%20Online.Billing.%20SUPPORT-79993535551262394484/Billing_Pay_Online.html?Review-VerificationMyAccount",
 "id": "p-608",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -6722,6 +7000,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "http://autoriparatori.org/login.php",
 "id": "p-609",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -6736,6 +7015,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://excessdev.com/wp-includes/ID3/Abanca/ACCESSO/4df733ff8cbaa03d72b56e3a6121586d6e803273346168244e55d0aa644e6169b92bf4f07ddc955fc2704b54f722d566/",
 "id": "p-633",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -6750,6 +7030,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "http://159.203.42.117/banks/Scotia/confirm.html",
 "id": "p-647",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -6764,6 +7045,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "http://www.delaneydating-x.pro/Telus/directing/easyweb.td.com/waw/idp/accountConfirm.htm",
 "id": "p-664",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -6778,6 +7060,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://belgium-bnpparibasfortisbe.web.app/",
 "id": "p-681",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -6792,6 +7075,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://hizmetgirisi-turkeygovtr.com/Ba%C5%9Fvuru-i%C5%9Flemleri/giris.php",
 "id": "p-690",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -6806,6 +7090,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://bankofamerica-sz.webcindario.com/bofa/auth.php",
 "id": "p-702",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -6820,6 +7105,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "http://panelasecozinhas.com.br/mobile/pagamento_cartao.php?skullid=NTQxNTc4MjY3JjEw",
 "id": "p-722",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -6834,6 +7120,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://diepost-id-17623512-parcel-redirect.prepaidify.com/diepost/spay.php",
 "id": "p-733",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -6848,6 +7135,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://verify-scotia.web.app/",
 "id": "p-735",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -6862,6 +7150,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://nfc.a2zhire.com/wp-content/nationwide/03d05a1947bcea912bcc30702",
 "id": "p-738",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -6876,6 +7165,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://www.jvcapitalgroup.com/wp-content/uploads/2020/10/post.ch/postch.php",
 "id": "p-768",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -6890,34 +7180,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
-"id": "p-779",
-"scheme": "fake-payment",
-"source": "Phish360",
-"date": "2020–2023",
-"domain": "191.232.246.45",
-"title": "подделка phish",
-"orig": null,
-"link": null,
-"verdict": "none",
-"titles": [],
-"stage": "pay",
-"img": null
-},
-{
-"id": "p-780",
-"scheme": "fake-payment",
-"source": "Phish360",
-"date": "2020–2023",
-"domain": "offersupto.in",
-"title": "подделка phish",
-"orig": null,
-"link": null,
-"verdict": "none",
-"titles": [],
-"stage": "first",
-"img": null
-},
-{
+"url": "http://poles-emplois.mon-message.fr/",
 "id": "p-809",
 "scheme": "fake-payment",
 "source": "Phish360",
@@ -6932,20 +7195,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
-"id": "p-826",
-"scheme": "fake-payment",
-"source": "Phish360",
-"date": "2020–2023",
-"domain": "k5.dns-cloud.net",
-"title": "подделка phish",
-"orig": null,
-"link": null,
-"verdict": "none",
-"titles": [],
-"stage": "pay",
-"img": null
-},
-{
+"url": "https://pass-usps.top/",
 "id": "z-pass-usps-top",
 "scheme": "fake-payment",
 "source": "Zenodo 14880589",
@@ -6961,6 +7211,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://www.greenstuffworld.cn/",
 "id": "z-www-greenstuffworld-cn",
 "scheme": "fake-payment",
 "source": "Zenodo 14880589",
@@ -6976,21 +7227,23 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
-"id": "z-geode-puzzle-velociraptor-glitch-me",
+"url": "https://hodgebkonline.com/",
+"id": "z-hodgebkonline-com",
 "scheme": "fake-payment",
 "source": "Zenodo 14880589",
 "date": "2024-01-11",
-"domain": "geode-puzzle-velociraptor.glitch.me",
+"domain": "hodgebkonline.com",
 "title": "",
-"note": "копия входа в Tesco Bank с полями карты; данные уходят в Telegram-бота",
-"orig": "real/orig/z-geode-puzzle-velociraptor-glitch-me.jpg",
+"note": "копия входа в онлайн-банк",
+"orig": "real/orig/z-hodgebkonline-com.jpg",
 "link": null,
 "verdict": "none",
 "titles": [],
-"stage": "first",
+"stage": "lead",
 "img": null
 },
 {
+"url": "https://login.shippingupdate.net/",
 "id": "z-login-shippingupdate-net",
 "scheme": "fake-payment",
 "source": "Zenodo 14880589",
@@ -7006,6 +7259,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://adress-usps.xyz/",
 "id": "z-adress-usps-xyz",
 "scheme": "fake-payment",
 "source": "Zenodo 14880589",
@@ -7021,6 +7275,23 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://wbat.net/",
+"id": "z-wbat-net",
+"scheme": "fake-payment",
+"source": "Zenodo 14880589",
+"date": "2024-01-10",
+"domain": "wbat.net",
+"title": "",
+"note": "копия входа в онлайн-банк",
+"orig": "real/orig/z-wbat-net.jpg",
+"link": null,
+"verdict": "none",
+"titles": [],
+"stage": "first",
+"img": null
+},
+{
+"url": "https://omegaautomazioni.com/",
 "id": "z-omegaautomazioni-com",
 "scheme": "fake-payment",
 "source": "Zenodo 14880589",
@@ -7036,6 +7307,103 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://fork-www-bankofamerica-com-50880559d04b27d7.sitemod.io/",
+"id": "z-fork-www-bankofamerica-com-50880559d04b2",
+"scheme": "fake-payment",
+"source": "Zenodo 14880589",
+"date": "2024-01-27",
+"domain": "fork-www-bankofamerica-com-50880559d04b27d7.sitemod.io",
+"title": "",
+"note": "копия входа в онлайн-банк: логин и пароль",
+"orig": "real/orig/z-fork-www-bankofamerica-com-50880559d04b2.jpg",
+"link": null,
+"verdict": "none",
+"titles": [],
+"stage": "lead",
+"img": null
+},
+{
+"url": "https://mobilesys.bdoupdate.workers.dev/",
+"id": "z-mobilesys-bdoupdate-workers-dev",
+"scheme": "fake-payment",
+"source": "Zenodo 14880589",
+"date": "2024-01-27",
+"domain": "mobilesys.bdoupdate.workers.dev",
+"title": "",
+"note": "копия входа в онлайн-банк",
+"orig": "real/orig/z-mobilesys-bdoupdate-workers-dev.jpg",
+"link": null,
+"verdict": "none",
+"titles": [],
+"stage": "first",
+"img": null
+},
+{
+"url": "https://arvestlogin.duckdns.org/",
+"id": "z-arvestlogin-duckdns-org",
+"scheme": "fake-payment",
+"source": "Zenodo 14880589",
+"date": "2024-01-27",
+"domain": "arvestlogin.duckdns.org",
+"title": "",
+"note": "копия входа в онлайн-банк: логин и пароль",
+"orig": "real/orig/z-arvestlogin-duckdns-org.jpg",
+"link": null,
+"verdict": "none",
+"titles": [],
+"stage": "first",
+"img": null
+},
+{
+"url": "https://vmi1586423.contaboserver.net/",
+"id": "z-vmi1586423-contaboserver-net",
+"scheme": "fake-payment",
+"source": "Zenodo 14880589",
+"date": "2024-01-08",
+"domain": "vmi1586423.contaboserver.net",
+"title": "",
+"note": "копия входа в онлайн-банк",
+"orig": "real/orig/z-vmi1586423-contaboserver-net.jpg",
+"link": null,
+"verdict": "none",
+"titles": [],
+"stage": "first",
+"img": null
+},
+{
+"url": "https://inforavast.otzo.com/",
+"id": "z-inforavast-otzo-com",
+"scheme": "fake-payment",
+"source": "Zenodo 14880589",
+"date": "2024-01-08",
+"domain": "inforavast.otzo.com",
+"title": "",
+"note": "копия входа в онлайн-банк",
+"orig": "real/orig/z-inforavast-otzo-com.jpg",
+"link": null,
+"verdict": "none",
+"titles": [],
+"stage": "first",
+"img": null
+},
+{
+"url": "https://fidelitychartered.com/",
+"id": "z-fidelitychartered-com",
+"scheme": "fake-payment",
+"source": "Zenodo 14880589",
+"date": "2024-01-13",
+"domain": "fidelitychartered.com",
+"title": "",
+"note": "копия входа в онлайн-банк",
+"orig": "real/orig/z-fidelitychartered-com.jpg",
+"link": null,
+"verdict": "none",
+"titles": [],
+"stage": "first",
+"img": null
+},
+{
+"url": "https://login-scl-swiss-servicenow.codeanyapp.com/",
 "id": "z-login-scl-swiss-servicenow-codeanyapp-co",
 "scheme": "fake-payment",
 "source": "Zenodo 14880589",
@@ -7051,6 +7419,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://booking.guest-reserve5523.com/",
 "id": "z-booking-guest-reserve5523-com",
 "scheme": "fake-payment",
 "source": "Zenodo 14880589",
@@ -7066,6 +7435,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://booking.hotel-guests-orders45633.com/",
 "id": "z-booking-hotel-guests-orders45633-com",
 "scheme": "fake-payment",
 "source": "Zenodo 14880589",
@@ -7081,6 +7451,23 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://d5-arvest.dyndns.org/",
+"id": "z-d5-arvest-dyndns-org",
+"scheme": "fake-payment",
+"source": "Zenodo 14880589",
+"date": "2024-01-17",
+"domain": "d5-arvest.dyndns.org",
+"title": "",
+"note": "копия входа в онлайн-банк: логин и пароль",
+"orig": "real/orig/z-d5-arvest-dyndns-org.jpg",
+"link": null,
+"verdict": "none",
+"titles": [],
+"stage": "first",
+"img": null
+},
+{
+"url": "https://booking.hotels637216.com/",
 "id": "z-booking-hotels637216-com",
 "scheme": "fake-payment",
 "source": "Zenodo 14880589",
@@ -7096,6 +7483,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://booking.hotels6326842.com/",
 "id": "z-booking-hotels6326842-com",
 "scheme": "fake-payment",
 "source": "Zenodo 14880589",
@@ -7111,6 +7499,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://booking.hotel-guests-orders76337.com/",
 "id": "z-booking-hotel-guests-orders76337-com",
 "scheme": "fake-payment",
 "source": "Zenodo 14880589",
@@ -7126,6 +7515,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://booking.hotel-id-confirm.com/",
 "id": "z-booking-hotel-id-confirm-com",
 "scheme": "fake-payment",
 "source": "Zenodo 14880589",
@@ -7141,6 +7531,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://booking-com.hotel-2839.mom/",
 "id": "z-booking-com-hotel-2839-mom",
 "scheme": "fake-payment",
 "source": "Zenodo 14880589",
@@ -7156,6 +7547,23 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://lovnodntcostmoney.me/",
+"id": "z-lovnodntcostmoney-me",
+"scheme": "fake-payment",
+"source": "Zenodo 14880589",
+"date": "2024-01-12",
+"domain": "lovnodntcostmoney.me",
+"title": "",
+"note": "копия входа в онлайн-банк",
+"orig": "real/orig/z-lovnodntcostmoney-me.jpg",
+"link": null,
+"verdict": "none",
+"titles": [],
+"stage": "contact",
+"img": null
+},
+{
+"url": "https://swiss-post-ch-online.com/",
 "id": "z-swiss-post-ch-online-com",
 "scheme": "fake-payment",
 "source": "Zenodo 14880589",
@@ -7171,6 +7579,23 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://r0avest.from-ia.com/",
+"id": "z-r0avest-from-ia-com",
+"scheme": "fake-payment",
+"source": "Zenodo 14880589",
+"date": "2024-01-02",
+"domain": "r0avest.from-ia.com",
+"title": "",
+"note": "копия входа в онлайн-банк",
+"orig": "real/orig/z-r0avest-from-ia-com.jpg",
+"link": null,
+"verdict": "none",
+"titles": [],
+"stage": "first",
+"img": null
+},
+{
+"url": "https://booking.reservation560167.net/",
 "id": "z-booking-reservation560167-net",
 "scheme": "fake-payment",
 "source": "Zenodo 14880589",
@@ -7186,6 +7611,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://nalozka-payment.pro/payment.html?adid=185&order=10313726864&route=%d0%9a%d0%b0%d0%bc%d1%8b%d1%88%d0%b8%d0%bd%20-%20%d0%92%d0%be%d1%80%d0%be%d0%bd%d0%b5%d0%b6&amount=64900%20%e2%82%bd",
 "id": "v-01a0667a-2ce8",
 "scheme": "fake-payment",
 "source": "urlscan.io",
@@ -7201,6 +7627,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://marketing-dphmhw38dnm0.edgeone.dev/checkout%20(1).html",
 "id": "v-01a0f382-8adb",
 "scheme": "fake-payment",
 "source": "urlscan.io",
@@ -7216,6 +7643,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://viroxa-dp8xkodr9g34.edgeone.dev/",
 "id": "v-01a0cec5-f5ce",
 "scheme": "fake-payment",
 "source": "urlscan.io",
@@ -7233,129 +7661,7 @@ window.REAL_GALLERY = {
 ],
 "account-theft": [
 {
-"id": "z-pub-375cf12e9c164ac5946c77d111a194c3-r2-",
-"scheme": "account-theft",
-"source": "Zenodo 14880589",
-"date": "2024-01-11",
-"domain": "pub-375cf12e9c164ac5946c77d111a194c3.r2.dev",
-"title": "",
-"note": "страница входа (почта, банк, госпортал): крадут логин и пароль",
-"orig": null,
-"link": null,
-"verdict": "danger",
-"titles": [
-"Вместе с картой просят данные, которые для оплаты не нужны",
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
-],
-"stage": "lead",
-"img": "real/ext/z-pub-375cf12e9c164ac5946c77d111a194c3-r2-.jpg"
-},
-{
-"id": "z-atgoebell-wixsite-com",
-"scheme": "account-theft",
-"source": "Zenodo 14880589",
-"date": "2024-01-11",
-"domain": "atgoebell.wixsite.com",
-"title": "",
-"note": "страница входа (почта, банк, госпортал): крадут логин и пароль",
-"orig": null,
-"link": null,
-"verdict": "none",
-"titles": [],
-"stage": "first",
-"img": "real/ext/z-atgoebell-wixsite-com.jpg"
-},
-{
-"id": "z-www-sapatkosaudisar-ksa-sa-in",
-"scheme": "account-theft",
-"source": "Zenodo 14880589",
-"date": "2024-01-11",
-"domain": "www.sapatkosaudisar-ksa-sa.in",
-"title": "",
-"note": "страница входа (почта, банк, госпортал): крадут логин и пароль",
-"orig": null,
-"link": null,
-"verdict": "none",
-"titles": [],
-"stage": "lead",
-"img": "real/ext/z-www-sapatkosaudisar-ksa-sa-in.jpg"
-},
-{
-"id": "z-zonuzake-wixsite-com",
-"scheme": "account-theft",
-"source": "Zenodo 14880589",
-"date": "2024-01-11",
-"domain": "zonuzake.wixsite.com",
-"title": "",
-"note": "страница входа (почта, банк, госпортал): крадут логин и пароль",
-"orig": null,
-"link": null,
-"verdict": "none",
-"titles": [],
-"stage": "first",
-"img": "real/ext/z-zonuzake-wixsite-com.jpg"
-},
-{
-"id": "z-ghghlmwsndhf-weebly-com",
-"scheme": "account-theft",
-"source": "Zenodo 14880589",
-"date": "2024-01-11",
-"domain": "ghghlmwsndhf.weebly.com",
-"title": "",
-"note": "страница входа (почта, банк, госпортал): крадут логин и пароль",
-"orig": null,
-"link": null,
-"verdict": "none",
-"titles": [],
-"stage": "first",
-"img": "real/ext/z-ghghlmwsndhf-weebly-com.jpg"
-},
-{
-"id": "z-turkekonom-com",
-"scheme": "account-theft",
-"source": "Zenodo 14880589",
-"date": "2024-01-11",
-"domain": "turkekonom.com",
-"title": "",
-"note": "страница входа (почта, банк, госпортал): крадут логин и пароль",
-"orig": null,
-"link": null,
-"verdict": "none",
-"titles": [],
-"stage": "lead",
-"img": "real/ext/z-turkekonom-com.jpg"
-},
-{
-"id": "z-frfrkinsshdf-weebly-com",
-"scheme": "account-theft",
-"source": "Zenodo 14880589",
-"date": "2024-01-11",
-"domain": "frfrkinsshdf.weebly.com",
-"title": "",
-"note": "страница входа (почта, банк, госпортал): крадут логин и пароль",
-"orig": null,
-"link": null,
-"verdict": "none",
-"titles": [],
-"stage": "first",
-"img": "real/ext/z-frfrkinsshdf-weebly-com.jpg"
-},
-{
-"id": "z-php-gray-alligator-arubanet81245887-code",
-"scheme": "account-theft",
-"source": "Zenodo 14880589",
-"date": "2024-01-11",
-"domain": "php-gray-alligator-arubanet81245887.codeanyapp.com",
-"title": "",
-"note": "страница входа (почта, банк, госпортал): крадут логин и пароль",
-"orig": null,
-"link": null,
-"verdict": "none",
-"titles": [],
-"stage": "pay",
-"img": "real/ext/z-php-gray-alligator-arubanet81245887-code.jpg"
-},
-{
+"url": "https://gosuslugicdek-app.com/login",
 "id": "u-01a1cec7-96b7",
 "scheme": "account-theft",
 "source": "urlscan.io",
@@ -7370,6 +7676,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/u-01a1cec7-96b7.jpg"
 },
 {
+"url": "https://gosuslugicdek-app.online/login",
 "id": "u-01a1c5f5-e0cb",
 "scheme": "account-theft",
 "source": "urlscan.io",
@@ -7384,6 +7691,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/u-01a1c5f5-e0cb.jpg"
 },
 {
+"url": "https://socportalfns3.shop/",
 "id": "u-01a162d8-c282",
 "scheme": "account-theft",
 "source": "urlscan.io",
@@ -7396,535 +7704,11 @@ window.REAL_GALLERY = {
 "titles": [],
 "stage": "first",
 "img": "real/ext/u-01a162d8-c282.jpg"
-},
-{
-"id": "z-ejercito-mil-ec-weebly-com",
-"scheme": "account-theft",
-"source": "Zenodo 14880589",
-"date": "2024-01-11",
-"domain": "ejercito-mil-ec.weebly.com",
-"title": "",
-"note": "страница входа (почта, банк, госпортал): крадут логин и пароль",
-"orig": "real/orig/z-ejercito-mil-ec-weebly-com.jpg",
-"link": null,
-"verdict": "none",
-"titles": [],
-"stage": "first",
-"img": null
-},
-{
-"id": "z-r0-binhoodloginw-gitbook-io",
-"scheme": "account-theft",
-"source": "Zenodo 14880589",
-"date": "2024-01-11",
-"domain": "r0-binhoodloginw.gitbook.io",
-"title": "",
-"note": "страница входа (почта, банк, госпортал): крадут логин и пароль",
-"orig": "real/orig/z-r0-binhoodloginw-gitbook-io.jpg",
-"link": null,
-"verdict": "none",
-"titles": [],
-"stage": "first",
-"img": null
-},
-{
-"id": "z-5454666-weebly-com",
-"scheme": "account-theft",
-"source": "Zenodo 14880589",
-"date": "2024-01-11",
-"domain": "5454666.weebly.com",
-"title": "",
-"note": "страница входа (почта, банк, госпортал): крадут логин и пароль",
-"orig": "real/orig/z-5454666-weebly-com.jpg",
-"link": null,
-"verdict": "none",
-"titles": [],
-"stage": "first",
-"img": null
-},
-{
-"id": "z-www-sabtskosa-online",
-"scheme": "account-theft",
-"source": "Zenodo 14880589",
-"date": "2024-01-11",
-"domain": "www.sabtskosa.online",
-"title": "",
-"note": "страница входа (почта, банк, госпортал): крадут логин и пароль",
-"orig": "real/orig/z-www-sabtskosa-online.jpg",
-"link": null,
-"verdict": "none",
-"titles": [],
-"stage": "first",
-"img": null
-},
-{
-"id": "z-www-tanomitanua-online",
-"scheme": "account-theft",
-"source": "Zenodo 14880589",
-"date": "2024-01-11",
-"domain": "www.tanomitanua.online",
-"title": "",
-"note": "страница входа (почта, банк, госпортал): крадут логин и пароль",
-"orig": "real/orig/z-www-tanomitanua-online.jpg",
-"link": null,
-"verdict": "none",
-"titles": [],
-"stage": "first",
-"img": null
-},
-{
-"id": "z-currentlyserver-wixsite-com",
-"scheme": "account-theft",
-"source": "Zenodo 14880589",
-"date": "2024-01-11",
-"domain": "currentlyserver.wixsite.com",
-"title": "",
-"note": "страница входа (почта, банк, госпортал): крадут логин и пароль",
-"orig": "real/orig/z-currentlyserver-wixsite-com.jpg",
-"link": null,
-"verdict": "none",
-"titles": [],
-"stage": "first",
-"img": null
-},
-{
-"id": "z-www-rayyanwate-com",
-"scheme": "account-theft",
-"source": "Zenodo 14880589",
-"date": "2024-01-11",
-"domain": "www.rayyanwate.com",
-"title": "",
-"note": "страница входа (почта, банк, госпортал): крадут логин и пароль",
-"orig": "real/orig/z-www-rayyanwate-com.jpg",
-"link": null,
-"verdict": "none",
-"titles": [],
-"stage": "lead",
-"img": null
-},
-{
-"id": "z-derta13-wixsite-com",
-"scheme": "account-theft",
-"source": "Zenodo 14880589",
-"date": "2024-01-11",
-"domain": "derta13.wixsite.com",
-"title": "",
-"note": "страница входа (почта, банк, госпортал): крадут логин и пароль",
-"orig": "real/orig/z-derta13-wixsite-com.jpg",
-"link": null,
-"verdict": "none",
-"titles": [],
-"stage": "first",
-"img": null
-},
-{
-"id": "z-michaelscarlett379-wixsite-com",
-"scheme": "account-theft",
-"source": "Zenodo 14880589",
-"date": "2024-01-11",
-"domain": "michaelscarlett379.wixsite.com",
-"title": "",
-"note": "страница входа (почта, банк, госпортал): крадут логин и пароль",
-"orig": "real/orig/z-michaelscarlett379-wixsite-com.jpg",
-"link": null,
-"verdict": "none",
-"titles": [],
-"stage": "first",
-"img": null
-},
-{
-"id": "z-www-taenmuinehf-com",
-"scheme": "account-theft",
-"source": "Zenodo 14880589",
-"date": "2024-01-11",
-"domain": "www.taenmuinehf.com",
-"title": "",
-"note": "страница входа (почта, банк, госпортал): крадут логин и пароль",
-"orig": "real/orig/z-www-taenmuinehf-com.jpg",
-"link": null,
-"verdict": "none",
-"titles": [],
-"stage": "first",
-"img": null
-},
-{
-"id": "z-bxvwa0-wixsite-com",
-"scheme": "account-theft",
-"source": "Zenodo 14880589",
-"date": "2024-01-11",
-"domain": "bxvwa0.wixsite.com",
-"title": "",
-"note": "страница входа (почта, банк, госпортал): крадут логин и пароль",
-"orig": "real/orig/z-bxvwa0-wixsite-com.jpg",
-"link": null,
-"verdict": "none",
-"titles": [],
-"stage": "first",
-"img": null
-},
-{
-"id": "z-www-naqiwatersaudi-com",
-"scheme": "account-theft",
-"source": "Zenodo 14880589",
-"date": "2024-01-11",
-"domain": "www.naqiwatersaudi.com",
-"title": "",
-"note": "страница входа (почта, банк, госпортал): крадут логин и пароль",
-"orig": "real/orig/z-www-naqiwatersaudi-com.jpg",
-"link": null,
-"verdict": "none",
-"titles": [],
-"stage": "lead",
-"img": null
-},
-{
-"id": "z-yiolomuobell-weebly-com",
-"scheme": "account-theft",
-"source": "Zenodo 14880589",
-"date": "2024-01-11",
-"domain": "yiolomuobell.weebly.com",
-"title": "",
-"note": "страница входа (почта, банк, госпортал): крадут логин и пароль",
-"orig": "real/orig/z-yiolomuobell-weebly-com.jpg",
-"link": null,
-"verdict": "none",
-"titles": [],
-"stage": "first",
-"img": null
-},
-{
-"id": "z-nts-embluemail-com",
-"scheme": "account-theft",
-"source": "Zenodo 14880589",
-"date": "2024-01-11",
-"domain": "nts.embluemail.com",
-"title": "",
-"note": "страница входа (почта, банк, госпортал): крадут логин и пароль",
-"orig": "real/orig/z-nts-embluemail-com.jpg",
-"link": null,
-"verdict": "none",
-"titles": [],
-"stage": "first",
-"img": null
-},
-{
-"id": "z-rubinhoodlogin-weebly-com",
-"scheme": "account-theft",
-"source": "Zenodo 14880589",
-"date": "2024-01-11",
-"domain": "rubinhoodlogin.weebly.com",
-"title": "",
-"note": "страница входа (почта, банк, госпортал): крадут логин и пароль",
-"orig": "real/orig/z-rubinhoodlogin-weebly-com.jpg",
-"link": null,
-"verdict": "none",
-"titles": [],
-"stage": "first",
-"img": null
-},
-{
-"id": "z-ynhgbfvdggh-weebly-com",
-"scheme": "account-theft",
-"source": "Zenodo 14880589",
-"date": "2024-01-11",
-"domain": "ynhgbfvdggh.weebly.com",
-"title": "",
-"note": "страница входа (почта, банк, госпортал): крадут логин и пароль",
-"orig": "real/orig/z-ynhgbfvdggh-weebly-com.jpg",
-"link": null,
-"verdict": "none",
-"titles": [],
-"stage": "first",
-"img": null
-},
-{
-"id": "z-lusty12112-wixsite-com",
-"scheme": "account-theft",
-"source": "Zenodo 14880589",
-"date": "2024-01-11",
-"domain": "lusty12112.wixsite.com",
-"title": "",
-"note": "страница входа (почта, банк, госпортал): крадут логин и пароль",
-"orig": "real/orig/z-lusty12112-wixsite-com.jpg",
-"link": null,
-"verdict": "none",
-"titles": [],
-"stage": "first",
-"img": null
-},
-{
-"id": "z-attgvgddz-weebly-com",
-"scheme": "account-theft",
-"source": "Zenodo 14880589",
-"date": "2024-01-11",
-"domain": "attgvgddz.weebly.com",
-"title": "",
-"note": "страница входа (почта, банк, госпортал): крадут логин и пароль",
-"orig": "real/orig/z-attgvgddz-weebly-com.jpg",
-"link": null,
-"verdict": "none",
-"titles": [],
-"stage": "first",
-"img": null
-},
-{
-"id": "z-hodgebkonline-com",
-"scheme": "account-theft",
-"source": "Zenodo 14880589",
-"date": "2024-01-11",
-"domain": "hodgebkonline.com",
-"title": "",
-"note": "копия входа в онлайн-банк",
-"orig": "real/orig/z-hodgebkonline-com.jpg",
-"link": null,
-"verdict": "none",
-"titles": [],
-"stage": "lead",
-"img": null
-},
-{
-"id": "z-lanastas1-wixsite-com",
-"scheme": "account-theft",
-"source": "Zenodo 14880589",
-"date": "2024-01-11",
-"domain": "lanastas1.wixsite.com",
-"title": "",
-"note": "страница входа (почта, банк, госпортал): крадут логин и пароль",
-"orig": "real/orig/z-lanastas1-wixsite-com.jpg",
-"link": null,
-"verdict": "none",
-"titles": [],
-"stage": "first",
-"img": null
-},
-{
-"id": "z-ec19651111-wixsite-com",
-"scheme": "account-theft",
-"source": "Zenodo 14880589",
-"date": "2024-01-11",
-"domain": "ec19651111.wixsite.com",
-"title": "",
-"note": "страница входа (почта, банк, госпортал): крадут логин и пароль",
-"orig": "real/orig/z-ec19651111-wixsite-com.jpg",
-"link": null,
-"verdict": "none",
-"titles": [],
-"stage": "first",
-"img": null
-},
-{
-"id": "z-pub-ea69d787fac64d57b836c6e99b9cc9cb-r2-",
-"scheme": "account-theft",
-"source": "Zenodo 14880589",
-"date": "2024-01-11",
-"domain": "pub-ea69d787fac64d57b836c6e99b9cc9cb.r2.dev",
-"title": "",
-"note": "страница входа (почта, банк, госпортал): крадут логин и пароль",
-"orig": "real/orig/z-pub-ea69d787fac64d57b836c6e99b9cc9cb-r2-.jpg",
-"link": null,
-"verdict": "none",
-"titles": [],
-"stage": "first",
-"img": null
-},
-{
-"id": "z-serviceproautomati-wixsite-com",
-"scheme": "account-theft",
-"source": "Zenodo 14880589",
-"date": "2024-01-10",
-"domain": "serviceproautomati.wixsite.com",
-"title": "",
-"note": "страница входа (почта, банк, госпортал): крадут логин и пароль",
-"orig": "real/orig/z-serviceproautomati-wixsite-com.jpg",
-"link": null,
-"verdict": "none",
-"titles": [],
-"stage": "first",
-"img": null
-},
-{
-"id": "z-wbat-net",
-"scheme": "account-theft",
-"source": "Zenodo 14880589",
-"date": "2024-01-10",
-"domain": "wbat.net",
-"title": "",
-"note": "копия входа в онлайн-банк",
-"orig": "real/orig/z-wbat-net.jpg",
-"link": null,
-"verdict": "none",
-"titles": [],
-"stage": "first",
-"img": null
-},
-{
-"id": "z-fork-www-bankofamerica-com-50880559d04b2",
-"scheme": "account-theft",
-"source": "Zenodo 14880589",
-"date": "2024-01-27",
-"domain": "fork-www-bankofamerica-com-50880559d04b27d7.sitemod.io",
-"title": "",
-"note": "страница входа (почта, банк, госпортал): крадут логин и пароль",
-"orig": "real/orig/z-fork-www-bankofamerica-com-50880559d04b2.jpg",
-"link": null,
-"verdict": "none",
-"titles": [],
-"stage": "lead",
-"img": null
-},
-{
-"id": "z-mobilesys-bdoupdate-workers-dev",
-"scheme": "account-theft",
-"source": "Zenodo 14880589",
-"date": "2024-01-27",
-"domain": "mobilesys.bdoupdate.workers.dev",
-"title": "",
-"note": "копия входа в онлайн-банк",
-"orig": "real/orig/z-mobilesys-bdoupdate-workers-dev.jpg",
-"link": null,
-"verdict": "none",
-"titles": [],
-"stage": "first",
-"img": null
-},
-{
-"id": "z-arvestlogin-duckdns-org",
-"scheme": "account-theft",
-"source": "Zenodo 14880589",
-"date": "2024-01-27",
-"domain": "arvestlogin.duckdns.org",
-"title": "",
-"note": "страница входа (почта, банк, госпортал): крадут логин и пароль",
-"orig": "real/orig/z-arvestlogin-duckdns-org.jpg",
-"link": null,
-"verdict": "none",
-"titles": [],
-"stage": "first",
-"img": null
-},
-{
-"id": "z-vmi1586423-contaboserver-net",
-"scheme": "account-theft",
-"source": "Zenodo 14880589",
-"date": "2024-01-08",
-"domain": "vmi1586423.contaboserver.net",
-"title": "",
-"note": "копия входа в онлайн-банк",
-"orig": "real/orig/z-vmi1586423-contaboserver-net.jpg",
-"link": null,
-"verdict": "none",
-"titles": [],
-"stage": "first",
-"img": null
-},
-{
-"id": "z-inforavast-otzo-com",
-"scheme": "account-theft",
-"source": "Zenodo 14880589",
-"date": "2024-01-08",
-"domain": "inforavast.otzo.com",
-"title": "",
-"note": "копия входа в онлайн-банк",
-"orig": "real/orig/z-inforavast-otzo-com.jpg",
-"link": null,
-"verdict": "none",
-"titles": [],
-"stage": "first",
-"img": null
-},
-{
-"id": "z-fidelitychartered-com",
-"scheme": "account-theft",
-"source": "Zenodo 14880589",
-"date": "2024-01-13",
-"domain": "fidelitychartered.com",
-"title": "",
-"note": "копия входа в онлайн-банк",
-"orig": "real/orig/z-fidelitychartered-com.jpg",
-"link": null,
-"verdict": "none",
-"titles": [],
-"stage": "first",
-"img": null
-},
-{
-"id": "z-d5-arvest-dyndns-org",
-"scheme": "account-theft",
-"source": "Zenodo 14880589",
-"date": "2024-01-17",
-"domain": "d5-arvest.dyndns.org",
-"title": "",
-"note": "страница входа (почта, банк, госпортал): крадут логин и пароль",
-"orig": "real/orig/z-d5-arvest-dyndns-org.jpg",
-"link": null,
-"verdict": "none",
-"titles": [],
-"stage": "first",
-"img": null
-},
-{
-"id": "z-lovnodntcostmoney-me",
-"scheme": "account-theft",
-"source": "Zenodo 14880589",
-"date": "2024-01-12",
-"domain": "lovnodntcostmoney.me",
-"title": "",
-"note": "копия входа в онлайн-банк",
-"orig": "real/orig/z-lovnodntcostmoney-me.jpg",
-"link": null,
-"verdict": "none",
-"titles": [],
-"stage": "contact",
-"img": null
-},
-{
-"id": "z-r0avest-from-ia-com",
-"scheme": "account-theft",
-"source": "Zenodo 14880589",
-"date": "2024-01-02",
-"domain": "r0avest.from-ia.com",
-"title": "",
-"note": "копия входа в онлайн-банк",
-"orig": "real/orig/z-r0avest-from-ia-com.jpg",
-"link": null,
-"verdict": "none",
-"titles": [],
-"stage": "first",
-"img": null
-},
-{
-"id": "z-robinhoudaccountlogin-gitbook-io",
-"scheme": "account-theft",
-"source": "Zenodo 14880589",
-"date": "2024-01-02",
-"domain": "robinhoudaccountlogin.gitbook.io",
-"title": "",
-"note": "страница входа (почта, банк, госпортал): крадут логин и пароль",
-"orig": "real/orig/z-robinhoudaccountlogin-gitbook-io.jpg",
-"link": null,
-"verdict": "none",
-"titles": [],
-"stage": "first",
-"img": null
-},
-{
-"id": "z-twintportalch-v3eservicescom458109-codea",
-"scheme": "account-theft",
-"source": "Zenodo 14880589",
-"date": "2024-01-19",
-"domain": "twintportalch-v3eservicescom458109.codeanyapp.com",
-"title": "",
-"note": "страница входа (почта, банк, госпортал): крадут логин и пароль",
-"orig": "real/orig/z-twintportalch-v3eservicescom458109-codea.jpg",
-"link": null,
-"verdict": "none",
-"titles": [],
-"stage": "first",
-"img": null
 }
 ],
 "payout": [
 {
+"url": "https://bnl-awalltahun.danaidjkt.com/",
 "id": "z-bnl-awalltahun-danaidjkt-com",
 "scheme": "payout",
 "source": "Zenodo 14880589",
@@ -7936,12 +7720,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Данные карты уходят в Telegram-бота"
+"Введённые данные уходят в Telegram-бота"
 ],
 "stage": "pay",
 "img": "real/ext/z-bnl-awalltahun-danaidjkt-com.jpg"
 },
 {
+"url": "https://bnl-awaltahun.updetterbaru.com/",
 "id": "z-bnl-awaltahun-updetterbaru-com",
 "scheme": "payout",
 "source": "Zenodo 14880589",
@@ -7953,12 +7738,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Данные карты уходят в Telegram-бота"
+"Введённые данные уходят в Telegram-бота"
 ],
 "stage": "pay",
 "img": "real/ext/z-bnl-awaltahun-updetterbaru-com.jpg"
 },
 {
+"url": "https://bni-pestapoint-awaltahun.bshsjsksks1.com/",
 "id": "z-bni-pestapoint-awaltahun-bshsjsksks1-com",
 "scheme": "payout",
 "source": "Zenodo 14880589",
@@ -7970,12 +7756,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Данные карты уходят в Telegram-бота"
+"Введённые данные уходят в Telegram-бота"
 ],
 "stage": "pay",
 "img": "real/ext/z-bni-pestapoint-awaltahun-bshsjsksks1-com.jpg"
 },
 {
+"url": "https://gebyar-undian-berhadiah.bshsjsksks1.com/",
 "id": "z-gebyar-undian-berhadiah-bshsjsksks1-com",
 "scheme": "payout",
 "source": "Zenodo 14880589",
@@ -7987,12 +7774,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Данные карты уходят в Telegram-бота"
+"Введённые данные уходят в Telegram-бота"
 ],
 "stage": "pay",
 "img": "real/ext/z-gebyar-undian-berhadiah-bshsjsksks1-com.jpg"
 },
 {
+"url": "https://skema-tarifbnl.vercel.app/",
 "id": "z-skema-tarifbnl-vercel-app",
 "scheme": "payout",
 "source": "Zenodo 14880589",
@@ -8004,12 +7792,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Данные карты уходят в Telegram-бота"
+"Введённые данные уходят в Telegram-бота"
 ],
 "stage": "pay",
 "img": "real/ext/z-skema-tarifbnl-vercel-app.jpg"
 },
 {
+"url": "https://gebyar-undian-bni-awal-tahun.resmi2024.art/",
 "id": "z-gebyar-undian-bni-awal-tahun-resmi2024-a",
 "scheme": "payout",
 "source": "Zenodo 14880589",
@@ -8021,12 +7810,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Данные карты уходят в Telegram-бота"
+"Введённые данные уходят в Telegram-бота"
 ],
 "stage": "pay",
 "img": "real/ext/z-gebyar-undian-bni-awal-tahun-resmi2024-a.jpg"
 },
 {
+"url": "https://hadiahbnl2024.danaidjkt.com/",
 "id": "z-hadiahbnl2024-danaidjkt-com",
 "scheme": "payout",
 "source": "Zenodo 14880589",
@@ -8038,12 +7828,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Данные карты уходят в Telegram-бота"
+"Введённые данные уходят в Telegram-бота"
 ],
 "stage": "pay",
 "img": "real/ext/z-hadiahbnl2024-danaidjkt-com.jpg"
 },
 {
+"url": "https://gebyarbnipromo.bshsjsksks.com/",
 "id": "z-gebyarbnipromo-bshsjsksks-com",
 "scheme": "payout",
 "source": "Zenodo 14880589",
@@ -8055,12 +7846,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "danger",
 "titles": [
-"Данные карты уходят в Telegram-бота"
+"Введённые данные уходят в Telegram-бота"
 ],
 "stage": "pay",
 "img": "real/ext/z-gebyarbnipromo-bshsjsksks-com.jpg"
 },
 {
+"url": "https://bg-plasthane.top/receive/714709825?a=150&d=31.12.2026&h=24",
 "id": "v-01a1ca75-38b7",
 "scheme": "payout",
 "source": "urlscan.io",
@@ -8071,15 +7863,14 @@ window.REAL_GALLERY = {
 "link": "https://urlscan.io/result/01a1ca75-38b7-7299-aec0-b74808604e13/",
 "verdict": "danger",
 "titles": [
-"Вместе с картой просят данные, которые для оплаты не нужны",
-"Скрипт читает поля карты и умеет отправлять данные",
-"Скрипт читает поля карты и умеет отправлять данные"
+"Вместе с картой просят номер соцстрахования"
 ],
 "note": "«компенсация расходов на электроэнергию» (Болгария)",
 "stage": "pay",
 "img": "real/ext/v-01a1ca75-38b7.jpg"
 },
 {
+"url": "https://bulgaria-isplashanie.me/receive/4920130?a=150&d=31.12.2026&h=24",
 "id": "v-01a10bc8-26e3",
 "scheme": "payout",
 "source": "urlscan.io",
@@ -8090,15 +7881,14 @@ window.REAL_GALLERY = {
 "link": "https://urlscan.io/result/01a10bc8-26e3-70df-8a38-348d2df3ccb2/",
 "verdict": "danger",
 "titles": [
-"Вместе с картой просят данные, которые для оплаты не нужны",
-"Скрипт читает поля карты и умеет отправлять данные",
-"Скрипт читает поля карты и умеет отправлять данные"
+"Вместе с картой просят номер соцстрахования"
 ],
 "note": "«компенсация расходов на электроэнергию» (Болгария)",
 "stage": "pay",
 "img": "real/ext/v-01a10bc8-26e3.jpg"
 },
 {
+"url": "https://parite-bulgaria.click/receive/70778810?a=600&d=31.12.2026&h=24",
 "id": "v-01a02f32-0252",
 "scheme": "payout",
 "source": "urlscan.io",
@@ -8109,15 +7899,14 @@ window.REAL_GALLERY = {
 "link": "https://urlscan.io/result/01a02f32-0252-72e8-bea3-e0917cc1f7d7/",
 "verdict": "danger",
 "titles": [
-"Вместе с картой просят данные, которые для оплаты не нужны",
-"Скрипт читает поля карты и умеет отправлять данные",
-"Скрипт читает поля карты и умеет отправлять данные"
+"Вместе с картой просят номер соцстрахования"
 ],
 "note": "«компенсация расходов на электроэнергию» (Болгария)",
 "stage": "pay",
 "img": "real/ext/v-01a02f32-0252.jpg"
 },
 {
+"url": "https://alfa-by24.online/",
 "id": "z-alfa-by24-online",
 "scheme": "payout",
 "source": "Zenodo 14880589",
@@ -8133,6 +7922,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/z-alfa-by24-online.jpg"
 },
 {
+"url": "https://bnl-tarif-transaksi.ssd-i.com/",
 "id": "z-bnl-tarif-transaksi-ssd-i-com",
 "scheme": "payout",
 "source": "Zenodo 14880589",
@@ -8148,6 +7938,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/z-bnl-tarif-transaksi-ssd-i-com.jpg"
 },
 {
+"url": "https://bni-secure.redi4pp.com/",
 "id": "z-bni-secure-redi4pp-com",
 "scheme": "payout",
 "source": "Zenodo 14880589",
@@ -8163,6 +7954,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/z-bni-secure-redi4pp-com.jpg"
 },
 {
+"url": "https://vzj4noiy-ozon.easycops.com/?3QHLte=SKOyLyS7qJ&click_id=SKOyLyS7qJ",
 "id": "u-01a1d06d-7000",
 "scheme": "payout",
 "source": "urlscan.io",
@@ -8177,6 +7969,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/u-01a1d06d-7000.jpg"
 },
 {
+"url": "https://s902ix4f-wildberries.easycops.com/?3QHLte=IBbvjzi7Bu&click_id=IBbvjzi7Bu",
 "id": "u-01a1d3b0-3c3b",
 "scheme": "payout",
 "source": "urlscan.io",
@@ -8191,6 +7984,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/u-01a1d3b0-3c3b.jpg"
 },
 {
+"url": "https://ckvptc.com/",
 "id": "v-01a1b0ce-0d66",
 "scheme": "payout",
 "source": "urlscan.io",
@@ -8206,6 +8000,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/v-01a1b0ce-0d66.jpg"
 },
 {
+"url": "https://underground-emerald-qxnszcll-dpckhtvzsu9f.edgeone.dev/",
 "id": "v-01a17d5f-1b59",
 "scheme": "payout",
 "source": "urlscan.io",
@@ -8221,6 +8016,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/v-01a17d5f-1b59.jpg"
 },
 {
+"url": "https://www.moneyrefunded.xyz/",
 "id": "v-019f81d7-72cb",
 "scheme": "payout",
 "source": "urlscan.io",
@@ -8236,6 +8032,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/v-019f81d7-72cb.jpg"
 },
 {
+"url": "https://fintrud.ru/",
 "id": "v-019f0df2-84fd",
 "scheme": "payout",
 "source": "urlscan.io",
@@ -8251,6 +8048,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/v-019f0df2-84fd.jpg"
 },
 {
+"url": "https://trudprof.ru/",
 "id": "v-019eacd5-1780",
 "scheme": "payout",
 "source": "urlscan.io",
@@ -8266,6 +8064,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/v-019eacd5-1780.jpg"
 },
 {
+"url": "https://sfrgos.ru/",
 "id": "v-019c0e27-1488",
 "scheme": "payout",
 "source": "urlscan.io",
@@ -8281,6 +8080,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/v-019c0e27-1488.jpg"
 },
 {
+"url": "https://trudvsemreg.ru/",
 "id": "v-019ab968-84f8",
 "scheme": "payout",
 "source": "urlscan.io",
@@ -8296,6 +8096,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/v-019ab968-84f8.jpg"
 },
 {
+"url": "https://www.sfrportal.online/",
 "id": "v-019aad20-333a",
 "scheme": "payout",
 "source": "urlscan.io",
@@ -8311,6 +8112,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/v-019aad20-333a.jpg"
 },
 {
+"url": "https://freegiftcard-qh1jyujds1.edgeone.app/",
 "id": "v-019cc6d0-f5e8",
 "scheme": "payout",
 "source": "urlscan.io",
@@ -8326,6 +8128,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://rotten-azure-8xe9yecs-dpyg17xcaqou.edgeone.dev/",
 "id": "v-01a1441a-b54b",
 "scheme": "payout",
 "source": "urlscan.io",
@@ -8343,6 +8146,7 @@ window.REAL_GALLERY = {
 ],
 "clickfix": [
 {
+"url": "https://colimaenmovimiento.com/",
 "id": "u-01a1d3b2-b663",
 "scheme": "clickfix",
 "source": "urlscan.io",
@@ -8353,12 +8157,13 @@ window.REAL_GALLERY = {
 "link": "https://urlscan.io/result/01a1d3b2-b663-771d-9b75-f9bebafacd06/",
 "verdict": "danger",
 "titles": [
-"Поддельная проверка «я не робот»: вас просят запустить команду"
+"Поддельная проверка «я не робот» просит запустить команду"
 ],
 "stage": "first",
 "img": "real/ext/u-01a1d3b2-b663.jpg"
 },
 {
+"url": "https://browser-architecture-sync.com/",
 "id": "u-01a1d3b2-c2e1",
 "scheme": "clickfix",
 "source": "urlscan.io",
@@ -8369,12 +8174,13 @@ window.REAL_GALLERY = {
 "link": "https://urlscan.io/result/01a1d3b2-c2e1-714c-9082-180438f38c88/",
 "verdict": "danger",
 "titles": [
-"Поддельная проверка «я не робот»: вас просят запустить команду"
+"Поддельная проверка «я не робот» просит запустить команду"
 ],
 "stage": "first",
 "img": "real/ext/u-01a1d3b2-c2e1.jpg"
 },
 {
+"url": "https://www.colegiojeanpiaget.com.br/",
 "id": "u-01a1d3b2-9080",
 "scheme": "clickfix",
 "source": "urlscan.io",
@@ -8385,12 +8191,13 @@ window.REAL_GALLERY = {
 "link": "https://urlscan.io/result/01a1d3b2-9080-7367-b7d2-55e15458f59d/",
 "verdict": "danger",
 "titles": [
-"Поддельная проверка «я не робот»: вас просят запустить команду"
+"Поддельная проверка «я не робот» просит запустить команду"
 ],
 "stage": "first",
 "img": "real/ext/u-01a1d3b2-9080.jpg"
 },
 {
+"url": "https://chomleaestates.co.uk/",
 "id": "u-01a1d3b2-8b66",
 "scheme": "clickfix",
 "source": "urlscan.io",
@@ -8401,12 +8208,13 @@ window.REAL_GALLERY = {
 "link": "https://urlscan.io/result/01a1d3b2-8b66-7288-9286-a9ac80e382aa/",
 "verdict": "danger",
 "titles": [
-"Поддельная проверка «я не робот»: вас просят запустить команду"
+"Поддельная проверка «я не робот» просит запустить команду"
 ],
 "stage": "first",
 "img": "real/ext/u-01a1d3b2-8b66.jpg"
 },
 {
+"url": "https://viventuresgroup.com/",
 "id": "u-01a1d3b2-9db1",
 "scheme": "clickfix",
 "source": "urlscan.io",
@@ -8417,12 +8225,13 @@ window.REAL_GALLERY = {
 "link": "https://urlscan.io/result/01a1d3b2-9db1-74aa-8fbb-191a3d4ccf2f/",
 "verdict": "danger",
 "titles": [
-"Поддельная проверка «я не робот»: вас просят запустить команду"
+"Поддельная проверка «я не робот» просит запустить команду"
 ],
 "stage": "first",
 "img": "real/ext/u-01a1d3b2-9db1.jpg"
 },
 {
+"url": "https://brookheavyhaulingllc.com/",
 "id": "u-01a1d3b2-20a2",
 "scheme": "clickfix",
 "source": "urlscan.io",
@@ -8433,12 +8242,13 @@ window.REAL_GALLERY = {
 "link": "https://urlscan.io/result/01a1d3b2-20a2-7246-9700-cf2325476dad/",
 "verdict": "danger",
 "titles": [
-"Поддельная проверка «я не робот»: вас просят запустить команду"
+"Поддельная проверка «я не робот» просит запустить команду"
 ],
 "stage": "first",
 "img": "real/ext/u-01a1d3b2-20a2.jpg"
 },
 {
+"url": "https://sandyheatingandair.com/",
 "id": "u-01a1d3b1-fb5d",
 "scheme": "clickfix",
 "source": "urlscan.io",
@@ -8449,12 +8259,13 @@ window.REAL_GALLERY = {
 "link": "https://urlscan.io/result/01a1d3b1-fb5d-73a2-8794-1080d51bf2ff/",
 "verdict": "danger",
 "titles": [
-"Поддельная проверка «я не робот»: вас просят запустить команду"
+"Поддельная проверка «я не робот» просит запустить команду"
 ],
 "stage": "lead",
 "img": "real/ext/u-01a1d3b1-fb5d.jpg"
 },
 {
+"url": "https://piramida.club/",
 "id": "u-01a1d3b1-ea22",
 "scheme": "clickfix",
 "source": "urlscan.io",
@@ -8465,12 +8276,13 @@ window.REAL_GALLERY = {
 "link": "https://urlscan.io/result/01a1d3b1-ea22-7611-aa3f-e0026b00eea3/",
 "verdict": "danger",
 "titles": [
-"Поддельная проверка «я не робот»: вас просят запустить команду"
+"Поддельная проверка «я не робот» просит запустить команду"
 ],
 "stage": "contact",
 "img": "real/ext/u-01a1d3b1-ea22.jpg"
 },
 {
+"url": "https://serenehomeliving.net/",
 "id": "u-01a1d3b2-02e7",
 "scheme": "clickfix",
 "source": "urlscan.io",
@@ -8481,12 +8293,13 @@ window.REAL_GALLERY = {
 "link": "https://urlscan.io/result/01a1d3b2-02e7-75f9-ac59-117638d37855/",
 "verdict": "danger",
 "titles": [
-"Поддельная проверка «я не робот»: вас просят запустить команду"
+"Поддельная проверка «я не робот» просит запустить команду"
 ],
 "stage": "first",
 "img": "real/ext/u-01a1d3b2-02e7.jpg"
 },
 {
+"url": "https://princetonmtg.com/",
 "id": "u-01a1d3b1-f521",
 "scheme": "clickfix",
 "source": "urlscan.io",
@@ -8497,12 +8310,13 @@ window.REAL_GALLERY = {
 "link": "https://urlscan.io/result/01a1d3b1-f521-75dd-a6ea-9d5c91ee4614/",
 "verdict": "danger",
 "titles": [
-"Поддельная проверка «я не робот»: вас просят запустить команду"
+"Поддельная проверка «я не робот» просит запустить команду"
 ],
 "stage": "first",
 "img": "real/ext/u-01a1d3b1-f521.jpg"
 },
 {
+"url": "https://mendrake.com/",
 "id": "u-01a1d3b1-c909",
 "scheme": "clickfix",
 "source": "urlscan.io",
@@ -8513,12 +8327,13 @@ window.REAL_GALLERY = {
 "link": "https://urlscan.io/result/01a1d3b1-c909-72cc-b5e9-d362d6f78426/",
 "verdict": "danger",
 "titles": [
-"Поддельная проверка «я не робот»: вас просят запустить команду"
+"Поддельная проверка «я не робот» просит запустить команду"
 ],
 "stage": "first",
 "img": "real/ext/u-01a1d3b1-c909.jpg"
 },
 {
+"url": "https://virexontech.com/",
 "id": "u-01a1d3b1-97b7",
 "scheme": "clickfix",
 "source": "urlscan.io",
@@ -8529,12 +8344,13 @@ window.REAL_GALLERY = {
 "link": "https://urlscan.io/result/01a1d3b1-97b7-7288-8ab7-2e8fbfb2fb2e/",
 "verdict": "danger",
 "titles": [
-"Поддельная проверка «я не робот»: вас просят запустить команду"
+"Поддельная проверка «я не робот» просит запустить команду"
 ],
 "stage": "first",
 "img": "real/ext/u-01a1d3b1-97b7.jpg"
 },
 {
+"url": "https://buyantivirus.us/",
 "id": "u-01a1d345-40b6",
 "scheme": "clickfix",
 "source": "urlscan.io",
@@ -8545,12 +8361,13 @@ window.REAL_GALLERY = {
 "link": "https://urlscan.io/result/01a1d345-40b6-70cc-86bf-24f28a06fbd1/",
 "verdict": "danger",
 "titles": [
-"Поддельная проверка «я не робот»: вас просят запустить команду"
+"Поддельная проверка «я не робот» просит запустить команду"
 ],
 "stage": "lead",
 "img": "real/ext/u-01a1d345-40b6.jpg"
 },
 {
+"url": "https://maswo.ca/",
 "id": "u-01a1d345-2d58",
 "scheme": "clickfix",
 "source": "urlscan.io",
@@ -8561,12 +8378,14 @@ window.REAL_GALLERY = {
 "link": "https://urlscan.io/result/01a1d345-2d58-710b-b434-f3bdba67ceff/",
 "verdict": "danger",
 "titles": [
-"Поддельная проверка «я не робот»: вас просят запустить команду"
+"Поддельная проверка «я не робот» просит запустить команду",
+"Скрипт берёт адрес из блокчейна и подгружает чужой код"
 ],
 "stage": "first",
 "img": "real/ext/u-01a1d345-2d58.jpg"
 },
 {
+"url": "https://www.brunofoglia.it/",
 "id": "u-01a1d344-c095",
 "scheme": "clickfix",
 "source": "urlscan.io",
@@ -8577,12 +8396,13 @@ window.REAL_GALLERY = {
 "link": "https://urlscan.io/result/01a1d344-c095-74a8-b4f4-ffc5e02e6668/",
 "verdict": "danger",
 "titles": [
-"Поддельная проверка «я не робот»: вас просят запустить команду"
+"Поддельная проверка «я не робот» просит запустить команду"
 ],
 "stage": "first",
 "img": "real/ext/u-01a1d344-c095.jpg"
 },
 {
+"url": "https://oroojloo.com/",
 "id": "u-01a1d343-ff42",
 "scheme": "clickfix",
 "source": "urlscan.io",
@@ -8593,12 +8413,13 @@ window.REAL_GALLERY = {
 "link": "https://urlscan.io/result/01a1d343-ff42-75a8-8336-70a7cb3c0c7d/",
 "verdict": "danger",
 "titles": [
-"Поддельная проверка «я не робот»: вас просят запустить команду"
+"Поддельная проверка «я не робот» просит запустить команду"
 ],
 "stage": "first",
 "img": "real/ext/u-01a1d343-ff42.jpg"
 },
 {
+"url": "https://hotscriptz.com/",
 "id": "u-01a1d3b2-bca3",
 "scheme": "clickfix",
 "source": "urlscan.io",
@@ -8615,6 +8436,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/u-01a1d3b2-bca3.jpg"
 },
 {
+"url": "https://hillorganicproducts.com/",
 "id": "u-01a1d3b1-1836",
 "scheme": "clickfix",
 "source": "urlscan.io",
@@ -8631,6 +8453,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/u-01a1d3b1-1836.jpg"
 },
 {
+"url": "https://rebelsupply.co.uk/",
 "id": "u-01a1d3b0-ea6d",
 "scheme": "clickfix",
 "source": "urlscan.io",
@@ -8647,6 +8470,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/u-01a1d3b0-ea6d.jpg"
 },
 {
+"url": "https://lrd.adv.br/",
 "id": "u-01a1d3b2-a40b",
 "scheme": "clickfix",
 "source": "urlscan.io",
@@ -8661,6 +8485,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "http://gurudaspurbarta.com/",
 "id": "u-01a1d3b2-6b89",
 "scheme": "clickfix",
 "source": "urlscan.io",
@@ -8675,6 +8500,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://arsproanima.pl/",
 "id": "u-01a1d3b2-85ea",
 "scheme": "clickfix",
 "source": "urlscan.io",
@@ -8689,6 +8515,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://floorblock.co/",
 "id": "u-01a1d3b2-63ae",
 "scheme": "clickfix",
 "source": "urlscan.io",
@@ -8703,6 +8530,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://apr-hamburg.de/",
 "id": "u-01a1d3b2-7f2c",
 "scheme": "clickfix",
 "source": "urlscan.io",
@@ -8717,6 +8545,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://ironlionservices.com/",
 "id": "u-01a1d3b2-78e6",
 "scheme": "clickfix",
 "source": "urlscan.io",
@@ -8731,6 +8560,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://heallivingsolutions.com/",
 "id": "u-01a1d3b2-719f",
 "scheme": "clickfix",
 "source": "urlscan.io",
@@ -8745,6 +8575,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://doxologylabs.com/",
 "id": "u-01a1d3b2-49e1",
 "scheme": "clickfix",
 "source": "urlscan.io",
@@ -8759,6 +8590,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://elitepuppypets.com/",
 "id": "u-01a1d3b2-51b2",
 "scheme": "clickfix",
 "source": "urlscan.io",
@@ -8773,6 +8605,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://federicolosito.com/",
 "id": "u-01a1d3b2-57f4",
 "scheme": "clickfix",
 "source": "urlscan.io",
@@ -8787,6 +8620,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://davidthompsoncoaching.com/",
 "id": "u-01a1d3b2-39f0",
 "scheme": "clickfix",
 "source": "urlscan.io",
@@ -8801,6 +8635,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://dkjglobal.com/",
 "id": "u-01a1d3b2-42c9",
 "scheme": "clickfix",
 "source": "urlscan.io",
@@ -8815,6 +8650,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://cleavesecurity.com/",
 "id": "u-01a1d3b2-2d04",
 "scheme": "clickfix",
 "source": "urlscan.io",
@@ -8829,6 +8665,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://cirrus-living.de/",
 "id": "u-01a1d3b2-26e9",
 "scheme": "clickfix",
 "source": "urlscan.io",
@@ -8843,6 +8680,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://singpa.com/",
 "id": "u-01a1d3b2-1262",
 "scheme": "clickfix",
 "source": "urlscan.io",
@@ -8857,6 +8695,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://tajdarmedicalservices.com/",
 "id": "u-01a1d3b2-1959",
 "scheme": "clickfix",
 "source": "urlscan.io",
@@ -8871,6 +8710,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://sgm-holdings.com/",
 "id": "u-01a1d3b2-0b58",
 "scheme": "clickfix",
 "source": "urlscan.io",
@@ -8885,6 +8725,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://primverlag.at/",
 "id": "u-01a1d3b1-eeed",
 "scheme": "clickfix",
 "source": "urlscan.io",
@@ -8899,6 +8740,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://micolomero.it/",
 "id": "u-01a1d3b1-ce7d",
 "scheme": "clickfix",
 "source": "urlscan.io",
@@ -8913,6 +8755,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://patrickhufschmidt.com/",
 "id": "u-01a1d3b1-e301",
 "scheme": "clickfix",
 "source": "urlscan.io",
@@ -8927,6 +8770,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://nexusflownetwork.com/",
 "id": "u-01a1d3b1-d617",
 "scheme": "clickfix",
 "source": "urlscan.io",
@@ -8941,6 +8785,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://lovelivingholdings.com/",
 "id": "u-01a1d3b1-bdca",
 "scheme": "clickfix",
 "source": "urlscan.io",
@@ -8955,6 +8800,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://marcalexanderprosthodontics.com/",
 "id": "u-01a1d3b1-c462",
 "scheme": "clickfix",
 "source": "urlscan.io",
@@ -8969,6 +8815,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://jerryelectricllc.com/",
 "id": "u-01a1d3b1-b1fe",
 "scheme": "clickfix",
 "source": "urlscan.io",
@@ -8983,6 +8830,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://whithaven.com/",
 "id": "u-01a1d3b1-a54a",
 "scheme": "clickfix",
 "source": "urlscan.io",
@@ -8997,6 +8845,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://listverkfabrikken.no/",
 "id": "u-01a1d3b1-b808",
 "scheme": "clickfix",
 "source": "urlscan.io",
@@ -9011,6 +8860,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://truselfcounselingservices.com/",
 "id": "u-01a1d3b1-8f94",
 "scheme": "clickfix",
 "source": "urlscan.io",
@@ -9025,6 +8875,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://ystglobalmanagement.com/",
 "id": "u-01a1d3b1-aada",
 "scheme": "clickfix",
 "source": "urlscan.io",
@@ -9039,6 +8890,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://whiskerwalkz.com/",
 "id": "u-01a1d3b1-9ee6",
 "scheme": "clickfix",
 "source": "urlscan.io",
@@ -9053,6 +8905,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://tarmaweb.com/",
 "id": "u-01a1d3b1-88e3",
 "scheme": "clickfix",
 "source": "urlscan.io",
@@ -9067,34 +8920,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
-"id": "u-01a1d3b1-7d81",
-"scheme": "clickfix",
-"source": "urlscan.io",
-"date": "2026-11-13",
-"domain": "decoupageguild.co.uk",
-"title": "decoupageguild",
-"orig": "real/orig/u-01a1d3b1-7d81.jpg",
-"link": "https://urlscan.io/result/01a1d3b1-7d81-741b-b6c1-b726e98b4662/",
-"verdict": "none",
-"titles": [],
-"stage": "first",
-"img": null
-},
-{
-"id": "u-01a1d3b1-665c",
-"scheme": "clickfix",
-"source": "urlscan.io",
-"date": "2026-11-13",
-"domain": "bakirkoytasimacilik.cyou",
-"title": "bakirkoytasimacilik",
-"orig": "real/orig/u-01a1d3b1-665c.jpg",
-"link": "https://urlscan.io/result/01a1d3b1-665c-71ad-bd53-49d37cff08d9/",
-"verdict": "none",
-"titles": [],
-"stage": "first",
-"img": null
-},
-{
+"url": "https://beajumper.com.br/",
 "id": "u-01a1d3b1-35ac",
 "scheme": "clickfix",
 "source": "urlscan.io",
@@ -9109,6 +8935,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://oasisflproperties.com/",
 "id": "u-01a1d3b1-1e65",
 "scheme": "clickfix",
 "source": "urlscan.io",
@@ -9123,6 +8950,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://aylwinimobililiaria.com/",
 "id": "u-01a1d3b1-2b1c",
 "scheme": "clickfix",
 "source": "urlscan.io",
@@ -9137,6 +8965,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://subhashini.in/",
 "id": "u-01a1d3b0-fb63",
 "scheme": "clickfix",
 "source": "urlscan.io",
@@ -9151,6 +8980,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://www.altaibadates.com/",
 "id": "u-01a1d3b1-05b2",
 "scheme": "clickfix",
 "source": "urlscan.io",
@@ -9165,6 +8995,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "http://save-meglobaltech.com/",
 "id": "u-01a1d3b0-f338",
 "scheme": "clickfix",
 "source": "urlscan.io",
@@ -9179,6 +9010,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://valley-res.com/",
 "id": "u-01a1d3b1-0070",
 "scheme": "clickfix",
 "source": "urlscan.io",
@@ -9193,20 +9025,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
-"id": "u-01a1d345-476c",
-"scheme": "clickfix",
-"source": "urlscan.io",
-"date": "2026-11-13",
-"domain": "clinicadentalgarciaselva.com",
-"title": "Clínica Dental García Selva |",
-"orig": "real/orig/u-01a1d345-476c.jpg",
-"link": "https://urlscan.io/result/01a1d345-476c-7698-a478-2095949a1f18/",
-"verdict": "none",
-"titles": [],
-"stage": "first",
-"img": null
-},
-{
+"url": "https://coopercapitalholdings.com/",
 "id": "u-01a1d344-57e9",
 "scheme": "clickfix",
 "source": "urlscan.io",
@@ -9223,6 +9042,7 @@ window.REAL_GALLERY = {
 ],
 "subscription": [
 {
+"url": "https://oplata.poslaniya.su/?p=eyJhaSI6IjU5Nzk4NDEwNjEiLCJpaSI6ImluaXQ6c29DLUVEVkg6MTMiLCJhIjoyOSwidHAiOjMsInJwIjpbWzE0OTksN10sWzY0OSw1XSxbMjk5LDNdLFs5OSwxXV19",
 "id": "u-01a1b69d-f7b5",
 "scheme": "subscription",
 "source": "urlscan.io",
@@ -9233,7 +9053,7 @@ window.REAL_GALLERY = {
 "link": "https://urlscan.io/result/01a1b69d-f7b5-7128-8879-ff49ce2c89a2/",
 "verdict": "warning",
 "titles": [
-"Цена-приманка: сейчас 29 ₽, а дальше — регулярные списания по 1 499 ₽"
+"Сейчас 29 ₽, а дальше – 1 499 ₽ каждую неделю"
 ],
 "stage": "first",
 "img": "real/ext/u-01a1b69d-f7b5.jpg"
@@ -9241,6 +9061,7 @@ window.REAL_GALLERY = {
 ],
 "fines": [
 {
+"url": "https://ylylkrtzl.net/",
 "id": "z-ylylkrtzl-net",
 "scheme": "fines",
 "source": "Zenodo 14880589",
@@ -9252,12 +9073,31 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "warning",
 "titles": [
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/z-ylylkrtzl-net.jpg"
 },
 {
+"url": "https://webihlalsorgutr.com/",
+"id": "z-webihlalsorgutr-com",
+"scheme": "fines",
+"source": "Zenodo 14880589",
+"date": "2024-01-11",
+"domain": "webihlalsorgutr.com",
+"title": "",
+"note": "«Araç Hasar Kaydı Sorgulama» / «ihlal sorgu» (Турция) и «возврат налога»: платная «справка» или «пошлина» — оплата картой",
+"orig": null,
+"link": null,
+"verdict": "warning",
+"titles": [
+"Данные уходят на другой сайт"
+],
+"stage": "first",
+"img": "real/ext/z-webihlalsorgutr-com.jpg"
+},
+{
+"url": "https://trmrtysgsdgpzr.net/",
 "id": "z-trmrtysgsdgpzr-net",
 "scheme": "fines",
 "source": "Zenodo 14880589",
@@ -9269,12 +9109,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "warning",
 "titles": [
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/z-trmrtysgsdgpzr-net.jpg"
 },
 {
+"url": "https://7-24destekller.com.tr/",
 "id": "z-7-24destekller-com-tr",
 "scheme": "fines",
 "source": "Zenodo 14880589",
@@ -9286,12 +9127,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "warning",
 "titles": [
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/z-7-24destekller-com-tr.jpg"
 },
 {
+"url": "https://kmvehasar.online/",
 "id": "z-kmvehasar-online",
 "scheme": "fines",
 "source": "Zenodo 14880589",
@@ -9303,12 +9145,13 @@ window.REAL_GALLERY = {
 "link": null,
 "verdict": "warning",
 "titles": [
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/z-kmvehasar-online.jpg"
 },
 {
+"url": "https://ez-pazz-billing.129-121-100-114.cpanel.site/?kocak=pepek",
 "id": "v-01a18885-1a9f",
 "scheme": "fines",
 "source": "urlscan.io",
@@ -9326,6 +9169,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/v-01a18885-1a9f.jpg"
 },
 {
+"url": "https://ez-passupdatebiling.20-228-132-238.cpanel.site/?kocak=pepek",
 "id": "v-019ec6ac-5863",
 "scheme": "fines",
 "source": "urlscan.io",
@@ -9343,6 +9187,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/v-019ec6ac-5863.jpg"
 },
 {
+"url": "https://e-zpasscenter.20-244-12-151.cpanel.site/?kocak=pepek",
 "id": "v-019ea76c-15ea",
 "scheme": "fines",
 "source": "urlscan.io",
@@ -9360,6 +9205,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/v-019ea76c-15ea.jpg"
 },
 {
+"url": "https://e-zpassgroupstatement.20-244-12-151.cpanel.site/?kocak=pepek",
 "id": "v-019ea4b7-469d",
 "scheme": "fines",
 "source": "urlscan.io",
@@ -9377,6 +9223,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/v-019ea4b7-469d.jpg"
 },
 {
+"url": "https://e-zpassgroup-update.20-244-12-151.cpanel.site/?kocak=pepek",
 "id": "v-019ea43c-b8ea",
 "scheme": "fines",
 "source": "urlscan.io",
@@ -9394,6 +9241,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/v-019ea43c-b8ea.jpg"
 },
 {
+"url": "https://energetic-gold-squirrel.213-165-245-113.cpanel.site/public/?kocak=pepek",
 "id": "v-019e6fc7-ce60",
 "scheme": "fines",
 "source": "urlscan.io",
@@ -9411,6 +9259,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/v-019e6fc7-ce60.jpg"
 },
 {
+"url": "https://ros-gibdd-shtraf.ru/",
 "id": "v-01a0b8cd-f8cd",
 "scheme": "fines",
 "source": "urlscan.io",
@@ -9421,7 +9270,6 @@ window.REAL_GALLERY = {
 "link": "https://urlscan.io/result/01a0b8cd-f8cd-7725-8769-cee08000dfe4/",
 "verdict": "warning",
 "titles": [
-"Скрипт читает поля карты и умеет отправлять данные",
 "Требуют срочно оплатить долг или штраф по ссылке"
 ],
 "note": "«АвтоШтраф EXPRESS — проверка и оплата штрафов ГИБДД»",
@@ -9429,21 +9277,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/v-01a0b8cd-f8cd.jpg"
 },
 {
-"id": "z-webihlalsorgutr-com",
-"scheme": "fines",
-"source": "Zenodo 14880589",
-"date": "2024-01-11",
-"domain": "webihlalsorgutr.com",
-"title": "",
-"note": "«Araç Hasar Kaydı Sorgulama» / «ihlal sorgu» (Турция) и «возврат налога»: платная «справка» или «пошлина» — оплата картой",
-"orig": null,
-"link": null,
-"verdict": "none",
-"titles": [],
-"stage": "first",
-"img": "real/ext/z-webihlalsorgutr-com.jpg"
-},
-{
+"url": "https://ubrirs.online/",
 "id": "z-ubrirs-online",
 "scheme": "fines",
 "source": "Zenodo 14880589",
@@ -9459,6 +9293,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/z-ubrirs-online.jpg"
 },
 {
+"url": "https://ndadltt.net/",
 "id": "z-ndadltt-net",
 "scheme": "fines",
 "source": "Zenodo 14880589",
@@ -9474,6 +9309,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/z-ndadltt-net.jpg"
 },
 {
+"url": "https://gibdd-proverka.com/",
 "id": "u-01a129a0-1d2f",
 "scheme": "fines",
 "source": "urlscan.io",
@@ -9488,6 +9324,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/u-01a129a0-1d2f.jpg"
 },
 {
+"url": "https://gov-gibdd.ru/",
 "id": "u-01a1979d-3cad",
 "scheme": "fines",
 "source": "urlscan.io",
@@ -9502,6 +9339,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/u-01a1979d-3cad.jpg"
 },
 {
+"url": "https://iagservicecorp.org/user/login",
 "id": "v-019dbef0-a7cf",
 "scheme": "fines",
 "source": "urlscan.io",
@@ -9517,6 +9355,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/v-019dbef0-a7cf.jpg"
 },
 {
+"url": "https://eflow-toll.co.com/",
 "id": "v-01a01f63-e042",
 "scheme": "fines",
 "source": "urlscan.io",
@@ -9532,6 +9371,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/v-01a01f63-e042.jpg"
 },
 {
+"url": "https://tolleflow.click/",
 "id": "v-019b111e-f926",
 "scheme": "fines",
 "source": "urlscan.io",
@@ -9547,6 +9387,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/v-019b111e-f926.jpg"
 },
 {
+"url": "https://gibdd-auto.ru/?ysclid=mvrs4rp0z9944756738",
 "id": "v-01a18190-8806",
 "scheme": "fines",
 "source": "urlscan.io",
@@ -9564,6 +9405,7 @@ window.REAL_GALLERY = {
 ],
 "safe-account": [
 {
+"url": "https://fnsnalog-ru.online/",
 "id": "u-01a163e2-b5e6",
 "scheme": "safe-account",
 "source": "urlscan.io",
@@ -9574,12 +9416,13 @@ window.REAL_GALLERY = {
 "link": "https://urlscan.io/result/01a163e2-b5e6-77dd-b326-91c9c1e6e0d7/",
 "verdict": "danger",
 "titles": [
-"Страница пугает взломом и просит позвонить по номеру"
+"«Вас взломали»: страница просит позвонить по номеру"
 ],
 "stage": "first",
 "img": "real/ext/u-01a163e2-b5e6.jpg"
 },
 {
+"url": "https://yandex-maps-ruclient.online/",
 "id": "v-01a0867f-de36",
 "scheme": "safe-account",
 "source": "urlscan.io",
@@ -9590,13 +9433,14 @@ window.REAL_GALLERY = {
 "link": "https://urlscan.io/result/01a0867f-de36-763c-9e65-3a8b6f672c84/",
 "verdict": "danger",
 "titles": [
-"Страница пугает взломом и отправляет в Telegram"
+"«Вас взломали»: страница отправляет в Telegram"
 ],
 "note": "«Госуслуги: доступ к учётной записи передан на устройство Apple MacBook Air» и кнопка «Обратиться в техподдержку» — первый шаг схемы «безопасный счёт»",
 "stage": "contact",
 "img": "real/ext/v-01a0867f-de36.jpg"
 },
 {
+"url": "https://www.yandex-maps-ruclient.online/",
 "id": "v-01a0867e-d24a",
 "scheme": "safe-account",
 "source": "urlscan.io",
@@ -9607,13 +9451,14 @@ window.REAL_GALLERY = {
 "link": "https://urlscan.io/result/01a0867e-d24a-7639-861f-41b9c524762f/",
 "verdict": "danger",
 "titles": [
-"Страница пугает взломом и отправляет в Telegram"
+"«Вас взломали»: страница отправляет в Telegram"
 ],
 "note": "«Госуслуги: доступ к учётной записи передан на устройство Apple MacBook Air» и кнопка «Обратиться в техподдержку» — первый шаг схемы «безопасный счёт»",
 "stage": "contact",
 "img": "real/ext/v-01a0867e-d24a.jpg"
 },
 {
+"url": "https://yandex-maps-def-r-u.online/",
 "id": "v-01a08532-a148",
 "scheme": "safe-account",
 "source": "urlscan.io",
@@ -9624,13 +9469,14 @@ window.REAL_GALLERY = {
 "link": "https://urlscan.io/result/01a08532-a148-722e-9705-94aca998c6aa/",
 "verdict": "danger",
 "titles": [
-"Страница пугает взломом и отправляет в Telegram"
+"«Вас взломали»: страница отправляет в Telegram"
 ],
 "note": "«Госуслуги: доступ к учётной записи передан на устройство Apple MacBook Air» и кнопка «Обратиться в техподдержку» — первый шаг схемы «безопасный счёт»",
 "stage": "contact",
 "img": "real/ext/v-01a08532-a148.jpg"
 },
 {
+"url": "https://www.yandex-maps-def-r-u.online/",
 "id": "v-01a08532-3182",
 "scheme": "safe-account",
 "source": "urlscan.io",
@@ -9641,13 +9487,14 @@ window.REAL_GALLERY = {
 "link": "https://urlscan.io/result/01a08532-3182-73dd-baef-4a4be2e625a4/",
 "verdict": "danger",
 "titles": [
-"Страница пугает взломом и отправляет в Telegram"
+"«Вас взломали»: страница отправляет в Telegram"
 ],
 "note": "«Госуслуги: доступ к учётной записи передан на устройство Apple MacBook Air» и кнопка «Обратиться в техподдержку» — первый шаг схемы «безопасный счёт»",
 "stage": "contact",
 "img": "real/ext/v-01a08532-3182.jpg"
 },
 {
+"url": "https://login-tiktok-secure.online/",
 "id": "v-01a0850f-0728",
 "scheme": "safe-account",
 "source": "urlscan.io",
@@ -9658,7 +9505,7 @@ window.REAL_GALLERY = {
 "link": "https://urlscan.io/result/01a0850f-0728-72bb-b271-70f065364320/",
 "verdict": "danger",
 "titles": [
-"Страница пугает взломом и отправляет в Telegram"
+"«Вас взломали»: страница отправляет в Telegram"
 ],
 "note": "«Госуслуги: доступ к учётной записи передан на устройство Apple MacBook Air» и кнопка «Обратиться в техподдержку» — первый шаг схемы «безопасный счёт»",
 "stage": "contact",
@@ -9667,6 +9514,7 @@ window.REAL_GALLERY = {
 ],
 "fake-app": [
 {
+"url": "https://gosscomitetdfrs.online/",
 "id": "u-019fad61-df4d",
 "scheme": "fake-app",
 "source": "urlscan.io",
@@ -9683,6 +9531,7 @@ window.REAL_GALLERY = {
 ],
 "fake-shop": [
 {
+"url": "https://aceteryxstore.top/",
 "id": "z-aceteryxstore-top",
 "scheme": "fake-shop",
 "source": "Zenodo 14880589",
@@ -9698,6 +9547,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/z-aceteryxstore-top.jpg"
 },
 {
+"url": "https://www.stampslover.com/",
 "id": "z-www-stampslover-com",
 "scheme": "fake-shop",
 "source": "Zenodo 14880589",
@@ -9713,6 +9563,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/z-www-stampslover-com.jpg"
 },
 {
+"url": "https://www.arcteryxonline.xyz/",
 "id": "z-www-arcteryxonline-xyz",
 "scheme": "fake-shop",
 "source": "Zenodo 14880589",
@@ -9728,6 +9579,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/z-www-arcteryxonline-xyz.jpg"
 },
 {
+"url": "https://arcteryxjacket.xyz/",
 "id": "z-arcteryxjacket-xyz",
 "scheme": "fake-shop",
 "source": "Zenodo 14880589",
@@ -9743,6 +9595,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/z-arcteryxjacket-xyz.jpg"
 },
 {
+"url": "https://annsummersuk.com/",
 "id": "z-annsummersuk-com",
 "scheme": "fake-shop",
 "source": "Zenodo 14880589",
@@ -9758,6 +9611,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/z-annsummersuk-com.jpg"
 },
 {
+"url": "https://www.isabelmordhorst.com/",
 "id": "z-www-isabelmordhorst-com",
 "scheme": "fake-shop",
 "source": "Zenodo 14880589",
@@ -9773,6 +9627,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/z-www-isabelmordhorst-com.jpg"
 },
 {
+"url": "https://gosfun.com/",
 "id": "z-gosfun-com",
 "scheme": "fake-shop",
 "source": "Zenodo 14880589",
@@ -9788,6 +9643,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/z-gosfun-com.jpg"
 },
 {
+"url": "https://www.gosfun.com/",
 "id": "z-www-gosfun-com",
 "scheme": "fake-shop",
 "source": "Zenodo 14880589",
@@ -9803,6 +9659,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/z-www-gosfun-com.jpg"
 },
 {
+"url": "https://www.vnonecall.com/",
 "id": "z-www-vnonecall-com",
 "scheme": "fake-shop",
 "source": "Zenodo 14880589",
@@ -9818,6 +9675,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/z-www-vnonecall-com.jpg"
 },
 {
+"url": "https://www.blundstoneshop.top/",
 "id": "z-www-blundstoneshop-top",
 "scheme": "fake-shop",
 "source": "Zenodo 14880589",
@@ -9833,6 +9691,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/z-www-blundstoneshop-top.jpg"
 },
 {
+"url": "https://blundstone.top/",
 "id": "z-blundstone-top",
 "scheme": "fake-shop",
 "source": "Zenodo 14880589",
@@ -9848,6 +9707,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/z-blundstone-top.jpg"
 },
 {
+"url": "https://gemola.shop/card-form",
 "id": "u-01a141d4-9405",
 "scheme": "fake-shop",
 "source": "urlscan.io",
@@ -9862,6 +9722,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/u-01a141d4-9405.jpg"
 },
 {
+"url": "https://ripcurlsale.com/collections/surfboards",
 "id": "v-01a1bf4a-09c1",
 "scheme": "fake-shop",
 "source": "urlscan.io",
@@ -9877,6 +9738,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/v-01a1bf4a-09c1.jpg"
 },
 {
+"url": "https://www.permanentmall.store/",
 "id": "v-01a10004-1969",
 "scheme": "fake-shop",
 "source": "urlscan.io",
@@ -9892,6 +9754,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/v-01a10004-1969.jpg"
 },
 {
+"url": "https://faviconshopbtcpay-dpnhk2p9wx0h.edgeone.dev/",
 "id": "v-01a08c13-aa47",
 "scheme": "fake-shop",
 "source": "urlscan.io",
@@ -9907,6 +9770,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/v-01a08c13-aa47.jpg"
 },
 {
+"url": "https://guesschrono.com/women-s-watches/",
 "id": "v-01a10eac-7607",
 "scheme": "fake-shop",
 "source": "urlscan.io",
@@ -9922,6 +9786,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/v-01a10eac-7607.jpg"
 },
 {
+"url": "https://courselamps.shop/",
 "id": "z-courselamps-shop",
 "scheme": "fake-shop",
 "source": "Zenodo 14880589",
@@ -9937,6 +9802,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://www.aceteryxstore.top/",
 "id": "z-www-aceteryxstore-top",
 "scheme": "fake-shop",
 "source": "Zenodo 14880589",
@@ -9952,6 +9818,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://stationnboss.com/",
 "id": "z-stationnboss-com",
 "scheme": "fake-shop",
 "source": "Zenodo 14880589",
@@ -9967,6 +9834,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://arcteryxonline.xyz/",
 "id": "z-arcteryxonline-xyz",
 "scheme": "fake-shop",
 "source": "Zenodo 14880589",
@@ -9982,6 +9850,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://www.arcteryxjacket.xyz/",
 "id": "z-www-arcteryxjacket-xyz",
 "scheme": "fake-shop",
 "source": "Zenodo 14880589",
@@ -9997,6 +9866,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://www.cosvalves.com/",
 "id": "z-www-cosvalves-com",
 "scheme": "fake-shop",
 "source": "Zenodo 14880589",
@@ -10012,6 +9882,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://www.brooksusaclearance.com/",
 "id": "z-www-brooksusaclearance-com",
 "scheme": "fake-shop",
 "source": "Zenodo 14880589",
@@ -10027,6 +9898,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://drmarten.xyz/",
 "id": "z-drmarten-xyz",
 "scheme": "fake-shop",
 "source": "Zenodo 14880589",
@@ -10042,6 +9914,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://suciaropa.com/",
 "id": "z-suciaropa-com",
 "scheme": "fake-shop",
 "source": "Zenodo 14880589",
@@ -10057,6 +9930,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://stylishwear.club/",
 "id": "z-stylishwear-club",
 "scheme": "fake-shop",
 "source": "Zenodo 14880589",
@@ -10072,6 +9946,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://vvbrfoot.com/",
 "id": "z-vvbrfoot-com",
 "scheme": "fake-shop",
 "source": "Zenodo 14880589",
@@ -10087,6 +9962,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://drmartens24.top/",
 "id": "z-drmartens24-top",
 "scheme": "fake-shop",
 "source": "Zenodo 14880589",
@@ -10102,6 +9978,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://drmart.life/",
 "id": "z-drmart-life",
 "scheme": "fake-shop",
 "source": "Zenodo 14880589",
@@ -10117,6 +9994,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://trendyolmalls.com/",
 "id": "z-trendyolmalls-com",
 "scheme": "fake-shop",
 "source": "Zenodo 14880589",
@@ -10132,6 +10010,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://www.brilliantvarksale.com/",
 "id": "z-www-brilliantvarksale-com",
 "scheme": "fake-shop",
 "source": "Zenodo 14880589",
@@ -10147,6 +10026,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://passportglove.site/",
 "id": "z-passportglove-site",
 "scheme": "fake-shop",
 "source": "Zenodo 14880589",
@@ -10162,6 +10042,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://arcteryxonlines.com/",
 "id": "z-arcteryxonlines-com",
 "scheme": "fake-shop",
 "source": "Zenodo 14880589",
@@ -10177,6 +10058,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://www.arcteryxonlines.com/",
 "id": "z-www-arcteryxonlines-com",
 "scheme": "fake-shop",
 "source": "Zenodo 14880589",
@@ -10192,6 +10074,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://dasisoutlet.top/",
 "id": "z-dasisoutlet-top",
 "scheme": "fake-shop",
 "source": "Zenodo 14880589",
@@ -10207,6 +10090,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://www.arcteryx.xyz/",
 "id": "z-www-arcteryx-xyz",
 "scheme": "fake-shop",
 "source": "Zenodo 14880589",
@@ -10222,6 +10106,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://www.schleichoutlet.com/",
 "id": "z-www-schleichoutlet-com",
 "scheme": "fake-shop",
 "source": "Zenodo 14880589",
@@ -10237,6 +10122,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://arcteryx.xyz/",
 "id": "z-arcteryx-xyz",
 "scheme": "fake-shop",
 "source": "Zenodo 14880589",
@@ -10252,6 +10138,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://schleichoutlet.com/",
 "id": "z-schleichoutlet-com",
 "scheme": "fake-shop",
 "source": "Zenodo 14880589",
@@ -10267,6 +10154,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://boutiquemall.club/",
 "id": "z-boutiquemall-club",
 "scheme": "fake-shop",
 "source": "Zenodo 14880589",
@@ -10282,6 +10170,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://www.boutiquemall.club/",
 "id": "z-www-boutiquemall-club",
 "scheme": "fake-shop",
 "source": "Zenodo 14880589",
@@ -10297,6 +10186,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://www.fridafunko.es/",
 "id": "z-www-fridafunko-es",
 "scheme": "fake-shop",
 "source": "Zenodo 14880589",
@@ -10312,6 +10202,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://onsalepatagonia.com/",
 "id": "z-onsalepatagonia-com",
 "scheme": "fake-shop",
 "source": "Zenodo 14880589",
@@ -10327,6 +10218,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://www.arcteryxvipsale.com/",
 "id": "z-www-arcteryxvipsale-com",
 "scheme": "fake-shop",
 "source": "Zenodo 14880589",
@@ -10342,6 +10234,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://funko-ph.top/",
 "id": "z-funko-ph-top",
 "scheme": "fake-shop",
 "source": "Zenodo 14880589",
@@ -10357,6 +10250,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://arcteryxvipsale.com/",
 "id": "z-arcteryxvipsale-com",
 "scheme": "fake-shop",
 "source": "Zenodo 14880589",
@@ -10372,6 +10266,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://www.funko-ph.top/",
 "id": "z-www-funko-ph-top",
 "scheme": "fake-shop",
 "source": "Zenodo 14880589",
@@ -10387,6 +10282,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://fridafunko.es/",
 "id": "z-fridafunko-es",
 "scheme": "fake-shop",
 "source": "Zenodo 14880589",
@@ -10402,6 +10298,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://dickssportinggood.shop/",
 "id": "z-dickssportinggood-shop",
 "scheme": "fake-shop",
 "source": "Zenodo 14880589",
@@ -10417,6 +10314,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://newbalance-fr.com/",
 "id": "z-newbalance-fr-com",
 "scheme": "fake-shop",
 "source": "Zenodo 14880589",
@@ -10432,6 +10330,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://euoutdoorstore.shop/",
 "id": "z-euoutdoorstore-shop",
 "scheme": "fake-shop",
 "source": "Zenodo 14880589",
@@ -10447,6 +10346,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://www.euoutdoorstore.shop/",
 "id": "z-www-euoutdoorstore-shop",
 "scheme": "fake-shop",
 "source": "Zenodo 14880589",
@@ -10462,6 +10362,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://drawerfac.top/",
 "id": "z-drawerfac-top",
 "scheme": "fake-shop",
 "source": "Zenodo 14880589",
@@ -10477,6 +10378,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://drmartensfr.shop/",
 "id": "z-drmartensfr-shop",
 "scheme": "fake-shop",
 "source": "Zenodo 14880589",
@@ -10492,6 +10394,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://clearbatsale.com/",
 "id": "z-clearbatsale-com",
 "scheme": "fake-shop",
 "source": "Zenodo 14880589",
@@ -10507,6 +10410,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://martens-shop.top/",
 "id": "z-martens-shop-top",
 "scheme": "fake-shop",
 "source": "Zenodo 14880589",
@@ -10522,6 +10426,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://wildkard.tn/",
 "id": "z-wildkard-tn",
 "scheme": "fake-shop",
 "source": "Zenodo 14880589",
@@ -10537,6 +10442,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://drmartenlaw.xyz/",
 "id": "z-drmartenlaw-xyz",
 "scheme": "fake-shop",
 "source": "Zenodo 14880589",
@@ -10552,6 +10458,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://www.brooksrunninginc.com/",
 "id": "z-www-brooksrunninginc-com",
 "scheme": "fake-shop",
 "source": "Zenodo 14880589",
@@ -10567,6 +10474,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://eudrmartens.shop/",
 "id": "z-eudrmartens-shop",
 "scheme": "fake-shop",
 "source": "Zenodo 14880589",
@@ -10582,6 +10490,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://euwearsforu.com/",
 "id": "z-euwearsforu-com",
 "scheme": "fake-shop",
 "source": "Zenodo 14880589",
@@ -10597,6 +10506,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://www.abc-jp.shop/",
 "id": "z-www-abc-jp-shop",
 "scheme": "fake-shop",
 "source": "Zenodo 14880589",
@@ -10612,6 +10522,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://www.euwearsforu.com/",
 "id": "z-www-euwearsforu-com",
 "scheme": "fake-shop",
 "source": "Zenodo 14880589",
@@ -10627,6 +10538,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://isetan-mitsukoshi.co/",
 "id": "z-isetan-mitsukoshi-co",
 "scheme": "fake-shop",
 "source": "Zenodo 14880589",
@@ -10642,6 +10554,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://designhousejp.com/",
 "id": "z-designhousejp-com",
 "scheme": "fake-shop",
 "source": "Zenodo 14880589",
@@ -10657,6 +10570,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://striotary.top/",
 "id": "z-striotary-top",
 "scheme": "fake-shop",
 "source": "Zenodo 14880589",
@@ -10672,6 +10586,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://furniushop.top/",
 "id": "z-furniushop-top",
 "scheme": "fake-shop",
 "source": "Zenodo 14880589",
@@ -10687,6 +10602,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://funkoone.com/",
 "id": "z-funkoone-com",
 "scheme": "fake-shop",
 "source": "Zenodo 14880589",
@@ -10702,6 +10618,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://www.funkoone.com/",
 "id": "z-www-funkoone-com",
 "scheme": "fake-shop",
 "source": "Zenodo 14880589",
@@ -10717,6 +10634,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://funko-pop1.shop/",
 "id": "z-funko-pop1-shop",
 "scheme": "fake-shop",
 "source": "Zenodo 14880589",
@@ -10732,6 +10650,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://funkos.net/",
 "id": "z-funkos-net",
 "scheme": "fake-shop",
 "source": "Zenodo 14880589",
@@ -10747,6 +10666,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://www.funkovinylshop.com/",
 "id": "z-www-funkovinylshop-com",
 "scheme": "fake-shop",
 "source": "Zenodo 14880589",
@@ -10762,6 +10682,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://storesarcteryx.top/",
 "id": "z-storesarcteryx-top",
 "scheme": "fake-shop",
 "source": "Zenodo 14880589",
@@ -10777,6 +10698,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://www.pinkobags.com/",
 "id": "z-www-pinkobags-com",
 "scheme": "fake-shop",
 "source": "Zenodo 14880589",
@@ -10800,13 +10722,12 @@ window.REAL_GALLERY = {
 "date": "2025",
 "domain": "lab1",
 "title": "Lab 1: классический Magecart — код дописан в скрипт оформления заказа",
-"note": "Скрипт скиммера checkout-compromised.js найден по коду. Признак поведения («номер карты ушёл на посторонний сайт») не сработал: в учебной копии «сервер злоумышленника» стоит на том же адресе, что и магазин, — в настоящих атаках это чужой домен. Строки «Кому уйдут деньги: карта Visa •••• 4242» — тестовые номера, напечатанные на учебной странице.",
+"note": "Скрипт скиммера checkout-compromised.js найден по коду. Признак поведения («номер карты ушёл на посторонний сайт») не сработал: в учебной копии «сервер злоумышленника» стоит на том же адресе, что и магазин, — в настоящих атаках это чужой домен.",
 "orig": null,
 "link": "https://github.com/pci-tamper-protect/e-skimming-labs",
 "verdict": "warning",
 "titles": [
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру",
-"Скрипт читает поля карты и умеет отправлять данные"
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/es-lab1.jpg"
@@ -10818,13 +10739,12 @@ window.REAL_GALLERY = {
 "date": "2025",
 "domain": "lab2",
 "title": "Lab 2: поддельная форма поверх настоящей",
-"note": "Скрипт form-overlay.js найден по коду; саму наложенную форму проверка «поддельная форма поверх настоящей» не увидела. Признак поведения («номер карты ушёл на посторонний сайт») не сработал: в учебной копии «сервер злоумышленника» стоит на том же адресе, что и магазин, — в настоящих атаках это чужой домен. Строки «Кому уйдут деньги: карта Visa •••• 4242» — тестовые номера, напечатанные на учебной странице.",
+"note": "Скрипт form-overlay.js найден по коду; саму наложенную форму проверка «поддельная форма поверх настоящей» не увидела. Признак поведения («номер карты ушёл на посторонний сайт») не сработал: в учебной копии «сервер злоумышленника» стоит на том же адресе, что и магазин, — в настоящих атаках это чужой домен.",
 "orig": null,
 "link": "https://github.com/pci-tamper-protect/e-skimming-labs",
 "verdict": "warning",
 "titles": [
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру",
-"Скрипт читает поля карты и умеет отправлять данные"
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/es-lab2-overlay.jpg"
@@ -10836,13 +10756,12 @@ window.REAL_GALLERY = {
 "date": "2025",
 "domain": "lab2",
 "title": "Lab 2: скиммер прячется в Shadow DOM",
-"note": "Скрипт shadow-skimmer.js найден по коду. Признак поведения («номер карты ушёл на посторонний сайт») не сработал: в учебной копии «сервер злоумышленника» стоит на том же адресе, что и магазин, — в настоящих атаках это чужой домен. Строки «Кому уйдут деньги: карта Visa •••• 4242» — тестовые номера, напечатанные на учебной странице.",
+"note": "Скрипт shadow-skimmer.js найден по коду. Признак поведения («номер карты ушёл на посторонний сайт») не сработал: в учебной копии «сервер злоумышленника» стоит на том же адресе, что и магазин, — в настоящих атаках это чужой домен.",
 "orig": null,
 "link": "https://github.com/pci-tamper-protect/e-skimming-labs",
 "verdict": "warning",
 "titles": [
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру",
-"Скрипт читает поля карты и умеет отправлять данные"
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/es-lab2-shadow.jpg"
@@ -10854,13 +10773,12 @@ window.REAL_GALLERY = {
 "date": "2025",
 "domain": "lab2",
 "title": "Lab 2: скиммер следит за изменениями страницы",
-"note": "Скрипт dom-monitor.js найден по коду. Признак поведения («номер карты ушёл на посторонний сайт») не сработал: в учебной копии «сервер злоумышленника» стоит на том же адресе, что и магазин, — в настоящих атаках это чужой домен. Строки «Кому уйдут деньги: карта Visa •••• 4242» — тестовые номера, напечатанные на учебной странице.",
+"note": "Скрипт dom-monitor.js найден по коду. Признак поведения («номер карты ушёл на посторонний сайт») не сработал: в учебной копии «сервер злоумышленника» стоит на том же адресе, что и магазин, — в настоящих атаках это чужой домен.",
 "orig": null,
 "link": "https://github.com/pci-tamper-protect/e-skimming-labs",
 "verdict": "warning",
 "titles": [
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру",
-"Скрипт читает поля карты и умеет отправлять данные"
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/es-lab2-monitor.jpg"
@@ -10872,17 +10790,86 @@ window.REAL_GALLERY = {
 "date": "2025",
 "domain": "lab4",
 "title": "Lab 4: код скиммера спрятан в картинке значка сайта (стеганография)",
-"note": "Код скиммера спрятан в картинке значка сайта — в тексте скриптов его нет, и проверка кода его не нашла. Сработал только признак формы. Признак поведения («номер карты ушёл на посторонний сайт») не сработал: в учебной копии «сервер злоумышленника» стоит на том же адресе, что и магазин, — в настоящих атаках это чужой домен. Строки «Кому уйдут деньги: карта Visa •••• 4242» — тестовые номера, напечатанные на учебной странице.",
+"note": "Код скиммера спрятан в картинке значка сайта — в тексте скриптов его нет, и проверка кода его не нашла. Сработал только признак формы. Признак поведения («номер карты ушёл на посторонний сайт») не сработал: в учебной копии «сервер злоумышленника» стоит на том же адресе, что и магазин, — в настоящих атаках это чужой домен.",
 "orig": null,
 "link": "https://github.com/pci-tamper-protect/e-skimming-labs",
 "verdict": "warning",
 "titles": [
-"Номер карты уйдёт на сервер этого сайта, а не платёжному провайдеру"
+"Номер карты получит сам сайт, а не банк"
 ],
 "stage": "pay",
 "img": "real/ext/es-lab4.jpg"
 },
 {
+"url": "https://canadianscholars.ca/",
+"id": "u-01a1a7e3-63f5",
+"scheme": "skimmer",
+"source": "urlscan.io",
+"date": "2026-11-04",
+"domain": "canadianscholars.ca",
+"title": "Higher Education Textbooks - Canadian Scholars",
+"orig": null,
+"link": "https://urlscan.io/result/01a1a7e3-63f5-72ec-bdb0-707eb90d0b64/",
+"verdict": "warning",
+"titles": [
+"Скрипт под видом Google Tag Manager берёт адрес из блокчейна и подгружает чужой код"
+],
+"stage": "lead",
+"img": "real/ext/u-01a1a7e3-63f5.jpg"
+},
+{
+"url": "https://runningbelts.com.au/",
+"id": "u-01a1a7e3-7b39",
+"scheme": "skimmer",
+"source": "urlscan.io",
+"date": "2026-11-04",
+"domain": "runningbelts.com.au",
+"title": "Treadmill Running Belts - Treadmill Belt Replacement",
+"orig": null,
+"link": "https://urlscan.io/result/01a1a7e3-7b39-71d8-be3c-75b2e2cfa58d/",
+"verdict": "warning",
+"titles": [
+"Скрипт под видом Google Tag Manager прячет адрес и подгружает код с freshmorningdew.top"
+],
+"stage": "first",
+"img": "real/ext/u-01a1a7e3-7b39.jpg"
+},
+{
+"url": "https://www.bilsdale-worms.co.uk/",
+"id": "u-01a1a7e3-ba19",
+"scheme": "skimmer",
+"source": "urlscan.io",
+"date": "2026-11-04",
+"domain": "www.bilsdale-worms.co.uk",
+"title": "Bilsdale Worms | Dendrobaena Worms | Fishing & Composting",
+"orig": null,
+"link": "https://urlscan.io/result/01a1a7e3-ba19-70ce-b94b-a2f82cc89aab/",
+"verdict": "warning",
+"titles": [
+"Скрипт под видом Google Tag Manager берёт адрес из блокчейна и подгружает чужой код"
+],
+"stage": "contact",
+"img": "real/ext/u-01a1a7e3-ba19.jpg"
+},
+{
+"url": "https://www.sklepszostak.pl/",
+"id": "u-01a1a7e3-aa85",
+"scheme": "skimmer",
+"source": "urlscan.io",
+"date": "2026-11-04",
+"domain": "www.sklepszostak.pl",
+"title": "Sklep myśliwski - sklepszostak.pl",
+"orig": null,
+"link": "https://urlscan.io/result/01a1a7e3-aa85-7140-8240-3bc263ef7308/",
+"verdict": "warning",
+"titles": [
+"Скрипт под видом Google Tag Manager берёт адрес из блокчейна и подгружает чужой код"
+],
+"stage": "first",
+"img": "real/ext/u-01a1a7e3-aa85.jpg"
+},
+{
+"url": "https://paradisecoffee.ky/",
 "id": "u-01a1a7e3-8bc9",
 "scheme": "skimmer",
 "source": "urlscan.io",
@@ -10897,62 +10884,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/u-01a1a7e3-8bc9.jpg"
 },
 {
-"id": "u-01a1a7e3-63f5",
-"scheme": "skimmer",
-"source": "urlscan.io",
-"date": "2026-11-04",
-"domain": "canadianscholars.ca",
-"title": "Higher Education Textbooks - Canadian Scholars",
-"orig": null,
-"link": "https://urlscan.io/result/01a1a7e3-63f5-72ec-bdb0-707eb90d0b64/",
-"verdict": "none",
-"titles": [],
-"stage": "lead",
-"img": "real/ext/u-01a1a7e3-63f5.jpg"
-},
-{
-"id": "u-01a1a7e3-7b39",
-"scheme": "skimmer",
-"source": "urlscan.io",
-"date": "2026-11-04",
-"domain": "runningbelts.com.au",
-"title": "Treadmill Running Belts - Treadmill Belt Replacement",
-"orig": null,
-"link": "https://urlscan.io/result/01a1a7e3-7b39-71d8-be3c-75b2e2cfa58d/",
-"verdict": "none",
-"titles": [],
-"stage": "first",
-"img": "real/ext/u-01a1a7e3-7b39.jpg"
-},
-{
-"id": "u-01a1a7e3-ba19",
-"scheme": "skimmer",
-"source": "urlscan.io",
-"date": "2026-11-04",
-"domain": "www.bilsdale-worms.co.uk",
-"title": "Bilsdale Worms | Dendrobaena Worms | Fishing & Composting",
-"orig": null,
-"link": "https://urlscan.io/result/01a1a7e3-ba19-70ce-b94b-a2f82cc89aab/",
-"verdict": "none",
-"titles": [],
-"stage": "contact",
-"img": "real/ext/u-01a1a7e3-ba19.jpg"
-},
-{
-"id": "u-01a1a7e3-aa85",
-"scheme": "skimmer",
-"source": "urlscan.io",
-"date": "2026-11-04",
-"domain": "www.sklepszostak.pl",
-"title": "Sklep myśliwski - sklepszostak.pl",
-"orig": null,
-"link": "https://urlscan.io/result/01a1a7e3-aa85-7140-8240-3bc263ef7308/",
-"verdict": "none",
-"titles": [],
-"stage": "first",
-"img": "real/ext/u-01a1a7e3-aa85.jpg"
-},
-{
+"url": "https://teragu.com/",
 "id": "u-01a1a7e3-9b86",
 "scheme": "skimmer",
 "source": "urlscan.io",
@@ -10969,6 +10901,7 @@ window.REAL_GALLERY = {
 ],
 "crypto-drainer": [
 {
+"url": "https://zksync-reward.net/",
 "id": "z-zksync-reward-net",
 "scheme": "crypto-drainer",
 "source": "Zenodo 14880589",
@@ -10986,6 +10919,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/z-zksync-reward-net.jpg"
 },
 {
+"url": "https://zk-skalling.net/",
 "id": "z-zk-skalling-net",
 "scheme": "crypto-drainer",
 "source": "Zenodo 14880589",
@@ -11003,6 +10937,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/z-zk-skalling-net.jpg"
 },
 {
+"url": "https://clestia2024.com/",
 "id": "z-clestia2024-com",
 "scheme": "crypto-drainer",
 "source": "Zenodo 14880589",
@@ -11020,6 +10955,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/z-clestia2024-com.jpg"
 },
 {
+"url": "https://get-imxtokens.org/",
 "id": "z-get-imxtokens-org",
 "scheme": "crypto-drainer",
 "source": "Zenodo 14880589",
@@ -11037,6 +10973,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/z-get-imxtokens-org.jpg"
 },
 {
+"url": "https://getimmutable-token.com/",
 "id": "z-getimmutable-token-com",
 "scheme": "crypto-drainer",
 "source": "Zenodo 14880589",
@@ -11054,6 +10991,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/z-getimmutable-token-com.jpg"
 },
 {
+"url": "https://getimx-token.org/",
 "id": "z-getimx-token-org",
 "scheme": "crypto-drainer",
 "source": "Zenodo 14880589",
@@ -11071,6 +11009,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/z-getimx-token-org.jpg"
 },
 {
+"url": "https://immutable2024.com/",
 "id": "z-immutable2024-com",
 "scheme": "crypto-drainer",
 "source": "Zenodo 14880589",
@@ -11088,6 +11027,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/z-immutable2024-com.jpg"
 },
 {
+"url": "https://ilvclaim.com/",
 "id": "z-ilvclaim-com",
 "scheme": "crypto-drainer",
 "source": "Zenodo 14880589",
@@ -11105,6 +11045,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/z-ilvclaim-com.jpg"
 },
 {
+"url": "https://get-immutablex.org/",
 "id": "z-get-immutablex-org",
 "scheme": "crypto-drainer",
 "source": "Zenodo 14880589",
@@ -11122,6 +11063,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/z-get-immutablex-org.jpg"
 },
 {
+"url": "https://get-imxtokens.net/",
 "id": "z-get-imxtokens-net",
 "scheme": "crypto-drainer",
 "source": "Zenodo 14880589",
@@ -11139,6 +11081,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/z-get-imxtokens-net.jpg"
 },
 {
+"url": "https://get-imxtokens.com/",
 "id": "z-get-imxtokens-com",
 "scheme": "crypto-drainer",
 "source": "Zenodo 14880589",
@@ -11156,6 +11099,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/z-get-imxtokens-com.jpg"
 },
 {
+"url": "https://get-immutablex.com/",
 "id": "z-get-immutablex-com",
 "scheme": "crypto-drainer",
 "source": "Zenodo 14880589",
@@ -11173,6 +11117,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/z-get-immutablex-com.jpg"
 },
 {
+"url": "https://immutablex-token.org/",
 "id": "z-immutablex-token-org",
 "scheme": "crypto-drainer",
 "source": "Zenodo 14880589",
@@ -11190,6 +11135,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/z-immutablex-token-org.jpg"
 },
 {
+"url": "https://getimmutable-token.org/",
 "id": "z-getimmutable-token-org",
 "scheme": "crypto-drainer",
 "source": "Zenodo 14880589",
@@ -11207,6 +11153,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/z-getimmutable-token-org.jpg"
 },
 {
+"url": "https://join-immutablex.org/",
 "id": "z-join-immutablex-org",
 "scheme": "crypto-drainer",
 "source": "Zenodo 14880589",
@@ -11224,6 +11171,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/z-join-immutablex-org.jpg"
 },
 {
+"url": "https://join-immutablex.com/",
 "id": "z-join-immutablex-com",
 "scheme": "crypto-drainer",
 "source": "Zenodo 14880589",
@@ -11241,6 +11189,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/z-join-immutablex-com.jpg"
 },
 {
+"url": "https://immutablex-token.net/",
 "id": "z-immutablex-token-net",
 "scheme": "crypto-drainer",
 "source": "Zenodo 14880589",
@@ -11258,6 +11207,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/z-immutablex-token-net.jpg"
 },
 {
+"url": "https://get-immutablex.net/",
 "id": "z-get-immutablex-net",
 "scheme": "crypto-drainer",
 "source": "Zenodo 14880589",
@@ -11275,6 +11225,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/z-get-immutablex-net.jpg"
 },
 {
+"url": "https://immutablex-token.com/",
 "id": "z-immutablex-token-com",
 "scheme": "crypto-drainer",
 "source": "Zenodo 14880589",
@@ -11292,6 +11243,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/z-immutablex-token-com.jpg"
 },
 {
+"url": "https://getimmutable-token.net/",
 "id": "z-getimmutable-token-net",
 "scheme": "crypto-drainer",
 "source": "Zenodo 14880589",
@@ -11309,6 +11261,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/z-getimmutable-token-net.jpg"
 },
 {
+"url": "https://zksync-era-maya.nfts2.me/",
 "id": "z-zksync-era-maya-nfts2-me",
 "scheme": "crypto-drainer",
 "source": "Zenodo 14880589",
@@ -11326,6 +11279,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/z-zksync-era-maya-nfts2-me.jpg"
 },
 {
+"url": "https://wkripto-zksync.nfts2.me/",
 "id": "z-wkripto-zksync-nfts2-me",
 "scheme": "crypto-drainer",
 "source": "Zenodo 14880589",
@@ -11343,6 +11297,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/z-wkripto-zksync-nfts2-me.jpg"
 },
 {
+"url": "https://quilling-zksync.nfts2.me/",
 "id": "z-quilling-zksync-nfts2-me",
 "scheme": "crypto-drainer",
 "source": "Zenodo 14880589",
@@ -11360,6 +11315,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/z-quilling-zksync-nfts2-me.jpg"
 },
 {
+"url": "https://lawliet-zksync.nfts2.me/",
 "id": "z-lawliet-zksync-nfts2-me",
 "scheme": "crypto-drainer",
 "source": "Zenodo 14880589",
@@ -11377,6 +11333,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/z-lawliet-zksync-nfts2-me.jpg"
 },
 {
+"url": "https://zksync-to-the-moon-future.nfts2.me/",
 "id": "z-zksync-to-the-moon-future-nfts2-me",
 "scheme": "crypto-drainer",
 "source": "Zenodo 14880589",
@@ -11394,6 +11351,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/z-zksync-to-the-moon-future-nfts2-me.jpg"
 },
 {
+"url": "https://magical-zksync-era-zeus.nfts2.me/",
 "id": "z-magical-zksync-era-zeus-nfts2-me",
 "scheme": "crypto-drainer",
 "source": "Zenodo 14880589",
@@ -11411,6 +11369,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/z-magical-zksync-era-zeus-nfts2-me.jpg"
 },
 {
+"url": "https://zksync-era-zktv.nfts2.me/",
 "id": "z-zksync-era-zktv-nfts2-me",
 "scheme": "crypto-drainer",
 "source": "Zenodo 14880589",
@@ -11428,6 +11387,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/z-zksync-era-zktv-nfts2-me.jpg"
 },
 {
+"url": "https://zk-skalling.app/",
 "id": "z-zk-skalling-app",
 "scheme": "crypto-drainer",
 "source": "Zenodo 14880589",
@@ -11445,6 +11405,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/z-zk-skalling-app.jpg"
 },
 {
+"url": "https://imxtoken.net/",
 "id": "z-imxtoken-net",
 "scheme": "crypto-drainer",
 "source": "Zenodo 14880589",
@@ -11462,6 +11423,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/z-imxtoken-net.jpg"
 },
 {
+"url": "https://zksync.claiming-token.run/",
 "id": "z-zksync-claiming-token-run",
 "scheme": "crypto-drainer",
 "source": "Zenodo 14880589",
@@ -11479,6 +11441,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/z-zksync-claiming-token-run.jpg"
 },
 {
+"url": "https://2-sparkdex-allocations.pages.dev/",
 "id": "v-01a1dad9-02a6",
 "scheme": "crypto-drainer",
 "source": "urlscan.io",
@@ -11496,6 +11459,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/v-01a1dad9-02a6.jpg"
 },
 {
+"url": "https://1-sparkdex-allocations.pages.dev/",
 "id": "v-01a1da4a-2bc3",
 "scheme": "crypto-drainer",
 "source": "urlscan.io",
@@ -11513,6 +11477,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/v-01a1da4a-2bc3.jpg"
 },
 {
+"url": "https://sparkdex-allocations.pages.dev/",
 "id": "v-01a1d6db-dd4d",
 "scheme": "crypto-drainer",
 "source": "urlscan.io",
@@ -11530,6 +11495,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/v-01a1d6db-dd4d.jpg"
 },
 {
+"url": "https://sparkdex-allocations.icu/",
 "id": "v-01a1d64b-fcb0",
 "scheme": "crypto-drainer",
 "source": "urlscan.io",
@@ -11547,6 +11513,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/v-01a1d64b-fcb0.jpg"
 },
 {
+"url": "https://sparkdex-allocation.pages.dev/",
 "id": "v-01a1d5cc-cf81",
 "scheme": "crypto-drainer",
 "source": "urlscan.io",
@@ -11564,6 +11531,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/v-01a1d5cc-cf81.jpg"
 },
 {
+"url": "https://sparkdex-allocation.icu/",
 "id": "v-01a1d21a-c89d",
 "scheme": "crypto-drainer",
 "source": "urlscan.io",
@@ -11581,6 +11549,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/v-01a1d21a-c89d.jpg"
 },
 {
+"url": "https://5-governance-fraxfinance.pages.dev/",
 "id": "v-01a1dad1-489f",
 "scheme": "crypto-drainer",
 "source": "urlscan.io",
@@ -11598,6 +11567,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/v-01a1dad1-489f.jpg"
 },
 {
+"url": "https://4-governance-hyperpolicy.pages.dev/",
 "id": "v-01a1dad1-3d7c",
 "scheme": "crypto-drainer",
 "source": "urlscan.io",
@@ -11615,6 +11585,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/v-01a1dad1-3d7c.jpg"
 },
 {
+"url": "https://6-etherfi-allocation.pages.dev/",
 "id": "v-01a1dad0-34d9",
 "scheme": "crypto-drainer",
 "source": "urlscan.io",
@@ -11632,6 +11603,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/v-01a1dad0-34d9.jpg"
 },
 {
+"url": "https://2-hub-ramsesgovernance.pages.dev/",
 "id": "v-01a1dad0-32cd",
 "scheme": "crypto-drainer",
 "source": "urlscan.io",
@@ -11649,6 +11621,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/v-01a1dad0-32cd.jpg"
 },
 {
+"url": "https://15-katanagov.pages.dev/",
 "id": "v-01a1dad0-1bd8",
 "scheme": "crypto-drainer",
 "source": "urlscan.io",
@@ -11666,6 +11639,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/v-01a1dad0-1bd8.jpg"
 },
 {
+"url": "https://1-governance-fwafun.pages.dev/",
 "id": "v-01a1dace-c739",
 "scheme": "crypto-drainer",
 "source": "urlscan.io",
@@ -11683,6 +11657,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/v-01a1dace-c739.jpg"
 },
 {
+"url": "https://5-up33-allocations.pages.dev/",
 "id": "v-01a1dace-cd28",
 "scheme": "crypto-drainer",
 "source": "urlscan.io",
@@ -11700,6 +11675,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/v-01a1dace-cd28.jpg"
 },
 {
+"url": "https://claim-evr.org/?fake_crap_for_dvmb_nalve_ldlots",
 "id": "v-019e39b2-02c5",
 "scheme": "crypto-drainer",
 "source": "urlscan.io",
@@ -11717,6 +11693,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/v-019e39b2-02c5.jpg"
 },
 {
+"url": "https://claim-zksync-io.com/",
 "id": "z-claim-zksync-io-com",
 "scheme": "crypto-drainer",
 "source": "Zenodo 14880589",
@@ -11732,6 +11709,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/z-claim-zksync-io-com.jpg"
 },
 {
+"url": "https://swap.xingtu.network/",
 "id": "z-swap-xingtu-network",
 "scheme": "crypto-drainer",
 "source": "Zenodo 14880589",
@@ -11747,6 +11725,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/z-swap-xingtu-network.jpg"
 },
 {
+"url": "https://veranta-vote-app3.pages.dev/",
 "id": "v-01a1dad1-7292",
 "scheme": "crypto-drainer",
 "source": "urlscan.io",
@@ -11762,6 +11741,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/v-01a1dad1-7292.jpg"
 },
 {
+"url": "https://1-ascendlaunchgov.pages.dev/",
 "id": "v-01a1dad0-2f87",
 "scheme": "crypto-drainer",
 "source": "urlscan.io",
@@ -11777,6 +11757,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/v-01a1dad0-2f87.jpg"
 },
 {
+"url": "https://7-allocation-umiafinance.pages.dev/",
 "id": "v-01a1dad0-3959",
 "scheme": "crypto-drainer",
 "source": "urlscan.io",
@@ -11792,6 +11773,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/v-01a1dad0-3959.jpg"
 },
 {
+"url": "https://11-apyx.pages.dev/",
 "id": "v-01a1dad0-3aa8",
 "scheme": "crypto-drainer",
 "source": "urlscan.io",
@@ -11807,6 +11789,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/v-01a1dad0-3aa8.jpg"
 },
 {
+"url": "https://6-mantle-allocations.pages.dev/",
 "id": "v-01a1dad0-2b11",
 "scheme": "crypto-drainer",
 "source": "urlscan.io",
@@ -11822,6 +11805,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/v-01a1dad0-2b11.jpg"
 },
 {
+"url": "https://3-xstocks-allocation.pages.dev/",
 "id": "v-01a1dad0-2d18",
 "scheme": "crypto-drainer",
 "source": "urlscan.io",
@@ -11837,6 +11821,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/v-01a1dad0-2d18.jpg"
 },
 {
+"url": "https://33-fx-aladdin.pages.dev/",
 "id": "v-01a1dad0-1f47",
 "scheme": "crypto-drainer",
 "source": "urlscan.io",
@@ -11852,6 +11837,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/v-01a1dad0-1f47.jpg"
 },
 {
+"url": "https://7-allocations-ponsfamily.pages.dev/",
 "id": "v-01a1dace-9207",
 "scheme": "crypto-drainer",
 "source": "urlscan.io",
@@ -11867,6 +11853,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/v-01a1dace-9207.jpg"
 },
 {
+"url": "https://paperhand-network.web.app/",
 "id": "z-paperhand-network-web-app",
 "scheme": "crypto-drainer",
 "source": "Zenodo 14880589",
@@ -11882,6 +11869,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://paperhand-ethereum.web.app/",
 "id": "z-paperhand-ethereum-web-app",
 "scheme": "crypto-drainer",
 "source": "Zenodo 14880589",
@@ -11897,6 +11885,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://6155562990.pages.dev/",
 "id": "z-6155562990-pages-dev",
 "scheme": "crypto-drainer",
 "source": "Zenodo 14880589",
@@ -11912,6 +11901,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://etherhasdf34fasd.pages.dev/",
 "id": "z-etherhasdf34fasd-pages-dev",
 "scheme": "crypto-drainer",
 "source": "Zenodo 14880589",
@@ -11927,6 +11917,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://swap.testnet.tabichain.com/",
 "id": "z-swap-testnet-tabichain-com",
 "scheme": "crypto-drainer",
 "source": "Zenodo 14880589",
@@ -11942,6 +11933,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://planet-zksync.nfts2.me/",
 "id": "z-planet-zksync-nfts2-me",
 "scheme": "crypto-drainer",
 "source": "Zenodo 14880589",
@@ -11957,6 +11949,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://manzara-zksync.nfts2.me/",
 "id": "z-manzara-zksync-nfts2-me",
 "scheme": "crypto-drainer",
 "source": "Zenodo 14880589",
@@ -11972,6 +11965,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://zksync-era-atom.nfts2.me/",
 "id": "z-zksync-era-atom-nfts2-me",
 "scheme": "crypto-drainer",
 "source": "Zenodo 14880589",
@@ -11987,6 +11981,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://zksync-infinity-blockchain.nfts2.me/",
 "id": "z-zksync-infinity-blockchain-nfts2-me",
 "scheme": "crypto-drainer",
 "source": "Zenodo 14880589",
@@ -12002,6 +11997,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://dizzying.nfts2.me/",
 "id": "z-dizzying-nfts2-me",
 "scheme": "crypto-drainer",
 "source": "Zenodo 14880589",
@@ -12017,6 +12013,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://the-moon-zksync.nfts2.me/",
 "id": "z-the-moon-zksync-nfts2-me",
 "scheme": "crypto-drainer",
 "source": "Zenodo 14880589",
@@ -12032,6 +12029,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://zksync-era-worm.nfts2.me/",
 "id": "z-zksync-era-worm-nfts2-me",
 "scheme": "crypto-drainer",
 "source": "Zenodo 14880589",
@@ -12047,6 +12045,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://lively-zksync-era-atam.nfts2.me/",
 "id": "z-lively-zksync-era-atam-nfts2-me",
 "scheme": "crypto-drainer",
 "source": "Zenodo 14880589",
@@ -12062,6 +12061,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://zksync-anime-queen.nfts2.me/",
 "id": "z-zksync-anime-queen-nfts2-me",
 "scheme": "crypto-drainer",
 "source": "Zenodo 14880589",
@@ -12077,6 +12077,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://fire-ball.nfts2.me/",
 "id": "z-fire-ball-nfts2-me",
 "scheme": "crypto-drainer",
 "source": "Zenodo 14880589",
@@ -12092,6 +12093,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://zksync-nft-2023.nfts2.me/",
 "id": "z-zksync-nft-2023-nfts2-me",
 "scheme": "crypto-drainer",
 "source": "Zenodo 14880589",
@@ -12107,6 +12109,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://in-btc.nfts2.me/",
 "id": "z-in-btc-nfts2-me",
 "scheme": "crypto-drainer",
 "source": "Zenodo 14880589",
@@ -12122,6 +12125,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://inf1n1ty.nfts2.me/",
 "id": "z-inf1n1ty-nfts2-me",
 "scheme": "crypto-drainer",
 "source": "Zenodo 14880589",
@@ -12137,6 +12141,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://zksyncfire.nfts2.me/",
 "id": "z-zksyncfire-nfts2-me",
 "scheme": "crypto-drainer",
 "source": "Zenodo 14880589",
@@ -12152,6 +12157,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://porshe-taycan.nfts2.me/",
 "id": "z-porshe-taycan-nfts2-me",
 "scheme": "crypto-drainer",
 "source": "Zenodo 14880589",
@@ -12167,6 +12173,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://zksync-era-rlc.nfts2.me/",
 "id": "z-zksync-era-rlc-nfts2-me",
 "scheme": "crypto-drainer",
 "source": "Zenodo 14880589",
@@ -12182,6 +12189,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://zk-zorb.nfts2.me/",
 "id": "z-zk-zorb-nfts2-me",
 "scheme": "crypto-drainer",
 "source": "Zenodo 14880589",
@@ -12197,6 +12205,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://benzksync.nfts2.me/",
 "id": "z-benzksync-nfts2-me",
 "scheme": "crypto-drainer",
 "source": "Zenodo 14880589",
@@ -12212,6 +12221,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://zksync-era-boy-zkcodex.nfts2.me/",
 "id": "z-zksync-era-boy-zkcodex-nfts2-me",
 "scheme": "crypto-drainer",
 "source": "Zenodo 14880589",
@@ -12227,6 +12237,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://air-drop-zksync-1.nfts2.me/",
 "id": "z-air-drop-zksync-1-nfts2-me",
 "scheme": "crypto-drainer",
 "source": "Zenodo 14880589",
@@ -12242,6 +12253,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://zksync-monkey-hero.nfts2.me/",
 "id": "z-zksync-monkey-hero-nfts2-me",
 "scheme": "crypto-drainer",
 "source": "Zenodo 14880589",
@@ -12257,6 +12269,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://zksync-era-isa.nfts2.me/",
 "id": "z-zksync-era-isa-nfts2-me",
 "scheme": "crypto-drainer",
 "source": "Zenodo 14880589",
@@ -12272,6 +12285,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://paperhands-eth.web.app/",
 "id": "z-paperhands-eth-web-app",
 "scheme": "crypto-drainer",
 "source": "Zenodo 14880589",
@@ -12287,6 +12301,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://app.uniswap.sale/",
 "id": "z-app-uniswap-sale",
 "scheme": "crypto-drainer",
 "source": "Zenodo 14880589",
@@ -12302,6 +12317,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://uniswap-interface-git-gas-uniswap.vercel.app/",
 "id": "z-uniswap-interface-git-gas-uniswap-vercel",
 "scheme": "crypto-drainer",
 "source": "Zenodo 14880589",
@@ -12317,6 +12333,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://ipfsfvm.xyz/",
 "id": "z-ipfsfvm-xyz",
 "scheme": "crypto-drainer",
 "source": "Zenodo 14880589",
@@ -12332,6 +12349,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://mfctc.xyz/",
 "id": "z-mfctc-xyz",
 "scheme": "crypto-drainer",
 "source": "Zenodo 14880589",
@@ -12347,6 +12365,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://passportimmutable.com/",
 "id": "z-passportimmutable-com",
 "scheme": "crypto-drainer",
 "source": "Zenodo 14880589",
@@ -12362,6 +12381,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://uniswap-v3.org-community-referral.in.net/",
 "id": "z-uniswap-v3-org-community-referral-in-net",
 "scheme": "crypto-drainer",
 "source": "Zenodo 14880589",
@@ -12377,6 +12397,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://multi-fix.onrender.com/",
 "id": "z-multi-fix-onrender-com",
 "scheme": "crypto-drainer",
 "source": "Zenodo 14880589",
@@ -12392,6 +12413,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://w.multi-opimalpad.buzz/",
 "id": "z-w-multi-opimalpad-buzz",
 "scheme": "crypto-drainer",
 "source": "Zenodo 14880589",
@@ -12407,6 +12429,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://3-governance-zamahub.pages.dev/",
 "id": "v-01a1dace-7983",
 "scheme": "crypto-drainer",
 "source": "urlscan.io",
@@ -12422,6 +12445,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://2-app-centrifugegov.pages.dev/",
 "id": "v-01a1dace-5461",
 "scheme": "crypto-drainer",
 "source": "urlscan.io",
@@ -12437,6 +12461,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://9-governance-hyperlendfinance.pages.dev/",
 "id": "v-01a1dacc-41ae",
 "scheme": "crypto-drainer",
 "source": "urlscan.io",
@@ -12454,6 +12479,7 @@ window.REAL_GALLERY = {
 ],
 "investment": [
 {
+"url": "https://smartspout.pro/",
 "id": "v-01a1d539-62bb",
 "scheme": "investment",
 "source": "urlscan.io",
@@ -12464,81 +12490,14 @@ window.REAL_GALLERY = {
 "link": "https://urlscan.io/result/01a1d539-62bb-720b-869f-820c27c86668/",
 "verdict": "warning",
 "titles": [
-"Обещают доход и просят оставить телефон"
+"Обещают доход и просят телефон"
 ],
 "note": "поддельная новость (стилизована под Gazeta.pl): «Пётр Кучиньский поддерживает Quantum AI»",
 "stage": "lead",
 "img": "real/ext/v-01a1d539-62bb.jpg"
 },
 {
-"id": "v-01a1dabc-5bca",
-"scheme": "investment",
-"source": "urlscan.io",
-"date": "2026-11-14",
-"domain": "apextraderwave.com",
-"title": "Apex Trader - Advanced AI Trading Platform",
-"orig": null,
-"link": "https://urlscan.io/result/01a1dabc-5bca-773f-acec-faeffaa3c405/",
-"verdict": "warning",
-"titles": [
-"Предлагают установить приложение из файла .apk, а не из магазина приложений"
-],
-"note": "«AI Trading Platform»: один и тот же шаблон под разными названиями, форма регистрации с телефоном",
-"stage": "first",
-"img": "real/ext/v-01a1dabc-5bca.jpg"
-},
-{
-"id": "v-01a1cbd2-ecb3",
-"scheme": "investment",
-"source": "urlscan.io",
-"date": "2026-11-11",
-"domain": "cryptopro-blockchain-dpyae1paz5hn.edgeone.dev",
-"title": "CryptoPro · USDT Trading Platform",
-"orig": null,
-"link": "https://urlscan.io/result/01a1cbd2-ecb3-74cd-914e-5da069f13eb9/",
-"verdict": "warning",
-"titles": [
-"Раздача токенов с подключением кошелька"
-],
-"note": "«CryptoPro · USDT Trading Platform» на бесплатном хостинге",
-"stage": "first",
-"img": "real/ext/v-01a1cbd2-ecb3.jpg"
-},
-{
-"id": "v-01a1cbd1-9b3e",
-"scheme": "investment",
-"source": "urlscan.io",
-"date": "2026-11-11",
-"domain": "usdt-trading-platform-dpw7p0calbva.edgeone.dev",
-"title": "CryptoPro · USDT Trading Platform",
-"orig": null,
-"link": "https://urlscan.io/result/01a1cbd1-9b3e-7338-b327-88d0dff82fe4/",
-"verdict": "warning",
-"titles": [
-"Раздача токенов с подключением кошелька"
-],
-"note": "«AI Trading Platform»: один и тот же шаблон под разными названиями, форма регистрации с телефоном",
-"stage": "first",
-"img": "real/ext/v-01a1cbd1-9b3e.jpg"
-},
-{
-"id": "v-01a1cbcb-7870",
-"scheme": "investment",
-"source": "urlscan.io",
-"date": "2026-11-11",
-"domain": "ready-copper-94hyt1zv-dpv1q61zwwxc.edgeone.dev",
-"title": "CryptoPro · USDT Trading Platform",
-"orig": null,
-"link": "https://urlscan.io/result/01a1cbcb-7870-74aa-b9dd-1f11ba4307d2/",
-"verdict": "warning",
-"titles": [
-"Раздача токенов с подключением кошелька"
-],
-"note": "«CryptoPro · USDT Trading Platform» на бесплатном хостинге",
-"stage": "first",
-"img": "real/ext/v-01a1cbcb-7870.jpg"
-},
-{
+"url": "https://ulvenraq.icu/lander/do_64_v7_grisha_very_stupid_gaz_age_target_75_thanks_sardelkanewdate/index.php",
 "id": "v-01a18f55-d60a",
 "scheme": "investment",
 "source": "urlscan.io",
@@ -12549,13 +12508,14 @@ window.REAL_GALLERY = {
 "link": "https://urlscan.io/result/01a18f55-d60a-73bf-be50-54a147a74486/",
 "verdict": "warning",
 "titles": [
-"Обещают доход и просят оставить телефон"
+"Обещают доход и просят телефон"
 ],
 "note": "«СРОЧНЫЕ НОВОСТИ: новый закон подписан» — поддельная новость, ведущая к «стабильному доходу от ГазИнвест от 100 000 ₽ в месяц» (та же схема, что в деле «ГазИнвест»)",
 "stage": "lead",
 "img": "real/ext/v-01a18f55-d60a.jpg"
 },
 {
+"url": "https://oskavren.icu/lander/do_64_v7_grisha_very_stupid_gaz_age_target_75_thanks_sardelkanewdate/index.php",
 "id": "v-01a18bc2-0307",
 "scheme": "investment",
 "source": "urlscan.io",
@@ -12566,13 +12526,14 @@ window.REAL_GALLERY = {
 "link": "https://urlscan.io/result/01a18bc2-0307-7472-9240-39eee8e19bdd/",
 "verdict": "warning",
 "titles": [
-"Обещают доход и просят оставить телефон"
+"Обещают доход и просят телефон"
 ],
 "note": "«СРОЧНЫЕ НОВОСТИ: новый закон подписан» — поддельная новость, ведущая к «стабильному доходу от ГазИнвест от 100 000 ₽ в месяц» (та же схема, что в деле «ГазИнвест»)",
 "stage": "lead",
 "img": "real/ext/v-01a18bc2-0307.jpg"
 },
 {
+"url": "https://ravnethq.icu/lander/do_64_v7_grisha_very_stupid_gaz_age_target_75_thanks_sardelkanewdate/index.php",
 "id": "v-01a18bc1-f780",
 "scheme": "investment",
 "source": "urlscan.io",
@@ -12583,13 +12544,14 @@ window.REAL_GALLERY = {
 "link": "https://urlscan.io/result/01a18bc1-f780-7357-8188-4a8ffd247c59/",
 "verdict": "warning",
 "titles": [
-"Обещают доход и просят оставить телефон"
+"Обещают доход и просят телефон"
 ],
 "note": "«СРОЧНЫЕ НОВОСТИ: новый закон подписан» — поддельная новость, ведущая к «стабильному доходу от ГазИнвест от 100 000 ₽ в месяц» (та же схема, что в деле «ГазИнвест»)",
 "stage": "lead",
 "img": "real/ext/v-01a18bc1-f780.jpg"
 },
 {
+"url": "https://prymorel.icu/lander/do_64_v7_grisha_very_stupid_gaz_age_target_75_thanks_sardelkanewdate/index.php",
 "id": "v-01a18bc1-e160",
 "scheme": "investment",
 "source": "urlscan.io",
@@ -12600,13 +12562,14 @@ window.REAL_GALLERY = {
 "link": "https://urlscan.io/result/01a18bc1-e160-70fb-b52b-19315d15de71/",
 "verdict": "warning",
 "titles": [
-"Обещают доход и просят оставить телефон"
+"Обещают доход и просят телефон"
 ],
 "note": "«СРОЧНЫЕ НОВОСТИ: новый закон подписан» — поддельная новость, ведущая к «стабильному доходу от ГазИнвест от 100 000 ₽ в месяц» (та же схема, что в деле «ГазИнвест»)",
 "stage": "lead",
 "img": "real/ext/v-01a18bc1-e160.jpg"
 },
 {
+"url": "https://difmuko.icu/lander/do_64_v3_very_stupid_gaz_age_target_75_thanks_sardelkanewdate/index.php",
 "id": "v-01a1519f-f2aa",
 "scheme": "investment",
 "source": "urlscan.io",
@@ -12617,13 +12580,14 @@ window.REAL_GALLERY = {
 "link": "https://urlscan.io/result/01a1519f-f2aa-72db-a8f2-fab870cb97a2/",
 "verdict": "warning",
 "titles": [
-"Обещают доход и просят оставить телефон"
+"Обещают доход и просят телефон"
 ],
 "note": "«СРОЧНЫЕ НОВОСТИ: новый закон подписан» — поддельная новость, ведущая к «стабильному доходу от ГазИнвест от 100 000 ₽ в месяц» (та же схема, что в деле «ГазИнвест»)",
 "stage": "lead",
 "img": "real/ext/v-01a1519f-f2aa.jpg"
 },
 {
+"url": "https://cexmuri.icu/lander/do_64_v3_very_stupid_gaz_age_target_75_thanks_sardelkanewdate/index.php",
 "id": "v-01a1519f-179c",
 "scheme": "investment",
 "source": "urlscan.io",
@@ -12634,13 +12598,14 @@ window.REAL_GALLERY = {
 "link": "https://urlscan.io/result/01a1519f-179c-7470-b3b8-c9877547be21/",
 "verdict": "warning",
 "titles": [
-"Обещают доход и просят оставить телефон"
+"Обещают доход и просят телефон"
 ],
 "note": "«СРОЧНЫЕ НОВОСТИ: новый закон подписан» — поддельная новость, ведущая к «стабильному доходу от ГазИнвест от 100 000 ₽ в месяц» (та же схема, что в деле «ГазИнвест»)",
 "stage": "lead",
 "img": "real/ext/v-01a1519f-179c.jpg"
 },
 {
+"url": "https://characteringsnib.site/",
 "id": "v-01a1cb6e-4454",
 "scheme": "investment",
 "source": "urlscan.io",
@@ -12651,115 +12616,14 @@ window.REAL_GALLERY = {
 "link": "https://urlscan.io/result/01a1cb6e-4454-7429-9ba0-cbf1d83b8ee4/",
 "verdict": "warning",
 "titles": [
-"Обещают доход и просят оставить телефон"
+"Обещают доход и просят телефон"
 ],
 "note": "поддельная статья «Tagesschau»: «Фридрих Мерц запускает Quantum AI»",
 "stage": "lead",
 "img": "real/ext/v-01a1cb6e-4454.jpg"
 },
 {
-"id": "v-01a1cbc6-3113",
-"scheme": "investment",
-"source": "urlscan.io",
-"date": "2026-11-11",
-"domain": "platform-usdt-dp471locp87d.edgeone.dev",
-"title": "CryptoPro · USDT Trading Platform",
-"orig": null,
-"link": "https://urlscan.io/result/01a1cbc6-3113-75e4-bf9d-c59a2455a694/",
-"verdict": "warning",
-"titles": [
-"Раздача токенов с подключением кошелька"
-],
-"note": "поддельное предупреждение безопасности на бесплатном хостинге",
-"stage": "first",
-"img": "real/ext/v-01a1cbc6-3113.jpg"
-},
-{
-"id": "v-01a1cbc1-39ea",
-"scheme": "investment",
-"source": "urlscan.io",
-"date": "2026-11-11",
-"domain": "usdt-platform-dpt82age8q3j.edgeone.dev",
-"title": "CryptoPro · USDT Trading Platform",
-"orig": null,
-"link": "https://urlscan.io/result/01a1cbc1-39ea-7508-95cd-776d902f607a/",
-"verdict": "warning",
-"titles": [
-"Раздача токенов с подключением кошелька"
-],
-"note": "поддельное предупреждение безопасности на бесплатном хостинге",
-"stage": "first",
-"img": "real/ext/v-01a1cbc1-39ea.jpg"
-},
-{
-"id": "v-01a1cbb6-cf2c",
-"scheme": "investment",
-"source": "urlscan.io",
-"date": "2026-11-11",
-"domain": "usdtplatform-dp2omeqybspv.edgeone.dev",
-"title": "CryptoPro · USDT Trading Platform",
-"orig": null,
-"link": "https://urlscan.io/result/01a1cbb6-cf2c-739a-8087-f3a9000dfff7/",
-"verdict": "warning",
-"titles": [
-"Раздача токенов с подключением кошелька"
-],
-"note": "поддельное предупреждение безопасности на бесплатном хостинге",
-"stage": "first",
-"img": "real/ext/v-01a1cbb6-cf2c.jpg"
-},
-{
-"id": "v-01a1cb90-68ab",
-"scheme": "investment",
-"source": "urlscan.io",
-"date": "2026-11-11",
-"domain": "structural-lime-vobjmtjc-dpxq60bucv6r.edgeone.dev",
-"title": "CryptoPro · USDT Trading Platform",
-"orig": null,
-"link": "https://urlscan.io/result/01a1cb90-68ab-7577-b14f-12312aa7e783/",
-"verdict": "warning",
-"titles": [
-"Раздача токенов с подключением кошелька"
-],
-"note": "поддельное предупреждение безопасности на бесплатном хостинге",
-"stage": "first",
-"img": "real/ext/v-01a1cb90-68ab.jpg"
-},
-{
-"id": "v-01a1cb86-89e0",
-"scheme": "investment",
-"source": "urlscan.io",
-"date": "2026-11-11",
-"domain": "platform-dps4h7f2vu8m.edgeone.dev",
-"title": "CryptoPro · USDT Trading Platform",
-"orig": null,
-"link": "https://urlscan.io/result/01a1cb86-89e0-7132-8538-a776ef3b67e4/",
-"verdict": "warning",
-"titles": [
-"Раздача токенов с подключением кошелька"
-],
-"note": "поддельное предупреждение безопасности на бесплатном хостинге",
-"stage": "first",
-"img": "real/ext/v-01a1cb86-89e0.jpg"
-},
-{
-"id": "v-01a1cb70-5204",
-"scheme": "investment",
-"source": "urlscan.io",
-"date": "2026-11-11",
-"domain": "platform-usdt-dpcrl3pl3t1p.edgeone.dev",
-"title": "CryptoPro · USDT Trading Platform",
-"orig": null,
-"link": "https://urlscan.io/result/01a1cb70-5204-726b-b391-92c45785d1c7/",
-"verdict": "warning",
-"titles": [
-"Раздача токенов с подключением кошелька"
-],
-"note": "поддельное предупреждение безопасности на бесплатном хостинге",
-"stage": "first",
-"img": "real/ext/v-01a1cb70-5204.jpg"
-},
-{
+"url": "https://fizzy0-sapiente23.sbs/?d=QjNxVaDVWV0%2FutRMC9qoaahpRdvhwRrR6tojJyOseg34VeNo%2BTO6c5qvNfBK7ANnsobRHoxiRWqTJAFtvCTo2jUib3%2BewkD%2FLXDQ4uDmj6ayLOUxKXM6wGGHfBuLWnRdBtRFbUb4v7GC7gUxIvZdR2OLrapqjv1Uajt01wuvcJnHHx7h9pSp9V5nNoN9qrfwJd6hkBuP16lCo2Jdvd8NvYLeXEhTnBYqZe6Sbz%2Fq9nJzrIvG46C213ncMAuYijFX&on=Bitcoin+Era+New",
 "id": "v-01a0cd55-482e",
 "scheme": "investment",
 "source": "urlscan.io",
@@ -12770,13 +12634,14 @@ window.REAL_GALLERY = {
 "link": "https://urlscan.io/result/01a0cd55-482e-744b-8369-d3a4980be9c0/",
 "verdict": "warning",
 "titles": [
-"Обещают доход и просят оставить телефон"
+"Обещают доход и просят телефон"
 ],
 "note": "«Bitcoin Era»: «торговая платформа с ИИ», о ней предупреждают регуляторы",
 "stage": "lead",
 "img": "real/ext/v-01a0cd55-482e.jpg"
 },
 {
+"url": "https://pebblequoin.icu/lander/do_64_v3_very_stupid_gaz_age_target_75_thanks_sardelkanewdate/index.php",
 "id": "v-01a1519d-ec56",
 "scheme": "investment",
 "source": "urlscan.io",
@@ -12787,13 +12652,14 @@ window.REAL_GALLERY = {
 "link": "https://urlscan.io/result/01a1519d-ec56-743a-b905-a45a4d90f408/",
 "verdict": "warning",
 "titles": [
-"Обещают доход и просят оставить телефон"
+"Обещают доход и просят телефон"
 ],
 "note": "«СРОЧНЫЕ НОВОСТИ: новый закон подписан» — поддельная новость, ведущая к «стабильному доходу от ГазИнвест от 100 000 ₽ в месяц» (та же схема, что в деле «ГазИнвест»)",
 "stage": "lead",
 "img": "real/ext/v-01a1519d-ec56.jpg"
 },
 {
+"url": "https://aqzviro.icu/lander/do_64_v3_very_stupid_gaz_age_target_75_thanks_sardelkanewdate/index.php",
 "id": "v-01a1519c-bf85",
 "scheme": "investment",
 "source": "urlscan.io",
@@ -12804,13 +12670,14 @@ window.REAL_GALLERY = {
 "link": "https://urlscan.io/result/01a1519c-bf85-722c-b636-a5ccdc803ab2/",
 "verdict": "warning",
 "titles": [
-"Обещают доход и просят оставить телефон"
+"Обещают доход и просят телефон"
 ],
 "note": "«СРОЧНЫЕ НОВОСТИ: новый закон подписан» — поддельная новость, ведущая к «стабильному доходу от ГазИнвест от 100 000 ₽ в месяц» (та же схема, что в деле «ГазИнвест»)",
 "stage": "lead",
 "img": "real/ext/v-01a1519c-bf85.jpg"
 },
 {
+"url": "https://fozpeli.icu/lander/do_64_v7_grisha_very_stupid_gaz_age_target_75_thanks_sardelkanewdate/index.php",
 "id": "v-01a1519b-9187",
 "scheme": "investment",
 "source": "urlscan.io",
@@ -12821,13 +12688,14 @@ window.REAL_GALLERY = {
 "link": "https://urlscan.io/result/01a1519b-9187-74ca-af0e-7b0c8c698a61/",
 "verdict": "warning",
 "titles": [
-"Обещают доход и просят оставить телефон"
+"Обещают доход и просят телефон"
 ],
 "note": "«СРОЧНЫЕ НОВОСТИ: новый закон подписан» — поддельная новость, ведущая к «стабильному доходу от ГазИнвест от 100 000 ₽ в месяц» (та же схема, что в деле «ГазИнвест»)",
 "stage": "lead",
 "img": "real/ext/v-01a1519b-9187.jpg"
 },
 {
+"url": "https://needlehatch.icu/lander/do_64_v3_very_stupid_gaz_age_target_75_thanks_sardelkanewdate/index.php",
 "id": "v-01a1519a-b2a6",
 "scheme": "investment",
 "source": "urlscan.io",
@@ -12838,13 +12706,14 @@ window.REAL_GALLERY = {
 "link": "https://urlscan.io/result/01a1519a-b2a6-73b5-8480-3f3196a090f0/",
 "verdict": "warning",
 "titles": [
-"Обещают доход и просят оставить телефон"
+"Обещают доход и просят телефон"
 ],
 "note": "«СРОЧНЫЕ НОВОСТИ: новый закон подписан» — поддельная новость, ведущая к «стабильному доходу от ГазИнвест от 100 000 ₽ в месяц» (та же схема, что в деле «ГазИнвест»)",
 "stage": "lead",
 "img": "real/ext/v-01a1519a-b2a6.jpg"
 },
 {
+"url": "https://cezravi.icu/lander/do_64_v3_very_stupid_gaz_age_target_75_thanks_sardelkanewdate/index.php",
 "id": "v-01a15199-ac80",
 "scheme": "investment",
 "source": "urlscan.io",
@@ -12855,13 +12724,14 @@ window.REAL_GALLERY = {
 "link": "https://urlscan.io/result/01a15199-ac80-757a-af16-72a4775f6c4b/",
 "verdict": "warning",
 "titles": [
-"Обещают доход и просят оставить телефон"
+"Обещают доход и просят телефон"
 ],
 "note": "«СРОЧНЫЕ НОВОСТИ: новый закон подписан» — поддельная новость, ведущая к «стабильному доходу от ГазИнвест от 100 000 ₽ в месяц» (та же схема, что в деле «ГазИнвест»)",
 "stage": "lead",
 "img": "real/ext/v-01a15199-ac80.jpg"
 },
 {
+"url": "https://hazpuno.icu/lander/do_64_v3_very_stupid_gaz_age_target_75_thanks_sardelkanewdate/index.php",
 "id": "v-01a15198-cf1d",
 "scheme": "investment",
 "source": "urlscan.io",
@@ -12872,13 +12742,14 @@ window.REAL_GALLERY = {
 "link": "https://urlscan.io/result/01a15198-cf1d-716f-b8d5-d1f0386c1bbb/",
 "verdict": "warning",
 "titles": [
-"Обещают доход и просят оставить телефон"
+"Обещают доход и просят телефон"
 ],
 "note": "«СРОЧНЫЕ НОВОСТИ: новый закон подписан» — поддельная новость, ведущая к «стабильному доходу от ГазИнвест от 100 000 ₽ в месяц» (та же схема, что в деле «ГазИнвест»)",
 "stage": "lead",
 "img": "real/ext/v-01a15198-cf1d.jpg"
 },
 {
+"url": "https://ironstitch.icu/lander/do_64_v7_grisha_very_stupid_gaz_age_target_75_thanks_sardelkanewdate/index.php",
 "id": "v-01a15197-efdb",
 "scheme": "investment",
 "source": "urlscan.io",
@@ -12889,13 +12760,14 @@ window.REAL_GALLERY = {
 "link": "https://urlscan.io/result/01a15197-efdb-740c-8326-313870fafe3d/",
 "verdict": "warning",
 "titles": [
-"Обещают доход и просят оставить телефон"
+"Обещают доход и просят телефон"
 ],
 "note": "«СРОЧНЫЕ НОВОСТИ: новый закон подписан» — поддельная новость, ведущая к «стабильному доходу от ГазИнвест от 100 000 ₽ в месяц» (та же схема, что в деле «ГазИнвест»)",
 "stage": "lead",
 "img": "real/ext/v-01a15197-efdb.jpg"
 },
 {
+"url": "https://www.fidefx.cc/",
 "id": "z-www-fidefx-cc",
 "scheme": "investment",
 "source": "Zenodo 14880589",
@@ -12911,6 +12783,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/z-www-fidefx-cc.jpg"
 },
 {
+"url": "https://linksfidelity.com/",
 "id": "z-linksfidelity-com",
 "scheme": "investment",
 "source": "Zenodo 14880589",
@@ -12926,6 +12799,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/z-linksfidelity-com.jpg"
 },
 {
+"url": "https://www.linksfidelity.com/",
 "id": "z-www-linksfidelity-com",
 "scheme": "investment",
 "source": "Zenodo 14880589",
@@ -12941,6 +12815,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/z-www-linksfidelity-com.jpg"
 },
 {
+"url": "https://fidoptbit.com/",
 "id": "z-fidoptbit-com",
 "scheme": "investment",
 "source": "Zenodo 14880589",
@@ -12956,6 +12831,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/z-fidoptbit-com.jpg"
 },
 {
+"url": "https://caalamoscapital.com/",
 "id": "z-caalamoscapital-com",
 "scheme": "investment",
 "source": "Zenodo 14880589",
@@ -12971,6 +12847,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/z-caalamoscapital-com.jpg"
 },
 {
+"url": "https://107.165.195.68/",
 "id": "z-107-165-195-68",
 "scheme": "investment",
 "source": "Zenodo 14880589",
@@ -12986,6 +12863,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/z-107-165-195-68.jpg"
 },
 {
+"url": "https://ap.efficaccyfxint.com/",
 "id": "z-ap-efficaccyfxint-com",
 "scheme": "investment",
 "source": "Zenodo 14880589",
@@ -13001,6 +12879,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/z-ap-efficaccyfxint-com.jpg"
 },
 {
+"url": "https://quantumai-in.net/us/",
 "id": "v-01a1da27-b0a2",
 "scheme": "investment",
 "source": "urlscan.io",
@@ -13016,6 +12895,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/v-01a1da27-b0a2.jpg"
 },
 {
+"url": "https://immediateedgeaibot.com/",
 "id": "v-01a1a622-a5a5",
 "scheme": "investment",
 "source": "urlscan.io",
@@ -13031,6 +12911,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/v-01a1a622-a5a5.jpg"
 },
 {
+"url": "https://immediate-zaltrion365-official.com/",
 "id": "v-01a1dac9-5f0e",
 "scheme": "investment",
 "source": "urlscan.io",
@@ -13046,6 +12927,23 @@ window.REAL_GALLERY = {
 "img": "real/ext/v-01a1dac9-5f0e.jpg"
 },
 {
+"url": "https://apextraderwave.com/",
+"id": "v-01a1dabc-5bca",
+"scheme": "investment",
+"source": "urlscan.io",
+"date": "2026-11-14",
+"domain": "apextraderwave.com",
+"title": "Apex Trader - Advanced AI Trading Platform",
+"orig": null,
+"link": "https://urlscan.io/result/01a1dabc-5bca-773f-acec-faeffaa3c405/",
+"verdict": "none",
+"titles": [],
+"note": "«AI Trading Platform»: один и тот же шаблон под разными названиями, форма регистрации с телефоном",
+"stage": "first",
+"img": "real/ext/v-01a1dabc-5bca.jpg"
+},
+{
+"url": "https://kalyndraxaaitradingplatform.click/",
 "id": "v-01a1daa7-e704",
 "scheme": "investment",
 "source": "urlscan.io",
@@ -13061,6 +12959,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/v-01a1daa7-e704.jpg"
 },
 {
+"url": "https://kalyndraxaaitradingplatform-click.pages.dev/",
 "id": "v-01a1da86-a5a0",
 "scheme": "investment",
 "source": "urlscan.io",
@@ -13076,6 +12975,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/v-01a1da86-a5a0.jpg"
 },
 {
+"url": "https://goldbuyingservice.tech/",
 "id": "v-01a1da73-f63d",
 "scheme": "investment",
 "source": "urlscan.io",
@@ -13091,6 +12991,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/v-01a1da73-f63d.jpg"
 },
 {
+"url": "https://petrolioitaliano.biz/",
 "id": "v-01a1da68-e852",
 "scheme": "investment",
 "source": "urlscan.io",
@@ -13106,6 +13007,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/v-01a1da68-e852.jpg"
 },
 {
+"url": "https://immediateconnect-nl.online/",
 "id": "v-01a1ab55-d846",
 "scheme": "investment",
 "source": "urlscan.io",
@@ -13121,6 +13023,151 @@ window.REAL_GALLERY = {
 "img": "real/ext/v-01a1ab55-d846.jpg"
 },
 {
+"url": "https://cryptopro-blockchain-dpyae1paz5hn.edgeone.dev/",
+"id": "v-01a1cbd2-ecb3",
+"scheme": "investment",
+"source": "urlscan.io",
+"date": "2026-11-11",
+"domain": "cryptopro-blockchain-dpyae1paz5hn.edgeone.dev",
+"title": "CryptoPro · USDT Trading Platform",
+"orig": null,
+"link": "https://urlscan.io/result/01a1cbd2-ecb3-74cd-914e-5da069f13eb9/",
+"verdict": "none",
+"titles": [],
+"note": "«CryptoPro · USDT Trading Platform» на бесплатном хостинге",
+"stage": "first",
+"img": "real/ext/v-01a1cbd2-ecb3.jpg"
+},
+{
+"url": "https://usdt-trading-platform-dpw7p0calbva.edgeone.dev/",
+"id": "v-01a1cbd1-9b3e",
+"scheme": "investment",
+"source": "urlscan.io",
+"date": "2026-11-11",
+"domain": "usdt-trading-platform-dpw7p0calbva.edgeone.dev",
+"title": "CryptoPro · USDT Trading Platform",
+"orig": null,
+"link": "https://urlscan.io/result/01a1cbd1-9b3e-7338-b327-88d0dff82fe4/",
+"verdict": "none",
+"titles": [],
+"note": "«AI Trading Platform»: один и тот же шаблон под разными названиями, форма регистрации с телефоном",
+"stage": "first",
+"img": "real/ext/v-01a1cbd1-9b3e.jpg"
+},
+{
+"url": "https://ready-copper-94hyt1zv-dpv1q61zwwxc.edgeone.dev/",
+"id": "v-01a1cbcb-7870",
+"scheme": "investment",
+"source": "urlscan.io",
+"date": "2026-11-11",
+"domain": "ready-copper-94hyt1zv-dpv1q61zwwxc.edgeone.dev",
+"title": "CryptoPro · USDT Trading Platform",
+"orig": null,
+"link": "https://urlscan.io/result/01a1cbcb-7870-74aa-b9dd-1f11ba4307d2/",
+"verdict": "none",
+"titles": [],
+"note": "«CryptoPro · USDT Trading Platform» на бесплатном хостинге",
+"stage": "first",
+"img": "real/ext/v-01a1cbcb-7870.jpg"
+},
+{
+"url": "https://platform-usdt-dp471locp87d.edgeone.dev/",
+"id": "v-01a1cbc6-3113",
+"scheme": "investment",
+"source": "urlscan.io",
+"date": "2026-11-11",
+"domain": "platform-usdt-dp471locp87d.edgeone.dev",
+"title": "CryptoPro · USDT Trading Platform",
+"orig": null,
+"link": "https://urlscan.io/result/01a1cbc6-3113-75e4-bf9d-c59a2455a694/",
+"verdict": "none",
+"titles": [],
+"note": "поддельное предупреждение безопасности на бесплатном хостинге",
+"stage": "first",
+"img": "real/ext/v-01a1cbc6-3113.jpg"
+},
+{
+"url": "https://usdt-platform-dpt82age8q3j.edgeone.dev/",
+"id": "v-01a1cbc1-39ea",
+"scheme": "investment",
+"source": "urlscan.io",
+"date": "2026-11-11",
+"domain": "usdt-platform-dpt82age8q3j.edgeone.dev",
+"title": "CryptoPro · USDT Trading Platform",
+"orig": null,
+"link": "https://urlscan.io/result/01a1cbc1-39ea-7508-95cd-776d902f607a/",
+"verdict": "none",
+"titles": [],
+"note": "поддельное предупреждение безопасности на бесплатном хостинге",
+"stage": "first",
+"img": "real/ext/v-01a1cbc1-39ea.jpg"
+},
+{
+"url": "https://usdtplatform-dp2omeqybspv.edgeone.dev/",
+"id": "v-01a1cbb6-cf2c",
+"scheme": "investment",
+"source": "urlscan.io",
+"date": "2026-11-11",
+"domain": "usdtplatform-dp2omeqybspv.edgeone.dev",
+"title": "CryptoPro · USDT Trading Platform",
+"orig": null,
+"link": "https://urlscan.io/result/01a1cbb6-cf2c-739a-8087-f3a9000dfff7/",
+"verdict": "none",
+"titles": [],
+"note": "поддельное предупреждение безопасности на бесплатном хостинге",
+"stage": "first",
+"img": "real/ext/v-01a1cbb6-cf2c.jpg"
+},
+{
+"url": "https://structural-lime-vobjmtjc-dpxq60bucv6r.edgeone.dev/",
+"id": "v-01a1cb90-68ab",
+"scheme": "investment",
+"source": "urlscan.io",
+"date": "2026-11-11",
+"domain": "structural-lime-vobjmtjc-dpxq60bucv6r.edgeone.dev",
+"title": "CryptoPro · USDT Trading Platform",
+"orig": null,
+"link": "https://urlscan.io/result/01a1cb90-68ab-7577-b14f-12312aa7e783/",
+"verdict": "none",
+"titles": [],
+"note": "поддельное предупреждение безопасности на бесплатном хостинге",
+"stage": "first",
+"img": "real/ext/v-01a1cb90-68ab.jpg"
+},
+{
+"url": "https://platform-dps4h7f2vu8m.edgeone.dev/",
+"id": "v-01a1cb86-89e0",
+"scheme": "investment",
+"source": "urlscan.io",
+"date": "2026-11-11",
+"domain": "platform-dps4h7f2vu8m.edgeone.dev",
+"title": "CryptoPro · USDT Trading Platform",
+"orig": null,
+"link": "https://urlscan.io/result/01a1cb86-89e0-7132-8538-a776ef3b67e4/",
+"verdict": "none",
+"titles": [],
+"note": "поддельное предупреждение безопасности на бесплатном хостинге",
+"stage": "first",
+"img": "real/ext/v-01a1cb86-89e0.jpg"
+},
+{
+"url": "https://platform-usdt-dpcrl3pl3t1p.edgeone.dev/",
+"id": "v-01a1cb70-5204",
+"scheme": "investment",
+"source": "urlscan.io",
+"date": "2026-11-11",
+"domain": "platform-usdt-dpcrl3pl3t1p.edgeone.dev",
+"title": "CryptoPro · USDT Trading Platform",
+"orig": null,
+"link": "https://urlscan.io/result/01a1cb70-5204-726b-b391-92c45785d1c7/",
+"verdict": "none",
+"titles": [],
+"note": "поддельное предупреждение безопасности на бесплатном хостинге",
+"stage": "first",
+"img": "real/ext/v-01a1cb70-5204.jpg"
+},
+{
+"url": "https://polygononline.live/",
 "id": "z-polygononline-live",
 "scheme": "investment",
 "source": "Zenodo 14880589",
@@ -13136,6 +13183,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://go.investerix.com/",
 "id": "z-go-investerix-com",
 "scheme": "investment",
 "source": "Zenodo 14880589",
@@ -13151,6 +13199,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://digitalcurrencyltd.com/",
 "id": "z-digitalcurrencyltd-com",
 "scheme": "investment",
 "source": "Zenodo 14880589",
@@ -13166,6 +13215,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://thefidelityinvest.com/",
 "id": "z-thefidelityinvest-com",
 "scheme": "investment",
 "source": "Zenodo 14880589",
@@ -13181,6 +13231,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://www.fidelitygrowth.org/",
 "id": "z-www-fidelitygrowth-org",
 "scheme": "investment",
 "source": "Zenodo 14880589",
@@ -13196,6 +13247,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://www.thefidelityinvest.com/",
 "id": "z-www-thefidelityinvest-com",
 "scheme": "investment",
 "source": "Zenodo 14880589",
@@ -13211,6 +13263,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://fidelitygrowth.org/",
 "id": "z-fidelitygrowth-org",
 "scheme": "investment",
 "source": "Zenodo 14880589",
@@ -13226,6 +13279,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://immediate-connect.nl/",
 "id": "v-01a18553-1319",
 "scheme": "investment",
 "source": "urlscan.io",
@@ -13241,6 +13295,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://immediateconnects.weebly.com/",
 "id": "v-01a148ae-ccda",
 "scheme": "investment",
 "source": "urlscan.io",
@@ -13256,6 +13311,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://bitcoineranew.net/",
 "id": "v-01a16740-1500",
 "scheme": "investment",
 "source": "urlscan.io",
@@ -13271,6 +13327,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://countermovesss.buzz/",
 "id": "v-01a1d438-ce93",
 "scheme": "investment",
 "source": "urlscan.io",
@@ -13286,6 +13343,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://baykar-platform.pro/",
 "id": "v-01a1da49-1654",
 "scheme": "investment",
 "source": "urlscan.io",
@@ -13301,6 +13359,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://ravenfundmere.pro/",
 "id": "v-01a1da25-9734",
 "scheme": "investment",
 "source": "urlscan.io",
@@ -13316,6 +13375,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://federalgovernment.biz/",
 "id": "v-01a1da00-8dac",
 "scheme": "investment",
 "source": "urlscan.io",
@@ -13331,6 +13391,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://ducatleigh-gardens.pro/",
 "id": "v-01a1d9ff-ee8f",
 "scheme": "investment",
 "source": "urlscan.io",
@@ -13346,6 +13407,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://festgeld-system.com/",
 "id": "v-01a1d9fa-dce8",
 "scheme": "investment",
 "source": "urlscan.io",
@@ -13361,6 +13423,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://virtexai-click.pages.dev/",
 "id": "v-01a1d9cf-6f23",
 "scheme": "investment",
 "source": "urlscan.io",
@@ -13376,6 +13439,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://gramexchanger-dp4q2ahdy7h9.edgeone.dev/",
 "id": "v-01a1d128-5f64",
 "scheme": "investment",
 "source": "urlscan.io",
@@ -13391,6 +13455,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://northern-pink-h96yhmpn-dpjv7gtkh0mx.edgeone.dev/",
 "id": "v-01a1cbd7-19a6",
 "scheme": "investment",
 "source": "urlscan.io",
@@ -13406,6 +13471,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://nuverex.net/",
 "id": "v-01a1a7e4-2f37",
 "scheme": "investment",
 "source": "urlscan.io",
@@ -13421,6 +13487,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://zentria.world/click?key=14adab6c31444fdd9377906be9d254b1&sub_id_3=partagetonsavoirlire.com&gclid=*&gtc=aw-18412003563/vptwck3k6ogceovbw8te&tname=tt",
 "id": "v-01a18f64-73c0",
 "scheme": "investment",
 "source": "urlscan.io",
@@ -13436,6 +13503,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://fynexo.world/click?key=14adab6c31444fdd9377906be9d254b1&sub_id_3=partagetonsavoirlire.com&gclid=*&gtc=aw-18412003563/vptwck3k6ogceovbw8te&tname=tt",
 "id": "v-01a18f62-b714",
 "scheme": "investment",
 "source": "urlscan.io",
@@ -13451,6 +13519,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://nektrix.world/click?key=14adab6c31444fdd9377906be9d254b1&sub_id_3=partagetonsavoirlire.com&gclid=*&gtc=aw-18412003563/vptwck3k6ogceovbw8te&tname=tt",
 "id": "v-01a18f61-45cb",
 "scheme": "investment",
 "source": "urlscan.io",
@@ -13466,6 +13535,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://kalexo.world/click?key=14adab6c31444fdd9377906be9d254b1&sub_id_3=partagetonsavoirlire.com&gclid=*&gtc=aw-18412003563/vptwck3k6ogceovbw8te&tname=tt",
 "id": "v-01a18f5f-dddf",
 "scheme": "investment",
 "source": "urlscan.io",
@@ -13481,6 +13551,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://silnex.world/click?key=14adab6c31444fdd9377906be9d254b1&sub_id_3=partagetonsavoirlire.com&gclid=*&gtc=aw-18412003563/vptwck3k6ogceovbw8te&tname=tt",
 "id": "v-01a18f5f-2497",
 "scheme": "investment",
 "source": "urlscan.io",
@@ -13496,6 +13567,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://capinvest.work/",
 "id": "v-01a1b768-f534",
 "scheme": "investment",
 "source": "urlscan.io",
@@ -13511,6 +13583,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://thermawaves.com/lander/lk---quantum-ai1/",
 "id": "v-01a1d05c-515d",
 "scheme": "investment",
 "source": "urlscan.io",
@@ -13526,6 +13599,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://diario-financiero-latam.com/lander/lk---quantum-ai1/",
 "id": "v-01a1d035-48f5",
 "scheme": "investment",
 "source": "urlscan.io",
@@ -13541,6 +13615,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "http://dailyobserverhubhk.com/lander/lk---quantum-ai1/",
 "id": "v-01a1d033-1ce9",
 "scheme": "investment",
 "source": "urlscan.io",
@@ -13556,6 +13631,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://melvoras.com/lander/lk---quantum-ai1/",
 "id": "v-01a1d02f-da08",
 "scheme": "investment",
 "source": "urlscan.io",
@@ -13571,6 +13647,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://borvetra.com/lander/lk---quantum-ai1/",
 "id": "v-01a1d014-714c",
 "scheme": "investment",
 "source": "urlscan.io",
@@ -13586,6 +13663,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://whatsapp-aibot-pro.pages.dev/",
 "id": "v-01a1db0a-7cfc",
 "scheme": "investment",
 "source": "urlscan.io",
@@ -13601,6 +13679,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://indexeprexfin-click.pages.dev/",
 "id": "v-01a1dae7-b99c",
 "scheme": "investment",
 "source": "urlscan.io",
@@ -13616,6 +13695,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://aurentcore.pro/",
 "id": "v-01a1d9ca-f808",
 "scheme": "investment",
 "source": "urlscan.io",
@@ -13631,6 +13711,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://santanderinvestsystem.com/",
 "id": "v-01a1d9c7-dfd0",
 "scheme": "investment",
 "source": "urlscan.io",
@@ -13646,6 +13727,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://profitivafundres-click.pages.dev/",
 "id": "v-01a1d9c5-8705",
 "scheme": "investment",
 "source": "urlscan.io",
@@ -13661,6 +13743,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://clara-contalia.live/",
 "id": "v-01a1d9a3-2951",
 "scheme": "investment",
 "source": "urlscan.io",
@@ -13676,6 +13759,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://bitcoinera.com/de/",
 "id": "v-01a0386d-37cb",
 "scheme": "investment",
 "source": "urlscan.io",
@@ -13691,6 +13775,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://bitcoineranew-com-td.trackfinanceworld.com/pl/",
 "id": "v-019d8aaf-a474",
 "scheme": "investment",
 "source": "urlscan.io",
@@ -13706,6 +13791,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://the-bitcoin-erapros.trackfinanceworld.com/se/",
 "id": "v-019d8a38-20a3",
 "scheme": "investment",
 "source": "urlscan.io",
@@ -13721,6 +13807,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://the-bitcoin-era-pro-com.trackfinanceworld.com/de/",
 "id": "v-019d84c8-0edf",
 "scheme": "investment",
 "source": "urlscan.io",
@@ -13736,6 +13823,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://bitcoinera-fr.com/",
 "id": "v-019d14d7-b38e",
 "scheme": "investment",
 "source": "urlscan.io",
@@ -13751,6 +13839,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://aixbet.services/",
 "id": "v-01a0fe05-a06a",
 "scheme": "investment",
 "source": "urlscan.io",
@@ -13766,6 +13855,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://apple.invierteseguro.lat/",
 "id": "v-01a0d93a-9454",
 "scheme": "investment",
 "source": "urlscan.io",
@@ -13781,6 +13871,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://www.nuverex.net/",
 "id": "v-01a04823-49da",
 "scheme": "investment",
 "source": "urlscan.io",
@@ -13798,6 +13889,7 @@ window.REAL_GALLERY = {
 ],
 "tech-support": [
 {
+"url": "https://8003nyjvastdfffkxftmhtxjlcpmwasqpo-amfre8dwakf2a6c9.z03.azurefd.net/",
 "id": "v-01a1dabc-d9b6",
 "scheme": "tech-support",
 "source": "urlscan.io",
@@ -13815,6 +13907,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/v-01a1dabc-d9b6.jpg"
 },
 {
+"url": "https://8001mnikxskgkjeygzilrfupextmiepmra-gffkfpfpcehka4an.z03.azurefd.net/",
 "id": "v-01a1d60e-2bb3",
 "scheme": "tech-support",
 "source": "urlscan.io",
@@ -13832,6 +13925,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/v-01a1d60e-2bb3.jpg"
 },
 {
+"url": "https://truebubertaipanck-eagnhmbyf8bfbjd0.z03.azurefd.net/index.html",
 "id": "v-01a1d02a-aba9",
 "scheme": "tech-support",
 "source": "urlscan.io",
@@ -13849,6 +13943,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/v-01a1d02a-aba9.jpg"
 },
 {
+"url": "https://trueavaliant7i-cjfph0d9d9f9d7fw.z03.azurefd.net/index.html?_event=811d3367999132f98b1335682c6e0a21&click_id=1f28108mwaxolem&tid=1043&subid=geogle.com&ref=geogle.com&18%3Fclick_id=1f28108mwaxolem&tid=1043&subid=geogle.com&ref=geogle.com&18=",
 "id": "v-01a1cc44-c89f",
 "scheme": "tech-support",
 "source": "urlscan.io",
@@ -13866,6 +13961,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/v-01a1cc44-c89f.jpg"
 },
 {
+"url": "https://5009vwtcoyrbivpgtdjkgcrxdywpdscogy-gzfwdbapd0fqc9d6.z03.azurefd.net/?msclkid=95d6722633ae1938290718cdb8630cbc",
 "id": "v-01a1a823-7135",
 "scheme": "tech-support",
 "source": "urlscan.io",
@@ -13883,6 +13979,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/v-01a1a823-7135.jpg"
 },
 {
+"url": "https://5008oczxvfaertwufxxhrhnevseruwoslt-fvacesdbargwdbha.z03.azurefd.net/?msclkid=3a97a5671d0314fb860fcf8c7c0ad21e",
 "id": "v-01a1a7ca-76ea",
 "scheme": "tech-support",
 "source": "urlscan.io",
@@ -13900,6 +13997,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/v-01a1a7ca-76ea.jpg"
 },
 {
+"url": "https://5015oeerdmxngbcgnypaayjfvncgwckwml-dveqevh4hdazhzbk.z03.azurefd.net/",
 "id": "v-01a1a7a1-330e",
 "scheme": "tech-support",
 "source": "urlscan.io",
@@ -13917,6 +14015,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/v-01a1a7a1-330e.jpg"
 },
 {
+"url": "https://5005yzmiradngbtxbpooplqfpgehwmvnzy-apcpg0a7htf0eqa6.z03.azurefd.net/",
 "id": "v-01a1a262-6d6b",
 "scheme": "tech-support",
 "source": "urlscan.io",
@@ -13934,6 +14033,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/v-01a1a262-6d6b.jpg"
 },
 {
+"url": "https://5001jmfqaihnbeyfsatewxwyatmbejcuwj-eggedsahc2apgebv.z03.azurefd.net/",
 "id": "v-01a1a233-8836",
 "scheme": "tech-support",
 "source": "urlscan.io",
@@ -13951,6 +14051,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/v-01a1a233-8836.jpg"
 },
 {
+"url": "https://7001qoylcxgzlabxewsbychkjdowqviexz-e2gwaag7b0hhh9cg.z03.azurefd.net/",
 "id": "v-01a19348-444f",
 "scheme": "tech-support",
 "source": "urlscan.io",
@@ -13968,6 +14069,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/v-01a19348-444f.jpg"
 },
 {
+"url": "https://7006pzjhxlguipeogcqecwgfonyaudbbqb-hfgvhhc2efafe3hx.z03.azurefd.net/",
 "id": "v-01a19326-33ea",
 "scheme": "tech-support",
 "source": "urlscan.io",
@@ -13985,6 +14087,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/v-01a19326-33ea.jpg"
 },
 {
+"url": "https://microsoft-support-alrt-altr877.pages.dev/",
 "id": "v-01a0ea7c-ce7f",
 "scheme": "tech-support",
 "source": "urlscan.io",
@@ -14002,6 +14105,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/v-01a0ea7c-ce7f.jpg"
 },
 {
+"url": "https://microsoft-support-alrt-altr98.pages.dev/",
 "id": "v-01a0be61-4ae1",
 "scheme": "tech-support",
 "source": "urlscan.io",
@@ -14019,6 +14123,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/v-01a0be61-4ae1.jpg"
 },
 {
+"url": "https://store001-dpk23eng7v19.edgeone.dev/",
 "id": "v-01a037df-db94",
 "scheme": "tech-support",
 "source": "urlscan.io",
@@ -14036,6 +14141,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/v-01a037df-db94.jpg"
 },
 {
+"url": "https://9005uiigpnubxhnvgkmdcoaezayzrvezsa-d4abc0ayeubfc4gq.z03.azurefd.net/",
 "id": "v-01a1892f-16dc",
 "scheme": "tech-support",
 "source": "urlscan.io",
@@ -14053,6 +14159,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/v-01a1892f-16dc.jpg"
 },
 {
+"url": "https://5011nuhnnzgkgkpjdafwsglkcytoirjtoa-fabmf4gyd0cchbak.z03.azurefd.net/?msclkid=810b964b4fc818861dabfcaa4da03ab3",
 "id": "v-01a17f03-59db",
 "scheme": "tech-support",
 "source": "urlscan.io",
@@ -14070,6 +14177,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/v-01a17f03-59db.jpg"
 },
 {
+"url": "https://5002aixrsmsmhegwswwojdxklroutfzbby-cag4bde6h3bgdyhk.z03.azurefd.net/?msclkid=2ce770779094132fa3561a97590b6ae4",
 "id": "v-01a17e89-cfe3",
 "scheme": "tech-support",
 "source": "urlscan.io",
@@ -14087,6 +14195,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/v-01a17e89-cfe3.jpg"
 },
 {
+"url": "https://9006tmuviwlelkgpkitfamjuqwtfljrjem-encwafaph4a3f4cr.z03.azurefd.net/",
 "id": "v-01a17990-c986",
 "scheme": "tech-support",
 "source": "urlscan.io",
@@ -14104,6 +14213,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/v-01a17990-c986.jpg"
 },
 {
+"url": "https://3001jstekyazkfrdzfjgjkqkkzfdypfjwr-epdtepe5ffhsb0hd.z03.azurefd.net/",
 "id": "v-01a1553e-7e7c",
 "scheme": "tech-support",
 "source": "urlscan.io",
@@ -14121,6 +14231,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/v-01a1553e-7e7c.jpg"
 },
 {
+"url": "https://8001yspiiyyrwcecqkvbjgjdvfbexjzfao-edh5beetcwfffjf3.z03.azurefd.net/",
 "id": "v-01a14b7b-0426",
 "scheme": "tech-support",
 "source": "urlscan.io",
@@ -14138,6 +14249,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/v-01a14b7b-0426.jpg"
 },
 {
+"url": "https://www.pickahome.com/",
 "id": "z-www-pickahome-com",
 "scheme": "tech-support",
 "source": "Zenodo 14880589",
@@ -14153,6 +14265,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/z-www-pickahome-com.jpg"
 },
 {
+"url": "https://miniature-waffle-ad5i7buu.on-forge.com/Wncodehelpolnecodexxweb/index.html",
 "id": "v-01a1b6f6-ac25",
 "scheme": "tech-support",
 "source": "urlscan.io",
@@ -14168,6 +14281,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/v-01a1b6f6-ac25.jpg"
 },
 {
+"url": "https://miniature-waffle-aigopgam.on-forge.com/Wncodehelpolnecodexxweb/index.html",
 "id": "v-01a1b6a0-aff6",
 "scheme": "tech-support",
 "source": "urlscan.io",
@@ -14183,6 +14297,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/v-01a1b6a0-aff6.jpg"
 },
 {
+"url": "https://ubiquitous-couscous-tplwmaep.on-forge.com/Wncodehelpolnecodexxweb/index.html",
 "id": "v-01a1a1ea-f1be",
 "scheme": "tech-support",
 "source": "urlscan.io",
@@ -14198,6 +14313,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/v-01a1a1ea-f1be.jpg"
 },
 {
+"url": "https://ubiquitous-couscous-wu0f010m.on-forge.com/Wncodehelpolnecodexxweb/index.html",
 "id": "v-01a1a1bd-f342",
 "scheme": "tech-support",
 "source": "urlscan.io",
@@ -14213,6 +14329,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/v-01a1a1bd-f342.jpg"
 },
 {
+"url": "https://glowing-doodle-olllddd-3ua6mlee.on-forge.com/Wncodehelpolnecodexxweb/index.html",
 "id": "v-01a188b6-2599",
 "scheme": "tech-support",
 "source": "urlscan.io",
@@ -14228,6 +14345,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/v-01a188b6-2599.jpg"
 },
 {
+"url": "https://didactic-palm-fggf-dsbupv1q.on-forge.com/Wncodehelpolnecodexxweb/index.html",
 "id": "v-01a144e6-eb73",
 "scheme": "tech-support",
 "source": "urlscan.io",
@@ -14243,6 +14361,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/v-01a144e6-eb73.jpg"
 },
 {
+"url": "https://better-moccasin-rwnnpr3f-dpn5e8j270g7.edgeone.dev/",
 "id": "v-01a18aed-283a",
 "scheme": "tech-support",
 "source": "urlscan.io",
@@ -14258,6 +14377,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/v-01a18aed-283a.jpg"
 },
 {
+"url": "https://symmetrical-octo-succotashhh-oiykj24e.on-forge.com/Wncodehelpolnecodexxweb/index.html",
 "id": "v-01a13b81-8a68",
 "scheme": "tech-support",
 "source": "urlscan.io",
@@ -14273,6 +14393,7 @@ window.REAL_GALLERY = {
 "img": "real/ext/v-01a13b81-8a68.jpg"
 },
 {
+"url": "https://symmetrical-octo-succotashhh-uwqcinq7.on-forge.com/Wncodehelpolnecodexxweb/index.html",
 "id": "v-01a13b6d-d90b",
 "scheme": "tech-support",
 "source": "urlscan.io",
@@ -14288,6 +14409,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://symmetrical-octo-succotashhh-yzqjnyov.on-forge.com/Wncodehelpolnecodexxweb/index.html",
 "id": "v-01a13b61-07d4",
 "scheme": "tech-support",
 "source": "urlscan.io",
@@ -14303,6 +14425,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://cuddly-winneriu-xufbmbzb.on-forge.com/Wncodehelpolnecodexxweb/index.html",
 "id": "v-01a136da-e891",
 "scheme": "tech-support",
 "source": "urlscan.io",
@@ -14318,6 +14441,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://cuddly-winneriu-ehkyx37u.on-forge.com/Wncodehelpolnecodexxweb/index.html",
 "id": "v-01a136b8-0061",
 "scheme": "tech-support",
 "source": "urlscan.io",
@@ -14333,6 +14457,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://curly-journey879ojjj-2xhyby9b.on-forge.com/Wncodehelpolnecodexxweb/index.html",
 "id": "v-01a121cb-2b64",
 "scheme": "tech-support",
 "source": "urlscan.io",
@@ -14348,6 +14473,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://verify-88l9wm.clickmetriclab.com/",
 "id": "v-01a098ef-31a1",
 "scheme": "tech-support",
 "source": "urlscan.io",
@@ -14363,6 +14489,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://virus-alert-windows.netlify.app/",
 "id": "v-019fadf1-9fd9",
 "scheme": "tech-support",
 "source": "urlscan.io",
@@ -14378,6 +14505,7 @@ window.REAL_GALLERY = {
 "img": null
 },
 {
+"url": "https://av-67n.pages.dev/",
 "id": "v-01a0db08-d133",
 "scheme": "tech-support",
 "source": "urlscan.io",

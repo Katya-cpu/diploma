@@ -13,9 +13,9 @@ ROOT = Path(__file__).resolve().parent.parent
 checks = (ROOT / 'extension/core/checks.js').read_text(encoding='utf-8')
 catalog = (ROOT / 'extension/core/catalog.js').read_text(encoding='utf-8')
 
-# Блоки проверок: от CHECKS['id'] до следующего CHECKS[ или до ADVICE.
+# Блоки проверок: от CHECKS['id'] до следующего CHECKS[ или до сборки отчёта.
 starts = [(m.start(), m.group(1)) for m in re.finditer(r"CHECKS\['([a-z-]+)'\]\s*=", checks)]
-end = checks.index('const ADVICE')
+end = checks.index('  //  Сборка отчёта')
 blocks = {cid: checks[a:(starts[i + 1][0] if i + 1 < len(starts) else end)] for i, (a, cid) in enumerate(starts)}
 
 LIT = re.compile(r"'((?:\\.|[^'\\])*)'")

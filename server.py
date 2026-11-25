@@ -71,7 +71,30 @@ class Handler(SimpleHTTPRequestHandler):
     def do_GET(self):
         if self.path.startswith('/api/'):
             return self.api('GET')
+        if self.path.startswith('/corpus/') and '?orig=' in self.path:
+            return self.corpus_with_origin()
         return super().do_GET()
+
+    def corpus_with_origin(self):
+        # Сохранённая копия настоящей страницы с меткой исходного адреса (?orig=…): расширение на локальной
+        # странице оценивает её так, как на настоящем адресе, – и в панели стоит настоящий домен, а не 127.0.0.1.
+        from html import escape
+        from urllib.parse import parse_qs, urlsplit
+        orig = parse_qs(urlsplit(self.path).query).get('orig', [''])[0]
+        target = Path(self.translate_path(self.path))
+        if not target.is_file() or not orig.startswith(('http://', 'https://')):
+            return self.send_error(404)
+        html = target.read_text(encoding='utf-8', errors='replace')
+        meta = '<meta name="pg-original-url" content="' + escape(orig, quote=True) + '">'
+        low = html.lower()
+        i = low.find('<head')
+        i = low.find('>', i) + 1 if i >= 0 else 0
+        body = (html[:i] + meta + html[i:]).encode('utf-8')
+        self.send_response(200)
+        self.send_header('Content-Type', 'text/html; charset=utf-8')
+        self.send_header('Content-Length', str(len(body)))
+        self.end_headers()
+        self.wfile.write(body)
 
     def do_POST(self):
         if self.headers.get('Host') not in (f'127.0.0.1:{PORT}', f'localhost:{PORT}'):

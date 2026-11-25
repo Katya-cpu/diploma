@@ -56,7 +56,7 @@ def collect():
     rows = []
     for r in load(ROOT / 'tools' / 'urlscan-results.json'):
         sch = URLSCAN_BY_DOMAIN.get(r['domain']) or URLSCAN_SCHEME.get(r['scheme']) or 'fake-payment'
-        rows.append({'id': 'u-' + r['uuid'][:13], 'scheme': sch, 'source': 'urlscan.io', 'date': r['time'][:10], 'domain': r['domain'],
+        rows.append({'url': r.get('url'), 'id': 'u-' + r['uuid'][:13], 'scheme': sch, 'source': 'urlscan.io', 'date': r['time'][:10], 'domain': r['domain'],
                      'title': r.get('title') or r.get('why', ''), 'file': r['file'], 'orig': str(WP / 'urlscan' / r['uuid'] / 'screenshot.png'),
                      'link': f"https://urlscan.io/result/{r['uuid']}/", 'verdict': r['new']['verdict'], 'titles': r['new'].get('titles', [])})
     for r in load(ROOT / 'tools' / 'zenodo-results.json'):
@@ -68,7 +68,7 @@ def collect():
         sch = fix.get('scheme') or ZEN_FIX.get('default', {}).get(r['cat']) or ZEN_SCHEME[r['cat']]
         if sch == 'skip':
             continue
-        rows.append({'id': 'z-' + re.sub(r'[^a-z0-9]+', '-', r['domain'].lower())[:40], 'scheme': sch, 'source': 'Zenodo 14880589',
+        rows.append({'url': r.get('url'), 'id': 'z-' + re.sub(r'[^a-z0-9]+', '-', r['domain'].lower())[:40], 'scheme': sch, 'source': 'Zenodo 14880589',
                      'date': r['site'].split('/')[1], 'domain': r['domain'], 'title': fix.get('title', ''), 'note': fix.get('note', ''),
                      'file': r['file'], 'orig': str(WP / 'zenodo' / r['dir'] / 'page.png'), 'link': None,
                      'verdict': r['new']['verdict'], 'titles': r['new'].get('titles', []),
@@ -77,7 +77,7 @@ def collect():
         if r['label'] != 'phish' or not r.get('card_input'):
             continue
         dom = re.sub(r'^https?://', '', r['url']).split('/')[0]
-        rows.append({'id': 'p-' + Path(r['file']).stem, 'scheme': P360_SCHEME(r.get('brand')), 'source': 'Phish360', 'date': '2020–2023',
+        rows.append({'url': r.get('url'), 'id': 'p-' + Path(r['file']).stem, 'scheme': P360_SCHEME(r.get('brand')), 'source': 'Phish360', 'date': '2020–2023',
                      'domain': dom, 'title': 'подделка ' + (r.get('brand') or ''), 'file': r['file'], 'orig': None, 'link': None,
                      'verdict': r['new']['verdict'], 'titles': r['new'].get('titles', []), 'brand': r.get('brand')})
     # E-Skimming Labs: учебные копии атак Magecart (код скиммера взят из разборов реальных атак). Страница работает со скриптами,
@@ -94,7 +94,7 @@ def collect():
         if r['domain'] in rev.get('skip', []) or any(r['domain'].startswith(x) for x in rev.get('skip_prefix', [])):
             continue
         sch = next((v for k, v in rev.get('scheme', {}).items() if k in r['domain']), r['scheme'])
-        rows.append({'id': 'v-' + r['uuid'][:13], 'scheme': sch, 'source': 'urlscan.io', 'date': r['time'][:10], 'domain': r['domain'],
+        rows.append({'url': r.get('url'), 'id': 'v-' + r['uuid'][:13], 'scheme': sch, 'source': 'urlscan.io', 'date': r['time'][:10], 'domain': r['domain'],
                      'title': r['title'], 'file': res2[r['uuid']]['file'] if r['uuid'] in res2 else None,
                      'orig': str(WP / 'urlscan2' / r['uuid'] / 'screenshot.png'), 'link': f"https://urlscan.io/result/{r['uuid']}/",
                      'verdict': res2[r['uuid']]['new']['verdict'] if r['uuid'] in res2 else None,

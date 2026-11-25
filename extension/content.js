@@ -35,7 +35,11 @@
 
   async function run() {
     try { sensors.network = (await api.runtime.sendMessage({ type: 'network' })) || []; } catch (e) { sensors.network = []; }
-    report = await PGChecks.inspect(document, sensors);
+    // Лаборатория: сохранённая копия настоящей страницы открыта с локального сервера, а в метке pg-original-url
+    // записан адрес, с которого её сохранили. Тогда помощник оценивает страницу так, как на её настоящем адресе.
+    // Метка учитывается только на локальных адресах – обычный сайт не может так подделать свой адрес.
+    const orig = /^(127\.0\.0\.1|localhost|\[::1\])$/.test(location.hostname) && document.querySelector('meta[name="pg-original-url"]');
+    report = await PGChecks.inspect(document, sensors, orig ? { pageUrl: orig.content } : {});
     report.url = location.href;
     const slim = JSON.parse(JSON.stringify(report));
     api.runtime.sendMessage({ type: 'report', report: slim }).catch(() => {});
@@ -80,7 +84,7 @@
       </style>
       <section class="box" role="alert">
         <header><div class="dot">${r.verdict === 'ok' ? '✓' : '!'}</div>
-          <div><h2></h2><div class="sub">Платёжный помощник · ${location.hostname}</div></div></header>
+          <div><h2></h2><div class="sub">Платёжный помощник · ${(r.context && r.context.host) || location.hostname}</div></div></header>
         <ul></ul>
         <div class="who" hidden></div>
         <footer><button class="main" data-a="close">Понятно</button>${r.verdict === 'ok' ? '<button data-a="trust">Доверять этому сайту</button>' : ''}</footer>
